@@ -25,14 +25,14 @@ Nous nous sommes demandés si il est possible de **prouver qu'un algorithme est 
 	Si l'on fait un algorithme "soigné", alors en théorie, il n'y a pas de problèmes pour que le programme le soit lui aussi. Malgré tout cela n'est pas toujours vrai, par contre avoir des bonnes bases est important pour faire un bon programme.
 
 >[!cite] Définition
->Le terme ==**efficacité d'un algorithme**== c'est se demander si mon programme me donne une réponse dans un temps *raisonnable*.
+>Le terme **==efficacité d'un algorithme==** c'est se demander si mon programme me donne une réponse dans un temps *raisonnable*.
 
 >[!warning] Attention
 >- L'efficacité d'un algorithme et l'efficacité d'un programme ne représente pas la même chose.
 >- L'efficacité d'un algorithme prend en compte la puissance d'un ordinateur, alors il faut prendre en compte plusieurs systèmes, afin de tester l'algorithme plusieurs fois indépendamment du système choisit.
 
 >[!cite] Définition
->On appelle ==**programme informatique**== un algorithme qui a été codé sur machine à l'aide d'un langage spécifique.
+>On appelle **==programme informatique==** un algorithme qui a été codé sur machine à l'aide d'un langage spécifique.
 
 ## Efficacité d'un algorithme
 
@@ -116,15 +116,15 @@ Ainsi, on en conclu que le nombre d'affectation dépend de l'entrée même si l'
 ## Comment avancer dans l'analyse algorithmique ?
 
 >[!cite] Définitions
->- On appelle ==**opération élémentaire**== une action de base généralement exécutée en un temps constant *selon la machine*. Elles permettent d'évaluer la **complexité** d'un algorithme.
->- Les ==**opérations arithmétiques**== $+, -, *, /, DIV, MOD$
+>- On appelle **==opération élémentaire==** une action de base généralement exécutée en un temps constant *selon la machine*. Elles permettent d'évaluer la **complexité** d'un algorithme.
+>- Les **==opérations arithmétiques==** $+, -, *, /, DIV, MOD$
 >	- $DIV$ pour déterminer <u>le quotient</u> d'une division euclidienne
 >	- $MOD$ pour déterminer <u>le reste</u> d'une division euclidienne
->- Les ==**comparaisons**== `==`, `<=`, `>=`, `<`, `>`, `!=` *(sur des types élémentaires)*
->- Les ==**opérateurs logiques**==
+>- Les **==comparaisons==** `==`, `<=`, `>=`, `<`, `>`, `!=` *(sur des types élémentaires)*
+>- Les **==opérateurs logiques==**
 >	- ET OU qui prennent `2 booléens`
 >	- NON qui prend `1 booléen`
->- Les ==**opérations de contrôles**== permettent de gérer les boucles, les conditionnelles, le résultat
+>- Les **==opérations de contrôles==** permettent de gérer les boucles, les conditionnelles, le résultat
 
 *Dans nos études, nous considérerons que la taille de l'entier est minimale, même si cette dernière dépend du codage.*
 
