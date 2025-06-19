@@ -91,3 +91,21 @@ Ainsi l'équation admet comme solutions :
 $$
 \fbox{S = \{3+2i \quad ; \quad 1-i\}}
 $$
+
+## Exercice 2
+On considère une matrice $A$ tel que :
+
+$$
+A = \begin{pmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0\end{pmatrix}
+$$
+**Question 1**
+<br/>Calculons $A-2I_3$.
+<br/> $I_3$ représente la matrice identité de taille $3 \times 3$ tel que : 
+
+$$
+I_3 = \begin{pmatrix} 1&0&0 \\ 0&1&0 \\ 0&0&1\end{pmatrix}
+$$Ainsi : 
+
+$$
+2I_3 = 2\times\begin{pmatrix} 1&0&0 \\ 0&1&0 \\ 0&0&1\end{pmatrix}=\begin{pmatrix} 2&0&0 \\ 0&2&0 \\ 0&0&2\end{pmatrix}
+$$
