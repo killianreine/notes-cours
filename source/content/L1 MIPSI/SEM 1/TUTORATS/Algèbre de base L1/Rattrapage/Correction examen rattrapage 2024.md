@@ -395,3 +395,90 @@ En somme, $\lambda x + y \in Ker(f)$ (b).
 On chercher à déterminer une base de $Ker(f)$.
 <br/> Pour se faire, il faut déterminer la notation tel que $Ker(f)=Vect(u_1, \ldots, u_k)$ avec $k \in \mathbb{N}^*$.
 
+Pour déterminer la notation $Ker(f)=Vect(u_1, \ldots, u_k)$ il va falloir :
+- Montrer que $Ker(f)\subset Vect(u_1, \ldots, u_k)$
+- Montrer que $Vect(u_1, \ldots, u_k) \subset Ker(f)$
+<br/>La double inclusion implique nécessairement l'égalité !
+
+Soit $x \in Ker(f)$.
+<br/>Alors $x \in \mathbb{R}^3$ et 
+
+$$
+\begin{cases} -x_1-x_2+x_3&=0 & L_1\\ -4x_1-x_2+2x_3&=0 &L_2 \\ -6x_1-3x_2+4x_3&=0 &L_3 \end{cases}
+$$
+
+Notre objectif est de déterminer une combinaison linéaire de $x$ en essayant de trouver la valeur d'une ou plusieurs composante du vecteur.
+<br/> Pour cela on utilise le système précédant.
+
+D'après $L_1$
+<br/> $-x_1-x_2+x_3=0$ Alors $x_1=-x_2+x_3$.
+<br/> On peut remplacer $x_1$ dans les autres lignes du système.
+
+$$
+\begin{cases}  -4(-x_2+x_3)-x_2+2x_3&=0 &L_2 \\ -6(-x_2+x_3)-3x_2+4x_3&=0 &L_3 \end{cases} \quad \quad \Longleftrightarrow \begin{cases}  3x_2-2x_3&=0 &L_2 \\3x_2-2x_3&=0 &L_3 \end{cases}
+$$
+
+D'après $L_2$ 
+<br/>$3x_2-2x_3=0$ alors $2x_3=3x_2$ ce qui implique que $x_3=\frac{3}{2}x_2$.
+<br/> On peut maintenant remplacer la valeur de $x_3$ dans celle de $x_1$ trouvée en premier et on obtient : 
+
+$$
+x_1 = -x_2+\frac{3}{2}x_2=-\frac{2}{2}x_2+\frac{3}{2}x_2 = \frac{1}{2}x_2
+$$
+
+Maintenant on peut réécrire $x$ sachant que :
+
+$$
+x = \begin{pmatrix} x_1 \\  x_2 \\  x_3\end{pmatrix}=\begin{pmatrix} \frac{1}{2}x_2 \\  x_2 \\  \frac{3}{2}x_2\end{pmatrix}=x_2\begin{pmatrix} \frac{1}{2} \\  1 \\  \frac{3}{2}\end{pmatrix}
+$$
+
+Ainsi $x=x_2 u$ une combinaison linéaire de $x_2$ avec $u=(\frac{1}{2}, 1, \frac{3}{2})$ ainsi $u \in Vect(u_1, \ldots, u_k)$.
+<br/> Donc $Ker(f) \subset Vect(u)$. (c)
+
+Maintenant, il faut montrer l'inclusion dans le second sens, et pour faire ça, il faut prendre chaque vecteur de $Vect(\ldots)$ et montrer qu'ils appartiennent à $Ker(f)$.
+
+Soit $u=(\frac{1}{2}, 1, \frac{3}{2})$. 
+<br/> Alors :
+- $-u_1-u_2+u_3=-\frac{1}{2}-1+\frac{3}{2}=-\frac{1}{2}-\frac{2}{2}+\frac{3}{2}=-\frac{3}{2}+\frac{3}{2}=0$
+- $-4u_1-u_2+2u_3=-4\times \frac{1}{2}-1+2 \times \frac{3}{2}=-\frac{6}{2}+\frac{6}{2}=0$
+- $-6u_1-3u_2+4u_3=-6 \times \frac{1}{2}-3\times 1+4 \times \frac{3}{2} = -\frac{12}{2}+\frac{12}{2}=0$
+Ainsi le vecteur $u \in Ker(f)$ et puisque $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R}^3$ alors on a : $Vect(u) \subset kerf(f)$ (d).
+
+D'après (c) et (d) : $Ker(f) = Vect\left( \begin{pmatrix} \frac{1}{2} \\  1 \\  \frac{3}{2}\end{pmatrix} \right)$.
+<br/>Puisque la famille engendrée par le $Vect$ ne contient qu'un vecteur, alors c'est une famille libre par définition donc une base de $Ker(f)$.
+<br/>On note la base :
+
+$$
+\boxed{\mathcal{B_0}=\left( \begin{pmatrix} \frac{1}{2} \\  1 \\  \frac{3}{2}\end{pmatrix} \right)}
+$$
+
+**Question 4**
+<br/>On cherche a déterminer la matrice de $f$ dans la base canonique de $\mathbb{R}^3$.
+<br/>Notons $\mathcal{E}$ cette dernière telle que : 
+
+$$
+\mathcal{E} = \left( \begin{pmatrix} 1 \\  0 \\  0\end{pmatrix}, \begin{pmatrix} 0 \\  1 \\  0\end{pmatrix}, \begin{pmatrix} 0 \\  0 \\  1\end{pmatrix} \right) = (e_1, e_2, e_3)
+$$
+
+Calculons l'application de $f$ avec chaque vecteur : 
+- $f(e_1)=(-1, -4, -6)$ 
+- $f(e_2)=(-1, -1, -3)$
+- $f(e_3)=(1, 2, 4)$
+Ainsi on obtient la matrice suivante : 
+
+$$
+\boxed{M_{\mathcal{E}}(f) = \begin{pmatrix} -1 & -1 & 1 \\ -4 & -1 & 2 \\ -6 & -3 & 4\end{pmatrix}}
+$$
+
+**Question 5**
+On cherche à monter que $\mathcal{B}$ est une base de $\mathbb{R}^3$.
+<br/> Il faut montrer que la famille engendrée par la base est libre.
+
+Montrons que tous les lambdas sont nuls avec la somme des $\lambda_iu_i$. 
+
+$$
+\lambda_1u_1+\lambda_2u_2+\lambda_3u_3 = 0_{\mathbb{R}^3}
+$$
+
+Avec $\lambda_1, \lambda_2, \lambda_3 \in \mathbb{R}$. 
+<br/>
