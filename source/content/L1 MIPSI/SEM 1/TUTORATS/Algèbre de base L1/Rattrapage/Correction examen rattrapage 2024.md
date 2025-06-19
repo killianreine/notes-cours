@@ -63,3 +63,31 @@ x^2-u^2 &= 15 & L_2\\
 $$
 
 - $L_1 - L_2$ 
+  <br/> $2y^2=2 \Longleftrightarrow y^2=1 \Longleftrightarrow y=\pm 1$
+- $L_1+L_2$
+  <br/> $2x^2=32 \Longleftrightarrow x^2=16 \Longleftrightarrow x=\pm 4$
+- D'après $L_3$
+  <br/>Puisque $2xy=8 > 0$ alors $x$ et $y$ seront de même signes dans les solutions.
+
+Les solutions de l'équation $\delta^2=\Delta$ sont données par :
+
+$$
+\delta_1=4+i \hspace{1cm} \delta_2=-4-i
+$$
+
+On peut alors déterminer les solutions finales de l'équation initiale :
+<br/> On ne considère que la première solution $\delta_1$.
+
+$$
+z_1=\frac{-b+\delta}{2a}=\frac{2+3i+4+i}{2}=\frac{6+4i}{2}=3+2i
+$$
+
+$$
+z_2=\frac{-b-\delta}{2a}=\frac{2+3i-4-i}{2}=\frac{-2+2i}{2}=-1+i
+$$
+
+Ainsi l'équation admet comme solutions :
+
+$$
+\fbox{S = \{3+2i \quad ; \quad 1-i\}}
+$$
