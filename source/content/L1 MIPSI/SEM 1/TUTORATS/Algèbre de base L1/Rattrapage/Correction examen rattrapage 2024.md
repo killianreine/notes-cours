@@ -442,7 +442,7 @@ Soit $u=(\frac{1}{2}, 1, \frac{3}{2})$.
 - $-u_1-u_2+u_3=-\frac{1}{2}-1+\frac{3}{2}=-\frac{1}{2}-\frac{2}{2}+\frac{3}{2}=-\frac{3}{2}+\frac{3}{2}=0$
 - $-4u_1-u_2+2u_3=-4\times \frac{1}{2}-1+2 \times \frac{3}{2}=-\frac{6}{2}+\frac{6}{2}=0$
 - $-6u_1-3u_2+4u_3=-6 \times \frac{1}{2}-3\times 1+4 \times \frac{3}{2} = -\frac{12}{2}+\frac{12}{2}=0$
-Ainsi le vecteur $u \in Ker(f)$ et puisque $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R}^3$ alors on a : $Vect(u) \subset kerf(f)$ (d).
+<br/>Ainsi le vecteur $u \in Ker(f)$ et puisque $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R}^3$ alors on a : $Vect(u) \subset kerf(f)$ (d).
 
 D'après (c) et (d) : $Ker(f) = Vect\left( \begin{pmatrix} \frac{1}{2} \\  1 \\  \frac{3}{2}\end{pmatrix} \right)$.
 <br/>Puisque la famille engendrée par le $Vect$ ne contient qu'un vecteur, alors c'est une famille libre par définition donc une base de $Ker(f)$.
