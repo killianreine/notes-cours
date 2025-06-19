@@ -146,7 +146,7 @@ Si on prend $1000$ entiers codés sur $4$ octets on aura alors $4000$ octets uti
 Pour $N$ entiers on aurait $4 \times N$, c'est une fonction linéaire.
 $$taille = N \times tailleCodage$$
 >[!cite] Définition
->On appelle ==**ordre de grandeur**== la tendance d'une courbe quand $N$ augmente.
+>On appelle **==ordre de grandeur==** la tendance d'une courbe quand $N$ augmente.
 
 En algorithmique,
 L'ordre de grandeur est utilisée pour évaluer la tendance du temps d'exécution (ou de l'espace mémoire) requis par un algorithme en fonction de la taille donnée. Cela permet en fait de classer les algorithmes selon leur efficacité sans se soucier des constantes ou des termes qui influent peu.
@@ -195,10 +195,10 @@ En reprenant les fonctions données par M.Sanlaville pendant les CMs, étudions 
 ## Complexité des algorithmes
 
 >[!cite] Définitions
->- On appelle ==**complexité au pire**== d'un algorithme $\mathcal{A}$ la fonction qui permet de donner le nombre maximum d'opérations élémentaire qu'effectue un algorithme en fonction de $N$ la taille de l'entrée. 
+>- On appelle **==complexité au pire==** d'un algorithme $\mathcal{A}$ la fonction qui permet de donner le nombre maximum d'opérations élémentaire qu'effectue un algorithme en fonction de $N$ la taille de l'entrée. 
 >  *Généralement on ne donne pas une fonction exacte mais plutôt un ordre de grandeur*
->- À l'inverse, on appelle ==**complexité au mieux**== d'un algorithme $\mathcal{A}$ la fonction qui permet de donner le nombre minimum d'opérations élémentaire que fais cet algorithme en fonction de $N$.
->- La ==**complexité en moyenne**== *est plus hypothétique*, on connais la probabilité des entrées, on cherche la fonction qui donne le nombre moyen d'opérations élémentaire.
+>- À l'inverse, on appelle **==complexité au mieux==** d'un algorithme $\mathcal{A}$ la fonction qui permet de donner le nombre minimum d'opérations élémentaire que fais cet algorithme en fonction de $N$.
+>- La **==complexité en moyenne==** *est plus hypothétique*, on connais la probabilité des entrées, on cherche la fonction qui donne le nombre moyen d'opérations élémentaire.
 
 *Pour la complexité d'une boucle `pour` à $p$ itérations et $k$ (constant) opérations élémentaire*
 On va avoir une complexité en $\mathcal{O}(nk)$ mais, puisque $k$ est une constante, on peut la négliger et on se retrouve dans le pire, le meilleure des cas et en moyenne à $\mathcal{O}(n)$.
@@ -268,7 +268,11 @@ $$C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)$$
 >[!example] Propriétés sur les sommes
 >*à retenir sur les sommes, connu depuis algèbre de base... en ajoutant les aspects drôles de l'algorithmique et des complexités*
 >$$\underset{i=1}{\overset{N}{\sum}}k=k \times N = \mathcal{O}(N)$$
+
+>[!example] Propriétés sur les sommes
 >$$\underset{i=1}{\overset{N}{\sum}}ik = k \times \underset{i=1}{\overset{N}{\sum}}i=k \times \frac{N(N+1)}{2}=\mathcal{O}(N^2)$$
+
+>[!example] Propriétés sur les sommes
 >$$
 \begin{align*}
 \underset{i=1}{\overset{N-1}{\sum}}(N-i)k  &=k \times \underset{i=1}{\overset{N-1}{\sum}}(N-i) \\ &=k \times \left( \underset{i=1}{\overset{N-1}{\sum}}N-\underset{i=1}{\overset{N-1}{\sum}}i\right) \\
@@ -279,6 +283,8 @@ $$C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)$$
 &= k \times \left( \frac{N(N-1)}{2} \right) \\
 &= \mathcal{O}(N^2)
 \end{align*}$$
+
+> [!example] Propriété sur les sommes
 > $$
 \begin{align*}
 \underset{i=1}{\overset{N}{\sum}}\underset{i=1}{\overset{N}{\sum}}k  &= \underset{i=1}{\overset{N}{\sum}}1 \times\underset{i=1}{\overset{N}{\sum}}1\times k \\
@@ -315,7 +321,7 @@ $$C_{pire} = \Theta(k_{max})$$
 ## Algorithme récursif
 
 >[!cite] Définition
->Un ==**algorithme récursif**== est une méthode permettant de ressourdre des problèmes en s'appelant elle-même, afin de résoudre des sous-problèmes du même type. 
+>Un **==algorithme récursif==** est une méthode permettant de ressourdre des problèmes en s'appelant elle-même, afin de résoudre des sous-problèmes du même type. 
 >*généralement la récursivité est utilisé pour des problèmes qui veut être **divisés** en sous-problèmes similaires*.
 >Un algorithme récursif nécessite :
 >- Une **condition d'arrêt**, en gros c'est le moment ou l'algorithme arrête de s'appeler lui-même (sinon récursion infinie)
@@ -372,23 +378,29 @@ pour déterminer la complexité on compte le nombre `d'OE` (hors appels récursi
 - **Dans le pire des cas**
   L'élément est sois le tout premier élément soit le tout dernier alors la méthode vas se faire sur des parties de tableau divisées de moitié à chaque appel récursif jusqu'à ce qu'il ne reste qu'un élément à comparer.
   Autrement dit le nombre d'opérations va être : 
-  $$ N  \to \frac{N}{2} \to \frac{N}{4} \to \frac{N}{8} \to \ldots \to
- 1 \Longleftrightarrow log(N)$$
+- 
+  $$ N  \to \frac{N}{2} \to \frac{N}{4} \to \frac{N}{8} \to \ldots \to 1 \Longleftrightarrow log(N)$$
+ 
   Ainsi dans le pire des cas la complexité de la recherche dichotomique est donnée par $\Theta(log(N))$.
 
-Avec un nombre d'opérations élémentaires qui suit une fonction $f(n)$ avec $N$ la taille de l'entrée, alors la complexité sera donnée par $NbAppels \times f(N)$.
+Avec un nombre d'opérations élémentaires qui suit une fonction $f(n)$ avec $N$ la taille de l'entrée, alors la complexité sera donnée par $NbAppels \times f(N)$. 
 *Le nombre d'opération peut dépendre aussi de la taille des données traitées par appel.*
 
 <u>Exemple :</u>
 Taille des données par appel récursif : $N$ puis $N-1$ puis $N-2$, ... respectivement de taille $T_1$, $T_2$, $\ldots$. Et $f(T_i) = k \times T_i$ (linéaire).
+
 Alors la **complexité au pire**, lorsque l'on fait tous les appels de $1$ à $N$ est donnée par : 
+
 $$C=\underset{i=1}{\overset{N}{\sum}}k \times T_i=k \times \underset{i=1}{\overset{N}{\sum}}T_i=k\times \frac{N(N+1)}{2}=\Theta(N^2)$$
+
 On peut aussi avoir le cas où il y a 2 appels un appel sur une taille `Ti` qui à l'intérieur contient deux appels `T{i+1}` et `T{i+1}'`.
 
 ### Un exemple trop vu : Fibonacci
 
 La suite de Fibonacci est définie par :
+
 $$u_0=u_1=1 \quad\quad\quad \forall n \geq 2, \quad u_n=u_{n-1}+u_{n-2}$$
+
 Ainsi on obtient l'algorithme récursif suivant :
 ```
 Entree :
@@ -415,15 +427,22 @@ Alors, pour un appel au rang `N` on peut avoir deux appels qui sont sur `N-1` pi
 - Pour `N=4` on fait 8 appels
 On peut déduire que le nombre d'appels est exponentiel lorsque `N` devient grand.
 
-En général : $$T_{i+1} \quad et T_{i+1}' \sim \frac{T_i}{2}$$
+En général : 
+
+$$T_{i+1} \quad et T_{i+1}' \sim \frac{T_i}{2}$$
+
 Si on coupe l'ensemble des données en $a$ parties de taille $\frac{n}{b}$ alors :
+
 $$C(n) = a \times C\left( \frac{n}{b}\right)+f(n)$$
+
 où $f(n)$ représente le nombre d'`OE` à l'intérieur de l'appel.
 - Au départ : `N=n`
 - À la fin : `N=Cste` ou condition validée
 
 >[!warning] Attention
->Les formules suivantes s'appliquent uniquement aux algorithmes où la relation de récurrence est de la forme : $$C(n) = a \times C\left( \frac{n}{b}\right)+f(n)$$
+>Les formules suivantes s'appliquent uniquement aux algorithmes où la relation de récurrence est de la forme : 
+>$$C(n) = a \times C\left( \frac{n}{b}\right)+f(n)$$
+>
 >où :
 >- $a$ représente le nombre de sous-problèmes
 >- $b$ le facteur de réduction de taille
@@ -455,7 +474,7 @@ La première chose demandée à un algorithme, c'est de terminer son exécution 
 Considérons une boucle `tant que` *(boucle for : nbBoucle fixé à l'avance)*, en supposant que le nombre d'`OE`dans la boucle est bornée.
 
 >[!cite] Définition
->On appelle ==**variant**== noté $V$ pour une boucle $B$ une quantité entière, bornée et strictement décroissante à chaque itération de $B$.
+>On appelle **==variant==** noté $V$ pour une boucle $B$ une quantité entière, bornée et strictement décroissante à chaque itération de $B$.
 
 >[!tip] Rappel
 >Le terme borné signifie que le variant est compris dans un intervalle, qu'il existe un nombre plus petit ou égal (minoré) et un nombre plus grand ou égal (majoré).
@@ -463,7 +482,7 @@ Considérons une boucle `tant que` *(boucle for : nbBoucle fixé à l'avance)*, 
 Pour montrer qu'un algorithme est fini (= terminaison) il faut analyser s'il comporte un nombre fini d'étapes et s'il s'arrête après un temps fini pour toutes les entrées possibles.
 
 >[!cite] Définition
->On dit d'un algorithme qu'il est ==**fini**== s'il se termine après un nombre fini d'étapes, quelque soit l'entrée choisie.
+>On dit d'un algorithme qu'il est **==fini==** s'il se termine après un nombre fini d'étapes, quelque soit l'entrée choisie.
 
 >[!danger] Objectif
 >- Identifier un **variant** qui décroit à chaque itération
@@ -557,11 +576,11 @@ Ainsi nous venons de montrer la finitude de l'algorithme `puissanceDeux`.
 
 ## Notion de correction d'un algorithme
 
-La **correction d'un algorithme** désigne la propriété selon laquelle un algorithme produit systématiquement le résultat attendu. Autrement dit, un algorithme est dit ==**correct**== lorsqu'il fournit toujours une solution correcte pour toute les entrées valides.
+La **correction d'un algorithme** désigne la propriété selon laquelle un algorithme produit systématiquement le résultat attendu. Autrement dit, un algorithme est dit **==correct==** lorsqu'il fournit toujours une solution correcte pour toute les entrées valides.
 
 >[!cite] Définitions
->- On dit qu'un algorithme est ==**partiellement correct**== si il fourni un résultat correct lorsqu'il finit forcément par se terminer (= finitude). Mais, cette notion de garantit pas toujours que l'algorithme se termine.
->- On dit qu'un algorithme $\mathcal{A}$ est ==**totalement correct**== quand il est à la fois partiellement correct et qu'il termine pour toutes les entrées possibles.
+>- On dit qu'un algorithme est **==partiellement correct==** si il fourni un résultat correct lorsqu'il finit forcément par se terminer (= finitude). Mais, cette notion de garantit pas toujours que l'algorithme se termine.
+>- On dit qu'un algorithme $\mathcal{A}$ est **==totalement correct==** quand il est à la fois partiellement correct et qu'il termine pour toutes les entrées possibles.
 >*Autrement dit un algorithme est correct lorsqu'il se finit et fournit des sorties valides pour toutes entrées valides.*
 
 <u>Méthode pour montrer la correction</u>
@@ -576,15 +595,15 @@ La **correction d'un algorithme** désigne la propriété selon laquelle un algo
 
 Considérons un algorithme $\mathcal{A}$ avec :
 - <u>Entrée :</u> $e \in  D_e$
-  Un algorithme qui prend en entrée des éléments de l'ensemble $D_e$.
+  <br/>Un algorithme qui prend en entrée des éléments de l'ensemble $D_e$.
 - <u>Sortie :</u> $s \in D_s$
-  Une algorithme qui renvoie un résultat $s$ qui appartient à un ensemble $D_s$.
+  <br/>Une algorithme qui renvoie un résultat $s$ qui appartient à un ensemble $D_s$.
 - <u>Variable :</u> `Y`
-  Variable interne utilisée par l'algorithme pendant l'exécution.
+  <br/>Variable interne utilisée par l'algorithme pendant l'exécution.
 On note :
 - $\phi(e)$ un prédicat vérifié pour tout $e \in D_e$. 
-  On parle de **PRÉCONDITION**.
-- $\psi(e, s)$ un prédicat vérifiant si la sortie $s$ produit par l'algorithme est correcte pour l'entrée $e$. On parle de **POSTCONDITION**.
+  <br/>On parle de **PRÉCONDITION**.
+- $\psi(e, s)$ un prédicat vérifiant si la sortie $s$ produit par l'algorithme est correcte pour l'entrée $e$. <br/>On parle de **POSTCONDITION**.
 
 On dit que l'algorithme $\mathcal{A}$ est correct si :
 1) Il se termine (finitude)
@@ -631,35 +650,45 @@ Par définition un entier $x$ est une puissance de $2$ si :
 	Il est positif strict
 	Il peut être divisé plusieurs fois par $2$ jusqu'à obtenir $1$ sans jamais devenir impair lors des divisions successives.
 >Pour $x=8$ alors on a :
+>
 >$$8 \to 4 \to 2 \to 1$$
-On s'arrête car on a attend $1$, $x=8$ est donc une puissance de $2$.
+>
+>On s'arrête car on a attend $1$, $x=8$ est donc une puissance de $2$.
 >Pour $x=12$ on a :
+>
 >$$12 \to 6 \to 3$$
+>
 >On s'arrête car $3$ est impair, ainsi $12$ n'est pas une puissance de $2$.
 
 *Preuve de la correction*
 - **Précondition :**
-  L'entier en paramètre doit être strictement positif, on note $$\phi(x) = x \in \mathbb{N}^*$$
+  L'entier en paramètre doit être strictement positif, on note 
+  
+  $$\phi(x) = x \in \mathbb{N}^*$$
+  
 - **Postcondition :**
   L'algorithme retourne `VRAI` si <u>et seulement si</u> $x$ est une puissance de $2$.
-  On note $$\psi(x, pair) : pair = (\exists k \in \mathbb{N} \mid x=2^k)$$
+  On note 
+  
+  $$\psi(x, pair) : pair = (\exists k \in \mathbb{N} \mid x=2^k)$$
+
 *Correction partielle*
 - **Initialisation**
-  Au départ `pair=VRAI` et `m=x`
+  <br/>Au départ `pair=VRAI` et `m=x`
 - **Invariant de boucle**
-  À chaque itération de la boucle `TANT QUE`, si `pair` reste `VRAI`, alors tous les `m` précédant sont pairs, ce qui est nécessaire pour qu'un nombre soit une puissance de $2$.
+  <br/>À chaque itération de la boucle `TANT QUE`, si `pair` reste `VRAI`, alors tous les `m` précédant sont pairs, ce qui est nécessaire pour qu'un nombre soit une puissance de $2$.
 - **Terminaison**
-  La boucle `TANT QUE` se termine lorsque `m=1` ou lorsque `pair` devient `Faux` (une division par $2$) produit un nombre impaire. 
-  On note `V=m` le variant car il décroit à chaque tour de boucle d'au moins $1$, alors il y aura forcément un moment ou soit `m=1` ou `m<1` dans ce cas la boucle s'arrête et l'algorithme renvoi la valeur de `pair`.
+  <br/>La boucle `TANT QUE` se termine lorsque `m=1` ou lorsque `pair` devient `Faux` (une division par $2$) produit un nombre impaire. 
+  <br/>On note `V=m` le variant car il décroit à chaque tour de boucle d'au moins $1$, alors il y aura forcément un moment ou soit `m=1` ou `m<1` dans ce cas la boucle s'arrête et l'algorithme renvoi la valeur de `pair`.
 - **Conclusion**
-  Si l'algorithme se termine avec `pair=VRAI` alors `x` sera forcément une puissance de $2$.
+  <br/>Si l'algorithme se termine avec `pair=VRAI` alors `x` sera forcément une puissance de $2$.
 
 *Correction totale*
 - La variable `m` est divisée par `2` à chaque itération, donc elle décroit strictement et atteindra forcément $1$ ou une valeur inférieure à $1$, assurant la fin de la boucle `TANT QUE`.
 
 *Cherchons la formule de l'invariant*
 >[!cite] Définition
->On appelle ==**invariant**== une propriété qui reste vraie tout le long de l'exécution d'une boucle ou d'un programme,  à chaque itération.
+>On appelle **==invariant==** une propriété qui reste vraie tout le long de l'exécution d'une boucle ou d'un programme,  à chaque itération.
 
 Reprenons la boucle `TANT QUE` 
 ```
@@ -679,30 +708,40 @@ Alors on a :
 Ainsi on a :
 - $x=2^k$ avec $k \in \mathbb{N}$ si c'est une puissance de $x$
 On obtient alors l'invariant suivant :
+
 $$I = m \times 2^k + reste\times2^{k-1}$$
+
 Essayons de montrer ce dernier par récurrence.
 - **Initialisation** *au début de l'algorithme*
   On a `m=x`, `k=0` et `reste=0`
-  Donc : $$I = m \times 2^0+reste\times2^{-1}=x \times 1 + 0 \times 0.5 = x$$
+  Donc : 
+  $$I = m \times 2^0+reste\times2^{-1}=x \times 1 + 0 \times 0.5 = x$$
+  
   L'invariant $I$ déterminé est vrai pour l'initialisation.
 - **Récurrence**
   On suppose que $I$ est vrai pour $k \in \mathbb{N}$ itérations, montrons que cela se maintient pour $k+1$ itérations.
   On a :
+  
 $$
 \begin{align*}
  I &= m_{k+1} \times 2^{k+1}+reste_{k+1} \times 2^{k-1+1} \\
  &= m_{k+1} \times 2^{k+1}+reste_{k+1} \times 2^{k}
 \end{align*}
 $$
+
 Au rang $k$, je sais que $I=m_k \times 2^k+reste_k \times 2^{k-1}$, alors lorsque l'on divise $m_k$ pour l'itération suivante, on obtient :
+
 $$m_k = 2 \times m_{k+1}+reste_{k+1}$$
+
 d'où on se retrouve avec :
+
 $$
 \begin{align*}
  I &=(2 \times m_{k+1}+reste_{k+1}) \times 2^{k}+reste_{k} \times 2^{k-1} \\
  &= \underbrace{m_{k+1} \times2^{k+1}}_{\text{partie entière quotient itération k+1}}+\underbrace{\underbrace{reste_{k+1} \times2^k}_{\text{reste division itération k+1}}+\underbrace{reste_k \times2^{k-1}}_{\text{reste division à l'itération k}}}_{\text{reste des divisions par 2 de toutes les itérations confondues}}
 \end{align*}
 $$
+
 Ainsi au terme $k+1$ on retrouve le quotient et le reste de la division de l'itération ainsi que le reste de la division précédente. La structure de l'invariant est globalement respectée à chaque itération.
 
 <u>Exemple supplémentaire :</u>
@@ -725,17 +764,17 @@ Algorithme maximum
 FIN maximum
 ```
 On peut noter `T = [t1, t2, ..., tn]` le tableau.
-Dans l'objectif de prouver la correction de l'algorithme, il faut trouver un invariant de boucle.
+<br/>Dans l'objectif de prouver la correction de l'algorithme, il faut trouver un invariant de boucle.
 
 >[!tip] Rappel
 >Un invariant $I$ de boucle $B$ représente une propriété qui est vrai **avant**, **pendant** (chaque itération) et **après** (sortie) uen boucle.
 
 Soit $i$ un entier strictement positif, on note $\phi(i)$ la propriété "`max = maximum([t1, t2, ..., ti])`".  En gros, $i$ représente la taille de l'entrée, le nombre d'éléments du tableau.
 - **Initialisation :**
-  Pour $i=1$, alors le tableau `T` ne contiendra qu'un seul élément.
+  <br/>Pour $i=1$, alors le tableau `T` ne contiendra qu'un seul élément.
   Si on exécute l'algorithme, **avant de rentrer dans la boucle**, le minimum est le premier élément du tableau `T[1]`, ainsi la propriété est vraie **AVANT LA BOUCLE**.
 - **Hérédité :**
-  Supposons que $\phi$ soit vraie au début de l'itération $i$,, c'est à dire que `max = maximum([t1, ..., ti])`, montrons que me résultat sera conservé après itération de la boucle. On cherche à montrer que : `max = maximum([t1, ..., ti, ti+1])`.
+  <br/>Supposons que $\phi$ soit vraie au début de l'itération $i$,, c'est à dire que `max = maximum([t1, ..., ti])`, montrons que me résultat sera conservé après itération de la boucle. On cherche à montrer que : `max = maximum([t1, ..., ti, ti+1])`.
   On a à l'itération $i$, `max = maximum([t1, ..., ti])`
   ```
 	SI T[i]>max
@@ -744,9 +783,9 @@ Soit $i$ un entier strictement positif, on note $\phi(i)$ la propriété "`max =
 	```
 	- Si `T[i+1] <= max` alors sa valeur ne change pas selon la condition `IF` de l'algorithme
 	- Si `T[i]>max` alors la valeur du maximum prend comme nouvelle valeur `T[i]` qui est donc la plus grande valeur du tableau
-	Ainsi, dans les deux cas présentés ici, la valeur du maximum du tableau est conservée, $\phi$ reste vraie à chaque itération.
+	<br/>Ainsi, dans les deux cas présentés ici, la valeur du maximum du tableau est conservée, $\phi$ reste vraie à chaque itération.
 - **Conclusion :**
-  L'invariant reste vrai après la dernière itération de la boucle, d'indice `i`. 
+  <br/>L'invariant reste vrai après la dernière itération de la boucle, d'indice `i`. 
   On peut noter alors que le résultat de l'itération `i-1` et `i` restent les mêmes pour un tableau de `i` éléments :
 ```
 max = maximum([t1, ..., ti-1]) = max = maximum([t1, ..., ti)
@@ -762,6 +801,3 @@ En somme :
 >- Prouver que l'algorithme est fini
 >	- En utilisant un variant $V$
 >- Déterminer un invariant $I$ et démontrer par récurrence que ce dernier est vrai avant la boucle, pendant chaque itération, et à la sortie de la boucle.
-
-## Les algorithmes de tris
-### Tri par sélection / permutation
