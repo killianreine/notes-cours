@@ -142,3 +142,27 @@ $$
 &= \begin{pmatrix} 0 & 0 & 0 \\ 0& 0 & 0 \\ 0 & 0 & 0\end{pmatrix}
 \end{align*}
 $$
+
+**Question 2**
+<br/> Développons $P=(X-2)^3$
+<br/>On va utiliser la formule du binôme de Newton donnée par :
+
+$$
+(a+b)^n = \underset{k=0}{\overset{n}{\sum}}\binom{n}{k}a^kb^{n-k}
+$$
+
+Dans l'exercice,
+- $a=X$
+- $b=-2$
+
+Ainsi :
+
+$$
+\begin{align*}
+(X-2)^3 &= \underset{k=0}{\overset{3}{\sum}}\binom{3}{k}X^k(-2)^{3-k} \\
+&= \binom{3}{0}X^0(-2)^3+\binom{3}{1}X^1(-2)^2+\binom{3}{2}X^2(-2)^1+\binom{3}{3}X^3(-2)^0 \\
+&= 1\times1 \times-8+3 \times X \times 4+3\times X^2 \times-2+1 \times X^3 \times 1 \\
+&= -8+12X-6X^2+X^3 \\
+&= X^3-6X^2+12X-8
+\end{align*}
+$$
