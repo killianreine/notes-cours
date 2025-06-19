@@ -109,3 +109,21 @@ $$Ainsi :
 $$
 2I_3 = 2\times\begin{pmatrix} 1&0&0 \\ 0&1&0 \\ 0&0&1\end{pmatrix}=\begin{pmatrix} 2&0&0 \\ 0&2&0 \\ 0&0&2\end{pmatrix}
 $$
+Et on peut alors calculer $A-2I_3$,
+
+$$
+\begin{align*}
+A-2I_3 = \begin{pmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0\end{pmatrix} - \begin{pmatrix} 2&0&0 \\ 0&2&0 \\ 0&0&2\end{pmatrix} = \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix}
+\end{align*}
+$$
+
+Calculons $(A-2I_3)^2$.
+
+$$
+\begin{align*}
+(A-2I_3)^2&=\begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix} \times \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix}
+\\& =\begin{pmatrix} 1 \times 1+0 \times 1+1 \times -1 & 1 \times 0 +0 \times1+1\times1 & 1 \times 1+0 \times-2+1\times-2 \\ -1 \times 1+1\times -1+-2\times-1 & -1 \times0+1\times1+-2\times1 & -1 \times 1+1\times-2+-2\times-2 \\ -1 \times 1+1\times -1+-2\times-1 & -1 \times0+1\times1+-2\times1 & -1 \times 1+1\times-2+-2\times-2
+\end{pmatrix} \\
+&= \begin{pmatrix}0 & 1 &-1 \\ 0 & -1 &1 \\ 0 &-1 &1\end{pmatrix}
+\end{align*}
+$$
