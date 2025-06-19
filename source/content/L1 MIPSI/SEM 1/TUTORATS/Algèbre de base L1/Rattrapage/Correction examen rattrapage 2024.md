@@ -98,6 +98,7 @@ On considère une matrice $A$ tel que :
 $$
 A = \begin{pmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0\end{pmatrix}
 $$
+
 **Question 1**
 <br/>Calculons $A-2I_3$.
 <br/> $I_3$ représente la matrice identité de taille $3 \times 3$ tel que : 
@@ -105,6 +106,7 @@ $$
 $$
 I_3 = \begin{pmatrix} 1&0&0 \\ 0&1&0 \\ 0&0&1\end{pmatrix}
 $$
+
 Ainsi : 
 
 $$
@@ -129,3 +131,5 @@ $$
 &= \begin{pmatrix}0 & 1 &-1 \\ 0 & -1 &1 \\ 0 &-1 &1\end{pmatrix}
 \end{align*}
 $$
+
+Calculons $(A-2I_3)^3$.
