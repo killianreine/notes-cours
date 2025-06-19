@@ -340,3 +340,58 @@ Alors on a :
 - $-6 \times 0-3 \times 0 + 4 \times 0 = 0$
 
 Ainsi on a bien $0_{\mathbb{R}^3} \in Ker(f)$. (a)
+
+Soit $x, y \in Ker(f)$ et $\lambda \in \mathbb{R}$ alors :
+<br/> On pose $z = \lambda x + y$.
+<br/> D'où :
+
+$$
+z =\begin{pmatrix} z_1 \\  z_2 \\  z_3\end{pmatrix}= \begin{pmatrix} \lambda x_1+y_1 \\ \lambda x_2+y_2 \\ \lambda x_3+y_3\end{pmatrix}
+$$
+
+Vérifions que pour chaque condition $\lambda x + y = 0$ pour respecter $Ker(f)$.
+<br/>On a : 
+
+$$
+\begin{align*}
+-z_1-z_2+z_3 &= -(\lambda x_1+y_1)-(\lambda x_2+y_2)+\lambda x_3+y_3 \\
+&= -\lambda x_1-y_1-\lambda x_2-y_2+\lambda x_3+y_3 \\
+&= \lambda(-x_1-x_2+x_3)-y_1-y_2+y_3 \\
+&= \lambda 0+0 \\
+&=0
+\end{align*}
+$$
+
+Car $x, y \in Ker(f)$.
+
+$$
+\begin{align*}
+-4z_1-z_2+2z_3 &= -4(\lambda x_1+y_1)-(\lambda x_2+y_2)+2(\lambda x_3+y_3) \\
+&= -4\lambda x_1-4y_1-\lambda x_2-y_2+2\lambda x_3+2y_3 \\
+&= \lambda(-4x_1-x_2+2x_3)-4y_1-y_2+2y_3 \\
+&= \lambda 0+0 \\
+&=0
+\end{align*}
+$$
+
+Car $x, y \in Ker(f)$.
+
+$$
+\begin{align*}
+-6z_1-3z_2+4z_3 &= -6(\lambda x_1+y_1)-3(\lambda x_2+y_2)+4(\lambda x_3+y_3) \\
+&= -\lambda 6x_1-6y_1-3\lambda x_2-3y_2+4\lambda x_3+4y_3 \\
+&= \lambda(-6x_1-3x_2+4x_3)-6y_1-3y_2+4y_3 \\
+&= \lambda 0+0 \\
+&=0
+\end{align*}
+$$
+
+Car $x,y \in Ker(f)$.
+
+En somme, $\lambda x + y \in Ker(f)$ (b).
+<br/>D'après (a) et (b), $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R}^3$.
+
+**Question 3**
+On chercher à déterminer une base de $Ker(f)$.
+<br/> Pour se faire, il faut déterminer la notation tel que $Ker(f)=Vect(u_1, \ldots, u_k)$ avec $k \in \mathbb{N}^*$.
+
