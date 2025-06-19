@@ -392,7 +392,7 @@ element {
 ```
 
 >[!cite] Définition
->- Un ==**propriété**== est un élément de style paramétrable
+>- Une ==**propriété**== est un élément de style paramétrable
 >  `color`, `background-color`, `font-size`, ...
 >- Une **==valeur==** est un ensemble de possibilité prédéfini pour une propriété.
 
