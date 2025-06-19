@@ -2,7 +2,7 @@
 ## C'est quoi un algorithme ?
 
 >[!cite] Définition
->On appelle ==**algorithme**== une suite finie d'instructions précises et ordonnées qui permettent de résoudre un problème, d'accomplir une tâche.
+>On appelle ==algorithme== une suite finie d'instructions précises et ordonnées qui permettent de résoudre un problème, d'accomplir une tâche.
 >*Les algorithme sont une base de la programmation informatique et sont utilisés pour automatiser des processus complexes.*
 
 <u>Caractéristiques d'un algorithme</u>

@@ -25,17 +25,14 @@
             "id": "2d8837e6263008e3",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
-                "viewState": {
-                  "x": -815.5,
-                  "y": -5.5,
-                  "zoom": -1.9657901882614288
-                }
+                "file": "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "OIL R carteFinale"
+              "icon": "lucide-file",
+              "title": "Révisions EXAM"
             }
           }
         ],
@@ -189,6 +186,7 @@
   },
   "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
     "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
     "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).md",
@@ -225,7 +223,6 @@
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Révisions PARTIEL.pdf",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Pasted image 20250526122647.png",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Correction exam 2024.md",
-    "L2 INFORMATIQUE/SEM 4/Programmation Web/Correction EXAM 2èCH 2024.md",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.pdf",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320223312.png",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320223309.png",
@@ -234,7 +231,6 @@
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction de l'examen 2024.pdf",
     "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.pdf",
     "L1 MIPSI/SEM 2/INFO DOCS/Pasted image 20250329160620.png",
-    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).pdf",
-    "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas"
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).pdf"
   ]
 }
