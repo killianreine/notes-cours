@@ -254,15 +254,23 @@ Fin Fonction
 ```
 
 Ainsi, la complexité du tri à bulle est la suivante :
+
 $$
 C(n) = \underset{i=1}{\overset{N-1}{\sum}}(N-i+1) \times k=\left(\underset{i=1}{\overset{N-1}{\sum}}N-\underset{i=1}{\overset{N-1}{\sum}}i+\underset{i=1}{\overset{N-1}{\sum}}1 \right)\times k
 $$
+
 On décompose les sommes pour que ce soit plus simple :
+
 $$\underset{i=1}{\overset{N-1}{\sum}}N = N \times \underset{i=1}{\overset{N-1}{\sum}}1 = N(N-1)=\mathcal{O}(N)$$
+
 $$\underset{i=1}{\overset{N-1}{\sum}}i=\frac{N(N-1)}{2}=\mathcal{O}(N^2) \quad \text{ a savoir !}$$
+
 $$\underset{i=1}{\overset{N-1}{\sum}}1=N-1=\mathcal{O}(N)$$
+
 Ainsi on se retrouve avec :
+
 $$C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)$$
+
 ### Propriétés des sommes
 
 >[!example] Propriétés sur les sommes
@@ -273,8 +281,7 @@ $$C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)$$
 >$$\underset{i=1}{\overset{N}{\sum}}ik = k \times \underset{i=1}{\overset{N}{\sum}}i=k \times \frac{N(N+1)}{2}=\mathcal{O}(N^2)$$
 
 >[!example] Propriétés sur les sommes
->$$
-\begin{align*}
+>$$\begin{align*}
 \underset{i=1}{\overset{N-1}{\sum}}(N-i)k  &=k \times \underset{i=1}{\overset{N-1}{\sum}}(N-i) \\ &=k \times \left( \underset{i=1}{\overset{N-1}{\sum}}N-\underset{i=1}{\overset{N-1}{\sum}}i\right) \\
 &= k \times \left( N\underset{i=1}{\overset{N-1}{\sum}}1-\frac{N(N-1)}{2} \right) \\
 &= k \times \left( N(N-1)-\frac{N(N-1)}{2} \right) \\
@@ -285,8 +292,7 @@ $$C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)$$
 \end{align*}$$
 
 > [!example] Propriété sur les sommes
-> $$
-\begin{align*}
+> $$\begin{align*}
 \underset{i=1}{\overset{N}{\sum}}\underset{i=1}{\overset{N}{\sum}}k  &= \underset{i=1}{\overset{N}{\sum}}1 \times\underset{i=1}{\overset{N}{\sum}}1\times k \\
 &= N \times N \times k
 \\ &= \mathcal{O}(N^2+k) = \mathcal{O}(N^2)
