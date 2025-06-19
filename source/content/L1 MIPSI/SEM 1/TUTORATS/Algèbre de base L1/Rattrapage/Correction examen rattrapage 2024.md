@@ -1,4 +1,21 @@
 # Examen - Rattrapage 2025
+
+>[!info] Information concernant la notation
+>- Exercice 1 (4 points)
+>- Exercice 2 (4 points)
+>	- Question 1 : 1.5 points
+>	- Question 2 : 1 point
+>	- Question 3 : 1.5 points
+>- Exercice 3 (8 points)
+>	- Question 1 : 1 point
+>	- Question 2 : 1.5 points
+>	- Question 3 : 1.5 points
+>	- Question 4 : 1 point
+>	- Question 5 : 1 point
+>	- Question 6 : 2 points
+>- Exercice 4 (4 points)
+>	- Question 1 : 3 points
+>	- Question 2 : 1 point
 ## Exercice 1
 On cherche à résoudre l'équation de degré 2 suivante :
 
@@ -267,3 +284,4 @@ A^{-1} = \frac{1}{8} \left( A^2 - 6A + 12 I_3 \right)
 }
 $$
 
+## Exercice 3
