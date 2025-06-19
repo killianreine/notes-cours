@@ -286,7 +286,7 @@ $$
 
 ## Exercice 3
 **Question 1**
-On veut montrer que l'application $f$ est linéaire.
+<br/>On veut montrer que l'application $f$ est linéaire.
 
 $$
 f(x) = (-x_1-x_2+x_3, -4x_1-x_2+2x_3, -6x_1-3x_2+4x_3) \quad \forall x \in \mathbb{R}^3
@@ -316,7 +316,7 @@ $$
 Ainsi $f$ est bien une application linéaire. Donc $f \in \mathcal{L}(\mathbb{R}^3)$ .
 
 **Question 2**
-Le noyau de $f$ est donné par : 
+<br/>Le noyau de $f$ est donné par : 
 
 $$
 Ker(f) = \{ x \in \mathbb{R}^3 \mid -x_1-x_2+x_3=0, -4x_1-x_2+2x_3=0, -6x_1-3x_2+4x_3=0 \}
@@ -392,7 +392,7 @@ En somme, $\lambda x + y \in Ker(f)$ (b).
 <br/>D'après (a) et (b), $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R}^3$.
 
 **Question 3**
-On chercher à déterminer une base de $Ker(f)$.
+<br/>On chercher à déterminer une base de $Ker(f)$.
 <br/> Pour se faire, il faut déterminer la notation tel que $Ker(f)=Vect(u_1, \ldots, u_k)$ avec $k \in \mathbb{N}^*$.
 
 Pour déterminer la notation $Ker(f)=Vect(u_1, \ldots, u_k)$ il va falloir :
@@ -471,7 +471,7 @@ $$
 $$
 
 **Question 5**
-On cherche à monter que $\mathcal{B}$ est une base de $\mathbb{R}^3$.
+<br/>On cherche à monter que $\mathcal{B}$ est une base de $\mathbb{R}^3$.
 <br/> Il faut montrer que la famille engendrée par la base est libre.
 
 Montrons que tous les lambdas sont nuls avec la somme des $\lambda_iu_i$. 
@@ -515,3 +515,10 @@ Puisque $\lambda_2=0$ alors $\lambda_3=\lambda_2=0$ et $\lambda_1=-\lambda_3=-0=
 <br/>On a donc bien $\lambda_1=\lambda_2=\lambda_3=0$, ainsi $\mathcal{B}$ est bien une base de $\mathbb{R}^3$.
 
 **Question 6**
+<br/>Pour donner la matrice de $f$ dans la base $\mathcal{B}$ en utilisant le théorème de changement de base. La formule est donnée par : 
+
+$$
+M_{\mathcal{B}}(f) =P^{-1}M_{\mathcal{E}}(f)P
+$$
+
+Où $P$ représente la matrice de passage et $P^{-1}$ son inverse.
