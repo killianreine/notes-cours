@@ -233,7 +233,10 @@ En regardant les boucles de plus près :
 	Puisque `i` démarre à `0`, alors on ajoute obligatoirement un tour de boucle supplémentaires quelque soit `N`
 	Ainsi, on bouclera `N-i+1` fois pour toutes les possibilités de `N`
 Ainsi, le nombre d'opérations élémentaires de la boucle interne est donnée par :
-$$S_n = \underset{i=1}{\overset{N-i}{\sum}}(N-i+1) \times k$$
+
+$$
+S_n = \underset{i=1}{\overset{N-i}{\sum}}(N-i+1) \times k
+$$
 - $k$ constante, le nombre d'`OE`
 - La somme $S_n$ regroupe toutes les comparaisons effectuées pendant l'exécution de l'algorithme
 En gros le nombre d'opérations de la boucle interne c'est la somme du nombre d'itérations de cette dernière en fonction de `i` multiplié par le nombre d'`OE`.
@@ -291,10 +294,16 @@ $$
 
 >[!example] Propriétés sur les sommes
 >*à retenir sur les sommes, connu depuis algèbre de base... en ajoutant les aspects drôles de l'algorithmique et des complexités*
->$$\underset{i=1}{\overset{N}{\sum}}k=k \times N = \mathcal{O}(N)$$
+>
+>$$
+>\underset{i=1}{\overset{N}{\sum}}k=k \times N = \mathcal{O}(N)
+>$$
 
 >[!example] Propriétés sur les sommes
->$$\underset{i=1}{\overset{N}{\sum}}ik = k \times \underset{i=1}{\overset{N}{\sum}}i=k \times \frac{N(N+1)}{2}=\mathcal{O}(N^2)$$
+>
+>$$
+>\underset{i=1}{\overset{N}{\sum}}ik = k \times \underset{i=1}{\overset{N}{\sum}}i=k \times \frac{N(N+1)}{2}=\mathcal{O}(N^2)
+>$$
 
 > [!example] Propriétés sur les sommes  
 > $$  
@@ -341,7 +350,10 @@ faire
 >On note `Cste` une constante.
 
 Alors, le code suivant possède une complexité **au pire**. Il faut alors trouver $k_{max}$, le nombre d'opérations élémentaires maximum.
-$$C_{pire} = \Theta(k_{max})$$
+
+$$
+C_{pire} = \Theta(k_{max})
+$$
 
 ## Algorithme récursif
 
@@ -352,7 +364,7 @@ $$C_{pire} = \Theta(k_{max})$$
 >- Une **condition d'arrêt**, en gros c'est le moment ou l'algorithme arrête de s'appeler lui-même (sinon récursion infinie)
 >- **Appel récursif**
 
-*Pour mieux comprendre la notion de récursivité prenons un exemple concrêt*
+*Pour mieux comprendre la notion de récursivité prenons un exemple concret*
 ### Recherche dichotomique
 
 L'algorithme de **recherche dichotomique** *(ou recherche binaire)* est un algorithme efficace permettant de rechercher un élément dans un <u>tableau trié</u>. Il repose sur le principe des méthodes "diviser pour régner" en réduisant l'espace de recherche de moitié à chaque étape.
@@ -404,7 +416,9 @@ pour déterminer la complexité on compte le nombre `d'OE` (hors appels récursi
   L'élément est sois le tout premier élément soit le tout dernier alors la méthode vas se faire sur des parties de tableau divisées de moitié à chaque appel récursif jusqu'à ce qu'il ne reste qu'un élément à comparer.
   Autrement dit le nombre d'opérations va être : 
   
-  $$ N  \to \frac{N}{2} \to \frac{N}{4} \to \frac{N}{8} \to \ldots \to 1 \Longleftrightarrow log(N)$$
+  $$ 
+	N  \to \frac{N}{2} \to \frac{N}{4} \to \frac{N}{8} \to \ldots \to 1 \Longleftrightarrow log(N)
+	$$
  
   Ainsi dans le pire des cas la complexité de la recherche dichotomique est donnée par $\Theta(log(N))$.
 
@@ -416,7 +430,9 @@ Taille des données par appel récursif : $N$ puis $N-1$ puis $N-2$, ... respect
 
 Alors la **complexité au pire**, lorsque l'on fait tous les appels de $1$ à $N$ est donnée par : 
 
-$$C=\underset{i=1}{\overset{N}{\sum}}k \times T_i=k \times \underset{i=1}{\overset{N}{\sum}}T_i=k\times \frac{N(N+1)}{2}=\Theta(N^2)$$
+$$
+C=\underset{i=1}{\overset{N}{\sum}}k \times T_i=k \times \underset{i=1}{\overset{N}{\sum}}T_i=k\times \frac{N(N+1)}{2}=\Theta(N^2)
+$$
 
 On peut aussi avoir le cas où il y a 2 appels un appel sur une taille `Ti` qui à l'intérieur contient deux appels `T{i+1}` et `T{i+1}'`.
 
@@ -424,7 +440,9 @@ On peut aussi avoir le cas où il y a 2 appels un appel sur une taille `Ti` qui 
 
 La suite de Fibonacci est définie par :
 
-$$u_0=u_1=1 \quad\quad\quad \forall n \geq 2, \quad u_n=u_{n-1}+u_{n-2}$$
+$$
+u_0=u_1=1 \quad\quad\quad \forall n \geq 2, \quad u_n=u_{n-1}+u_{n-2}
+$$
 
 Ainsi on obtient l'algorithme récursif suivant :
 ```
@@ -454,11 +472,15 @@ On peut déduire que le nombre d'appels est exponentiel lorsque `N` devient gran
 
 En général : 
 
-$$T_{i+1} \quad et \quad T_{i+1}' \sim \frac{T_i}{2}$$
+$$
+T_{i+1} \quad et \quad T_{i+1}' \sim \frac{T_i}{2}
+$$
 
 Si on coupe l'ensemble des données en $a$ parties de taille $\frac{n}{b}$ alors :
 
-$$C(n) = a \times C\left( \frac{n}{b}\right)+f(n)$$
+$$
+C(n) = a \times C\left( \frac{n}{b}\right)+f(n)
+$$
 
 où $f(n)$ représente le nombre d'`OE` à l'intérieur de l'appel.
 - Au départ : `N=n`
@@ -466,7 +488,9 @@ où $f(n)$ représente le nombre d'`OE` à l'intérieur de l'appel.
 
 >[!warning] Attention
 >Les formules suivantes s'appliquent uniquement aux algorithmes où la relation de récurrence est de la forme : 
->$$C(n) = a \times C\left( \frac{n}{b}\right)+f(n)$$
+>$$
+C(n) = a \times C\left( \frac{n}{b}\right)+f(n)
+>$$
 >
 >où :
 >- $a$ représente le nombre de sous-problèmes
