@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Rattrapage/Correction examen rattrapage 2024.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Correction examen rattrapage 2024"
+              "title": "index"
             }
           }
         ],
@@ -200,9 +200,9 @@
   },
   "active": "cc526deefad17509",
   "lastOpenFiles": [
+    "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Rattrapage/Correction examen rattrapage 2024.md",
     "Pasted image 20250619195900.png",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
-    "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Rattrapage/Correction examen rattrapage 2024.md",
     "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Rattrapage",
     "Anciens supports",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
@@ -245,7 +245,6 @@
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320223309.png",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320212616.png",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/ExamAP4_2024.pdf",
-    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction de l'examen 2024.pdf",
-    "L1 MIPSI/SEM 2/INFO DOCS/Pasted image 20250329160620.png"
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction de l'examen 2024.pdf"
   ]
 }
