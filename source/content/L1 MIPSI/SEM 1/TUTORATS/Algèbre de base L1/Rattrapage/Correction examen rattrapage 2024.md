@@ -117,7 +117,7 @@ Et on peut alors calculer $A-2I_3$,
 
 $$
 \begin{align*}
-A-2I_3 = \begin{pmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0\end{pmatrix} - \begin{pmatrix} 2&0&0 \\ 0&2&0 \\ 0&0&2\end{pmatrix} = \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix}
+A-2I_3 = \begin{pmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0\end{pmatrix} - \begin{pmatrix} 2&0&0 \\ 0&2&0 \\ 0&0&2\end{pmatrix} = \boxed{\begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix}}
 \end{align*}
 $$
 
@@ -128,7 +128,7 @@ $$
 (A-2I_3)^2&=\begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix} \times \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix}
 \\& =\begin{pmatrix} 1 \times 1+0 \times 1+1 \times -1 & 1 \times 0 +0 \times1+1\times1 & 1 \times 1+0 \times-2+1\times-2 \\ -1 \times 1+1\times -1+-2\times-1 & -1 \times0+1\times1+-2\times1 & -1 \times 1+1\times-2+-2\times-2 \\ -1 \times 1+1\times -1+-2\times-1 & -1 \times0+1\times1+-2\times1 & -1 \times 1+1\times-2+-2\times-2
 \end{pmatrix} \\
-&= \begin{pmatrix}0 & 1 &-1 \\ 0 & -1 &1 \\ 0 &-1 &1\end{pmatrix}
+&= \boxed{\begin{pmatrix}0 & 1 &-1 \\ 0 & -1 &1 \\ 0 &-1 &1\end{pmatrix}}
 \end{align*}
 $$
 
@@ -139,7 +139,7 @@ $$
 (A-2I_3)^3&=(A-2I_3)^2\times(A-2I_3) \\
 &= \begin{pmatrix}0 & 1 &-1 \\ 0 & -1 &1 \\ 0 &-1 &1\end{pmatrix} \times \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix} \\
 &= \begin{pmatrix} 0 \times 1 +1\times-1+-1\times -1 & 0 \times 0+1 \times 1+-1 \times 1 &0\times1+1\times-2+-1\times-2 \\ 0 \times 1 +-1\times-1+1\times-1 & 0\times 0+-1\times1+1\times1 & 0 \times1+-1\times-2+1\times-2 \\ 0 \times 1 +-1\times-1+1\times-1 & 0\times 0+-1\times1+1\times1 & 0 \times1+-1\times-2+1\times-2 \end{pmatrix} \\
-&= \begin{pmatrix} 0 & 0 & 0 \\ 0& 0 & 0 \\ 0 & 0 & 0\end{pmatrix}
+&= \boxed{\begin{pmatrix} 0 & 0 & 0 \\ 0& 0 & 0 \\ 0 & 0 & 0\end{pmatrix}}
 \end{align*}
 $$
 
@@ -163,7 +163,7 @@ $$
 &= \binom{3}{0}X^0(-2)^3+\binom{3}{1}X^1(-2)^2+\binom{3}{2}X^2(-2)^1+\binom{3}{3}X^3(-2)^0 \\
 &= 1\times1 \times-8+3 \times X \times 4+3\times X^2 \times-2+1 \times X^3 \times 1 \\
 &= -8+12X-6X^2+X^3 \\
-&= X^3-6X^2+12X-8
+&= \boxed{X^3-6X^2+12X-8}
 \end{align*}
 $$
 
@@ -195,10 +195,75 @@ det(A)&=\begin{vmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0 \end{vmatrix} \\
 &= (-1)^{1+1}\times3\times(3 \times 0 -(-2)\times1)+(-1)^{1+3}\times1\times(-1\times1-3\times-1)\\
 &= 1 \times 3 \times -2 + 1\times1\times4 \\
 &= -6+4 \\
-&= -2
+&= \boxed{-2}
 \end{align*}
 $$
 
 Puisque $det(A) \neq 0$ alors $A$ est inversible.
 
 Déterminons une expression de $A^{-1}$.
+<br/> À la question précédente, on a calculé $P(X)=(X-2)^3$. L'évaluation de $P$ par $A$ c'est à dire $P(A)$ est donnée par : 
+
+$$
+P(A) = (A-2I_3)^3=A^3-6A^2+12A-8I_3
+$$
+
+En fait en terme matriciel :
+- $X$ devient la matrice $A$
+- une constante devient $I_3$ par exemple $-2 \rightarrow -2I_3$. 
+
+Et à la question 1, on a vu que : 
+
+$$
+(A-2I_3)^3=0
+$$
+Ainsi :
+
+$$
+\begin{align*}
+P(A) &= (A-2I_3)^3 &=0
+\\ &= A^3-6A^2+12A-8I_ 3 &=0
+\end{align*}
+$$
+
+On obtient l'équation suivante : 
+
+$$
+A^3-6A^2+12A-8I_ 3 =0
+$$
+On peut isoler $I_3$ puisque par définition c'est une matrice inversible, alors on obtient :
+
+$$
+\begin{align*}
+A^3-6A^2+12A-8I_ 3 &=0 \\
+A^3-6A^2+12A &= 8I_3
+\end{align*}
+$$
+
+On peut factoriser le terme de gauche par $A$. 
+
+$$
+\begin{align*}
+A^3-6A^2+12A &= 8I_3 \\
+A(A^2-6A+12I_3) &= 8I_ 3
+\end{align*}
+$$
+
+On peut isoler isoler $A$ à droite puisque c'est une matrice inversible, on obtient alors :
+
+$$
+\begin{align*}
+A(A^2-6A+12I_3) &= 8I_ 3 \\
+(A^2-6A+12I_3) &= 8I_ 3 \times A^{-1} \\
+A^2-6A+12I_3=8A^{-1}
+\end{align*}
+$$
+
+Ainsi on obtient alors : 
+
+$$
+\boxed{
+A^{-1} = \frac{1}{8} \left( A^2 - 6A + 12 I_3 \right)
+}
+$$
+
