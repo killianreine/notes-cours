@@ -384,7 +384,7 @@ pour déterminer la complexité on compte le nombre `d'OE` (hors appels récursi
 - **Dans le pire des cas**
   L'élément est sois le tout premier élément soit le tout dernier alors la méthode vas se faire sur des parties de tableau divisées de moitié à chaque appel récursif jusqu'à ce qu'il ne reste qu'un élément à comparer.
   Autrement dit le nombre d'opérations va être : 
-- 
+  
   $$ N  \to \frac{N}{2} \to \frac{N}{4} \to \frac{N}{8} \to \ldots \to 1 \Longleftrightarrow log(N)$$
  
   Ainsi dans le pire des cas la complexité de la recherche dichotomique est donnée par $\Theta(log(N))$.
@@ -435,7 +435,7 @@ On peut déduire que le nombre d'appels est exponentiel lorsque `N` devient gran
 
 En général : 
 
-$$T_{i+1} \quad et T_{i+1}' \sim \frac{T_i}{2}$$
+$$T_{i+1} \quad et \quad T_{i+1}' \sim \frac{T_i}{2}$$
 
 Si on coupe l'ensemble des données en $a$ parties de taille $\frac{n}{b}$ alors :
 
