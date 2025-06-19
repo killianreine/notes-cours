@@ -721,7 +721,9 @@ Essayons de montrer ce dernier par récurrence.
 - **Initialisation** *au début de l'algorithme*
   On a `m=x`, `k=0` et `reste=0`
   Donc : 
+  
   $$I = m \times 2^0+reste\times2^{-1}=x \times 1 + 0 \times 0.5 = x$$
+  
   
   L'invariant $I$ déterminé est vrai pour l'initialisation.
 - **Récurrence**
