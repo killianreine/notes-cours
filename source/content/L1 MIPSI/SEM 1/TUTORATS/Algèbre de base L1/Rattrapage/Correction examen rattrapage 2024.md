@@ -323,3 +323,20 @@ Ker(f) = \{ x \in \mathbb{R}^3 \mid -x_1-x_2+x_3=0, -4x_1-x_2+2x_3=0, -6x_1-3x_2
 $$
 
 Redémontrons que $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R} ^3$.
+<br/> On dit que $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R}^3$ si et seulement si :
+- $0_{\mathbb{R}^3} \in Ker(f)$
+- $\lambda x + y \in Ker(f)$ avec $\lambda \in \mathbb{R}$ et $x, y \in Ker(f)$.
+
+Montrons que $0_{\mathbb{R}^3} \in Ker(f)$. 
+<br/> Le vecteur nul de l'espace $\mathbb{R}^3$ est donné par : 
+
+$$
+0_{\mathbb{R}^3} = \begin{pmatrix} 0 \\ 0 \\ 0\end{pmatrix} = \begin{pmatrix} x_1 \\ x_2 \\ x_3\end{pmatrix}
+$$
+
+Alors on a :
+- $-x_1-x_2+x_3=-0-0+0=0$
+- $-4x_1-x_2+2x_3 = -4 \times 0 - 0 + 2 \times 0 = 0$
+- $-6 \times 0-3 \times 0 + 4 \times 0 = 0$
+
+Ainsi on a bien $0_{\mathbb{R}^3} \in Ker(f)$. (a)
