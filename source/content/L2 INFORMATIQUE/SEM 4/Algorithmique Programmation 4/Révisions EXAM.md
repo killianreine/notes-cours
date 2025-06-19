@@ -489,7 +489,7 @@ où $f(n)$ représente le nombre d'`OE` à l'intérieur de l'appel.
 >[!warning] Attention
 >Les formules suivantes s'appliquent uniquement aux algorithmes où la relation de récurrence est de la forme : 
 >$$
-C(n) = a \times C\left( \frac{n}{b}\right)+f(n)
+>C(n) = a \times C\left( \frac{n}{b}\right)+f(n)
 >$$
 >
 >où :
