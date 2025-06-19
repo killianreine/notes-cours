@@ -155,7 +155,7 @@ Dans l'exercice,
 - $a=X$
 - $b=-2$
 
-Ainsi :
+Ainsi en utilisant cette dernière dans le contexte de l'exercice :
 
 $$
 \begin{align*}
@@ -166,3 +166,19 @@ $$
 &= X^3-6X^2+12X-8
 \end{align*}
 $$
+
+Les valeurs des coefficients binomiales $\binom{n}{k}$ se déterminent de deux manières, ici on décide d'utiliser le triangle de Pascal :
+
+$$
+\begin{array}{c|ccccc}
+n \backslash k & 0 & 1 & 2 & 3 & 4 \\
+\hline
+0 & 1 &   &   &   &   \\
+1 & 1 & 1 &   &   &   \\
+2 & 1 & 2 & 1 &   &   \\
+3 & 1 & 3 & 3 & 1 &   \\
+4 & 1 & 4 & 6 & 4 & 1 \\
+\end{array}
+$$
+
+> On utilise alors la lignes où $n=3$ qui donne bien $1, 3, 3, 1$. 
