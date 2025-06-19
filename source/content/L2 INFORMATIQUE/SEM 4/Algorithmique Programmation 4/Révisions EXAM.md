@@ -15,7 +15,10 @@
 - **SORTIE**, il produit au moins un résultat
 
 >De manière schématique un algorithme peut être vu comme :
->$$entrée \longmapsto procédure \longmapsto sortie$$
+>
+>$$
+>entrée \longmapsto procédure \longmapsto sortie
+>$$
 ## Introduction du cours
 *Un algorithme correct à `90%` n'est pas correct.*
 
@@ -144,7 +147,10 @@ Pour $N=14$,
 <u>Exemple :</u>
 Si on prend $1000$ entiers codés sur $4$ octets on aura alors $4000$ octets utilisés.
 Pour $N$ entiers on aurait $4 \times N$, c'est une fonction linéaire.
-$$taille = N \times tailleCodage$$
+
+$$
+taille = N \times tailleCodage
+$$
 >[!cite] Définition
 >On appelle **==ordre de grandeur==** la tendance d'une courbe quand $N$ augmente.
 
@@ -175,7 +181,9 @@ Dans ce cours, on utilisera la **notation de Landau $\mathcal{O}$** créée par 
 >\end{align*}
 >$$
 >Ainsi si je regroupe les trois inégalités et que je prend le rang $n_0$ qui permet de respecter les conditions, j'obtient :
->$$3n^2+5n+10 \leq 5n^2 \quad \forall n \geq 5$$
+>$$
+>3n^2+5n+10 \leq 5n^2 \quad \forall n \geq 5
+>$$
 
 ![[Pasted image 20250320212616.png | 550]]
 En reprenant les fonctions données par M.Sanlaville pendant les CMs, étudions asymptotiquement les allures des courbes $f_1$, $f_2$ et $f_3$.
@@ -261,15 +269,23 @@ $$
 
 On décompose les sommes pour que ce soit plus simple :
 
-$$\underset{i=1}{\overset{N-1}{\sum}}N = N \times \underset{i=1}{\overset{N-1}{\sum}}1 = N(N-1)=\mathcal{O}(N)$$
+$$
+\underset{i=1}{\overset{N-1}{\sum}}N = N \times \underset{i=1}{\overset{N-1}{\sum}}1 = N(N-1)=\mathcal{O}(N)
+$$
 
-$$\underset{i=1}{\overset{N-1}{\sum}}i=\frac{N(N-1)}{2}=\mathcal{O}(N^2) \quad \text{ a savoir !}$$
+$$
+\underset{i=1}{\overset{N-1}{\sum}}i=\frac{N(N-1)}{2}=\mathcal{O}(N^2) \quad \text{ a savoir !}
+$$
 
-$$\underset{i=1}{\overset{N-1}{\sum}}1=N-1=\mathcal{O}(N)$$
+$$
+\underset{i=1}{\overset{N-1}{\sum}}1=N-1=\mathcal{O}(N)
+$$
 
 Ainsi on se retrouve avec :
 
-$$C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)$$
+$$
+C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)
+$$
 
 ### Propriétés des sommes
 
