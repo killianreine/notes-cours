@@ -494,4 +494,24 @@ $$
 Il faut résoudre ce système en montrant que tous les lambdas sont nuls.
 
 - D'après $L_1$ on a $\lambda_1+\lambda_3=0$ alors $\lambda_1=-\lambda_3$.
-On remplace $\lambda_1$ dans les autres lignes.
+<br/>On remplace $\lambda_1$ dans les autres lignes.
+<br/>On obtient alors : 
+
+$$
+\begin{cases}
+-2\lambda_3 + \lambda_2 &= 0 & L_2 \\
+\lambda_2-\lambda_3 &= 0 & L_3
+\end{cases}
+$$
+
+- D'après $L_3$ on a $\lambda_2-\lambda_3=0$ alors $\lambda_3=\lambda_2$
+<br/>On remplace dans le seconde ligne :
+
+$$
+-2 \lambda_2+\lambda_2=0 \Longleftrightarrow -\lambda_2=0 \Longleftrightarrow \lambda_2=0
+$$
+
+Puisque $\lambda_2=0$ alors $\lambda_3=\lambda_2=0$ et $\lambda_1=-\lambda_3=-0=0$.
+<br/>On a donc bien $\lambda_1=\lambda_2=\lambda_3=0$, ainsi $\mathcal{B}$ est bien une base de $\mathbb{R}^3$.
+
+**Question 6**
