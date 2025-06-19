@@ -545,5 +545,34 @@ $$
 Puisque $det(P) \neq 0$ alors la matrice $P$ est inversible et $P^{-1}$ est donnée par : 
 
 $$
+P^{-1}=\frac{1}{det(P)}(com(P))^t
+$$
+
+Calculons la matrice des cofacteurs de $P$.
 
 $$
+com(P)=\begin{pmatrix} 2 & -4 & -1 \\ 1 &-1 &-1 \\ -1 & 2 & 1 \end{pmatrix}
+$$
+
+La transposée de $com(P)$ est donnée par : 
+
+$$
+(com(P))^t=\begin{pmatrix} 2 & 1 & -1 \\ -4 &-1 &2 \\ -1 & -1 & 1 \end{pmatrix}
+$$
+
+Ainsi la matrice inverse de $P$ est donnée par : 
+
+$$
+P^{-1}=\frac{1}{1}\begin{pmatrix} 2 & 1 & -1 \\ -4 &-1 &2 \\ -1 & -1 & 1 \end{pmatrix}=\begin{pmatrix} 2 & 1 & -1 \\ -4 &-1 &2 \\ -1 & -1 & 1 \end{pmatrix}
+$$
+
+On peut alors déterminer la matrice de $f$ dans la base $\mathcal{B}$ donnée par : 
+
+$$
+\begin{align*}
+M_{\mathcal{B}}(f) &= \begin{pmatrix} 2 & 1 & -1 \\ -4 &-1 &2 \\ -1 & -1 & 1 \end{pmatrix}\begin{pmatrix} -1 & -1 & 1 \\ -4 & -1 & 2 \\ -6 & -3 & 4\end{pmatrix}\begin{pmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 3 & 1 & 2 \end{pmatrix}
+\\ \\ &= \boxed{\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}}
+\end{align*}
+$$
+
+## Exercice 4
