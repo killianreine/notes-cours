@@ -27,30 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "L2 INFORMATIQUE/SEM 4/Système/Processus - TP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "d55782e8862826cd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Révisions Examen"
+              "title": "Processus - TP"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,12 +186,52 @@
   },
   "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
-    "Licence INFORMATIQUE/Some note.md",
-    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
-    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web",
+    "L2 INFORMATIQUE/SEM 4/Système/Shell - TP.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Processus - TP.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Processus - CM.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Exo supp. THREADS.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Correction exam 2021.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Correction exam 2019.md",
+    "L2 INFORMATIQUE/SEM 4/Statistiques L2/Révisions PARTIEL.md",
+    "L2 INFORMATIQUE/SEM 4/Statistiques L2/nuage.png",
+    "L2 INFORMATIQUE/SEM 4/Statistiques L2/histoE1.png",
+    "L2 INFORMATIQUE/SEM 4/Statistiques L2/Fiche Méthode - Partiel.md",
+    "L2 INFORMATIQUE/SEM 4/Statistiques L2/fdd.png",
+    "L2 INFORMATIQUE/SEM 4/Statistiques L2/Corrigé du TD2.md",
+    "L2 INFORMATIQUE/SEM 4/Statistiques L2/bam.png",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
+    "L2 INFORMATIQUE/SEM 4/Programmation Web/supports_php_l2.md",
+    "L2 INFORMATIQUE/SEM 4/Programmation Web/Révisions PARTIEL.pdf",
+    "L2 INFORMATIQUE/SEM 4/Programmation Web/Pasted image 20250526122647.png",
+    "L2 INFORMATIQUE/SEM 4/Programmation Web/Correction exam 2024.md",
+    "L2 INFORMATIQUE/SEM 4/Programmation Web/Correction EXAM 2èCH 2024.md",
+    "L2 INFORMATIQUE/SEM 4/Prog. Java Avancé/Révisions Examen.md",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.pdf",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320223312.png",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320223309.png",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320212616.png",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/ExamAP4_2024.pdf",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction de l'examen 2024.md",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction de l'examen 2024.pdf",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction - Explication.md",
+    "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.md",
+    "L2 INFORMATIQUE/SEM 4/Algorithmique et Programmation 5/CM - Algorithmique 5 (2025).md",
+    "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.pdf",
+    "L1 MIPSI/SEM 2/INFO DOCS/Pasted image 20250329160620.png",
     "index.md",
-    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO",
-    "Licence INFORMATIQUE/index.md",
-    "Licence INFORMATIQUE"
+    "L1 MIPSI/SEM 2/INFO DOCS/css-box-model.png",
+    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/PARTIEL/Correction exo.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).pdf",
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).md",
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Révisions CC3.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance du 14 mars.pdf",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance 4.4 (14 mars).md",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Sommaire.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Récap - 13 mars.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/PARTIEL",
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites",
+    "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas"
   ]
 }
