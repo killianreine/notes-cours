@@ -182,3 +182,23 @@ n \backslash k & 0 & 1 & 2 & 3 & 4 \\
 $$
 
 > On utilise alors la lignes où $n=3$ qui donne bien $1, 3, 3, 1$. 
+
+**Question 3**
+<br/> On veut montrer que $A$ est inversible et donner $A^{-1}$ en fonction de $A$ de $A^2$ et de $A^3$.
+
+Pour commencer, calculons le déterminant de $A$ pour déterminer si la matrice est inversible.
+<br/>On a décider de développer le déterminant de $A$ par rapport à la première ligne.
+
+$$
+\begin{align*}
+det(A)&=\begin{vmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0 \end{vmatrix} \\
+&= (-1)^{1+1}\times3\times(3 \times 0 -(-2)\times1)+(-1)^{1+3}\times1\times(-1\times1-3\times-1)\\
+&= 1 \times 3 \times -2 + 1\times1\times4 \\
+&= -6+4 \\
+&= -2
+\end{align*}
+$$
+
+Puisque $det(A) \neq 0$ alors $A$ est inversible.
+
+Déterminons une expression de $A^{-1}$.
