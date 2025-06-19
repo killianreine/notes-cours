@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
+                "file": "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
                 "mode": "source",
                 "source": false
               },
@@ -194,17 +194,18 @@
       "canvas:Créer une nouvelle toile": false,
       "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false
+      "command-palette:Ouvrir la palette de commandes": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d55782e8862826cd",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
-    "LICENCE 2 MATHS-INFO/Programmation pour le web",
+    "Licence INFORMATIQUE/Some note.md",
+    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
+    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web",
     "index.md",
-    "LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
-    "LICENCE 2 MATHS-INFO",
-    "category-folder/Some note.md",
-    "category-folder/index.md",
-    "category-folder"
+    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO",
+    "Licence INFORMATIQUE/index.md",
+    "Licence INFORMATIQUE"
   ]
 }
