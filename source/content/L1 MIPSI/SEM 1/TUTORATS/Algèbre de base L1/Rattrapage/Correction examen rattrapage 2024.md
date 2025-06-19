@@ -481,4 +481,17 @@ $$
 $$
 
 Avec $\lambda_1, \lambda_2, \lambda_3 \in \mathbb{R}$. 
-<br/>
+<br/>On obtient alors le système suivant : 
+
+$$
+\begin{cases}
+\lambda_1 + \lambda_3 &= 0 &L_1 \\
+2\lambda_1 + \lambda_2 &= 0 & L_2 \\
+3 \lambda_1+\lambda_2+2\lambda_3 &= 0 & L_3
+\end{cases}
+$$
+
+Il faut résoudre ce système en montrant que tous les lambdas sont nuls.
+
+- D'après $L_1$ on a $\lambda_1+\lambda_3=0$ alors $\lambda_1=-\lambda_3$.
+On remplace $\lambda_1$ dans les autres lignes.
