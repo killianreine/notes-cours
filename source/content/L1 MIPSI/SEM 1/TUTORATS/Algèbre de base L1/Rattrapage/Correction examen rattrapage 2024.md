@@ -133,3 +133,12 @@ $$
 $$
 
 Calculons $(A-2I_3)^3$.
+
+$$
+\begin{align*}
+(A-2I_3)^3&=(A-2I_3)^2\times(A-2I_3) \\
+&= \begin{pmatrix}0 & 1 &-1 \\ 0 & -1 &1 \\ 0 &-1 &1\end{pmatrix} \times \begin{pmatrix} 1 & 0 & 1 \\ -1 & 1 & -2 \\ -1 & 1 & -2\end{pmatrix} \\
+&= \begin{pmatrix} 0 \times 1 +1\times-1+-1\times -1 & 0 \times 0+1 \times 1+-1 \times 1 &0\times1+1\times-2+-1\times-2 \\ 0 \times 1 +-1\times-1+1\times-1 & 0\times 0+-1\times1+1\times1 & 0 \times1+-1\times-2+1\times-2 \\ 0 \times 1 +-1\times-1+1\times-1 & 0\times 0+-1\times1+1\times1 & 0 \times1+-1\times-2+1\times-2 \end{pmatrix} \\
+&= \begin{pmatrix} 0 & 0 & 0 \\ 0& 0 & 0 \\ 0 & 0 & 0\end{pmatrix}
+\end{align*}
+$$
