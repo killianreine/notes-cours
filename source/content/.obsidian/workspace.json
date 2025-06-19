@@ -25,14 +25,17 @@
             "id": "2d8837e6263008e3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.md",
-                "mode": "source",
-                "source": false
+                "file": "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
+                "viewState": {
+                  "x": -815.5,
+                  "y": -5.5,
+                  "zoom": -1.9657901882614288
+                }
               },
-              "icon": "lucide-file",
-              "title": "Révisions partiel"
+              "icon": "lucide-layout-dashboard",
+              "title": "OIL R carteFinale"
             }
           }
         ],
@@ -186,6 +189,17 @@
   },
   "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
+    "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).md",
+    "L1 MIPSI/SEM 2/MATINFO L1/PARTIEL/Correction exo.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance 4.4 (14 mars).md",
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Révisions CC3.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Sommaire.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance du 14 mars.pdf",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Récap - 13 mars.md",
+    "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.md",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Exo Suite arithmétique.md",
     "L1 MIPSI/SEM 2/INFO DOCS/css-box-model.png",
     "L2 INFORMATIQUE/SEM 4/Système/Processus - TP.md",
     "L1 MIPSI/SEM 1/TUTORATS",
@@ -207,30 +221,20 @@
     "L2 INFORMATIQUE/SEM 4/Statistiques L2/fdd.png",
     "L2 INFORMATIQUE/SEM 4/Statistiques L2/Corrigé du TD2.md",
     "L2 INFORMATIQUE/SEM 4/Statistiques L2/bam.png",
-    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/supports_php_l2.md",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Révisions PARTIEL.pdf",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Pasted image 20250526122647.png",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Correction exam 2024.md",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Correction EXAM 2èCH 2024.md",
-    "L2 INFORMATIQUE/SEM 4/Prog. Java Avancé/Révisions Examen.md",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.pdf",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320223312.png",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320223309.png",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Pasted image 20250320212616.png",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/ExamAP4_2024.pdf",
-    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction de l'examen 2024.md",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction de l'examen 2024.pdf",
-    "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Correction - Explication.md",
-    "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.md",
-    "L2 INFORMATIQUE/SEM 4/Algorithmique et Programmation 5/CM - Algorithmique 5 (2025).md",
     "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.pdf",
     "L1 MIPSI/SEM 2/INFO DOCS/Pasted image 20250329160620.png",
-    "index.md",
-    "Licence INFORMATIQUE/LICENCE 2 MATHS-INFO/Programmation pour le web/Révisions Examen.md",
-    "L1 MIPSI/SEM 2/MATINFO L1/PARTIEL/Correction exo.md",
     "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).pdf",
-    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance du 14 mars.pdf",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas"
   ]
 }
