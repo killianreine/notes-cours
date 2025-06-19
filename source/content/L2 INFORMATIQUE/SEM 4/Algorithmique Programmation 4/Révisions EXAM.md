@@ -700,12 +700,16 @@ Par définition un entier $x$ est une puissance de $2$ si :
 	Il peut être divisé plusieurs fois par $2$ jusqu'à obtenir $1$ sans jamais devenir impair lors des divisions successives.
 >Pour $x=8$ alors on a :
 >
->$$8 \to 4 \to 2 \to 1$$
+>$$
+>8 \to 4 \to 2 \to 1
+>$$
 >
 >On s'arrête car on a attend $1$, $x=8$ est donc une puissance de $2$.
 >Pour $x=12$ on a :
 >
->$$12 \to 6 \to 3$$
+>$$
+>12 \to 6 \to 3
+>$$
 >
 >On s'arrête car $3$ est impair, ainsi $12$ n'est pas une puissance de $2$.
 
@@ -713,13 +717,17 @@ Par définition un entier $x$ est une puissance de $2$ si :
 - **Précondition :**
   L'entier en paramètre doit être strictement positif, on note 
   
-  $$\phi(x) = x \in \mathbb{N}^*$$
+  $$
+  \phi(x) = x \in \mathbb{N}^*
+  $$
   
 - **Postcondition :**
   L'algorithme retourne `VRAI` si <u>et seulement si</u> $x$ est une puissance de $2$.
   On note 
   
-  $$\psi(x, pair) : pair = (\exists k \in \mathbb{N} \mid x=2^k)$$
+  $$
+  \psi(x, pair) : pair = (\exists k \in \mathbb{N} \mid x=2^k)
+  $$
 
 *Correction partielle*
 - **Initialisation**
@@ -758,14 +766,18 @@ Ainsi on a :
 - $x=2^k$ avec $k \in \mathbb{N}$ si c'est une puissance de $x$
 On obtient alors l'invariant suivant :
 
-$$I = m \times 2^k + reste\times2^{k-1}$$
+$$
+I = m \times 2^k + reste\times2^{k-1}
+$$
 
 Essayons de montrer ce dernier par récurrence.
 - **Initialisation** *au début de l'algorithme*
   On a `m=x`, `k=0` et `reste=0`
   Donc : 
   
-  $$I = m \times 2^0+reste\times2^{-1}=x \times 1 + 0 \times 0.5 = x$$
+  $$
+  I = m \times 2^0+reste\times2^{-1}=x \times 1 + 0 \times 0.5 = x
+  $$
   
   
   L'invariant $I$ déterminé est vrai pour l'initialisation.
@@ -782,7 +794,9 @@ $$
 
 Au rang $k$, je sais que $I=m_k \times 2^k+reste_k \times 2^{k-1}$, alors lorsque l'on divise $m_k$ pour l'itération suivante, on obtient :
 
-$$m_k = 2 \times m_{k+1}+reste_{k+1}$$
+$$
+m_k = 2 \times m_{k+1}+reste_{k+1}
+$$
 
 d'où on se retrouve avec :
 
