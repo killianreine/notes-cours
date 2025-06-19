@@ -285,3 +285,41 @@ A^{-1} = \frac{1}{8} \left( A^2 - 6A + 12 I_3 \right)
 $$
 
 ## Exercice 3
+**Question 1**
+On veut montrer que l'application $f$ est linéaire.
+
+$$
+f(x) = (-x_1-x_2+x_3, -4x_1-x_2+2x_3, -6x_1-3x_2+4x_3) \quad \forall x \in \mathbb{R}^3
+$$
+
+Pour montrer que $f$ est une application linéaire il faut montrer que pour $x, y \in \mathbb{R}^3$ et $\lambda \in \mathbb{R}$ on a :
+
+$$
+f(\lambda x+y)=\lambda f(x)+f(y)
+$$
+
+Soit  $x, y \in \mathbb{R}^3$ et $\lambda \in \mathbb{R}$ alors on a : 
+
+$$
+\lambda x+y = \begin{pmatrix} \lambda x_1+y_1 \\ \lambda x_2+y_2 \\ \lambda x_3+y_3\end{pmatrix}
+$$
+
+Alors on peut étudier $f(\lambda x + y)$ tel que : 
+
+$$
+\begin{align*}
+f(\lambda x + y ) &= \begin{pmatrix} -(\lambda x_1+y_1)-(\lambda x_2+y_2)+\lambda x_3+y_3 \\ -4(\lambda x_1+y_1)-(\lambda x_2+y_2)+2(\lambda x_3+y_3) \\ -6(\lambda x_1+y_1)-3(\lambda x_2+y_2)+4(\lambda x_3+y_3) \end{pmatrix} \\ \\
+&= \begin{pmatrix} -\lambda x_1-y_1-\lambda x_2-y_2+\lambda x_3+y_3 \\ -4\lambda x_1-4y_1-\lambda x_2-y_2+2\lambda x_3+2y_3 \\ -6 \lambda x_1-6y_1-3\lambda x_2-3y_2+4\lambda x_3+4y_3 \end{pmatrix} \\ \\ &= \begin{pmatrix} -\lambda x_1-\lambda x_2+\lambda x_3-y_1-y_2+y_3 \\ -4\lambda x_1-\lambda x_2+2\lambda x_3-4y_1-y_2+2y_3 \\ -6 \lambda x_1-3\lambda x_2+4\lambda x_3-6y_1-3y_2+4y_3 \end{pmatrix} \\ \\ &= \begin{pmatrix} \lambda(-x_1-x_2+x_3)-y_1-y_2+y_3 \\ \lambda(-4x_1-x_2+2x_3)-4y_1-y_2+2y_3 \\ \lambda(-6x_1-3x_2+4x_3)-6y_1-3y_2+4y_3 \end{pmatrix} \\\\ &= \lambda\begin{pmatrix}-x_1-x_2+x_3 \\ -4x_1-x_2+2x_3 \\ -6x_1-3x_2+4x_3 \end{pmatrix} + \begin{pmatrix} -y_1-y_2+y_3 \\ -4y_1-y_2+2y_3 \\ -6y_1-3y_2+4y_3 \end{pmatrix} \\\\ &= \lambda f(x)+f(y)
+\end{align*}
+$$
+
+Ainsi $f$ est bien une application linéaire. Donc $f \in \mathcal{L}(\mathbb{R}^3)$ .
+
+**Question 2**
+Le noyau de $f$ est donné par : 
+
+$$
+Ker(f) = \{ x \in \mathbb{R}^3 \mid -x_1-x_2+x_3=0, -4x_1-x_2+2x_3=0, -6x_1-3x_2+4x_3=0 \}
+$$
+
+Redémontrons que $Ker(f)$ est un sous-espace vectoriel de $\mathbb{R} ^3$.
