@@ -522,3 +522,28 @@ M_{\mathcal{B}}(f) =P^{-1}M_{\mathcal{E}}(f)P
 $$
 
 Où $P$ représente la matrice de passage et $P^{-1}$ son inverse.
+<br/> La matrice $P$ est donnée par les vecteur de la base $\mathcal{B}$. 
+<br/>Ainsi on a : 
+
+$$
+P=\begin{pmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 3 & 1 & 2 \end{pmatrix}
+$$
+
+Pour calculer $P^{-1}$ il faut montrer avant que $P$ est inversible.
+<br/> Calculons alors le déterminant de $P$ en développant sur la première ligne.
+
+$$
+\begin{align*}
+det(P) &= \begin{vmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 3 & 1 & 2 \end{vmatrix}
+\\&= (-1)^{1+1}\times1\times(1 \times 2-0 \times 1)+(-1)^{1+3}\times1\times(2 \times1-1 \times3) \\
+&= 1 \times 1 \times 2+1\times 1 \times -1 \\
+&= 2-1
+\\ &= 1
+\end{align*}
+$$
+
+Puisque $det(P) \neq 0$ alors la matrice $P$ est inversible et $P^{-1}$ est donnée par : 
+
+$$
+
+$$
