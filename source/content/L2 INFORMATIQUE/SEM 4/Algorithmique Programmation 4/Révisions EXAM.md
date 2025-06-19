@@ -280,23 +280,26 @@ $$C(n) = \mathcal{O}(N^2)-\mathcal{O}(N)+\mathcal{O}(N^2)=\mathcal{O}(N^2)$$
 >[!example] Propriétés sur les sommes
 >$$\underset{i=1}{\overset{N}{\sum}}ik = k \times \underset{i=1}{\overset{N}{\sum}}i=k \times \frac{N(N+1)}{2}=\mathcal{O}(N^2)$$
 
->[!example] Propriétés sur les sommes
->$$\begin{align*}
-\underset{i=1}{\overset{N-1}{\sum}}(N-i)k  &=k \times \underset{i=1}{\overset{N-1}{\sum}}(N-i) \\ &=k \times \left( \underset{i=1}{\overset{N-1}{\sum}}N-\underset{i=1}{\overset{N-1}{\sum}}i\right) \\
-&= k \times \left( N\underset{i=1}{\overset{N-1}{\sum}}1-\frac{N(N-1)}{2} \right) \\
-&= k \times \left( N(N-1)-\frac{N(N-1)}{2} \right) \\
-&= k \times \left( \frac{2[N(N-1)]-N(N-1)}{2} \right) \\
-&= k \times \left( \frac{[N(N-1)][2-1]}{2} \right) \\
-&= k \times \left( \frac{N(N-1)}{2} \right) \\
-&= \mathcal{O}(N^2)
-\end{align*}$$
+> [!example] Propriétés sur les sommes  
+> $$  
+> \begin{align*}  
+> \sum_{i=1}^{N-1}(N-i)k &= k \times \sum_{i=1}^{N-1}(N-i) \\  
+> &= k \times \left( \sum_{i=1}^{N-1}N - \sum_{i=1}^{N-1}i \right) \\  
+> &= k \times \left( N(N-1) - \frac{N(N-1)}{2} \right) \\  
+> &= k \times \left( \frac{2N(N-1) - N(N-1)}{2} \right) \\  
+> &= k \times \left( \frac{N(N-1)}{2} \right) \\  
+> &= \mathcal{O}(N^2)  
+> \end{align*}  
+> $$
 
-> [!example] Propriété sur les sommes
-> $$\begin{align*}
-\underset{i=1}{\overset{N}{\sum}}\underset{i=1}{\overset{N}{\sum}}k  &= \underset{i=1}{\overset{N}{\sum}}1 \times\underset{i=1}{\overset{N}{\sum}}1\times k \\
-&= N \times N \times k
-\\ &= \mathcal{O}(N^2+k) = \mathcal{O}(N^2)
-\end{align*}$$
+> [!example] Propriété sur les sommes  
+> $$  
+> \begin{align*}  
+> \sum_{i=1}^{N}\sum_{i=1}^{N}k &= \sum_{i=1}^{N}1 \times \sum_{i=1}^{N}1 \times k \\  
+> &= N \times N \times k \\  
+> &= \mathcal{O}(N^2 + k) = \mathcal{O}(N^2)  
+> \end{align*}  
+> $$
 
 <u>Exemple :</u>
 On considère le code suivant :
