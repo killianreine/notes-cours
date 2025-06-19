@@ -110,6 +110,7 @@ Ainsi :
 $$
 2I_3 = 2\times\begin{pmatrix} 1&0&0 \\ 0&1&0 \\ 0&0&1\end{pmatrix}=\begin{pmatrix} 2&0&0 \\ 0&2&0 \\ 0&0&2\end{pmatrix}
 $$
+
 Et on peut alors calculer $A-2I_3$,
 
 $$
