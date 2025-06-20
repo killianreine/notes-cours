@@ -576,3 +576,112 @@ M_{\mathcal{B}}(f) &= \begin{pmatrix} 2 & 1 & -1 \\ -4 &-1 &2 \\ -1 & -1 & 1 \en
 $$
 
 ## Exercice 4
+<br/>**Question 1**
+<br/>On cherche à utiliser le raisonnement par récurrence pour prouver que : 
+
+$$ 
+\forall n \in \mathbb{N}^*, \quad \underset{k=1}{\overset{n}{\sum}}k^3 = \frac{n^2(n+1)^2}{4}
+$$
+
+On pose la propriété $P(n)$ définie pour tout entier naturel $n$ non nul par : 
+
+$$
+ 
+P(n) = \underset{k=1}{\overset{n}{\sum}}k^3 = \frac{n^2(n+1)^2}{4}
+$$
+
+**INITIALISATION**
+<br/>Puisque $n \in \mathbb{N}^*$ cela implique que $n > 0$, alors pour l'initialisation on pose $n_0=1$. 
+<br/>Alors on a :
+
+$$
+\underset{k=1}{\overset{1}{\sum}}k^3 = 1^3=3 \quad et \quad \frac{1^2(1+1)^2}{4}=\frac{4}{4}=1
+$$
+
+Ainsi la propriété $P(n_0)$ est vérifiée.
+
+**HÉRÉDITÉ**
+<br/>On suppose que $P(n)$ est vraie pour un rang $n \in \mathbb{N}^*$ fixé. Montrons que celle ci reste vraie au rang $n+1$.
+
+$$
+\begin{align*}
+\underset{k=1}{\overset{n+1}{\sum}}k^3 &= \underset{k=1}{\overset{n}{\sum}}k^3+(n+1)^3
+\end{align*}
+$$
+
+Grâce à notre supposition on connait la valeur de la somme des cubes de $1$ à $n$ ainsi : 
+
+$$
+\begin{align*}
+\underset{k=1}{\overset{n+1}{\sum}}k^3 &= \underset{k=1}{\overset{n}{\sum}}k^3+(n+1)^3 \\
+&= \frac{n^2(n+1)^2}{4}+(n+1)^3 \\
+&= \frac{n^2(n^2+2n+1)+4[(n+1)^3]}{4} \\
+&= \frac{n^4+2n^3+n^2+4((n^2+2n+1)(n+1))}{4} \\
+&= \frac{n^4+2n^3+n^2+4(n^3+n^2+2n^2+2n+n+1)}{4} \\
+&= \frac{n^4+2n^3+n^2+4n^3+4n^2+8n^2+8n+4n+4}{4} \\
+&= \frac{n^4+6n^3+13n^2+12n+4}{4}
+\end{align*}
+$$
+
+Maintenant vérifions si cette somme est égale au membre droit de la propriété $P(n+1)$.
+
+$$
+\begin{align*}
+\frac{(n+1)^2(n+2)^2}{4}&= \frac{(n^2+2n+1)(n^2+4n+4)}{4} \\
+&= \frac{n^4+4n^3+4n^2+2n^3+8n^2+8n+n^2+4n+4}{4} \\
+&= \frac{n^4+6n^3+13n^2+12n+4}{4}
+\end{align*}
+$$
+
+On remarque alors aisément que : 
+
+$$
+\begin{align*}
+\underset{k=1}{\overset{n+1}{\sum}}k^3 &= \frac{(n+1)^2(n+2)^2}{4}
+\end{align*}
+$$
+
+La propriété $P(n+1)$ est vraie.
+<br/> Et, par le principe de récurrence, nous avons montré que $P(n)$ est vraie pour tout entier naturel non nul.
+
+**Question 2**
+<br/>On cherche à en déduire le résultat de la somme suivante, en utilisant ce qu'on sait des questions précédentes et des propriétés sur les sommes.
+
+$$
+\underset{k=1}{\overset{n}{\sum}}k(2k^2-1) \quad \forall n \in \mathbb{N}^*
+$$
+
+Procédons par étapes, 
+- Développement des sommes
+- Séparation des sommes
+- Propriétés connues sur les sommes
+- Simplification
+
+$$
+\begin{align*}
+\underset{k=1}{\overset{n}{\sum}}k(2k^2-1) &= \underset{k=1}{\overset{n}{\sum}}(2k^3-k) \\
+&= \underset{k=1}{\overset{n}{\sum}}2k^3-\underset{k=1}{\overset{n}{\sum}}k \\
+&= 2\underset{k=1}{\overset{n}{\sum}}k^3-\underset{k=1}{\overset{n}{\sum}}k
+\end{align*}
+$$
+
+Grâce à la question précédente, on connaît la valeur de la première somme, et celle de la seconde somme celles des $k$ est considérée connue : 
+
+$$
+\underset{k=1}{\overset{n}{\sum}}k = \frac{n(n+1)}{2} \quad et \quad \underset{k=1}{\overset{n}{\sum}}k^3=\frac{n^2(n+1)^2}{4}
+$$
+
+Ainsi, on se retrouve avec : 
+
+$$
+\begin{align*}
+\underset{k=1}{\overset{n}{\sum}}k(2k^2-1) &=  2\underset{k=1}{\overset{n}{\sum}}k^3-\underset{k=1}{\overset{n}{\sum}}k \\
+&= 2 \left( \frac{n^2(n+1)^2}{4} \right) - \frac{n(n+1)}{2} \\
+&= \frac{2(n^2(n+1)^2)-2(n(n+1))}{4} \\
+&= \frac{2(n^2(n^2+2n+1))-2(n^2+n)}{4} \\
+&= \frac{2(n^4+2n^3+n^2)-(2n^2+2n)}{4} \\
+&= \frac{2n^4+4n^3+2n^2-2n^2-2n}{4} \\
+&= \frac{2n^4+4n^3-2n}{4}
+\end{align*}
+$$
+
