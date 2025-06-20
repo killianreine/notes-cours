@@ -366,3 +366,7 @@ sleep(1); // Attendre 1 seconde
 
 - `exit` permet de terminer proprement un processus.
 - `kill` permet de tuer un processus
+
+## Compléments
+- Sur les pipes  : [[Complément - Tube unidirectionnel]]
+- Sur les topologies de processus : [[Complément - Topologie processus]]
