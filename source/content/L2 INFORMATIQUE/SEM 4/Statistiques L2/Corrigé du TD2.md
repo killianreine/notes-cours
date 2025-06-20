@@ -30,7 +30,7 @@ La loi exacte de la variable aléatoire $X_i$ est alors donnée par : $$P(S_n\le
 La loi de $S_n$ est une loi binomiale $\mathcal{B}(\underbrace{n}_{effectif}, \underbrace{p}_{proba})=\mathcal{B}(500, \frac{1}{2}$).
 
 3. **Calculer $E(S_n)$ et $Var(S_n)$.**
->==**Rappel**==
+>**==Rappel==**
 >- $E(S_n)$ représente l'espérance.
 >- $Var(S_n)$ représente la variance.
 >Puisque $S_n$ suit une loi binomiale tel que $X_i \leadsto \mathcal{B}(n, p)$ alors on a : $$E(S_n) = n \times p \quad et \quad Var(S_n)=npq=np(1-p)$$
@@ -45,7 +45,7 @@ Comme évoquée précédemment, la variable aléatoire notée $(500-S_n)$ repré
 On utilise une loi normale de paramètres :
 $$S_n^* \leadsto \mathcal{N}(\mu, \sigma^2)=\mathcal{N}(E(S_n), Var(S_n))=\mathcal{N}(250, 125)$$
 On peut approcher cette loi à l'aider d'un loi normale centrée et réduite.
->==**Rappel**==
+>**==Rappel==**
 >Lorsque l'on souhaite centrer et réduire une loi normale, alors pour une variable $X$ tel que $$X \leadsto \mathcal{N}(\mu, \sigma^2)$$
 >Pour centrer et réduire, afin de suivre une loi normale de paramètre $0$ et $1$, on a : $$\dfrac{X-\mu}{\sqrt{\sigma^2}} \leadsto \mathcal{N}(0, 1)$$
 
@@ -67,7 +67,7 @@ P\left(\frac{500-k-250}{\sqrt{125}} \leq S_n^* \leq \dfrac{k-250}{\sqrt{125}}\ri
 $$
 où :$$\dfrac{S_n-250}{\sqrt{125}} \leadsto \mathcal{N}(0, 1)$$
 En négligeant les erreurs d'approximation on cherche $k$ minium tel que : $$\phi\left( \dfrac{250-k}{\sqrt{125}} \right)-\phi\left( \dfrac{k-250}{\sqrt{125}} \right) \geq 0.95$$
->==**Rappel**==
+>**==Rappel==**
 >$$\phi(-x) = 1-\phi(x)$$
 
 Ainsi grâce au rappel effectué on a :
