@@ -1,5 +1,7 @@
 ---
 title: Notes de cours - Licence INFORMATIQUE, K. REINE
+type: Accueil
+auteur: Killian Reine
 ---
 # 📘 Bienvenue !
 
