@@ -67,7 +67,7 @@ P\left(\frac{500-k-250}{\sqrt{125}} \leq S_n^* \leq \dfrac{k-250}{\sqrt{125}}\ri
 $$
 où :$$\dfrac{S_n-250}{\sqrt{125}} \leadsto \mathcal{N}(0, 1)$$
 En négligeant les erreurs d'approximation on cherche $k$ minium tel que : $$\phi\left( \dfrac{250-k}{\sqrt{125}} \right)-\phi\left( \dfrac{k-250}{\sqrt{125}} \right) \geq 0.95$$
->**==Rappel==**
+>==**Rappel==**
 >$$\phi(-x) = 1-\phi(x)$$
 
 Ainsi grâce au rappel effectué on a :
