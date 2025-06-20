@@ -1,5 +1,5 @@
 ---
-title: My GitHub Pages Notebook!
+title: Notes de cours - Licence INFORMATIQUE, K. REINE
 ---
 
 # Bienvenue !
