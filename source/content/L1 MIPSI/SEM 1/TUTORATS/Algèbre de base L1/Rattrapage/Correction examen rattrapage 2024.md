@@ -210,9 +210,9 @@ $$
 \begin{align*}
 det(A)&=\begin{vmatrix} 3 & 0 & 1 \\ -1 & 3 & -2 \\ -1 & 1 & 0 \end{vmatrix} \\
 &= (-1)^{1+1}\times3\times(3 \times 0 -(-2)\times1)+(-1)^{1+3}\times1\times(-1\times1-3\times-1)\\
-&= 1 \times 3 \times -2 + 1\times1\times4 \\
-&= -6+4 \\
-&= \boxed{-2}
+&= 1 \times 3 \times 2 + 1\times1\times4 \\
+&= 6+2 \\
+&= \boxed{8}
 \end{align*}
 $$
 
