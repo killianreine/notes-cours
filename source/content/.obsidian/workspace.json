@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 4/Système/Processus - CM.md",
+                "file": "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Fiche de cours/Trigonométrie - Cours.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Processus - CM"
+              "title": "Trigonométrie - Cours"
             }
           }
         ],
@@ -87,7 +87,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -203,17 +203,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "4c7295e572c4dba0",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 4/Système/Processus - CM.md",
     "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Fiche de cours/Trigonométrie - Cours.md",
     "index.md",
     "_custom/custom.css~",
@@ -227,7 +228,6 @@
     "L2 INFORMATIQUE/SEM 4/Système/Complément - Topologie processus.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads - TP.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads - CM.md",
-    "L2 INFORMATIQUE/SEM 4/Système/Processus - CM.md",
     "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Rattrapage/Correction examen rattrapage 2024.md",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
     "Pasted image 20250619195900.png",
