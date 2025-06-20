@@ -1,21 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { QuartzConfig } from "./quartz"
-
-export default {
-  // ... autre config ici
-
-  customScripts: [
-    "https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js",
-    "https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js",
-  ],
-
-  customStyles: [
-    "https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css",
-    "https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.css",
-  ],
-} satisfies QuartzConfig
-
 
 /**
  * Quartz 4.0 Configuration
