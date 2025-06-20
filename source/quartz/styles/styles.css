@@ -1,0 +1,6 @@
+@import "prismjs/themes/prism-tomorrow"; 
+
+code[class*="language-"], pre[class*="language-"] {
+  font-size: 0.9em;
+  border-radius: 8px;
+}

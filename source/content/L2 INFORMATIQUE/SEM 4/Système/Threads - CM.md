@@ -613,7 +613,7 @@ Ainsi la valeur de compteur après l'incrémentation sera `11` au lieu de `12`.
 >[!info] Remarque
 >Plus il y a de threads et d’opérations, **plus les erreurs deviennent fréquentes**
 
-```C
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
