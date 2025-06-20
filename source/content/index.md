@@ -3,8 +3,6 @@ title: Notes de cours - Licence INFORMATIQUE, K. REINE
 type: Accueil
 auteur: Killian Reine
 ---
-<meta name="google-site-verification" content="nh2zqkBuGaxJ81EWrOpZvMGAwk5GjNqMfjLKvwPY5H8" />
-
 # 📘 Bienvenue !
 
 Bienvenue sur ce dépôt de notes regroupant l’ensemble des cours suivis par **Killian REINE** durant sa **Licence en Informatique**.
