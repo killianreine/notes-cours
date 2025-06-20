@@ -370,4 +370,3 @@ sleep(1); // Attendre 1 seconde
 ## Compléments de cours
 - Sur les pipes  : [[Complément - Tube unidirectionnel]]
 - Sur les topologies de processus : [[Complément - Topologie processus]]
-- 
