@@ -52,7 +52,7 @@ Puisque $\Delta \in \mathbb{C}$ alors on cherche les solutions de l'équation $\
 $$
 \begin{cases}
 x^2+y^2 &= |\Delta| \\
-x^2-u^2 &= \mathcal{R}e(\Delta) \\
+x^2-y^2 &= \mathcal{R}e(\Delta) \\
 2xy &= \mathcal{I}m(\Delta)
 \end{cases}
 $$
@@ -74,7 +74,7 @@ Ainsi on obtient le système suivant à résoudre :
 $$
 \begin{cases}
 x^2+y^2 &= 17 & L_1\\
-x^2-u^2 &= 15 & L_2\\
+x^2-y^2 &= 15 & L_2\\
 2xy &= 8 & L_3
 \end{cases}
 $$
@@ -106,7 +106,7 @@ $$
 Ainsi l'équation admet comme solutions :
 
 $$
-\fbox{S = \{3+2i \quad ; \quad 1-i\}}
+\fbox{S = \{3+2i \quad ; \quad -1-i\}}
 $$
 
 ## Exercice 2
@@ -595,7 +595,7 @@ $$
 <br/>Alors on a :
 
 $$
-\underset{k=1}{\overset{1}{\sum}}k^3 = 1^3=3 \quad et \quad \frac{1^2(1+1)^2}{4}=\frac{4}{4}=1
+\underset{k=1}{\overset{1}{\sum}}k^3 = 1^3=1 \quad et \quad \frac{1^2(1+1)^2}{4}=\frac{4}{4}=1
 $$
 
 Ainsi la propriété $P(n_0)$ est vérifiée.
