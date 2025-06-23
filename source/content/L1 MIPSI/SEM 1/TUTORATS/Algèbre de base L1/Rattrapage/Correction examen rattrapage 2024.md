@@ -595,7 +595,7 @@ $$
 <br/>Alors on a :
 
 $$
-\underset{k=1}{\overset{1}{\sum}}k^3 = 1^3=3 \quad et \quad \frac{1^2(1+1)^2}{4}=\frac{4}{4}=1
+\underset{k=1}{\overset{1}{\sum}}k^3 = 1^3=1 \quad et \quad \frac{1^2(1+1)^2}{4}=\frac{4}{4}=1
 $$
 
 Ainsi la propriété $P(n_0)$ est vérifiée.
