@@ -18,10 +18,21 @@ Bienvenue sur ce dépôt de notes regroupant l’ensemble des cours suivis par *
 
 ## 🧭 Navigation
 
-#### ▶️ Licence 1 (L1)
+#### Licence 1 - Mathématiques Informatique
 
 <details> 
 	<summary>📘 Semestre 1</summary> 
-	- Algorithmique \& Programmation 1
+	<ul>
+		<li>
+			<u>Support de tutorat 2025-26 :</u> Algèbre de base
+			<br/>
+			[[]]
+		</li>
+	</ul>
 </details>
-
+<details> 
+	<summary>📘 Semestre 2</summary> 
+	<ul>
+		<li>Algorithmique & Programmation 1</li>
+	</ul>
+</details>
