@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Fiche de cours/Nombres complexes - Cours.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nombres complexes - Cours"
+              "title": "index"
             }
           }
         ],
@@ -226,10 +226,10 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "fc523b78f6f5e6a9",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Fiche de cours/Nombres complexes - Cours.md",
+    "conflict-files-obsidian-git.md",
     "L2 INFORMATIQUE/SEM 4/Algorithmique Programmation 4/Révisions EXAM.md",
     "L2 INFORMATIQUE/SEM 4/Système/Processus - CM.md",
     "index.md",

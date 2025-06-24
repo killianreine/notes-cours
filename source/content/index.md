@@ -16,4 +16,12 @@ Bienvenue sur ce dépôt de notes regroupant l’ensemble des cours suivis par *
 
 > Ce carnet comporte des notes et cours personnel, mais peut servir de ressource à d'autres étudiants en informatique.
 
-Bonne navigation et bon apprentissage !
+## 🧭 Navigation
+
+#### ▶️ Licence 1 (L1)
+
+<details> 
+	<summary>📘 Semestre 1</summary> 
+	- Algorithmique \& Programmation 1
+</details>
+
