@@ -16,4 +16,3 @@
 >- $b$ est la *partie imaginaire* de $z$ et est notée $\mathcal{I}m(z)$
 
 
-
