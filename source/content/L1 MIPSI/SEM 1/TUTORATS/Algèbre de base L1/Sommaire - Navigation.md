@@ -1,4 +1,3 @@
-### Informations générales
 # _**Généralités**_
 **Bienvenue à tous !**
 Vous êtes actuellement inscrit(e) en Licence 1 du portail **MIPSI** (Mathématiques, Informatique, Physique, Sciences pour l’Ingénieur) Ce tutorat est conçu spécialement pour vous accompagner dans la réussite de l’**Algèbre de base**, un enseignement fondamental partagé par l’ensemble des filières du portail.
