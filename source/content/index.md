@@ -15,24 +15,3 @@ Bienvenue sur ce dépôt de notes regroupant l’ensemble des cours suivis par *
 ---
 
 > Ce carnet comporte des notes et cours personnel, mais peut servir de ressource à d'autres étudiants en informatique.
-
-## 🧭 Navigation
-
-#### Licence 1 - Mathématiques Informatique
-
-<details> 
-	<summary>📘 Semestre 1</summary> 
-	<ul>
-		<li>
-			<u>Support de tutorat 2025-26 :</u> Algèbre de base
-			<br/>
-			[[]]
-		</li>
-	</ul>
-</details>
-<details> 
-	<summary>📘 Semestre 2</summary> 
-	<ul>
-		<li>Algorithmique & Programmation 1</li>
-	</ul>
-</details>
