@@ -41,3 +41,14 @@ En cas de questions, ou de demande particulière vous pouvez contacter le tuteur
 - Sur discord, vous trouverez mon pseudo sur le serveur de la MISPI officiel _killianreine_
 - Sur le mail universitaire : [killian.reine@etu.univ-lehavre.fr](http://killian.reine@etu.univ-lehavre.fr)
 
+# _**Programme de l'UE**_
+
+- Trigonométrie
+- Nombres complexes
+- Espace vectoriel
+- Système linéaires
+- Calculs de sommes et de produits
+- Polynômes formels
+- Base et dimension
+- Calculs matriciels
+- Application linéaire
