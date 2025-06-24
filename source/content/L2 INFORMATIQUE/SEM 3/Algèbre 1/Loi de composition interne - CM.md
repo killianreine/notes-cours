@@ -180,11 +180,12 @@ T_A & : & A \times A & \to & A \\
 >En gros c'est l'application qui associe à $x$ lui même.
 
 >[!example] Proposition
+>
 >Soit $(E, T)$ un magma.
 >Si il admet un élément neutre **alors il est unique**.
 >---
 >**Démonstration**
->Prenons $e_1, e_2$ deux éléments neutre du magma $M= (E, T)$.
+><br/>Prenons $e_1, e_2$ deux éléments neutre du magma $M= (E, T)$.
 >Alors on a :
 >- $xTe_1=e_1Tx=x$
 >- $xTe_2=e_2Tx=x$
