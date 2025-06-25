@@ -91,14 +91,14 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
 ## Récap SEMESTRE 1
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
-  <thead style="background-color: black;">
+  <thead>
     <tr>
       <th>Unité d’Enseignement</th>
       <th>Durée</th>
     </tr>
   </thead>
   <tbody>
-    <tr style="background-color: background-color: rgb(100, 100, 100);;">
+    <tr>
       <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
     </tr>
     <tr>
@@ -113,7 +113,7 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td><strong>Informatique de base</strong></td>
       <td>50 heures</td>
     </tr>
-    <tr style="background-color: rgb(100, 100, 100);">
+    <tr>
       <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
     </tr>
     <tr>
@@ -140,7 +140,7 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>
       <td>—</td>
     </tr>
-    <tr style="background-color: rgb(100, 100, 100);">
+    <tr>
       <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>
     </tr>
     <tr>
