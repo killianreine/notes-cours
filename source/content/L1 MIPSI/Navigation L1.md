@@ -9,7 +9,7 @@ La formation est **structurée en six semestres** et partage certains enseigneme
 ## Unités d'enseignements disciplinaire UED
 ### Algèbre de base
 L’**Algèbre de base** est une Unité d’Enseignement Disciplinaire (UED) commune à tous les étudiants inscrits dans le cursus MIPSI. Elle a pour objectif d’introduire les fondements de l’algèbre et de garantir à chacun un socle solide en mathématiques dès le début de la formation.
-- <u>Support de cours :</u> [[Informations et généralités - Algèbre de base]]
+- <u>Support de cours :</u> [[Support - Algèbre de base]]
   <br/>Ce support reprend les cours d'algèbre de base officiels, ainsi que les supports de tutorats proposée par Killian Reine entre 2023 et 2025.
 - <u>Durée de l'UE :</u> 50 heures
 

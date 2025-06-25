@@ -193,17 +193,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "category-folder/Some note.md",
+                "file": "L1 MIPSI/Navigation L1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Some note"
+              "title": "Rétrolien pour Navigation L1"
             }
           },
           {
@@ -254,7 +254,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -270,11 +270,11 @@
   },
   "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
+    "index.md",
+    "L1 MIPSI/Navigation L1.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Contrôles & Partiels",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes",
-    "L1 MIPSI/SEM 1/Algèbre de base/Informations et généralités - Algèbre de base.md",
-    "L1 MIPSI/Navigation L1.md",
-    "index.md",
+    "L1 MIPSI/SEM 1/Algèbre de base/Support - Algèbre de base.md",
     "L2 INFORMATIQUE/Navigation L2.md",
     "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
@@ -302,7 +302,6 @@
     "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance 4.4 (14 mars).md",
     "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Révisions CC3.md",
     "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Sommaire.md",
-    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance du 14 mars.pdf",
     "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Récap - 13 mars.md",
     "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.md",
     "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Exo Suite arithmétique.md",
