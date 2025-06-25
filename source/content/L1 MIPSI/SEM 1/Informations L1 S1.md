@@ -98,7 +98,6 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
     </tr>
   </thead>
   <tbody>
-    <!-- UED -->
     <tr style="background-color: background-color: rgb(100, 100, 100);;">
       <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
     </tr>
@@ -114,8 +113,6 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td><strong>Informatique de base</strong></td>
       <td>50 heures</td>
     </tr>
-
-    <!-- UET -->
     <tr style="background-color: rgb(100, 100, 100);">
       <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
     </tr>
@@ -143,8 +140,6 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>
       <td>—</td>
     </tr>
-
-    <!-- UEP -->
     <tr style="background-color: rgb(100, 100, 100);">
       <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>
     </tr>
