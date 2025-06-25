@@ -16,5 +16,7 @@ Bienvenue sur ce dépôt de notes regroupant l’ensemble des cours suivis par *
 
 > Ce carnet comporte des notes et cours personnel, mais peut servir de ressource à d'autres étudiants en informatique.
 
-- Licence première année [[Navigation L1]]
-- Licence deuxième année [[Navigation L2]]
+- Licence première année 
+	- Semestre 1 [[Informations L1 S1]]
+- Licence deuxième année
+	- Semestre 3 [[Information L2 S3]]
