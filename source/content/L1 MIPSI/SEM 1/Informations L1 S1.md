@@ -90,121 +90,74 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
 
 ## Récap SEMESTRE 1
 
-<html>
-<head>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-family: Arial, sans-serif;
-        }
-        
-        th {
-            background-color: black;
-            color: white;
-            padding: 8px;
-            text-align: center;
-            font-weight: bold;
-        }
-        
-        .section-header {
-            background-color: rgb(100, 100, 100);
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            padding: 8px;
-        }
-        
-        td {
-            padding: 8px;
-            border: 1px solid #ccc;
-        }
-        
-        tr {
-            background-color: white;
-        }
-        
-        strong {
-            font-weight: bold;
-        }
-        
-        em {
-            font-style: italic;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Unité d'Enseignement</th>
-                <th>Durée</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="2" class="section-header">Unités d'Enseignements Disciplinaires (UED)</td>
-            </tr>
-            <tr>
-                <td><strong>Algèbre de base</strong></td>
-                <td>50 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Algorithmique & Programmation 1</strong></td>
-                <td>50 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Informatique de base</strong></td>
-                <td>50 heures</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="section-header">Unités d'Enseignements Transversaux (UET)</td>
-            </tr>
-            <tr>
-                <td><strong>Anglais 1</strong></td>
-                <td>18 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Méthodologie</strong></td>
-                <td>6 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Outil Informatique Logiciel (OIL LaTeX)</strong></td>
-                <td>6 heures</td>
-            </tr>
-            <tr>
-                <td><strong>PIX 1</strong></td>
-                <td>8 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Projet Personnel et Professionnel (PPP)</strong></td>
-                <td>8 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>
-                <td>—</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="section-header">Unités d'Enseignements Personnalisées (UEP)</td>
-            </tr>
-            <tr>
-                <td><strong>Analyse de base</strong><br/><em>Parcours Mathématiques</em></td>
-                <td>50 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Astrophysique</strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
-                <td>50 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Concepts informatiques</strong><br/><em>Parcours Informatique</em></td>
-                <td>50 heures</td>
-            </tr>
-            <tr>
-                <td><strong>Informatique pour la NSI</strong><br/><em>Parcours Informatique</em></td>
-                <td>50 heures</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
+  <thead style="background-color: black;">
+    <tr>
+      <th>Unité d’Enseignement</th>
+      <th>Durée</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: background-color: rgb(100, 100, 100);;">
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
+    </tr>
+    <tr>
+      <td><strong>Algèbre de base</strong></td>
+      <td>50 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Algorithmique & Programmation 1</strong></td>
+      <td>50 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Informatique de base</strong></td>
+      <td>50 heures</td>
+    </tr>
+    <tr style="background-color: rgb(100, 100, 100);">
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
+    </tr>
+    <tr>
+      <td><strong>Anglais 1</strong></td>
+      <td>18 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Méthodologie</strong></td>
+      <td>6 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Outil Informatique Logiciel (OIL LaTeX)</strong></td>
+      <td>6 heures</td>
+    </tr>
+    <tr>
+      <td><strong>PIX 1</strong></td>
+      <td>8 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Projet Personnel et Professionnel (PPP)</strong></td>
+      <td>8 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>
+      <td>—</td>
+    </tr>
+    <tr style="background-color: rgb(100, 100, 100);">
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>
+    </tr>
+    <tr>
+      <td><strong>Analyse de base</strong><br/><em>Parcours Mathématiques</em></td>
+      <td>50 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Astrophysique</strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
+      <td>50 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Concepts informatiques</strong><br/><em>Parcours Informatique</em></td>
+      <td>50 heures</td>
+    </tr>
+    <tr>
+      <td><strong>Informatique pour la NSI</strong><br/><em>Parcours Informatique</em></td>
+      <td>50 heures</td>
+    </tr>
+  </tbody>
+</table>
