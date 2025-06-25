@@ -89,93 +89,79 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
 - <u>Durée de l'UE :</u> 50 heures
 
 ## Récap SEMESTRE 1
+
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead style="background-color: #black;">
+  <thead style="background-color: black;">
     <tr>
       <th>Unité d’Enseignement</th>
-      <th>Description</th>
       <th>Durée</th>
     </tr>
   </thead>
   <tbody>
     <!-- UED -->
-    <tr style="background-color: rgb(100, 100, 100);">
-      <td colspan="4" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
+    <tr style="background-color: background-color: rgb(100, 100, 100);;">
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
     </tr>
     <tr>
       <td><strong>Algèbre de base</strong></td>
-      <td>L’Algèbre de base est une UED commune aux étudiants du cursus MIPSI, visant à introduire les fondements de l’algèbre et garantir un socle solide en mathématiques dès le début.</td>
       <td>50 heures</td>
     </tr>
     <tr>
       <td><strong>Algorithmique & Programmation 1</strong></td>
-      <td>Introduction à la programmation en Processing, préalable à l’apprentissage de Java en 2e année.</td>
       <td>50 heures</td>
     </tr>
     <tr>
       <td><strong>Informatique de base</strong></td>
-      <td>Programmation en Bash, initiation à LaTeX, codage de l’information (nombres, textes...)</td>
       <td>50 heures</td>
     </tr>
 
     <!-- UET -->
     <tr style="background-color: rgb(100, 100, 100);">
-      <td colspan="4" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
     </tr>
     <tr>
       <td><strong>Anglais 1</strong></td>
-      <td>Développement des compétences en compréhension et expression en anglais scientifique et technique, pour une communication internationale efficace.</td>
       <td>18 heures</td>
     </tr>
     <tr>
       <td><strong>Méthodologie</strong></td>
-      <td>Accompagnement à la réussite universitaire via méthodes de travail, prise de notes, gestion du temps, recherche documentaire et rédaction.</td>
       <td>6 heures</td>
     </tr>
     <tr>
       <td><strong>Outil Informatique Logiciel (LaTeX)</strong></td>
-      <td>Initiation à LaTeX pour produire des documents scientifiques clairs et professionnels, avec formules, figures et bibliographies.</td>
       <td>6 heures</td>
     </tr>
     <tr>
       <td><strong>PIX 1</strong></td>
-      <td>Plateforme d’évaluation des compétences numériques dans divers domaines (sécurité, communication, programmation...), préparation à la certification PIX.</td>
       <td>8 heures</td>
     </tr>
     <tr>
       <td><strong>Projet Personnel et Professionnel (PPP)</strong></td>
-      <td>Travail en groupes pluridisciplinaires autour d’une thématique métier : recherches, interviews, rédaction de dossier individuel et présentation orale collective.</td>
       <td>8 heures</td>
     </tr>
     <tr>
       <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>
-      <td>Sensibilisation aux enjeux environnementaux, sociaux et économiques de la transition écologique, avec travaux de groupe, débats et études de cas.</td>
       <td>—</td>
-
     </tr>
 
     <!-- UEP -->
     <tr style="background-color: rgb(100, 100, 100);">
-      <td colspan="4" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>
     </tr>
     <tr>
       <td><strong>Analyse de base</strong><br/><em>Parcours Mathématiques</em></td>
-      <td>Introduction aux notions fondamentales d’analyse mathématique : limites, continuité, dérivabilité et étude des fonctions réelles.</td>
       <td>50 heures</td>
     </tr>
     <tr>
       <td><strong>Astrophysique</strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
-      <td>Introduction aux phénomènes régissant l’univers : évolution des étoiles, galaxies, cosmologie, mécanique céleste et physique des particules.</td>
       <td>50 heures</td>
     </tr>
     <tr>
       <td><strong>Concepts informatiques</strong><br/><em>Parcours Informatique</em></td>
-      <td>Modélisation et compréhension des systèmes informatiques via diagrammes de cas d’utilisation et d’activité, et étude des langages de programmation.</td>
       <td>50 heures</td>
     </tr>
     <tr>
       <td><strong>Informatique pour la NSI</strong><br/><em>Parcours Informatique</em></td>
-      <td>Consolidation des bases d’algorithmique, programmation, structures de données et modélisation issues de la spécialité NSI au lycée.</td>
       <td>50 heures</td>
     </tr>
   </tbody>
