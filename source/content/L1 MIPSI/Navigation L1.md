@@ -35,8 +35,7 @@ L’**Unité d’Enseignement Transversal (UET) Méthodologie** a pour objectif 
 - <u>Durée de l'UE :</u> 6 heures
 
 ### Outil Informatique Logiciel OIL
-L’**outil informatique LaTeX** (UET) est un logiciel de composition de documents particulièrement adapté à la rédaction de textes scientifiques et techniques. Cette unité d’enseignement initie les étudiants à la logique de fonctionnement de LaTeX, à sa syntaxe et à sa puissance typographique. L’objectif est de leur permettre de produire des documents clairs, structurés et professionnels, intégrant facilement des formules mathématiques, des figures, des tableaux et des bibliographies.  
-<br/>La maîtrise de LaTeX constitue une compétence précieuse tout au long du cursus universitaire et dans le monde de la recherche.
+L’**outil informatique LaTeX** (UET) est un logiciel de composition de documents particulièrement adapté à la rédaction de textes scientifiques et techniques. Cette unité d’enseignement initie les étudiants à la logique de fonctionnement de LaTeX, à sa syntaxe et à sa puissance typographique. L’objectif est de leur permettre de produire des documents clairs, structurés et professionnels, intégrant facilement des formules mathématiques, des figures, des tableaux et des bibliographies.  La maîtrise de LaTeX constitue une compétence précieuse tout au long du cursus universitaire et dans le monde de la recherche.
 - <u>Durée de l'UE :</u> 6 heures
 
 ### PIX 1
@@ -49,5 +48,9 @@ L’**Unité d’Enseignement Projet  Professionnel et Personnel (PPP)** permet 
 <br/>Tout au long du semestre, les étudiants mènent des recherches, réalisent des interviews de professionnels, échangent sur leurs parcours et leurs motivations, puis rédigent un dossier individuel. Le projet se conclut par une **présentation orale en groupe**, où ils exposent leur travail et leur compréhension du métier étudié.
 <br/>Cette UE favorise la prise de parole, le travail en équipe et une meilleure connaissance de soi et du monde professionnel.
 - <u>Durée de l'UE :</u> 8 heures
+
+### Transition Écologique et Développement Soutenable
+L’**Unité d’Enseignement Transition Écologique et Développement Soutenable (TEDS)** vise à sensibiliser les étudiants aux enjeux environnementaux, sociaux et économiques de la transition écologique. À travers une approche interdisciplinaire, cette UE permet de mieux comprendre les grands défis actuels : changement climatique, épuisement des ressources, biodiversité, justice sociale, consommation responsable, etc.
+<br/>Les étudiants sont amenés à réfléchir à leur rôle de citoyen et de futur professionnel dans un monde en transition, à analyser des situations concrètes et à envisager des solutions durables. L’UE combine apports théoriques, travaux de groupe, débats, études de cas et parfois projets concrets ou partenariats locaux.
 
 ## Unité d'Enseignement Personnalisé - UEP
