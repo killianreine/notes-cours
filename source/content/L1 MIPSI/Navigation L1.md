@@ -8,15 +8,17 @@ La formation est **structurée en six semestres** et partage certains enseigneme
 ## Semestre 1
 ### Algèbre de base
 L’**Algèbre de base** est une Unité d’Enseignement Disciplinaire (UED) commune à tous les étudiants inscrits dans le cursus MIPSI. Elle a pour objectif d’introduire les fondements de l’algèbre et de garantir à chacun un socle solide en mathématiques dès le début de la formation.
-- <u>Supports de cours :</u> [[Informations et généralités - Algèbre de base]]
+- <u>Support de cours :</u> [[Informations et généralités - Algèbre de base]]
   <br/>Ce support reprend les cours d'algèbre de base officiels, ainsi que les supports de tutorats proposée par Killian Reine entre 2023 et 2025.
 - <u>Durée de l'UE :</u> 50 heures
 
 ### Algorithmique & Programmation 1
 L'**Algorithmique et programmation** est une Unité d'Enseignement Disciplinaire (UED) commune aux étudiants d'informatique et de mathématiques permettant d'introduire la programmation en langage Processing. 
 <br/>Ce langage permet en fait d'anticiper l'apprentissage du langage JAVA qui sera au programme de la deuxième année.
-- <u>Supports de cours :</u> [Cours github sbalev](https://github.com/sbalev/processing101/wiki)
+- <u>Support de cours :</u> [Cours github sbalev](https://github.com/sbalev/processing101/wiki)
   <br/>Ce support est en fait le cours et le cahier d'exercices donné par le responsable de l'UE et qui est à faire durant les séances de TP.
 - <u>Durée de l'UE :</u> 50 heures
 
 ### Informatique de base
+L'**Informatique de base** est une Unité d'Enseignement Disciplinaire (UED) commune aux étudiants d'informatique. Au programme, une grosse partie sur de la programmation en Bash (Commandes Linux, script, ...), animation et bases de LaTex, puis codage de l'information (nombre, texte, ...).
+- <u>Support de cours :</u> *aucun support...*
