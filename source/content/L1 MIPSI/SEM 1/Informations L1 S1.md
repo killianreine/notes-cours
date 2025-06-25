@@ -128,7 +128,7 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td>6 heures</td>
     </tr>
     <tr>
-      <td><strong>Outil Informatique Logiciel (LaTeX)</strong></td>
+      <td><strong>Outil Informatique Logiciel (OIL LaTeX)</strong></td>
       <td>6 heures</td>
     </tr>
     <tr>
