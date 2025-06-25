@@ -22,3 +22,4 @@ L'**Algorithmique et programmation** est une Unité d'Enseignement Disciplinaire
 ### Informatique de base
 L'**Informatique de base** est une Unité d'Enseignement Disciplinaire (UED) commune aux étudiants d'informatique. Au programme, une grosse partie sur de la programmation en Bash (Commandes Linux, script, ...), animation et bases de LaTex, puis codage de l'information (nombre, texte, ...).
 - <u>Support de cours :</u> *aucun support...*
+- <u>Durée de l'UE :</u> 50 heures
