@@ -54,3 +54,32 @@ L’**Unité d’Enseignement Transition Écologique et Développement Soutenabl
 <br/>Les étudiants sont amenés à réfléchir à leur rôle de citoyen et de futur professionnel dans un monde en transition, à analyser des situations concrètes et à envisager des solutions durables. L’UE combine apports théoriques, travaux de groupe, débats, études de cas et parfois projets concrets ou partenariats locaux.
 
 ## Unité d'Enseignement Personnalisé - UEP
+
+>[!info] Information
+>L'unité d'enseignements personnalisée propose différentes UEs, les étudiants peuvent ensuite choisir laquelle ils souhaitent faire.
+>**Les options suivantes sont celles proposées aux étudiants d'informatique, ils peuvent choisir celle qu'il souhaite faire**
+
+### Analyse de base
+>Parcours MATHÉMATIQUES
+
+L’**Unité d’Enseignement Analyse de base** introduit les notions fondamentales de l’analyse mathématique, indispensables à la compréhension des phénomènes continus en sciences et en informatique. Les étudiants y découvrent les concepts de limites, continuité, dérivabilité, et les premières méthodes d’étude des fonctions réelles.
+<br/>Cette UE vise à fournir une base solide pour aborder des notions plus avancées et pour appliquer les outils de l’analyse dans divers contextes scientifiques.
+
+### Astrophysique
+>Parcours Physiques et Sciences pour l'Ingénieur
+
+L’**Unité d’Enseignement Astrophysique** offre une introduction aux phénomènes et aux lois qui régissent l’univers. Elle couvre des thématiques telles que la formation et l’évolution des étoiles, la structure des galaxies, la cosmologie, ainsi que les notions fondamentales de mécanique céleste et de physique des particules.
+<br/>Cette UE permet aux étudiants de développer une compréhension scientifique approfondie des objets célestes et des interactions qui façonnent l’univers, en s’appuyant sur les outils mathématiques et physiques fondamentaux.
+
+### Concepts informatique
+>Parcours INFORMATIQUE
+
+L’**Unité d’Enseignement Concepts Informatiques** introduit les outils et notions essentiels à la modélisation et à la compréhension des systèmes informatiques. Les étudiants y découvrent notamment les **diagrammes de cas d’utilisation** et les **diagrammes d’activité**, utilisés pour représenter les interactions entre un système et ses utilisateurs ainsi que les enchaînements logiques d’actions au sein d’un processus.
+<br/>L’UE aborde également les **spécificités des langages de programmation**, en mettant en lumière leurs différences en termes de syntaxe, de paradigmes (impératif, orienté objet, fonctionnel, etc.), ou encore d’usage selon les contextes.  
+<br/>Cette base théorique est indispensable pour structurer les raisonnements, concevoir des logiciels et mieux appréhender la diversité des outils informatiques.
+
+### Informatique pour la NSI
+>Parcours INFORMATIQUE
+
+L’**Informatique pour la NSI** propose une introduction aux concepts clés de l’informatique enseignés au lycée dans la spécialité Numérique et Sciences Informatiques. Ce module couvre les bases de l’algorithmique, la programmation, les structures de données, ainsi que la modélisation des systèmes informatiques.
+<br/>L’objectif est de consolider les connaissances des étudiants venant de la NSI et de les préparer à approfondir ces notions dans le cadre universitaire. Ce parcours favorise également le développement de compétences en résolution de problèmes et en pensée informatique.
