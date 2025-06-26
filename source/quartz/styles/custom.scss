@@ -1,158 +1,142 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-/* === Thème clair === */
-:root {
-  --bg: #fdfdfc;
-  --text: #1a1a1a;
-  --accent: #0066cc;
-  --muted: #777;
-  --callout-note-bg: #e8f5e9;
-  --callout-warning-bg: #fff3e0;
-  --callout-danger-bg: #ffebee;
-  --code-bg: #f3f3f3;
-  --border-radius: 12px;
-  --font-header: "Playfair Display", serif;
-  --font-body: "Inter", sans-serif;
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
-/* === Thème sombre === */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121212;
-    --text: #eaeaea;
-    --accent: #64b5f6;
-    --muted: #aaa;
-    --callout-note-bg: #1e2e1e;
-    --callout-warning-bg: #2f2b1c;
-    --callout-danger-bg: #3a1e1e;
-    --code-bg: #1e1e1e;
-  }
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
 }
 
-/* === Base === */
-body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: var(--font-body);
-  line-height: 1.8;
-  font-size: 1.05rem;
-  transition: background 0.2s ease, color 0.2s ease;
-  padding: 2rem;
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
 }
 
-/* === Titres === */
-h1, h2, h3, h4, h5 {
-  font-family: var(--font-header);
-  font-weight: bold;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
 }
 
-h1 {
-  font-size: 2.5rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.4rem;
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
 }
 
-h2 {
-  font-size: 2rem;
-  border-left: 4px solid var(--accent);
-  padding-left: 0.5rem;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
 }
 
-h3 {
-  font-size: 1.5rem;
-  color: var(--accent);
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
 }
 
-/* === Liens === */
-a {
-  color: var(--accent);
-  text-decoration: underline dotted;
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
 }
 
-a:hover {
-  text-decoration: underline solid;
+.token.punctuation {
+	color: #999;
 }
 
-/* === Listes === */
-ul, ol {
-  padding-left: 1.5rem;
+.token.namespace {
+	opacity: .7;
 }
 
-/* === Blocs de code === */
-pre, code {
-  font-family: "Fira Code", monospace;
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
 }
 
-pre {
-  background: var(--code-bg);
-  padding: 1em;
-  border-radius: var(--border-radius);
-  overflow-x: auto;
-  margin: 1rem 0;
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
 }
 
-code {
-  background: var(--code-bg);
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
 }
 
-/* === Callouts (Obsidian-style) === */
-.callout {
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 6px solid var(--accent);
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
 }
 
-.callout[data-callout="note"] {
-  background: var(--callout-note-bg);
-  border-left-color: #4caf50;
+.token.function,
+.token.class-name {
+	color: #DD4A68;
 }
 
-.callout[data-callout="warning"] {
-  background: var(--callout-warning-bg);
-  border-left-color: #ff9800;
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
 }
 
-.callout[data-callout="danger"] {
-  background: var(--callout-danger-bg);
-  border-left-color: #f44336;
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
 }
 
-/* === Tags === */
-.tag {
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  margin-right: 0.3em;
-}
-
-/* === Tables === */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-}
-
-th, td {
-  padding: 0.75em;
-  border-bottom: 1px solid var(--muted);
-}
-
-th {
-  background: var(--code-bg);
-}
-
-/* === Images === */
-img {
-  max-width: 100%;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.token.entity {
+	cursor: help;
 }
