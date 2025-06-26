@@ -1,0 +1,11 @@
+.callout {
+  border-radius: 10px;
+  padding: 1em;
+  border-left: 4px solid #84a59d;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5em;
+}
