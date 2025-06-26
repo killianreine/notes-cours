@@ -33,7 +33,7 @@ L’**anglais** est une Unité d'Enseignement Transversal (UET) et occupe une pl
 
 ## Probabilités
 L’**Unité d’Enseignement Probabilités** initie les étudiants aux outils fondamentaux de la modélisation de l’aléatoire. Elle aborde les notions clés comme les espaces probabilisables, les variables aléatoires, les lois de probabilité usuelles et les notions d'espérance et de variance.  
-<br/>Cette UE constitue une base essentielle pour de nombreux domaines scientifiques, notamment les statistiques, l’informatique, l’intelligence artificielle ou encore la physique.
+Cette UE constitue une base essentielle pour de nombreux domaines scientifiques, notamment les statistiques, l’informatique, l’intelligence artificielle ou encore la physique.
 - <u>Durée de l'UE :</u> 32 heures
 
 # Unité d'Enseignement Personnalisé - UEP
@@ -46,7 +46,7 @@ L’**Unité d’Enseignement Probabilités** initie les étudiants aux outils f
 >Parcours INFORMATIQUE
 
 L’**Unité d’Enseignement Programmation en C** a pour objectif de familiariser les étudiants avec les bases de la programmation en langage C, un langage bas niveau très utilisé en informatique système.  
-<br/>Elle aborde des notions fondamentales comme les variables, les structures de contrôle, les tableaux, les pointeurs et la gestion mémoire. Cette UE permet de développer une meilleure compréhension du fonctionnement interne des programmes et de se préparer à des enseignements plus avancés en algorithmique et systèmes informatiques.
+Elle aborde des notions fondamentales comme les variables, les structures de contrôle, les tableaux, les pointeurs et la gestion mémoire. Cette UE permet de développer une meilleure compréhension du fonctionnement interne des programmes et de se préparer à des enseignements plus avancés en algorithmique et systèmes informatiques.
 - <u>Support de cours :</u> *À venir....*
 - <u>Durée de l'UE :</u> 50 heures
 
