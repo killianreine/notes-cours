@@ -40,10 +40,6 @@ L’**Algorithmique & Programmation 3** est une Unité d’Enseignement Discipli
 
 # Unité d'Enseignement Personnalisé - UEP
 
->[!info] Information
->L'unité d'enseignements personnalisée propose différentes UEs, les étudiants peuvent ensuite choisir laquelle ils souhaitent faire.
->**Les options suivantes sont celles proposées aux étudiants d'informatique, ils peuvent choisir celle qu'il souhaite faire**
-
 ## Système d'exploitation 2
 >Parcours INFORMATIQUE
 
