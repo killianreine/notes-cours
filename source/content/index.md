@@ -18,6 +18,7 @@ Bienvenue sur ce dépôt de notes regroupant l’ensemble des cours suivis par *
 
 - Licence première année 
 	- Semestre 1 [[Informations L1 S1]]
+	- Semestre 2 [[Information L1 S2]]
 - Licence deuxième année
 	- Semestre 3 [[Information L2 S3]]
 - Licence troisième année
