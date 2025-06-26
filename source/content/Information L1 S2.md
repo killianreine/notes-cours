@@ -58,7 +58,7 @@ Cette UE développe une culture des formats ouverts et une rigueur dans la gesti
 - <u>Support de cours :</u> [Support officiel dfournier](https://litis.univ-lehavre.fr/~fournier/InfoDoc/)
 - <u>Durée de l'UE :</u> 50 heures
 
-# Récap SEMESTRE 1
+# Récap SEMESTRE 2
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
   <thead>
