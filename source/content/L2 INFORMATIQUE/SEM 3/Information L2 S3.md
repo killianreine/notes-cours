@@ -42,7 +42,7 @@ Cette UE constitue une base essentielle pour de nombreux domaines scientifiques,
 
 L’**Unité d’Enseignement Programmation en C** a pour objectif de familiariser les étudiants avec les bases de la programmation en langage C, un langage bas niveau très utilisé en informatique système.  
 Elle aborde des notions fondamentales comme les variables, les structures de contrôle, les tableaux, les pointeurs et la gestion mémoire. Cette UE permet de développer une meilleure compréhension du fonctionnement interne des programmes et de se préparer à des enseignements plus avancés en algorithmique et systèmes informatiques.
-- <u>Support de cours :</u> *À venir....*
+- <u>Support de cours :</u> [[readme progC]]
 - <u>Durée de l'UE :</u> 50 heures
 
 # Récap SEMESTRE 3

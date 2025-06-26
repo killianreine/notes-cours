@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Home - ProgC"
+              "title": "Information L2 S3"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour 00 - Home - ProgC"
+              "title": "Rétrolien pour Information L2 S3"
             }
           },
           {
@@ -169,10 +169,10 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "cc526deefad17509",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
-    "01.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
+    "01.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads - CM.md",
     "L2 INFORMATIQUE/SEM 4/Système/Complément - Tube unidirectionnel.md",
     "index.md",
@@ -183,7 +183,7 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
     "Sans titre",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/readme.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours",
     "L2 INFORMATIQUE/SEM 3/Programmation C",
