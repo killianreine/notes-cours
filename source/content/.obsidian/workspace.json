@@ -132,9 +132,51 @@
               "icon": "lucide-file",
               "title": "Information L3 S5"
             }
+          },
+          {
+            "id": "f4921abaaed25bd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "readme"
+            }
+          },
+          {
+            "id": "109b7fc5787bf2e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 Home - ProgC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00 Home - ProgC"
+            }
+          },
+          {
+            "id": "d638c2b3afdd8450",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Introduction"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -207,7 +249,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "L3 INFORMATIQUE/Information L3 S5.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +259,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Information L3 S5"
+              "title": "Rétrolien pour 01 - Introduction"
             }
           },
           {
@@ -282,11 +324,16 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "86358dc4ced8d746",
+  "active": "d638c2b3afdd8450",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 Home - ProgC.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/readme.md",
+    "L3 INFORMATIQUE/Information L3 S5.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours",
+    "L2 INFORMATIQUE/SEM 3/Programmation C",
     "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
     "index.md",
-    "L3 INFORMATIQUE/Information L3 S5.md",
     "L1 MIPSI/SEM 1/Informations L1 S1.md",
     "L3 INFORMATIQUE",
     "L1 MIPSI/SEM 1/Algèbre de base/Contrôles & Partiels",
@@ -304,13 +351,11 @@
     "_custom",
     "_content/custom.css",
     "_content",
-    "Nouveau dossier",
     "L2 INFORMATIQUE/SEM 4/Statistiques/Corrigé du TD2.md",
     "L2 INFORMATIQUE/SEM 4/Système/Complément - Tube unidirectionnel.md",
     "L2 INFORMATIQUE/SEM 4/Système/Complément - Topologie processus.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads - TP.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads - CM.md",
-    "L1 MIPSI/SEM 1/Algèbre de base/Rattrapage 2025",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
     "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).md",
     "L1 MIPSI/SEM 2/MATINFO L1/PARTIEL/Correction exo.md",
@@ -319,10 +364,7 @@
     "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Sommaire.md",
     "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Récap - 13 mars.md",
     "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.md",
-    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Exo Suite arithmétique.md",
     "L1 MIPSI/SEM 2/INFO DOCS/css-box-model.png",
-    "L2 INFORMATIQUE/SEM 4/Système/Processus - TP.md",
-    "L1 MIPSI/SEM 1/Algèbre de base L1/SEV.md",
     "L2 INFORMATIQUE/SEM 4/Statistiques/nuage.png",
     "L2 INFORMATIQUE/SEM 4/Statistiques/histoE1.png",
     "L2 INFORMATIQUE/SEM 4/Statistiques/fdd.png",
