@@ -28,4 +28,4 @@ Ce cours s’adresse :
 - À ceux qui se préparent à des examens ou concours (BUT, licence, école d’ingé, etc.)
 
 ## On commence ?
-- C'est parti ! [[readme progC]]
+- C'est parti ! [[00 - Home - ProgC]] 
