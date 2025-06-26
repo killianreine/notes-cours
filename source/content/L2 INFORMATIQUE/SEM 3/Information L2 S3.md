@@ -43,10 +43,11 @@ L’**Unité d’Enseignement Probabilités** initie les étudiants aux outils f
 >**Les options suivantes sont celles proposées aux étudiants d'informatique, ils peuvent choisir celle qu'il souhaite faire**
 
 ## Programmation C
->Parcours MATHÉMATIQUES
+>Parcours INFORMATIQUE
 
 L’**Unité d’Enseignement Programmation en C** a pour objectif de familiariser les étudiants avec les bases de la programmation en langage C, un langage bas niveau très utilisé en informatique système.  
 <br/>Elle aborde des notions fondamentales comme les variables, les structures de contrôle, les tableaux, les pointeurs et la gestion mémoire. Cette UE permet de développer une meilleure compréhension du fonctionnement interne des programmes et de se préparer à des enseignements plus avancés en algorithmique et systèmes informatiques.
+- <u>Support de cours :</u> *À venir....*
 - <u>Durée de l'UE :</u> 50 heures
 
 # Récap SEMESTRE 3
