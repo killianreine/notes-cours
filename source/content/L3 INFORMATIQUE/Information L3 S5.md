@@ -81,7 +81,7 @@ Cette approche permet de résoudre des problèmes complexes de manière déclara
   </thead>
   <tbody>
 	  <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 1</td>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
     </tr>
     <tr>
       <td><strong>Génie logiciel</strong></td>
