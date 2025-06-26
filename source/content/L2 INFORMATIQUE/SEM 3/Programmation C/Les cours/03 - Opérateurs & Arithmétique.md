@@ -102,7 +102,9 @@ On a :
 
 Ce que l'on veut c'est déterminer le reste de `a/b` une division entière. On l'appelle aussi **division euclidienne**. On cherche en réalité une manière d'écrire `a` autrement tel que : 
 
-$$ a = bq+r$$
+$$
+a = bq+r
+$$
 
 où 
 
