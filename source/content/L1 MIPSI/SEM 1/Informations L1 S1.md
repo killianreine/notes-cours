@@ -38,7 +38,7 @@ L’**outil informatique LaTeX** (UET) est un logiciel de composition de documen
 
 ## PIX 1
 **PIX** est une plateforme en ligne d’évaluation et de développement des compétences numériques. Elle permet aux étudiants d’identifier leurs points forts et leurs axes de progression dans des domaines variés : sécurité numérique, traitement de l’information, création de contenus, communication en ligne, programmation, etc.  
-<br/>L’utilisation de PIX dans le cadre universitaire vise à renforcer l’autonomie numérique des étudiants et à les préparer à l’obtention de la certification PIX, désormais reconnue dans de nombreux contextes académiques et professionnels.
+L’utilisation de PIX dans le cadre universitaire vise à renforcer l’autonomie numérique des étudiants et à les préparer à l’obtention de la certification PIX, désormais reconnue dans de nombreux contextes académiques et professionnels.
 - <u>Durée de l'UE :</u> 8 heures
 
 ## Projet Professionnel et Personnel PPP
