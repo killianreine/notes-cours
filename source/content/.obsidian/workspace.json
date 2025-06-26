@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Information L2 S3"
             }
           }
         ],
@@ -207,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +217,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour index"
+              "title": "Rétrolien pour Information L2 S3"
             }
           },
           {
@@ -284,11 +284,11 @@
   },
   "active": "86358dc4ced8d746",
   "lastOpenFiles": [
+    "index.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
     "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
     "L1 MIPSI/SEM 1/Informations L1 S1.md",
     "L3 INFORMATIQUE",
-    "index.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Contrôles & Partiels",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes",
     "L1 MIPSI/SEM 1/Algèbre de base/Support - Algèbre de base.md",
