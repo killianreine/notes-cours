@@ -8,22 +8,22 @@ La formation est **structurée en six semestres** et partage certains enseigneme
 
 ## Génie logiciel
 L’**Unité d’Enseignement Génie logiciel** initie les étudiants aux méthodes et outils de conception, de développement et de maintenance de logiciels complexes.  
-<br/>Elle aborde les bonnes pratiques de programmation, la structuration du code, la gestion de projet, le travail collaboratif avec des outils comme Git, ainsi que les premières notions de modélisation (UML, architecture logicielle).  
-<br/>L’objectif est d’apprendre à développer de manière rigoureuse, modulaire et professionnelle, en préparant les étudiants à des projets logiciels de plus grande envergure.
+Elle aborde les bonnes pratiques de programmation, la structuration du code, la gestion de projet, le travail collaboratif avec des outils comme Git, ainsi que les premières notions de modélisation (UML, architecture logicielle).  
+L’objectif est d’apprendre à développer de manière rigoureuse, modulaire et professionnelle, en préparant les étudiants à des projets logiciels de plus grande envergure.
 - <u>Support de cours :</u> *aucun supports...*
 - <u>Durée de l'UE :</u> 50 heures
 
 ## Sciences de Gestion de Base de Données
 L’**Unité d’Enseignement Sciences de gestion de bases de données** initie les étudiants aux concepts fondamentaux des bases de données relationnelles.  
-<br/>Elle couvre la **modélisation des données** (modèle conceptuel, logique, physique), l’utilisation du **langage SQL** pour la création, la manipulation et la requête de données, ainsi que des notions de **normalisation** et d’**intégrité des données**.  
-<br/>Cette UE constitue un socle essentiel pour concevoir, exploiter et optimiser des systèmes d’information fiables et performants.
+Elle couvre la **modélisation des données** (modèle conceptuel, logique, physique), l’utilisation du **langage SQL** pour la création, la manipulation et la requête de données, ainsi que des notions de **normalisation** et d’**intégrité des données**.  
+Cette UE constitue un socle essentiel pour concevoir, exploiter et optimiser des systèmes d’information fiables et performants.
 - <u>Support de cours :</u> [Support de cours dfournier](https://litis.univ-lehavre.fr/~fournier/)
 - <u>Durée de l'UE :</u> 50 heures
 
 ## Théorie des langages
 L’**Unité d’Enseignement Théorie des langages** introduit les fondements mathématiques des langages formels, essentiels à la compréhension des compilateurs, des automates et de la logique en informatique.  
-<br/>Elle aborde les notions de **grammaires**, **langages réguliers et contextuels**, **automates finis et à pile**, ainsi que les **expressions régulières**.  
-<br/>Cette UE développe une rigueur formelle dans l’analyse des structures syntaxiques et prépare à la conception d’outils de traitement automatique du langage, comme les analyseurs lexicaux ou syntaxiques.
+Elle aborde les notions de **grammaires**, **langages réguliers et contextuels**, **automates finis et à pile**, ainsi que les **expressions régulières**.  
+Cette UE développe une rigueur formelle dans l’analyse des structures syntaxiques et prépare à la conception d’outils de traitement automatique du langage, comme les analyseurs lexicaux ou syntaxiques.
 - <u>Support de cours :</u> *aucun support...*
 - <u>Durée de l'UE :</u> 50 heures
 
@@ -48,29 +48,29 @@ L’**Algorithmique & Programmation 3** est une Unité d’Enseignement Discipli
 >Parcours INFORMATIQUE
 
 L’**Unité d’Enseignement Programmation Systèmes** plonge les étudiants au cœur du fonctionnement des systèmes d’exploitation, en particulier sous Unix/Linux.  
-<br/>Elle couvre les mécanismes essentiels comme la création et la gestion des **processus** et **threads**, le traitement des **signaux**, les stratégies d’**ordonnancement**, ainsi que les méthodes de **communication inter-processus (IPC)**.  
-<br/>Cette UE permet de comprendre comment les programmes interagissent avec le système et entre eux, et constitue une base indispensable pour tout informaticien souhaitant travailler proche du matériel ou en environnement multi-tâches.
+Elle couvre les mécanismes essentiels comme la création et la gestion des **processus** et **threads**, le traitement des **signaux**, les stratégies d’**ordonnancement**, ainsi que les méthodes de **communication inter-processus (IPC)**.  
+Cette UE permet de comprendre comment les programmes interagissent avec le système et entre eux, et constitue une base indispensable pour tout informaticien souhaitant travailler proche du matériel ou en environnement multi-tâches.
 - <u>Support de cours :</u> *aucun support...*
 - <u>Durée de l'UE :</u> 25 heures
 
 ## OPTION 1 - C++
-L’**Unité d’Enseignement Programmation en C++** permet aux étudiants de découvrir la **programmation orientée objet** à travers un langage puissant et largement utilisé dans l’industrie du logiciel.  
-<br/>Elle couvre les concepts clés du C++ tels que les **classes**, **l’héritage**, **le polymorphisme**, ainsi que la gestion fine de la **mémoire** et les **modèles de programmation générique**.  
-<br/>Cette UE constitue une étape importante dans l’apprentissage de la programmation avancée et dans la conception de logiciels modulaires, robustes et performants.
+L’**Unité d’Enseignement Programmation en C++** permet aux étudiants de découvrir la **programmation orientée objet** à travers un langage puissant et largement utilisé dans l’industrie du logiciel.   
+Elle couvre les concepts clés du C++ tels que les **classes**, **l’héritage**, **le polymorphisme**, ainsi que la gestion fine de la **mémoire** et les **modèles de programmation générique**.   
+Cette UE constitue une étape importante dans l’apprentissage de la programmation avancée et dans la conception de logiciels modulaires, robustes et performants.
 - <u>Support de cours :</u> *aucun support...*
 - <u>Durée de l'UE :</u> 25 heures
 
 ## OPTION 2 - Architecture avancée
-L’**Unité d’Enseignement Architecture avancée** approfondit les connaissances en architecture des ordinateurs, au-delà des bases acquises précédemment.  
-<br/>Elle aborde des notions comme les **architectures multi-cœurs**, la **mémoire cache**, les **pipelines d’exécution**, les **instructions SIMD**, ainsi que les modèles de **traitement parallèle**.  
-<br/>Cette UE permet de mieux comprendre les performances des programmes, d’optimiser le code en fonction du matériel, et de se préparer à la programmation sur des architectures modernes.
+L’**Unité d’Enseignement Architecture avancée** approfondit les connaissances en architecture des ordinateurs, au-delà des bases acquises précédemment.   
+Elle aborde des notions comme les **architectures multi-cœurs**, la **mémoire cache**, les **pipelines d’exécution**, les **instructions SIMD**, ainsi que les modèles de **traitement parallèle**.  
+Cette UE permet de mieux comprendre les performances des programmes, d’optimiser le code en fonction du matériel, et de se préparer à la programmation sur des architectures modernes.
 - <u>Support de cours :</u> *aucun support...*
 - <u>Durée de l'UE :</u> 25 heures
 
 ## OPTION 3 - Programmation logique
 L’**Unité d’Enseignement Programmation logique** initie les étudiants à un paradigme de programmation fondé sur la logique mathématique, en particulier à travers le langage **Prolog**.  
-<br/>Elle explore la **déclaration de faits et de règles**, les **requêtes**, la **résolution par unification**, et les **arbres de recherche**.  
-<br/>Cette approche permet de résoudre des problèmes complexes de manière déclarative, en laissant au moteur d’inférence le soin de déterminer les étapes de résolution. Elle est particulièrement utile en **intelligence artificielle**, **représentation des connaissances** et **recherche automatique de solutions**.
+Elle explore la **déclaration de faits et de règles**, les **requêtes**, la **résolution par unification**, et les **arbres de recherche**.  
+Cette approche permet de résoudre des problèmes complexes de manière déclarative, en laissant au moteur d’inférence le soin de déterminer les étapes de résolution. Elle est particulièrement utile en **intelligence artificielle**, **représentation des connaissances** et **recherche automatique de solutions**.
 - <u>Support de cours :</u> *aucun support...*
 - <u>Durée de l'UE :</u> 25 heures
 
