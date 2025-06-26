@@ -31,16 +31,26 @@ Vous vous trouvez sur _le cours Eureka du tutorat (donc pas officiel)_ c'est ici
 - **Créer du lien** avec d’autres étudiants du portail
 - **Bénéficier de conseils méthodologiques** et d’un retour d’expérience utile
 
+---
 # _**Correction des exercices de TDs**_
 
 Les corrections de l'intégralité des exercices ne seront pas fournies (à quelques exceptions), c'est à vous de noter les corrections. En cas d'absence ou autre les corrections de certains exercices pourront être fournies par le tuteur. 
 
+---
 # _**Contacter le tuteur (K. REINE)**_
     
 En cas de questions, ou de demande particulière vous pouvez contacter le tuteur de plusieurs manières : 
 - Sur discord, vous trouverez mon pseudo sur le serveur de la MISPI officiel _killianreine_
 - Sur le mail universitaire : [killian.reine@etu.univ-lehavre.fr](http://killian.reine@etu.univ-lehavre.fr)
 
+---
+# _Partiel d'entraînement 2025_
+Le partiel d'entraînement est un concept propre au tutorat d'algèbre de base. Il permet aux étudiants de la L1 MIPSI de se mettre pour la toute première fois en condition réelle d'examen. Sauf que là, c'est une épreuve blanche c'est à dire qu'elle ressemble à l'examen final sauf que celle ci n'est pas notée. Généralement organisé par le tuteur c'est la meilleure occasion de tester ses connaissances et de voir les notions qui te manquent.
+
+### _**Date et organisation**_
+*\[à venir\]*
+
+---
 # _**Programme de l'UE**_
 
 - Trigonométrie

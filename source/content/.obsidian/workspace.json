@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
+                "file": "L1 MIPSI/SEM 1/Algèbre de base/Support - Algèbre de base.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Retour sur les fonctions"
+              "title": "Support - Algèbre de base"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
+                "file": "L1 MIPSI/SEM 1/Algèbre de base/Support - Algèbre de base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour 05 - Retour sur les fonctions"
+              "title": "Rétrolien pour Support - Algèbre de base"
             }
           },
           {
@@ -171,8 +171,8 @@
   },
   "active": "cc526deefad17509",
   "lastOpenFiles": [
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
