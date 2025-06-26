@@ -26,3 +26,6 @@ Ce cours s’adresse :
 - Aux étudiants débutant en programmation ou en C
 - Aux développeurs voulant revoir les bases du C
 - À ceux qui se préparent à des examens ou concours (BUT, licence, école d’ingé, etc.)
+
+## On commence ?
+- C'est parti ! [[readme progC]]
