@@ -85,7 +85,9 @@ const config: QuartzConfig = {
         enableRSS: true,
       }),
       Plugin.Assets(),
-      Plugin.Static(),
+      Plugin.Static({
+	dir: "./source/styles",
+	}),
       Plugin.NotFoundPage(),
     ],
   },
