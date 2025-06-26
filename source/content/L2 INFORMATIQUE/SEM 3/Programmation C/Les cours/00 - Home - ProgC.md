@@ -22,11 +22,11 @@ Bienvenue dans ce cours de programmation en langage C ! Ce cours est conçu pour
 
 ## Plan du Cours
 
-- [Cours 1](https://github.com/killianreine/Programmation-C/wiki/Introduction) : Introduction au langage C
-- [Cours 2](https://github.com/killianreine/Programmation-C/wiki/Premiers-pas) : Mes premières instructions en C
-- [Cours 3](https://github.com/killianreine/Programmation-C/wiki/Un-peu-d'arithmétique-et-de-logique) : Opérations arithmétiques en C
-- [Cours 4](https://github.com/killianreine/Programmation-C/wiki/04-‐-Conditions-et-boucles) : Boucles et conditionnels en C
-- [Cours 5](https://github.com/killianreine/Programmation-C/wiki/05-‐-Retour-sur-les-fonctions) : Rétrospective sur les fonctions en C
+- Cours 01 : [[01 - Introduction]]
+- Cours 02 : [[02 - Premiers pas]]
+- Cours 03 : [[03 - Opérateurs & Arithmétique]]
+- Cours 04 : [[04 - Conditions et boucles]]
+- Cours 05 : [[05 - Retour sur les fonctions]]
 
 ## Ressources
 

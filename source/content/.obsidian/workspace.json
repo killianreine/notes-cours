@@ -13,146 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 4/Système/Threads - CM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Threads - CM"
-            }
-          },
-          {
-            "id": "4624a281f3f335fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 4/Système/Complément - Tube unidirectionnel.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Complément - Tube unidirectionnel"
-            }
-          },
-          {
-            "id": "d95fa8b15bc42859",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 4/Statistiques L2/Corrigé du TD2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Corrigé du TD2"
-            }
-          },
-          {
-            "id": "4c7295e572c4dba0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L1 MIPSI/SEM 1/TUTORATS/Algèbre de base L1/Fiche de cours/Nombres complexes - Cours.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Nombres complexes - Cours"
-            }
-          },
-          {
-            "id": "fc523b78f6f5e6a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "f72c223205ae9e31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Loi de composition interne - CM"
-            }
-          },
-          {
-            "id": "58f14b67fef01fb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "8fa9722e89540a6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Information L2 S3"
-            }
-          },
-          {
-            "id": "86358dc4ced8d746",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L3 INFORMATIQUE/Information L3 S5.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Information L3 S5"
-            }
-          },
-          {
-            "id": "f4921abaaed25bd7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/readme.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "readme"
-            }
-          },
-          {
-            "id": "109b7fc5787bf2e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
                 "mode": "source",
                 "source": false
@@ -160,79 +20,8 @@
               "icon": "lucide-file",
               "title": "00 - Home - ProgC"
             }
-          },
-          {
-            "id": "d638c2b3afdd8450",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 - Introduction"
-            }
-          },
-          {
-            "id": "e49e1d39a3559fc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02 - Premiers pas"
-            }
-          },
-          {
-            "id": "0e39aef00a3c19da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03 - Opérateurs & Arithmétique"
-            }
-          },
-          {
-            "id": "0f09a62c9cacfb0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04 - Conditions et boucles"
-            }
-          },
-          {
-            "id": "a82617d67d81f999",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "05 - Retour sur les fonctions"
-            }
           }
-        ],
-        "currentTab": 15
+        ]
       }
     ],
     "direction": "vertical"
@@ -305,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -315,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour 05 - Retour sur les fonctions"
+              "title": "Rétrolien pour 00 - Home - ProgC"
             }
           },
           {
@@ -380,27 +169,30 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "a82617d67d81f999",
+  "active": "cc526deefad17509",
   "lastOpenFiles": [
+    "01.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Threads - CM.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Complément - Tube unidirectionnel.md",
+    "index.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
+    "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
     "Sans titre",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours",
     "L2 INFORMATIQUE/SEM 3/Programmation C",
     "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
-    "index.md",
     "L1 MIPSI/SEM 1/Informations L1 S1.md",
     "L3 INFORMATIQUE",
     "L1 MIPSI/SEM 1/Algèbre de base/Contrôles & Partiels",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes",
     "L1 MIPSI/SEM 1/Algèbre de base/Support - Algèbre de base.md",
-    "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "Pasted image 20250619195900.png",
     "L1 MIPSI/SEM 1/Algèbre de base/Rattrapage 2025/Correction examen rattrapage 2024.md",
@@ -412,14 +204,11 @@
     "_custom",
     "_content/custom.css",
     "L2 INFORMATIQUE/SEM 4/Statistiques/Corrigé du TD2.md",
-    "L2 INFORMATIQUE/SEM 4/Système/Complément - Tube unidirectionnel.md",
     "L2 INFORMATIQUE/SEM 4/Système/Complément - Topologie processus.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads - TP.md",
-    "L2 INFORMATIQUE/SEM 4/Système/Threads - CM.md",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
     "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).md",
     "L1 MIPSI/SEM 2/MATINFO L1/PARTIEL/Correction exo.md",
-    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance 4.4 (14 mars).md",
     "L1 MIPSI/SEM 2/INFO DOCS/css-box-model.png",
     "L2 INFORMATIQUE/SEM 4/Statistiques/nuage.png",
     "L2 INFORMATIQUE/SEM 4/Statistiques/histoE1.png",
