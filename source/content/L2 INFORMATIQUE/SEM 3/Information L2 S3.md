@@ -56,7 +56,7 @@ Elle aborde des notions fondamentales comme les variables, les structures de con
   </thead>
   <tbody>
 	  <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 1</td>
     </tr>
     <tr>
       <td><strong>Mathématiques pour l'informatique</strong></td>
