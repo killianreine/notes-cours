@@ -114,7 +114,7 @@ Cette approche permet de résoudre des problèmes complexes de manière déclara
       <td>25 heures</td>
     </tr>
     <tr>
-      <td><strong>OPTION 1 - C++</strong></td>
+      <td><strong>OPTION 1 - Programmation C++</strong></td>
       <td>25 heures</td>
     </tr>
     <tr>
