@@ -13,51 +13,46 @@
 /* Résumé */
 .custom-summary {
   cursor: pointer;
-  color: white; /* <-- texte en blanc */
   font-weight: 600;
   display: inline-block;
   padding: 0.2em 0;
   transition: color 0.2s ease-in-out;
 }
 
-/* Mode sombre */
-@media (prefers-color-scheme: dark) {
-  .custom-details {
-    border-color: #333;
-    color: white; /* <-- texte en blanc */
-  }
-
-  .custom-details[open] {
-    border-left: 4px solid white;
-  }
-
-  .custom-summary {
-    color: white;
-  }
-
-  .custom-summary:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
+/* Mode sombre : activé par la classe "dark" sur <html> */
+html.dark .custom-details {
+  border-color: #333;
+  color: white;
 }
 
-/* Mode clair */
-@media (prefers-color-scheme: light) {
-  .custom-details {
-    border-color: #ccc;
-    color: #222; /* <-- texte foncé en mode clair */
-  }
+html.dark .custom-details[open] {
+  border-left: 4px solid white;
+}
 
-  .custom-details[open] {
-    border-left: 4px solid #007acc;
-  }
+html.dark .custom-summary {
+  color: white;
+}
 
-  .custom-summary {
-    color: auto;
-  }
+html.dark .custom-summary:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
-  .custom-summary:hover {
-    color: #007acc;
-    text-decoration: underline;
-  }
+/* Mode clair : activé par la classe "light" */
+html.light .custom-details {
+  border-color: #ccc;
+  color: #222;
+}
+
+html.light .custom-details[open] {
+  border-left: 4px solid #007acc;
+}
+
+html.light .custom-summary {
+  color: #222;
+}
+
+html.light .custom-summary:hover {
+  color: #007acc;
+  text-decoration: underline;
 }
