@@ -36,7 +36,7 @@ $$
 \begin{align*}
 z_1+z_2 &= (a_1+ib_1)+(a_2+ib_2) \\
 &= a_1+a_2+ib_1+ib_2 \\
-&= a_1+a_2+\underbrace{i(b_1+b_2)}_{\text{factorier par }i}
+&= a_1+a_2+\underbrace{i(b_1+b_2)}_{\text{factoriser par }i}
 \end{align*}
 $$
 
