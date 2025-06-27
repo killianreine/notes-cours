@@ -30,9 +30,9 @@ $$
 z_1+z_2=a_1+a_2+i(b_1+b_2)
 $$
 
->*Ce résultat se retrouve assez facilement*
->
->$$
+<u>Eh regarde !</u> *Ce résultat se retrouve assez facilement*
+
+$$
 \begin{align*}
 z_1+z_2 &= (a_1+ib_1)+(a_2+ib_2) \\
 &= a_1+a_2+ib_1+ib_2 \\
