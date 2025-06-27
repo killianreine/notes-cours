@@ -56,7 +56,7 @@ $$
 
 
 <details class="custom-details">
-<summary><span class="custom-summary">Eh regarde !</span></summary>
+<summary><span class="custom-summary">La démonstration</span></summary>
 
 *Ce résultat se retrouve assez facilement* :
 
