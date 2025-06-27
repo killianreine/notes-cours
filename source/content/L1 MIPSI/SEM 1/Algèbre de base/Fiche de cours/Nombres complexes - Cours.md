@@ -15,3 +15,8 @@ $$
 >On dit alors que *$z$ est un nombre complexe*, il appartient donc à l'ensemble $\mathbb{C}$.  
 >C'est la **==forme algébrique==** de $z$.
 
+En considérant $z_1=a_1+ib_1$ et $z_2=a_2+ib_2$, on dit qu'ils sont **égaux** lorsque partie réelle et leur partie imaginaire sont égales deux à deux : 
+
+$$
+(z_1=z_2) \Longleftrightarrow (a_1=a_2 \quad et \quad b_1=b_2)
+$$
