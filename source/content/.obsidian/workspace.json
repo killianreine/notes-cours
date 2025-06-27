@@ -251,7 +251,8 @@
       "command-palette:Ouvrir la palette de commandes": false,
       "obsidian-spaced-repetition:Apprendre les flashcards": false,
       "flashcards-obsidian:Generate flashcards": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "cloze:Toggle all clozes": false
     }
   },
   "active": "19577fda7c036523",

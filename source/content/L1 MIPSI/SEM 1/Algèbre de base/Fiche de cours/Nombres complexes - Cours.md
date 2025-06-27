@@ -1,0 +1,2 @@
+- Le président de la France est {{c1::Emmanuel Macron}}.
+- La capitale de l’Espagne est {{c1::Madrid}}.
