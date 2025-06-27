@@ -19,10 +19,11 @@
   transition: color 0.2s ease-in-out;
 }
 
-/* Mode sombre (par défaut Quartz) */
+/* Mode sombre */
 @media (prefers-color-scheme: dark) {
   .custom-details {
     border-color: #333;
+    color: white; /* <-- texte en blanc */
   }
 
   .custom-details[open] {
@@ -43,10 +44,11 @@
 @media (prefers-color-scheme: light) {
   .custom-details {
     border-color: #ccc;
+    color: #222; /* <-- texte foncé en mode clair */
   }
 
   .custom-details[open] {
-    border-left: 4px solid #007acc; // Accent bleu clair
+    border-left: 4px solid #007acc;
   }
 
   .custom-summary {
