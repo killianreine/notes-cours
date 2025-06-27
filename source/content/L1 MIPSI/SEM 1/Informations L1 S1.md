@@ -97,15 +97,21 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
   </thead>
   <tbody>
     <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 1</td>
     </tr>
     <tr>
       <td><strong>Algèbre de base</strong></td>
       <td>50 heures</td>
     </tr>
     <tr>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 2</td>
+    </tr>
+    <tr>
       <td><strong>Algorithmique & Programmation 1</strong></td>
       <td>50 heures</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 3</td>
     </tr>
     <tr>
       <td><strong>Informatique de base</strong></td>

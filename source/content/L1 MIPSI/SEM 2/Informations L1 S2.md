@@ -69,15 +69,21 @@ Cette UE développe une culture des formats ouverts et une rigueur dans la gesti
   </thead>
   <tbody>
     <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 1</td>
     </tr>
     <tr>
       <td><strong>Algorithmique et Programmation 2</strong></td>
       <td>50 heures</td>
     </tr>
     <tr>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 2</td>
+    </tr>
+    <tr>
       <td><strong>Mathématiques pour l'informatique</strong></td>
       <td>50 heures</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 3</td>
     </tr>
     <tr>
       <td><strong>Programmation python</strong></td>
