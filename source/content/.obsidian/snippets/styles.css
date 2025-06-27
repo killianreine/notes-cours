@@ -1,0 +1,26 @@
+/* Style pour les blocs déroulants (details/summary) */
+.custom-details {
+  background-color: #1e1e1e; /* fond sombre comme Quartz */
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.custom-details[open] {
+  border-left: 4px solid white; /* accent bleu quand ouvert */
+}
+
+.custom-summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+.custom-summary:hover {
+  color: #fff;
+  text-decoration: underline;
+}

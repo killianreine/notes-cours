@@ -55,8 +55,8 @@ z_1z_2=a_1a_2-b_1b_2+i(a_1b_2+a_2b_1)
 $$
 
 
-<details>
-<summary><u>La démonstration</u></summary>
+<details class="custom-details">
+<summary><span class="custom-summary">Eh regarde !</span></summary>
 
 *Ce résultat se retrouve assez facilement* :
 
@@ -71,4 +71,5 @@ z_1z_2 &= (a_1 + ib_1)(a_2 + ib_2) \\
 $$
 
 </details>
+
 
