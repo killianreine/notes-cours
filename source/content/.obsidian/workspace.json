@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - CM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Processus - CM"
             }
           }
         ],
@@ -242,9 +242,12 @@
   },
   "active": "19577fda7c036523",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - CM.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - CM.md",
+    "index.md",
     "L2 INFORMATIQUE/SEM 4/Informations L2 S4.md",
     "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
-    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md",
     "L2 INFORMATIQUE/SEM 4/Système/readme SystèmeExp1.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L2 INFORMATIQUE/SEM 4/Système/Processus/Complément - Tube unidirectionnel.md",
@@ -253,7 +256,6 @@
     "L2 INFORMATIQUE/SEM 4/Système/Threads",
     "L2 INFORMATIQUE/SEM 4/Système/Processus",
     "L1 MIPSI/SEM 1/Informations L1 S1.md",
-    "index.md",
     "L1 MIPSI/SEM 2/Informations L1 S2.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
@@ -268,10 +270,8 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "01.md",
-    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - CM.md",
     "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
-    "L3 INFORMATIQUE/Information L3 S5.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours",
     "L2 INFORMATIQUE/SEM 3/Programmation C",
     "L3 INFORMATIQUE",

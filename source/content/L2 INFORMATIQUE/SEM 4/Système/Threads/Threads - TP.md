@@ -281,7 +281,3 @@ int main() {
     return 0;
 }
 ```
-
-## 5. Exercices de TP
- - Les exercices du TP corrigés : [[Threads - TP]]
- - Un exercice en plus, on sait jamais... : [[Exo supp. THREADS]]

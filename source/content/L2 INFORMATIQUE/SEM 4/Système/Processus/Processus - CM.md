@@ -368,5 +368,6 @@ sleep(1); // Attendre 1 seconde
 - `kill` permet de tuer un processus
 
 ## Compléments de cours
+- Le corrigé des TP : [[Processus - TP]]
 - Sur les pipes  : [[Complément - Tube unidirectionnel]]
 - Sur les topologies de processus : [[Complément - Topologie processus]]

@@ -697,3 +697,6 @@ Explications détaillées du programme :
 ## Données privées d'un thread ?
 >On l'a pas vu en TP donc je pense que ça tombera pas.
 
+## Exercices de TP
+ - Les exercices du TP corrigés : [[Threads - TP]]
+ - Un exercice en plus, on sait jamais... : [[Exo supp. THREADS]]
