@@ -1,0 +1,142 @@
+{
+  "settings": {
+    "CUSTOM_REGEXPS": {
+      "Basique": "",
+      "Basique (carte inversée optionnelle)": "",
+      "Basique (saisissez la réponse)": "",
+      "Généralités (deux sens)": "",
+      "Obsidian-basic": "",
+      "Obsidian-basic-reversed": "",
+      "Obsidian-cloze": "",
+      "Obsidian-spaced": "",
+      "Schéma à Remplir": "",
+      "Texte à trous": ""
+    },
+    "FILE_LINK_FIELDS": {
+      "Basique": "Recto",
+      "Basique (carte inversée optionnelle)": "Recto",
+      "Basique (saisissez la réponse)": "Recto",
+      "Généralités (deux sens)": "Recto",
+      "Obsidian-basic": "Front",
+      "Obsidian-basic-reversed": "Front",
+      "Obsidian-cloze": "Text",
+      "Obsidian-spaced": "Prompt",
+      "Schéma à Remplir": "À Remplir",
+      "Texte à trous": "Texte"
+    },
+    "CONTEXT_FIELDS": {},
+    "FOLDER_DECKS": {},
+    "FOLDER_TAGS": {},
+    "Syntax": {
+      "Begin Note": "START",
+      "End Note": "END",
+      "Begin Inline Note": "STARTI",
+      "End Inline Note": "ENDI",
+      "Target Deck Line": "TARGET DECK",
+      "File Tags Line": "FILE TAGS",
+      "Delete Note Line": "DELETE",
+      "Frozen Fields Line": "FROZEN"
+    },
+    "Defaults": {
+      "Scan Directory": "",
+      "Tag": "Obsidian_to_Anki",
+      "Deck": "Default",
+      "Scheduling Interval": 0,
+      "Add File Link": false,
+      "Add Context": false,
+      "CurlyCloze": false,
+      "CurlyCloze - Highlights to Clozes": false,
+      "ID Comments": true,
+      "Add Obsidian Tags": false
+    },
+    "IGNORED_FILE_GLOBS": [
+      "**/*.excalidraw.md"
+    ]
+  },
+  "Added Media": [],
+  "File Hashes": {
+    "L3 INFORMATIQUE/Information L3 S5.md": "105f477b84d97265d66b7027cf96e87b",
+    "index.md": "852016a8ea42257d868bbeb37223af0e",
+    "L2 INFORMATIQUE/SEM 4/Informations L2 S4.md": "44cd4ed4af4097486aad1b486521d17e",
+    "L2 INFORMATIQUE/SEM 4/Système/Correction examens/Correction exam 2021.md": "28f88281118c673e00e75d4f6bf8c2f4",
+    "L2 INFORMATIQUE/SEM 4/Système/Correction examens/Correction exam 2019.md": "17f2c70978ffa2decc1c8a4acab09e3a",
+    "L2 INFORMATIQUE/SEM 4/Système/Threads/Exo supp. THREADS.md": "5975286826e29a7fe45cb154399c8ef6",
+    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md": "a677c85e6676f4f4bceecb9853ccfec0",
+    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - CM.md": "308f53370752e90e05de095b6c114c8d",
+    "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - TP.md": "e346c1b4f9df0a0b59f4cbfb0d2745dd",
+    "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - CM.md": "79b0c898e533b12e610ab325558e564b",
+    "L2 INFORMATIQUE/SEM 4/Système/Processus/Complément - Tube unidirectionnel.md": "f0632b832e341a96c71491b3cff26507",
+    "L2 INFORMATIQUE/SEM 4/Système/Processus/Complément - Topologie processus.md": "cc7e035999c0be0096ccdd1e76dc6935",
+    "L2 INFORMATIQUE/SEM 4/Système/readme SystèmeExp1.md": "a3469f7fca049c61227fbd794814e45f",
+    "L2 INFORMATIQUE/SEM 4/Statistiques/Révisions PARTIEL.md": "69ba7b2c929bef251944be9a47a70a57",
+    "L2 INFORMATIQUE/SEM 4/Statistiques/Corrigé du TD2.md": "3f15c56d71d56d422826be8664094dd5",
+    "L2 INFORMATIQUE/SEM 4/Statistiques/Fiche Méthode - Partiel.md": "69b36669e3ccf2a355d9d9318940ca4b",
+    "L2 INFORMATIQUE/SEM 4/Progr. Web/Le cours.md": "2bf36ac756b6a94cc7f634706208de35",
+    "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Le cours.md": "6264f129f80cfa88ea1b8b3608fd0a75",
+    "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction - Explication.md": "30bc0c8c34f527b85eed1e2ffb4e2477",
+    "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction de l'examen 2024.md": "9e94ec3dc1c2eb19f30099ce8aaff9d8",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md": "7ed538c4c61c3d5e01bf51f13a9b0856",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md": "4eb2c480c35368f8cf2be24f61806ee5",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md": "74483ca83a4f1cb6c017ce4f33c47358",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md": "74da3ab51ecd5ccb80bf9224548dfaba",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md": "0b6e70f72478c31f2c8e8310b498a57c",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md": "ac799c857d10d9b4ca43df50244be62b",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md": "bbdb5b5cbc49eb49130bd112a4a6d5e6",
+    "L2 INFORMATIQUE/SEM 3/Information L2 S3.md": "8790cd52543dde5d15edf6e00bf7a6e1",
+    "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md": "5a8347cc66795a92cfa5d8624dba85f8",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Séance 4.4 (14 mars).md": "2601d3e70416eea133734813650b572d",
+    "L1 MIPSI/SEM 2/MATINFO L1/4. Les suites/Récap - 13 mars.md": "4fd1026233976156cee265a493969ca5",
+    "L1 MIPSI/SEM 2/MATINFO L1/6. Relation binaire/Séance 6.1 (19 mars).md": "2d200ab1cadd98611aa16e18185b2d58",
+    "L1 MIPSI/SEM 2/INFO DOCS/Révisions partiel.md": "53a97a06f0b60b2ab4b1430e86048901",
+    "L1 MIPSI/SEM 2/Informations L1 S2.md": "2fccf99f72d91d53b74a6f901e8650a2",
+    "L1 MIPSI/SEM 1/Informations L1 S1.md": "4394f3ee7b3452091fdc53623a26a057",
+    "L1 MIPSI/SEM 1/Algèbre de base/Support - Algèbre de base.md": "ef5cd66cab4c7d219b0b77ffa8c85d0f",
+    "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md": "588a7888b87f47811b9e408a413e6db6",
+    "L1 MIPSI/SEM 1/Algèbre de base/Corrections/Correction examen rattrapage 2024.md": "c55e1802c733f935ef12df8f92c34871"
+  },
+  "fields_dict": {
+    "Basique": [
+      "Recto",
+      "Verso"
+    ],
+    "Basique (carte inversée optionnelle)": [
+      "Recto",
+      "Verso",
+      "Ajouter le verso"
+    ],
+    "Basique (saisissez la réponse)": [
+      "Recto",
+      "Verso"
+    ],
+    "Généralités (deux sens)": [
+      "Recto",
+      "Verso"
+    ],
+    "Obsidian-basic": [
+      "Front",
+      "Back"
+    ],
+    "Obsidian-basic-reversed": [
+      "Front",
+      "Back"
+    ],
+    "Obsidian-cloze": [
+      "Text",
+      "Extra"
+    ],
+    "Obsidian-spaced": [
+      "Prompt"
+    ],
+    "Schéma à Remplir": [
+      "À Remplir",
+      "Image",
+      "En-tête",
+      "Verso Extra",
+      "Commentaires"
+    ],
+    "Texte à trous": [
+      "Texte",
+      "Verso Extra"
+    ]
+  }
+}
