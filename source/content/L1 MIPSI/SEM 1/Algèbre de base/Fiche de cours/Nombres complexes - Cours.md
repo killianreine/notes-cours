@@ -29,3 +29,14 @@ Soient $z_1=a_1+ib_1$ et $z_2=a_2+ib_2$, alors $z_1+z_2$ la somme de deux comple
 $$
 z_1+z_2=a_1+a_2+i(b_1+b_2)
 $$
+
+>*Ce résultat se retrouve assez facilement*
+>
+>$$
+\begin{align*}
+z_1+z_2 &= (a_1+ib_1)+(a_2+ib_2) \\
+&= a_1+a_2+ib_1+ib_2 \\
+&= a_1+a_2+i(b_1+b_2)
+\end{align*}
+$$
+
