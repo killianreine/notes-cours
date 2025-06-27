@@ -251,15 +251,15 @@
       "command-palette:Ouvrir la palette de commandes": false,
       "obsidian-spaced-repetition:Apprendre les flashcards": false,
       "flashcards-obsidian:Generate flashcards": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
-      "cloze:Toggle all clozes": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
   "active": "19577fda7c036523",
   "lastOpenFiles": [
+    "L1 MIPSI/SEM 1/Informations L1 S1.md",
+    "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - CM.md",
     "L1 MIPSI/SEM 2/Informations L1 S2.md",
-    "L1 MIPSI/SEM 1/Informations L1 S1.md",
     "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - CM.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md",
     "index.md",
@@ -273,7 +273,6 @@
     "L2 INFORMATIQUE/SEM 4/Système/Threads",
     "L2 INFORMATIQUE/SEM 4/Système/Processus",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
-    "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Support - Algèbre de base.md",
     "L2 INFORMATIQUE/SEM 4/Statistiques/Révisions PARTIEL.md",
     "L2 INFORMATIQUE/SEM 4/Statistiques/Fiche Méthode - Partiel.md",
