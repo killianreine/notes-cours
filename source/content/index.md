@@ -21,5 +21,6 @@ Bienvenue sur ce dépôt de notes regroupant l’ensemble des cours suivis par *
 	- Semestre 2 [[Informations L1 S2]]
 - Licence deuxième année
 	- Semestre 3 [[Information L2 S3]]
+	- Semestre 4 [[Informations L2 S4]]
 - Licence troisième année
 	- Semestre 5 [[Information L3 S5]]
