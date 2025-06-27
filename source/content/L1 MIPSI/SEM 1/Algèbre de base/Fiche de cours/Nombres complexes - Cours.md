@@ -24,13 +24,14 @@ $$
 <br/>
 
 $\boxed{\text{Addition de deux nombres complexes}}$  
-Soient $z_1=a_1+ib_1$ et $z_2=a_2+ib_2$, alors $z_1+z_2$ la somme de deux complexe est donnée par : 
+Soient $z_1=a_1+ib_1$ et $z_2=a_2+ib_2$, alors $z_1+z_2$ la somme de deux complexes est donnée par : 
 
 $$
 z_1+z_2=a_1+a_2+i(b_1+b_2)
 $$
 
-<u>Eh regarde !</u> *Ce résultat se retrouve assez facilement*
+<u>Eh regarde !</u>  
+*Ce résultat se retrouve assez facilement*
 
 $$
 \begin{align*}
@@ -40,3 +41,11 @@ z_1+z_2 &= (a_1+ib_1)+(a_2+ib_2) \\
 \end{align*}
 $$
 
+<br/>
+
+$\boxed{\text{Produit de deux nombres complexes}}$  
+Soient $z_1=a_1+ib_1$ et $z_2=a_2+ib_2$, alors $z_1+z_2$ le produit de deux complexes est donnée par : 
+
+$$
+z_1z_2=a_1a_2-b_1b_2+i(a_1b_2+a_2b_1)
+$$
