@@ -30,7 +30,9 @@ $$
 z_1+z_2=a_1+a_2+i(b_1+b_2)
 $$
 
-<u>Eh regarde !</u>  
+<details>
+<summary><u>La démonstration</u></summary>
+
 *Ce résultat se retrouve assez facilement*
 
 $$
@@ -40,6 +42,8 @@ z_1+z_2 &= (a_1+ib_1)+(a_2+ib_2) \\
 &= a_1+a_2+\underbrace{i(b_1+b_2)}_{\text{factoriser par }i}
 \end{align*}
 $$
+
+</details>
 
 <br/>
 
@@ -52,7 +56,7 @@ $$
 
 
 <details>
-<summary><u>Eh regarde !</u></summary>
+<summary><u>La démonstration</u></summary>
 
 *Ce résultat se retrouve assez facilement* :
 
