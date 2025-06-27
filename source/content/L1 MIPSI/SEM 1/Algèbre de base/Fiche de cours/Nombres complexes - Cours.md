@@ -30,8 +30,8 @@ $$
 z_1+z_2=a_1+a_2+i(b_1+b_2)
 $$
 
-<details>
-<summary><u>La démonstration</u></summary>
+<details class="custom-details">
+<summary><span class="custom-summary">La démonstration</span></summary>
 
 *Ce résultat se retrouve assez facilement*
 
