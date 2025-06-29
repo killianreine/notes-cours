@@ -26,7 +26,7 @@ L'**Informatique de base** est une Unité d'Enseignement Disciplinaire (UED) com
 # Unités d'Enseignements Transversal - UET
 ## Anglais 1
 L’**anglais** est une Unité d'Enseignement Transversal (UET) et occupe une place essentielle dans la formation universitaire, en particulier dans les disciplines scientifiques et techniques. Il permet aux étudiants de développer leurs compétences en compréhension et en expression, tout en se familiarisant avec le vocabulaire professionnel et scientifique. Cet enseignement vise à les préparer à une communication efficace à l’échelle internationale, tant à l’écrit qu’à l’oral.
-- <u>Durée de l'UE :</u> 18 heures
+- <u>Durée de l'UE :</u> 22 heures
 
 ## Méthodologie
 L’**Unité d’Enseignement Transversal (UET) Méthodologie** a pour objectif d’accompagner les étudiants dans leur transition vers l’enseignement supérieur. Elle leur fournit des outils et des méthodes de travail indispensables à la réussite universitaire : prise de notes efficace, gestion du temps, recherche documentaire, lecture critique, rédaction de rapports ou encore préparation aux examens. Cette UE vise à développer l’autonomie, l’organisation et la rigueur nécessaires à un parcours universitaire réussi.
@@ -46,10 +46,6 @@ L’**Unité d’Enseignement Projet  Professionnel et Personnel (PPP)** permet 
 <br/>Tout au long du semestre, les étudiants mènent des recherches, réalisent des interviews de professionnels, échangent sur leurs parcours et leurs motivations, puis rédigent un dossier individuel. Le projet se conclut par une **présentation orale en groupe**, où ils exposent leur travail et leur compréhension du métier étudié.
 <br/>Cette UE favorise la prise de parole, le travail en équipe et une meilleure connaissance de soi et du monde professionnel.
 - <u>Durée de l'UE :</u> 8 heures
-
-## Transition Écologique et Développement Soutenable
-L’**Unité d’Enseignement Transition Écologique et Développement Soutenable (TEDS)** vise à sensibiliser les étudiants aux enjeux environnementaux, sociaux et économiques de la transition écologique. À travers une approche interdisciplinaire, cette UE permet de mieux comprendre les grands défis actuels : changement climatique, épuisement des ressources, biodiversité, justice sociale, consommation responsable, etc.
-<br/>Les étudiants sont amenés à réfléchir à leur rôle de citoyen et de futur professionnel dans un monde en transition, à analyser des situations concrètes et à envisager des solutions durables. L’UE combine apports théoriques, travaux de groupe, débats, études de cas et parfois projets concrets ou partenariats locaux.
 
 # Unité d'Enseignement Personnalisé - UEP
 
@@ -122,7 +118,7 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
     </tr>
     <tr>
       <td><strong>Anglais 1</strong></td>
-      <td>18 heures</td>
+      <td>22 heures</td>
     </tr>
     <tr>
       <td><strong>Méthodologie</strong></td>
@@ -139,10 +135,6 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
     <tr>
       <td><strong>Projet Personnel et Professionnel (PPP)</strong></td>
       <td>8 heures</td>
-    </tr>
-    <tr>
-      <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>
-      <td>—</td>
     </tr>
     <tr>
       <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>

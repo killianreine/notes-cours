@@ -22,7 +22,7 @@ L'UE **Mathématiques pour l'informatique** permet de réintroduire des notions 
 L’**Unité d’Enseignement Programmation Python** initie les étudiants à la programmation en utilisant **Python**, un langage moderne, lisible et polyvalent.  
 Elle aborde les notions fondamentales telles que les **variables**, **structures de contrôle**, **fonctions**, **listes**, **dictionnaires**, ainsi que l’**introduction à la programmation orientée objet**.  
 Python est également utilisé pour des applications concrètes en **scientifique**, **web**, **automatisation** ou encore **analyse de données**, ce qui en fait un outil incontournable dans la formation en informatique.
-- <u>Support de cours :</u> *Prochainement...*
+- <u>Support de cours :</u> *Aucun...*
 - <u>Durée de l'UE :</u> 50 heures
 
 # Unités d'Enseignements Transversal - UET
@@ -33,10 +33,11 @@ L’**anglais** est une Unité d'Enseignement Transversal (UET) et occupe une pl
 ## PIX 2
 **PIX** est une plateforme en ligne d’évaluation et de développement des compétences numériques. Elle permet aux étudiants d’identifier leurs points forts et leurs axes de progression dans des domaines variés : sécurité numérique, traitement de l’information, création de contenus, communication en ligne, programmation, etc.  
 L’utilisation de PIX dans le cadre universitaire vise à renforcer l’autonomie numérique des étudiants et à les préparer à l’obtention de la certification PIX, désormais reconnue dans de nombreux contextes académiques et professionnels.
-- <u>Durée de l'UE :</u> 8 heures
+- <u>Durée de l'UE :</u> 16 heures
 
 ## Projet
 Vous travaillerez en groupe pour proposer un projet de fin d'année !
+- <u>Durée de l'UE :</u> 14h
 
 ## Transition Écologique et Développement Soutenable
 L’**Unité d’Enseignement Transition Écologique et Développement Soutenable (TEDS)** vise à sensibiliser les étudiants aux enjeux environnementaux, sociaux et économiques de la transition écologique. À travers une approche interdisciplinaire, cette UE permet de mieux comprendre les grands défis actuels : changement climatique, épuisement des ressources, biodiversité, justice sociale, consommation responsable, etc.
@@ -98,11 +99,11 @@ Cette UE développe une culture des formats ouverts et une rigueur dans la gesti
     </tr>
     <tr>
       <td><strong>PIX 2</strong></td>
-      <td>8 heures</td>
+      <td>16 heures</td>
     </tr>
     <tr>
       <td><strong>Projet</strong></td>
-      <td>—</td>
+      <td>14 heures</td>
     </tr>
     <tr>
       <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>

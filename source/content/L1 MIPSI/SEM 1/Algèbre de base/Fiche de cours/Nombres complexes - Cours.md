@@ -1,3 +1,4 @@
+
 On admet l'existence d'un élément $i$ tel que : 
 
 $$
