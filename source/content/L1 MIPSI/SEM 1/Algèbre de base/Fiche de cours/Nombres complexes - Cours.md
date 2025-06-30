@@ -92,3 +92,11 @@ Pour simplifier, le conjugué c'est simplement inverser le signe de la partie im
 <u>Exemple :</u>  
 Si $z=2+2i$ alors son conjugué sera donné par $\overline{z}=2-2i$.
 
+>[!cite] Module d'un complexe
+>Soit $z=a+ib$ un nombre complexe *sous forme algébrique* alors on appelle **==module==** le nombre complexe noté $|z|$ et donné par : 
+>
+>$$
+>|z|=\sqrt{a^2+b^2}
+>$$
+>
+
