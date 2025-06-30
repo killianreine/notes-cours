@@ -85,7 +85,7 @@ $$
 >
 >$$
 >\overline{z}=a-ib
-$$
+>$$
 
 Pour simplifier, le conjugué c'est simplement inverser le signe de la partie imaginaire de $z$.  
 
