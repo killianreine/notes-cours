@@ -18,7 +18,7 @@ Il s’adresse aux étudiants en informatique ou à toute personne souhaitant d�
 ## 📚 Le cours
 
 - Accéder aux cours d'AlgoProg 4 : [[Cours - AlgoProg4|Cours - AlgoProg4]]
-
+- Correction de l'examen 2024: [[Correction de l'examen AP4 2024]]
 ---
 
 ## 👨‍🎓 Pour qui ?
