@@ -88,7 +88,11 @@ fin A
 
 >[!info] Remarque
 >L'opération `controle` c'est le nombre de fois qu'on vérifie si `i` inférieur ou égal à `N`. En gros notre boucle dans l'algo elle vas de `2->N`, ainsi pendant l'exécution la variable `i` prend les valeurs suivantes :
->$$i : 2 \to 3 \to 4 \to \ldots \to N \to N+1$$
+>
+>$$
+>i : 2 \to 3 \to 4 \to \ldots \to N \to N+1
+>$$
+>
 >Vous allez me dire *pourquoi $N+1$ et bien parce que on prend `i` inférieur ou égal à `N`, du coup si `i=N` le tour de boucle vas se faire. Mais lorsque `i` prend la valeur `N+1` c'est à ce moment là que la boucle `pour` se stoppe. C'est pour cette raison qu'il y a à chaque fois `N` comparaisons.* 
 
 2) Si `N=10` et `T` trié dans l'ordre décroissant
@@ -132,7 +136,12 @@ Ainsi, on en conclu que le nombre d'affectation dépend de l'entrée même si l'
 *Dans nos études, nous considérerons que la taille de l'entier est minimale, même si cette dernière dépend du codage.*
 
 >[!info] Remarque
->Si on fixe une base $b$ et un nombre $N$, alors on aura pour chiffre de $N$ : $$N = \lceil \log_b(N) \rceil $$
+>Si on fixe une base $b$ et un nombre $N$, alors on aura pour chiffre de $N$ : 
+>
+>$$
+>N = \lceil \log_b(N) \rceil
+>$$
+>
 >*Pour rappel*
 >Soit $x \in \mathbb{R}$ alors on note sa valeur entière supérieure par $\lceil x \rceil$.
 
@@ -151,6 +160,7 @@ Pour $N$ entiers on aurait $4 \times N$, c'est une fonction linéaire.
 $$
 taille = N \times tailleCodage
 $$
+
 >[!cite] Définition
 >On appelle **==ordre de grandeur==** la tendance d'une courbe quand $N$ augmente.
 
@@ -164,7 +174,12 @@ Dans ce cours, on utilisera la **notation de Landau $\mathcal{O}$** créée par 
 
 >[!tip] Rappel
 >*Dans le cadre des Maths pour l'info en L1*
->La notion de **suite/fonction dominée** a été introduite. Soient $f$ et $g$ deux fonctions, on dit que $f$ est dominée par $g$ si et seulement si : $$\exists C > 0 \mid \forall n_0 \geq n \quad f \leq C(f)$$
+>La notion de **suite/fonction dominée** a été introduite. Soient $f$ et $g$ deux fonctions, on dit que $f$ est dominée par $g$ si et seulement si : 
+>
+>$$
+>\exists C > 0 \mid \forall n_0 \geq n \quad f \leq C(f)
+>$$
+>
 >En français, on cherche un rang $n_0$ à partir duquel $f$ est plus petit ou égal à $g$.
 
 > [!question] Exercice
@@ -173,6 +188,7 @@ Dans ce cours, on utilisera la **notation de Landau $\mathcal{O}$** créée par 
 
 >[!success] Correction
 >Pour plus de facilité nous allons prendre chaque termes de la fonction et étudier leur signe par rapport à $n^2$.
+>
 >$$
 >\begin{align*}
 >3n^2 & \leq 3n^2 & \forall n \geq 0 \\
@@ -180,7 +196,9 @@ Dans ce cours, on utilisera la **notation de Landau $\mathcal{O}$** créée par 
 >10 & \leq n^2 & \forall n \geq 4
 >\end{align*}
 >$$
+>
 >Ainsi si je regroupe les trois inégalités et que je prend le rang $n_0$ qui permet de respecter les conditions, j'obtient :
+>
 >$$
 >3n^2+5n+10 \leq 5n^2 \quad \forall n \geq 5
 >$$
@@ -197,8 +215,13 @@ En reprenant les fonctions données par M.Sanlaville pendant les CMs, étudions 
 >[!example] Propriétés
 >- Soit $g$ une fonction alors on a $g=\mathcal{O}(g)$
 >	Une fonction $g$ se domine elle même.
->- Soit $f$ et $g$ deux fonctions : $$(f=\Theta(g)) \Longleftrightarrow (f=\mathcal{O}(g) \land g=\mathcal{O}(f))$$
->	En gros, si $f=\Theta(g)$ ça revient à dire que $f$ et $g$ croient de manière proportionnelle, qu'elles ont la même complexité asymptotiques.
+>- Soit $f$ et $g$ deux fonctions : 
+>  
+>  $$
+> (f=\Theta(g)) \Longleftrightarrow (f=\mathcal{O}(g) \land g=\mathcal{O}(f))
+> $$
+>  
+>En gros, si $f=\Theta(g)$ ça revient à dire que $f$ et $g$ croient de manière proportionnelle, qu'elles ont la même complexité asymptotiques.
 
 ## Complexité des algorithmes
 
@@ -335,6 +358,7 @@ pour i allant de 1 à N
 			// Instructions constantes OE
 ```
 On a alors une complexité définie par :
+
 $$
 \underset{i=1}{\overset{N}{\sum}}\underset{i=1}{\overset{N}{\sum}}\underset{i=1}{\overset{N}{\sum}}k=\mathcal{O}(N^3+k)=\mathcal{O}(N^3)
 $$
@@ -488,6 +512,7 @@ où $f(n)$ représente le nombre d'`OE` à l'intérieur de l'appel.
 
 >[!warning] Attention
 >Les formules suivantes s'appliquent uniquement aux algorithmes où la relation de récurrence est de la forme : 
+>
 >$$
 >C(n) = a \times C\left( \frac{n}{b}\right)+f(n)
 >$$
@@ -498,18 +523,18 @@ où $f(n)$ représente le nombre d'`OE` à l'intérieur de l'appel.
 >- $f(n)$ le coût des opérations
 
 >[!example] Théorème maître (Master Theorem)
->1) Si $f(n)=\Theta(n^{\log_ba-\epsilon})$ pour $\epsilon > 0$
->   Dans ce cas, la fonction $f$ croit plus lentement que $\log_ba-\epsilon$, donc le coût total est dominé par le temps de résolution des sous-problèmes.
+>1) Si $f(n)=\Theta(n^{\log_ba-\epsilon})$ pour $\epsilon > 0$  
+>   Dans ce cas, la fonction $f$ croit plus lentement que $\log_ba-\epsilon$, donc le coût total est dominé par le temps de résolution des sous-problèmes.  
 >   Alors $C(n)=\Theta(n^{\log_ba})$
->2) Si $f(n)=\Theta(n^{\log_ba})$
->   Alors $C(n)=\Theta(n^{\log_b(a)} \times \log(n))$
+>2) Si $f(n)=\Theta(n^{\log_ba})$  
+>   Alors $C(n)=\Theta(n^{\log_b(a)} \times \log(n))$  
 >   Le coût des sous problèmes sont du même ordre.
->3) Si $f(n)=\Omega(n^{\log_ba+\epsilon})$ avec $\epsilon > 0$
->   Alors $C(n)=\Theta(f(n))$
+>3) Si $f(n)=\Omega(n^{\log_ba+\epsilon})$ avec $\epsilon > 0$  
+>   Alors $C(n)=\Theta(f(n))$  
 >   Dans ce cas $f(n)$ croît plus vite que le coût des sous-problèmes donc $f$ domine.
 >
->Si $a=b$ alors $log_b=1$
->Alors on dispose de 3 cas différents
+>Si $a=b$ alors $log_b=1$  
+>Alors on dispose de 3 cas différents  
 >- $f(n)=\Theta(n^{1-\epsilon})$ donc $\Theta(n)$
 >- $f(n)=\Theta(n)$ donc $\Theta(n \times \log(n))$
 >- $f(n)=\Omega(n^{1+\epsilon})$ donc $\Theta(f(n))$
@@ -863,7 +888,7 @@ En somme :
 
 >[!info] Remarque
 >Ainsi pour montrer la correction il faut :
->- Prouver que l'algorithme est fini
+>- Prouver que l'algorithme est fini  
 >	- En utilisant un variant $V$
 >- Déterminer un invariant $I$ et démontrer par récurrence que ce dernier est vrai avant la boucle, pendant chaque itération, et à la sortie de la boucle.
 
