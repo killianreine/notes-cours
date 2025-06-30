@@ -701,15 +701,15 @@ Par définition un entier $x$ est une puissance de $2$ si :
 >Pour $x=8$ alors on a :
 >
 >$$
-8 \to 4 \to 2 \to 1
-$$
+>8 \to 4 \to 2 \to 1
+>$$
 >
 >On s'arrête car on a attend $1$, $x=8$ est donc une puissance de $2$.
 >Pour $x=12$ on a :
 >
 >$$
-12 \to 6 \to 3
-$$
+>12 \to 6 \to 3
+>$$
 >
 >On s'arrête car $3$ est impair, ainsi $12$ n'est pas une puissance de $2$.
 
