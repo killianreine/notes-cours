@@ -17,8 +17,8 @@
 >De manière schématique un algorithme peut être vu comme :
 >
 >$$
-entrée \longmapsto procédure \longmapsto sortie
-$$
+>entrée \longmapsto procédure \longmapsto sortie
+>$$
 ## Introduction du cours
 *Un algorithme correct à `90%` n'est pas correct.*
 
