@@ -46,6 +46,7 @@ Elle aborde des notions fondamentales comme les variables, les structures de con
 - <u>Durée de l'UE :</u> 50 heures
 
 # Récap SEMESTRE 3
+à retrouver aussi ici : [[Maquette L2.png]]
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
   <thead>
