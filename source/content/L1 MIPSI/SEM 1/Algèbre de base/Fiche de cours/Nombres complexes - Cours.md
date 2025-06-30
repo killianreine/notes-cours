@@ -73,3 +73,10 @@ $$
 
 </details>
 
+>[!tip] Point méthode
+>*Calculer le produit de 2 nombres complexes*
+>Soit $z_1=a_1+ib_1$ et $z_2=a_2+ib_2$ alors, pour calculer le produit $z_1z_2$ suivons les étapes suivantes : 
+>- Développer le produit $(a_1+ib_1)(a_2+ib_2)$
+>- Remplacer $i^2=-1$
+>- Simplifier l'expression en regroupant les parties réelles et imaginaires.
+
