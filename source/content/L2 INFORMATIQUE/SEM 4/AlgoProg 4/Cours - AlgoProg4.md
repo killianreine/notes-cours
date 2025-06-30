@@ -868,4 +868,4 @@ En somme :
 >- Déterminer un invariant $I$ et démontrer par récurrence que ce dernier est vrai avant la boucle, pendant chaque itération, et à la sortie de la boucle.
 
 # Compléments
-- Correction examen 2024 : [[Correction de l'examen 2024]]
+- Correction examen 2024 : [[Correction de l'examen AP4 2024]]
