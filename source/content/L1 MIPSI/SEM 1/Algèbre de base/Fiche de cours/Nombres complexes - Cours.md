@@ -66,7 +66,7 @@ $$
 z_1z_2 &= (a_1 + ib_1)(a_2 + ib_2) \\
 &= a_1a_2 + a_1ib_2 + ib_1a_2 + i^2b_1b_2 & \text{(développer)} \\
 &= a_1a_2 + i(a_1b_2 + a_2b_{1}) + (-1)(b_1b_2 )& \text{(car } i^2 = -1) \\
-&= a_1a_2-b_1b_2 + ia_1b_2 + -a_2b_1 & \text{(regrouper les termes)} \\
+&= a_1a_2-b_1b_2 + ia_1b_2 + a_2b_1 & \text{(regrouper les termes)} \\
 &= a_1a_2 - b_1b_2 + i(a_1b_2 + a_2b_{1)}& (\text{factoriser par }i)
 \end{align*}
 $$
