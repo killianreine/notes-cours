@@ -64,7 +64,6 @@ Cette UE vise à renforcer les compétences en conception logicielle et à prép
 
 # Récap SEMESTRE 4
 à retrouver aussi ici : [[Maquette L2.png]]
-
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
   <thead>
     <tr>
