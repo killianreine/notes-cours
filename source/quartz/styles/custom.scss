@@ -8,6 +8,19 @@
   margin-top: 1em;
   margin-bottom: 1em;
   transition: border-left 0.2s ease-in-out;
+  position: relative;
+}
+
+/* Barre gauche simulée */
+.custom-details[open]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: currentColor;
+  border-radius: 4px 0 0 4px;
 }
 
 /* Résumé */
@@ -19,39 +32,33 @@
   transition: color 0.2s ease-in-out;
 }
 
-/* Mode sombre : activé par la classe "dark" sur <html> */
+/* Mode sombre */
 html.dark .custom-details {
   border-color: #333;
   color: white;
 }
-
-html.dark .custom-details[open] {
-  border-left: 4px solid white;
+html.dark .custom-details[open]::before {
+  background-color: white;
 }
-
 html.dark .custom-summary {
   color: white;
 }
-
 html.dark .custom-summary:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-/* Mode clair : activé par la classe "light" */
+/* Mode clair */
 html.light .custom-details {
   border-color: #ccc;
   color: #222;
 }
-
-html.light .custom-details[open] {
-  border-left: 4px solid #007acc;
+html.light .custom-details[open]::before {
+  background-color: #007acc;
 }
-
 html.light .custom-summary {
   color: #222;
 }
-
 html.light .custom-summary:hover {
   color: #007acc;
   text-decoration: underline;
