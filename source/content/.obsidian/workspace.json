@@ -104,21 +104,9 @@
               "icon": "lucide-file",
               "title": "Nombres complexes - Cours"
             }
-          },
-          {
-            "id": "d71183b4b093727c",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap-view",
-              "state": {
-                "file": "L1 MIPSI/Maquette L1.md"
-              },
-              "icon": "lucide-file",
-              "title": "Maquette L1"
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -280,10 +268,12 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "322bc93671c41c45",
   "lastOpenFiles": [
-    "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
+    "L1 MIPSI/Maquette L1.png",
+    "L1 MIPSI/SEM 1/Informations L1 S1.md",
     "L1 MIPSI/Maquette L1.md",
+    "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "L1 MIPSI/SEM 1/Algèbre de base/readme Algèbre de base.md",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Cours - AlgoProg4.md",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/readme Algo4.md",
@@ -292,7 +282,6 @@
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction - Explication.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L1 MIPSI/SEM 2/Informations L1 S2.md",
-    "L1 MIPSI/SEM 1/Informations L1 S1.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - CM.md",
     "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - CM.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md",
@@ -311,7 +300,6 @@
     "L2 INFORMATIQUE/SEM 4/Progr. Web/Le cours.md",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours",
     "L2 INFORMATIQUE/SEM 3/Programmation C",
     "L3 INFORMATIQUE",
@@ -327,7 +315,6 @@
     "L2 INFORMATIQUE/SEM 4/Statistiques/bam.png",
     "L2 INFORMATIQUE/SEM 4/Programmation Web/Pasted image 20250526122647.png",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Pasted image 20250320223312.png",
-    "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Pasted image 20250320223309.png",
-    "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Pasted image 20250320212616.png"
+    "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Pasted image 20250320223309.png"
   ]
 }
