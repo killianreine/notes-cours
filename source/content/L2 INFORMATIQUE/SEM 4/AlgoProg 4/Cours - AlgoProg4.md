@@ -17,8 +17,8 @@
 >De manière schématique un algorithme peut être vu comme :
 >
 >$$
->entrée \longmapsto procédure \longmapsto sortie
->$$
+entrée \longmapsto procédure \longmapsto sortie
+$$
 ## Introduction du cours
 *Un algorithme correct à `90%` n'est pas correct.*
 
@@ -866,3 +866,6 @@ En somme :
 >- Prouver que l'algorithme est fini
 >	- En utilisant un variant $V$
 >- Déterminer un invariant $I$ et démontrer par récurrence que ce dernier est vrai avant la boucle, pendant chaque itération, et à la sortie de la boucle.
+
+# Compléments
+- Correction examen 2024 : [[Correction de l'examen 2024]]

@@ -7,7 +7,7 @@ La formation est **structurée en six semestres** et partage certains enseigneme
 # Unités d'enseignements disciplinaire UED
 ## Algorithmique & Programmation 4/5
 L’**Algorithmique & Programmation 4/5** est une Unité d’Enseignement Disciplinaire (UED) qui dans la continuité de l'UE d'algorithmique 3 continues nos études des algorithmes. Au programme finitude, terminaison d'un algorithme, ainsi que pour la seconde partie, les types abstraits de données TAD.
-- <u>Support de cours ALGO 4 :</u> [[L2 INFORMATIQUE/SEM 4/AlgoProg 4/Le cours|Le cours]]
+- <u>Support de cours ALGO 4 :</u> [[Cours - AlgoProg4|Cours - AlgoProg4]]
 - <u>Support de cours ALGO 5 :</u> *aucun support...*
 - <u>Durée de l'UE :</u> 50 heures
 
