@@ -60,6 +60,7 @@ Cette UE développe une culture des formats ouverts et une rigueur dans la gesti
 - <u>Durée de l'UE :</u> 50 heures
 
 # Récap SEMESTRE 2
+à retrouver ici aussi : [[Maquette L1.png]]
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
   <thead>

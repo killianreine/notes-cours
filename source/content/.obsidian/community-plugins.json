@@ -4,5 +4,8 @@
   "obsidian-spaced-repetition",
   "flashcards-obsidian",
   "obsidian-to-anki-plugin",
-  "mindmap"
+  "mindmap",
+  "quick-latex",
+  "obsidian-tikzjax",
+  "obsidian-latex-environments"
 ]
