@@ -87,7 +87,7 @@ $$
 >\overline{z}=a-ib
 $$
 
-*Pour simplifier, le conjugué c'est simplement inverser le signe de la partie imaginaire de $z$.*  
+Pour simplifier, le conjugué c'est simplement inverser le signe de la partie imaginaire de $z$.  
 
 <u>Exemple :</u>  
 Si $z=2+2i$ alors son conjugué sera donné par $\overline{z}=2-2i$.
