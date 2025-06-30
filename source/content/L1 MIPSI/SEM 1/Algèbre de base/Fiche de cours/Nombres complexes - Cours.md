@@ -80,3 +80,15 @@ $$
 >- Remplacer $i^2=-1$
 >- Simplifier l'expression en regroupant les parties réelles et imaginaires.
 
+>[!cite] Conjugué d'un complexe
+>Soit $z$ un nombre complexe *sous forme algébrique* alors on appelle **==conjugué==** le nombre complexe noté $\overline{z}$ et donné par : 
+>
+>$$
+>\overline{z}=a-ib
+$$
+
+*Pour simplifier, le conjugué c'est simplement inverser le signe de la partie imaginaire de $z$.*  
+
+<u>Exemple :</u>  
+Si $z=2+2i$ alors son conjugué sera donné par $\overline{z}=2-2i$.
+
