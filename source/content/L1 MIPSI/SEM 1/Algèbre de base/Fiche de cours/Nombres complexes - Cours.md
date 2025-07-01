@@ -147,3 +147,32 @@ On se retrouve avec $z \in \mathbb{R}$
 
 L'équivalence est donc démontrée.
 </details>
+
+Considérons un nombre complexe de la forme suivante : 
+
+$$
+z = \frac{N}{D}
+$$
+
+Où :
+- $D$ est un complexe  
+  Le dénominateur
+- $N$ un réel ou un complexe  
+  Le numérateur
+
+Alors on peut **simplifier cette fraction** *(mettre sous forme algébrique)* en multipliant en le numérateur et le dénominateur par le conjugué de $D$ :
+
+$$
+\frac{N}{D} = \frac{N\overline{D}}{D\overline{D}}=\frac{N\overline{D}}{|D|^2}
+$$
+
+>[!tip]+ Point méthode
+>*Simplifier une fraction complexe*
+>Soit $z=\overline{N}{D}$.  
+>Alors pour simplifier $z$ il suffit de suivre les étapes suivantes :
+>
+>1. Déterminer $N$ et $D$.
+>2. Calculer $|D|^2$ et $\overline{D}$.
+>3. Simplifier grâce à une des deux formules.
+>4. Conclure avec le résultat de la forme $a+ib$ où $a,b \in \mathbb{R}$
+
