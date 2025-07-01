@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
+                "file": "L2 INFORMATIQUE/SEM 4/Informations L2 S4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nombres complexes - Cours"
+              "title": "Informations L2 S4"
             }
           }
         ],
@@ -254,8 +254,9 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "19577fda7c036523",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
+    "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "L1 MIPSI/SEM 2/Informations L1 S2.md",
     "L1 MIPSI/Maquette L1.md",
     "L2 INFORMATIQUE/Maquette L2.md",
@@ -267,7 +268,6 @@
     "L1 MIPSI/Maquette L1.png",
     "L1 MIPSI/Maquette L1.png",
     "L1 MIPSI/SEM 1/Algèbre de base/readme Algèbre de base.md",
-    "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Cours - AlgoProg4.md",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/readme Algo4.md",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction de l'examen AP4 2024.md",
@@ -286,7 +286,7 @@
     "L2 INFORMATIQUE/SEM 4/Statistiques/Révisions PARTIEL.md",
     "L2 INFORMATIQUE/SEM 4/Statistiques/Fiche Méthode - Partiel.md",
     "L2 INFORMATIQUE/SEM 4/Statistiques/Corrigé du TD2.md",
-    "L2 INFORMATIQUE/SEM 4/Progr. Web/Le cours.md",
+    "L2 INFORMATIQUE/SEM 4/Progr. Web/Cours progWeb PHP.md",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours",
     "L2 INFORMATIQUE/SEM 3/Programmation C",

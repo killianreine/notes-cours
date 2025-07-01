@@ -15,7 +15,9 @@ L’**Algorithmique & Programmation 4/5** est une Unité d’Enseignement Discip
 L’**Unité d’Enseignement Informatique pour le web** introduit les bases du développement web côté serveur à travers le langage **PHP**, dans sa forme procédurale (sans programmation orientée objet).  
 Les étudiants apprennent à créer des pages web dynamiques, gérer les **formulaires**, **manipuler des variables serveur**, **interagir avec des bases de données**, et comprendre les principes fondamentaux du **fonctionnement d’un serveur web**.  
 Cette UE pose les bases essentielles pour tout développement web dynamique.
-- <u>Support de cours :</u> [Support officiel de dfournier](https://litis.univ-lehavre.fr/~fournier/PHP/index.php)
+- <u>Support de cours :</u> 
+	- [Support officiel de dfournier](https://litis.univ-lehavre.fr/~fournier/PHP/index.php)
+	- [[Cours progWeb PHP]] *K. REINE*
 - <u>Durée de l'UE :</u> 30 heures
 
 ## Java avancée
