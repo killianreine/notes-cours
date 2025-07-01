@@ -176,3 +176,5 @@ $$
 >3. Simplifier grâce à une des deux formules.
 >4. Conclure avec le résultat de la forme $a+ib$ où $a,b \in \mathbb{R}$
 
+>[!example] Fiche de TD 1 : [[Complexes TD1]]
+
