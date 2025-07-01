@@ -1,4 +1,4 @@
-# 📘 Fiche Exercices n°1 – Algèbre de base
+# 📘 Fiche TD1
 
 ## 🌐 NOMBRES COMPLEXES
 **<u>Auteur :</u> Killian REINE - L3 INFORMATIQUE**  
