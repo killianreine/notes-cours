@@ -9,6 +9,6 @@
 ## 🧩 Exercice 1 
 ---
 
-## 🎓 Université Le Havre Normandie  
+🎓 **Université Le Havre Normandie - ULHN UFR ST**  
 **L1 Portail MIPSI parcours INFO** – Tutorat Algèbre 2025–2026
 
