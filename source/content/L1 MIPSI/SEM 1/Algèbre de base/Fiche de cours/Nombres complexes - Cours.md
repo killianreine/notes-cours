@@ -73,7 +73,7 @@ $$
 
 </details>
 
->[!tip] Point méthode
+>[!tip]+ Point méthode
 >*Calculer le produit de 2 nombres complexes.*  
 >Soit $z_1=a_1+ib_1$ et $z_2=a_2+ib_2$ alors, pour calculer le produit $z_1z_2$ suivons les étapes suivantes : 
 >- Développer le produit $(a_1+ib_1)(a_2+ib_2)$
@@ -100,3 +100,50 @@ Si $z=2+2i$ alors son conjugué sera donné par $\overline{z}=2-2i$.
 >$$
 >
 
+<br/>
+
+$\boxed{\text{Quelques propriétés à savoir}}$  
+- $\overline{\overline{z}}=z$  
+  Le conjugué appliqué $2$ fois, redonne le complexe d'origine
+- Si $z \in \mathbb{R}$ alors $z=\overline{z}$  
+  Se note aussi :
+  
+  $$
+  (z \in \mathbb{R}) \Longleftrightarrow (z=\overline{z})
+  $$
+
+<details class="custom-details">
+<summary><span class="custom-summary">La démonstration</span></summary>
+
+Soit $z \in \mathbb{R}$  
+Alors cela veut dire que $z$ n'a pas de partie imaginaire ainsi $z=a+0i=a$.  
+En calculant le conjugué on obtient :  
+
+$$
+\overline{z}=a-0i=a=z
+$$
+
+Ainsi ($z \in \mathbb{R}) \Longrightarrow (z=\overline{z})$  
+
+Montrons le sens contraire.  
+Soit $z \in \mathbb{C}$  
+Alors $z=a+ib$
+D'où $\overline{z}=a-ib$.  
+On suppose que $z = \overline{z}$  
+Alors on a :
+
+$$
+\begin{align*}
+z &= \overline{z}\\
+a+ib &= a-ib\\
+ib &= -ib\\
+2ib &= 0\\
+b&=0
+\end{align*}
+$$
+
+Puisque $b=0$ alors $z=a+0i=a$ donc $z \in \mathbb{R}$  
+On se retrouve avec $z \in \mathbb{R}$  
+
+L'équivalence est donc démontrée.
+</details>
