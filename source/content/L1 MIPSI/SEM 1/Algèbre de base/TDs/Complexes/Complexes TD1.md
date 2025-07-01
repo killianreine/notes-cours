@@ -1,8 +1,8 @@
 # 📘 Fiche Exercices n°1 – Algèbre de base
 
-## 🌐 NOMBRES COMPLEXES –  $\mathbb{C}$ 
-**Auteur : Killian Reine**  
-**Objectif :** Introduction aux nombres complexes
+## 🌐 NOMBRES COMPLEXES
+**<u>Auteur :</u> Killian REINE - L3 INFORMATIQUE**  
+**<u>Objectif :</u>** Introduction aux nombres complexes
 
 ---
 
