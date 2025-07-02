@@ -388,3 +388,6 @@ Si on l'inverse :
 
 - Le premier bit passe à $1$ et on inverse tous les bits : $11111010$ 
 - On ajoute $1$, ainsi $-5=11111011$.
+
+# Suivant 
+- Cours suivant : [[04 - Conditions et boucles]]

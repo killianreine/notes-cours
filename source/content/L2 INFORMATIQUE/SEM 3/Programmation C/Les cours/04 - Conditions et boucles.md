@@ -292,3 +292,7 @@ do {
 ```
 
 Dans cet exemple, on boucle sur les instructions tant que l'utilisateur n'a pas tapé un nombre positif strict.
+
+# Suivant 
+- Cours suivant : ...
+

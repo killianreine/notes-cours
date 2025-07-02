@@ -188,3 +188,6 @@ gcc --version
 ```
 gcc nomFichier.c -o nomExecutable
 ```
+
+# Suivant 
+- Cours suivant : [[02 - Premiers pas]]
