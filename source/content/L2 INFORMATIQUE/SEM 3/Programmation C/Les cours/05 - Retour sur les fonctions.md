@@ -659,4 +659,43 @@ note: previous definition of ‘addition’ was here
 
 ## Comment le contourner ?
 
-# Réécriture
+Même si la surcharge n’est pas supportée directement, il existe plusieurs **techniques** pour simuler ce comportement :  
+
+### Utiliser des noms différents
+
+C'est la méthode que l'on utilise le plus, MÉTHODE CLASSIQUE.
+
+```c
+int addition_int(int a, int b) {
+    return a + b;
+}
+
+float addition_float(float a, float b) {
+    return a + b;
+}
+```
+
+### Utiliser des macros
+
+- On utilise toujours des noms de fonctions dynamique mais on regroupe ces derniers dans une fonction globale.
+
+Cela permet de rendre le code un peu plus propre. `_Generic` permet de créer une sorte de **surcharge statique**. 
+
+```c
+#define addition(a, b) _Generic((a), \
+    int: addition_int, \
+    float: addition_float \
+)(a, b)
+```
+
+```c
+int addition_int(int a, int b) {
+    return a + b;
+}
+
+float addition_float(float a, float b) {
+    return a + b;
+}
+```
+
+Lors de l'appel à `addition(a, b)` les paramètres permettront de déterminer si on a voulu appeler l'addition de deux entiers ou l'addition de deux flottants.
