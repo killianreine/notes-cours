@@ -594,8 +594,10 @@ Triangle Equilateral:
 
 # Surcharge
 
+## Principe
+
 >[!cite] Définition
->On appelle **==surcharge==** un mécanisme puissant en programmation.  
+>On appelle **==surcharge==** *(overloading en anglais)* un mécanisme puissant en programmation.  
 >En fait *la surcharge* permet au développeur de définir plusieurs fonctions ayant **le même nom** mais **appelant des paramètres différents**.
 
 <u>Exemple :</u>  
@@ -614,4 +616,47 @@ lambda(chaine c)
 
 Ici, on définit **3 fois** une fonction appelée `lambda` et chacune des définition possède des arguments de types différents.  
 C'est ce qu'on appelle la surcharge.
+
+En langage C, la **surcharge n'existe pas nativement**, en fait le compilateur C ne supporte pas la **résolution de fonction par type de paramètre**.  
+Autrement dit, il ne fait pas la différence entre les deux signatures suivantes : 
+
+```c
+int addition(int a, int b);
+float addition(float a, float b);
+```
+
+<u>Exemple :</u>  
+Reprenons notre fonction addition avec les types différents du dessus et essayons de les définir et de compiler le programme.  
+
+- Fichier `surcharge.c`
+
+```c
+#include <stdio.h>
+
+// Première définition
+int addition(int a, int b) {
+    return a + b;
+}
+
+// Deuxième définition avec le même nom
+int addition(float a, float b) { 
+    return a + b;
+}
+
+int main() {
+    printf("%d\n", addition(3, 4));
+    return 0;
+}
+```
+
+**Résultat de la compilation**  
+```
+error: redefinition of ‘addition’
+note: previous definition of ‘addition’ was here
+```
+
+*Qui désigne bien une erreur de redéfinition de la fonction `addition`*.
+
+## Comment le contourner ?
+
 # Réécriture
