@@ -699,3 +699,7 @@ float addition_float(float a, float b) {
 ```
 
 Lors de l'appel à `addition(a, b)` les paramètres permettront de déterminer si on a voulu appeler l'addition de deux entiers ou l'addition de deux flottants.
+
+# Suivant
+
+- Cours suivant : [[06 - Les tableaux]]
