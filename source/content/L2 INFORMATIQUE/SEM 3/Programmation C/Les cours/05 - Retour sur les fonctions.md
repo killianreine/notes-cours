@@ -594,4 +594,24 @@ Triangle Equilateral:
 
 # Surcharge
 
+>[!cite] Définition
+>On appelle **==surcharge==** un mécanisme puissant en programmation.  
+>En fait *la surcharge* permet au développeur de définir plusieurs fonctions ayant **le même nom** mais **appelant des paramètres différents**.
+
+<u>Exemple :</u>  
+On considère une fonction `lambda` codée en pseudo langage : 
+
+```
+lambda(entier : x, flotant : y)
+	retourner x+2y
+
+lambda(entier x)
+	retourner 2x*x
+
+lambda(chaine c)
+	retourner chaine+\n
+```
+
+Ici, on définit **3 fois** une fonction appelée `lambda` et chacune des définition possède des arguments de types différents.  
+C'est ce qu'on appelle la surcharge.
 # Réécriture

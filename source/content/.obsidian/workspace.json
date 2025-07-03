@@ -6,6 +6,7 @@
       {
         "id": "0571c1c94d829fac",
         "type": "tabs",
+        "dimension": 88.06682577565633,
         "children": [
           {
             "id": "19577fda7c036523",
@@ -27,16 +28,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "04 - Conditions et boucles"
-            }
+              "title": "05 - Retour sur les fonctions"
+            },
+            "group": "547e9f6ef29efa33"
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "5f390e0c8c5be15c",
+        "type": "tabs",
+        "dimension": 11.933174224343675,
+        "children": [
+          {
+            "id": "1ad03e55c4be6bf7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de 05 - Retour sur les fonctions"
+            },
+            "group": "547e9f6ef29efa33"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,8 +224,9 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "df83d3f9f9bb37ab",
+  "active": "d2c5185ce9dc56f4",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
@@ -233,7 +260,6 @@
     "L2 INFORMATIQUE/SEM 4/Système/Threads",
     "L2 INFORMATIQUE/SEM 4/Système/Processus",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
-    "L2 INFORMATIQUE/SEM 4/Statistiques/Révisions PARTIEL.md",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours",
     "L2 INFORMATIQUE/SEM 3/Programmation C",
