@@ -42,6 +42,12 @@ type tab[t] ;
 On peut le lire comme ceci : *Créer un tableau nommé `tab` de `t` éléments de type `type`.* On voit donc bien que la taille du tableau est défini dès la déclaration.  
 **Sans oublier ce fameux `;`**
 
+<u>Exemple :</u>  
+On souhaite définir un tableau de $10$ entiers.
+
+```c
+int tab_entier[10];
+```
 ### Un tableau préremplit
 
 On considère un tableau nommé `tab` de `t`-éléments permettant de stoker des variables de type `type`, chaque élément du tableau sera noté `e_i` où `i` représente le `i`-ème élément du tableau. 
@@ -49,6 +55,13 @@ Alors la déclaration d'un tel tableau se fait comme suit :
 
 ```
 type tab[t] = { e1, e2, e3, ..., et } ;
+```
+
+<u>Exemple :</u>  
+On souhaite définir un tableau de $10$ entiers : `1 2 3 4 5 ...`.
+
+```c
+int tab_entier[10]={ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 ```
 ## Opérations sur les éléments
 
