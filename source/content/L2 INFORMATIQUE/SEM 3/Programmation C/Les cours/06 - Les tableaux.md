@@ -48,11 +48,31 @@ On considère un tableau nommé `tab` de `t`-éléments permettant de stoker des
 Alors la déclaration d'un tel tableau se fait comme suit :
 
 ```
-type tab[t] = { e1, e2, e3, ..., eN } ;
+type tab[t] = { e1, e2, e3, ..., et } ;
+```
+## Opérations sur les éléments
+
+Bon okay, c'est cool on a créé et initialisé notre tableau, maintenant comment je fais pour accéder, modifier ou encore supprimer un élément dans le tableau.  
+On reprend le tableau de la partie précédente et on souhaite accéder à l'élément `e3`. 
+
+Ce que l'on sait c'est que `e3` est le 3e élément du tableau.  
+L'accès aux éléments d'un tableau se fait via des numéros aussi appelés **indices**, ils permettent de savoir quel élément du tableau on souhaite récupérer.  
+
+>[!warning] Attention
+>Le premier élément d'un tableau est à l'**indice 0**.
+
+Ainsi, on accès au troisième élément comme ceci : 
+
+```c
+tab[2] ;
 ```
 
+De manière générale on note :  
 
-## Accès aux éléments
+```
+tab[i] ;
+```
 
-
+Et on peut le lire comme suit : *Accéder au `i+1`-ème élément du tableau `tab`.*  
+`i+1` car le premier élément est à l'indice `0`.
 # Tableaux dynamiques
