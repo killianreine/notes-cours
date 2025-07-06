@@ -125,7 +125,7 @@ void afficher_labyrinthe(int labyrinthe[TAILLE][TAILLE]) {
             if (labyrinthe[i][j] == 0)
                 printf("█ ");
             else
-                printf(". ");
+                printf("  ");
         }
         printf("\n");
     }
