@@ -65,6 +65,7 @@ int tab_entier[10]={ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 ```
 
 ### Utiliser une MACROS 
+- Rappels sur les macros : [[02 - Premiers pas#Les constantes]]
 
 Imaginons que vous vous lancez le projet de coder un labyrinthe en C, votre programme pourrait ressembler à ceci :  
 *Ce code n'est absolument pas fonctionnel*
