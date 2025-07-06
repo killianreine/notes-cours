@@ -63,6 +63,98 @@ On souhaite définir un tableau de $10$ entiers : `1 2 3 4 5 ...`.
 ```c
 int tab_entier[10]={ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 ```
+
+### Utiliser une MACROS 
+
+Imaginons que vous vous lancez le projet de coder un labyrinthe en C, votre programme pourrait ressembler à ceci :  
+*Ce code n'est absolument pas fonctionnel*
+
+```c
+#include <stdio.h>
+
+void afficher_labyrinthe(int labyrinthe[5][5]) {
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            if (labyrinthe[i][j] == 0)
+                printf("█ ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int labyrinthe[5][5] = {
+        {0, 0, 0, 0, 0},
+        {0, 1, 1, 0, 0},
+        {0, 0, 1, 0, 0},
+        {0, 0, 1, 1, 0},
+        {0, 0, 0, 0, 0}
+    };
+
+    printf("Labyrinthe :\n");
+    afficher_labyrinthe(labyrinthe);
+
+    return 0;
+}
+```
+
+Maintenant, vous avez envie d'utiliser votre labyrinthe mais avec d'autres tailles.  
+Or ici, si vous changez la taille de votre labyrinthe, il vas falloir changer la déclaration, l'initialisation de votre tableau, changer les fin de boucles.  
+Et oue, on a la flemme ! 
+
+On vas donc utiliser une macros, vous savez ces genre de constantes comme ça pour tester sur plusieurs tailles de labyrinthe, il suffira simplement de changer la valeur de cette dernière et c'est réglé !  
+Voilà comment on procède : 
+
+- On défini la macros qui représente la taille du tableau *ici 5*
+```c
+#define TAILLE 5
+```
+
+- Les boucles, et définitions se font donc en fonction de `TAILLE` :
+
+```c
+#include <stdio.h>
+
+#define TAILLE 5
+
+void afficher_labyrinthe(int labyrinthe[TAILLE][TAILLE]) {
+    for (int i = 0; i < TAILLE; i++) {
+        for (int j = 0; j < TAILLE; j++) {
+            if (labyrinthe[i][j] == 0)
+                printf("█ ");
+            else
+                printf(". ");
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int labyrinthe[TAILLE][TAILLE] = init_matrice(TAILLE);
+
+    printf("Labyrinthe (avec macro) :\n");
+    afficher_labyrinthe(labyrinthe);
+
+    return 0;
+}
+```
+
+Cela nous pousse aussi à créer une fonction pour initialiser la matrice en fonction de la taille souhaitée car, si on garde le code suivant : 
+
+```c
+int labyrinthe[TAILLE][TAILLE] = {
+    {0, 0, 0, 0, 0},
+    {0, 1, 1, 0, 0},
+    {0, 0, 1, 0, 0},
+    {0, 0, 1, 1, 0},
+    {0, 0, 0, 0, 0}
+    };
+```
+
+Et ben peu importe la valeur de `TAILLE`, les cinq premières lignes et colonnes du tableau seront remplies mais pas les autres.  
+D'ailleurs, cela va poser quelques problèmes si le tableau devient plus petit... *On verra cela plus tard*
 ## Opérations sur les éléments
 
 Bon okay, c'est cool on a créé et initialisé notre tableau, maintenant comment je fais pour accéder, modifier ou encore supprimer un élément dans le tableau.  
