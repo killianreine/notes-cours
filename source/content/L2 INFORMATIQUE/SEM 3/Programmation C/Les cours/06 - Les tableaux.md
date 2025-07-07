@@ -474,6 +474,53 @@ On garde la logique du programme avec les arguments, mais cette fois **le deuxi�
 
 ###### L'aléatoire en programmation C
 
+En langage C, on peut avoir besoin de l'aléatoire pour diverses raisons, simulations de phénomènes par exemple. 
+
+Pour générer un entier de manière aléatoire, on utilise `rand` :
+
+```c
+int rand(void);
+```
+
+Cette fonction fais partie de `<stdlib.h>` elle va générer un nombre aléatoire entre $0$ et `RAND_MAX` souvent autour de $32 767$. 
+
+On peut contrôler l'intervalle de génération des nombres aléatoires en C, toujours avec la fonction `rand` sauf que dans ces cas là on utilise la syntaxe suivante : 
+
+```
+int nbAlea = rand() % borne;
+```
+Ainsi, on aura :
+
+$$
+0 \leq nbAlea \leq borne-1
+$$
+
+<u>Exemple :</u>  
+Générer un nombre aléatoire entre $0$ et $10$ :
+
+```c
+int x = rand() % 11;
+```
+
+Si on veut que $x \in [a; b]$  
+Alors dans ces cas là, on utilise la forme suivante : 
+
+```c
+int x = rannd() % (b-a+1)+a;
+```
+
+>[!info] Remarque
+>`x=rand() % 12;` va renvoyer par exemple $10$ à la première exécution. Et bien, vous allez voir qu'à chaque autre exécution $10$ sera toujours le nombre renvoyé.
+
+Pour contrer cela, on utilise `srand(time(NULL));` :
+```c
+#include <time.h>
+srand(time(NULL));
+```
+
+Cette ligne permettra de faire en sorte que les valeurs aléatoires changent lors de chaque exécution de votre programme.
+
+Suite aux rappels sur l'aléatoire,  
 Ainsi le code final donne : 
 ```c
 #include <stdio.h>
