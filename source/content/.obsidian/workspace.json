@@ -67,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "5f390e0c8c5be15c",
@@ -252,10 +252,10 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "baa29d65e4c16cb8",
+  "active": "d2c5185ce9dc56f4",
   "lastOpenFiles": [
-    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "Autres supports/readme Autre.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/06 - Les tableaux.md",
     "Autres supports/Rust",
     "Autres supports/TypeScript",

@@ -181,4 +181,48 @@ tab[i] ;
 
 Et on peut le lire comme suit : *Accéder au `i+1`-ème élément du tableau `tab`.*  
 `i+1` car le premier élément est à l'indice `0`.
+
+## Remplissage du tableau
+
+On considère un tableau `tab` d'une certaine taille `t` contenant des entiers initialisé comme ceci : 
+
+```c
+int tab[t] ;
+```
+
+où `t` est définie avant.
+
+Maintenant, on est en droit de se poser une question, y a quoi dans chaque cases de mon tableau ?  
+Bah oui, on a créé un tableau d'une certaine taille, ça c'est compris mais on l'a pas remplit.
+
+Voyons ce qu'il se passe lorsque j'essai d'accéder à un élément du tableau sans l'avoir rempli avant.
+
+<u>Exemple :</u>    
+On considère le code suivant :
+
+```c
+#include <stdio.h>
+#define t 4
+
+int main() {
+    int tab[t];
+    printf("%d\n", tab[3]);
+    return 0;
+}
+```
+
+Voilà ce qu'on fait dans ce code : 
+- On utilise la bibliothèque `stdio.h` pour pouvoir utiliser `printf`
+- On défini `t=4` une sorte de constante
+- Dans la fonction `main`
+	- Création d'un tableau de `4` éléments
+	- Affichage du $3+1$ème élément du tableau `tab`
+	- On retourne 0
+
+Résultat du programme :
+
+```
+30863
+```
+
 # Tableaux dynamiques
