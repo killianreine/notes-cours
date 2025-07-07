@@ -225,4 +225,32 @@ Résultat du programme :
 30863
 ```
 
+C'est trop bizarre, j'ai pas remplis mon tableau pourtant il contient quand même quelque chose.  
+Voyons ce que chaque élément représente :  
+*On ajoute simplement une boucle `for` pour permettre de parcourir chaque éléments du tableau et de l'afficher :*
+
+```c
+#include <stdio.h>
+#define t 4
+
+int main() {
+    int tab[4];
+    for(int i=0; i<t; i++) printf("tab[%d] : %d\n", i, tab[i]);
+    return 0;
+}
+```
+
+Résultat du programme : 
+
+```
+tab[0] : 0
+tab[1] : 0
+tab[2] : -324399248
+tab[3] : 31515
+```
+
+On voit donc bien que chaque élément possède une valeur malgré le fait que l'on n'ai pas remplit le tableau.  
+De plus, le dernier élément du tableau n'est pas le même que celui donné lors de la première exécution. En fait, c'est normal. Puisque l'on a pas remplit le tableau, ce dernier possède des valeurs dites **indéterminées** qui sont aléatoires.
+
+Les valeurs données aux éléments du tableau dépendent de ce qu'il y avait dans la mémoire juste avant, ou parfois, le compilateur réutilise la mémoire fraichement libérée. Ce comportement est complètement aléatoire c'est pour ça qu'on peut obtenir `0` ou des nombres très grands.
 # Tableaux dynamiques
