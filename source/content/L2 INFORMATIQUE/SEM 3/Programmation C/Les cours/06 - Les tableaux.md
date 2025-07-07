@@ -183,6 +183,7 @@ Et on peut le lire comme suit : *Accéder au `i+1`-ème élément du tableau `ta
 `i+1` car le premier élément est à l'indice `0`.
 
 ## Remplissage du tableau
+### Avant remplissage
 
 On considère un tableau `tab` d'une certaine taille `t` contenant des entiers initialisé comme ceci : 
 
@@ -253,4 +254,62 @@ On voit donc bien que chaque élément possède une valeur malgré le fait que l
 De plus, le dernier élément du tableau n'est pas le même que celui donné lors de la première exécution. En fait, c'est normal. Puisque l'on a pas remplit le tableau, ce dernier possède des valeurs dites **indéterminées** qui sont aléatoires.
 
 Les valeurs données aux éléments du tableau dépendent de ce qu'il y avait dans la mémoire juste avant, ou parfois, le compilateur réutilise la mémoire fraichement libérée. Ce comportement est complètement aléatoire c'est pour ça qu'on peut obtenir `0` ou des nombres très grands.
+
+### Le remplissage
+
+Le remplissage d'un tableau en C peut se faire de différentes manières. On peut vouloir le remplir à la main, le remplir automatiquement avec des valeurs fixes, ou alors avec des valeurs aléatoires.  
+Voyons ces trois méthodes de remplissages :
+
+#### Remplissage manuel
+
+En fait, le remplissage manuel, on l'a déjà utilisé avant. Au début de ce cours, on avait un tableau qui contenait les éléments suivants : 
+
+<table border="1">
+  <tr>
+    <th>42</th>
+    <th>17</th>
+    <th>89</th>
+    <th>3</th>
+    <th>56</th>
+    <th>91</th>
+    <th>24</th>
+    <th>68</th>
+  </tr>
+</table>
+
+En fait, en langage C un tableau est une structure que l'on représente entre accolades `{...}` où chaque éléments est séparé par une virgule.  
+Alors le tableau ci dessous vas donner la structure suivante : 
+
+```
+{ 42, 17, 89, 3, 56, 91, 24, 68 }
+```
+
+Ainsi l'initialisation du tableau se fera ainsi : 
+
+```c
+int tab[8] = { 42, 17, 89, 3, 56, 91, 24, 68 };
+``` 
+
+#### Remplissage automatique
+##### Valeurs fixées
+
+Le remplissage manuel, est certes simple mais peut s'avérer terriblement long à faire pour des tableaux de grandes tailles par exemple. Ou encore mieux, si chaque élément du tableau était fixé avec une logique, le remplissage manuel peut se faire automatiser.  
+Regardons un cas pratique parmi tant d'autres : 
+
+$\boxed{\text{Étude d'un cas pratique}}$  
+On souhaite créer un tableau d'une certaine taille `t` que l'on déterminera de manière arbitraire, ce dernier doit stocker les `t` premiers multiples d'un nombre donné au programme.  
+Par exemple si j'exécute : 
+
+```
+./prog 4 10
+```
+
+Le programme doit afficher les $10$ premiers multiples de $4$.
+
+Pour ce programme nous allons procéder par étapes :
+- Décomposition des étapes
+- Description du travail à faire
+- Codage
+- Compilation et exécution
+
 # Tableaux dynamiques
