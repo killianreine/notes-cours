@@ -310,6 +310,6 @@ Le programme doit afficher les $10$ premiers multiples de $4$.
 >- Décomposition des étapes
 >- Description du travail à faire
 >- Codage
->- Compilation et exécution
+>- Compilation et exécution du programme
 
 # Tableaux dynamiques
