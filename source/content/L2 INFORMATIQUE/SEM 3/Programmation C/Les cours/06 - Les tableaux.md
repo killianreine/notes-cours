@@ -306,10 +306,10 @@ Par exemple si j'exécute :
 
 Le programme doit afficher les $10$ premiers multiples de $4$.
 
-Pour ce programme nous allons procéder par étapes :
-- Décomposition des étapes
-- Description du travail à faire
-- Codage
-- Compilation et exécution
+>Pour ce programme nous allons procéder par étapes :
+>- Décomposition des étapes
+>- Description du travail à faire
+>- Codage
+>- Compilation et exécution
 
 # Tableaux dynamiques
