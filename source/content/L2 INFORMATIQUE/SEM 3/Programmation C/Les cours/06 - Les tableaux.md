@@ -312,9 +312,10 @@ Le programme doit afficher les $10$ premiers multiples de $4$.
 >- Codage
 >- Compilation et exécution du programme
 
-<u>Objectif :</u> Stocker dans un tableau les $n$ premiers multiples d'un entier $k$ donné au programme lors de l'exécution.
+🔁 Objectif  
+Stocker dans un tableau les $n$ premiers multiples d'un entier $k$ donné au programme lors de l'exécution.
 
-<u>Division du programme en étapes </u>
+🧩 Étapes  
 - Récupérer les données fournies au programme  
   Penser à valider si elles sont valides (le bon nombre, des entiers, ...)
 - Création du tableau
@@ -460,3 +461,63 @@ gcc -o prog multiples.c
 ```
 
 ##### Valeurs aléatoires
+
+🔁 Objectif  
+Remplir un tableau de taille `n` avec **des valeurs aléatoires comprises dans une certaine plage**, par exemple entre `0` et `99`.  
+On garde la logique du programme avec les arguments, mais cette fois **le deuxième argument ne servira que pour la taille du tableau** (le premier argument ne sera plus nécessaire).
+
+🧩 Étapes
+1. Récupérer l'argument `n` (taille du tableau)
+2. Créer un tableau de taille `n`
+3. Le remplir avec des entiers aléatoires (entre 0 et 99)
+4. Afficher le tableau
+
+# L'aléatoire en programmation C
+
+Ainsi le code final donne : 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Erreur argument : %s <taille>\n", argv[0]);
+        return 1;
+    }
+
+    int n = atoi(argv[1]);  // Taille du tableau
+    if (n <= 0) {
+        printf("Erreur : la taille doit être un entier positif.\n");
+        return 1;
+    }
+
+    int tab[n];  // Création du tableau
+
+    srand(time(NULL));  // Initialisation de l'aléatoire
+
+    // Remplissage aléatoire entre 0 et 99
+    for (int i = 0; i < n; i++) {
+        tab[i] = rand() % 100;
+    }
+
+    // Affichage du tableau
+    printf("[ ");
+    for (int i = 0; i < n - 1; i++) {
+        printf("%d, ", tab[i]);
+    }
+    printf("%d ]\n", tab[n - 1]);
+
+    return 0;
+}
+```
+
+```
+gcc -o prog random.c
+
+./prog 10
+[ 12, 87, 5, 63, 22, 94, 18, 49, 10, 73 ]
+
+./prog 5
+[ 31, 9, 66, 0, 45 ]
+```
