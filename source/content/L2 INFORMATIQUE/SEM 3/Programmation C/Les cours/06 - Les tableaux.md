@@ -312,4 +312,143 @@ Le programme doit afficher les $10$ premiers multiples de $4$.
 >- Codage
 >- Compilation et exécution du programme
 
-# Tableaux dynamiques
+<u>Objectif :</u> Stocker dans un tableau les $n$ premiers multiples d'un entier $k$ donné au programme lors de l'exécution.
+
+<u>Division du programme en étapes </u>
+- Récupérer les données fournies au programme  
+  Penser à valider si elles sont valides (le bon nombre, des entiers, ...)
+- Création du tableau
+- Remplissage du tableau
+- Affichage du résultat
+
+*Récupération des données fournies au programme*  
+La première étape vas être de récupérer les informations données au moment de l'exécution au programme. Ici on a deux informations à récupérer :
+- L'entier $k$ qui représente le nombre sur lequel on travail
+- L'entier $n$ qui détermine la taille du tableau
+Donc on doit fournir à notre programme $2$ arguments.  
+Et ben enfaite NON ! 
+
+Voyons une exécution : les $10$ premiers multiples de $4$.
+
+```
+./prog 4 10
+```
+Alors ici on a :
+- argument 1 : Le nom du fichier exécuté
+- argument 2 : Le nombre sur lequel on souhaite travailler
+- argument 3 : Le nombre de multiples à stocker
+
+Ainsi, pour pouvoir s'exécuté il faut fournir trois arguments **pas plus, pas moins**.
+
+*Mais où on stocke les arguments et comment on connaît leur nombre ?*  
+Et bien puisque les informations sont transmises au programme principale, nous allons les donner à la point d'entrée du programme : la fonction `main`.
+
+La signature de la fonction `main` sera la suivante : 
+
+```c
+int main(int argc, char* argv[]);
+```
+- `argc` le nombre d'arguments fournis au programme
+- `argv[]` le tableau qui contient les informations fournies
+
+>[!warning] Attention
+>- Tous les éléments de `argv` sont des **chaînes de caractères** (`char *`) même si tu tapes des nombres.
+>- Il faut utiliser `atoi()` ou `strtol()` pour convertir `"4"` → `4` (en `int`).
+
+Ce qu'il nous reste à faire pour la première étape : 
+- Vérifier que le programme reçoit 3 arguments
+- Récupérer les 2 derniers
+
+Algorithme pseudo-code :
+```
+Si argc est différent de 3
+	Déclancher une erreur et stopper le programme
+Sinon continuer
+```
+
+```c
+int main(int argc, char *argv[]) {
+    if (argc != 3) {
+        printf("Erreur argument : %s <nombre> <taille>\n", argv[0]);
+        return 1;
+    }
+	
+	// Récupération des derniers arguments
+	// On utilise atoi() pour convertir les arguments en entier !
+	int k = atoi(argv[1]);  // Le nombre dont on veut les multiples
+    int n = atoi(argv[2]);  // Le nombre de multiples
+}
+```
+
+*Création du tableau*  
+On doit donc créer un tableau de $n$ éléments.
+
+```c
+int tab[n];
+```
+
+*Remplissage du tableau*  
+On remplit le tableau avec des multiples de $k$.  
+Pour rappel, on dit que $x$ est un multiple de $k$ lorsque $x$ peut s'écrire $x=ky$ avec $y$ un entier naturel.
+
+Ce qu'il faut donc faire c'est parcourir le tableau créé juste avant et pour chaque élément, multiplier $k$ par son indice courant $+1$. 
+
+>[!note] Note
+>Ici on ne compte pas $0$ comme multiple malgré qu'il en soit un.
+
+```c
+for(int i=0; i<n; i++) 
+	tab[i]=k*(i+1);
+```
+
+Ainsi notre tableau contiendra les éléments suivants de manière générale : `{k, 2k, 3k, ..., nk}`.
+
+*Affichage du tableau*  
+On fais une simple boucle `for` pour parcourir les éléments un à un et on les affiches. *ici, je vais afficher le tableau entre crochets (comme en python).*
+
+```c
+printf("[ ");
+for(int i=0; i<n-1; i++) 
+	printf("%d, ", tab[i]);
+printf("%d ]\n", tab[n-1]);
+```
+
+ainsi on obtient le code final suivant : 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    if (argc != 3) {
+        printf("Erreur argument : %s <nombre> <taille>\n", argv[0]);
+        return 1;
+    }
+	
+	// Récupération des derniers arguments
+	// On utilise atoi() pour convertir les arguments en entier !
+	int k = atoi(argv[1]);  // Le nombre dont on veut les multiples
+    int n = atoi(argv[2]);  // Le nombre de multiples
+    int tab[n];             // Création du tableau
+    
+    // Remplissage
+    for(int i=0; i<n; i++) 
+		tab[i]=k*(i+1);
+		
+	// Affichage
+	printf("[ ");
+	for(int i=0; i<n-1; i++) 
+		printf("%d, ", tab[i]);
+	printf("%d ]\n", tab[n-1]);
+	return 0;
+}
+```
+
+On exécute ce code `multiple.c`
+
+```
+gcc -o prog multiples.c
+./prog 4 10
+
+[ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ]
+```
