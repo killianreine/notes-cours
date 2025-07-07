@@ -472,7 +472,7 @@ On garde la logique du programme avec les arguments, mais cette fois **le deuxi�
 3. Le remplir avec des entiers aléatoires (entre 0 et 99)
 4. Afficher le tableau
 
-# L'aléatoire en programmation C
+###### L'aléatoire en programmation C
 
 Ainsi le code final donne : 
 ```c
