@@ -733,7 +733,7 @@ Où :
 De manière plus mathématiques, on représente celle ci par : 
 
 $$
-tab = \begin{pmatrix} [&e_{11}& e_{12}& \ldots & e_{1c}&] \\ [&e_{21} & e_{22} & \ldots & e_{2c}&]  \\ &\vdots & \vdots & \vdots & \vdots \\ [& e_{l1} &e_{l2}&\ldots& e_{lc} &] \end{pmatrix}
+tab = \begin{bmatrix} [&e_{11}& e_{12}& \ldots & e_{1c}&] \\ [&e_{21} & e_{22} & \ldots & e_{2c}&]  \\ &\vdots & \vdots & \vdots & \vdots \\ [& e_{l1} &e_{l2}&\ldots& e_{lc} &] \end{bmatrix}
 $$
 
 # Gestions d'erreurs
