@@ -660,3 +660,81 @@ gcc -o prog random.c
 # Gestions d'erreurs
 
 Pour ne pas être trop lourd, nous allons nous contenter d'expliquer quelques erreurs concernant les tableaux statiques, les plus fréquentes.
+
+## Tableau d'init trop grand
+
+Un peu avant dans ce cours, nous avons dit que lorsque l'on initialise un tableau à la main, il peut arriver qu'il soit plus petit, plus grand ou égal au nombre d'éléments voulu dans le tableau créé.  
+On a déjà vu ce qu'il se passait lorsque :
+- Plus petit
+- Égal
+
+Voyons ce qu'il se passe maintenant si on utilise un tableau d'initialisation trop grand :
+
+```c
+#include <stdio.h>
+
+int main(){
+	// 5 éléments voulu, on initialise avec 9 éléments
+	int tab[5] = {45, 12, 85, 97, 23, 48, 58, 200, 11};
+	return 0;
+}
+```
+```less
+warning: excess elements in array initializer
+    4 |         int tab[5] = {45, 12, 85, 97, 23, 48, 58, 200, 11};
+      |                                           ^~
+```
+
+En français, l'erreur signifie qu'il y a trop d'éléments pour initialiser le tableau.  
+L'erreur se répète sur chaque élément suivant dans le tableau : 
+
+```less
+warning: excess elements in array initializer
+    4 |         int tab[5] = {45, 12, 85, 97, 23, 48, 58, 200, 11};
+      |                                           ^~
+warning: excess elements in array initializer
+    4 |         int tab[5] = {45, 12, 85, 97, 23, 48, 58, 200, 11};
+      |                                               ^~
+warning: excess elements in array initializer
+    4 |         int tab[5] = {45, 12, 85, 97, 23, 48, 58, 200, 11};
+      |                                                   ^~~
+warning: excess elements in array initializer
+    4 |         int tab[5] = {45, 12, 85, 97, 23, 48, 58, 200, 11};
+      |                                                        ^~
+```
+
+## Initialiser un élément inexistant
+
+Soit `tab` un tableau de $5$ éléments, voyons ce qu'il se passe si on initialise un 6e élément : 
+
+```c
+#include <stdio.h>
+
+int main(){
+	// 5 éléments voulu, on initialise avec 9 éléments
+	int tab[5];
+	tab[5] = 41;
+	return 0;
+}
+```
+
+>[!warning] Attention
+>🔴 **Comportement indéfini** : le programme peut planter, écrire ailleurs en mémoire, ou ne rien signaler du tout.
+
+## Utiliser une variable de taille
+
+Depuis `C99` on peut utiliser une variable pour stocker la taille du tableau : 
+
+```c
+int n = 10;
+int tab[n];  // ❌ Pas valide en C90, valide en C99
+```
+
+## Débordement
+
+Il peut arriver que lorsque l'on parcours un tableau on puisse déborder (essayer d'accéder à des éléments non existant) : 
+
+```c
+for (int i = 0; i <= 10; i++)  // ❌ i <= 10 pour tab[10] → déborde !
+    tab[i] = i;
+```
