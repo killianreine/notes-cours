@@ -290,6 +290,54 @@ Ainsi l'initialisation du tableau se fera ainsi :
 int tab[8] = { 42, 17, 89, 3, 56, 91, 24, 68 };
 ``` 
 
+##### Autres méthodes possibles
+
+On peut remplir une liste d'un certain élément avec la syntaxe `{elem}` où `elem` est l'élément que l'on veut stocker dans chaque emplacement du tableau.
+
+<u>Exemple :</u>  
+On souhaite stocker $10$ éléments initialisés à $0$.
+
+```c
+int tab[10] = { 0 };
+```
+
+On peut vérifier :
+
+```c
+#include <stdio.h>
+
+int main() {
+    int tab[10] = { 0 };
+    for (int i=0; i<10; i++) printf("%d ", tab[i]);
+    return 0;
+}
+```
+```
+0 0 0 0 0 0 0 0 0 0
+```
+
+On peut aussi fournir un tableau à $n$ éléments pour initialisé un tableau de $t$ éléments. Et, $n$ peut être :
+- égal à $t$  
+  Ainsi, toutes les cases du tableau sont remplies par un élément définie
+- plus petit que $t$  
+  Dans ce cas les $n$ première cases prendront les valeurs du tableau d'initialisation et les autres $0$
+- plus grand que $t$  
+  Ce qui déclenchera une erreur à la compilation
+
+```c
+#include <stdio.h>
+
+int main() {
+	// Initialisation de tab avec un tableau plus petit que lui
+    int tab[10] = { 0, 1, 2, 3 };
+    for (int i=0; i<10; i++) printf("%d ", tab[i]);
+    return 0;
+}
+```
+```
+0 1 2 3 0 0 0 0 0 0 0
+```
+
 #### Remplissage automatique
 ##### Valeurs fixées
 
@@ -568,3 +616,5 @@ gcc -o prog random.c
 ./prog 5
 [ 31, 9, 66, 0, 45 ]
 ```
+
+## Gestions d'erreurs
