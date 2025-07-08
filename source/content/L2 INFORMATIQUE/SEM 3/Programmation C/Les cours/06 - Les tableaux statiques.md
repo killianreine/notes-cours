@@ -657,6 +657,76 @@ gcc -o prog random.c
 [ 31, 9, 66, 0, 45 ]
 ```
 
+# Tableaux multidimensionnels
+
+>[!cite] Définition
+>On appelle **==tableau a plusieurs dimension==** un ensemble de tableau contenant le même nombre d'éléments. Chaque "sous-tableau" représente ce qu'on peut appeler une ligne.
+
+On considère trois tableaux :
+- `tab1 = {1, 2, 3, 4}`
+- `tab2 = {2, 3, 4, 5}`
+- `tab3 = {3, 4, 5, 6}`
+
+Ainsi on peut appeler `tabMultiDim` le tableau : `{ tab1, tab2, tab3}` qui est aussi égal à :  
+`tabMultiDim = {{1, 2, 3, 4}, {2, 3, 4, 5}, {3, 4, 5, 6}}`  
+Et représenté par : 
+
+<table border="1">
+  <tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+  </tr>
+    <tr>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+  </tr>
+    <tr>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+  </tr>
+</table>
+
+On voit bien que : 
+- Ligne 1 représente `tab1`
+- Ligne 2 représente `tab2`
+- Ligne 3 représente `tab3`
+
+Dans notre exemple, on a une tableau à deux dimensions de taille $4 \times 3$ que l'on définit et initialise comme ceci : 
+
+```c
+#include <stdio.h>
+
+int main(){
+    int matriceV2[3][4] = {
+    	{1, 2, 3, 4}, // tab1
+    	{2, 3, 4, 5}, // tab2
+    	{3, 4, 5, 6}, // tab3
+    };
+    return 0;
+}
+```
+
+De manière générale, on note : 
+
+```
+type tabMultiDim[l][c] = {
+	{e11, e12, ..., e1c},
+	{e21, e22, ..., e2c},
+	...
+	{el1, el2, ..., elc}
+};
+```
+
+Où :
+- `l` représente le nombre de ligne
+- `c` représente le nombre de colonne
+- $e_{ij}$ avec $i \in [1; l]$ et $j \in [1; c]$ représente l'élément à la ligne $i$ et colonne $j$.
 # Gestions d'erreurs
 
 Pour ne pas être trop lourd, nous allons nous contenter d'expliquer quelques erreurs concernant les tableaux statiques, les plus fréquentes.
