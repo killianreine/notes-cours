@@ -735,6 +735,8 @@ De manière plus mathématiques, on représente celle ci par :
 $$
 tab = \begin{bmatrix} [&e_{11}& e_{12}& \ldots & e_{1c}&] \\ [&e_{21} & e_{22} & \ldots & e_{2c}&]  \\ &\vdots & \vdots & \vdots & \vdots \\ [& e_{l1} &e_{l2}&\ldots& e_{lc} &] \end{bmatrix}
 $$
+>[!note]
+>D'une manière plus grossière, on dit qu'un tableau à deux dimension est une **matrice** ou encore **un tableau de tableau**.
 
 # Gestions d'erreurs
 
