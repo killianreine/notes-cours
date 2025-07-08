@@ -155,6 +155,7 @@ int labyrinthe[TAILLE][TAILLE] = {
 Et ben peu importe la valeur de `TAILLE`, les cinq premières lignes et colonnes du tableau seront remplies mais pas les autres.  
 D'ailleurs, cela va poser quelques problèmes si le tableau devient plus petit... *On verra cela plus tard*
 # Opérations sur les éléments
+## Accès à un élément
 
 Bon okay, c'est cool on a créé et initialisé notre tableau, maintenant comment je fais pour accéder, modifier ou encore supprimer un élément dans le tableau.  
 On reprend le tableau de la partie précédente et on souhaite accéder à l'élément `e3`. 
@@ -180,6 +181,32 @@ tab[i] ;
 Et on peut le lire comme suit : *Accéder au `i+1`-ème élément du tableau `tab`.*  
 `i+1` car le premier élément est à l'indice `0`.
 
+<u>Exemples :</u>  
+On récupère le second élément d'un tableau d'entier et on l'affiche.
+
+```c
+#include <stdio.h>
+
+int main(){
+	int tab[] = {45, 12, 85, 97, 23};
+	int second = tab[1]; // On récupère le second élément de tab
+	
+	// Affichage
+	printf("%d \n", second);
+}
+```
+```
+12
+```
+## Modification d'un élément
+
+On peut avoir besoin de modifier un élément, on utilise alors la forme générale suivante : 
+
+```
+tab[indice] = nouvelValeur;
+```
+
+On peut le lire comme : *Je modifie la `indice-1`-ième valeur du tableau par `nouvelle valeur`*.
 # Remplissage du tableau
 ## Avant remplissage
 
