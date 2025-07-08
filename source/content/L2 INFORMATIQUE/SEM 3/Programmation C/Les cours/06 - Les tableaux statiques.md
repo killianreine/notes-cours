@@ -662,6 +662,8 @@ gcc -o prog random.c
 >[!cite] Définition
 >On appelle **==tableau a plusieurs dimension==** un ensemble de tableau contenant le même nombre d'éléments. Chaque "sous-tableau" représente ce qu'on peut appeler une ligne.
 
+## Déclaration et initialisation
+
 On considère trois tableaux :
 - `tab1 = {1, 2, 3, 4}`
 - `tab2 = {2, 3, 4, 5}`
@@ -727,6 +729,13 @@ Où :
 - `l` représente le nombre de ligne
 - `c` représente le nombre de colonne
 - $e_{ij}$ avec $i \in [1; l]$ et $j \in [1; c]$ représente l'élément à la ligne $i$ et colonne $j$.
+
+De manière plus mathématiques, on représente celle ci par : 
+
+$$
+tab = \begin{pmatrix} [&e_{11}& e_{12}& \ldots & e_{1c}&] \\ [&e_{21} & e_{22} & \ldots & e_{2c}&]  \\ &\vdots & \vdots & \vdots & \vdots \\ [& e_{l1} &e_{l2}&\ldots& e_{lc} &] \end{pmatrix}
+$$
+
 # Gestions d'erreurs
 
 Pour ne pas être trop lourd, nous allons nous contenter d'expliquer quelques erreurs concernant les tableaux statiques, les plus fréquentes.
