@@ -1,5 +1,3 @@
-# Tableaux statiques
-
 >[!cite] Définition
 >On appelle **==tableau statique==** un ensemble de variables **du même type** ayant une **taille fixe**[^1] et où chaque élément est indexé par un indice.  
 >*Le numéro qui leur ai attribué représente leur position dans le tableau*.
@@ -29,8 +27,8 @@ On dispose des informations suivantes :
 >[!warning] Attention
 >L'ordre des éléments du tableau reprend l'ordre dans lequel sont donnés les nombres.
 
-## Déclaration d'un tableau en C
-### Un tableau sans éléments
+# Déclaration d'un tableau en C
+## Un tableau sans éléments
 
 On considère un tableau nommé `tab` de `t`-éléments permettant de stoker des variables de type `type`. 
 Alors la déclaration d'un tel tableau se fait comme suit :
@@ -48,7 +46,7 @@ On souhaite définir un tableau de $10$ entiers.
 ```c
 int tab_entier[10];
 ```
-### Un tableau préremplit
+## Un tableau préremplit
 
 On considère un tableau nommé `tab` de `t`-éléments permettant de stoker des variables de type `type`, chaque élément du tableau sera noté `e_i` où `i` représente le `i`-ème élément du tableau. 
 Alors la déclaration d'un tel tableau se fait comme suit :
@@ -64,7 +62,7 @@ On souhaite définir un tableau de $10$ entiers : `1 2 3 4 5 ...`.
 int tab_entier[10]={ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 ```
 
-### Utiliser une MACROS 
+## Utiliser une MACROS 
 - Rappels sur les macros : [[02 - Premiers pas#Les constantes]]
 
 Imaginons que vous vous lancez le projet de coder un labyrinthe en C, votre programme pourrait ressembler à ceci :  
@@ -156,7 +154,7 @@ int labyrinthe[TAILLE][TAILLE] = {
 
 Et ben peu importe la valeur de `TAILLE`, les cinq premières lignes et colonnes du tableau seront remplies mais pas les autres.  
 D'ailleurs, cela va poser quelques problèmes si le tableau devient plus petit... *On verra cela plus tard*
-## Opérations sur les éléments
+# Opérations sur les éléments
 
 Bon okay, c'est cool on a créé et initialisé notre tableau, maintenant comment je fais pour accéder, modifier ou encore supprimer un élément dans le tableau.  
 On reprend le tableau de la partie précédente et on souhaite accéder à l'élément `e3`. 
@@ -182,8 +180,8 @@ tab[i] ;
 Et on peut le lire comme suit : *Accéder au `i+1`-ème élément du tableau `tab`.*  
 `i+1` car le premier élément est à l'indice `0`.
 
-## Remplissage du tableau
-### Avant remplissage
+# Remplissage du tableau
+## Avant remplissage
 
 On considère un tableau `tab` d'une certaine taille `t` contenant des entiers initialisé comme ceci : 
 
@@ -263,12 +261,12 @@ type tab[] = {elem1, elem2, ..., elemN};
 
 Ainsi ici `tab` sera de taille `N`.
 
-### Le remplissage
+## Le remplissage
 
 Le remplissage d'un tableau en C peut se faire de différentes manières. On peut vouloir le remplir à la main, le remplir automatiquement avec des valeurs fixes, ou alors avec des valeurs aléatoires.  
 Voyons ces trois méthodes de remplissages :
 
-#### Remplissage manuel
+### Remplissage manuel
 
 En fait, le remplissage manuel, on l'a déjà utilisé avant. Au début de ce cours, on avait un tableau qui contenait les éléments suivants : 
 
@@ -298,7 +296,7 @@ Ainsi l'initialisation du tableau se fera ainsi :
 int tab[8] = { 42, 17, 89, 3, 56, 91, 24, 68 };
 ``` 
 
-##### Autres méthodes possibles
+#### Autres méthodes possibles
 
 On peut remplir une liste d'un certain élément avec la syntaxe `{elem}` où `elem` est l'élément que l'on veut stocker dans chaque emplacement du tableau.
 
@@ -353,8 +351,8 @@ tabInit[] = {0, 1, 2, 3};
 ```
 
 il est donc de taille $4$ plus petit que `tab` qui est de taille $10$ ainsi, en initialisant `tab` avec `tabInit` alors les $4$ premiers éléments du tableau seront ceux de `tabInit` et les autres $6 \to 10$ seront initialisés à $0$.
-#### Remplissage automatique
-##### Valeurs fixées
+### Remplissage automatique
+#### Valeurs fixées
 
 Le remplissage manuel, est certes simple mais peut s'avérer terriblement long à faire pour des tableaux de grandes tailles par exemple. Ou encore mieux, si chaque élément du tableau était fixé avec une logique, le remplissage manuel peut se faire automatiser.  
 Regardons un cas pratique parmi tant d'autres : 
@@ -523,7 +521,7 @@ gcc -o prog multiples.c
 [ 258, 516, 774, 1032, 1290, 1548, 1806, 2064, 2322, 2580, 2838, 3096 ]
 ```
 
-##### Valeurs aléatoires
+#### Valeurs aléatoires
 
 🔁 Objectif  
 Remplir un tableau de taille `n` avec **des valeurs aléatoires comprises dans une certaine plage**, par exemple entre `0` et `99`.  
@@ -632,4 +630,6 @@ gcc -o prog random.c
 [ 31, 9, 66, 0, 45 ]
 ```
 
-## Gestions d'erreurs
+# Gestions d'erreurs
+
+Pour ne pas être trop lourd, nous allons nous contenter d'expliquer quelques erreurs concernant les tableaux statiques, les plus fréquentes.

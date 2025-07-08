@@ -702,4 +702,4 @@ Lors de l'appel à `addition(a, b)` les paramètres permettront de déterminer s
 
 # Suivant
 
-- Cours suivant : [[06 - Les tableaux]]
+- Cours suivant : [[06 - Les tableaux statiques]]
