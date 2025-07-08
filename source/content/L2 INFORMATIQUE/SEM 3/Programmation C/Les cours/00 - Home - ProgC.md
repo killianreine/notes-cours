@@ -32,7 +32,8 @@ Bienvenue dans ce cours de programmation en langage C ! Ce cours est conçu pour
 ## Ressources
 
 - [Documentation officielle du langage C](https://en.cppreference.com/w/c)
-- Langage C, édition ENI
+- Langage C  
+  Maîtriser la programmation procédurale (avec exercices pratiques) (2e édition), édition ENI
 - Zeste de savoir, Langage C [pdf](https://zestedesavoir.com/tutoriels/pdf/755/le-langage-c-1.pdf)
 
 ## Projets et exercices
