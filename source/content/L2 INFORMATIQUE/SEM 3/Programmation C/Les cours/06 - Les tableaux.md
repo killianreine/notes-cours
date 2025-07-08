@@ -255,6 +255,14 @@ De plus, le dernier élément du tableau n'est pas le même que celui donné lor
 
 Les valeurs données aux éléments du tableau dépendent de ce qu'il y avait dans la mémoire juste avant, ou parfois, le compilateur réutilise la mémoire fraichement libérée. Ce comportement est complètement aléatoire c'est pour ça qu'on peut obtenir `0` ou des nombres très grands.
 
+On peut aussi donner une initialisation d'un tableau sans donner sa taille :
+
+```c
+type tab[] = {elem1, elem2, ..., elemN};
+```
+
+Ainsi ici `tab` sera de taille `N`.
+
 ### Le remplissage
 
 Le remplissage d'un tableau en C peut se faire de différentes manières. On peut vouloir le remplir à la main, le remplir automatiquement avec des valeurs fixes, ou alors avec des valeurs aléatoires.  
@@ -338,6 +346,13 @@ int main() {
 0 1 2 3 0 0 0 0 0 0 0
 ```
 
+ici, le tableau d'initialisation est :
+
+```c
+tabInit[] = {0, 1, 2, 3};
+```
+
+il est donc de taille $4$ plus petit que `tab` qui est de taille $10$ ainsi, en initialisant `tab` avec `tabInit` alors les $4$ premiers éléments du tableau seront ceux de `tabInit` et les autres $6 \to 10$ seront initialisés à $0$.
 #### Remplissage automatique
 ##### Valeurs fixées
 
