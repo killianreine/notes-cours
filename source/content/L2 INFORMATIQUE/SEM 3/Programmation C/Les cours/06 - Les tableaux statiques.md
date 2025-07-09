@@ -879,17 +879,6 @@ On peut initialiser un tableau à plusieurs dimensions d'une autre façon, preno
 
 ```c
 int matrice33[3][3]={10, 20, 30, 40, 50, 60, 70, 80, 90};
-
-// Affichage propre
-printf("[\n");
-for(int l = 0; l<3; l++){
-    printf("[ ");
-    for(int c=0; c<3; c++){
-        printf("%d ", matrice33[l][c]);
-    }
-    printf("],\n");
-}
-printf("]");
 ```
 ```
 [
@@ -928,6 +917,110 @@ int mat[2][3] = {'a'};
 ]
 ```
 Tous les autres éléments **sauf** le premier valent $0$.
+
+## Accès aux valeurs
+Pour accéder aux éléments qui se trouvent dans un tableau bidimensionnel, il suffit de récupérer le nom du tableau, le numéro de la ligne et le numéro de la colonne de l'élément à récupérer.
+```
+tableau[ligne][colonne]
+```
+
+Je récupère la variable dans le tableau `tableau` positionné à la ligne `ligne` et la colonne `colonne`.
+
+<u>Exemple :</u>  
+On récupère une variable dans une matrice.
+
+```c
+#include <stdio.h>
+
+int main(){
+	int tableau[3][5] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+	/*
+	Matrice 3*5
+	[
+	[1,  2,  3,  4,  5 ]
+	[6,  7,  8,  9,  10],
+	[11, 12, 13, 14, 15]
+	]
+	*/
+	// On récupère l'élément de coordonnées (1, 4) dans la tableau.
+	int e14 = tableau[1][4];
+	printf("Element ligne 2 colonne 4 : %d \n", e14);
+	return 0;
+}
+```
+```
+Element ligne 2 colonne 4 : 10 
+```
+
+## Affichage des tableaux multidimensionnels
+Pour rappel, on affiche un tableau à $1$ dimension en le parcourant et en affichant chaque élément un par un. Pour les tableau à plusieurs dimensions, on fait pareil :
+- On parcours chaque ligne
+- On affiche chaque élément de chaque ligne
+
+On utilise donc autant de boucle for que de dimensions :  
+Pour un tableau $2D$
+1. Récupérer les sous-tableaux 
+2. Parcourir les "colonnes" et afficher
+
+<u>Exemple :</u>  
+Affichage d'un tableau à $2$ dimensions.
+```c
+#include <stdio.h>
+#define LIGNE 4
+#define COLONNE 3
+
+int main(){
+	int tableau[LIGNE][COLONNE] = {{1, 2, 3}, {7, 8, 9}, {1, 5, 7}};
+    
+    // Parcourir chaque lignes
+	for(int l=0; l<LIGNE; l++){
+	    // Parcourir chaque élément de chaque ligne
+	    for(int c=0; c<COLONNE; c++){
+	        //Affichage
+	        printf("%d ", tableau[l][c]);
+	    }
+	    // On passe à la ligne pour chaque nouvelles lignes
+	    printf("\n");
+	}
+	return 0;
+}
+```
+```
+1 2 3 
+7 8 9 
+1 5 7 
+0 0 0
+```
+
+On peut améliorer en ajoutant des crochets et des virgules pour chaque tableaux.
+
+```c
+#include <stdio.h>
+#define LIGNE 4
+#define COLONNE 3
+
+int main(){
+	int tableau[LIGNE][COLONNE] = {{1, 2, 3}, {7, 8, 9}, {1, 5, 7}};
+    printf("[\n");
+	for(int l=0; l<LIGNE; l++){
+	    printf("[ ");
+	    for(int c=0; c<COLONNE-1; c++){
+	        printf("%d, ", tableau[l][c]);
+	    }
+	    printf("%d ]\n", tableau[l][COLONNE-1]);
+	}
+	printf("]");
+	return 0;
+}
+```
+```
+[
+[ 1, 2, 3 ]
+[ 7, 8, 9 ]
+[ 1, 5, 7 ]
+[ 0, 0, 0 ]
+]
+```
 
 # Gestions d'erreurs
 
