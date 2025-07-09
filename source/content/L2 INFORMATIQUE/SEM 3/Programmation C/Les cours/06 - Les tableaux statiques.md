@@ -1106,8 +1106,99 @@ for (int i = 0; i <= 10; i++)  // ❌ i <= 10 pour tab[10] → déborde !
 
 # Utilisation des tableaux
 ## Paramètre de fonction
-On peut avoir besoin de passer un ou plusieurs tableaux en paramètres d'une fonction, et il est vrai que ça peut être plus complexe.
+On peut avoir besoin de passer un ou plusieurs tableaux en paramètres d'une fonction, et il est vrai que ça peut être plus complexe.  
+On considère un tableau `tab` d'un certain nombre d'éléments et une fonction `fct` qui prend en paramètre un argument qui est le tableau, voici comment on peut lui donner `tab` comme argument : 
+```c
+type_retour fct(type[] tab);
+```
 
+<u>Exemple :</u>  
+On prend un tableau d'un certain nombre et sa taille puis on affiche les éléments.
+```c
+#include <stdio.h>
+
+void afficherTab(int tab[], int taille){
+    for(int i=0; i<taille; i++) printf("%d ", tab[i]);
+}
+
+int main(){
+    int tab[] = {0, 1, 2, 3, 4, 5};
+	afficherTab(tab, 6);
+	return 0;
+}
+```
+```
+0 1 2 3 4 5
+```
+
+## Déterminer la taille du tableau 
+
+Et si on veut déterminer la taille du tableau :
+- sans la passer en argument
+- sans la stocker dans une variable
+
+Un problème se pose, comment déterminer la taille du tableau sans l'avoir stockée avant.  
+On utilise une fonction `sizeof` qui permet de déterminer la taille d'une variable. On l'utilise en $2$ étapes : 
+- Déterminer la taille globale du tableau
+- Diviser par la taille d'un élément du tableau (le premier souvent)
+
+```c
+int tab[] = {0, 1, 2, 3, 4, 5};
+int taille = sizeof(tab) / sizeof(tab[0]);
+printf("%d", taille);
+```
+```
+6
+```
+
+### Erreur importante
+Analysons le code suivant : 
+```c
+#include <stdio.h>
+
+void afficherTab(int tab[]){
+    int tailleTab = sizeof(tab)/sizeof(tab[0]);
+    printf("Taille du tableau : %d\n", tailleTab);
+    for(int i=0; i<tailleTab; i++) printf("%d ", tab[i]);
+}
+
+int main(){
+    int tab[] = {0, 1, 2, 3, 4, 5};
+	afficherTab(tab);
+	return 0;
+}
+```
+
+Voilà ce que fait ce code :
+- La fonction `afficherTab`
+	- Prend en paramètre un tableau `tab`
+	- Elle calcule la taille du tableau (nombre d'éléments)
+	- Elle affiche la taille
+	- Puis elle parcours le tableau pour afficher les éléments un à un
+- La fonction `main` est une application de la fonction `afficherTab`
+
+Voici le résultat lors de **l'exécution** :
+```less
+In function 'afficherTab':
+warning: 'sizeof' on array function parameter 'tab' will return size of 'int *' [-Wsizeof-array-argument]
+    4 |     int tailleTab = sizeof(tab)/sizeof(tab[0]);
+      |                           ^
+note: declared here
+    3 | void afficherTab(int tab[]){
+      |                  ~~~~^~~~~
+Taille du tableau : 2
+0 1
+```
+En fait, ce qu'il se passe c'est que dans la fonction `afficherTab`,  le tableau que l'on passe en paramètre n'est pas vraiment un tableau c'est un pointeur qui pointe vers le premier élément du tableau (*on le reverra plus tard*).   
+Le truc c'est que quand on passe un tableau en paramètre de fonction, il se dégrade pour devenir un pointeur.  
+Ainsi, sur une machine $64$bits, la taille d'un pointeur est $8$ et la taille d'un entier $4$ ainsi dans tous les cas, on aura : 
+```c
+int tailleTab = sizeof(tab)/sizeof(tab[0]);
+```
+Qui renverra 2, c'est pour cette raison que l'on affiche les deux premiers éléments, or notre tableau e fait pas que deux éléments.
+
+**Comment contrer l'erreur**  
+Il suffit de calculer la taille du tableau juste après l'initialisation comme on l'a fait au dessus... 
 # BONUS
 ## Initialiser une matrice nulle
 Pour rappel on appelle matrice nulle, une matrice dont tous les coefficients sont égal à $0$.
