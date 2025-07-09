@@ -657,19 +657,144 @@ gcc -o prog random.c
 [ 31, 9, 66, 0, 45 ]
 ```
 
+# Affichage d'un tableau
+Contrairement à un langage comme Python, l'affichage du tableau ne se fait pas nativement. En fait c'est à vous de déterminer comment ce dernier vas s'afficher.
+## En python
+```python
+tableau = [1, 2, 3, 4, 5, 6]
+print(tableau)
+```
+```
+[1, 2, 3, 4, 5, 6]
+```
+
+## En langage C
+```c
+#include <stdio.h>
+
+int main(){
+	int tableau[4] = {1, 2, 3, 4};
+	printf(tableau);
+	return 0;
+}
+```
+```less
+ERROR!
+In function 'main':
+error: passing argument 1 of 'printf' from incompatible pointer type [-Wincompatible-pointer-types]
+    5 |         printf(tableau);
+      |                ^~~~~~~
+      |                |
+      |                int *
+```
+
+Alors oui, une erreur directe.  
+Ce que dit l'erreur c'est que l'argument passé dans le `printf` est incompatible. Et, cela affiche que tableau est un `int*`, un **==pointeur==** d'entier *Notion que l'on abordera plus tard...* 
+
+```c
+#include <stdio.h>
+
+int main(){
+	int tableau[4] = {1, 2, 3, 4};
+	printf("%d\n", tableau);
+	return 0;
+}
+```
+```
+1812024368
+```
+
+ici, la programme affiche un entier puisque `%d` dans le format du `printf`. L'entier représente l'identifiant de l'adresse mémoire interprétée comme un entier du tableau.
+
+>[!info] Remarque
+>Pour afficher **proprement** une adresse mémoire, on utilise `%p`.
+
+```c
+#include <stdio.h>
+
+int main(){
+	int tableau[4] = {1, 2, 3, 4};
+	printf("%p\n", tableau);
+	return 0;
+}
+```
+```
+0x7ffd5f5402a0
+```
+
+### Affichage personnalisés
+Pour afficher un tableau en langage C, il vas donc falloir que vous le parcourriez d'éléments en éléments pour les afficher successivement.  
+En principe sans faire aucun formatage supplémentaire, on peut obtenir le visuel suivant : 
+
+```c
+#include <stdio.h>
+
+int main(){
+	int tableau[4] = {1, 2, 3, 4};
+	// Parcours avec une boucle for
+	for(int i = 0; i<4; i++){
+		printf("%d ", tableau[i]);
+	}
+	return 0;
+}
+```
+```
+1 2 3 4 
+```
+
+On peut l'améliorer en ajoutant des virgules entre chaque éléments et en ajoutant les crochets au début et à la fin du tableau comme en python.
+
+```c
+#include <stdio.h>
+
+int main(){
+	int tableau[4] = {1, 2, 3, 4};
+	// Parcours avec une boucle for
+	printf("[ ");
+	for(int i = 0; i<4; i++){
+		printf("%d, ", tableau[i]);
+	}
+	printf("]");
+	return 0;
+}
+```
+```
+[ 1, 2, 3, 4, ]
+```
+
+Bon okay, c'est presque ça mais c'est bête d'avoir la virgule après le dernier éléments. Pour contrer ça, rien de plus simple, on parcours le tableau jusqu'à l'avant dernier élément ici le troisième. Et **après la boucle `for`**, on affiche le dernier élément du tableau suivit du crochet fermant :
+
+```c
+#include <stdio.h>
+
+int main(){
+	int tableau[4] = {1, 2, 3, 4};
+	// Parcours avec une boucle for
+	printf("[ ");
+	for(int i = 0; i<3; i++){
+		printf("%d, ", tableau[i]);
+	}
+	printf("%d ]", tableau[3]);
+	return 0;
+}
+```
+```
+[ 1, 2, 3, 4 ]
+```
 # Tableaux multidimensionnels
 
 >[!cite] Définition
 >On appelle **==tableau a plusieurs dimension==** un ensemble de tableau contenant le même nombre d'éléments. Chaque "sous-tableau" représente ce qu'on peut appeler une ligne.
 
 ## Déclaration et initialisation
+### Méthode 1
 
 On considère trois tableaux :
 - `tab1 = {1, 2, 3, 4}`
 - `tab2 = {2, 3, 4, 5}`
 - `tab3 = {3, 4, 5, 6}`
 
-Ainsi on peut appeler `tabMultiDim` le tableau : `{ tab1, tab2, tab3}` qui est aussi égal à :  
+Ainsi on peut appeler `tabMultiDim` le tableau : `{ tab1, tab2, tab3 }` qui est aussi égal à :  
 `tabMultiDim = {{1, 2, 3, 4}, {2, 3, 4, 5}, {3, 4, 5, 6}}`  
 Et représenté par : 
 
@@ -701,6 +826,9 @@ On voit bien que :
 
 Dans notre exemple, on a une tableau à deux dimensions de taille $4 \times 3$ que l'on définit et initialise comme ceci : 
 
+>[!info] 
+>Le choix de représentation visuel des matrices est choisit de manière uniquement visuel, lors de vos exécution, un tableau ne sera pas affiché comme ceci dans le terminal, **pas comme en Python...**.
+
 ```c
 #include <stdio.h>
 
@@ -712,6 +840,13 @@ int main(){
     };
     return 0;
 }
+```
+```
+[
+[1 2 3 4 ]
+[2 3 4 5 ]
+[3 4 5 6 ]
+]
 ```
 
 De manière générale, on note : 
@@ -733,10 +868,66 @@ Où :
 De manière plus mathématiques, on représente celle ci par : 
 
 $$
-tab = \begin{bmatrix} [&e_{11}& e_{12}& \ldots & e_{1c}&] \\ [&e_{21} & e_{22} & \ldots & e_{2c}&]  \\ &\vdots & \vdots & \vdots & \vdots \\ [& e_{l1} &e_{l2}&\ldots& e_{lc} &] \end{bmatrix}
+tab = \begin{bmatrix} [&e_{11}& e_{12}& \ldots & e_{1c}&] \\ [&e_{21} & e_{22} & \ldots & e_{2c}&]  \\ &\vdots & \vdots &  & \vdots \\ [& e_{l1} &e_{l2}&\ldots& e_{lc} &] \end{bmatrix}
 $$
+
 >[!note]
 >D'une manière plus grossière, on dit qu'un tableau à deux dimension est une **matrice** ou encore **un tableau de tableau**.
+
+### Méthode 2
+On peut initialiser un tableau à plusieurs dimensions d'une autre façon, prenons un tableau de taille $3 \times 3$. On sait que le tableau contient trois sous tableaux de trois éléments donc 9 éléments en tout, on peut alors utiliser un tableau simple de 9 éléments pour initialiser le tableau $3 \times 3$.
+
+```c
+int matrice33[3][3]={10, 20, 30, 40, 50, 60, 70, 80, 90};
+
+// Affichage propre
+printf("[\n");
+for(int l = 0; l<3; l++){
+    printf("[ ");
+    for(int c=0; c<3; c++){
+        printf("%d ", matrice33[l][c]);
+    }
+    printf("],\n");
+}
+printf("]");
+```
+```
+[
+[ 1 2 3 ],
+[ 4 5 6 ],
+[ 7 8 9 ],
+]
+```
+
+On voit alors que les trois premiers éléments du tableau d'initialisation représente la première ligne, les trois suivant la 2e et les trois derniers la troisième. En fait le tableau simple a été découpé en trois et chaque partie représente une ligne.
+
+### Initialisation incomplète
+C'est lorsqu'on initialise certains éléments mais pas tous, on a vu avec un tableau unidimensionnel, cela initialise les autres cases par $0$ pour des tableaux d'entiers.
+
+```c
+int matrice23[2][3] = {
+    {1},   
+    {12, 10},     
+};
+```
+```
+[
+[1  0  0]
+[12 10 0]
+]
+```
+
+```c
+int mat[2][3] = {'a'};
+```
+```
+[
+[ a     ]
+[       ]
+[       ]
+]
+```
+Tous les autres éléments **sauf** le premier valent $0$.
 
 # Gestions d'erreurs
 
@@ -819,3 +1010,26 @@ Il peut arriver que lorsque l'on parcours un tableau on puisse déborder (essaye
 for (int i = 0; i <= 10; i++)  // ❌ i <= 10 pour tab[10] → déborde !
     tab[i] = i;
 ```
+
+# BONUS
+## Initialiser une matrice nulle
+Pour rappel on appelle matrice nulle, une matrice dont tous les coefficients sont égal à $0$.
+
+>[!warning] Attention
+>La méthode d'initialisation ci contre n'est valide **uniquement si on veut mettre toutes les cases d'un tableau à 0** et avec des types simples (`int`, `char`,...).
+
+```c
+#include <string.h>
+int mat[5][5];
+memset(mat, 0, sizeof(mat));
+```
+```
+[
+[ 0 0 0 0 0 ],
+[ 0 0 0 0 0 ],
+[ 0 0 0 0 0 ],
+[ 0 0 0 0 0 ],
+[ 0 0 0 0 0 ],
+]
+```
+
