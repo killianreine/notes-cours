@@ -1068,10 +1068,6 @@ warning: excess elements in array initializer
       |                                                        ^~
 ```
 
-# Utilisation des tableaux
-## Paramètre de fonction
-On peut avoir besoin de passer un ou plusieurs tableaux en paramètres d'une fonction, et il est vrai que ça peut être plus complexe.
-
 ## Initialiser un élément inexistant
 
 Soit `tab` un tableau de $5$ éléments, voyons ce qu'il se passe si on initialise un 6e élément : 
@@ -1107,6 +1103,10 @@ Il peut arriver que lorsque l'on parcours un tableau on puisse déborder (essaye
 for (int i = 0; i <= 10; i++)  // ❌ i <= 10 pour tab[10] → déborde !
     tab[i] = i;
 ```
+
+# Utilisation des tableaux
+## Paramètre de fonction
+On peut avoir besoin de passer un ou plusieurs tableaux en paramètres d'une fonction, et il est vrai que ça peut être plus complexe.
 
 # BONUS
 ## Initialiser une matrice nulle
