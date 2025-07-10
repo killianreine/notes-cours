@@ -1206,6 +1206,42 @@ int tailleTab = sizeof(tab)/sizeof(tab[0]):
 ```
 
 >[!info] Remarque
+>Vous pouvez diviser la taille globale du tableau par : 
+>- Le premier élément du tableau
+>- Le type des variables qui se trouvent dans le tableau, ici `int`
+
+<u>Exemple :</u>  
+On code une fonction qui permet d'afficher correctement un tableau à 2 dimensions. On utilisera le format d'affichage équivalent à celui de python.  
+*i.e. `[ [sous-tab1], [sous-tab2], ..., [sous-tabN] ]`*
+```c
+#include <stdio.h>
+
+void afficherTab2D(int tab[3][3], int lignes, int colonnes){
+    printf("[ ");
+    for(int l=0; l<lignes; l++){
+        printf("[ ");
+        for(int c=0; c<colonnes-1; c++){
+            printf("%d, ", tab[l][c]);
+        }
+        // Condition pour pas afficher la virgule après le dernier élément
+        if(l==lignes-1)
+            printf("%d ] ", tab[l][colonnes-1]);
+        else
+            printf("%d ], ", tab[l][colonnes-1]);
+    }
+    printf("]");
+}
+
+int main(){ 
+    int tab[3][3] = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
+	afficherTab2D(tab, 3, 3);
+	return 0;
+}
+```
+```
+[ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1 ] ]
+```
+
 # BONUS
 ## Initialiser une matrice nulle
 Pour rappel on appelle matrice nulle, une matrice dont tous les coefficients sont égal à $0$.
