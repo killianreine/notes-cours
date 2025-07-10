@@ -826,7 +826,7 @@ On voit bien que :
 
 Dans notre exemple, on a une tableau à deux dimensions de taille $4 \times 3$ que l'on définit et initialise comme ceci : 
 
->[!info] 
+>[!info] Remarque
 >Le choix de représentation visuel des matrices est choisit de manière uniquement visuel, lors de vos exécution, un tableau ne sera pas affiché comme ceci dans le terminal, **pas comme en Python...**.
 
 ```c
@@ -1199,6 +1199,13 @@ Qui renverra 2, c'est pour cette raison que l'on affiche les deux premiers élé
 
 **Comment contrer l'erreur**  
 Il suffit de calculer la taille du tableau juste après l'initialisation comme on l'a fait au dessus... 
+```c
+int tab[] = {1, 2, 3};
+int tailleTab = sizeof(tab)/sizeof(tab[0]):
+// Ou : sizeof(tab)/sizeof(int);
+```
+
+>[!info] Remarque
 # BONUS
 ## Initialiser une matrice nulle
 Pour rappel on appelle matrice nulle, une matrice dont tous les coefficients sont égal à $0$.

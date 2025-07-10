@@ -74,7 +74,7 @@ html.light .callout[data-callout="info"] {
   font-family: "Segoe UI", sans-serif;
 }
 
-html.light .callout[data-callout="remarque"] .callout-title {
+html.light .callout[data-callout="info"] .callout-title {
   color: #007c91;
   font-weight: 600;
   display: flex;
@@ -83,12 +83,12 @@ html.light .callout[data-callout="remarque"] .callout-title {
   margin-bottom: 0.3rem;
 }
 
-html.light .callout[data-callout="remarque"] .callout-title .callout-icon {
+html.light .callout[data-callout="info"] .callout-title .callout-icon {
   margin-right: 0.4rem;
   color: #007c91;
 }
 
-html.light .callout[data-callout="remarque"] .callout-content {
+html.light .callout[data-callout="info"] .callout-content {
   color: #333;
   font-size: 0.95rem;
   line-height: 1.4;
@@ -104,7 +104,7 @@ html.dark .callout[data-callout="info"] {
   font-family: "Segoe UI", sans-serif;
 }
 
-html.dark .callout[data-callout="remarque"] .callout-title {
+html.dark .callout[data-callout="info"] .callout-title {
   color: #4dd0e1;
   font-weight: 600;
   display: flex;
@@ -113,12 +113,12 @@ html.dark .callout[data-callout="remarque"] .callout-title {
   margin-bottom: 0.3rem;
 }
 
-html.dark .callout[data-callout="remarque"] .callout-title .callout-icon {
+html.dark .callout[data-callout="info"] .callout-title .callout-icon {
   margin-right: 0.4rem;
   color: #4dd0e1;
 }
 
-html.dark .callout[data-callout="remarque"] .callout-content {
+html.dark .callout[data-callout="info"] .callout-content {
   color: #e0e0e0;
   font-size: 0.95rem;
   line-height: 1.4;
