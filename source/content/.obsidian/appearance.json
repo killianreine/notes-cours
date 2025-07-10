@@ -3,5 +3,6 @@
   "accentColor": "#5c8af5",
   "enabledCssSnippets": [
     "styles"
-  ]
+  ],
+  "baseFontSize": 13
 }
