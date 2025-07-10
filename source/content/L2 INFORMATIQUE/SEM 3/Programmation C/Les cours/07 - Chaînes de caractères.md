@@ -26,8 +26,4 @@ char domaine = "informatique";
 ```
 
 Voici d'une manière simplifiée, comment le mot est stocké.
-```mermaid
-flowchart LR
-    i["'i'"] --> n["'n'"] --> f["'f'"] --> o["'o'"] --> r["'r'"] --> m["'m'"] --> a["'a'"] --> t["'t'"]
-    t --> i2["'i'"] --> q["'q'"] --> u["'u'"] --> e["'e'"] --> zero["'\\0'"]
-```
+![[informatiqueMOT.svg]]
