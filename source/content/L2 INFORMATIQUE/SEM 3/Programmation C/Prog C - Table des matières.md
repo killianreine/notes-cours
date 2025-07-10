@@ -1,0 +1,115 @@
+1. **Introduction**
+	- Introduction générale
+		- La programmation c'est quoi ?
+		- Parlons langage C
+			- Historique
+			- Langage Compilé
+		- Outils nécessaires
+			- Installer un éditeur de code
+			- Compiler son programme C
+2. **Premiers pas**
+	- Ce bon vieux `Hello world`
+		- Le point d'entrée `main`
+			- Écrire des commentaires
+		- Afficher des informations dans la console
+	- Les types usuels
+		- Le type caractère
+		- Le type entier
+			- L'opérateur `sizeof`
+		- Les types flottants
+		- Portée des variables
+			- Variable locale
+			- Variable globale
+		- Retour sur `printf`
+		- Les constantes
+			- Généralités
+			- Initialiser une constante
+				- En utilisant le mot clé `const`
+				- Avec `#define`
+				- Quelques conseils
+			- Les constantes prédéfinies
+3. **Opérateurs & Arithmétique**
+	- Définition générale
+	- Opérateurs arithmétiques
+		- L'addition
+		- La soustraction
+		- La multiplication
+		- La division
+		- Le modulo
+	- Opérateurs d'affectation
+		- Opérateurs d'affectation composés
+	- Les opérateurs unitaires
+		- L'incrémentation `++`
+		- La décrémentation `--`
+		- Opérateur logique de négation `!`
+	- Opérateurs de comparaison
+	- Opérateurs logique
+		- Table de vérité des opérateurs
+			- Table du ET logique `&&`
+			- Table du OU logique `||`
+			- Table du NON logique `!`
+	- Priorité et associativité des opérateurs
+		- Définitions
+	- L'opérateur `~`
+		- Le complément à $2$
+4. **Conditions et boucles**
+	- Structures de contrôle
+		- `if`, `else if` et `else`
+		- `switch`
+	- Les boucles
+		- `for`
+			- Double boucle `for`
+		- `white`
+		- `do while`
+5. **Retour sur les fonctions**
+	- Généralités
+		- Définitions
+		- Documentation d'une fonction
+			- Exemple : Algorithme d'Euclide
+	- Déclaration et définition d'une fonction
+	- Organisation et Utilisation des fichiers `.h`
+	- fichiers `.h` personnalisés
+		- Projet guidé pour mieux comprendre
+			- Introduction au projet
+			- Quelques rappels de géométrie
+	- Surcharge
+		- Principe
+		- Comment le contourner ?
+			- Utiliser des noms différents
+			- Utiliser des MACROS
+6. **Les tableaux statiques**
+	- Déclaration d'un tableau en C
+		- Un tableau sans éléments
+		- Un tableau préremplit
+		- Utiliser une MACROS
+	- Opérations sur les éléments
+		- Accès à un élément
+		- Modification d'un élément
+	- Remplissage du tableau
+		- Avant remplissage
+		- Le remplissage
+			- Remplissage manuel
+			- Remplissage automatique
+	- Affichage d'un tableau
+		- En python
+		- En langage C
+			- Affichage personnalisé
+	- Tableaux multidimensionnels
+		- Déclaration et initialisation
+			- Méthode 1
+			- Méthode 2
+			- Initialisation incomplète
+		- Accès aux valeurs
+		- Affichage des tableaux multidimensionnels
+	- Gestion d'erreurs
+		- Tableau d'init trop grand
+		- Initialiser un élément non existant
+		- Utiliser une variable de taille
+		- Débordement
+	- Utilisation des tableaux
+		- Paramètre de fonction
+		- Déterminer la taille du tableau
+			- Erreur importante
+	- BONUS
+		- Initialiser une matrice nulle
+7. **Les chaînes de caractères**

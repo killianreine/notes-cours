@@ -530,4 +530,4 @@ TEINTE = 130; // Erreur : on ne peut pas modifier une constante
 Il existe évidemment de multiples constantes prédéfinies, on en a vu quelques unes comme `FLT_MIN` et `FLT_MAX` dans l'entête `<float.h>`.
 
 # Suivant 
-- Cours suivant : [[03 - Opérateurs & Arithmétique]]]
+- Cours suivant : [[03 - Opérateurs & Arithmétique]]
