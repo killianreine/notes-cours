@@ -43,12 +43,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prog C - Table des matières"
+              "title": "00 - Home - ProgC"
             }
           }
         ],
@@ -65,13 +65,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Prog C - Table des matières"
+              "title": "Plan de 00 - Home - ProgC"
             }
           }
         ]
@@ -238,16 +238,16 @@
   },
   "active": "6e4d82037c5fdf42",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "2025-07-10.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/06 - Les tableaux statiques.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Chaînes de caractères.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les exercices pratiques/6. Tableaux en C",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les exercices pratiques",

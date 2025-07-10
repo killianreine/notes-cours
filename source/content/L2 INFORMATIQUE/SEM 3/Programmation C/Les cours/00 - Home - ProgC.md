@@ -21,6 +21,7 @@ Bienvenue dans ce cours de programmation en langage C ! Ce cours est conçu pour
 - Aucune expérience préalable en programmation n'est requise.
 
 ## Plan du Cours
+Table des matières complète : [[Prog C - Table des matières]]
 
 - Cours 01 : [[01 - Introduction]]
 - Cours 02 : [[02 - Premiers pas]]
