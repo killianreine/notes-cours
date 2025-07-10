@@ -25,5 +25,5 @@ On souhaite stocké le mot `informatique` dans une chaine de caractères nommée
 char domaine = "informatique";
 ```
 
-Voici d'une manière simplifiée, comment le mot est stocké.
+Voici d'une manière simplifiée pour comprendre comment le mot est stocké.
 ![[informatiqueMOT.svg]]
