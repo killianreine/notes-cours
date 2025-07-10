@@ -20,7 +20,7 @@ Où
 - `"..."` la chaîne de caractère que l'on stocke
 
 <u>Exemple :</u>  
-On souhaite stocké le mot `informatique` dans une chaine de caractères nommée `domaine`, on va alors créer un tableau de caractères et stocker le mot.
+On souhaite stocker le mot `informatique` dans une chaine de caractères nommée `domaine`, on va alors créer un tableau de caractères et stocker le mot.
 ```c
 char domaine = "informatique";
 ```
