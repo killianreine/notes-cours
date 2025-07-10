@@ -1264,3 +1264,5 @@ memset(mat, 0, sizeof(mat));
 ]
 ```
 
+# Suivant
+- Cours suivant : [[07 - Chaînes de caractères]]
