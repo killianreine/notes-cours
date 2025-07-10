@@ -28,6 +28,7 @@ Bienvenue dans ce cours de programmation en langage C ! Ce cours est conçu pour
 - Cours 04 : [[04 - Conditions et boucles]]
 - Cours 05 : [[05 - Retour sur les fonctions]]
 - Cours 06 : [[06 - Les tableaux statiques]]
+- Cours 07 : [[07 - Chaînes de caractères]]
 
 ## Ressources
 
