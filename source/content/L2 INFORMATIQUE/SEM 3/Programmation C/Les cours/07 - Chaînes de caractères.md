@@ -26,6 +26,7 @@ char domaine = "informatique";
 ```
 
 Voici d'une manière simplifiée, comment le mot est stocké.
+
 <svg width="900" height="100" xmlns="http://www.w3.org/2000/svg">
   <style>
     .char-box { fill: #f0f8ff; stroke: #4682b4; stroke-width: 1; }
