@@ -1,4 +1,4 @@
-1. **Introduction**
+1. **Introduction** [[01 - Introduction]]
 	- Introduction générale
 		- La programmation c'est quoi ?
 		- Parlons langage C
@@ -7,7 +7,7 @@
 		- Outils nécessaires
 			- Installer un éditeur de code
 			- Compiler son programme C
-2. **Premiers pas**
+2. **Premiers pas** [[02 - Premiers pas]]
 	- Ce bon vieux `Hello world`
 		- Le point d'entrée `main`
 			- Écrire des commentaires
@@ -28,7 +28,7 @@
 				- Avec `#define`
 				- Quelques conseils
 			- Les constantes prédéfinies
-3. **Opérateurs & Arithmétique**
+3. **Opérateurs & Arithmétique** [[03 - Opérateurs & Arithmétique]]
 	- Définition générale
 	- Opérateurs arithmétiques
 		- L'addition
@@ -52,7 +52,7 @@
 		- Définitions
 	- L'opérateur `~`
 		- Le complément à $2$
-4. **Conditions et boucles**
+4. **Conditions et boucles** [[04 - Conditions et boucles]]
 	- Structures de contrôle
 		- `if`, `else if` et `else`
 		- `switch`
@@ -61,7 +61,7 @@
 			- Double boucle `for`
 		- `white`
 		- `do while`
-5. **Retour sur les fonctions**
+5. **Retour sur les fonctions** [[05 - Retour sur les fonctions]]
 	- Généralités
 		- Définitions
 		- Documentation d'une fonction
@@ -77,7 +77,7 @@
 		- Comment le contourner ?
 			- Utiliser des noms différents
 			- Utiliser des MACROS
-6. **Les tableaux statiques**
+6. **Les tableaux statiques** [[06 - Les tableaux statiques]]
 	- Déclaration d'un tableau en C
 		- Un tableau sans éléments
 		- Un tableau préremplit
@@ -112,4 +112,4 @@
 			- Erreur importante
 	- BONUS
 		- Initialiser une matrice nulle
-7. **Les chaînes de caractères**
+7. **Les chaînes de caractères** [[07 - Chaînes de caractères]]
