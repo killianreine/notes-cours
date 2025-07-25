@@ -73,7 +73,7 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
 
 - Trigonométrie - [[Cours trigo.pdf]]
 - Nombres complexes - [[Cours nombres complexes.pdf]]
-- Espace vectoriel de $\mathbb{K}^n$
+- Espace vectoriel de $\mathbb{K}^n$ - [[Cours espace vectoriel.pdf]]
 - Système linéaires
 - Calculs avec $\sum$ et $\prod$
 - Polynômes formels
