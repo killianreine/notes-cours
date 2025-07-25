@@ -71,8 +71,8 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
 
 ## 📚 Contenu du cours
 
-- Trigonométrie
-- Nombres complexes - [[Nombres complexes - Cours]]
+- Trigonométrie - [[Cours trigo.pdf]]
+- Nombres complexes - [[Cours nombres complexes.pdf]]
 - Espace vectoriel de $\mathbb{K}^n$
 - Système linéaires
 - Calculs avec $\sum$ et $\prod$
