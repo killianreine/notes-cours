@@ -40,7 +40,7 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
     </tr>
     <tr>
       <td>Parcours INFO</td>
-      <td>Killian REINE (L3 INFO)</td>
+      <td>Killian REINE</td>
     </tr>
   </tbody>
 </table>
@@ -56,7 +56,7 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
   <tbody>
     <tr>
       <td>Parcours MATHS</td>
-      <td rowspan="3" valign="center" align="center">Killian REINE (L3 INFO)</td>
+      <td rowspan="3" valign="center" align="center">Killian REINE</td>
     </tr>
     <tr>
       <td>Parcours SPIP</td>
