@@ -21,7 +21,7 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
 
 ## 👥 Répartition des tuteurs par parcours
 
-### Organisation 2025-26
+Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MISPSI depuis la rentrée 2024.
 
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
@@ -34,15 +34,16 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
   <tbody>
     <tr>
       <td>Parcours MATHS</td>
-      <td rowspan="3">Killian REINE</td>
-      <td rowspan="2"></td>
-    </tr>
-    <tr>
-      <td>Parcours SPIP</td>
+      <th rowspan="3">Killian REINE</th>
+      <td ></td>
     </tr>
     <tr>
       <td>Parcours INFO</td>
-      <td>Killian REINE</td>
+      <th>Killian REINE</th>
+    </tr>
+    <tr>
+      <td>Parcours SPIP</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
