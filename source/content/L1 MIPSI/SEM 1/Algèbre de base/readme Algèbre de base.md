@@ -49,15 +49,19 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
 
 ## 📚 Contenu du cours
 
-- Trigonométrie - [[Cours trigo.pdf]]
-- Nombres complexes - [[Cours nombres complexes.pdf]]
-- Espace vectoriel de $\mathbb{K}^n$ - [[Cours espace vectoriel.pdf]]
-- Système linéaires - [[Cours systemes.pdf]]
-- Calculs avec $\sum$ et $\prod$ - [[Cours sommes.pdf]]
-- Polynômes formels
-- Bases et dimensions de $\mathbb{K}^n$
-- Calculs matriciels
-- Applications linéaires
+## 📚 Cours de Mathématiques
+
+| Nom du cours                             | 📄 PDF associé                  |
+| ---------------------------------------- | ------------------------------- |
+| 📐 Trigonométrie                         | [[Cours trigo.pdf]]             |
+| 🔢 Nombres complexes                     | [[Cours nombres complexes.pdf]] |
+| 🧱 Espace vectoriel de $\mathbb{K}^n$    | [[Cours espace vectoriel.pdf]]  |
+| 📊 Systèmes linéaires                    | [[Cours systemes.pdf]]          |
+| ➕ Calculs avec $\sum$ et $\prod$         | [[Cours sommes.pdf]]            |
+| 🧮 Polynômes formels                     |                                 |
+| 🧾 Bases et dimensions de $\mathbb{K}^n$ |                                 |
+| 📐 Calculs matriciels                    |                                 |
+| 🧲 Applications linéaires                |                                 |
 
 > Chaque chapitre contient :
 > - Des fiches de cours claires et concises
