@@ -49,8 +49,6 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
 
 ## 📚 Contenu du cours
 
-## 📚 Cours de Mathématiques
-
 | Nom du cours                             | 📄 PDF associé                  |
 | ---------------------------------------- | ------------------------------- |
 | 📐 Trigonométrie                         | [[Cours trigo.pdf]]             |
