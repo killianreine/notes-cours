@@ -61,7 +61,7 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 | ➕ Calculs avec $\sum$ et $\prod$         | [[Cours sommes.pdf]]            |
 | 🧮 Polynômes formels                     | [[Cours polynômes.pdf]]         |
 | 🧾 Bases et dimensions de $\mathbb{K}^n$ | [[Cours bases.pdf]]             |
-| 📐 Calculs matriciels                    |                                 |
+| 📐 Calculs matriciels                    | [[Cours matrices.pdf]]          |
 | 🧲 Applications linéaires                |                                 |
 
 > Chaque chapitre contient :
