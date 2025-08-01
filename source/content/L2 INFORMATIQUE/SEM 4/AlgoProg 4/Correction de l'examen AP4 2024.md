@@ -117,7 +117,8 @@ Alors :
 	&= 2^in_i\cancel{-2^i(n_iMOD2)}+\underset{j=0}{\overset{i-1}{\sum}}v[j]\times2^j+\cancel{(n_iMOD2)\times2^{i}} \\
 	&= 2^in_i+\underset{j=0}{\overset{i-1}{\sum}}v[j]\times2^j \\
 	&= I(i)
-	\end{align*}$$
+	\end{align*}
+	$$
 
 Ainsi notre invariant $I$ reste valide avant pendant et après la boucle `while`. 
 Ainsi $I$ est un invariant de l'algorithme $\mathcal{A}$ et on a :
