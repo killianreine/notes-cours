@@ -106,6 +106,7 @@ Alors :
 	\end{align*}
 	$$
 	D'où :
+	
 	$$
 	\begin{align*}
 	I(i+1)&= 2^{i+1} \times (n_i DIV 2)+\underset{j=0}{\overset{i-1}{\sum}}v[j]\times2^j+(n_iMOD2)\times2^{i} \\
