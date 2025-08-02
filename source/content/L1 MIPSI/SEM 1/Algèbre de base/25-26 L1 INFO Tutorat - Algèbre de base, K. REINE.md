@@ -52,7 +52,7 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 
 ## 📚 Contenu du cours
 
-| Nom du cours                             | 📄 PDF associé                      | TDs         |
+| Nom du cours                             | 📄 Fiche de cours                   | Fiche de TD |
 | ---------------------------------------- | ----------------------------------- | ----------- |
 | 📐 Trigonométrie                         | [[Cours trigo.pdf]]                 | [[TD1.pdf]] |
 | 🔢 Nombres complexes                     | [[Cours nombres complexes.pdf]]     | [[TD2.pdf]] |
