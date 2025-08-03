@@ -61,8 +61,8 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 | ➕ Calculs avec $\sum$ et $\prod$         | [[Cours sommes.pdf]]                | [[TD5.pdf]] |
 | 🧮 Polynômes formels                     | [[Cours polynômes.pdf]]             | [[TD6.pdf]] |
 | 🧾 Bases et dimensions de $\mathbb{K}^n$ | [[Cours bases.pdf]]                 | *Aucun TD*  |
-| 📐 Calculs matriciels                    | [[Cours matrices.pdf]]              |             |
-| 🧲 Applications linéaires                | [[Cours applicationsLinéaires.pdf]] | *Aucun TD*  |
+| 📐 Calculs matriciels                    | [[Cours matrices.pdf]]              | [[TD8.pdf]] |
+| 🧲 Applications linéaires                | [[Cours applicationsLinéaires.pdf]] |             |
 >[!info] Remarque
 >Les chapitres qui ne contiennent pas de TDs, ont en réalité des exercices, ceux qui ont été faits par l'enseignant en charge du module. 
 
