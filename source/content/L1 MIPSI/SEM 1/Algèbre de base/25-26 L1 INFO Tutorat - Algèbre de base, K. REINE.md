@@ -57,10 +57,10 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 | 📐 Trigonométrie                         | [[Cours trigo.pdf]]                 | [[TD1.pdf]] |
 | 🔢 Nombres complexes                     | [[Cours nombres complexes.pdf]]     | [[TD2.pdf]] |
 | 🧱 Espace vectoriel de $\mathbb{K}^n$    | [[Cours espace vectoriel.pdf]]      | [[TD3.pdf]] |
-| 📊 Systèmes linéaires                    | [[Cours systemes.pdf]]              | *Aucun TD*  |
+| 📊 Systèmes linéaires                    | [[Cours systemes.pdf]]              |             |
 | ➕ Calculs avec $\sum$ et $\prod$         | [[Cours sommes.pdf]]                | [[TD5.pdf]] |
 | 🧮 Polynômes formels                     | [[Cours polynômes.pdf]]             | [[TD6.pdf]] |
-| 🧾 Bases et dimensions de $\mathbb{K}^n$ | [[Cours bases.pdf]]                 | *Aucun TD*  |
+| 🧾 Bases et dimensions de $\mathbb{K}^n$ | [[Cours bases.pdf]]                 |             |
 | 📐 Calculs matriciels                    | [[Cours matrices.pdf]]              | [[TD8.pdf]] |
 | 🧲 Applications linéaires                | [[Cours applicationsLinéaires.pdf]] | [[TD9.pdf]] |
 >[!info] Remarque
