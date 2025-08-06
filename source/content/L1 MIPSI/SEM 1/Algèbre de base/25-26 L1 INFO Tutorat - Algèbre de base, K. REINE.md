@@ -67,7 +67,29 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 >Les chapitres qui ne contiennent pas de TDs, ont en réalité des exercices, ceux qui ont été faits par l'enseignant en charge du module. 
 
 ---
+### 🔧Les fiches méthodes/rédactions
 
+<table border=1>
+<tr>
+	<th>Nom fichier</th>
+	<th>PDF</th>
+	<th>Commentaire</th>
+</tr>
+<tr>
+	<th colspan="3">Cours 1 - Trigonométrie</th>
+</tr>
+<tr>
+	<td>Fiche méthode M1</td>
+	<td>[[Fiche mth M1.pdf]]</td>
+	<td><ul>
+			<li>Cercle trigonométrique</li>
+			<li>Mesures angles remarquables</li>
+		</ul>
+	</td>
+</tr>
+</table>
+
+---
 ## 👨‍🎓 Pour qui ?
 
 Ce cours s’adresse :
