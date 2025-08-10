@@ -71,9 +71,11 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 
 #### Cours 1 - Trigonométrie
 
-| Nom fichier      | PDF                  | Commentaire                                                  |
-| ---------------- | -------------------- | ------------------------------------------------------------ |
-| Fiche méthode M1 | [[Fiche mth M1.pdf]] | - Cercle trigonométrique  <br> - Mesures angles remarquables |
+| Nom fichier      | PDF                  | Commentaire                                                                                                |
+| ---------------- | -------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Fiche méthode M1 | [[Fiche mth M1.pdf]] | - Cercle trigonométrique  <br> - Mesures angles remarquables                                               |
+| Fiche méthode M2 | [[Fiche mth M2.pdf]] | - Déterminer la mesure d'un angle                                                                          |
+| Fiche méthode M3 | [[Fiche mth M3.pdf]] | - Résoudre une équation trigonométrique de niveau 1<br>- Résoudre une équation trigonométrique de niveau 2 |
 
 
 ---
