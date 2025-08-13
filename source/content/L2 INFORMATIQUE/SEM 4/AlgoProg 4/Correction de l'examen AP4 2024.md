@@ -50,22 +50,35 @@ L'algorithme $\mathcal{A}$ admet une boucle `TANT QUE`, c'est sur elle que nous 
 >[!tip] Rappel
 >Un variant noté $V$ est une valeur entière qui décroit strictement à chaque itération d'un algorithme.
 
-On remarque dans la boucle qu'à chaque itérations, on divisera la variable `n` par `2`. Ainsi, cela revient à dire que dans tous les cas la valeur de `n` à l'itération `i+1` sera toujours plus petite que la valeur de `n` à l'itération `i`. D'où `n` décroit à chaque itérations, alors il y aura forcément un moment où `n<1` alors la boucle `while` s'arrêtera et l'algorithme pourra se terminer en renvoyant le `vecteurBooleen` créé. $$V=n$$
+On remarque dans la boucle qu'à chaque itérations, on divisera la variable `n` par `2`. Ainsi, cela revient à dire que dans tous les cas la valeur de `n` à l'itération `i+1` sera toujours plus petite que la valeur de `n` à l'itération `i`. D'où `n` décroit à chaque itérations, alors il y aura forcément un moment où `n<1` alors la boucle `while` s'arrêtera et l'algorithme pourra se terminer en renvoyant le `vecteurBooleen` créé. 
+
+$$
+V=n
+$$
+
 En conclusion, on définit un variant $V=n$ qui permet de montrer qu'à chaque itération il diminue jusqu'à forcément devenir plus petit que $1$, dans ce cas, après un certain nombre d'itérations, la boucle `while` vas se stopper et l'algorithme se terminera en renvoyant le vecteur `v`.
 
-2) L'objectif de l'algorithme $\mathcal{A}$ c'est de retourner un vecteur contenant les chiffres de l'entrée $k$ écrite en binaire. Par définition si `w` est ce vecteur, on doit avoir : $$k=\underset{i=0}{\overset{l(w)-1}{\sum}}w[i] \times2^i$$
+2) L'objectif de l'algorithme $\mathcal{A}$ c'est de retourner un vecteur contenant les chiffres de l'entrée $k$ écrite en binaire. Par définition si `w` est ce vecteur, on doit avoir : 
+
+$$
+k=\underset{i=0}{\overset{l(w)-1}{\sum}}w[i] \times2^i
+$$
+
    On vas montrer que le vecteur `v` résultat de l'algorithme vérifie bien cette égalité. Pour cela, on va montrer par récurrence sur $i$ l'existence d'un invariant.
    Notons $n_i$ la valeur de $n$ au début de la $i-ème$ itération. 
-   Soit alors $$I(i)=2^i \times n_i + \underset{j=0}{\overset{i-1}{\sum}}v[j]\times2^j$$Montrer que la fonction $I$ est un invariant, c'est à dire qu'elle est constante pour tout $i$ lors de l'algorithme. Votre preuve sera par récurrence sur $i$.
+   Soit alors 
+   
+   $$
+   I(i)=2^i \times n_i + \underset{j=0}{\overset{i-1}{\sum}}v[j]\times2^j
+   $$
+   Montrer que la fonction $I$ est un invariant, c'est à dire qu'elle est constante pour tout $i$ lors de l'algorithme. Votre preuve sera par récurrence sur $i$.
 
 Soit $i \in \mathbb{N}$ la $i-ème$ itération de l'algorithme.
 Alors : 
 - **INITIALISATION**
   Pour $i=0$ alors on a :
   On se trouve avant la boucle `while`, à ce moment là, au début de tout l'algorithme, avant d'entrer dans la boucle, on a :
-	$n_0=k$
-	$v=[]$
-	$i=0$ 
+	$n_0=k$, $v=[]$,  $i=0$ , 
 	$$
 	\begin{align*}
 	I(0) &= 2^0 \times n_0+\underbrace{\underset{j=0}{\overset{0-1}{\sum}}v[j]\times2^j}_{\text{non définie}} \\
@@ -77,8 +90,14 @@ Alors :
 - **HÉRÉDITÉ**
 	On suppose que $I$ est un invariant pour un $i \in \mathbb{N}$ fixé, en gros on suppose que $I$ est un variant pour toutes les itérations $i$. On chercher à montrer que $I(i+1)$ est aussi un invariant.
 	Soit $i$ l'itération $n°i$ alors on sait que :
-		$v[i]=n_i MOD 2$
-		$n_{i+1} = n_i DIV 2$
+		
+		$$
+		v[i]=n_i MOD 2
+		$$
+		
+		$$
+		n_{i+1} = n_i DIV 2
+		$$
 	Ainsi on se retrouve avec :
 	$$
 		\begin{align*}
@@ -89,7 +108,12 @@ Alors :
 		\end{align*}
 	$$
 	Je peux utiliser les propriétés des divisions euclidiennes.
-	Soit $a,b \in \mathbb{N}$ alors $$a=bq+r$$
+	Soit $a,b \in \mathbb{N}$ alors 
+	
+	$$
+	a=bq+r
+	$$
+	
 	où :
 	- $q$ est le quotient
 	- $r$ le reste
@@ -122,12 +146,16 @@ Alors :
 
 Ainsi notre invariant $I$ reste valide avant pendant et après la boucle `while`. 
 Ainsi $I$ est un invariant de l'algorithme $\mathcal{A}$ et on a :
-	$$I(l(w))=2^{l(w)}\times n_{l(w)}+\underset{j=0}{\overset{l(w)-1}{\sum}}v[j]2^j=k \quad et \quad k=\underset{j=0}{\overset{l(w)-1}{\sum}}w[j]2^j$$
+	
+	$$
+	I(l(w))=2^{l(w)}\times n_{l(w)}+\underset{j=0}{\overset{l(w)-1}{\sum}}v[j]2^j=k \quad et \quad k=\underset{j=0}{\overset{l(w)-1}{\sum}}w[j]2^j
+	$$
+	
 3) Supposons que $k$ soit une puissance de $2$ avec $k=2^p$ où $p$ est un entier positif. En déduire que le nombre d'itérations de $\mathcal{A}$ est exactement égal à $p+1$.
 
 Puisque $k$ est une puissance de $2$ alors :
-- $k=2^p$ avec $p$ positif
-On vas alors regarder ce qu'il se passe au début, au milieu et à la fin de l'algorithme $\mathcal{A}$ à chaque itérations.
+- $k=2^p$ avec $p$ positif.
+<br/>On vas alors regarder ce qu'il se passe au début, au milieu et à la fin de l'algorithme $\mathcal{A}$ à chaque itérations.
 <u>À chaque itération</u>
 - $v[i]=n_i MOD 2$
 - $n_i = n_i DIV 2$

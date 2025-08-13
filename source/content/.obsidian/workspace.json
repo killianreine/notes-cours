@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
+                "file": "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction de l'examen AP4 2024.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "25-26 L1 INFO Tutorat - Algèbre de base, K. REINE"
+              "title": "Correction de l'examen AP4 2024"
             }
           }
         ]
@@ -35,13 +35,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
+                "file": "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction de l'examen AP4 2024.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de 25-26 L1 INFO Tutorat - Algèbre de base, K. REINE"
+              "title": "Plan de Correction de l'examen AP4 2024"
             }
           }
         ]
@@ -208,6 +208,8 @@
   },
   "active": "19577fda7c036523",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Cours - AlgoProg4.md",
+    "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Fiche mth M2.pdf",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Fiche mth M3.pdf",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Algèbre_L1_25_26_Mth2_ÉquationsTrigo.pdf",
@@ -218,9 +220,7 @@
     "L1 MIPSI/SEM 1/Algèbre de base/TD/Algèbre_L1_25_26_TD8_Matrices.pdf",
     "L1 MIPSI/SEM 1/Algèbre de base/TD/TD6.pdf",
     "L1 MIPSI/SEM 1/Algèbre de base/TD/Algèbre_L1_25_26_TD6_Polynomes.pdf",
-    "L1 MIPSI/SEM 1/Algèbre de base/TD/TD5.pdf",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction de l'examen AP4 2024.md",
-    "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
     "L1 MIPSI/SEM 1/Algèbre de base/TDs/Complexes/Complexes TD1.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
