@@ -27,9 +27,9 @@ Table des matières complète : [[Prog JS - Table des matières]]
 - Cours 01 : [[01 - Introduction à JavaScript]]
 
 ## Ressources
-- Documentation officielle JavaScript (MDN)
-- _JavaScript – The Definitive Guide_, David Flanagan, O’Reilly Media
+- Documentation officielle JavaScript (MDN) [https://developer.mozilla.org/fr/docs/Web/JavaScript]()
 - _Eloquent JavaScript_ (en ligne gratuitement) : https://eloquentjavascript.net/
+- Apprendre à développer avec JavaScript *(4e et 5e édition), édition ENI*
 
 ## Projets et exercices
 Le cours proposera des exercices de niveaux différents, chacun sera accompagné de sa correction.  
