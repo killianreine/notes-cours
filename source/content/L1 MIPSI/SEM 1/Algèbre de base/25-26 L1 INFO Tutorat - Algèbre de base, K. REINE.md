@@ -79,10 +79,11 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 
 #### Cours 2 - Nombres complexes
 
-| Nom fichier      | PDF                  | Commentaire                                                                                                |
-| ---------------- | -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Fiche méthode M4 | [[Fiche mth M4.pdf]] | - Simplifier une fraction complexe $\frac{N}{D}$.                                                          |
-| Fiche méthode M5 | [[Fiche mth M5.pdf]] | - Montrer rigoureusement une équivalence<br>$$\mathcal{P} \Longleftrightarrow \mathcal{Q}$$                |
+| Nom fichier      | PDF                  | Commentaire                                                                                     |
+| ---------------- | -------------------- | ----------------------------------------------------------------------------------------------- |
+| Fiche méthode M4 | [[Fiche mth M4.pdf]] | - Simplifier une fraction complexe $\frac{N}{D}$.                                               |
+| Fiche méthode M5 | [[Fiche mth M5.pdf]] | - Montrer rigoureusement une équivalence<br>$$\mathcal{P} \Longleftrightarrow \mathcal{Q}$$     |
+| Fiche méthode M6 | [[Fiche mth M6.pdf]] | - Résoudre une équation de degré 2 à coefficients complexes en utilisant la méthode algébrique. |
 
 
 ---
