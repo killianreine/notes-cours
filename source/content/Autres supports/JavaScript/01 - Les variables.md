@@ -8,6 +8,6 @@
 En JavaScript il est possible de déclarer une variable de plusieurs manières.
 - **Variable statique**  
   On utilise alors le mot clé `const`, toute variable définie avec ce dernier doit être initialisée pendant la définition et ne peut pas être redéfinie.
-```js
-const var = valeur ;
-```
+  ```js
+   const var = valeur ;
+   ```
