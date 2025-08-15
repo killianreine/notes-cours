@@ -76,6 +76,8 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 | Fiche méthode M1 | [[Fiche mth M1.pdf]] | - Cercle trigonométrique  <br> - Mesures angles remarquables                                               |
 | Fiche méthode M2 | [[Fiche mth M2.pdf]] | - Déterminer la mesure d'un angle                                                                          |
 | Fiche méthode M3 | [[Fiche mth M3.pdf]] | - Résoudre une équation trigonométrique de niveau 1<br>- Résoudre une équation trigonométrique de niveau 2 |
+| Fiche méthode M4 | [[Fiche mth M4.pdf]] | - Simplifier une fraction complexe $\frac{N}{D}$.                                                          |
+| Fiche méthode M5 | [[Fiche mth M5.pdf]] | - Montrer rigoureusement une équivalence<br><br>$$<br>\mathcal{P} \Longleftrightarrow \mathcal{Q}<br>$$    |
 
 
 ---
