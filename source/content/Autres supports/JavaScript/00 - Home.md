@@ -25,6 +25,7 @@ Ce cours est conçu pour les débutants qui souhaitent apprendre les bases du la
 
 Table des matières complète : [[Prog JS - Table des matières]]
 - Cours 01 : [[01 - Introduction à JavaScript]]
+- Cours 02 : [[02 - Valeurs, types et opérateurs]]
 
 ## Ressources
 - Documentation officielle JavaScript (MDN) [https://developer.mozilla.org/fr/docs/Web/JavaScript]()
