@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Autres supports/readme Autre.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "readme Autre"
             }
           }
         ],
@@ -50,13 +50,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "Autres supports/readme Autre.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de index"
+              "title": "Plan de readme Autre"
             }
           }
         ]
@@ -223,6 +223,7 @@
   },
   "active": "dd709600dbfbc446",
   "lastOpenFiles": [
+    "index.md",
     "Autres supports/JavaScript/01 - Les variables.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",

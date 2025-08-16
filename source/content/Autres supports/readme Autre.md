@@ -39,6 +39,6 @@ Ici, tu trouveras des **notes de cours**, des **résumés** et des **supports pe
 
 ## 📂 Accès rapide
 
-- JavaScript JS :
+- JavaScript JS : [[00 - Home]]
 - TypeScript TS :
 - RUST :
