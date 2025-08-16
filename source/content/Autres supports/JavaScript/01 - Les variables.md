@@ -37,4 +37,28 @@ SyntaxError: Missing initializer in const declaration
 ```
 L'erreur suivante indique qu'il manque l'initialisation dans la déclaration avec le mot clé `const`.
 
+>[!tip]
+>On dit d'une variable définie avec `const` qu'elle est immuable. En gros qu'elle n'est pas modifiable.
+
 ### Variable dynamique
+Pour déclarer une **variable dynamique**, on utilise le mot clé `let`. On dit alors que la variable est **==mutable==** donc qu'on peut lui réattribuer d'autres valeurs. 
+
+<u>Exemple :</u> `exemple3.js`
+```js
+// Définition d'une variable avec let sans initialisation
+let age;
+console.log("Age avant initialisation : "+age);
+  
+// Post-initialisation de la variable
+age = 14;
+console.log("Age après attribution de variable : "+age);
+
+// Réaffectation d'une nouvelle valeur dans la variable age
+age = 20;
+console.log("Age après modification de variable : "+age);
+```
+```
+Age avant initialisation : undefined
+Age après attribution de variable : 14
+Age après modification de variable : 20
+```
