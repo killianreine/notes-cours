@@ -27,7 +27,7 @@ Table des matières complète : [[Prog JS - Table des matières]]
 - Cours 01 : [[01 - Les variables]]
 
 ## Ressources
-- Documentation officielle JavaScript (MDN) [https://developer.mozilla.org/fr/docs/Web/JavaScript]()
+- Documentation officielle JavaScript (MDN) https://developer.mozilla.org/fr/docs/Web/JavaScript
 - _Eloquent JavaScript_ (en ligne gratuitement) : https://eloquentjavascript.net/
 - Apprendre à développer avec JavaScript *(4e et 5e édition), édition ENI*
 - *Ancien support personnel :* [[Cours_ProgJS-PART1.pdf]]
