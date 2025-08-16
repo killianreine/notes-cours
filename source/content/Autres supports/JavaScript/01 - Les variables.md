@@ -6,7 +6,7 @@
 
 ## Déclaration d'une variable
 En JavaScript il est possible de déclarer une variable de plusieurs manières.
-### Variable statique
+### Les constantes avec `const`
 Le mot clé `const` permet de créer une constante accessible **uniquement en lecture**, ce qui signifie qu'après initialisation, cette dernière ne peux pas être modifiée lors de réaffectations futures. 
 ```js
 const var = valeur ;
@@ -83,7 +83,7 @@ En fait, dans cette extrait de code, la variable `A` est une constante créée d
 >- Une constante ne peux pas être réaffectée.
 >- Une constante doit être définie et initialisée en même temps.
 
-### Variable dynamique
+### Le mot clé `let`
 Pour déclarer une **variable dynamique**, on utilise le mot clé `let`. On dit alors que la variable est **==mutable==** donc qu'on peut lui réattribuer d'autres valeurs. 
 
 <u>Exemple :</u> `exemple4.js`  
@@ -138,14 +138,6 @@ Ce qu'il se passe n'est pas très compliqué à comprendre. On défini en dehors
 Dans la fonction `test` on créé à nouveau une autre variable qui s'appelle aussi `y` et on lui donne une valeur différente, ainsi, puisque les variables définies avec `let` ont une portée qui dépend du bloc dans lequel elle se trouve :
 - **Dans la fonction `test`**, c'est `y=20` qui sera utilisé
 - **Hors de la fonction**, `y=20` n'existe plus car on est sorti du bloc mais `y=14` est globale, donc on retourne avec celle ci.
-
-**Quelques différences d'utilisation entre `let` et `const`**
-
-|                                | `let` | `const` |
-| ------------------------------ | ----- | ------- |
-| Définition seule               | OUI   | NON     |
-| Définition + initialisation    | OUI   | OUI     |
-| Initialisation post-définition | OUI   | NON     |
-| Réaffectation d'une variable   | OUI   | NON     |
-
-## Le mot clé `var`
+### Le mot clé `var`
+Le mot clé `var` permet de déclaré une variable et d'**éventuellement** lui donner une valeur.  La portée d'une variable déclarée avec `var` est le _contexte d'exécution_ courant, c'est-à-dire : **la fonction** qui contient la déclaration **ou le contexte global** pour le cas échéant.  
+Si on affecte une variable **sans utiliser `var`** alors, cela va créer une variable globale
