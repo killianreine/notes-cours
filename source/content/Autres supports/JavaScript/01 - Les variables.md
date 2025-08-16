@@ -6,8 +6,21 @@
 
 ## Déclaration d'une variable
 En JavaScript il est possible de déclarer une variable de plusieurs manières.
-- **Variable statique**  
-  On utilise alors le mot clé `const`, toute variable définie avec ce dernier doit être initialisée pendant la définition et ne peut pas être redéfinie.
-  ```js
-   const var = valeur ;
-   ```
+### Variable statique
+On utilise alors le mot clé `const`, toute variable définie avec ce dernier **doit être initialisée pendant la définition** et **ne peut pas être redéfinie**.
+```js
+const var = valeur ;
+```
+
+<u>Exemple :</u> `exemple1.js`
+```js
+const age = 19;
+age = 20;
+```
+```less
+age = 20;
+    ^
+TypeError: Assignment to constant variable.
+```
+Dans cet exemple, puisque la variable `age` est définie avec le mot-clé `const` alors on ne peut pas la redéfinir plus tard (= lui réattribuer une autre valeur), ainsi lorsque l'on souhaite changer la valeur de `age`, une erreur est directement levée.  
+L'erreur `TypeError: Assignment to constant variable` apparaîtra lorsque vous essayez de réaffecter une variable définie avec `const`.
