@@ -26,6 +26,9 @@ TypeError: Assignment to constant variable.
 Dans cet exemple, puisque la variable `age` est définie avec le mot-clé `const` alors on ne peut pas la redéfinir plus tard (= lui réattribuer une autre valeur), ainsi lorsque l'on souhaite changer la valeur de `age`, une erreur est directement levée.  
 L'erreur <span class="error-inline">TypeError</span> apparaîtra lorsque vous essayez de réaffecter une variable définie avec `const`.
 
+>[!warning]
+>Une constante doit être initialisée **en même temps** que la définition de la variable !
+
 <u>Exemple :</u> `exemple2.js`  
 $\boxed{\text{Erreur d'initialisation post-définition}}$
 ```js
@@ -73,6 +76,13 @@ console.log(B);
 ReferenceError: B is not defined
 ```
 En fait, dans cette extrait de code, la variable `A` est une constante créée dans aucun bloc de code, sa portée est donc globale, ça signifie qu'elle est accessible <u>n'importe où</u> dans le code. Alors que la variable `B` elle a été créée dans le bloc `if` est est donc locale au `if`, du coup lorsque l'on essaie d'y accéder en dehors du bloc `if`, une erreur est levée.
+
+>[!warning]
+>- Il ne peux pas exister d'autres variables possédant le même nom qu'une constante.
+>- Une constante ne peux pas être "recréée".
+>- Une constante ne peux pas être réaffectée.
+>- Une constante doit être définie et initialisée en même temps.
+
 ### Variable dynamique
 Pour déclarer une **variable dynamique**, on utilise le mot clé `let`. On dit alors que la variable est **==mutable==** donc qu'on peut lui réattribuer d'autres valeurs. 
 
@@ -95,6 +105,13 @@ console.log("Age après modification de variable : "+age);
 Age avant initialisation : undefined
 Age après attribution de variable : 14
 Age après modification de variable : 20
+```
+
+La portée d'une variable définie avec le mot clé `let` dépend du bloc dans lequel elle a été déclarée.
+
+<u>Exemple :</u> `exemple5.js`  
+$\boxed{\text{Utilisation des variables avec \texttt{let}}}$
+```js
 ```
 
 **Quelques différences d'utilisation entre `let` et `const`**
