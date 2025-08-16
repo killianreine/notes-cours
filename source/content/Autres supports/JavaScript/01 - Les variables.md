@@ -60,12 +60,14 @@ console.log("Hors du bloc if");
 console.log(A);
 console.log(B);
 ```
-```bash
+```b
 Dans le bloc if
 LOCALE
 12
 Hors du bloc IF
 12
+```
+```bash
 console.log(B);
             ^
 ReferenceError: B is not defined
