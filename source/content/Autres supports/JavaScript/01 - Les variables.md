@@ -62,3 +62,12 @@ Age avant initialisation : undefined
 Age après attribution de variable : 14
 Age après modification de variable : 20
 ```
+
+**Quelques différences d'utilisation entre `let` et `const`**
+
+|                                | `let` | `const` |
+| ------------------------------ | ----- | ------- |
+| Définition seule               | OUI   | NON     |
+| Définition + initialisation    | OUI   | OUI     |
+| Initialisation post-définition | OUI   | NON     |
+| Réaffectation d'une variable   | OUI   | NON     |
