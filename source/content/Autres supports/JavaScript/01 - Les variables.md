@@ -159,8 +159,11 @@ Dans l'exemple ci dessus,
 Initialisée sans var
 ```
 ```bash
-console.log(z);
+console.log(b);
             ^
 ReferenceError: z is not defined
 ```
 L'erreur <span class='error-inline'>ReferenceError</span> signifie que on essaie d'accéder à une variable qui **n'existe pas**.
+
+# La remontée des variables - Hoisting
+Les déclarations des variables (ou déclaration en général) sont traités avant même que le code soit exécuté. En gros ça veut dire que peu importe ou vous déclarer votre variable dans votre code, cette dernière se fera au début de son *contexte d'exécution* (=bloc). C'est ce qu'on appelle le **principe de remontée** *(Hoisting en anglais)*. 
