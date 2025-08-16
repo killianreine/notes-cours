@@ -42,10 +42,39 @@ L'erreur suivante indique qu'il manque l'initialisation dans la déclaration ave
 >[!tip]
 >On dit d'une variable définie avec `const` qu'elle est immuable. En gros qu'elle n'est pas modifiable.
 
+Les variables créées avec le mot clé `const` ont une portée qui dépend de où elle a été créée, c'est à dire que si la variable est créée dans un bloc alors elle ne sera qu'accessible dans ce bloc. Tandis que si elle est créée dans aucun bloc elle aura une portée dite **globale**. 
+
+<u>Exemple :</u> `exemple3.js`
+$\boxed{\text{Portée des variables définies avec \texttt{const}}}$
+```js
+const A = 12;
+
+if(true){
+    const B = "LOCALE";
+    console.log("Dans le bloc if");
+    console.log(A);
+    console.log(B);
+}
+
+console.log("Hors du bloc if");
+console.log(A);
+console.log(B);
+```
+```bash
+Dans le bloc if
+LOCALE
+12
+Hors du bloc IF
+12
+console.log(B);
+            ^
+ReferenceError: B is not defined
+```
+En fait, dans cette extrait de code, la variable `A` est une constante créée dans aucun bloc de code, sa portée est donc globale, ça signifie qu'elle est accessible <u>n'importe où</u> dans le code. Alors que la variable `B` elle a été créée dans le bloc `if` est est donc locale au `if`, du coup lorsque l'on essaie d'y accéder en dehors du bloc `if`, une erreur est levée.
 ### Variable dynamique
 Pour déclarer une **variable dynamique**, on utilise le mot clé `let`. On dit alors que la variable est **==mutable==** donc qu'on peut lui réattribuer d'autres valeurs. 
 
-<u>Exemple :</u> `exemple3.js`  
+<u>Exemple :</u> `exemple4.js`  
 $\boxed{\text{Définition, initialisation, modification}}$
 ```js
 // Définition d'une variable avec let sans initialisation
@@ -74,6 +103,5 @@ Age après modification de variable : 20
 | Définition + initialisation    | OUI   | OUI     |
 | Initialisation post-définition | OUI   | NON     |
 | Réaffectation d'une variable   | OUI   | NON     |
-## Portée des variables
 
 ## Le mot clé `var`
