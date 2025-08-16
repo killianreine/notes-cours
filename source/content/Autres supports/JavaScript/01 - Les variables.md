@@ -112,7 +112,32 @@ La portée d'une variable définie avec le mot clé `let` dépend du bloc dans l
 <u>Exemple :</u> `exemple5.js`  
 $\boxed{\text{Utilisation des variables avec \texttt{let}}}$
 ```js
+// Création d'une variable
+let y = 14;
+console.log("Y définie en dehors d'un bloc : " + y);
+
+function test(){
+	// Création d'une autre variable du même nom
+    let y = 20;
+    console.log("Y définie dans la fonction : " + y);
+}
+
+// Les tests
+console.log("Avant l'appel de la fonction : " + y);
+test();
+console.log("Après l'appel de la fonction : " + y);
 ```
+```
+Y définie en dehors d'un bloc : 14
+Avant l'appel de la fonction : 14
+---
+Y définie dans la fonction : 20
+Après l'appel de la fonction : 14
+```
+Ce qu'il se passe n'est pas très compliqué à comprendre. On défini en dehors de tout bloc une variable `y` elle a donc une portée globale, accessible partout dans le code.  
+Dans la fonction `test` on créé à nouveau une autre variable qui s'appelle aussi `y` et on lui donne une valeur différente, ainsi, puisque les variables définies avec `let` ont une portée qui dépend du bloc dans lequel elle se trouve :
+- **Dans la fonction `test`**, c'est `y=20` qui sera utilisé
+- **Hors de la fonction**, `y=20` n'existe plus car on est sorti du bloc mais `y=14` est globale, donc on retourne avec celle ci.
 
 **Quelques différences d'utilisation entre `let` et `const`**
 
