@@ -4,7 +4,7 @@
 >- Une **==variable==** permet de stocker une donnée. Elle possède un **nom** qui permet de l'identifier et un **type** qui permet de savoir ce que l'on a stocké : nombre, caractère, ...
 >- Une **==donnée==** est une information que l'on range dans une variable. 
 
-## Déclaration d'une variable
+## Déclaration, initialisation et portée d'une variable
 En JavaScript il est possible de déclarer une variable de plusieurs manières.
 ### Les constantes avec `const`
 Le mot clé `const` permet de créer une constante accessible **uniquement en lecture**, ce qui signifie qu'après initialisation, cette dernière ne peux pas être modifiée lors de réaffectations futures. 
@@ -140,4 +140,27 @@ Dans la fonction `test` on créé à nouveau une autre variable qui s'appelle au
 - **Hors de la fonction**, `y=20` n'existe plus car on est sorti du bloc mais `y=14` est globale, donc on retourne avec celle ci.
 ### Le mot clé `var`
 Le mot clé `var` permet de déclaré une variable et d'**éventuellement** lui donner une valeur.  La portée d'une variable déclarée avec `var` est le _contexte d'exécution_ courant, c'est-à-dire : **la fonction** qui contient la déclaration **ou le contexte global** pour le cas échéant.  
-Si on affecte une variable **sans utiliser `var`** alors, cela va créer une variable globale
+
+<u>Exemple :</u> `exemple6.js`
+```js
+function test() {
+  a = 'Initialisée sans var';
+  var b = 'Initialisée avec var';
+}
+
+test();
+console.log(a);
+console.log(b);
+```
+Dans l'exemple ci dessus,
+- On affecte une valeur à la variable `a` sans même utiliser le mot clé `var`. Cette dernière devient donc une variable ==non déclarée== et est donc par définition une variable globale (= accessible partout).
+- On créé et initialise une variable `b` avec `var` ==variable déclarée== cette dernière ne sera accessible qu'à l'intérieur de la fonction `test`, ainsi lorsque l'on essaie d'afficher `b` en dehors de test, une erreur sera levée.
+```
+Initialisée sans var
+```
+```bash
+console.log(z);
+            ^
+ReferenceError: z is not defined
+```
+L'erreur <span class='error-inline'>ReferenceError</span> signifie que on essaie d'accéder à une variable qui **n'existe pas**.
