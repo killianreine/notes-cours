@@ -17,7 +17,7 @@ const var = valeur ;
 const age = 19;
 age = 20;
 ```
-```less
+```bash
 age = 20;
     ^
 TypeError: Assignment to constant variable.
