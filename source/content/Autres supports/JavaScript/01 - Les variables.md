@@ -7,12 +7,13 @@
 ## Déclaration d'une variable
 En JavaScript il est possible de déclarer une variable de plusieurs manières.
 ### Variable statique
-On utilise alors le mot clé `const`, toute variable définie avec ce dernier **doit être initialisée pendant la définition** et **ne peut pas être redéfinie**.
+Le mot clé `const` permet de créer une constante accessible **uniquement en lecture**, ce qui signifie qu'après initialisation, cette dernière ne peux pas être modifiée lors de réaffectations futures. 
 ```js
 const var = valeur ;
 ```
 
-<u>Exemple :</u> `exemple1.js`
+<u>Exemple :</u> `exemple1.js`  
+$\boxed{\text{Erreur de réaffectation}}$
 ```js
 const age = 19;
 age = 20;
@@ -25,7 +26,8 @@ TypeError: Assignment to constant variable.
 Dans cet exemple, puisque la variable `age` est définie avec le mot-clé `const` alors on ne peut pas la redéfinir plus tard (= lui réattribuer une autre valeur), ainsi lorsque l'on souhaite changer la valeur de `age`, une erreur est directement levée.  
 L'erreur <span class="error-inline">TypeError</span> apparaîtra lorsque vous essayez de réaffecter une variable définie avec `const`.
 
-<u>Exemple :</u> `exemple2.js`
+<u>Exemple :</u> `exemple2.js`  
+$\boxed{\text{Erreur d'initialisation post-définition}}$
 ```js
 const age;
 age = 19;
@@ -43,7 +45,8 @@ L'erreur suivante indique qu'il manque l'initialisation dans la déclaration ave
 ### Variable dynamique
 Pour déclarer une **variable dynamique**, on utilise le mot clé `let`. On dit alors que la variable est **==mutable==** donc qu'on peut lui réattribuer d'autres valeurs. 
 
-<u>Exemple :</u> `exemple3.js`
+<u>Exemple :</u> `exemple3.js`  
+$\boxed{\text{Définition, initialisation, modification}}$
 ```js
 // Définition d'une variable avec let sans initialisation
 let age;
@@ -71,3 +74,6 @@ Age après modification de variable : 20
 | Définition + initialisation    | OUI   | OUI     |
 | Initialisation post-définition | OUI   | NON     |
 | Réaffectation d'une variable   | OUI   | NON     |
+## Portée des variables
+
+## Le mot clé `var`
