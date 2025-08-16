@@ -123,3 +123,32 @@ html.dark .callout[data-callout="info"] .callout-content {
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
+/* Style générique pour un message d'erreur */
+.error {
+  color: #b00020;                 /* texte rouge */
+  border: 1.5px solid #b00020;    /* contour rouge */
+  background: #ffe8ec;            /* léger fond rosé */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* police "code" */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: 6px;
+  display: block;                 /* facilite l'encadrement */
+  white-space: pre-wrap;          /* conserve les retours à la ligne, coupe si besoin */
+  word-break: break-word;         /* évite le débordement */
+}
+
+/* Optionnel : style spécifique si on met du code à l'intérieur */
+.error code {
+  color: inherit;                 /* garde le rouge */
+  background: transparent;        /* pas de fond différent */
+  padding: 0;
+}
+
+/* Optionnel : une variante compacte en inline */
+.error-inline {
+  color: #b00020;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  border-bottom: 1px solid #b00020; /* soulignement rouge discret */
+}

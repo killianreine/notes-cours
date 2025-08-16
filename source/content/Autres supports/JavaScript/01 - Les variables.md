@@ -23,8 +23,4 @@ age = 20;
 TypeError: Assignment to constant variable.
 ```
 Dans cet exemple, puisque la variable `age` est définie avec le mot-clé `const` alors on ne peut pas la redéfinir plus tard (= lui réattribuer une autre valeur), ainsi lorsque l'on souhaite changer la valeur de `age`, une erreur est directement levée.  
-L'erreur,
- <div class="error" role="alert" aria-live="polite">
-    TypeError: Assignment to constant variable.
-  </div>
-apparaîtra lorsque vous essayez de réaffecter une variable définie avec `const`.
+L'erreur <span class="error-inline">TypeError</span> apparaîtra lorsque vous essayez de réaffecter une variable définie avec `const`.
