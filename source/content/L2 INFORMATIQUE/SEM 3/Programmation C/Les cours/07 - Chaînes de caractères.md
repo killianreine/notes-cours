@@ -174,3 +174,26 @@ int main(){
 ```
 j'écrit un truc pour le kiff
 ```
+
+>[!info] Remarque
+>On peut utiliser `putchar(char)` à la place du `printf` pour afficher un charactère.
+
+```c
+#include <stdio.h>
+
+int main(){
+	char chaine[] = "j'écrit un truc pour le kiff";
+	
+	int i=0;
+	while(chaine[i]!='\0'){
+	   putchar(chaine[i]);
+	    i++;
+	}
+	
+	printf("\n");
+	return 0;
+}
+```
+```
+j'écrit un truc pour le kiff
+```
