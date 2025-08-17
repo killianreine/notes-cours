@@ -32,3 +32,13 @@ Ainsi, dans notre exemple un tableau de 13 éléments est créé, il peut être 
 ```
 [ i, n, f, o, r, m, a, t, i, q, u, e, \0]
 ```
+Chaque caractère est stocké dans un **espace mémoire** consécutive (s'incrémente de 1 pour chaque caractère). On l'aperçoit sur notre image au dessus : 
+
+| Caractère  | Adresse mémoire |
+| ---------- | --------------- |
+| `i`        | `0x1000`        |
+| `n`        | `0x1001`        |
+| `f`        | `0x1002`        |
+| $$\vdots$$ | $$\vdots$$      |
+| `e`        | `0x100B`        |
+| `\0`       | `0x100C`        |
