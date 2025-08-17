@@ -45,6 +45,28 @@ Chaque caractère est stocké dans un **espace mémoire** consécutive (s'incré
 
 En gros, chaque lettre de type `char` en C est stocké sur $1$ bit, et l'adresse mémoire entre deux caractères est simplement incrémenté de $1$. On utilise `\0` comme marque de fin de chaîne car sans lui, le programme ne pourrait pas savoir où s'arrête la chaîne de caractères.
 
+# Initialisation
+## Initialisation explicite
+L’**==initialisation explicite==** consiste à définir **chaque caractère du tableau** et éventuellement le caractère nul `'\0'`, obligatoire pour une chaîne de caractères.
+
+<u>Exemple :</u>  
+```c
+char chaine[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+```
+## Initialisation implicite
+L'**==initialisation implicite==** c'est en fait ce qu'on a vu pour la [[07 - Chaînes de caractères#Déclaration]], on utilise un littéral de chaîne entre guillemets :
+
+<u>Exemple :</u>  
+```c
+char chaine[] = "Hello";
+```
+
+On peut aussi déclarer un tableau à plus d'éléments que ce qu'on initialise, dans ce cas les éléments non initialisés auront des valeurs dites indéterminées (ou nulles si le tableau est déclaré globalement).
+
+<u>Exemple :</u>  
+```c
+char chaine[20] = "Salut";
+```
 # Manipulation des chaînes de caractères
 ## Accès aux éléments
 Grâce à la première partie de ce cours [[#Déclaration]], on sait qu'une chaîne de caractères en C représente simplement un tableau de caractères.  
@@ -176,7 +198,7 @@ j'écrit un truc pour le kiff
 ```
 
 >[!info] Remarque
->On peut utiliser `putchar(char)` à la place du `printf` pour afficher un charactère.
+>On peut utiliser `putchar(char)` à la place du `printf` pour afficher un charactère. *la fonction est valide avec une boucle `while` et avec une boucle `for` aussi.*
 
 ```c
 #include <stdio.h>
@@ -197,3 +219,17 @@ int main(){
 ```
 j'écrit un truc pour le kiff
 ```
+
+>[!warning]
+>Il faut bien faire attention, un tableau de caractères et une chaînes de caractères ne représentent pas la même chose.
+
+```c
+char chaine[12] = {'i', 'n', 'f', 'o', 'r', 'm', 'a', ...}
+```
+est un tableau de $12$ caractères sans marqueur de fin de chaînes `\0`, on ne peux pas utiliser le format `%s` pour l'afficher avec `printf` car dans ce cas,  `%s` attend une chaîne avec `\0`, ce qui n'est pas le cas ici.
+
+| Caractéristique          | Tableau de caractères | Chaîne de caractères                          |
+| ------------------------ | --------------------- | --------------------------------------------- |
+| Terminaison              | Pas forcément `'\0'`  | Toujours `'\0'`                               |
+| Taille                   | Fixe (déclarée)       | Fixe ou déduite automatiquement avec littéral |
+| Compatible avec `%s`     | Non                   | Oui                                           |
