@@ -77,3 +77,76 @@ int main() {
 Ainsi en considérant une chaîne de $t$ éléments, voici les indices de manière schématique.
 ![[indicesMot.svg]]
 On voit donc que pour un mot de taille $t$, un tableau de taille `t+1` sera créé pour stocker chaque caractère du mot en entier et un emplacement mémoire supplémentaire est ajouté pour stocker le caractère de fin de chaîne `\0`. C'est pour cela que pour un mot de taille $t$, le tableau qui stocke le mot sera de taille $t+1$.
+
+## Affichage
+Mais comment on peut afficher une chaîne de caractères en langage C. On doit vraiment faire comme avec les tableaux classique en parcourant le tableau élément par élément et l'afficher un à un ?
+
+Alors c'est une solution que l'on va regarder, mais ce n'est pas la plus simple ! Il existe plusieurs méthodes pour afficher une chaîne de caractères.  
+Vous le savez déjà mais pour afficher des informations dans la console on utilise `printf` et quand on a besoin d'afficher un certain type de donnée on utilise des **formats** notés `%...`. Et bien sachez qu'il existe un format <u>réservé aux chaînes de caractères</u> ! Plutôt pratique non ? C'est le format `%s`.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main(){
+	char chaine[] = "j'écrit un truc pour le kiff";
+	
+	// Affichage en utilisant le format %s
+	printf("%s\n", chaine);
+	return 0;
+}
+```
+```
+j'écrit un truc pour le kiff
+```
+
+C'est la solution la plus simple pour afficher une chaîne de caractère.  
+On peut aussi faire ce que l'on a vu pendant le cours 6 sur les tableaux, on parcourt chaque élément du tableau grâce à une boucle `for` puis on affiche chaque caractère un à un.  
+
+>[!warning]
+>Dans ces cas là, on a besoin de la taille du tableau pour pouvoir savoir au bout de combien d'itérations on arrête.
+
+On utilise alors une méthode du package `<string.h>`, la méthode `strlen(chaine)` qui permet de donner la taille de la chaîne de caractères **sans inclure le marqueur de fin de chaine `\0`**.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	char chaine[] = "j'écrit un truc pour le kiff";
+	// Utilisation de strlen
+	int taille = strlen(chaine);
+	
+	for(int i=0; i<taille; i++){
+	    printf("%c", chaine[i]);
+	}
+	printf("\n");
+	return 0;
+}
+```
+
+>[!info] Remarque
+>On peut aussi utiliser `sizeof()` que l'on a déjà eu l'occasion de parler pour avoir la taille mémoire **totale** du tableau, ce qui inclus le marqueur de fin de chaine `\0`.
+
+```c
+#include <stdio.h>
+
+
+int main(){
+	char chaine[] = "j'écrit un truc pour le kiff";
+	// Utilisation de sizeof
+	int taille = sizeof(chaine);
+	
+	for(int i=0; i<taille; i++){
+	    printf("%c", chaine[i]);
+	}
+	printf("\n");
+	return 0;
+}
+```
+```
+j'écrit un truc pour le kiff·
+```
+
+Le caractère de marqueur de fin de chaîne `\0` revient en fait a mettre un $0$ dans l'emplacement mémoire qui lui est dédié. Et, comme ce n'est pas un caractère imprimable comme `a` par exemple, il peut être représenté par différent symbole, ici pour mon compilateur ce sera `·` *le point médian*.
