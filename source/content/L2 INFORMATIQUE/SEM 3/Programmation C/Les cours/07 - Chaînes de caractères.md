@@ -132,7 +132,6 @@ int main(){
 ```c
 #include <stdio.h>
 
-
 int main(){
 	char chaine[] = "j'écrit un truc pour le kiff";
 	// Utilisation de sizeof
