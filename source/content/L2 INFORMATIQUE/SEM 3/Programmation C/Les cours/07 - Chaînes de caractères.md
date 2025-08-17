@@ -150,3 +150,28 @@ j'écrit un truc pour le kiff·
 ```
 
 Le caractère de marqueur de fin de chaîne `\0` revient en fait a mettre un $0$ dans l'emplacement mémoire qui lui est dédié. Et, comme ce n'est pas un caractère imprimable comme `a` par exemple, il peut être représenté par différent symbole, ici pour mon compilateur ce sera `·` *le point médian*.
+
+Ainsi, la différence entre `strlen` et `sizeof` est que l'un d'eux inclus `\0` dans la taille de la chaîne, cela peut donc rendre certains programme faux par exemple pour programmer un pendu, si on utilise `sizeof`, on vas devoir trouver un mot à $t$ caractères, alors qu'en vrai, c'est un mot à $t-1$ caractères. Du coup si vous utilisez `sizeof` il faut penser au $-1$.
+
+On peut aussi utiliser une boucle `while` pour afficher la chaîne de caractères, elle s'arrête alors quand on trouve le marqueur de fin `\0`.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main(){
+	char chaine[] = "j'écrit un truc pour le kiff";
+	
+	int i=0;
+	while(chaine[i]!='\0'){
+	    printf("%c", chaine[i]);
+	    i++;
+	}
+	
+	printf("\n");
+	return 0;
+}
+```
+```
+j'écrit un truc pour le kiff
+```
