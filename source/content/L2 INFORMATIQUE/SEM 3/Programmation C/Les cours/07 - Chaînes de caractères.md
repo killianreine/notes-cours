@@ -27,3 +27,8 @@ char domaine[] = "informatique";
 
 Voici ci dessous, une version schématique simple qui vous permet de comprendre comment `informatique` est stocké.
 ![[informatiqueMOT.svg]]
+En fait, lors de la création de la variable  `domaine` qui contient la chaîne de caractère "informatique", cela va créer un tableau de caractères `char` contenant chaque lettre du mot **et le caractère nul** `\0` qui permet de marquer la fin de la chaîne de caractères.  
+Ainsi, dans notre exemple un tableau de 13 éléments est créé, il peut être schématisé *grossièrement* de la manière suivante :
+```
+[ i, n, f, o, r, m, a, t, i, q, u, e, \0]
+```
