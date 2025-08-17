@@ -43,3 +43,28 @@ Chaque caractère est stocké dans un **espace mémoire** consécutive (s'incré
 | `e`        | `0x100B`        |
 | `\0`       | `0x100C`        |
 En gros, chaque lettre de type `char` en C est stocké sur $1$ bit, et l'adresse mémoire entre deux caractères est simplement incrémenté de $1$. On utilise `\0` comme marque de fin de chaîne car sans lui, le programme ne pourrait pas savoir où s'arrête la chaîne de caractères.
+
+# Manipulation des chaînes de caractères
+## Accès aux éléments
+Grâce à la première partie de ce cours [[#Déclaration]], on sait qu'une chaîne de caractères en C représente simplement un tableau de caractères.  
+Il est alors possible d'accéder aux éléments d'une chaîne de caractères de la même manière que pour des tableaux classiques.  
+Alors, en considérant une chaîne de caractères `chaine` d'une taille $\texttt{t} \in \mathbb{N}^*$,  si on souhaite accéder au $\texttt{n}-$ième élément avec $\texttt{n} \in [1;\texttt{t}]$ alors on utilisera la forme suivante : 
+```c
+char elementN = chaine[n-1]
+```
+
+<u>Exemple :</u>  
+En reprenant l'exemple précédant avec le mot `informatique`, si on souhaite avoir accès à la lettre `m` alors on exécutera le code suivant : 
+```c
+#include <stdio.h>
+
+int main() {
+    char domaine[] = "informatique";
+    char m = domaine[5];
+    printf("6e lettre du domaine : %c", m);
+    return 0;
+}
+```
+```
+6e lettre du domaine : m
+```

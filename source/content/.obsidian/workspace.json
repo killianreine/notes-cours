@@ -91,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#déclaration",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +99,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Rechercher"
+              "title": "Search"
             }
           },
           {
@@ -112,7 +112,8 @@
               "title": "Signet"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -221,7 +222,7 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "df83d3f9f9bb37ab",
+  "active": "0829eb50dbb8a2b3",
   "lastOpenFiles": [
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
