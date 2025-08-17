@@ -91,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#déclaration",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -222,8 +222,9 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "0829eb50dbb8a2b3",
+  "active": "dd709600dbfbc446",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Programmation C/src/indicesMot.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
@@ -260,7 +261,6 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Chaînes de caractères.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
     "L2 INFORMATIQUE/Maquette L2.png",
     "L1 MIPSI/Maquette L1.png",
     "L1 MIPSI/Maquette L1.png",

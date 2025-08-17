@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200" viewBox="0 0 1000 200">
+  <defs>
+    <style>
+      .cell { fill: #e6f0fa; stroke: #1f4e79; stroke-width: 2; rx: 8; ry: 8; }
+      .label { font-family: 'Fira Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 18px; fill: #1f4e79; }
+      .index { font-family: 'Fira Mono', 'DejaVu Sans Mono', monospace; font-size: 16px; fill: #163758; }
+      .dots { fill: #1f4e79; }
+      .brace { fill: none; stroke: #1f4e79; stroke-width: 2; } /* modifié en bleu foncé */
+      .brace-text { fill: #1f4e79; } /* classe ajoutée pour le texte du bas */
+    </style>
+  </defs>
+
+  <g id="cells" transform="translate(20,40)">
+    <!-- Cell 0 -->
+    <rect x="0" y="0" width="60" height="60" class="cell" />
+    <text x="30" y="40" text-anchor="middle" class="label"></text>
+    <text x="30" y="90" text-anchor="middle" class="index">0</text>
+
+    <!-- Cell 1 -->
+    <rect x="80" y="0" width="60" height="60" class="cell" />
+    <text x="110" y="40" text-anchor="middle" class="label"></text>
+    <text x="110" y="90" text-anchor="middle" class="index">1</text>
+
+    <!-- Cell 2 -->
+    <rect x="160" y="0" width="60" height="60" class="cell" />
+    <text x="190" y="40" text-anchor="middle" class="label"></text>
+    <text x="190" y="90" text-anchor="middle" class="index">2</text>
+
+    <!-- Dots -->
+    <circle cx="260" cy="30" r="3.5" class="dots" />
+    <circle cx="280" cy="30" r="3.5" class="dots" />
+    <circle cx="300" cy="30" r="3.5" class="dots" />
+
+    <!-- Cell t-2 -->
+    <rect x="340" y="0" width="60" height="60" class="cell" />
+    <text x="370" y="40" text-anchor="middle" class="label"></text>
+    <text x="370" y="90" text-anchor="middle" class="index">t−2</text>
+
+    <!-- Cell t-1 -->
+    <rect x="420" y="0" width="60" height="60" class="cell" />
+    <text x="450" y="40" text-anchor="middle" class="label"></text>
+    <text x="450" y="90" text-anchor="middle" class="index">t−1</text>
+
+    <!-- Cell \0 -->
+    <rect x="500" y="0" width="60" height="60" class="cell" />
+    <text x="530" y="40" text-anchor="middle" class="label">\0</text>
+    <text x="530" y="90" text-anchor="middle" class="index">t</text>
+  </g>
+
+  <!-- Brace -->
+  <path class="brace" d="M 20 130 C 20 150, 20 150, 40 150 L 580 150 C 600 150, 600 150, 600 130" />
+  <text x="300" y="170" text-anchor="middle" class="index brace-text">tableau de taille t+1</text>
+</svg>
