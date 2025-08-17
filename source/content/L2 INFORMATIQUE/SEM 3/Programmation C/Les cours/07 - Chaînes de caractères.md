@@ -22,7 +22,7 @@ Où
 <u>Exemple :</u>  
 On souhaite stocker le mot `informatique` dans une chaine de caractères nommée `domaine`, on va alors créer un tableau de caractères et stocker le mot.
 ```c
-char domaine = "informatique";
+char domaine[] = "informatique";
 ```
 
 Voici ci dessous, une version schématique simple qui vous permet de comprendre comment `informatique` est stocké.

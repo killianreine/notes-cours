@@ -4,5 +4,6 @@
   "enabledCssSnippets": [
     "styles"
   ],
-  "baseFontSize": 13
+  "baseFontSize": 13,
+  "theme": "moonstone"
 }
