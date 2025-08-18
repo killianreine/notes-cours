@@ -26,7 +26,7 @@ char domaine[] = "informatique";
 ```
 
 Voici ci dessous, une version schématique simple qui vous permet de comprendre comment `informatique` est stocké.
-![[informatiqueMOT.svg]]
+![](informatiqueMOT.svg)
 En fait, lors de la création de la variable  `domaine` qui contient la chaîne de caractère "informatique", cela va créer un tableau de caractères `char` contenant chaque lettre du mot **et le caractère nul** `\0` qui permet de marquer la fin de la chaîne de caractères.  
 Ainsi, dans notre exemple un tableau de 13 éléments est créé, il peut être schématisé *grossièrement* de la manière suivante :
 ```
@@ -104,7 +104,7 @@ int main() {
 >Les indices commencent à 0 qui correspond au premier caractère de la chaine jusqu'à $t-1$ pour le dernier caractère de la chaîne. Et, le `\0` caractère nul pour marquer la fin de la chaîne est l'élément d'indice $t$.
 
 Ainsi en considérant une chaîne de $t$ éléments, voici les indices de manière schématique.
-![[indicesMot.svg]]
+![](indicesMot.svg)
 On voit donc que pour un mot de taille $t$, un tableau de taille `t+1` sera créé pour stocker chaque caractère du mot en entier et un emplacement mémoire supplémentaire est ajouté pour stocker le caractère de fin de chaîne `\0`. C'est pour cela que pour un mot de taille $t$, le tableau qui stocke le mot sera de taille $t+1$.
 
 ## Affichage
@@ -416,7 +416,7 @@ Création d'une variable `domaine` d'une taille définie, ici $6$.
 char domaine[6];
 ```
 Cela signifie alors que l'on peut stocker un prénom de $5$ lettres, car le dernier emplacement mémoire de la chaîne est réservé au marqueur de fin de chaîne `\0` **à ne pas oublier !**.  
-![[tab6.svg]]
+![](tab6.svg)
 Considérons maintenant le code suivant avec l'exécution associée.
 ### La fonction `fgets`
 ### La fonction `gets`
