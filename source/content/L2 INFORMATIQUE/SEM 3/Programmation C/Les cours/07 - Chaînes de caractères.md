@@ -565,6 +565,16 @@ Chaine : Bonjour le monde
 || Copie : Bonjour le monde
 ```
 ### Concaténer
+>[!cite] Définition
+>On considère deux chaînes de caractères `ch1` et `ch2` le terme **==concaténer==** revient à assembler les deux chaînes l'une après l'autre.
+#### Fonction `strcat`
+```c
+char *strcat(char *destination, const char *origine);
+```
+- On ajoute `origine` à la fin de `destination`
+- La fonction renvoie un pointeur vers le premier caractère de `destination`
+
+Il faut faire attention, la fonction `strcat` ne vérifie pas si la taille du tableau `destination` est assez grande pour ajouter `origine` à la fin, **pensez à trouver une alternative !**. <span class="error-inline">Buffer overflow</span> ! 
 ### Comparer 
 ### Rechercher
 ### Découper
