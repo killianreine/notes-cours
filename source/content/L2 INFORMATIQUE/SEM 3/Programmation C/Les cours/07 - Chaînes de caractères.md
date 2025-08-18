@@ -680,5 +680,79 @@ Bonjour_le m
 On peut illustrer la concaténation de l'exemple précédant de la manière suivante : 
 ![[concat.svg]]
 ### Comparer 
+En **C**, on ne peut pas comparer des chaînes avec les opérateurs `==` ou `!=` comme en Python ou Java, car une chaîne est représentée par un **tableau de caractères** (donc une adresse mémoire). Pour comparer le **contenu**, on utilise la fonction **`strcmp`** (ou ses variantes) de `<string.h>`.
+
+L'objet de cette partie, est de présenter le prototype des fonctions de comparaison, les détailler brièvement et montrer un exemple simple. 
+#### Fonction `strcmp`
+```c
+int strcmp(const char *ch1, const char *ch2);
+```
+- Renvoie un entier selon le résultat de la comparaison.
+- Prend en paramètres de chaînes de caractères.
+
+| Valeur de retour | Siginification                   |
+| ---------------- | -------------------------------- |
+| `0`              | Les deux chaînes sont identiques |
+| `<0`             | `ch1` plus petit que `ch2`       |
+| `>0`             | `ch1` plus grand que `ch2`       |
+<u>Exemple :</u>
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[] = "Bonjour";
+    char str2[] = "Bonjour";
+    char str3[] = "Bonsoir";
+
+    if (strcmp(str1, str2) == 0) {
+        printf("str1 et str2 sont identiques\n");
+    } else {
+        printf("str1 et str2 sont différents\n");
+    }
+
+    if (strcmp(str1, str3) == 0) {
+        printf("str1 et str3 sont identiques\n");
+    } else {
+        printf("str1 et str3 sont différents\n");
+    }
+
+    return 0;
+}
+```
+```
+str1 et str2 sont identiques
+str1 et str3 sont différents 
+```
+#### La fonction `strncmp`
+Elle permet en fait de comparer les $N$ premiers caractères.
+
+```c
+int strncmp(const char *ch1, const char *ch2, size_t n );
+```
+- Elle renvoie un entier résultant de la comparaison
+- Elle prend en argument les deux chaînes `ch1` et `ch2` puis `n` le nombre de caractères à comparer.
+
+<u>Exemple :</u>
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[] = "Bonjour";
+    char str2[] = "Bonbon";
+
+    if (strncmp(str1, str2, 3) == 0) {
+        printf("Les 3 premiers caractères sont identiques\n");
+    } else {
+        printf("Les 3 premiers caractères sont différents\n");
+    }
+
+    return 0;
+}
+```
+```
+Les 3 premiers caractères sont identiques.
+```
 ### Rechercher
 ### Découper
