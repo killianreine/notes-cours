@@ -513,6 +513,7 @@ Vous avez entré : Apprendre la prog C
 ### Copier
 En programmation C, on peut avoir besoin de copier une chaîne de caractère et il existe 2 méthodes possibles. 
 
+#### Parcourir et recopier
 Ce qui semble le plus intuitif pour commencer c'est de parcourir la chaîne a copier et copier chaque élément un à un dans une seconde chaîne.
 
 <u>Exemple :</u>
@@ -541,6 +542,7 @@ Chaine : Bonjour le monde
 >[!warning] 
 >Ne pas oublier d'ajouter le `\0` ) à la fin de la chaine.
 
+#### La fonction `strcpy`
 La fonction `strcpy` de la bibliothèque `<string.h>` permet de copier une chaîne `origine` (`\0` inclus) dans une chaîne `dest`.
 ```c
 char* strcpy(char *dest, const char *origine)
