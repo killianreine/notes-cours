@@ -327,5 +327,30 @@ Pour clarifier un peu,
 la fonction `scanf` ne renvoie pas toujours `EOF` *End Of File*, c'est seulement si une erreur d'entrée/sortie se produit ou alors si on atteint la fin d'un fichier, par exemple `Ctrl+Z` sur Windows. *Notion expliquée lors du cours sur les fichiers*. Si la saisie utilisateur ne correspond pas au format attendu, la fonction `scanf` renverra $0$. 
 #### Limites
 
+<u>Exemple :</u>  
+On souhaite que l'utilisateur entre son nom et son prénom pour l'afficher. 
+```c
+#include <stdio.h>
+
+int main() {
+    char identite[100];
+    printf("Entrez votre prénom et nom : ");
+    scanf("%s", identite);
+    printf("\nSalut tu t'appelles : %s", identite);
+    return 0;
+}
+```
+```
+Entrez votre prénom et nom : Paul Durant
+Salut tu t'appelles : Paul
+```
+
+Bon je pense que tu as quelques questions à poser : 
+- Pourquoi dans l'utilisation de `scanf`, cette fois on met pas le `&` de l'adresse mémoire devant identité ?
+- Pourquoi le résultat de la saisie est simplement `Paul` et pas `Paul Durant` comme tapé au dessus ?
+
+On y vient, un peu de patience !  
+En fait, dans notre cas on souhaite passer une chaîne de caractères à notre fonction `scanf`, et on a expliqué qu'en fin de compte c'est un tableau de `char`. Et en langage C, lorsque l'on passe un tableau en paramètre d'une fonction, ce dernier est **automatiquement converti en pointeur** vers le premier élément de ce dernier.  
+Pour simplifier, quand on passe un tableau en paramètre de fonction c'est la même chose que si on passait l'adresse mémoire du premier élément du tableau. *La notion de pointeur arrive...* D'où le fait qu'ici on a pas besoin de `&`. 
 ### La fonction `fgets`
 ### La fonction `gets`
