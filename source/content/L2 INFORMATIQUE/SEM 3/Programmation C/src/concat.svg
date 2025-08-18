@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <style>
+      .title { font-family: 'Fira Sans', Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #163758; }
+      .subtitle { font-family: 'Fira Sans', Arial, sans-serif; font-size: 18px; fill: #163758; }
+      .cell { fill: #e6f0fa; stroke: #1f4e79; stroke-width: 2; rx: 8; ry: 8; }
+      .label { font-family: 'Fira Sans', Arial, sans-serif; font-size: 18px; fill: #1f4e79; }
+      .index { font-family: 'Fira Mono', monospace; font-size: 14px; fill: #163758; }
+      .src { fill: #f5eafdff; stroke: #660493ff; stroke-width: 2; rx: 8; ry: 8; }
+      .vide { fill: #d9d9daff; stroke: #000000ff; stroke-width: 2; rx: 8; ry: 8; }
+      .src-label { fill: #660493ff; font-family: 'Fira Sans', Arial, sans-serif; font-size: 18px; }
+      .arrow { stroke: #660493ff; stroke-width: 1; marker-end: url(#arrowhead); }
+      .note { font-family: 'Fira Sans', Arial, sans-serif; font-size: 16px; fill: #660493ff; font-weight: 600; }
+      .panel-line { stroke: #d0d7e2; stroke-width: 2; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#660493ff"/>
+    </marker>
+  </defs>
+
+  <!-- Séparateur horizontal entre AVANT et APRÈS -->
+  <line x1="20" y1="280" x2="1180" y2="280" class="panel-line"/>
+
+  <!-- ===== AVANT ===== -->
+  <text x="30" y="30" class="title">AVANT</text>
+
+  <!-- dest avant -->
+  <text x="30" y="70" class="subtitle">dest[20] = "Bonjour"</text>
+  <g transform="translate(30,85)">
+    <!-- B o n j o u r \0 -->
+    <rect x="0" y="0" width="50" height="50" class="cell"/><text x="25" y="32" text-anchor="middle" class="label">B</text><text x="25" y="65" text-anchor="middle" class="index">0</text>
+    <rect x="50" y="0" width="50" height="50" class="cell"/><text x="75" y="32" text-anchor="middle" class="label">o</text><text x="75" y="65" text-anchor="middle" class="index">1</text>
+    <rect x="100" y="0" width="50" height="50" class="cell"/><text x="125" y="32" text-anchor="middle" class="label">n</text><text x="125" y="65" text-anchor="middle" class="index">2</text>
+    <rect x="150" y="0" width="50" height="50" class="cell"/><text x="175" y="32" text-anchor="middle" class="label">j</text><text x="175" y="65" text-anchor="middle" class="index">3</text>
+    <rect x="200" y="0" width="50" height="50" class="cell"/><text x="225" y="32" text-anchor="middle" class="label">o</text><text x="225" y="65" text-anchor="middle" class="index">4</text>
+    <rect x="250" y="0" width="50" height="50" class="cell"/><text x="275" y="32" text-anchor="middle" class="label">u</text><text x="275" y="65" text-anchor="middle" class="index">5</text>
+    <rect x="300" y="0" width="50" height="50" class="cell"/><text x="325" y="32" text-anchor="middle" class="label">r</text><text x="325" y="65" text-anchor="middle" class="index">6</text>
+    <rect x="350" y="0" width="50" height="50" class="cell"/><text x="375" y="32" text-anchor="middle" class="label">\0</text><text x="375" y="65" text-anchor="middle" class="index">7</text>
+    <!-- cases vides (8..19) -->
+    <rect x="400" y="0" width="50" height="50" class="vide"/><text x="425" y="65" text-anchor="middle" class="index">8</text>
+    <rect x="450" y="0" width="50" height="50" class="vide"/><text x="475" y="65" text-anchor="middle" class="index">9</text>
+    <rect x="500" y="0" width="50" height="50" class="vide"/><text x="525" y="65" text-anchor="middle" class="index">10</text>
+    <rect x="550" y="0" width="50" height="50" class="vide"/><text x="575" y="65" text-anchor="middle" class="index">11</text>
+    <rect x="600" y="0" width="50" height="50" class="vide"/><text x="625" y="65" text-anchor="middle" class="index">12</text>
+    <rect x="650" y="0" width="50" height="50" class="vide"/><text x="675" y="65" text-anchor="middle" class="index">13</text>
+    <rect x="700" y="0" width="50" height="50" class="vide"/><text x="725" y="65" text-anchor="middle" class="index">14</text>
+    <rect x="750" y="0" width="50" height="50" class="vide"/><text x="775" y="65" text-anchor="middle" class="index">15</text>
+    <rect x="800" y="0" width="50" height="50" class="vide"/><text x="825" y="65" text-anchor="middle" class="index">16</text>
+    <rect x="850" y="0" width="50" height="50" class="vide"/><text x="875" y="65" text-anchor="middle" class="index">17</text>
+    <rect x="900" y="0" width="50" height="50" class="vide"/><text x="925" y="65" text-anchor="middle" class="index">18</text>
+    <rect x="950" y="0" width="50" height="50" class="vide"/><text x="975" y="65" text-anchor="middle" class="index">19</text>
+  </g>
+
+  <!-- src avant -->
+  <text x="30" y="190" class="subtitle">src[] = "_le monde !"</text>
+  <g transform="translate(30,205)">
+    <rect x="0" y="0" width="50" height="50" class="src"/><text x="25" y="32" text-anchor="middle" class="src-label">_</text>
+    <rect x="50" y="0" width="50" height="50" class="src"/><text x="75" y="32" text-anchor="middle" class="src-label">l</text>
+    <rect x="100" y="0" width="50" height="50" class="src"/><text x="125" y="32" text-anchor="middle" class="src-label">e</text>
+    <rect x="150" y="0" width="50" height="50" class="src"/><text x="175" y="32" text-anchor="middle" class="src-label"> </text>
+    <rect x="200" y="0" width="50" height="50" class="src"/><text x="225" y="32" text-anchor="middle" class="src-label">m</text>
+    <rect x="250" y="0" width="50" height="50" class="cell"/><text x="275" y="32" text-anchor="middle" class="label">o</text>
+    <rect x="300" y="0" width="50" height="50" class="cell"/><text x="325" y="32" text-anchor="middle" class="label">n</text>
+    <rect x="350" y="0" width="50" height="50" class="cell"/><text x="375" y="32" text-anchor="middle" class="label">d</text>
+    <rect x="400" y="0" width="50" height="50" class="cell"/><text x="425" y="32" text-anchor="middle" class="label">e</text>
+    <rect x="450" y="0" width="50" height="50" class="cell"/><text x="475" y="32" text-anchor="middle" class="label"> </text>
+    <rect x="500" y="0" width="50" height="50" class="cell"/><text x="525" y="32" text-anchor="middle" class="label">!</text>
+    <rect x="550" y="0" width="50" height="50" class="cell"/><text x="575" y="32" text-anchor="middle" class="label">\0</text>
+  </g>
+
+  <!-- ===== APRÈS ===== -->
+  <text x="30" y="310" class="title">APRÈS</text>
+
+  <!-- dest après -->
+  <text x="30" y="350" class="subtitle">dest[20] = "Bonjour_le m"</text>
+  <g transform="translate(30,365)">
+    <!-- Bonjour_le m\0 -->
+    <rect x="0" y="0" width="50" height="50" class="cell"/><text x="25" y="32" text-anchor="middle" class="label">B</text><text x="25" y="65" text-anchor="middle" class="index">0</text>
+    <rect x="50" y="0" width="50" height="50" class="cell"/><text x="75" y="32" text-anchor="middle" class="label">o</text><text x="75" y="65" text-anchor="middle" class="index">1</text>
+    <rect x="100" y="0" width="50" height="50" class="cell"/><text x="125" y="32" text-anchor="middle" class="label">n</text><text x="125" y="65" text-anchor="middle" class="index">2</text>
+    <rect x="150" y="0" width="50" height="50" class="cell"/><text x="175" y="32" text-anchor="middle" class="label">j</text><text x="175" y="65" text-anchor="middle" class="index">3</text>
+    <rect x="200" y="0" width="50" height="50" class="cell"/><text x="225" y="32" text-anchor="middle" class="label">o</text><text x="225" y="65" text-anchor="middle" class="index">4</text>
+    <rect x="250" y="0" width="50" height="50" class="cell"/><text x="275" y="32" text-anchor="middle" class="label">u</text><text x="275" y="65" text-anchor="middle" class="index">5</text>
+    <rect x="300" y="0" width="50" height="50" class="cell"/><text x="325" y="32" text-anchor="middle" class="label">r</text><text x="325" y="65" text-anchor="middle" class="index">6</text>
+    <rect x="350" y="0" width="50" height="50" class="src"/><text x="375" y="32" text-anchor="middle" class="src-label">_</text><text x="375" y="65" text-anchor="middle" class="index">7</text>
+    <rect x="400" y="0" width="50" height="50" class="src"/><text x="425" y="32" text-anchor="middle" class="src-label">l</text><text x="425" y="65" text-anchor="middle" class="index">8</text>
+    <rect x="450" y="0" width="50" height="50" class="src"/><text x="475" y="32" text-anchor="middle" class="src-label">e</text><text x="475" y="65" text-anchor="middle" class="index">9</text>
+    <rect x="500" y="0" width="50" height="50" class="src"/><text x="525" y="32" text-anchor="middle" class="src-label"> </text><text x="525" y="65" text-anchor="middle" class="index">10</text>
+    <rect x="550" y="0" width="50" height="50" class="src"/><text x="575" y="32" text-anchor="middle" class="src-label">m</text><text x="575" y="65" text-anchor="middle" class="index">11</text>
+    <rect x="600" y="0" width="50" height="50" class="cell"/><text x="625" y="32" text-anchor="middle" class="label">\0</text><text x="625" y="65" text-anchor="middle" class="index">12</text>
+    <!-- cases vides -->
+    <rect x="650" y="0" width="50" height="50" class="vide"/><text x="675" y="65" text-anchor="middle" class="index">13</text>
+    <rect x="700" y="0" width="50" height="50" class="vide"/><text x="725" y="65" text-anchor="middle" class="index">14</text>
+    <rect x="750" y="0" width="50" height="50" class="vide"/><text x="775" y="65" text-anchor="middle" class="index">15</text>
+    <rect x="800" y="0" width="50" height="50" class="vide"/><text x="825" y="65" text-anchor="middle" class="index">16</text>
+    <rect x="850" y="0" width="50" height="50" class="vide"/><text x="875" y="65" text-anchor="middle" class="index">17</text>
+    <rect x="900" y="0" width="50" height="50" class="vide"/><text x="925" y="65" text-anchor="middle" class="index">18</text>
+    <rect x="950" y="0" width="50" height="50" class="vide"/><text x="975" y="65" text-anchor="middle" class="index">19</text>
+  </g>
+
+  <!-- src après (inchangé) -->
+  <text x="30" y="470" class="subtitle">src[]</text>
+  <g transform="translate(30,485)">
+    <rect x="0" y="0" width="50" height="50" class="src"/><text x="25" y="32" text-anchor="middle" class="src-label">_</text>
+    <rect x="50" y="0" width="50" height="50" class="src"/><text x="75" y="32" text-anchor="middle" class="src-label">l</text>
+    <rect x="100" y="0" width="50" height="50" class="src"/><text x="125" y="32" text-anchor="middle" class="src-label">e</text>
+    <rect x="150" y="0" width="50" height="50" class="src"/><text x="175" y="32" text-anchor="middle" class="src-label"> </text>
+    <rect x="200" y="0" width="50" height="50" class="src"/><text x="225" y="32" text-anchor="middle" class="src-label">m</text>
+    <rect x="250" y="0" width="50" height="50" class="cell"/><text x="275" y="32" text-anchor="middle" class="label">o</text>
+    <rect x="300" y="0" width="50" height="50" class="cell"/><text x="325" y="32" text-anchor="middle" class="label">n</text>
+    <rect x="350" y="0" width="50" height="50" class="cell"/><text x="375" y="32" text-anchor="middle" class="label">d</text>
+    <rect x="400" y="0" width="50" height="50" class="cell"/><text x="425" y="32" text-anchor="middle" class="label">e</text>
+    <rect x="450" y="0" width="50" height="50" class="cell"/><text x="475" y="32" text-anchor="middle" class="label"> </text>
+    <rect x="500" y="0" width="50" height="50" class="cell"/><text x="525" y="32" text-anchor="middle" class="label">!</text>
+    <rect x="550" y="0" width="50" height="50" class="cell"/><text x="575" y="32" text-anchor="middle" class="label">\0</text>
+  </g>
+
+  <!-- Flèches montrant la copie des 5 premiers caractères -->
+  <text x="30" y="570" class="note">5 caractères copiés depuis src vers dest (indices 7 à 11)</text>
+  <line x1="55" y1="485" x2="400" y2="415" class="arrow"/>
+  <line x1="105" y1="485" x2="450" y2="415" class="arrow"/>
+  <line x1="155" y1="485" x2="500" y2="415" class="arrow"/>
+  <line x1="205" y1="485" x2="550" y2="415" class="arrow"/>
+  <line x1="255" y1="485" x2="600" y2="415" class="arrow"/>
+</svg>

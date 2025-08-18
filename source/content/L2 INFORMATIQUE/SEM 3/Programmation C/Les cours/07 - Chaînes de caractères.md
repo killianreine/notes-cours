@@ -643,7 +643,42 @@ fin
 Bon ok, je sais c'est un peu plus long mais bon là pas de dépassement mémoire.
 
 #### Fonction `strncat`
+En langage C, la fonction `strncat` (définie dans `<string.h>`) permet de **concaténer (ajouter)** une chaîne de caractères à la fin d’une autre, en limitant le nombre de caractères copiés.
 
+```c
+char *strncat(char *destination, const char *origine, size_t n);
+```
+- **`destination`** : la chaîne de destination (doit être assez grande pour contenir le résultat).
+- **`origine`** : la chaîne à ajouter.
+- **`n`** : le nombre maximum de caractères à copier depuis `origine`.
+Elle renvoie aussi un pointeur vers `destination`.
+
+>[!warning]
+>- Il faut que le tableau `destination` soit assez grand pour contenir la chaîne finale + `\0` (le caractère de fin de chaîne).
+>- `strncat` ajoute toujours `\0` à la fin.
+
+<u>Exemple :</u>
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char dest[20] = "Bonjour";
+    char src[] = "_le monde !";
+
+    // On ajoute seulement les 5 premiers caractères de src
+    strncat(dest, src, 5);
+
+    printf("Résultat : %s\n", dest)
+    return 0;
+}
+```
+```
+Bonjour_le m
+```
+
+On peut illustrer la concaténation de l'exemple précédant de la manière suivante : 
+![[concat.svg]]
 ### Comparer 
 ### Rechercher
 ### Découper
