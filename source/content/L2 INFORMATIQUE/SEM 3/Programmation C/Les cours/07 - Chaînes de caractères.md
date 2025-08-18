@@ -575,6 +575,24 @@ char *strcat(char *destination, const char *origine);
 - La fonction renvoie un pointeur vers le premier caractère de `destination`
 
 Il faut faire attention, la fonction `strcat` ne vérifie pas si la taille du tableau `destination` est assez grande pour ajouter `origine` à la fin, **pensez à trouver une alternative !**. <span class="error-inline">Buffer overflow</span> ! 
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char ch[50] = "Bonjour, ";
+    char ajout[] = "monde !";
+
+    strcat(ch, ajout);  // ajoute ajout à la fin de ch
+    printf("%s\n", ch);
+
+    return 0;
+}
+```
+```
+Bonjour, monde !
+```
 ### Comparer 
 ### Rechercher
 ### Découper
