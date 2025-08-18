@@ -26,7 +26,7 @@ char domaine[] = "informatique";
 ```
 
 Voici ci dessous, une version schématique simple qui vous permet de comprendre comment `informatique` est stocké.
-![](informatiqueMOT.svg)
+![[informatiqueMOT.svg]]
 En fait, lors de la création de la variable  `domaine` qui contient la chaîne de caractère "informatique", cela va créer un tableau de caractères `char` contenant chaque lettre du mot **et le caractère nul** `\0` qui permet de marquer la fin de la chaîne de caractères.  
 Ainsi, dans notre exemple un tableau de 13 éléments est créé, il peut être schématisé *grossièrement* de la manière suivante :
 ```
@@ -104,7 +104,7 @@ int main() {
 >Les indices commencent à 0 qui correspond au premier caractère de la chaine jusqu'à $t-1$ pour le dernier caractère de la chaîne. Et, le `\0` caractère nul pour marquer la fin de la chaîne est l'élément d'indice $t$.
 
 Ainsi en considérant une chaîne de $t$ éléments, voici les indices de manière schématique.
-![](indicesMot.svg)
+![[indicesMot.svg]]
 On voit donc que pour un mot de taille $t$, un tableau de taille `t+1` sera créé pour stocker chaque caractère du mot en entier et un emplacement mémoire supplémentaire est ajouté pour stocker le caractère de fin de chaîne `\0`. C'est pour cela que pour un mot de taille $t$, le tableau qui stocke le mot sera de taille $t+1$.
 
 ## Affichage
@@ -416,7 +416,7 @@ Création d'une variable `domaine` d'une taille définie, ici $6$.
 char domaine[6];
 ```
 Cela signifie alors que l'on peut stocker un prénom de $5$ lettres, car le dernier emplacement mémoire de la chaîne est réservé au marqueur de fin de chaîne `\0` **à ne pas oublier !**.  
-![](tab6.svg)
+![[tab6.svg]]
 Considérons maintenant le code suivant avec l'exécution associée.
 ```c
 #include <stdio.h>
@@ -468,3 +468,44 @@ Inutile de passer encore énormément de temps sur `gets`, elle pose les mêmes 
 >[!info] Remarque
 >Depuis la norme C11, `gets` a été supprimée de la norme C.
 ### La fonction `fgets`
+La fonction `fgets` permet de récupérer une chaîne de caractères à partir d'un flux (le plus souvent, `stdin`). 
+
+Prototype de la fonction
+```c
+char *fgets(char *var, int t, FILE *stream);
+```
+- `var` la variable qui va permettre de stocker la chaîne de caractères lue.
+- `t` la taille de la chaîne à stocker.
+- `stream` le flux sur lequel on récupère la chaîne (`stdin`, fichier, ...)
+
+Il faut savoir que la fonction `fgets` arrête la lecture lorsqu'elle rencontre `\n`, la fin du flux, ou alors après `t-1` caractères lus (`\0` le dernier caractère).
+
+>[!warning]
+>La fonction `fgets` inclus `\n` dans la chaîne lue si celle ci est rencontrée avant la limite.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main() {
+    char buffer[100];
+
+    printf("Entrez une chaîne de caractères : ");
+    fgets(buffer, sizeof(buffer), stdin); // Lecture sécurisée de la chaîne
+    printf("Vous avez entré : %s\n", buffer);
+
+    return 0;
+}
+```
+```
+Entrez une chaine de caractères : Apprendre la prog C
+Vous avez entré : Apprendre la prog C
+```
+
+| Critère               | `scanf`                                                                | `gets`                                             | `fgets`                                                                                               |
+| --------------------- | ---------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Usage principal       | Lire un mot (jusqu’au premier espace)                                  | Lire une ligne complète                            | Lire une ligne complète ou partie                                                                     |
+| Limitation de lecture | Ne lit qu’un mot, pas les espaces                                      | Aucun contrôle sur la taille                       | Limité à `n-1` caractères                                                                             |
+| Sécurité              | **Peu sûr** : peut dépasser le buffer si l’utilisateur tape trop       | **Très dangereux** : risque de débordement mémoire | **Sûr** si `n` correct                                                                                |
+| Gestion du '\n'       | Le `\n` reste dans le buffer                                           | Supprime le `\n`automatiquement                    | Conserve le `\n` si présent (à retirer manuellement si nécessaire)                                    |
+| Remarques             | Utiliser avec spécificateur de longueur : `%99s` pour un buffer de 100 | Obsolète et **déconseillé**, supprimé depuis C11   | Recommandé pour la lecture de chaînes. Supprimer le `\n` et vider le flux si la ligne est trop longue |
