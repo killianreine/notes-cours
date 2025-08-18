@@ -1,4 +1,4 @@
-<svg width="900" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="100" xmlns="http://www.w3.org/2000/svg">
   <style>
     .char-box { fill: #f0f8ff; stroke: #4682b4; stroke-width: 1; }
     .char-text { font-family: monospace; font-size: 16px; fill: #000; }
