@@ -67,6 +67,13 @@ On peut aussi déclarer un tableau à plus d'éléments que ce qu'on initialise,
 ```c
 char chaine[20] = "Salut";
 ```
+
+| Aspect            | Initialisation explicite         | Initialisation implicite                    |
+| ----------------- | -------------------------------- | ------------------------------------------- |
+| Définition        | Chaque caractère + `'\0'` manuel | Littéral de chaîne (`"..."`)                |
+| Ajout de `'\0'`   | manuel                           | Automatique                                 |
+| Taille du tableau | Fixe, définie par l’utilisateur  | Déduite automatiquement **si non précisée** |
+| Facilité          | Moins pratique                   | Plus simple et sûre                         |
 # Manipulation des chaînes de caractères
 ## Accès aux éléments
 Grâce à la première partie de ce cours [[#Déclaration]], on sait qu'une chaîne de caractères en C représente simplement un tableau de caractères.  
@@ -233,3 +240,40 @@ est un tableau de $12$ caractères sans marqueur de fin de chaînes `\0`, on ne 
 | Terminaison              | Pas forcément `'\0'`  | Toujours `'\0'`                               |
 | Taille                   | Fixe (déclarée)       | Fixe ou déduite automatiquement avec littéral |
 | Compatible avec `%s`     | Non                   | Oui                                           |
+## Lecture
+### La fonction `scanf`
+La fonction `scanf` permet de lire des saisies de données que se soit des lettres, chiffres, ou alors des chaînes de caractères entières.  
+Malgré tout, elle possède quelques inconvénient à ne pas négliger pour ne pas être surpris.
+
+Pour bien commencer, étudions le prototype de la fonction `scanf`. Pour rappel, le prototype d'une fonction consiste juste à donner le type de retour de la fonction, son nom et ses arguments.
+
+```c
+int scanf(const char* format, ...);
+```
+
+Oui, le prototype de ma fonction `scanf` est un peu perturbant, il prend **au moins 1** paramètre. Les `...` signifient qu'il peut en prendre un nombre variable. On appelle cela une **==fonction variadique==**, c'est lorsqu'une fonction peut prendre un nombre variable de paramètres. Comme la fameuse fonction `printf` qui prend en paramètre au moins une chaîne de caractères puis ensuite $0$ ou $n$ paramètres supplémentaires correspondant aux données à afficher si il y en a.
+
+Pour en revenir au prototype de `scanf`,  
+- Le paramètre `format` désigne simplement le type des variables à saisir, par exemple `%d` pour un entier.
+- La fonction renvoie un entier `int`, c'est le nombre de variables affectées par la saisie, ça permet en fait de vérifier si la saisie s'est déroulée correctement.
+- En cas d'erreur la fonction retourne `EOF` et indique la raison de l'erreur dans la variable **`erno`**. *explications plus bas*
+
+<u>Exemple :</u>  
+Un exemple assez basique pour l'utilisation de `scanf`. On demande à l'utilisateur de saisir son âge puis on l'affiche.
+```c
+#include <stdio.h>
+
+int main() {
+    int age;
+    printf("Entrez votre age : ");
+    scanf("%d", &age);
+    printf("\nVous avez %d ans.", age);
+    return 0;
+}
+```
+```
+Entrez votre age : 20
+Vous avez 20 ans.
+```
+### La fonction `fgets`
+### La fonction `gets`
