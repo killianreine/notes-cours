@@ -595,6 +595,55 @@ int main() {
 ```
 Bonjour, monde !
 ```
+
+On peut réfléchir à une solution pour concaténer les chaînes de caractères sans avoir de dépassement de mémoire. *La solution suivante vient d'une réflexion personnelle ce n'est pas forcément la meilleure chose à faire...*
+
+Si on considère $ch_1$ et $ch_2$ deux chaînes de tailles $t_1$ et $t_2$ respectivement (sans avoir de tableau trop grand) donnée par la fonction `strlen()`. Alors La taille du tableau $ch_1+ch_2$ est donné par $(t_1+t_2)+1$ en comptant le caractère nul.
+
+<u>Exemple :</u> 
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char ch[] = "Bonjour ";
+    char ajout[] = "tout le monde !";
+
+    int taille_ch = strlen(ch);
+    int taille_ajout = strlen(ajout);
+    int taille_totale = taille_ch + taille_ajout + 1; // +1 pour le caractère nul
+
+    char resultat[taille_totale];
+    strcpy(resultat, ch);     // copie ch dans resultat
+    strcat(resultat, ajout);  // ajoute ajout à la fin de resultat
+
+    printf("%s\n", resultat);
+
+    return 0;
+}
+```
+```
+Bonjour tout le monde !
+```
+
+Voici l'algorithme de la solution proposée pour éviter les dépassements mémoire.
+```
+concaténation
+	Définition et initialisation implicite
+	Récupérer les tailles respectives 
+	Calcul taille totale
+
+	Définition d'un tableau de résultat de taille_totale
+	On copie origine dans resultat
+	On concatène ajout dans resultat
+
+	On affiche résultat
+fin
+```
+Bon ok, je sais c'est un peu plus long mais bon là pas de dépassement mémoire.
+
+#### Fonction `strncat`
+
 ### Comparer 
 ### Rechercher
 ### Découper
