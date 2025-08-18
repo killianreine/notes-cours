@@ -205,7 +205,7 @@ j'écrit un truc pour le kiff
 ```
 
 >[!info] Remarque
->On peut utiliser `putchar(char)` à la place du `printf` pour afficher un charactère. *la fonction est valide avec une boucle `while` et avec une boucle `for` aussi.*
+>On peut utiliser `putchar(char)` à la place du `printf` pour afficher un caractère. *la fonction est valide avec une boucle `while` et avec une boucle `for` aussi.*
 
 ```c
 #include <stdio.h>
@@ -286,14 +286,14 @@ Quand on utilise la fonction `scanf` c'est pour stocker des saisies utilisateurs
 C'est pour cette raison le `&`, en fait quand on utilise `scanf("%d", &age)` on souhaite recopier la saisie utilisateur dans l'adresse mémoire créée pour la variable âge. Pour ce faire, on ajoute `&` avant âge.
 
 Maintenant comment savoir si les données saisies par l'utilisateur sont correctes ?  
-Regardons ce qu'il se passe si à la place de taper un entier, on tape une chaîne de charactères. *On reprend le même code que l'exemple précédant*
+Regardons ce qu'il se passe si à la place de taper un entier, on tape une chaîne de caractères. *On reprend le même code que l'exemple précédant*
 ```
 Entrez votre age : mot
 Vous avez 31415 ans.
 ```
 
 Alors là c'est étonnant, mais qu'est-ce que c'est ?  
-En fait on a rentré une chaîne de charactères au lieu d'un entier comme spécifié avec le format `%d` alors la fonction `scanf` échoue et **ne modifie pas** la variable âge. La valeur de cette dernière reste indéfinie *l'entier $31415$ est aléatoire, lors d'une autre exécution, un autre nombre sera affiché c'est pour cette raison que l'on parle de valeur indéfinie.*
+En fait on a rentré une chaîne de caractères au lieu d'un entier comme spécifié avec le format `%d` alors la fonction `scanf` échoue et **ne modifie pas** la variable âge. La valeur de cette dernière reste indéfinie *l'entier $31415$ est aléatoire, lors d'une autre exécution, un autre nombre sera affiché c'est pour cette raison que l'on parle de valeur indéfinie.*
 
 Il y a déjà quelques paragraphes, j'expliquais que la fonction `scanf` renvoie un entier, le nombre de variables affectées par la saisie. Et bien voilà comment vérifier la saisie utilisateur. Dans notre exemple on vas vérifier si une variable exactement a été affectée par la saisie si c'est le cas on renvoie l'âge sinon on renvoie un message d'erreur.
 
@@ -441,5 +441,30 @@ De manière visuelle, on obtient ceci :
 ![[depassementMemoire.svg]]En gros le tableau de base est trop petit pour stocker le mot informatique ainsi on le voit en rouge, le dépassement de mémoire.  
 Cela peut être dangereux car si il n'est pas contrôlé, l'utilisateur peut écrire ce qu'il veut dans la mémoire. Il peut surtout insérer du code en mémoire et faire en sorte qu'il soit exécuté par le programme. C'est l'**attaque par buffer overflow**, une attaque pirate très difficile à faire.  
 Pour plus d'informations sur le dépassement et ses dangers : https://fr.wikipedia.org/wiki/D%C3%A9passement_de_tampon
-### La fonction `fgets`
 ### La fonction `gets`
+La fonction `gets` permet de lire une **ligne entière** de l'entrée standard jusqu'au retour à la ligne `\n` et de stocker cette dernière dans un tableau fourni.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main() {
+    char line[100]; 
+
+    printf("Entrez une chaîne de caractères : ");
+    gets(line); 
+    printf("Vous avez entré : %s\n", line); // Affichage
+
+    return 0;
+}
+```
+```
+Entrez une chaîne de caractères : une chaîne simple
+Vous avez entré : Une chaîne simple
+```
+
+Inutile de passer encore énormément de temps sur `gets`, elle pose les mêmes problèmes que `scanf` : **le dépassement de mémoire**. 
+
+>[!info] Remarque
+>Depuis la norme C11, `gets` a été supprimée de la norme C.
+### La fonction `fgets`
