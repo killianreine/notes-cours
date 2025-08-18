@@ -352,5 +352,37 @@ Bon je pense que tu as quelques questions à poser :
 On y vient, un peu de patience !  
 En fait, dans notre cas on souhaite passer une chaîne de caractères à notre fonction `scanf`, et on a expliqué qu'en fin de compte c'est un tableau de `char`. Et en langage C, lorsque l'on passe un tableau en paramètre d'une fonction, ce dernier est **automatiquement converti en pointeur** vers le premier élément de ce dernier.  
 Pour simplifier, quand on passe un tableau en paramètre de fonction c'est la même chose que si on passait l'adresse mémoire du premier élément du tableau. *La notion de pointeur arrive...* D'où le fait qu'ici on a pas besoin de `&`. 
+
+Un second problème se dresse devant nous, on a tapé `Paul Durant` et le programme a affiché `Paul` uniquement. Que s'est-il passé pour `Durant` ?  
+La fonction `scanf` s'arrête de lire une saisie utilisateur si elle tombe sur un espace, une tabulation ou i on appui sur entrée. Alors le second mot, ici `Durant` n'est donc pas récupéré.  
+Alors il n'est pas désintégré, au contraire même il est toujours en mémoire dans ce qu'on appelle **==un buffer==**,c e qui signifie que la prochaine fois que l'on appellera la fonction `scanf`, elle lira toute seule `Durant` qui est "resté en plan" dans la mémoire.  
+*Observons à l'aide d'un exemple*
+
+<u>Exemple :</u>  
+*On reprend le même que précédemment et on utilise 2 fois `scanf`*
+```c
+#include <stdio.h>
+
+int main() {
+    char identite[100];
+    printf("Entrez votre prénom et nom : ");
+    scanf("%s", identite);
+    printf("\nSalut tu t'appelle : %s", identite);
+
+	// Seconde utilisation
+    printf("\nEntrez votre nouveau prénom et nom : ");
+    scanf("%s", &identite);
+    printf("\nSalut maintenant tu est : %s\n", identite);
+    return 0;
+}
+```
+```
+Entrez votre prénom et nom : Paul Durant
+Salut tu t'appelle : Paul
+
+Entrez votre nouveau prénom et nom : 
+Salut maintenant tu est : Durant
+```
+On remarque bien que lors de la seconde utilisation de `scanf`, l'utilisateur ne saisit rien, c'est la fonction elle même qui va lire le mot laissé dans la mémoire puis l'affiche.
 ### La fonction `fgets`
 ### La fonction `gets`
