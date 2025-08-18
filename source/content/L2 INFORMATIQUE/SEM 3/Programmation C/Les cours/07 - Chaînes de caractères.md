@@ -349,6 +349,7 @@ Entrez votre prénom et votre âge : Paul 45
 Salut Paul, tu as 45 ans
 ```
 #### Limites
+##### Lecture limitée
 
 <u>Exemple :</u>  
 On souhaite que l'utilisateur entre son nom et son prénom pour l'afficher. 
@@ -407,5 +408,15 @@ Entrez votre nouveau prénom et nom :
 Salut maintenant tu est : Durant
 ```
 On remarque bien que lors de la seconde utilisation de `scanf`, l'utilisateur ne saisit rien, c'est la fonction elle même qui va lire le mot laissé dans la mémoire puis l'affiche.
+##### Dépassement de mémoire
+Le dépassement de mémoire est un vrai cauchemar pour tout développeur, pour comprendre ce concept plus que fondamental, nous allons l'expliquer avec un exemple et des schémas visuels semblables aux précédents. 
+
+Création d'une variable `domaine` d'une taille définie, ici $6$.
+```c
+char domaine[6];
+```
+Cela signifie alors que l'on peut stocker un prénom de $5$ lettres, car le dernier emplacement mémoire de la chaîne est réservé au marqueur de fin de chaîne `\0` **à ne pas oublier !**.  
+![[tab6.svg]]
+Considérons maintenant le code suivant avec l'exécution associée.
 ### La fonction `fgets`
 ### La fonction `gets`
