@@ -435,6 +435,10 @@ Entrez votre domaine d'étude : informatique
 Domaine : informatique
 ```
 
-À première vue, rien ne semble s'être produit. Malheureusement si, on vient de faire ce qu'on appelle un *buffer overflow* ou dépassement de mémoire en français.
+À première vue, rien ne semble s'être produit. Malheureusement si, on vient de faire ce qu'on appelle un *buffer overflow* ou dépassement de mémoire en français.  
+Ce que nous avions fais c'était créer un tableau pouvant stocker des mots allant jusqu'à 5 lettres. Or ici, on lit le mot `informatique` qui contient $12$ lettre.  
+De manière visuelle, on obtient ceci : 
+![[depassementMemoire.svg]]
+En gros le tableau de base est trop petit pour stocker le mot informatique ainsi on le voit en rouge, le dépassement de mémoire.
 ### La fonction `fgets`
 ### La fonction `gets`
