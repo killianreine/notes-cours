@@ -283,5 +283,41 @@ Il y a quelques petites choses à voir sur ce code.
 Pour comprendre pourquoi il y a un `&` dans l'utilisation de `scanf` il suffit de comprendre ce que fait réellement la fonction.   
 Quand on utilise la fonction `scanf` c'est pour stocker des saisies utilisateurs dans une variable et l'utiliser plus tard. Ainsi, lorsqu'on utilise `scanf` *(on va prendre notre exemple comme référence)* pour afficher l'âge de l'utilisateur, lors de la saisie utilisateur, après validation, la fonction `scanf` recopie la saisie dans **l'adresse mémoire** de la variable âge qui doit être spécifiée dans la fonction.  
 C'est pour cette raison le `&`, en fait quand on utilise `scanf("%d", &age)` on souhaite recopier la saisie utilisateur dans l'adresse mémoire créée pour la variable âge. Pour ce faire, on ajoute `&` avant âge.
+
+Maintenant comment savoir si les données saisies par l'utilisateur sont correctes ?  
+Regardons ce qu'il se passe si à la place de taper un entier, on tape une chaîne de charactères. *On reprend le même code que l'exemple précédant*
+```
+Entrez votre age : mot
+Vous avez 31415 ans.
+```
+
+Alors là c'est étonnant, mais qu'est-ce que c'est ?  
+En fait on a rentré une chaîne de charactères au lieu d'un entier comme spécifié avec le format `%d` alors la fonction `scanf` échoue et **ne modifie pas** la variable âge. La valeur de cette dernière reste indéfinie *l'entier $31415$ est aléatoire, lors d'un autre exécution, un autre nombre sera affiché c'est pour cette raison que l'on parle de valeur indéfinie.*
+
+Il y a déjà quelques paragraphes, j'expliquais que la fonction `scanf` renvoie un entier, le nombre de variables affectées par la saisie. Et bien voilà comment vérifier la saisie utilisateur. Dans notre exemple on vas vérifier si une variable exactement a été affectée par la saisie si c'est le cas on renvoie l'âge sinon on renvoie un message d'erreur.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main() {
+    int age;
+    int result; // Variable pour stockée le résultat de scanf
+    printf("Entrez votre age : ");
+    result = scanf("%d", &age);
+    if(result==1)
+        printf("Saisie valide, Vous avez %d ans.", age);
+    else 
+	    printf("\nErreur de saisie.\n");
+    return 0;
+}
+```
+```
+Entrez votre age : 20
+Saisie valide, Vous avez 20 ans.
+
+Entrez votre age : mot
+Erreur de saisie.
+```
 ### La fonction `fgets`
 ### La fonction `gets`
