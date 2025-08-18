@@ -754,5 +754,48 @@ int main() {
 ```
 Les 3 premiers caractères sont identiques.
 ```
+
+#### Comparaison manuelle
+Comme toutes les manipulations vues sur les chaînes, on peut aussi n'utiliser aucune des fonctions vues et faire notre propre fonction de comparaison en utilisant une boucle.
+
+<u>Exemple :</u>
+```c
+#include <stdio.h>
+
+int main() {
+    char str1[] = "Bonjour";
+    char str2[] = "Bonjour";
+    int i = 0, identique = 1;
+
+    while (str1[i] != '\0' || str2[i] != '\0') {
+        if (str1[i] != str2[i]) {
+            identique = 0;
+            break;
+        }
+        i++;
+    }
+
+    if (identique) {
+        printf("Les chaînes sont identiques\n");
+    } else {
+        printf("Les chaînes sont différentes\n");
+    }
+
+    return 0;
+}
+```
+```
+Les chaînes sont identiques
+```
+On compare les deux chaînes en les parcourant selon un indice commun `i` pour accéder à l'élément à la position `i` de chaque chaîne. On boucle tant qu'au moins une des chaînes n'est pas terminée, c'est à dire tant que l'on ne rencontre pas le marqueur de fin de chaîne `\0`.  
+Si les éléments courant des chaînes sont différent on met identique à $0$ et on stoppe la boucle. En gros ça veut dire que les chaînes ne sont pas identiques. Dans le cas échéant, on incrémente l'indice et on boucle une autre fois.
 ### Rechercher
+En C, pour **rechercher un caractère ou une sous-chaîne dans une chaîne**, on utilise principalement les fonctions de `<string.h>` ou on peut le faire manuellement.
+#### La fonction `strchr`
+```c
+char *strchr(char * chaine, int lettre);
+```
+
 ### Découper
+# Complément
+## Sensibilité à la casse
