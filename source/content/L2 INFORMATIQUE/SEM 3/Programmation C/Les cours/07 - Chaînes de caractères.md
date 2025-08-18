@@ -325,6 +325,29 @@ Aussi, on a dit qu'en cas d'erreur, la fonction `scanf` renvoie `EOF`. Cela mér
 
 Pour clarifier un peu,  
 la fonction `scanf` ne renvoie pas toujours `EOF` *End Of File*, c'est seulement si une erreur d'entrée/sortie se produit ou alors si on atteint la fin d'un fichier, par exemple `Ctrl+Z` sur Windows. *Notion expliquée lors du cours sur les fichiers*. Si la saisie utilisateur ne correspond pas au format attendu, la fonction `scanf` renverra $0$. 
+
+#### Utilisation avancée
+On peut aussi lire plusieurs données **en même temps** avec la fonction `scanf`, c'est pour cette raison qu'elle possède un nombre de paramètres variables.
+
+<u>Exemple :</u>  
+On souhaite lire un mot puis un nombre.
+```c
+#include <stdio.h>
+
+int main() {
+    char prenom[100];
+    int age;
+    
+    printf("Entrez votre prénom et votre âge : ");
+    scanf("%s%d", prenom, &age);
+    printf("Salut %s, tu as %d ans", prenom, age);
+    return 0;
+}
+```
+```
+Entrez votre prénom et votre âge : Paul 45
+Salut Paul, tu as 45 ans
+```
 #### Limites
 
 <u>Exemple :</u>  
