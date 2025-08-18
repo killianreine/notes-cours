@@ -418,5 +418,23 @@ char domaine[6];
 Cela signifie alors que l'on peut stocker un prénom de $5$ lettres, car le dernier emplacement mémoire de la chaîne est réservé au marqueur de fin de chaîne `\0` **à ne pas oublier !**.  
 ![](tab6.svg)
 Considérons maintenant le code suivant avec l'exécution associée.
+```c
+#include <stdio.h>
+
+int main() {
+    char domaine[6];
+    
+    printf("Entrez votre domaine d'étude : ");
+    scanf("%s", domaine);
+    printf("Domaine : %s", domaine);
+    return 0;
+}
+```
+```
+Entrez votre domaine d'étude : informatique
+Domaine : informatique
+```
+
+À première vue, rien ne semble s'être produit. Malheureusement si, on vient de faire ce qu'on appelle un *buffer overflow* ou dépassement de mémoire en français.
 ### La fonction `fgets`
 ### La fonction `gets`
