@@ -242,6 +242,7 @@ est un tableau de $12$ caractères sans marqueur de fin de chaînes `\0`, on ne 
 | Compatible avec `%s`     | Non                   | Oui                                           |
 ## Lecture
 ### La fonction `scanf`
+#### Présentation et utilisation
 La fonction `scanf` permet de lire des saisies de données que se soit des lettres, chiffres, ou alors des chaînes de caractères entières.  
 Malgré tout, elle possède quelques inconvénient à ne pas négliger pour ne pas être surpris.
 
@@ -256,7 +257,7 @@ Oui, le prototype de ma fonction `scanf` est un peu perturbant, il prend **au mo
 Pour en revenir au prototype de `scanf`,  
 - Le paramètre `format` désigne simplement le type des variables à saisir, par exemple `%d` pour un entier.
 - La fonction renvoie un entier `int`, c'est le nombre de variables affectées par la saisie, ça permet en fait de vérifier si la saisie s'est déroulée correctement.
-- En cas d'erreur la fonction retourne `EOF` et indique la raison de l'erreur dans la variable **`erno`**. *explications plus bas*
+- En cas d'erreur la fonction retourne `EOF`. *explications plus bas* [[#^EOF]]
 
 <u>Exemple :</u>  
 Un exemple assez basique pour l'utilisation de `scanf`. On demande à l'utilisateur de saisir son âge puis on l'affiche.
@@ -292,7 +293,7 @@ Vous avez 31415 ans.
 ```
 
 Alors là c'est étonnant, mais qu'est-ce que c'est ?  
-En fait on a rentré une chaîne de charactères au lieu d'un entier comme spécifié avec le format `%d` alors la fonction `scanf` échoue et **ne modifie pas** la variable âge. La valeur de cette dernière reste indéfinie *l'entier $31415$ est aléatoire, lors d'un autre exécution, un autre nombre sera affiché c'est pour cette raison que l'on parle de valeur indéfinie.*
+En fait on a rentré une chaîne de charactères au lieu d'un entier comme spécifié avec le format `%d` alors la fonction `scanf` échoue et **ne modifie pas** la variable âge. La valeur de cette dernière reste indéfinie *l'entier $31415$ est aléatoire, lors d'une autre exécution, un autre nombre sera affiché c'est pour cette raison que l'on parle de valeur indéfinie.*
 
 Il y a déjà quelques paragraphes, j'expliquais que la fonction `scanf` renvoie un entier, le nombre de variables affectées par la saisie. Et bien voilà comment vérifier la saisie utilisateur. Dans notre exemple on vas vérifier si une variable exactement a été affectée par la saisie si c'est le cas on renvoie l'âge sinon on renvoie un message d'erreur.
 
@@ -319,5 +320,12 @@ Saisie valide, Vous avez 20 ans.
 Entrez votre age : mot
 Erreur de saisie.
 ```
+
+Aussi, on a dit qu'en cas d'erreur, la fonction `scanf` renvoie `EOF`. Cela mérite quelques explications. ^EOF
+
+Pour clarifier un peu,  
+la fonction `scanf` ne renvoie pas toujours `EOF` *End Of File*, c'est seulement si une erreur d'entrée/sortie se produit ou alors si on atteint la fin d'un fichier, par exemple `Ctrl+Z` sur Windows. *Notion expliquée lors du cours sur les fichiers*. Si la saisie utilisateur ne correspond pas au format attendu, la fonction `scanf` renverra $0$. 
+#### Limites
+
 ### La fonction `fgets`
 ### La fonction `gets`
