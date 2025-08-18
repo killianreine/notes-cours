@@ -509,3 +509,62 @@ Vous avez entré : Apprendre la prog C
 | Sécurité              | **Peu sûr** : peut dépasser le buffer si l’utilisateur tape trop       | **Très dangereux** : risque de débordement mémoire | **Sûr** si `n` correct                                                                                |
 | Gestion du `\n`       | Le `\n` reste dans le buffer                                           | Supprime le `\n`automatiquement                    | Conserve le `\n` si présent (à retirer manuellement si nécessaire)                                    |
 | Remarques             | Utiliser avec spécificateur de longueur : `%99s` pour un buffer de 100 | Obsolète et **déconseillé**, supprimé depuis C11   | Recommandé pour la lecture de chaînes. Supprimer le `\n` et vider le flux si la ligne est trop longue |
+## Fonctions de manipulation
+### Copier
+En programmation C, on peut avoir besoin de copier une chaîne de caractère et il existe 2 méthodes possibles. 
+
+Ce qui semble le plus intuitif pour commencer c'est de parcourir la chaîne a copier et copier chaque élément un à un dans une seconde chaîne.
+
+<u>Exemple :</u>
+```c
+#include <stdio.h>
+
+int main() {
+    char chaine[] = "Bonjour le monde";
+    char copie[100];
+    
+    int i = 0;
+    while(chaine[i]!='\0') {
+        copie[i]=chaine[i];
+        i++;
+    }
+    chaine[i]='\0';
+    printf("Chaine : %s \n|| Copie : %s", chaine, copie);
+    return 0;
+}
+```
+```
+Chaine : Bonjour le monde 
+|| Copie : Bonjour le monde
+```
+
+>[!warning] 
+>Ne pas oublier d'ajouter le `\0` ) à la fin de la chaine.
+
+La fonction `strcpy` de la bibliothèque `<string.h>` permet de copier une chaîne `origine` (`\0` inclus) dans une chaîne `dest`.
+```c
+char* strcpy(char *dest, const char *origine)
+```
+- elle renvoie un pointeur vers la chaîne copiée. 
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char chaine[] = "Bonjour le monde";
+    char copie[100];
+    
+    strcpy(copie, chaine);
+    printf("Chaine : %s \n|| Copie : %s", chaine, copie);
+    return 0;
+}
+```
+```
+Chaine : Bonjour le monde 
+|| Copie : Bonjour le monde
+```
+### Concaténer
+### Comparer 
+### Rechercher
+### Découper
