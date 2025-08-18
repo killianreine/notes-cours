@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -245,7 +246,7 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "7d676e04155e811d",
+  "active": "033c235600e43d95",
   "lastOpenFiles": [
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/index_chaines.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",

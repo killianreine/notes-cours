@@ -275,5 +275,13 @@ int main() {
 Entrez votre age : 20
 Vous avez 20 ans.
 ```
+
+Il y a quelques petites choses à voir sur ce code. 
+- Dans l'utilisation de `scanf` pourquoi on met `&age` pourquoi il y a un `&` ?
+- Comment on peut savoir si la donnée que l'utilisateur entre est valide ?
+
+Pour comprendre pourquoi il y a un `&` dans l'utilisation de `scanf` il suffit de comprendre ce que fait réellement la fonction.   
+Quand on utilise la fonction `scanf` c'est pour stocker des saisies utilisateurs dans une variable et l'utiliser plus tard. Ainsi, lorsqu'on utilise `scanf` *(on va prendre notre exemple comme référence)* pour afficher l'âge de l'utilisateur, lors de la saisie utilisateur, après validation, la fonction `scanf` recopie la saisie dans **l'adresse mémoire** de la variable âge qui doit être spécifiée dans la fonction.  
+C'est pour cette raison le `&`, en fait quand on utilise `scanf("%d", &age)` on souhaite recopier la saisie utilisateur dans l'adresse mémoire créée pour la variable âge. Pour ce faire, on ajoute `&` avant âge.
 ### La fonction `fgets`
 ### La fonction `gets`
