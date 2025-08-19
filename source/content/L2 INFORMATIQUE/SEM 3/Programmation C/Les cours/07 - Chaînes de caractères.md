@@ -927,6 +927,74 @@ On découpe la chaîne `chaine` en fonction du séparateur `sep`.
 
 Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais penchons nous quand même dessus, histoire de savoir ce qu'il se passe.
 ![[decoupCh.svg]]
+On considère une chaîne de caractères `s` et un délimiteur `d` tels que : 
+```c
+char* s[] = "le mon de";
+char* d[] = " ";
+```
+Pour suivre l'évolution du token `t` tel que : 
+```c
+char* token = strtok(s, d);
+```
 
-# Complément
-## Sensibilité à la casse
+>[!cite] Définition
+>Un **token** (anglais) ou **jeton** (français) est une **sous-chaîne extraite d’une chaîne plus grande**, séparée par des **délimiteurs**.
+
+- Premier appel `strtok(s, d)`
+La fonction `strtok` commence au début de `le mon de`. Elle va alors lire successivement les lettres `l` puis `e` qui ne correspondent pas au délimiteur.  
+Elle trouve ensuite un espace, qu'elle va donc remplacer par `\0`.  
+La variable `token` pointe alors vers la chaîne `le`, et la chaîne initiale devient donc : 
+```
+"le\0mon de"
+```
+
+- Deuxième appel : `strtok(NULL, d)`
+La fonction `strtok` reprend la lecture **après `\0`**, elle continue de lire les lettres `m`, `o`, `n` pour tomber à nouveau sur un délimiteur qu'elle remplace aussi par `\0`.  
+Résultat, `token` pointe désormais vers `mon` et la chaîne initiale est encore modifiée :
+```
+"le\0mon\0de"
+```
+
+- Troisième appel : `strtok(NULL, d)`
+La fonction reprend la lecture après le `\0` qu'elle vient de mettre à la place du délimiteur. Elle rencontre alors les caractères `d` et `e`, puis arrive à la fin de la chaîne en rencontrant le marqueur de fin de chaîne.  
+Résultat `token` pointe vers `de` et la chaîne n'est pas modifiée, `strtok` ne va pas modifier `\0` par `\0` ce serait inutile.
+
+- Quatrième appel : `strtok(NULL, d)`
+Plus de token, la fonction retourne `NULL` puisqu'elle a finit de lire la chaîne.
+# Sensibilité à la casse
+Ah, la **==sensibilité à la casse==** en C est un point important : par défaut, **les comparaisons de chaînes (`strcmp`, `strtok`, etc.) distinguent les majuscules et minuscules**.
+```c
+strcmp("Chat", "chat") // renvoie != 0, donc elles sont considérées différentes
+```
+
+Pour **ignorer la casse**, il y a plusieurs techniques selon ce que tu veux faire mais nous allons voir la plus simple.
+- Convertir les chaînes en minuscules ou majuscules
+Avec `tolower` ou `toupper` sur chaque caractère. 
+
+<u>Exemple :</u>
+```c
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+void to_lower(char *s) {
+    for(int i = 0; s[i]; i++) {
+        s[i] = tolower((char) s[i]);
+    }
+}
+
+int main() {
+    char s1[] = "Chat";
+    char s2[] = "chat";
+
+    to_lower(s1);
+    to_lower(s2);
+
+    if(strcmp(s1, s2) == 0) {
+        printf("Égal (insensible à la casse)\n");
+    }
+}
+```
+*Certaines des écritures sont encore un peu floues pour vous, c'est normal, nous y reviendrons plus tard...*
+
+# Suivant 

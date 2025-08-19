@@ -113,3 +113,36 @@
 	- BONUS
 		- Initialiser une matrice nulle
 7. **Les chaînes de caractères** [[07 - Chaînes de caractères]]
+	- Déclaration
+	- Initialisation
+		- Initialisation explicite
+		- Initialisation implicite
+	- Manipulation des chaînes de caractères
+		- Accès aux éléments
+		- Affichage
+		- Lecture
+			- La fonction `scanf`
+				- Présentation et utilisation
+				- Utilisation avancée
+				- Limites
+					- Lecture limitée
+					- **==Dépassement mémoire==**
+			- La fonction `gets`
+			- La fonction `fgets`
+		- Fonction de manipulation
+			- Copier
+				- Parcourir et recopier
+				- La fonction `strcpy`
+			- Concaténer
+				- La fonction `strcat`
+				- La fonction `strncat`
+			- Comparer
+				- La fonction `strcmp`
+				- La fonction `strncmp`
+				- Comparaison manuelle
+			- Rechercher
+				- La fonction `strchr`
+				- La fonction `strstr`
+			- Découper
+			- Sensibilité à la casse
+8. 
