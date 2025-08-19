@@ -998,3 +998,4 @@ int main() {
 *Certaines des écritures sont encore un peu floues pour vous, c'est normal, nous y reviendrons plus tard...*
 
 # Suivant 
+- Cours suivant : [[08 - Les pointeurs]]
