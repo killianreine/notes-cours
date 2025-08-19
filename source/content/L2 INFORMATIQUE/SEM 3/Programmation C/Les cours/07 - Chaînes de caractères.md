@@ -792,10 +792,71 @@ Si les éléments courant des chaînes sont différent on met identique à $0$ e
 ### Rechercher
 En C, pour **rechercher un caractère ou une sous-chaîne dans une chaîne**, on utilise principalement les fonctions de `<string.h>` ou on peut le faire manuellement.
 #### La fonction `strchr`
+Le fonction `strchr` de la bibliothèque `<string.h>` permet de localiser la première occurrence d'un caractère dans une chaîne de caractères.
 ```c
-char *strchr(char * chaine, int lettre);
+char *strchr(char * chaine, int car);
+```
+- Elle prend en paramètres :
+	- Une chaîne de caractères `chaine`, c'est là ou on effectue la recherche
+	- Un entier qui correspond au caractère recherché *pour rappel `char` est aussi un entier, le code ASCII du caractère*
+- Elle renvoie un pointeur vers l'occurrence du caractère. Le cas échéant, la fonction renverra `NULL`.
+
+>[!info] Remarque
+>Si `car = \0` alors la fonction renverra un pointeur vers la fin de la chaîne.
+
+<u>Exemple :</u>  
+On récupère la première occurrence de la lettre `o` et on affiche la sous-chaîne à partir de ce dernier.
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    const char *texte = "Bonjour le monde";
+    char *ptr; // Le pointeur vers l'occurrence
+
+    ptr = strchr(texte, 'o');
+
+    if (ptr != NULL) {
+        printf("Caractère trouvé : '%c'\n", *ptr);
+        printf("Sous-chaîne à partir du 'o' : \"%s\"\n", ptr);
+    } else {
+        printf("Caractère non trouvé\n");
+    }
+
+    return 0;
+}
+```
+```
+Caractère trouvé : 'o'
+Sous-chaîne à partir du 'o' : "onjour le monde"
 ```
 
+$\boxed{\text{Si pas d'occurence trouvée}}$  
+Jusque là c'est assez simple, on a pris un exemple dans lequel la lettre `o` était présente dans la chaîne. Et puis même si ce dernier n'était pas présent, c'est le bloc `else` qui aurait pris le relai et affiché que le caractère n'a pas été trouvé.
+
+Mais maintenant, on considère la chaîne `informatique` et on cherche l'occurrence de la lettre `b`, sans savoir si cette dernière est présente dans le mot. On va alors rechercher avec `strchr` sans vérifier si le pointeur existe.  
+L'objectif est de comprendre ce qu'il va se passer pour ne pas le reproduire.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char *chaine = "informatique";
+    char *ptr;
+
+    // Recherche du premier 'z'
+    ptr = strchr(chaine, 'z');
+
+        printf("Caractère trouvé : '%c'\n", *ptr);
+        printf("Sous-chaîne à partir du 'o' : \"%s\"\n", ptr);
+
+    return 0;
+}
+```
+```bash
+Segmentation fault
+```
 ### Découper
 # Complément
 ## Sensibilité à la casse
