@@ -48,20 +48,7 @@
     <text x="530" y="90" text-anchor="middle" class="index">t</text>
   </g>
 
-<!-- Brace animée avec répétition toutes les 10s -->
-<path class="brace" d="M 20 130 C 20 150, 20 150, 40 150 L 580 150 C 600 150, 600 150, 600 130"
-      fill="none" stroke="black" stroke-width="2"
-      stroke-dasharray="1200" stroke-dashoffset="1200">
-  <animate id="anim"
-           attributeName="stroke-dashoffset"
-           from="1200" to="0"
-           dur="2s"
-           begin="0s;anim.end+10s"
-           fill="freeze" />
-</path>
-
-<text x="300" y="170" text-anchor="middle" class="index brace-text">
-  tableau de taille t+1
-</text>
-
+  <!-- Brace -->
+  <path class="brace" d="M 20 130 C 20 150, 20 150, 40 150 L 580 150 C 600 150, 600 150, 600 130" />
+  <text x="300" y="170" text-anchor="middle" class="index brace-text">tableau de taille t+1</text>
 </svg>
