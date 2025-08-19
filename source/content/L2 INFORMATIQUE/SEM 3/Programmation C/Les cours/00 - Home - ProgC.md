@@ -30,6 +30,7 @@ Table des matières complète : [[Prog C - Table des matières]]
 - Cours 05 : [[05 - Retour sur les fonctions]]
 - Cours 06 : [[06 - Les tableaux statiques]]
 - Cours 07 : [[07 - Chaînes de caractères]]
+- Cours 08 : [[08 - Les pointeurs]]
 
 ## Ressources
 

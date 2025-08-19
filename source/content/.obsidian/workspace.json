@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prog C - Table des matières"
+              "title": "00 - Home - ProgC"
             }
           }
         ],
@@ -64,13 +64,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Prog C - Table des matières"
+              "title": "Plan de 00 - Home - ProgC"
             }
           }
         ]
@@ -247,6 +247,7 @@
   },
   "active": "1465eecd6da8a1b0",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",
@@ -261,7 +262,6 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/tableauTaille6.svg.txt",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/indicesMot.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
     "Autres supports/JavaScript/01 - Les variables.md",
     "Autres supports/JavaScript/00 - Home.md",
