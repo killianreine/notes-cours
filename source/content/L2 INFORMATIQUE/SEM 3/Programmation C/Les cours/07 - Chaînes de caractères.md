@@ -861,6 +861,63 @@ Qu-est-ce que ça veut dire ? Comment cela s'est-il produit ?
 
 On cherche la lettre `z` dans le chaîne `informatique` naturellement, cette dernière n'apparaît pas dans le mot alors lors de l'utilisation de la fonction `strchr` le pointeur `ptr` sera égal à `NULL`.  
 Ensuite **sans vérifier l'existence du pointeur** vous souhaitez afficher le caractère trouvé. Puisqu'ici `ptr=NULL` vous essayez d'accéder à l'adresse `0x0` ce qui est interdit en C, l'erreur <span class="error-inline">segmentation fault</span> *erreur d'exécution* se produit.
+
+C'est pour cette raison qu'il faut ***vérifier l'existence du pointeur avant d'exploiter les résultats*** puisque s'il n'existent pas, ça risque de faire planter votre code dans la majeure partie des cas.
+
+- ***SOLUTION*** 
+```c
+if(*ptr){
+	// Code a exécuter si occurrence trouvée
+} else {
+	// Code a exécuté si occurence absente
+}
+```
+
+#### La fonction `strstr`
+Elle permet cette fois de **rechercher une sous-chaîne** au lieu d'un simple caractère (avec `strchr`).
+```c
+char *strstr(char *ch, char *motif);
+```
+Elle permet de rechercher `motif` dans la chaîne `ch`.  
+Elle retourne :
+- Un pointeur vers la première occurrence de `motif` si elle existe
+- `NULL` le cas échéant
+
+>[!info] Remarque
+>```c
+>ptr = strstr(chaine, "");
+>```
+>Renverra en fait la chaîne de caractère `chaine`.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char *chaine = "informatique";
+    char *ptr;
+
+    // Recherche d'une sous-chaîne qui n'existe pas
+    ptr = strstr(chaine, "zzz");
+    if(ptr){
+        printf("Motif trouvé : \"%s\"\n", ptr);
+    }else{
+        printf("Motif absent ici....");
+    }
+
+    return 0;
+}
+```
+```
+Motif absent ici....
+```
+
+>[!tip] Astuce
+>Les deux écritures suivantes en C sont strictement équivalentes :
+>```c
+>if(ptr) === if(ptr != NULL)
+>``` 
 ### Découper
 # Complément
 ## Sensibilité à la casse
