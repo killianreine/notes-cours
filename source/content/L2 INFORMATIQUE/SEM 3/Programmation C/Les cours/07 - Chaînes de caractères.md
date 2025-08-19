@@ -919,5 +919,14 @@ Motif absent ici....
 >if(ptr) === if(ptr != NULL)
 >``` 
 ### Découper
+La fonction `strtok` permet de découper une chaîne de caractères en morceaux selon des séparateurs. 
+```c
+char *strtok(char *chaine, char *sep);
+```
+On découpe la chaîne `chaine` en fonction du séparateur `sep`. 
+
+Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais penchons nous quand même dessus, histoire de savoir ce qu'il se passe.
+![[decoupCh.svg]]
+
 # Complément
 ## Sensibilité à la casse
