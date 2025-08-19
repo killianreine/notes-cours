@@ -1,0 +1,38 @@
+<svg width="500" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Définition des styles -->
+  <defs>
+    <style>
+      .variable-box { fill: #e0f2fe; stroke: #2563eb; stroke-width: 2.5; rx: 8; ry: 8; filter: url(#shadow); }
+      .pointer-box { fill: #fff7ed; stroke: #f97316; stroke-width: 2.5; rx: 8; ry: 8; filter: url(#shadow); }
+      .text-label { font-family: Arial, sans-serif; font-size: 14px; fill: #374151; text-anchor: middle; }
+      .text-value { font-family: monospace; font-size: 16px; font-weight: bold; fill: #1f2937; text-anchor: middle; }
+      .text-small { font-family: Arial, sans-serif; font-size: 11px; fill: #6b7280; text-anchor: middle; }
+      .arrow { stroke: #f97316; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+
+    <!-- Flèche -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="6" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#f97316" />
+    </marker>
+
+    <!-- Ombre -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1.5" dy="1.5" stdDeviation="2" flood-color="#888" />
+    </filter>
+  </defs>
+
+  <!-- Variable x -->
+  <rect x="50" y="80" width="120" height="80" class="variable-box" />
+  <text x="110" y="110" class="text-label">Variable x</text>
+  <text x="110" y="135" class="text-value">42</text>
+  <text x="110" y="155" class="text-small">adresse: 0x1000</text>
+
+  <!-- Pointeur ptr -->
+  <rect x="330" y="80" width="120" height="80" class="pointer-box" />
+  <text x="390" y="110" class="text-label">Pointeur ptr</text>
+  <text x="390" y="135" class="text-value">0x1000</text>
+  <text x="390" y="155" class="text-small">pointe vers x</text>
+
+  <!-- Flèche du pointeur vers la variable -->
+  <path d="M 330 120 C 280 120, 200 120, 170 120" class="arrow" />
+</svg>
