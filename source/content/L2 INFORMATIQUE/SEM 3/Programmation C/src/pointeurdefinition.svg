@@ -20,7 +20,7 @@
     <rect x="0" y="0" width="160" height="80" class="cell"/>
     <text x="80" y="22" text-anchor="middle" class="label">pointeur (p)</text>
     <line x1="10" y1="36" x2="150" y2="36" stroke="#1f4e79" stroke-width="1.5"/>
-    <text x="15" y="55" class="index">type: t</text>
+    <text x="15" y="55" class="index">type: t*</text>
     <text x="15" y="70" class="index">contient: 0x1000</text>
   </g>
   <!-- Mémoire : variable x -->
@@ -28,7 +28,7 @@
     <rect x="0" y="0" width="150" height="80" class="cell"/>
     <text x="75" y="22" text-anchor="middle" class="label">variable (x)</text>
     <line x1="10" y1="36" x2="140" y2="36" stroke="#1f4e79" stroke-width="1.5"/>
-    <text x="15" y="55" class="index">valeur: val</text>
+    <text x="15" y="55" class="index">valeur: v</text>
     <text x="15" y="70" class="index">adresse: 0x1000</text>
   </g>
   <!-- Flèche du pointeur vers la variable -->
