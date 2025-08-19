@@ -854,9 +854,13 @@ int main() {
     return 0;
 }
 ```
-```bash
+```
 Segmentation fault
 ```
+Qu-est-ce que ça veut dire ? Comment cela s'est-il produit ? 
+
+On cherche la lettre `z` dans le chaîne `informatique` naturellement, cette dernière n'apparaît pas dans le mot alors lors de l'utilisation de la fonction `strchr` le pointeur `ptr` sera égal à `NULL`.  
+Ensuite **sans vérifier l'existence du pointeur** vous souhaitez afficher le caractère trouvé. Puisqu'ici `ptr=NULL` vous essayez d'accéder à l'adresse `0x0` ce qui est interdit en C, l'erreur <span class="error-inline">segmentation fault</span> *erreur d'exécution* se produit.
 ### Découper
 # Complément
 ## Sensibilité à la casse
