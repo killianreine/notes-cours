@@ -104,7 +104,7 @@ int main() {
 >Les indices commencent à 0 qui correspond au premier caractère de la chaine jusqu'à $t-1$ pour le dernier caractère de la chaîne. Et, le `\0` caractère nul pour marquer la fin de la chaîne est l'élément d'indice $t$.
 
 Ainsi en considérant une chaîne de $t$ éléments, voici les indices de manière schématique.
-<img src="../src/indicesMot.svg"/>
+![[indicesMot.svg]]
 On voit donc que pour un mot de taille $t$, un tableau de taille `t+1` sera créé pour stocker chaque caractère du mot en entier et un emplacement mémoire supplémentaire est ajouté pour stocker le caractère de fin de chaîne `\0`. C'est pour cela que pour un mot de taille $t$, le tableau qui stocke le mot sera de taille $t+1$.
 
 ## Affichage
