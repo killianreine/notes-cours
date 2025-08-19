@@ -7,3 +7,4 @@ En langage C, les variables sont stockées dans des endroits différents de la *
 | Globale / statique | Segment statique            | Pendant exécution de **tout le programme**              | Partout dans le fichier                          |
 | Dynamique          | Tas *heap*                  | Jusqu'à libération de la ressource *sera vue plus tard* | Accès via pointeur                               |
 | Constante          | Segment constant            | Pendant l'exécution de **tout le programme**            | Peut être locale ou globale selon la déclaration |
+## Variable locale
