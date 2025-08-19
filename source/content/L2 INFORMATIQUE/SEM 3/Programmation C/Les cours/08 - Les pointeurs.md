@@ -1,4 +1,4 @@
-# Quelques précisions s'imposent
+# Précisions sur le stockage des variables
 En langage C, les variables sont stockées dans des endroits différents de la **mémoire** selon leur type et leur portée. Voici les principaux types de variables : 
 
 | Type de variable   | Stockage<br>Segment mémoire | Durée de vie                                            | Portée                                           |
