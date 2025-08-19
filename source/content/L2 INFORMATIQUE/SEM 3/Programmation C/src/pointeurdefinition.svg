@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="140" viewBox="0 0 480 140">
+  <defs>
+    <style>
+      .cell { fill: #e6f0fa; stroke: #1f4e79; stroke-width: 2; rx: 8; ry: 8; }
+      .label { font-family: 'Fira Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 16px; fill: #1f4e79; }
+      .index { font-family: 'Fira Mono', 'DejaVu Sans Mono', monospace; font-size: 14px; fill: #163758; }
+      .caption { font-family: 'Fira Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 14px; fill: #1f4e79; }
+      .brace { fill: none; stroke: #1f4e79; stroke-width: 2; }
+      .brace-text { fill: #1f4e79; }
+      .note { font-family: 'Fira Mono', 'DejaVu Sans Mono', monospace; font-size: 12px; fill: #1f4e79; }
+    </style>
+    <!-- Flèche -->
+    <marker id="arrowhead" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 9 3, 0 6" fill="#1f4e79" />
+    </marker>
+  </defs>
+  <!-- Mémoire : pointeur p -->
+  <g id="ptr-p" transform="translate(20,20)">
+    <rect x="0" y="0" width="160" height="80" class="cell"/>
+    <text x="80" y="22" text-anchor="middle" class="label">pointeur (p)</text>
+    <line x1="10" y1="36" x2="150" y2="36" stroke="#1f4e79" stroke-width="1.5"/>
+    <text x="15" y="55" class="index">type: t</text>
+    <text x="15" y="70" class="index">contient: 0x1000</text>
+  </g>
+  <!-- Mémoire : variable x -->
+  <g id="var-x" transform="translate(300,20)">
+    <rect x="0" y="0" width="150" height="80" class="cell"/>
+    <text x="75" y="22" text-anchor="middle" class="label">variable (x)</text>
+    <line x1="10" y1="36" x2="140" y2="36" stroke="#1f4e79" stroke-width="1.5"/>
+    <text x="15" y="55" class="index">valeur: val</text>
+    <text x="15" y="70" class="index">adresse: 0x1000</text>
+  </g>
+  <!-- Flèche du pointeur vers la variable -->
+  <path d="M 180 55 C 220 55, 260 55, 300 55" stroke="#1f4e79" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+  <!-- Accolades explicatives -->
+  <path class="brace" d="M 10 110 C 10 120, 10 120, 20 120 L 170 120 C 190 120, 190 120, 190 110" />
+  <text x="100" y="133" text-anchor="middle" class="index brace-text">p stocke une adresse (0x1000)</text>
+  <path class="brace" d="M 290 110 C 290 120, 290 120, 310 120 L 440 120 C 460 120, 460 120, 460 110" />
+  <text x="375" y="133" text-anchor="middle" class="index brace-text">x est la case mémoire ciblée</text>
+</svg>
