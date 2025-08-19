@@ -145,4 +145,4 @@
 				- La fonction `strstr`
 			- Découper
 			- Sensibilité à la casse
-8. 
+8. **Les pointeurs** [[08 - Les pointeurs]]
