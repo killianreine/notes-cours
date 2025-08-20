@@ -15,7 +15,7 @@ L'**Algorithmique et programmation** est une Unité d'Enseignement Disciplinaire
 
 ## Mathématiques pour l'informatique 1
 L'UE **Mathématiques pour l'informatique** permet de réintroduire des notions vues au lycée puis de nouvelles notions appliquées à l'informatique : Relation binaire par exemple.
-- <u>Support de cours :</u> *Prochainement...*
+- <u>Support de cours :</u> *Aucun...*
 - <u>Durée de l'UE :</u> 50 heures
 
 ## Programmation python
