@@ -9,7 +9,7 @@ Les objets déjà évoqués dans les cours précédents *(tableau, fonction, var
 
 **Expliquons ce schéma**  
 On considère un pointeur `p` de type `t` et une variable `x` de valeur `v`. En fait la variable `x` est une adresse mémoire `0x1000` qui contient la valeur `v`.  
-En fait le pointeur `p` lui il va **stocker l'adresse mémoire** de la variable `x` au lieu de stocker la valeur stockée dans la variable. Le pointeur sera de type `t*` et la variable `x` de type `t`.
+En fait le pointeur `p` lui il va **stocker l'adresse mémoire** de la variable `x` au lieu de stocker directement la valeur de la variable. Le pointeur sera de type `t*` et la variable `x` de type `t`.
 
 ## La notion d'adresse
 Comme expliqué précédemment, un pointeur permet de stocker l'adresse d'une variable. Il est donc nécessaire de comprendre la notion de variable pour pouvoir continuer.  
@@ -30,3 +30,8 @@ Ce qui est pratique c'est que vous n'aurez jamais besoin de connaître l'adresse
 ```
 
 ## Retour sur les pointeurs
+Bon si je résume, un pointeur permet de stocker l'adresse mémoire d'une variable. Maintenant c'est vrai, on peut se demander si ça a un intérêt parce que là.
+
+En fait un pointeur permet de manipuler des données pouvant être importante de manière simple. Par exemple au lieu de passer un élément d'une grande taille en paramètre de fonction, on peut simplement donner le pointeur vers cet élément.  
+Vous vous rappelez, on a évoqué la notion de tableau pendant le **cours 6**, en disant qu'ils permettent de stocker un nombre fixe d'éléments du même type. Et bien si on stocke des pointeurs dans les emplacements d'un tableau, on pourra stocker des éléments de différentes tailles, ou même ajouter des éléments au tableau pendant son utilisation.  
+C'est ce qu'on appelle un **==tableau dynamique==** *notion qui sera évoquée dans un autre cours*.
