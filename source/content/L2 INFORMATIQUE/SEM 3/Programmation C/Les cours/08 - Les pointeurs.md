@@ -37,7 +37,7 @@ Bon si je résume, un pointeur permet de stocker l'adresse mémoire d'une variab
   C'est ce qu'on appelle un **==tableau dynamique==** *notion qui sera évoquée dans un autre cours*.
 - Enfin, un pointeur permet de créer des **==structures chaînées==** *notion qui sera aussi évoquée plus tard*
 
-# Déclaration et initialisation
+## Déclaration et initialisation
 Pour définir un pointeur il faut préciser le type de la variable que ce dernier va pointer.  
 Ainsi si on considère un pointeur `pointeur` qui pointe une variable de type `type` alors on déclarera le pointeur de la manière suivante :
 ```c
@@ -64,3 +64,6 @@ int a = 2;
 int *p = &a;
 ```
 Ici le pointeur `p` pointe vers la variable `a`.
+
+## Modification et accès à la variable pointée
+

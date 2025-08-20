@@ -18,12 +18,14 @@ L'UED **base de données** permet d'introduire les principaux concepts relatifs 
 
 ## Programmation fonctionnelle
 L'UE **programmation fonctionnelle** est une Unité d'Enseignement Disciplinaire (UED) commune aux étudiants d'informatique. Au programme, vous découvrirez les principes de bases de la programmation fonctionnelle grâce aux langage Haskell, ensuite vous verrez comment Java lui aussi possède certains aspects fonctionnels.
-- <u>Support de cours :</u> *aucun support...*
+- <u>Support de cours :</u> [[Java fonctionnel Cours 2024-25.pdf]]  
+  *==Support année 2024-25== par K. REINE*
 - <u>Durée de l'UE :</u> 20 heures
 
 ## Mathématiques pour l'informatique 2
 L'UE **Mathématiques pour l'informatique** est une continuité de la même UE du même nom enseignée au second semestre de la première année. Au programme : Relation binaire, Graphes, Algèbre de Boole et Codage linéaire.
-- <u>Support de cours :</u> *à venir...*
+- <u>Support de cours :</u> [[MPI Cours 2024-25.pdf]]  
+  *==Support année 2024-25== par K. REINE*
 - <u>Durée de l'UE :</u> 50 heures
 
 # Unités d'Enseignements Transversal - UET

@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 - Les pointeurs"
+              "title": "Information L2 S3"
             }
           }
         ],
@@ -64,13 +64,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de 08 - Les pointeurs"
+              "title": "Plan de Information L2 S3"
             }
           }
         ]
@@ -247,10 +247,17 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "df83d3f9f9bb37ab",
+  "active": "1465eecd6da8a1b0",
   "lastOpenFiles": [
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",
+    "L2 INFORMATIQUE/SEM 3/Support pdf/Java fonctionnel Cours 2024-25.pdf",
+    "L2 INFORMATIQUE/SEM 3/Support pdf/MPI Cours 2024-25.pdf",
+    "L2 INFORMATIQUE/SEM 3/Support pdf/Java_fonctionnel_L2_Cours_2425.pdf",
+    "L2 INFORMATIQUE/SEM 3/Support pdf/Maths_pour_l_info_L2_Cours_2425-3.pdf",
+    "L2 INFORMATIQUE/SEM 3/Support pdf",
+    "L2 INFORMATIQUE/SEM 3/Nouveau dossier",
+    "index.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/pointeurdefinition.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/Nouveau Document texte.txt",
     "07 - Chaînes de caractères.pdf",
@@ -273,17 +280,11 @@
     "Autres supports/JavaScript/00 - Home.md",
     "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
     "Autres supports/readme Autre.md",
-    "index.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
-    "Autres supports/JavaScript/Cours_ProgJS-PART1.pdf",
     "Autres supports/JavaScript/02 - Valeurs, types et opérateurs.md",
     "Autres supports/JavaScript/01 - Introduction à JavaScript.md",
     "Autres supports/JavaScript/Prog JS - Table des matières.md",
     "Autres supports/TypeScript/01 - Variables et portées.md",
-    "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Fiche mth M6.pdf",
-    "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Algèbre_L1_2526_Mth6_Méthode_algébrique.pdf",
-    "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Fiche mth M5.pdf",
-    "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Fiche mth M4.pdf",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Correction de l'examen AP4 2024.md",
     "L2 INFORMATIQUE/SEM 4/AlgoProg 4/Cours - AlgoProg4.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
