@@ -23,3 +23,10 @@ En réalité, la mémoire est composée de pleins de cases que l'on appelle **==
 Chaque case est identifiée par un numéro, c'est **==l'adresse==**. On sait maintenant que l'on peut accéder à une variable de deux manières :
 - Grâce à son nom
 - Grâce à l'adresse du premier emplacement mémoire alloué à la variable
+
+Ce qui est pratique c'est que vous n'aurez jamais besoin de connaître l'adresse mémoire d'une variable donc jamais à devoir l'écrire d'autant plus que celle ci est **différente lors de chaque exécution** de votre programme. Soit `var` une variable d'un certain type. Alors pour accéder à l'adresse mémoire de celle ci, il suffit de la préfixer d'un *et commercial* `&` :
+```c
+&var
+```
+
+## Retour sur les pointeurs
