@@ -32,6 +32,20 @@ Ce qui est pratique c'est que vous n'aurez jamais besoin de connaître l'adresse
 ## Retour sur les pointeurs
 Bon si je résume, un pointeur permet de stocker l'adresse mémoire d'une variable. Maintenant c'est vrai, on peut se demander si ça a un intérêt parce que là.
 
-En fait un pointeur permet de manipuler des données pouvant être importante de manière simple. Par exemple au lieu de passer un élément d'une grande taille en paramètre de fonction, on peut simplement donner le pointeur vers cet élément.  
-Vous vous rappelez, on a évoqué la notion de tableau pendant le **cours 6**, en disant qu'ils permettent de stocker un nombre fixe d'éléments du même type. Et bien si on stocke des pointeurs dans les emplacements d'un tableau, on pourra stocker des éléments de différentes tailles, ou même ajouter des éléments au tableau pendant son utilisation.  
-C'est ce qu'on appelle un **==tableau dynamique==** *notion qui sera évoquée dans un autre cours*.
+- En fait un pointeur permet de manipuler des données pouvant être importante de manière simple. Par exemple au lieu de passer un élément d'une grande taille en paramètre de fonction, on peut simplement donner le pointeur vers cet élément.  
+- Vous vous rappelez, on a évoqué la notion de tableau pendant le **cours 6**, en disant qu'ils permettent de stocker un nombre fixe d'éléments du même type. Et bien si on stocke des pointeurs dans les emplacements d'un tableau, on pourra stocker des éléments de différentes tailles, ou même ajouter des éléments au tableau pendant son utilisation.  
+  C'est ce qu'on appelle un **==tableau dynamique==** *notion qui sera évoquée dans un autre cours*.
+- Enfin, un pointeur permet de créer des **==structures chaînées==** *notion qui sera aussi évoquée plus tard*
+
+# Déclaration et initialisation
+Pour définir un pointeur il faut préciser le type de la variable que ce dernier va pointer.  
+Ainsi si on considère un pointeur `pointeur` qui pointe une variable de type `type` alors on déclarera le pointeur de la manière suivante :
+```c
+type *pointeur;
+```
+Le `type` peut être un type primaire *entier, caractère* qu'un type complexe.
+
+>[!info] Remarque
+>Un pointeur peut ne pas être typé.  
+>Dans ce cas là on utilise `void *pointeur`. Ce genre d'écriture sert de **pointeur de transition** avant un transtypage qui permettra de définir le type de donnée pointée.  
+>*Notion de transtypage requise, sera abordée plus tard*
