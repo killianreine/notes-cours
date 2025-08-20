@@ -146,17 +146,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "L1 MIPSI/SEM 1/Algèbre de base/Fiche de cours/Nombres complexes - Cours.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Nombres complexes - Cours"
+              "title": "Rétrolien pour 08 - Les pointeurs"
             }
           },
           {
@@ -223,8 +223,7 @@
               "title": "Cartes à apprendre"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -233,6 +232,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
