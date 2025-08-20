@@ -122,3 +122,39 @@ int main(){
 ```
 La valeur de la variable pointée par ptr est : 42
 ```
+
+C'est super cool maintenant voilà ce que tu sais faire avec un pointeur : 
+- Déclarer et initialiser ton pointeur
+- Accéder au contenu de l'adresse mémoire grâce à son pointeur
+- Modifier le contenu de l'adresse mémoire grâce au pointeur
+
+Et si on faisait un test,  
+que se passe t-il si on décide de stocker la valeur du pointeur avant de la modifier, de modifier le pointeur et d'afficher les deux valeurs ? Deux issues s'offrent à nous :
+- `content` aura le même contenu que l'adresse mémoire modifiée avec le pointeur
+- `content` n'aura pas le même contenu
+
+```c
+#include <stdio.h>
+
+int main(){
+	int var = 2;
+	int *ptr = &var;
+	
+	// On récupère la valeur de l'adresse mémoire pointée par ptr avant modif
+	int content = *ptr;
+	
+	// Modification du contenu de var via un pointeur
+	*ptr = 42;
+	
+	// Affichage des valeurs
+	printf("La valeur de la variable pointée par ptr est : %d\n", *ptr);
+	printf("La valeur de content est : %d" content);
+	
+	return 0;
+}
+```
+```
+La valeur de la variable pointée par ptr est : 42
+La valeur de content est : 2
+```
+Les deux résultats sont différents, mais pourquoi ?
