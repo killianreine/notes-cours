@@ -66,4 +66,31 @@ int *p = &a;
 Ici le pointeur `p` pointe vers la variable `a`.
 
 ## Modification et accès à la variable pointée
+L'accès et la modification par le biais d'un pointeur s'avère plus complexe que pour des variables simples. On considère un pointeur `ptr` qui pointe une variable `var` qui elle même permet de stocker l'entier $2$ *(Cf. code au dessus)*.  
+En fait, ce que l'on cherche à faire c'est à pouvoir accéder à la valeur stocker dans la variable `a` à partir du pointeur `ptr`.  Et bien c'est pas si compliqué on utilise l'adresse mémoire d'où se trouve la variable.  
+Ainsi, on procèdera comme ceci :
+```c
+#include <stdio.h>
 
+int main(){
+	int var = 2;
+	int *ptr = &var;
+	
+	// Affichage de la valeur
+	printf("La valeur de la variable pointée par ptr est : %d\n", *ptr);
+	
+	return 0;
+}
+```
+```
+La valeur de la variable pointée par ptr est : 2
+```
+
+En fait, en considérant une variable `var` qui contient une valeur et un pointeur `ptr` qui pointe vers la variable `var`. Alors pour accéder au contenu de la variable `var` on utilise la forme suivant : 
+```c
+type contenuVar = *ptr;
+```
+Alors pourquoi comme ça :
+- `var` contient un élément d'un certain type
+- `ptr` contient l'adresse mémoire de la variable `var`
+- Ainsi, `*ptr` donne accès au contenu de la zone mémoire pointée, donc ici `var`.
