@@ -51,3 +51,16 @@ Le `type` peut être un type primaire *entier, caractère* qu'un type complexe.
 >*Notion de transtypage requise, sera abordée plus tard*
 
 Le caractère `*` permet de dire au compilateur qu'il s'agit d'un pointeur et non d'une variable ordinaire. Et, en principe comme vous donnez le type de la variable pointée, le compilateur saura aussi par la même occasion le nombre de bloc qui suivent l'adresse pointée *(= l'espace mémoire utilisée par la variable)*.
+
+Maintenant il faut l'initialiser,  
+si vous n'initialisez pas votre pointeur il risque de pointer vers n'importe quoi. 
+```c
+pointeur = &variable;
+```
+
+<u>Exemple :</u>
+```c
+int a = 2;
+int *p = &a;
+```
+Ici le pointeur `p` pointe vers la variable `a`.

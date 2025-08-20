@@ -223,7 +223,8 @@
               "title": "Cartes à apprendre"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -246,7 +247,7 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "1465eecd6da8a1b0",
+  "active": "df83d3f9f9bb37ab",
   "lastOpenFiles": [
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
