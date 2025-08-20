@@ -49,3 +49,5 @@ Le `type` peut être un type primaire *entier, caractère* qu'un type complexe.
 >Un pointeur peut ne pas être typé.  
 >Dans ce cas là on utilise `void *pointeur`. Ce genre d'écriture sert de **pointeur de transition** avant un transtypage qui permettra de définir le type de donnée pointée.  
 >*Notion de transtypage requise, sera abordée plus tard*
+
+Le caractère `*` permet de dire au compilateur qu'il s'agit d'un pointeur et non d'une variable ordinaire. Et, en principe comme vous donnez le type de la variable pointée, le compilateur saura aussi par la même occasion le nombre de bloc qui suivent l'adresse pointée *(= l'espace mémoire utilisée par la variable)*.

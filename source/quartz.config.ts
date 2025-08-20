@@ -92,3 +92,19 @@ const config: QuartzConfig = {
 }
 
 export default config
+
+import { Layout } from "./quartz/cfg"
+import * as Component from "./quartz/components"
+
+export const defaultLayout: Layout = {
+  // contenu principal au centre
+  content: [
+    Component.PageTitle(),
+    Component.Content(),
+  ],
+  // pas de sidebar gauche
+  left: [],
+  // pas de sidebar droite
+  right: [],
+}
+
