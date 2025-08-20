@@ -76,8 +76,11 @@ int main(){
 	int var = 2;
 	int *ptr = &var;
 	
+	// Récupérer la valeur grâce au pointeur
+	int content = *ptr;
+	
 	// Affichage de la valeur
-	printf("La valeur de la variable pointée par ptr est : %d\n", *ptr);
+	printf("La valeur de la variable pointée par ptr est : %d\n", content);
 	
 	return 0;
 }
@@ -94,3 +97,28 @@ Alors pourquoi comme ça :
 - `var` contient un élément d'un certain type
 - `ptr` contient l'adresse mémoire de la variable `var`
 - Ainsi, `*ptr` donne accès au contenu de la zone mémoire pointée, donc ici `var`.
+
+Super maintenant tu sais comment accéder au contenu d'une adresse mémoire via un pointeur. La prochaine étape c'est de savoir la modifier et pas de panique c'est pas très dur.  
+Si on utilise `*ptr` pour accéder au contenu de l'emplacement mémoire pointé par `ptr` alors on utilise `*ptr` pour modifier le contenu de la case mémoire :
+```
+*ptr = nouvelleValeur;
+```
+
+En reprenant l'exemple précédant, on souhaite stocker $42$ à la place de $2$ :
+```c
+int main(){
+	int var = 2;
+	int *ptr = &var;
+	
+	// Modification du contenu de var via un pointeur
+	*ptr = 42;
+	
+	// Affichage de la valeur
+	printf("La valeur de la variable pointée par ptr est : %d\n", *ptr);
+	
+	return 0;
+}
+```
+```
+La valeur de la variable pointée par ptr est : 42
+```
