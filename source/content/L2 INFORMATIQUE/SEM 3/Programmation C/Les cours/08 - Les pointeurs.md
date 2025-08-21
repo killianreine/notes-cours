@@ -175,3 +175,34 @@ La justification est à comprendre.
   *ptr = 42;
     ```
     Ce qu'il se passe c'est que `*ptr`, *donc l'adresse (le contenu)* de la variable `var` change et devient $42$. Pour ce qui est de la variable `content` elle n'a aucun lien avec l'adresse mémoire de `var` *(elle possède la sienne)* ainsi, la modification du pointeur de `var` n'a d'incidence que sur lui même et non sur `content` d'où le résultat différent lors de l'affichage final.
+
+$\boxed{\text{Solution au problème}}$  
+En fait si on souhaite que `content = ptr`, il faut que `content` soit un pointeur du même type que `ptr` et qu'il pointe vers la même chose que lui c'est à dire la variable `var`.
+```c
+int *content = ptr;
+```
+Après cette ligne, `content` reçoit une copie de `ptr`, l'adresse mémoire de la variable `var`.
+```c
+#include <stdio.h>
+
+int main(){
+	int var = 2;
+	int *ptr = &var;
+	
+	// Faire en sorte que content pointe vers la même chose que ptr
+	int *content = ptr;
+	
+	// Modification du contenu de var via un pointeur
+	*ptr = 42;
+	
+	// Affichage des valeurs
+	printf("La valeur de la variable pointée par ptr est : %d\n", *ptr);
+	printf("La valeur de content est : %d", *content);
+	
+	return 0;
+}
+```
+```
+La valeur de la variable pointée par ptr est : 42
+La valeur de content est : 42
+```
