@@ -157,4 +157,21 @@ int main(){
 La valeur de la variable pointée par ptr est : 42
 La valeur de content est : 2
 ```
-Les deux résultats sont différents, mais pourquoi ?
+Les deux résultats sont différents, mais pourquoi ?  
+La justification est à comprendre. 
+- Initialement, on a une variable `var` qui contient $2$ et un pointeur `ptr` qui contient l'adresse de `var`. Ainsi `*ptr` contient de contenu de l'adresse mémoire de `var` qui ici est $2$.
+- À la ligne suivante, 
+  ```c
+  int content = *ptr;
+	```
+	Ce qu'il se passe ici c'est que on créé une variable `content` qui récupère comme son nom l'indique, la valeur pointée par `*ptr`.
+- À ce moment là on a : 
+  ```c
+  *ptr = 2;
+  content = 2;
+    ```
+- Ensuite, on décide de modifier la variable `var` via son pointeur en lui affectant une nouvelle valeur, ici $42$.
+  ```c
+  *ptr = 42;
+    ```
+    Ce qu'il se passe c'est que `*ptr`, *donc l'adresse (le contenu)* de la variable `var` change et devient $42$. Pour ce qui est de la variable `content` elle n'a aucun lien avec l'adresse mémoire de `var` *(elle possède la sienne)* ainsi, la modification du pointeur de `var` n'a d'incidence que sur lui même et non sur `content` d'où le résultat différent lors de l'affichage final.
