@@ -220,3 +220,24 @@ Les deux instructions suivantes sont donc équivalentes :
 int *ptr = tab;
 int *ptr = &tab[0];
 ```
+Ainsi, cela fait de `ptr` un pointeur qui pointe vers le premier élément du tableau `tab`, ce que le tableau fais lui même sans avoir besoin de pointeurs. 
+
+On peut le vérifier avec un exemple simple.  
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main(){
+	int tab[] = { 1, 2, 3 };
+	int *ptr = tab;
+	
+	printf("Premier élément du tableau : %d\n", tab[0]);
+	printf("Valeur de l'élément pointé par ptr : %d", *ptr);
+	
+	return 0;
+}
+```
+```
+Premier élément du tableau : 1
+Valeur de l'élément pointé par ptr : 1
+```
