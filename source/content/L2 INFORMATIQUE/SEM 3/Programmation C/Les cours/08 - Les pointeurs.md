@@ -208,6 +208,7 @@ La valeur de content est : 42
 ```
 
 # Les pointeurs et les tableaux 
+## Analogie entre eux
 En langage C, la manière dont les pointeurs et les tableaux accèdent à la mémoire est similaire. Le cours [[06 - Les tableaux statiques]], qui permettait d'introduire les notions principales à la création et à l'utilisation de tableaux cachait d'autres aspects.  
 On considère la déclaration suivante : 
 ```c
@@ -240,4 +241,28 @@ int main(){
 ```
 Premier élément du tableau : 1
 Valeur de l'élément pointé par ptr : 1
+```
+
+## Accès aux éléments du tableau
+Je ne sais pas si tu te rappelles mais pour accéder aux éléments d'un tableau on utilisait l'instruction suivante : 
+```c
+// Accès à l'élément i
+int elementI = tab[i];
+```
+Ici, cela restait relativement simple d'accéder aux éléments d'un tableau. 
+
+Ce que nous voulons c'est accéder à l'élément d'indice `i` dans un tableau en utilisant un pointeur. C'est là qu'intervient l'**arithmétique des pointeurs**. Si initialement le pointeur est sur le premier élément du tableau, alors pour accéder à l'élément `i` il faudra incrémenter ce pointeur jusqu'à cet élément. 
+
+>[!warning]
+>En prenant en compte que les **indices commencent à $0$**. 
+
+Soit `ptr` un pointeur sur le premier élément d'un tableau. Alors si on souhaite accéder à l'élément `i` du tableau *(en considérant que le premier élément est d'indice $0$*. Alors on utilisera l'instruction suivante : 
+```c
+// Accès à l'élément i du tableau via le pointeur ptr
+*(ptr + i)
+```
+Ainsi, les instructions suivantes sont équivalentes : 
+```c
+tab[i]; 
+*(ptr + i);
 ```
