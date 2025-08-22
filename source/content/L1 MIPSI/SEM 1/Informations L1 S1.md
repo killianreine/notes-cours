@@ -149,7 +149,7 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td>50 heures</td>
     </tr>
     <tr>
-      <td>2 Unités d'enseignements Physique<strong><ul><li><strong>Physique du mouvement 1</li><li><strong>Optique géométrique</li></ul></strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
+      <td><strong>Physique (Mvt + Optique)</strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
       <td>50 heures</td>
     </tr>
     <tr>
