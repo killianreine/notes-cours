@@ -723,3 +723,5 @@ int main() {
 Entrez deux chaînes séparées par # : Bonjour le monde # tout entier
 Résultat : Bonjour le monde  tout entier
 ```
+
+# Pointeurs et fonctions
