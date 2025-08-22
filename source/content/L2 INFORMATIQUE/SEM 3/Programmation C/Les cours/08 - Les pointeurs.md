@@ -572,26 +572,30 @@ Et, elle ne renverra rien, puisque la variable résultat sera modifié dans la f
 ```c
 void concatenation(char *chaine1, char *chaine2, char *resultat);
 ```
-L'objectif et de modifier résultat pour obtenir le résultat de la concaténation des deux chaînes.  
-On aurai pu aller au plus simple mais pour plus de diversité on va utiliser deux méthodes de copiage de chaînes dans une autre :
-1. `chaine1` sera copiée dans `resultat` en utilisant `strcpy`
-2. `chaine2` elle sera copiée dans `resultat` en utilisant une boucle, accès par pointeur
+L'objectif et de modifier résultat pour obtenir le résultat de la concaténation des deux chaînes.  Tout ça en utilisant l'**arithmétique des pointeurs**.
 ```c
 void concatenation(char *chaine1, char *chaine2, char *resultat) {
-    int i = strlen(chaine1), j = 0;
-	
-	// Copier chaine1 avec strcopy au début de résultat
-    strcpy(resultat, chaine1);
+    // Pointeur pour parcourir resultat
+    char *p = resultat;
 
-    // Copier chaine2 à la suite
-    while (chaine2[j] != '\0') {
-        resultat[i + j] = chaine2[j];
-        j++;
+    // Copier chaine1
+    while (*chaine1 != '\0') {
+        *p = *chaine1;
+        p++;
+        chaine1++;
     }
 
-    // Ajouter le caractère de fin de chaîne
-    resultat[i + j] = '\0';
+    // Copier chaine2
+    while (*chaine2 != '\0') {
+        *p = *chaine2;
+        p++;
+        chaine2++;
+    }
+
+    // Terminer la chaîne
+    *p = '\0';
 }
+```
 ```
 Les variables `i` et `j` représentent respectivement la taille des `chaine1` et `chaine2`.  
 On utilise alors une boucle `while` pour copier la seconde chaine. Une boucle `for` pouvait aussi faire l'affaire, ceci est un choix arbitraire.   
@@ -666,19 +670,25 @@ On obtient alors le code final avec les bibliothèques correctement importées.
 #include <string.h>
 
 void concatenation(char *chaine1, char *chaine2, char *resultat) {
-	// Initialisation des indices des chaînes 1 (i) et 2 (j)
-    int i = strlen(chaine1), j = 0;
+    // Pointeur pour parcourir resultat
+    char *p = resultat;
 
-    strcpy(resultat, chaine1);
-
-    // Copier chaine2 à la suite
-    while (chaine2[j] != '\0') {
-        resultat[i + j] = chaine2[j];
-        j++;
+    // Copier chaine1
+    while (*chaine1 != '\0') {
+        *p = *chaine1;
+        p++;
+        chaine1++;
     }
 
-    // Ajouter le caractère de fin de chaîne
-    resultat[i + j] = '\0';
+    // Copier chaine2
+    while (*chaine2 != '\0') {
+        *p = *chaine2;
+        p++;
+        chaine2++;
+    }
+
+    // Terminer la chaîne
+    *p = '\0';
 }
 
 int main() {
@@ -691,11 +701,9 @@ int main() {
 
     // Découpage avec strtok
     char *token = strtok(saisieUser, "#");
-    // Première chaîne
     if (token != NULL) {
         strcpy(chaine1, token);
         token = strtok(NULL, "#");
-        // Seconde chaîne, si elle existe
         if (token != NULL) {
             strcpy(chaine2, token);
         } else {
@@ -706,6 +714,7 @@ int main() {
     // Concaténation
     concatenation(chaine1, chaine2, resultat);
     printf("Résultat : %s\n", resultat);
+
     return 0;
 }
 ```
