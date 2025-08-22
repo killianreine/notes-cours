@@ -504,3 +504,48 @@ Avant modification :
 Après modification : 
  | i n f o r m a R i q u e 
 ```
+
+<u>Autre exemple :</u>  
+On modifie avec des caractères aléatoires entre $32$ et $64$ la chaîne informatique. On fera en sorte qu'il y ai $50\%$ de chance d'avoir une minuscule ou une majuscule.  
+- Quelques rappels sur l'aléatoire : [[06 - Les tableaux statiques#L'aléatoire en programmation C aleatoire]]
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+char random_letter() {
+    if(rand() % 2) // 50% majuscule ou minuscule
+        return 'A' + rand() % 26; // lettre majuscule
+    else
+        return 'a' + rand() % 26; // lettre minuscule
+}
+
+int main() {
+    srand(time(NULL)); // Pour avoir des valeurs différentes à chaque fois
+    char chaine[] = "informatique";
+    char *domaine = chaine;
+
+    printf("Avant modification : \n| ");
+    for(int i = 0; i < 12; i++)
+        printf("%c ", *(domaine + i));
+
+    // Boucle pour la modification random
+    char *ptr = domaine; // on utilise un pointeur séparé pour ne pas perdre le début
+    while(*ptr != '\0') {
+        *ptr = random_letter();
+        ptr++;
+    }
+
+    printf("\nAprès modification : \n| ");
+    for(int i = 0; i < 12; i++)
+        printf("%c ", *(domaine + i));
+
+    return 0;
+}
+```
+```
+Avant modification : 
+| i n f o r m a t i q u e 
+Après modification : 
+| R x k P z f E N y r u P 
+```
