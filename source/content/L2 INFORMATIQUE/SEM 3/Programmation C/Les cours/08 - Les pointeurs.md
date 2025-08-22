@@ -596,7 +596,7 @@ void concatenation(char *chaine1, char *chaine2, char *resultat) {
     *p = '\0';
 }
 ```
-```
+
 Les variables `i` et `j` représentent respectivement la taille des `chaine1` et `chaine2`.  
 On utilise alors une boucle `while` pour copier la seconde chaine. Une boucle `for` pouvait aussi faire l'affaire, ceci est un choix arbitraire.   
 De manière algorithmique on a alors :
