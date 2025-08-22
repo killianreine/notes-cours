@@ -606,3 +606,111 @@ fin
 ```
 
 $\boxed{\text{La fonction \texttt{main}}}$  
+La fonction `main`, elle va permettre de faire plusieurs choses :
+- Déclarer les variables pour les chaînes et les initialiser 
+- Demander à l'utilisateur d'entrer deux chaînes
+- De traiter les deux chaînes
+- D'appeler la fonction `concatenation`
+- D'afficher le résultat
+Les variables à déclarées sont les trois chaînes : `chaine1`, `chaine2`, `resultat` ainsi qu'une chaîne temporaire `saisieUser` pour stocker la saisie utilisateur brute sans l'avoir découpée.
+```c
+char chaine1[50], chaine2[50];
+char saisieUser[100];
+char resultat[100];
+```
+
+>[!info] Remarque
+>On a choisit de lire des chaînes jusqu'à 50 caractères chacune mais c'est aussi un choix arbitraire. Vous pouvez mettre autre chose.
+
+Occupons nous maintenant de la **saisie utilisateur**.  
+En fait, ce que l'on doit faire c'est : 
+1. Demander à l'utilisateur de rentrer deux chaînes en pensant à mettre `#` entre deux
+2. Lire la saisie et la stockée de manière brute dans une variable
+3. Scinder en deux la saisie avec le séparateur et stockée celle ci dans les chaînes correspondantes
+
+Pour la première étape, il suffit d'un `printf` pour donner une consigne à l'utilisateur.
+```c
+printf("Entrez deux chaînes séparées par # : ");
+```
+
+Ensuite, je ne sais pas si vous vous rappelés mais dans le cours [[07 - Chaînes de caractères#Lecture]] on avait vu quelques fonctions pour la lecture d'une saisie utilisateur comme `scanf`, `gets` et `fgets` et on en avait conclu que la plus sécurisée était `fgets` qui permettait de gérer le nombre de caractères lus :
+```c
+#include <string.h>
+
+fgets(saisieUser, 100, stdin);
+```
+
+Enfin, on va utiliser ce bon vieux `strtok` que l'on a vu au cours précédant, en pensant à stocker les deux parties de chaînes dans les variables correspondantes : 
+```c
+char *token = strtok(saisieUser, "#");
+if (token != NULL) {
+    strcpy(chaine1, token);
+    token = strtok(NULL, "#");
+    if (token != NULL) {
+        strcpy(chaine2, token);
+    } else {
+        chaine2[0] = '\0';
+    }
+}
+```
+
+Maintenant il ne reste plus qu'à appeler la fonction `concatenation` et à afficher le résultat final :
+```c
+concatenation(chaine1, chaine2, resultat);
+printf("Résultat : %s\n", resultat);
+```
+
+On obtient alors le code final avec les bibliothèques correctement importées.
+```c
+#include <stdio.h>
+#include <string.h>
+
+void concatenation(char *chaine1, char *chaine2, char *resultat) {
+	// Initialisation des indices des chaînes 1 (i) et 2 (j)
+    int i = strlen(chaine1), j = 0;
+
+    strcpy(resultat, chaine1);
+
+    // Copier chaine2 à la suite
+    while (chaine2[j] != '\0') {
+        resultat[i + j] = chaine2[j];
+        j++;
+    }
+
+    // Ajouter le caractère de fin de chaîne
+    resultat[i + j] = '\0';
+}
+
+int main() {
+    char saisieUser[100];
+    char chaine1[50], chaine2[50];
+    char resultat[100];
+
+    printf("Entrez deux chaînes séparées par # : ");
+    fgets(saisieUser, 100, stdin);
+
+    // Découpage avec strtok
+    char *token = strtok(saisieUser, "#");
+    // Première chaîne
+    if (token != NULL) {
+        strcpy(chaine1, token);
+        token = strtok(NULL, "#");
+        // Seconde chaîne, si elle existe
+        if (token != NULL) {
+            strcpy(chaine2, token);
+        } else {
+            chaine2[0] = '\0';
+        }
+    }
+
+    // Concaténation
+    concatenation(chaine1, chaine2, resultat);
+    printf("Résultat : %s\n", resultat);
+    return 0;
+}
+```
+```
+./concat
+Entrez deux chaînes séparées par # : Bonjour le monde # tout entier
+Résultat : Bonjour le monde  tout entier
+```
