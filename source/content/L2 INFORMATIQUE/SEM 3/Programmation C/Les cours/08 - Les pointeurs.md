@@ -470,3 +470,37 @@ int main(){
 ```bash
 Segmentation fault
 ```
+
+En fait, pour pouvoir modifier une chaîne de caractère en utilisant un pointeur, il faut déclarer et initialiser une chaîne de caractères et seulement après faire en sorte que le pointeur vise le premier élément de la chaîne : 
+```c
+char chaine[] = "informatique";
+char *domaine = chaine; // Équivaut à : char *domaine = &chaine[0];
+```
+
+Ainsi en affichant avant et après modification de la chaîne avec un pointeur : 
+```c
+#include <stdio.h>
+ 
+int main(){
+    char chaine[] = "informatique";
+	char *domaine = chaine;
+	
+	printf("Avant modification : \n | ");
+	for(int i = 0; i<12; i++)
+	    printf("%c ", *(domaine+i));
+	    
+	*(domaine+7)='R';
+	
+	printf("\nAprès modification : \n | ");
+	for(int i = 0; i<12; i++)
+	    printf("%c ", *(domaine+i));
+    
+    return 0;
+}
+```
+```
+Avant modification : 
+ | i n f o r m a t i q u e 
+Après modification : 
+ | i n f o r m a R i q u e 
+```
