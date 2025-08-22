@@ -397,3 +397,30 @@ Pour résoudre ce problème, ce n'est pas si compliqué, il suffit de diviser la
 ```c
 int tailleTab = sizeof(tab)/sizeof(tab[0]);
 ```
+Voici l'exemple corrigé : 
+```c
+#include <stdio.h>
+ 
+int main(){
+	int tab[] = {1, 2, 3, 4, 5}
+	printf("Taille du tableau simple : %d\n", sizeof(tab)/sizeof(tab[0]));
+	
+	return 0;
+}
+```
+```
+Taille du tableau simple : 5
+```
+
+# Pointeurs et chaîne de caractères
+## Quelques rappels 
+Les chaînes de caractères ont été introduites pendant le cours [[07 - Chaînes de caractères]] avec un certain nombre d'informations, de fonctions, et d'explication sur les bonnes pratiques et les erreurs possibles. On pense à ce <span class="error-inline">buffer overflow</span> et des dangers qu'il représente.  
+Pour rappel la déclaration d'une chaîne de caractères sans utiliser de pointeur se fait comme suit : 
+```c
+char chaine[] = "blabla";
+// équivaut à : char chaine[] = { 'b', 'l', 'a', 'b', 'l', 'a', '\0'};
+```
+On créé alors un tableau de 7 caractères incluant le **marqueur de fin de chaîne `\0`**.
+
+## Chaîne littérale
+C'est un concept à **absolument maîtriser** pour éviter les mauvaises surprises. 
