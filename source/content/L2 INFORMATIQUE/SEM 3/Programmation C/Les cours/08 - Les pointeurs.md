@@ -550,6 +550,7 @@ Après modification :
 | R x k P z f E N y r u P 
 ```
 
+# Pointeurs et fonctions
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
@@ -724,4 +725,3 @@ Entrez deux chaînes séparées par # : Bonjour le monde # tout entier
 Résultat : Bonjour le monde  tout entier
 ```
 
-# Pointeurs et fonctions
