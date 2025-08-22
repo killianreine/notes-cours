@@ -288,3 +288,37 @@ Oui, on passe de $9$ à $A$ car les adresses mémoires sont en base hexadécimal
 
 Enfin, si on donne un pointeur `ptr` qui pointe sur le premier élément du tableau, son contenu sera alors donné par `0x1000`, qui est l'adresse mémoire du premier élément du tableau. Ainsi si on augmente le pointeur de $1$ alors `ptr` va valoir `0x1001` soit l'adresse mémoire du second élément du tableau, et ainsi de suite.  
 C'est donc pour cela qu'incrémenter le pointeur permet de parcourir le tableau.
+
+Il faut prendre en compte qu'à chaque incrémentation du pointeur, ses déplacements dans la mémoire dépendent de la taille des éléments pointés :
+- Si `ptr` est un `char*` alors il avancera de $1$ octet en $1$ octet
+- Si `ptr` est un `int*` alors il avancera de $4$ octets en $4$ octets
+- Si `ptr` est un `double*` alors il avancera de $8$ octets en $8$ octets
+
+## Parcours d'un tableau
+Maintenant que vous avez compris comment récupérer l'élément d'indice `i` d'un tableau, il devient alors plus clair de faire de même pour tous les éléments du tableau en passant par une boucle : 
+```c
+#include <stdio.h>
+ 
+int main(){
+	char *mot = "informatique";
+	// Parcours en utilisant l'arithmétique des pointeurs
+	for(int i = 0; i<12; i++){
+	    printf("Élément d'indice %d : %c \n", i, *(mot+i));
+	}
+	return 0;
+}
+```
+```
+Élément d'indice 0 : i 
+Élément d'indice 1 : n 
+Élément d'indice 2 : f 
+Élément d'indice 3 : o 
+Élément d'indice 4 : r 
+Élément d'indice 5 : m 
+Élément d'indice 6 : a 
+Élément d'indice 7 : t 
+Élément d'indice 8 : i 
+Élément d'indice 9 : q 
+Élément d'indice 10 : u 
+Élément d'indice 11 : e 
+```
