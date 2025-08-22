@@ -424,3 +424,49 @@ On créé alors un tableau de 7 caractères incluant le **marqueur de fin de cha
 
 ## Chaîne littérale
 C'est un concept à **absolument maîtriser** pour éviter les mauvaises surprises. 
+
+>[!cite] Définition
+>On appelle ==**littérale**== une chaîne de caractères stockée en mémoire en **lecture seule** *(segment const)*.
+
+On considère le pointeur `ptr` qui est initialisé en pointant vers le littérale `"informatique"`.
+```c
+char *ptr = "informatique";
+```
+Ainsi,  
+- Le pointeur `ptr` est modifiable, on peut faire en sorte de le faire pointer vers autre chose.
+- La chaîne `informatique` est quant a elle immuable, car c'est un littérale elle est donc en **lecture seule**.
+
+Vous êtes quand même d'accord avec moi, vous voulez voir ce qu'il se passe si on essaye de modifier la chaîne de caractères via le pointeur.
+
+On peut évidement parcourir la chaîne via l'arithmétique des pointeurs et afficher chaque lettre comme le montre le code suivant : 
+```c
+#include <stdio.h>
+ 
+int main(){
+	char *domaine = "informatique";
+	for(int i = 0; i<12; i++)
+	    printf("%c ", *(domaine+i));
+    return 0;
+}
+```
+```
+i n f o r m a t i q u e
+```
+
+<u>Exemple :</u>  
+- Modification d'un caractère
+```c
+#include <stdio.h>
+ 
+int main(){
+	char *domaine = "informatique";
+	// Modification du 7e caractère
+	*(domaine+7)='R';
+    
+    return 0;
+	
+}
+```
+```bash
+Segmentation fault
+```
