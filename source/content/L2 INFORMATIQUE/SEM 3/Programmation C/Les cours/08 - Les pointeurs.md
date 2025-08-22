@@ -558,3 +558,51 @@ On pourra demandé à l'utilisateur d'entrer deux chaînes séparées par le sé
 
 >Essayez de faire l'exercice seul dans votre coin avant de regarder une correction possible ci dessous...
 
+Pour faire cette exercice de manière rigoureuse nous allons découper le problème en différentes étapes. Ici il y en a deux principales : 
+- La fonction `main` qui gère la saisie utilisateur + l'affichage du résultat
+- La fonction `concatenation` 
+
+$\boxed{\text{La fonction \texttt{concatenation}}}$  
+Pour commencer il faut déterminer le prototype de la fonction. C'est à dire le type de renvoie, les paramètres qu'elle prend, son utilité, ...  
+À vrai dire, on a déjà répondu a toutes ces questions indirectement. La fonction concaténer va donc prendre en arguments trois chaînes de caractères : 
+- Les deux chaînes à concaténer 
+- La chaîne pour stocker le résultat
+
+Et, elle ne renverra rien, puisque la variable résultat sera modifié dans la fonction. Le prototype de la fonction `concatener` va donc être la suivante : 
+```c
+void concatenation(char *chaine1, char *chaine2, char *resultat);
+```
+L'objectif et de modifier résultat pour obtenir le résultat de la concaténation des deux chaînes.  
+On aurai pu aller au plus simple mais pour plus de diversité on va utiliser deux méthodes de copiage de chaînes dans une autre :
+1. `chaine1` sera copiée dans `resultat` en utilisant `strcpy`
+2. `chaine2` elle sera copiée dans `resultat` en utilisant une boucle, accès par pointeur
+```c
+void concatenation(char *chaine1, char *chaine2, char *resultat) {
+    int i = strlen(chaine1), j = 0;
+	
+	// Copier chaine1 avec strcopy au début de résultat
+    strcpy(resultat, chaine1);
+
+    // Copier chaine2 à la suite
+    while (chaine2[j] != '\0') {
+        resultat[i + j] = chaine2[j];
+        j++;
+    }
+
+    // Ajouter le caractère de fin de chaîne
+    resultat[i + j] = '\0';
+}
+```
+Les variables `i` et `j` représentent respectivement la taille des `chaine1` et `chaine2`.  
+On utilise alors une boucle `while` pour copier la seconde chaine. Une boucle `for` pouvait aussi faire l'affaire, ceci est un choix arbitraire.   
+De manière algorithmique on a alors :
+```
+debut concatenation
+	initialisation des tailles des deux chaînes
+	Copie de la première chaîne
+	Copie de la seconde chaîne
+	Ajout du marqueur de fin de chaîne \0
+fin
+```
+
+$\boxed{\text{La fonction \texttt{main}}}$
