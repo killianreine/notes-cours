@@ -274,9 +274,16 @@ On avait considéré une chaîne de caractère `informatique` que l'on a dont st
 Ainsi, à la création de ce tableau que l'on nommera `tab`, ce dernier pointera sur le premier élément qui ici est la lettre `i`. Les "codes" présents en dessous de chaque case représente l'adresse mémoire *(choisie de manière arbitraire)* et on voit qu'entre deux cases, cette dernière augmente de $1$.  
 Oui, on passe de $9$ à $A$ car les adresses mémoires sont en base hexadécimal donc `16` :
 
-| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | A   | B   | C   | D   | E   | F   |
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+
+
+| 9   | 10  | 11  | 12  | 13  | 14  | 15  |
+| --- | --- | --- | --- | --- | --- | --- |
+| 9   | A   | B   | C   | D   | E   | F   |
+
+
 *La base 16 est donnée à la deuxième ligne du tableau, la base du dessus est la base décimal, celle avec laquelle nous comptons par exemple.*
 
 Enfin, si on donne un pointeur `ptr` qui pointe sur le premier élément du tableau, son contenu sera alors donné par `0x1000`, qui est l'adresse mémoire du premier élément du tableau. Ainsi si on augmente le pointeur de $1$ alors `ptr` va valoir `0x1001` soit l'adresse mémoire du second élément du tableau, et ainsi de suite.  
