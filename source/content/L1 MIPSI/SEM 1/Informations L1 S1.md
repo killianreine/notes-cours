@@ -149,6 +149,10 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td>50 heures</td>
     </tr>
     <tr>
+      <td><strong>Physique du mouvement + Optique géométrique</strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
+      <td><ul><li><strong>Physique du mouvement 1 - </strong> 25h</li><li><strong>Optique géométrique - </strong> 25h</li></ul></td>
+    </tr>
+    <tr>
       <td><strong>Concepts informatiques</strong><br/><em>Parcours Informatique</em></td>
       <td>50 heures</td>
     </tr>
