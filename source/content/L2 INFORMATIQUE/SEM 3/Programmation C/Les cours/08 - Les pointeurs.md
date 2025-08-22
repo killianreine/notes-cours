@@ -326,6 +326,8 @@ int main(){
 ## Calculer la taille du tableau
 Il est vrai qu'on a déjà vu cet aspect pendant le cours $6$ notamment ici : [[06 - Les tableaux statiques#Déterminer la taille du tableau]] mais c'est exactement pour cette raison que je souhaite préciser les choses avant même que vous fassiez l'erreur !
 
+### Chaîne de caractères
+
 On considère le code suivant :
 ```c
 #include <stdio.h>
@@ -347,3 +349,51 @@ Taille du tableau à partir du pointeur : 8
 
 Le programme visait à calculer la taille du tableau nommé `tab` dans notre exemple.  
 Or l'utilisation de `sizeof` sur le tableau lui même renvoie bien 13 qui est la taille du tableau `tab` en incluant le marqueur de fin de chaîne. Par contre l'utilisation de cette même fonction sur un pointeur renvoi `8` *(ou parfois 4 selon le système)*. Et bien en fait la taille qui est renvoyée par `sizeof` appliquée à un pointeur c'est la taille de l'**adresse mémoire**. c'est donc pour cette raison que `sizeof` renvoi des valeurs différentes lors de deux exécutions.
+
+### Tableau d'entiers
+Alors, vous vous doutez bien que si j'ai divisé cette partie en 2 c'est qu'il y a une raison. 
+
+Considérons maintenant le code suivant : 
+```c
+#include <stdio.h>
+ 
+int main(){
+	int tab[] = {1, 2, 3, 4, 5};
+	int *ptr = tab;
+	
+	// Calcul de la taille du tableau de différentes manières
+	printf("Taille du tableau simple : %d\n", sizeof(tab));
+	printf("Taille du tableau avec le pointeur : %d\n", sizeof(ptr));
+	
+	return 0;
+}
+```
+```
+Taille du tableau simple : 20
+Taille du tableau avec le pointeur : 8
+```
+Là, rien ne vas, la taille du tableau donnée est $20$ alors qu'il ne possède que $5$ éléments et, la taille calculée en utilisant le pointeur est elle aussi erronée.  
+Pour ce qui est de l'utilisation du pointeur avec `sizeof` qui donne $8$, c'est la même explication qu'au dessus. 
+```c
+sizeof(pointeur);
+```
+Donne la taille de l'adresse mémoire, soit $4$, soit $8$ selon les systèmes.
+
+Maintenant étudions le `sizeof(tab)` qui donne $20$.  
+Ce que l'on sait déjà sur les entiers depuis le cours [[02 - Premiers pas#Le type entier]] c'est qu'un entier de type `int` est codé sur $4$ octets. Alors : 
+```c
+sizeof(int) == 4
+```
+En gros, ce que je veux dire c'est que la taille d'un entier est $4$.  
+On a rappelé au dessus que `tab` représente en fait une sorte de pointeur vers son premier élément qui est de type entier. Sauf que cette fois l'instruction suivante : 
+```c
+sizeof(tab)
+```
+Vas parcourir le tableau et donc arriver sur chaque élément un à un. Or elle ne vas pas ajouter au résultat $+1$ à chaque élément dans le tableau non, elle va rajouter **la taille de l'élément** qui ici sont des entiers. Donc pour chaque élément que `sizeof` rencontre on ajoute $4$ à la taille du tableau.  
+Puisque `sizeof` rencontre $5$ éléments du tableau jusqu'à la fin de ce dernier, elle ajoute $5 \times 4$ octets pour les $5$ entiers qui chacun sont codés sur chaque entiers on obtient alors `sizeof(tab)=20`.
+
+$\boxed{\text{Solution au problème}}$  
+Pour résoudre ce problème, ce n'est pas si compliqué, il suffit de diviser la taille globale du tableau par la taille du premier élément de ce dernier. Puisqu'en C un tableau ne peux contenir qu'un seul type d'éléments à la fois. L'utilisation correcte est donnée par : 
+```c
+int tailleTab = sizeof(tab)/sizeof(tab[0]);
+```
