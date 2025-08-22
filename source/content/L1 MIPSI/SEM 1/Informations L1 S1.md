@@ -138,7 +138,7 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
       <td>8 heures</td>
     </tr>
     <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>
+      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP) <br/> <span style="color:red; font-weight:900;">1 section au choix parmi</span></td>
     </tr>
     <tr>
       <td><strong>Analyse de base</strong><br/><em>Parcours Mathématiques</em></td>
