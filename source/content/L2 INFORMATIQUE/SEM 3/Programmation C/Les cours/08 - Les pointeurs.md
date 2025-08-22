@@ -426,7 +426,7 @@ On créé alors un tableau de 7 caractères incluant le **marqueur de fin de cha
 C'est un concept à **absolument maîtriser** pour éviter les mauvaises surprises. 
 
 >[!cite] Définition
->On appelle ==**littérale**== une chaîne de caractères stockée en mémoire en **lecture seule** *(segment const)*.
+>On appelle **==littérale==** une chaîne de caractères stockée en mémoire en **lecture seule** *(segment const)*.
 
 On considère le pointeur `ptr` qui est initialisé en pointant vers le littérale `"informatique"`.
 ```c
