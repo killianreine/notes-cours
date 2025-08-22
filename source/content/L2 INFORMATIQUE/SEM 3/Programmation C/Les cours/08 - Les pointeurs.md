@@ -551,6 +551,12 @@ Après modification :
 ```
 
 # Pointeurs et fonctions
+## Passage de paramètres à une fonction
+En langage C, les fonctions reçoivent par défaut les copies des variables. En fait ce que ça veut dire c'est que si vous avez une variable définie hors de la fonction et que vous la passez en paramètres d'une fonction, et que vous la modifiez dans celle ci. Et bien à la fin de la fonction, cette même variable aura la même valeur avant/après la fonction car cette dernière ne sera pas modifié.  
+Car **par défaut les fonctions reçoivent les copies des variables passées en arguments**.  
+$\boxed{\text{Solution}}$ Si vous voulez envoyez une variable en argument d'une fonction, la modifier pendant l'exécution de la fonction puis la reprendre ensuite modifier, il va donc falloir opter par **==le passage d'adresse==** via les pointeurs.
+### Passage par valeur
+### Passage par adresse
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
