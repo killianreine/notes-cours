@@ -551,11 +551,10 @@ Après modification :
 ```
 
 ## Manipulation de chaînes
-Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vus au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
+Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
 C'est à dire une chaîne contenant la première chaîne à laquelle on a ajouté la seconde à la fin. Et, petite subtilité, il faut que les chaines de caractères soient données lors de l'exécution par l'utilisateur ET, le séparateur entre les deux chaînes sera `#`.  
-En gros la ligne d'exécution du programme `concat.c` sera la suivante : 
-```
-./concat chaine1 # chaine2
-```
+On pourra demandé à l'utilisateur d'entrer deux chaînes séparées par le séparateur `#`.
+
+>Essayez de faire l'exercice seul dans votre coin avant de regarder une correction possible ci dessous...
 
