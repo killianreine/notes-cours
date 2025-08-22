@@ -206,3 +206,17 @@ int main(){
 La valeur de la variable pointée par ptr est : 42
 La valeur de content est : 42
 ```
+
+# Les pointeurs et les tableaux 
+En langage C, la manière dont les pointeurs et les tableaux accèdent à la mémoire est similaire. Le cours [[06 - Les tableaux statiques]], qui permettait d'introduire les notions principales à la création et à l'utilisation de tableaux cachait d'autres aspects.  
+On considère la déclaration suivante : 
+```c
+int tab[3] = { 1, 2, 3 };
+```
+Ici, on vient donc de créer un tableau de trois entiers.  
+Pendant la compilation, le tableau va être vu comme **l'adresse de son premier élément** que l'on note alors `&tab[0]`. Ainsi, un tableau est en fait un pointeur vers sont premier élément.  
+Les deux instructions suivantes sont donc équivalentes : 
+```c
+int *ptr = tab;
+int *ptr = &tab[0];
+```
