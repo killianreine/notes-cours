@@ -605,4 +605,4 @@ debut concatenation
 fin
 ```
 
-$\boxed{\text{La fonction \texttt{main}}}$
+$\boxed{\text{La fonction \texttt{main}}}$  
