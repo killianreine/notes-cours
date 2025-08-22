@@ -345,4 +345,5 @@ Taille du tableau simple : 13
 Taille du tableau à partir du pointeur : 8
 ```
 
-Le programme visait à calculer
+Le programme visait à calculer la taille du tableau nommé `tab` dans notre exemple.  
+Or l'utilisation de `sizeof` sur le tableau lui même renvoie bien 13 qui est la taille du tableau `tab` en incluant le marqueur de fin de chaîne. Par contre l'utilisation de cette même fonction sur un pointeur renvoi `8` *(ou parfois 4 selon le système)*. Et bien en fait la taille qui est renvoyée par `sizeof` appliquée à un pointeur c'est la taille de l'**adresse mémoire**. c'est donc pour cette raison que `sizeof` renvoi des valeurs différentes lors de deux exécutions.
