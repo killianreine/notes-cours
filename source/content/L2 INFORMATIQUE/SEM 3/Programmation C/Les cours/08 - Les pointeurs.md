@@ -322,3 +322,27 @@ int main(){
 Élément d'indice 10 : u 
 Élément d'indice 11 : e 
 ```
+
+## Calculer la taille du tableau
+Il est vrai qu'on a déjà vu cet aspect pendant le cours $6$ notamment ici : [[06 - Les tableaux statiques#Déterminer la taille du tableau]] mais c'est exactement pour cette raison que je souhaite préciser les choses avant même que vous fassiez l'erreur !
+
+On considère le code suivant :
+```c
+#include <stdio.h>
+ 
+int main(){
+	char tab[] = "informatique";
+	char *ptr = tab;
+	
+	// Calcul de la taille du tableau de différentes manières
+	printf("Taille du tableau simple : %d\n", sizeof(tab));
+	printf("Taille du tableau à partir du pointeur : %d\n", sizeof(ptr));
+	
+}
+```
+```
+Taille du tableau simple : 13
+Taille du tableau à partir du pointeur : 8
+```
+
+Le programme visait à calculer
