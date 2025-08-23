@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
+                "file": "L1 MIPSI/SEM 1/Algèbre de base/Corrections/Correction examen rattrapage 2024.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 - Les pointeurs"
+              "title": "Correction examen rattrapage 2024"
             }
           }
         ],
@@ -64,13 +64,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
+                "file": "L1 MIPSI/SEM 1/Algèbre de base/Corrections/Correction examen rattrapage 2024.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 08 - Les pointeurs"
+              "title": "Outline of Correction examen rattrapage 2024"
             }
           }
         ]
@@ -249,8 +249,8 @@
   },
   "active": "7e3076dffe19fb25",
   "lastOpenFiles": [
-    "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
+    "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Fiche mth M7.pdf",
     "L1 MIPSI/SEM 1/Algèbre de base/Fiches méthodes/Algèbre_L1_2526_Mth7_Rédaction_SEV.pdf",
     "Sommaire 08 pointeurs.md",
