@@ -1,74 +1,170 @@
 
 # Informations sur la notation
 
-<table style="width:100%; border-collapse:collapse; font-size:15px; font-family:Segoe UI, Roboto, Arial, sans-serif;">
-  <thead style="background:#2e3a59; color:white;">
-    <tr>
-      <th style="padding:14px 18px; text-align:left; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid #e0e6ed;">Exercice</th>
-      <th style="padding:14px 18px; text-align:left; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid #e0e6ed;">Question</th>
-      <th style="padding:14px 18px; text-align:left; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid #e0e6ed;">Points</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background:#fff;">
-      <td style="padding:14px 18px; font-weight:600; color:#2e3a59; border-bottom:1px solid #e0e6ed;">Exercice 1</td>
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">-</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">4</td>
-    </tr>
-    <tr style="background:#f9fbfd;">
-      <td rowspan="3" style="padding:14px 18px; font-weight:600; color:#2e3a59; border-bottom:1px solid #e0e6ed;">Exercice 2</td>
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 1</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1.5</td>
-    </tr>
-    <tr style="background:#fff;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 2</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1</td>
-    </tr>
-    <tr style="background:#f9fbfd;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 3</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1.5</td>
-    </tr>
-    <tr style="background:#fff;">
-      <td rowspan="6" style="padding:14px 18px; font-weight:600; color:#2e3a59; border-bottom:1px solid #e0e6ed;">Exercice 3</td>
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 1</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1</td>
-    </tr>
-    <tr style="background:#f9fbfd;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 2</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1.5</td>
-    </tr>
-    <tr style="background:#fff;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 3</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1.5</td>
-    </tr>
-    <tr style="background:#f9fbfd;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 4</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1</td>
-    </tr>
-    <tr style="background:#fff;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 5</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1</td>
-    </tr>
-    <tr style="background:#f9fbfd;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 6</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">2</td>
-    </tr>
-    <tr style="background:#fff;">
-      <td rowspan="2" style="padding:14px 18px; font-weight:600; color:#2e3a59; border-bottom:1px solid #e0e6ed;">Exercice 4</td>
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 1</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">3</td>
-    </tr>
-    <tr style="background:#f9fbfd;">
-      <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 2</td>
-      <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1</td>
-    </tr>
-    <tr style="background:#eef2f8; font-weight:700; border-top:2px solid #2e3a59;">
-      <td style="text-align:center; padding:14px 18px;">Total</td>
-      <td style="text-align:center; font-style:italic; color:#555; padding:14px 18px;">Toutes questions confondues</td>
-      <td style="padding:14px 18px; text-align:center; font-size:18px; font-weight:700; color:#1d4ed8;">20</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-container">
+    <style>
+        .table-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .table-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .modern-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+        .modern-table thead {
+            background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+            color: white;
+        }
+        .modern-table th, .modern-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .modern-table th {
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        .modern-table tbody tr {
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .modern-table tbody tr:hover {
+            background: rgba(106, 130, 251, 0.1);
+            transform: scale(1.02);
+        }
+        .exercise-cell {
+            font-weight: 600;
+            color: #4a4a4a;
+            background: rgba(106, 130, 251, 0.05);
+        }
+        .points-cell {
+            text-align: center;
+            font-weight: 700;
+            color: #6a82fb;
+        }
+        .total-row {
+            background: rgba(106, 130, 251, 0.1);
+            font-weight: 700;
+            color: #333;
+        }
+        .total-row td {
+            border-bottom: none;
+            padding: 20px;
+        }
+        @media (max-width: 640px) {
+            .table-container {
+                padding: 1rem;
+            }
+            .table-title {
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+            }
+            .modern-table th, .modern-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <table class="modern-table">
+        <thead>
+            <tr>
+                <th><i class="fas fa-tasks"></i> Exercice</th>
+                <th><i class="fas fa-question-circle"></i> Question</th>
+                <th><i class="fas fa-star"></i> Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="exercise-cell"><span>Exercice 1</span></td>
+                <td class="question-cell">-</td>
+                <td class="points-cell">4</td>
+            </tr>
+            <tr>
+                <td class="exercise-cell" rowspan="3"><span>Exercice 2</span></td>
+                <td class="question-cell">Question 1</td>
+                <td class="points-cell">1.5</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 2</td>
+                <td class="points-cell">1</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 3</td>
+                <td class="points-cell">1.5</td>
+            </tr>
+            <tr>
+                <td class="exercise-cell" rowspan="6"><span>Exercice 3</span></td>
+                <td class="question-cell">Question 1</td>
+                <td class="points-cell">1</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 2</td>
+                <td class="points-cell">1.5</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 3</td>
+                <td class="points-cell">1.5</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 4</td>
+                <td class="points-cell">1</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 5</td>
+                <td class="points-cell">1</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 6</td>
+                <td class="points-cell">2</td>
+            </tr>
+            <tr>
+                <td class="exercise-cell" rowspan="2"><span>Exercice 4</span></td>
+                <td class="question-cell">Question 1</td>
+                <td class="points-cell">3</td>
+            </tr>
+            <tr>
+                <td class="question-cell">Question 2</td>
+                <td class="points-cell">1</td>
+            </tr>
+            <tr class="total-row">
+                <td style="text-align: center; font-size: 18px;">
+                    <i class="fas fa-calculator"></i>
+                    <strong>Total</strong>
+                </td>
+                <td style="text-align: center; font-style: italic; color: #64748b;">
+                    Toutes questions confondues
+                </td>
+                <td class="points-cell" style="font-size: 24px;">20</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ## Exercice 1
 On cherche à résoudre l'équation de degré 2 suivante :
