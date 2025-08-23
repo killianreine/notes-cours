@@ -62,7 +62,6 @@
       <td style="padding:14px 18px; border-bottom:1px solid #e0e6ed;">Question 2</td>
       <td style="padding:14px 18px; text-align:center; font-weight:600; color:#2563eb; border-bottom:1px solid #e0e6ed;">1</td>
     </tr>
-
     <tr style="background:#eef2f8; font-weight:700; border-top:2px solid #2e3a59;">
       <td style="text-align:center; padding:14px 18px;">Total</td>
       <td style="text-align:center; font-style:italic; color:#555; padding:14px 18px;">Toutes questions confondues</td>
