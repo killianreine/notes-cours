@@ -659,6 +659,53 @@ FONCTION PASSAGE PAR ADRESSE
 | AVANT : a = 14 ; b = 5
 | APRES : a = 5 ; b = 14
 ```
+
+Bon c'est bien gentil, on a vu un exemple d'utilisation. Maintenant il nous faut quelques explications pour savoir le refaire.  
+Pour ce faire, on code une fonction `function` qui prend en paramètre deux pointeurs `*ptr1` et `*ptr2` d'un type `type`. La fonction renvoie une valeur du type `type_re`.  
+Ainsi, le prototype général d'une telle fonction sera donné par : 
+```c
+type_r function(type *ptr1, type *ptr2);
+```
+Ceci reste le plus basique,  
+On considère maintenant que cette fonction a été codée et qu'elle ait une utilité. Voyons maintenant comment on l'appelle. Et, il existe deux manières principales de le faire :  
+
+$\boxed{\text{Méthode 1}}$  
+```c
+type_r function(type *ptr1, type *ptr2){
+	// Bloc de code de la fonction
+	return ...;
+}
+
+int main(){
+	type var1 = ...;
+	type var2 = ...;
+	
+	// Appel de la fonction 
+	function(&var1, &var2);
+}
+```
+Ici, on passe directement les adresses des variables sans passer par des pointeurs.
+
+$\boxed{\text{Méthode 2}}$  
+```c
+type_r function(type *ptr1, type *ptr2){
+	// Bloc de code de la fonction
+	return ...;
+}
+
+int main(){
+	type var1 = ...;
+	type var2 = ...;
+	
+	type *ptr1 = &var1;
+	type *ptr2 = &var2;
+	
+	// Appel de la fonction 
+	function(ptr1, ptr2);
+}
+```
+Alors ici, on passe par l'utilisation de pointeur. On peut se demander pourquoi lors de l'appel à la fonction on ne met pas les `*` aux pointeurs.  
+En fait si on met `*`, ça signifie que l'on veut déréférencer *(= accéder à la valeur)* la variable. Alors que lorsqu'on enlève `*` on passe directement l'adresse mémoire de la variable pointée. 
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
