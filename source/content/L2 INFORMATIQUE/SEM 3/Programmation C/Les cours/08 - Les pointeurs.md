@@ -556,6 +556,46 @@ En langage C, les fonctions reçoivent par défaut les copies des variables. En 
 Car **par défaut les fonctions reçoivent les copies des variables passées en arguments**.  
 $\boxed{\text{Solution}}$ Si vous voulez envoyez une variable en argument d'une fonction, la modifier pendant l'exécution de la fonction puis la reprendre ensuite modifier, il va donc falloir opter par **==le passage d'adresse==** via les pointeurs.
 ### Passage par valeur
+Le passage de paramètres par valeur, vous le connaissez déjà c'est celui qu'on utilise depuis le cours [[05 - Retour sur les fonctions]]. 
+
+<u>Exemple :</u>  
+```c
+void fct(int a, int b){
+	a = b+2;
+}
+```
+Ici, les paramètres `a` et `b` à renseigner dans la fonction `fct` sont passées par valeur. Et, comme expliqué au dessus, par défaut lors de passage de paramètre par valeur en C, en fait la fonction reçoit une copie des deux variables.  
+Voyons ce qu'il se passe pour l'état de la variable `a` modifiée pendant la fonction : 
+```c
+#include <stdio.h>
+
+void fct(int a, int b){
+	a = b+2;
+}
+
+int main(){
+	int a = 14, b = 5;
+	printf("a avant la fonction : %d\n", a);
+	fct(a,b);
+	printf("a après la fonction : %d\n", a);
+	return 0;
+}
+```
+```
+a avant la fonction : 14
+a après la fonction : 14
+```
+Et voilà, c'était quand même prévisible. Puisque dans une fonction le passage de paramètres par valeur donne en fait une copie des variables données à la fonction, et bien les variables `a` et `b` vont être des copies que l'on appellera grossièrement `cA` et `cB` pour plus de simplicité.  
+Ainsi dans la fonction pendant les manipulations des variables renseignées en paramètres, ce sont les copies `cA` et `cB` qui seront modifiées. Et comme `a != cA` alors la variable `a` n'est pas modifiée. Et, si on affiche l'état de la variable `a` dans la fonction elle sera modifiée **mais uniquement dans la fonction**.
+```c
+void fct(int a, int b){
+	a = b+2;
+	printf("Valeur de a : %d\n", a);
+}
+```
+```
+Valeur de a : 7
+```
 ### Passage par adresse
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
@@ -563,7 +603,8 @@ Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$.
 C'est à dire une chaîne contenant la première chaîne à laquelle on a ajouté la seconde à la fin. Et, petite subtilité, il faut que les chaines de caractères soient données lors de l'exécution par l'utilisateur ET, le séparateur entre les deux chaînes sera `#`.  
 On pourra demandé à l'utilisateur d'entrer deux chaînes séparées par le séparateur `#`.
 
->Essayez de faire l'exercice seul dans votre coin avant de regarder une correction possible ci dessous...
+>Essayez de faire l'exercice seul dans votre coin avant de regarder une correction possible ci dessous...  
+>**La correction proposée est une correction possible, elle n'est pas forcément la meilleure**
 
 Pour faire cette exercice de manière rigoureuse nous allons découper le problème en différentes étapes. Ici il y en a deux principales : 
 - La fonction `main` qui gère la saisie utilisateur + l'affichage du résultat
