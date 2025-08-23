@@ -1,4 +1,4 @@
-# Examen - Rattrapage 2025
+
 
 <html lang="fr">
 <head>
@@ -11,7 +11,6 @@
       display: flex;
       justify-content: center;
     }
-
     .table-container {
       background: #ffffff;
       border-radius: 8px;
@@ -21,13 +20,11 @@
       width: 100%;
       animation: fadeIn 1s ease-out;
     }
-
     /* Animation d’entrée globale */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     .table-title {
       text-align: center;
       font-size: 24px;
@@ -36,43 +33,36 @@
       margin-bottom: 20px;
       animation: fadeIn 1.2s ease-out;
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
       font-size: 15px;
     }
-
     thead {
       background: #2e3a59;
       color: #ffffff;
     }
-
     th, td {
       padding: 14px 18px;
       text-align: left;
       border-bottom: 1px solid #e0e6ed;
     }
-
     th {
       font-weight: 600;
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
     /* Alternance + animation des lignes */
     tbody tr {
       transition: background 0.3s ease, transform 0.2s ease;
       animation: rowFade 0.5s ease-out forwards;
       opacity: 0;
     }
-
     @keyframes rowFade {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     /* Apparition progressive des lignes */
     tbody tr:nth-child(1) { animation-delay: 0.1s; }
     tbody tr:nth-child(2) { animation-delay: 0.2s; }
@@ -87,52 +77,43 @@
     tbody tr:nth-child(11) { animation-delay: 1.1s; }
     tbody tr:nth-child(12) { animation-delay: 1.2s; }
     tbody tr:nth-child(13) { animation-delay: 1.3s; }
-
     tr:nth-child(even) {
       background: #f9fbfd;
     }
-
     /* Animation au survol */
     tbody tr:hover {
       background: #eef2ff;
       transform: scale(1.01);
     }
-
     .exercise-cell {
       font-weight: 600;
       color: #2e3a59;
       white-space: nowrap;
     }
-
     .points-cell {
       text-align: center;
       font-weight: 600;
       color: #2563eb;
       transition: color 0.3s ease;
     }
-
     .points-cell:hover {
       color: #1d4ed8;
     }
-
     .total-row td {
       background: #eef2f8;
       font-weight: 700;
       border-top: 2px solid #2e3a59;
     }
-
     .total-row .points-cell {
       font-size: 18px;
       color: #1d4ed8;
       animation: pulse 2s infinite;
     }
-
     /* Animation discrète du total */
     @keyframes pulse {
       0%, 100% { transform: scale(1); opacity: 1; }
       50% { transform: scale(1.05); opacity: 0.9; }
     }
-
     @media (max-width: 640px) {
       th, td {
         padding: 10px;
@@ -161,7 +142,6 @@
           <td>-</td>
           <td class="points-cell">4</td>
         </tr>
-        
         <tr>
           <td class="exercise-cell" rowspan="3">Exercice 2</td>
           <td>Question 1</td>
@@ -175,7 +155,6 @@
           <td>Question 3</td>
           <td class="points-cell">1.5</td>
         </tr>
-        
         <tr>
           <td class="exercise-cell" rowspan="6">Exercice 3</td>
           <td>Question 1</td>
@@ -201,7 +180,6 @@
           <td>Question 6</td>
           <td class="points-cell">2</td>
         </tr>
-        
         <tr>
           <td class="exercise-cell" rowspan="2">Exercice 4</td>
           <td>Question 1</td>
@@ -211,7 +189,6 @@
           <td>Question 2</td>
           <td class="points-cell">1</td>
         </tr>
-        
         <tr class="total-row">
           <td style="text-align: center;">Total</td>
           <td style="text-align: center; font-style: italic; color: #555;">Toutes questions confondues</td>
