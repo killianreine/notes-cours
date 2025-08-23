@@ -21,7 +21,7 @@ Le tutorat se déroule **tout au long du semestre** et s’inscrit dans la conti
 
 ## 👥 Répartition des tuteurs par parcours
 
-Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MISPSI depuis la rentrée 2024.
+Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MISPSI depuis la rentrée 2023.
 
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
