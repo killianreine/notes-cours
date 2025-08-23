@@ -597,6 +597,68 @@ void fct(int a, int b){
 Valeur de a : 7
 ```
 ### Passage par adresse
+Nous, on souhaite pouvoir avoir une variable d'un certain nom valide, ici `var` ayant un état avant la fonction. Que pendant l'exécution de cette dernière l'état de la variable soit changée. Et pouvoir récupérer l'état de cette variable à la fin de la fonction sans le perdre comme avec le *passage par valeur*.  
+Prenons en compte le code suivant : 
+```c
+void echangerValeur(int a, int b){
+	int tempo = a;
+	a = b;
+	b = tempo;
+}
+```
+Si on exécute cette fonction directement, les variables `a` et `b` seront échangée **dans la vision de la fonction** mais sortie de cette dernière, `a` et `b` auront leur valeur initiale. En fait, la fonction a **manipuler des copies** de ces variables.  
+En langage C, **le ==passage par adresse==** consiste à transmettre à une fonction **l’adresse (= le pointeur)** d’une variable au lieu de sa valeur. Cela permet à la fonction de **modifier directement la variable d’origine**, contrairement au passage par valeur *qui ne modifie qu’une copie locale*.  
+Ainsi, la fonction précédente en utilisant la passage d'adresses devient :
+```c
+void echangerAdresse(int *a, int *b){
+	int tempo = *a;
+	*a = *b;
+	*b = tempo;
+}
+```
+
+Testons maintenant ces deux fonctions pour voir ce qu'il se passe.
+```c
+#include <stdio.h>
+
+void echangerValeur(int a, int b){
+	int tempo = a;
+	a = b;
+	b = tempo;
+}
+
+void echangerAdresse(int *a, int *b){
+	int tempo = *a;
+	*a = *b;
+	*b = tempo;
+}
+
+int main(){
+	int a = 14, b = 5;
+	
+	int *a_ = &a;
+	int *b_ = &b;
+	
+	printf("FONCTION PASSAGE PAR VALEUR\n");
+	printf("| AVANT : a = %d ; b = %d \n", a, b);
+	echangerValeur(a, b);
+	printf("| APRES : a = %d ; b = %d\n\n", a, b);
+	
+	printf("FONCTION PASSAGE PAR ADRESSE\n");
+	printf("| AVANT : a = %d ; b = %d\n", a, b);
+	echangerAdresse(a_, b_);
+	printf("| APRES : a = %d ; b = %d", a, b);
+}
+```
+```
+FONCTION PASSAGE PAR VALEUR
+| AVANT : a = 14 ; b = 5 
+| APRES : a = 14 ; b = 5
+
+FONCTION PASSAGE PAR ADRESSE
+| AVANT : a = 14 ; b = 5
+| APRES : a = 5 ; b = 14
+```
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
