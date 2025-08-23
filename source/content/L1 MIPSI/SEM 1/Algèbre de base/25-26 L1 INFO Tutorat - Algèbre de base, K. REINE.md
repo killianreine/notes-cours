@@ -84,6 +84,12 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 | Fiche méthode M4 | [[Fiche mth M4.pdf]] | - Simplifier une fraction complexe $\frac{N}{D}$.                                               |
 | Fiche méthode M5 | [[Fiche mth M5.pdf]] | - Montrer rigoureusement une équivalence<br>$$\mathcal{P} \Longleftrightarrow \mathcal{Q}$$     |
 | Fiche méthode M6 | [[Fiche mth M6.pdf]] | - Résoudre une équation de degré 2 à coefficients complexes en utilisant la méthode algébrique. |
+#### Cours 3 - Espaces vectoriels de $\mathbb{K}^n$ 
+
+| Nom fichier      | PDF                  | Commentaire                             |
+| ---------------- | -------------------- | --------------------------------------- |
+| Fiche méthode M7 | [[Fiche mth M7.pdf]] | - Rédaction d'un sous-espace vectoriel. |
+
 
 
 ---
