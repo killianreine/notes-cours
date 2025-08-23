@@ -706,6 +706,30 @@ int main(){
 ```
 Alors ici, on passe par l'utilisation de pointeur. On peut se demander pourquoi lors de l'appel à la fonction on ne met pas les `*` aux pointeurs.  
 En fait si on met `*`, ça signifie que l'on veut déréférencer *(= accéder à la valeur)* la variable. Alors que lorsqu'on enlève `*` on passe directement l'adresse mémoire de la variable pointée. 
+
+```c
+#include <stdio.h>
+
+int main(){
+	int a = 14;
+	int *ptr = &a;
+
+    printf("%p\n", ptr);
+    printf("%d", *ptr);
+    
+	return 0;
+}
+```
+```
+0x7fff0d282a64
+14
+```
+
+>[!tip]
+>Soit `ptr` un pointeur vers une variable d'un certain type.
+>- `ptr` permet d'avoir accès à l'adresse mémoire de la variable pointée.
+>- `*ptr` permet d'avoir le contenu de la variable pointée.
+
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
