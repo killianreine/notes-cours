@@ -905,3 +905,4 @@ Entrez deux chaînes séparées par # : Bonjour le monde # tout entier
 Résultat : Bonjour le monde  tout entier
 ```
 
+# Tableau multidimensionnels et pointeurs
