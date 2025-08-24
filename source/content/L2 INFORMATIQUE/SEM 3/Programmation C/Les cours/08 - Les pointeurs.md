@@ -802,7 +802,6 @@ int *somme(int a, int b){
 ```
 Résultat : 18
 ```
-## Quelques erreurs fréquentes
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
@@ -978,6 +977,5 @@ Entrez deux chaînes séparées par # : Bonjour le monde # tout entier
 Résultat : Bonjour le monde  tout entier
 ```
 
-# Pointeurs multiples et pointeurs de pointeurs
-# Pointeurs et typage avancée
-# Erreurs et bonnes pratiques
+# Suivant 
+- Cours suivant : [[09 - Structures avancées]]
