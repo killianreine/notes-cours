@@ -158,3 +158,38 @@ html.dark .callout[data-callout="info"] .callout-content {
   margin-left: auto;
   margin-right: auto;
 }
+ /*LES EXERCICES*/
+ .exercice {
+  margin: 20px 0;              /* marge personnalisable */
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  counter-increment: exo-counter;
+}
+
+.ex-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
+.ex-num {
+  background: #1e3a8a;         /* couleur darkblue */
+  color: white;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-right: 0.5em;
+  min-width: 28px;
+  text-align: center;
+}
+
+.ex-num::before {
+  content: counter(exo-counter);
+}
+
+.ex-body {
+  margin-top: 0.5em;
+}

@@ -69,8 +69,6 @@
     </tr>
   </tbody>
 </table>
-
-
 ## Exercice 1
 On cherche à résoudre l'équation de degré 2 suivante :
 
