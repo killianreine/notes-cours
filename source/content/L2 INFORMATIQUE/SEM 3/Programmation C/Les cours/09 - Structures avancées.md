@@ -25,3 +25,15 @@ struct Etudiant{
 	char domaine[100];
 };
 ```
+
+Il est possible de déclarer des variables de type `struct Etudiant` en même temps que la création.  
+Il suffit en fait de les spécifier juste après l'accolade fermante de la structure, comme ceci :
+```c
+struct Etudiant{
+	char nom[100];
+	char prenom[100];
+	int age;
+	char domaine[100];
+}etu1, etu2, etu3;
+```
+Ainsi les variables `etu1`, `etu2` et `etu3` sont de type `struct Etudiant`et sont directement utilisable.
