@@ -729,7 +729,8 @@ int main(){
 >Soit `ptr` un pointeur vers une variable d'un certain type.
 >- `ptr` permet d'avoir accès à l'adresse mémoire de la variable pointée.
 >- `*ptr` permet d'avoir le contenu de la variable pointée.
-
+## Retourner une adresse
+## Quelques erreurs fréquentes
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
 Voici l'objectif de l'exercice : $\boxed{\text{La fonction de concaténation}}$. Et oui, il va falloir créer une fonction prenant en paramètre deux chaînes de caractères et renvoie leur concaténation.  
@@ -905,4 +906,6 @@ Entrez deux chaînes séparées par # : Bonjour le monde # tout entier
 Résultat : Bonjour le monde  tout entier
 ```
 
-# Tableau multidimensionnels et pointeurs
+# Pointeurs multiples et pointeurs de pointeurs
+# Pointeurs et typage avancée
+# Erreurs et bonnes pratiques
