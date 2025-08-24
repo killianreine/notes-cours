@@ -98,12 +98,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Structures avancées.md",
+                "file": "L1 MIPSI/SEM 1/Algèbre de base/Corrections/Correction examen rattrapage 2024.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Structures avancées"
+              "title": "Correction examen rattrapage 2024"
             }
           }
         ],
@@ -120,13 +120,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Structures avancées.md",
+                "file": "L1 MIPSI/SEM 1/Algèbre de base/Corrections/Correction examen rattrapage 2024.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 09 - Structures avancées"
+              "title": "Outline of Correction examen rattrapage 2024"
             }
           }
         ]
@@ -305,8 +305,8 @@
   },
   "active": "fc84f7a53f75b385",
   "lastOpenFiles": [
-    "Sommaire 09 structures.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Structures avancées.md",
+    "Sommaire 09 structures.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/10 - Allocation dynamique.md",
