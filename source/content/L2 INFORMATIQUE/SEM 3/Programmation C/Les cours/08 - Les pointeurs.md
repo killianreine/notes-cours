@@ -774,6 +774,34 @@ Bon okay ça mérite quand même des explications.
 
 En fait, ici on obtient le message d'erreur exact du compilateur. L'opérateur `&` attend ce que le compilateur appelle une `lvalue` *location value* c'est à dire quelque chose qui a une adresse mémoire fixe, comme une variable déclarée. Or dans notre cas, `a+b` est une variable temporaire permettant d'avoir le résultat de la somme calculée à ce moment là, c'est ce qu'on appelle une `rvalue`.  
 Ainsi `&(a+b)` est **illégal** et renvoie directement une erreur lors de la compilation.
+
+Nous ce que l'on cherche c'est à retourner une adresse mémoire qui persiste même après l'exécution de la fonction. En gros qu'on puisse accéder au résultat de la fonction via pointeur.  
+On peut utiliser une variable dite `static`, ce mot clé permet de créer une **==variable persistante==** c'est à dire qu'après l'exécution de la fonction l'adresse mémoire qui lui a été dédiée reste valide pour tout le reste du code.
+
+>[!warning]
+>Pour déclarer et initialiser une variable persistante il faut le faire en deux temps : 
+>- Déclaration
+>- Initialisation
+
+On va donc créer une variable entière `int` appelée `resultat` pour stocker le résultat de la somme `a+b`
+```c
+static int resultat;   // Déclaration seule
+resultat = a + b;      // Initialisation ensuite
+```
+
+Ainsi, on peut donc renvoyer le résultat qui pendant et après la fonction gardera son adresse.
+```c
+int *somme(int a, int b){
+	static int resultat;
+	restultat = a + b;
+	
+	// On retour l'adresse du résultat
+	return &resultat;
+}
+```
+```
+Résultat : 18
+```
 ## Quelques erreurs fréquentes
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
