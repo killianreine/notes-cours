@@ -730,6 +730,50 @@ int main(){
 >- `ptr` permet d'avoir accès à l'adresse mémoire de la variable pointée.
 >- `*ptr` permet d'avoir le contenu de la variable pointée.
 ## Retourner une adresse
+En C, on peut **retourner une adresse** depuis une fonction, mais il faut être **très prudent** : certaines adresses ne sont pas valides une fois la fonction terminée.  
+Concentrons nous sur des applications simples pour commencer. 
+
+On souhaite coder une fonction `somme` qui prend deux paramètres entiers `a` et `b` et qui retourne une adresse contenant le résultat de la somme de `a` et `b`.
+
+Le code sans utiliser de pointeurs, vous le connaissez : 
+```c
+int somme(int a, int b){
+	return a+b;
+}
+```
+
+Pour le faire avec des pointeurs il existe plusieurs solutions, dans cette partie de cours nous n'en verrons qu'une seule, l'autre sera vue lors du cours sur les **==allocations dynamique==**.  
+Nous ce que l'on veut faire c'est don que notre fonction `somme` renvoie une adresse vers le résultat de la somme.
+
+Faisons le de manière naïve,
+```c
+int* somme(int a, int b){
+	return &(a+b);
+}
+```
+**On utilisera le `main` suivant pour les tests, et la correction**
+```c
+int main(){
+	int a = 14, b = 4;
+	int *ptr = somme(a, b);
+	printf("Résultat : %d\n", *ptr);
+	return 0;
+}
+```
+
+Voici ce qu'il se passe lorsque l'on décide d'exécuter le programme :
+```bash
+ERROR!
+/tmp/WfNsb31sJ9/main.c: In function 'somme':
+/tmp/WfNsb31sJ9/main.c:4:12: error: lvalue required as unary '&' operand
+    3 |     return &(a+b);
+      |            ^
+```
+Olala mais qu'est-ce que ça veut dire tout ça là.  
+Bon okay ça mérite quand même des explications.
+
+En fait, ici on obtient le message d'erreur exact du compilateur. L'opérateur `&` attend ce que le compilateur appelle une `lvalue` *location value* c'est à dire quelque chose qui a une adresse mémoire fixe, comme une variable déclarée. Or dans notre cas, `a+b` est une variable temporaire permettant d'avoir le résultat de la somme calculée à ce moment là, c'est ce qu'on appelle une `rvalue`.  
+Ainsi `&(a+b)` est **illégal** et renvoie directement une erreur lors de la compilation.
 ## Quelques erreurs fréquentes
 ## Manipulation de chaînes
 Cette section vise à renforcer ce que vous savez déjà, c'est à dire manipuler des chaînes de caractères, vues au cours précédant. Hors cette fois on rajoute la notion de pointeur.  
