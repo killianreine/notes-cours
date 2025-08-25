@@ -37,3 +37,56 @@ struct Etudiant{
 }etu1, etu2, etu3;
 ```
 Ainsi les variables `etu1`, `etu2` et `etu3` sont de type `struct Etudiant`et sont directement utilisable.
+
+## Initialisation d'une structure
+Lors de la création d'une structure, on peut aussi initialiser ces dernières, c'est à dire donner une valeur à chacun des champs (ou pas) un à un.  
+On passera alors par l'instruction de la forme :
+```c
+nomVarStruct = { valeurField1, valeurField2, ...};
+```
+Sur notre structure de base `Etudiant` on peut initialiser les trois en même temps : 
+```c
+struct Etudiant{
+	char nom[100];
+	char prenom[100];
+	int age;
+	char domaine[100];
+	}etu1 = { "Leroux", "Antoine", 18, "Mathématiques" }, 
+	 etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" }, 
+	 etu3 = { "Armand", "Quentin", 21, "Informatique Quantique" };
+```
+Ainsi, dans notre code chacun des $4$ champs associés à chaque structure est associé à une valeur, on peut le voir comme une sorte de dictionnaire : 
+```
+etu1 : 
+	Nom = Leroux
+	Prenom = Antoine
+	Age = 18
+	Domaine = Mathématiques
+	
+etu2 :
+	Nom : Morin
+	Prénom : Mylène
+	Age : 24
+	Domaine : Économie/Gestion
+	
+etu3 : 
+	Nom : Armand
+	Prénom : Quentin
+	Age : 21
+	Domaine : Informatique Quantique
+```
+
+>[!info] Remarque
+>On est pas obligé d'initialiser chaque champ associé à une structure. 
+
+Regardons ce qu'il se passe dans ces cas là :   
+<u>Exemple :</u>  
+Dans notre exemple, on reprend un nouvel étudiant, on ne lui donne pas de `nom` ni d'`age`.
+```C
+struct Etudiant{
+	char nom[100];
+	char prenom[100];
+	int age;
+	char domaine[100];
+	}inconnu = { , "Brice", ,"Industrie"};
+```
