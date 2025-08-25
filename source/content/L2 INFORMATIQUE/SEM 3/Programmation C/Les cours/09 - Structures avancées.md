@@ -106,3 +106,64 @@ Dans le cas où vous n'initialisez pas toutes les champs associés à la structu
 struct Etudiant inconnu = { .prenom = "Brice", .domaine = "Industrie" };
 ```
 
+## Accès aux valeurs des champs
+### Accès direct 
+Pour accéder de **manière directe** aux valeurs des champs associés à une structure en C, on utilise l'opérateur `.champ` utilisé précédemment, ce dernier permettait de donner une valeur à certain champs lors de l'initialisation de ceux-ci. On s'en ressert ici pour accéder à leur valeur : 
+```
+varStructure.champ
+```
+
+<u>Exemple :</u>  
+Affichage correct des informations concernant l'étudiant `etu1`.
+```c
+#include <stdio.h>
+
+struct Etudiant {
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+};
+
+int main(){
+	struct Etudiant etu1 = { "Leroux", "Antoine", 18, "Mathématiques" };
+	
+	// Affichage des informations concernant Antoine
+	printf("Informations : %s %s\n", etu1.nom, etu1.prenom);
+	printf("|- Age : %d\n|- Domaine : %s\n", etu1.age, etu1.domaine);
+	return 0;
+}
+```
+```
+Informations : Leroux Antoine
+|- Age : 18
+|- Domaine : Mathématiques
+```
+### Accès via pointeur
+Pour pouvoir accéder à une structure grâce à un pointeur, commençons déjà par relier la structure à notre pointeur. Vous allez voir, cela ne change rien à la manière de relier un pointeur et un entier.
+```c
+int main(){
+	struct Etudiant etu1 = { "Leroux", "Antoine", 18, "Mathématiques" };
+	struct Etudiant* ptr = &etu1;
+	return 0;
+}
+```
+Rien de bien nouveau, on passe l'adresse mémoire au pointeur de type `struct Etudiant`.
+
+Là ou ça changer c'est pour accéder à la valeur d'un champ via pointeur, à la place d'utiliser `.` on utilise `->` le reste est exactement pareil : 
+```c
+int main(){
+	struct Etudiant etu1 = { "Leroux", "Antoine", 18, "Mathématiques" };
+	struct Etudiant* ptr = &etu1;
+	
+	// Affichage des informations concernant Antoine
+	printf("Informations : %s %s\n", ptr->nom, ptr->prenom);
+	printf("|- Age : %d\n|- Domaine : %s\n", ptr->age, ptr->domaine);
+	return 0;
+}
+```
+```
+Informations : Leroux Antoine
+|- Age : 18
+|- Domaine : Mathématiques
+```
