@@ -82,11 +82,27 @@ etu3 :
 Regardons ce qu'il se passe dans ces cas là :   
 <u>Exemple :</u>  
 Dans notre exemple, on reprend un nouvel étudiant, on ne lui donne pas de `nom` ni d'`age`.
-```C
-struct Etudiant{
-	char nom[100];
-	char prenom[100];
-	int age;
-	char domaine[100];
-	}inconnu = { , "Brice", ,"Industrie"};
+```c
+struct Etudiant {
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+} inconnu = {.prenom = "Brice", .domaine = "Industrie"};
 ```
+Les autres variables `age` et `nom` sont quant à elle mises à $0$.
+
+On peut aussi déclarer et initialiser un instance de la structure en dehors de sa création, dans la fonction d'entrée `main` par exemple dans ce cas on utilise la syntaxe suivante : 
+```c
+struct nomStructure nomVariable = { ... };
+```
+Si on reprend le dernier étudiant avec toutes les informations `etu3` cela nous donnerais :
+```c
+struct Etudiant etu3 = { "Adam", "Quentin", 21, "Informatique Quantique" };
+```
+
+Dans le cas où vous n'initialisez pas toutes les champs associés à la structure, on reprend la syntaxe `.champ = ...` vue juste au dessus : 
+```c
+struct Etudiant inconnu = { .prenom = "Brice", .domaine = "Industrie" };
+```
+
