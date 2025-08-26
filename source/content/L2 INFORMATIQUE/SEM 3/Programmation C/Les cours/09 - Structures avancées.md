@@ -351,3 +351,5 @@ int codeDirect = etu2.adresse.code;
 int codePointeur = ptr->code;
 ```
 De plus si vous modifiez la valeur d'un champ, cela affectera les deux méthodes car elles utilisent en faire exactement la même instance de la structure.
+
+# Tableaux de structures
