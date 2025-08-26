@@ -168,4 +168,74 @@ Informations : Leroux Antoine
 |- Domaine : Mathématiques
 ```
 
+## Modification d'un champ
+Il est possible de modifier la valeur attribuée aux différents champs d'une instance de la structure. Dans ce cas là, on distingue aussi deux méthodes **directe** et **indirecte via pointeur**. 
+- <u>Directe :</u> On utilise l'opérateur `.` tel que `instance.filed = ...;`
+- <u>Indirecte :</u> On utilise l'opérateur `->` tel que `ptr->field = ...;`
+
+<u>Exemple :</u>  
+Ici on modifie l'instance `etu2` de la structure des deux manières.
+```c
+int main(){
+	struct Etudiant etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" };
+	
+	// Modification directe
+	etu2.nom = "Dorey";
+	etu2.prenom = "Ewen";
+	
+	// Modification via pointeur
+	struct Etudiant* ptr = &etu2;
+	ptr->domaine = "Météorologie";
+	ptr->age = 22;
+	
+	// Affichage des informations 
+	printf("Informations : %s %s\n", etu2.nom, ptr->prenom);
+	printf("|- Age : %d\n|- Domaine : %s\n", ptr->age, etu2.domaine);
+	return 0;
+}
+```
+```bash
+ERROR!
+/tmp/2oSE7IvEf7/main.c: In function 'main':
+/tmp/2oSE7IvEf7/main.c:14:18: error: assignment to expression with array type
+   14 |         etu2.nom = "Dorey";
+      |                  ^
+ERROR!
+/tmp/2oSE7IvEf7/main.c:15:21: error: assignment to expression with array type
+   15 |         etu2.prenom = "Ewen";
+      |                     ^
+/tmp/2oSE7IvEf7/main.c:19:22: error: assignment to expression with array type
+   19 |         ptr->domaine = "Météorologie";
+      |                      ^
+```
+Et oui, vous ne vous attendiez pas à celle ci !  
+En fait c'est plutôt logique, on avait vu pendant le cours [[07 - Chaînes de caractères]] que lorsqu'un tableau de caractères est initialisé, il ne peut pas recevoir une nouvelle affectation. Ce qui implique les trois erreurs ici.  
+En fait, on utilise `strcopy`.
+
+```c
+#include <string.h>
+
+int main(){
+	struct Etudiant etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" };
+	
+	// Modification directe
+	strcpy(etu2.nom, "Dorey");
+	strcpy(etu2.prenom, "Ewen");
+	
+	// Modification via pointeur
+	struct Etudiant* ptr = &etu2;
+	strcpy(ptr->domaine, "Météorologie");
+	ptr->age = 22;
+	
+	// Affichage des informations 
+	printf("Informations : %s %s\n", etu2.nom, ptr->prenom);
+	printf("|- Age : %d\n|- Domaine : %s\n", ptr->age, etu2.domaine);
+	return 0;
+}
+```
+```
+Informations : Dorey Ewen
+|- Age : 22
+|- Domaine : Météorologie
+```
 # Tableaux de structures
