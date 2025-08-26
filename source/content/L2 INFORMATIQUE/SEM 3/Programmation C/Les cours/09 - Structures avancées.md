@@ -238,4 +238,81 @@ Informations : Dorey Ewen
 |- Age : 22
 |- Domaine : Météorologie
 ```
-# Tableaux de structures
+# Structures imbriquées
+En considérant toujours notre structure `Etudiant`, on souhaite stocker maintenant l'adresse de ces derniers on va alors devoir ajouter un champ. Sauf que pour l'adresse on décide de le stocker sous forme de structure `Adresse`, celle ci contient le numéro de rue `numero`, le nom de la rue `rue`, le code postal `code` et le nom de la ville `ville`.  
+On donne alors la structure `Adresse` comme suit :
+```c
+struct Adresse{
+	int numéro;
+	char rue[300];
+	int code;
+	char ville[100];
+};
+```
+
+Maintenant il faut ajouter le champ `adresse` à notre étudiant : 
+```c
+struct Etudiant {
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+    struct Adresse adresse;
+};
+```
+En fait, pour donner l'adresse à l'étudiant, il faudra donner un **emplacement mémoire** vers l'instance d'`adresse`. Rien de trop chiant, il suffit de définir et d'initialiser une instance de la structure et de la donner à étudiant : 
+```c
+struct Etudiant etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" };
+struct Adresse adr = { 25, "Rue Philippe Lebon", 76600, "Le Havre" };
+
+// Affecter l'adresse à l'étudiant
+etu2.adresse = adr;
+```
+Pour accéder aux champs de l'adresse de l'étudiant, on procède avec les opérateurs `.` ou `->` selon la méthode d'accès sauf qu'ici on le fait sur deux niveaux : une fois pour accéder au champ `adresse` une seconde fois pour accéder à un des champs associés à `adresse`.  
+Dans notre cas par exemple, pour accéder au nom de la rue, on utilisera la syntaxe ;
+```c
+char nomRue[300] = etu2.adresse.rue;
+```
+Modifions l'affichage de l'étudiant pour afficher maintenant son adresse proprement et simplement.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct Adresse{
+	int numero;
+	char rue[300];
+	int code;
+	char ville[100];
+};
+
+struct Etudiant {
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+    struct Adresse adresse;
+};
+
+int main(){
+	struct Etudiant etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" };
+	struct Adresse adr = { 25, "Rue Philippe Lebon", 76600, "Le Havre" };
+	
+	etu2.adresse = adr;
+	
+	// Affichage des informations 
+	printf("Informations : %s %s\n", etu2.nom, etu2.prenom);
+	printf("|- Age : %d\n|- Domaine : %s\n", etu2.age, etu2.domaine);
+	printf("|- Adresse : %d %s, %d - %s", etu2.adresse.numero, 
+	                                      etu2.adresse.rue, 
+	                                      etu2.adresse.code, 
+	                                      etu2.adresse.ville);
+	return 0;
+}
+```
+```
+Informations : Morin Mylène
+|- Age : 24
+|- Domaine : Économie/Gestion
+|- Adresse : 25 Rue Philippe Lebon, 76600 - Le Havre
+```
