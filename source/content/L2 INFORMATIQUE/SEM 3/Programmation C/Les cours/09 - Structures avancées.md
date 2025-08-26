@@ -353,3 +353,28 @@ int codePointeur = ptr->code;
 De plus si vous modifiez la valeur d'un champ, cela affectera les deux méthodes car elles utilisent en faire exactement la même instance de la structure.
 
 # Tableaux de structures
+Les tableaux jouent eux aussi un rôle important. Cette fois au lieu de stocker un caractère, ou un simple entier, chaque emplacement du tableau permettra de stocker une structure entière.  
+La définition et la déclaration fonctionne de la même manière que si on manipulait des entiers.  
+On reprend la structure `struct Etudiant` ainsi que la structure `Adresse` .
+
+```c
+struct Adresse{
+	int numero;
+	char rue[300];
+	int code;
+	char ville[100];
+};
+
+struct Etudiant {
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+    struct Adresse adresse;
+};
+```
+
+- Création d'un tableau initialement vide de $4$ étudiants :
+```c
+struct Etudiant classe[4];
+```
