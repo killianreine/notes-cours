@@ -316,3 +316,38 @@ Informations : Morin Mylène
 |- Domaine : Économie/Gestion
 |- Adresse : 25 Rue Philippe Lebon, 76600 - Le Havre
 ```
+
+On peut pas utiliser un pointeur vers la structure `adresse` de l'étudiant pour que ça aille plus vite ?  
+Évidemment, regardez : 
+```c
+int main(){
+	struct Etudiant etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" };
+	struct Adresse adr = { 25, "Rue Philippe Lebon", 76600, "Le Havre" };
+	
+	etu2.adresse = adr;
+	// Pointeur vers l'adresse de l'étudiant
+	struct Adresse *ptr = &etu2.adresse;
+	
+	// Modification d'une info de l'adresse : 
+	ptr->code = 78540;
+	
+	// Affichage des informations 
+	printf("Informations : %s %s\n", etu2.nom, etu2.prenom);
+	printf("|- Age : %d\n|- Domaine : %s\n", etu2.age, etu2.domaine);
+	printf("|- Adresse : %d %s, %d - %s", ptr->numero, ptr->rue, ptr->code, ptr->ville);
+	return 0;
+}
+```
+```
+Informations : Morin Mylène
+|- Age : 24
+|- Domaine : Économie/Gestion
+|- Adresse : 25 Rue Philippe Lebon, 78540 - Le Havre
+```
+
+En résumé ici il y a deux manières d'accéder aux informations : 
+```c
+int codeDirect = etu2.adresse.code;
+int codePointeur = ptr->code;
+```
+De plus si vous modifiez la valeur d'un champ, cela affectera les deux méthodes car elles utilisent en faire exactement la même instance de la structure.
