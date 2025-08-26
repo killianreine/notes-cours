@@ -374,7 +374,7 @@ struct Etudiant {
 };
 ```
 
-- Création d'un tableau initialement vide de $4$ étudiants :
+- Création d'un tableau initialement vide de `n` étudiants :
 ```c
-struct Etudiant classe[4];
+struct Etudiant classe[n];
 ```

@@ -28,22 +28,18 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
     <tr>
       <th>L1 portail M.I.P.S.I</th>
       <th>Tuteur 2024-25</th>
-      <th>Tuteur 2025-26</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Parcours MATHS</td>
       <th rowspan="3">M. REINE K.</th>
-      <th></th>
     </tr>
     <tr>
       <td>Parcours INFO</td>
-	<th>M. REINE K.</th>
     </tr>
     <tr>
       <td>Parcours SPIP</td>
-		<th></th>
     </tr>
   </tbody>
 </table>
