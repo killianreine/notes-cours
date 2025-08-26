@@ -1,17 +1,33 @@
-code[data-theme*=" "] {
-  color: var(--shiki-light);
-  background-color: var(--shiki-light-bg);
+/* Pour la version claire */
+code[data-theme*="c"] .token.keyword {
+  color: #d73a49; /* ex: rouge pour les mots-clés C */
 }
 
-code[data-theme*=" "] span {
-  color: var(--shiki-light);
+code[data-theme*="c"] .token.string {
+  color: #032f62; /* bleu foncé pour les chaînes */
 }
 
-[saved-theme="dark"] code[data-theme*=" "] {
-  color: var(--shiki-dark);
-  background-color: var(--shiki-dark-bg);
+code[data-theme*="c"] .token.function {
+  color: #005cc5; /* bleu clair pour les fonctions */
 }
 
-[saved-theme="dark"] code[data-theme*=" "] span {
-  color: var(--shiki-dark);
+code[data-theme*="c"] .token.comment {
+  color: #6a737d; /* gris pour les commentaires */
+}
+
+/* Pour le thème sombre */
+[saved-theme="dark"] code[data-theme*="c"] .token.keyword {
+  color: #ff7b72;
+}
+
+[saved-theme="dark"] code[data-theme*="c"] .token.string {
+  color: #a5d6ff;
+}
+
+[saved-theme="dark"] code[data-theme*="c"] .token.function {
+  color: #d2a8ff;
+}
+
+[saved-theme="dark"] code[data-theme*="c"] .token.comment {
+  color: #8b949e;
 }
