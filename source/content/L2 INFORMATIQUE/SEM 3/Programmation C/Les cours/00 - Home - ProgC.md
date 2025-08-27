@@ -1,496 +1,199 @@
+# 📘 **Cours de Programmation en C**
+**Bienvenue !**  
+Ce dépôt contient un tutorat dédié à l’apprentissage du langage C, destiné aux étudiants débutants en informatique ou à toute personne souhaitant acquérir des bases solides en programmation.
+
+# 🎯 **Objectifs**
+- Comprendre la syntaxe et les concepts fondamentaux du langage C
+- Savoir écrire, compiler et exécuter des programmes simples
+- Maîtriser les structures de contrôle (conditions, boucles) et les fonctions
+- Manipuler les pointeurs, tableaux et structures pour développer des programmes plus complexes
+- Acquérir de bonnes pratiques de programmation et de débogage
+
+# ℹ️ **Tutorats**
+Le tutorat de programmation en C est un complément pratique au cours magistral.  
+Ces séances visent à :
+- Revoir et approfondir les notions vues en cours
+- S’exercer à l’écriture et à la correction de programmes
+- Développer une méthode rigoureuse de résolution de problèmes en informatique
+- Répondre aux questions spécifiques des étudiants et partager des astuces de programmation
+Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif et interactif, favorisant l’entraide et la consolidation des compétences en programmation.
+## Prérequis
+- Connaissances de base en informatique.
+- Aucune expérience préalable en programmation n'est requise.
+## Plan du Cours
+Table des matières complète : [[Prog C - Table des matières]]
+
+<div>
 <style>
-.cours-c-container {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
-    color: #333;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* Styles communs */
+table.cours-plan {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
 }
-.cours-c-title {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 20px 0;
-    position: relative;
+table.cours-plan th,
+table.cours-plan td {
+  padding: 10px 15px;
+  text-align: left;
+  border: 1px solid;
 }
-.cours-c-title::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 4px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    margin: 20px auto;
-    border-radius: 2px;
+table.cours-plan tr:hover {
+  cursor: pointer;
 }
-.cours-c-h2 {
-    color: #2c3e50;
-    font-size: 1.8em;
-    margin: 30px 0 20px 0;
-    padding: 15px 0;
-    border-bottom: 3px solid #3498db;
-    position: relative;
-}
-.cours-c-h2::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 60px;
-    height: 3px;
-    background: #e74c3c;
-}
-.cours-c-h3 {
-    color: #34495e;
-    font-size: 1.4em;
-    margin: 25px 0 15px 0;
-    padding: 10px 0;
-    border-left: 4px solid #3498db;
-    padding-left: 15px;
-    background: linear-gradient(90deg, rgba(52, 152, 219, 0.1), transparent);
-}
-.cours-c-p {
-    margin-bottom: 15px;
-    text-align: justify;
-    color: #2c3e50;
-    font-size: 1.1em;
-}
-.cours-c-ul {
-    margin: 15px 0 15px 20px;
-}
-.cours-c-li {
-    margin-bottom: 8px;
-    color: #34495e;
-    position: relative;
-    padding-left: 10px;
-}
-.cours-c-li::before {
-    content: '▶';
-    color: #3498db;
-    position: absolute;
-    left: -15px;
-    top: 0;
-}
-.cours-c-a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    position: relative;
-}
-.cours-c-a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: linear-gradient(45deg, #3498db, #e74c3c);
-    transition: width 0.3s ease;
-}
-.cours-c-a:hover::after {
-    width: 100%;
-}
-.cours-c-a:hover {
-    color: #e74c3c;
-    transform: translateY(-1px);
-}
-.cours-plan {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    margin: 30px 0;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-.cours-plan th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+/* Mode clair par défaut */
+@media (prefers-color-scheme: light) {
+  table.cours-plan th {
+    background-color: #4CAF50;
     color: white;
-    padding: 15px;
-    font-size: 1.1em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border-color: #4CAF50;
+  }
+  table.cours-plan td {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+  }
+  table.cours-plan tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+  table.cours-plan tr:hover td {
+    background-color: #e0f0e0;
+  }
+  table.cours-plan a {
+    color: #007acc;
+  }
+  table.cours-plan a:hover {
+    text-decoration: underline;
+  }
 }
-.cours-plan td {
-    padding: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    background: white;
-}
-.cours-plan tr:nth-child(even) td {
-    background: rgba(102, 126, 234, 0.02);
-}
-.cours-plan tr:hover td {
-    background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-    transform: scale(1.01);
-    cursor: pointer;
-}
-.cours-plan td:first-child {
-    font-weight: bold;
-    color: #667eea;
-    font-size: 1.2em;
-    text-align: center;
-}
-.cours-plan td:nth-child(2) {
-    font-weight: 600;
-    color: #2c3e50;
-}
-.cours-plan td:last-child {
-    color: #7f8c8d;
-    font-style: italic;
-}
-.intro-section {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    border-left: 5px solid #667eea;
-    position: relative;
-    overflow: hidden;
-}
-.intro-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(102, 126, 234, 0.1), transparent);
-    border-radius: 50%;
-}
-.objectives-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 20px;
-    margin: 20px 0;
-}
-.objective-card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid #3498db;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-.objective-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, #3498db, #e74c3c);
-}
-.objective-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-.tutorat-info {
-    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(231, 76, 60, 0.1));
-    padding: 25px;
-    border-radius: 15px;
-    margin: 30px 0;
-    border: 2px solid rgba(52, 152, 219, 0.2);
-}
-.resources-section {
-    background: rgba(39, 174, 96, 0.05);
-    padding: 25px;
-    border-radius: 15px;
-    border-left: 5px solid #27ae60;
-    margin: 30px 0;
-}
-.projects-section {
-    background: rgba(243, 156, 18, 0.05);
-    padding: 25px;
-    border-radius: 15px;
-    border-left: 5px solid #f39c12;
-    margin: 30px 0;
-}
-.emoji {
-    font-size: 1.2em;
-    margin-right: 10px;
-}
-.cours-c-hr {
-    border: none;
-    height: 3px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    margin: 40px 0;
-    border-radius: 2px;
-}
-.final-message {
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: #2c3e50;
-    padding: 30px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-    border-radius: 15px;
-    margin-top: 30px;
-}
-.prerequis-card {
-    background: rgba(155, 89, 182, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    border-left: 4px solid #9b59b6;
-    margin: 20px 0;
-}
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.cours-c-container {
-    animation: fadeInUp 0.8s ease-out;
-}
-.objective-card {
-    animation: fadeInUp 0.8s ease-out;
-    animation-delay: 0.2s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-.objective-card:nth-child(2) { animation-delay: 0.4s; }
-.objective-card:nth-child(3) { animation-delay: 0.6s; }
+/* Mode sombre */
 @media (prefers-color-scheme: dark) {
-    .cours-c-container {
-        background: rgba(30, 30, 30, 0.95);
-        color: #e0e0e0;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    }
-    .cours-c-title {
-        background: linear-gradient(45deg, #74a9ff, #9b7de8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-    .cours-c-title::after {
-        background: linear-gradient(45deg, #74a9ff, #9b7de8);
-    }
-    .cours-c-h2 {
-        color: #e0e0e0;
-        border-bottom: 3px solid #74a9ff;
-    }
-    .cours-c-h2::before {
-        background: #ff6b6b;
-    }
-    .cours-c-h3 {
-        color: #b0b0b0;
-        border-left: 4px solid #74a9ff;
-        background: linear-gradient(90deg, rgba(116, 169, 255, 0.15), transparent);
-    }
-    .cours-c-p {
-        color: #e0e0e0;
-    }
-    .cours-c-li {
-        color: #b0b0b0;
-    }
-    .cours-c-li::before {
-        color: #74a9ff;
-    }
-    .cours-c-a {
-        color: #74a9ff;
-    }
-    .cours-c-a:hover {
-        color: #ff6b6b;
-    }
-    .cours-c-a::after {
-        background: linear-gradient(45deg, #74a9ff, #ff6b6b);
-    }
-    .cours-plan th {
-        background: linear-gradient(135deg, #2c3e50 0%, #4a4a4a 100%);
-        color: #e0e0e0;
-    }
-    .cours-plan td {
-        background: #2c2c2c;
-        color: #e0e0e0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .cours-plan tr:nth-child(even) td {
-        background: #333333;
-    }
-    .cours-plan tr:hover td {
-        background: linear-gradient(90deg, rgba(116, 169, 255, 0.2), rgba(155, 125, 232, 0.2));
-    }
-    .cours-plan td:first-child {
-        color: #74a9ff;
-    }
-    .cours-plan td:nth-child(2) {
-        color: #e0e0e0;
-    }
-    .cours-plan td:last-child {
-        color: #999999;
-    }
-    .intro-section {
-        background: linear-gradient(135deg, rgba(116, 169, 255, 0.15), rgba(155, 125, 232, 0.15));
-        border-left: 5px solid #74a9ff;
-    }
-    .intro-section::before {
-        background: radial-gradient(circle, rgba(116, 169, 255, 0.2), transparent);
-    }
-    .objective-card {
-        background: #2c2c2c;
-        border-left: 4px solid #74a9ff;
-        color: #e0e0e0;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    .objective-card::before {
-        background: linear-gradient(90deg, #74a9ff, #ff6b6b);
-    }
-    .objective-card:hover {
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    }
-    .tutorat-info {
-        background: linear-gradient(135deg, rgba(116, 169, 255, 0.15), rgba(255, 107, 107, 0.15));
-        border: 2px solid rgba(116, 169, 255, 0.3);
-    }
-    .resources-section {
-        background: rgba(76, 209, 55, 0.1);
-        border-left: 5px solid #4cd137;
-    }
-    .projects-section {
-        background: rgba(255, 165, 0, 0.1);
-        border-left: 5px solid #ffa500;
-    }
-    .cours-c-hr {
-        background: linear-gradient(90deg, #74a9ff, #9b7de8);
-    }
-    .final-message {
-        color: #e0e0e0;
-        background: linear-gradient(135deg, rgba(116, 169, 255, 0.15), rgba(155, 125, 232, 0.15));
-    }
-    .prerequis-card {
-        background: rgba(155, 89, 182, 0.2);
-        border-left: 4px solid #bb7de8;
-    }
-}
-@media (max-width: 768px) {
-    .cours-c-container {
-        padding: 15px;
-        margin: 10px;
-    }
-    .cours-c-title {
-        font-size: 2em;
-    } 
-    .cours-c-h2 {
-        font-size: 1.5em;
-    }
-    .cours-plan th,
-    .cours-plan td {
-        padding: 10px 8px;
-        font-size: 0.9em;
-    }
+  table.cours-plan th {
+    background-color: #121212;  /* Très foncé */
+    color: #e0e0e0;             /* Texte clair */
+    border-color: #444;
+  }
+  table.cours-plan td {
+    background-color: #1e1e1e;  /* Fond sombre uniforme */
+    color: #f5f5f5;             /* Texte clair et lisible */
+    border-color: #333;
+  }
+  table.cours-plan tr:nth-child(even) td {
+    background-color: #2a2a2a;  /* Alternance subtile */
+  }
+  table.cours-plan tr:hover td {
+    background-color: #3a3a3a;  /* Survol plus clair */
+  }
+  table.cours-plan a {
+    color: #66b2ff;             /* Lien bleu clair doux */
+  }
+  table.cours-plan a:hover {
+    text-decoration: underline;
+    color: #99ccff;
+  }
 }
 </style>
-<body>
-<div class="cours-c-container">
-    <h1 class="cours-c-title"><span class="emoji">📘</span> Cours de Programmation en C</h1>
-    <div class="intro-section">
-        <p class="cours-c-p"><strong>Bienvenue !</strong><br>
-        Ce dépôt contient un tutorat dédié à l'apprentissage du langage C, destiné aux étudiants débutants en informatique ou à toute personne souhaitant acquérir des bases solides en programmation.</p>
-    </div>
-    <h2 class="cours-c-h2"><span class="emoji">🎯</span> Objectifs</h2>
-    <div class="objectives-grid">
-        <div class="objective-card">
-            <li class="cours-c-li">Comprendre la syntaxe et les concepts fondamentaux du langage C</li>
-        </div>
-        <div class="objective-card">
-            <li class="cours-c-li">Savoir écrire, compiler et exécuter des programmes simples</li>
-        </div>
-        <div class="objective-card">
-            <li class="cours-c-li">Maîtriser les structures de contrôle (conditions, boucles) et les fonctions</li>
-        </div>
-        <div class="objective-card">
-            <li class="cours-c-li">Manipuler les pointeurs, tableaux et structures pour développer des programmes plus complexes</li>
-        </div>
-        <div class="objective-card">
-            <li class="cours-c-li">Acquérir de bonnes pratiques de programmation et de débogage</li>
-        </div>
-    </div>
-    <h2 class="cours-c-h2"><span class="emoji">ℹ️</span> Tutorats</h2>
-    <div class="tutorat-info">
-        <p class="cours-c-p">Le tutorat de programmation en C est un complément pratique au cours magistral.<br>
-        Ces séances visent à :</p>
-        <ul class="cours-c-ul">
-            <li class="cours-c-li">Revoir et approfondir les notions vues en cours</li>
-            <li class="cours-c-li">S'exercer à l'écriture et à la correction de programmes</li>
-            <li class="cours-c-li">Développer une méthode rigoureuse de résolution de problèmes en informatique</li>
-            <li class="cours-c-li">Répondre aux questions spécifiques des étudiants et partager des astuces de programmation</li>
-        </ul>
-        <p class="cours-c-p">Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif et interactif, favorisant l'entraide et la consolidation des compétences en programmation.</p>
-    </div>
-    <h3 class="cours-c-h3">Prérequis</h3>
-    <div class="prerequis-card">
-        <ul class="cours-c-ul">
-            <li class="cours-c-li">Connaissances de base en informatique</li>
-            <li class="cours-c-li">Aucune expérience préalable en programmation n'est requise</li>
-        </ul>
-    </div>
-    <h3 class="cours-c-h3">Plan du Cours</h3>
-    <p class="cours-c-p">Table des matières complète : <a class="cours-c-a" href="Prog C - Table des matières">[[Prog C - Table des matières]]</a></p>
-    <table class="cours-plan">
-        <thead>
-        <tr>
-        <th>#</th>
-        <th>Cours</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr><td>01</td><td><a class="cours-c-a" href="01 - Introduction">Introduction</a></td><td>Présentation du C</td></tr>
-        <tr><td>02</td><td><a class="cours-c-a" href="02 - Premiers pas">Premiers pas</a></td><td>Variables et entrées/sorties</td></tr>
-        <tr><td>03</td><td><a class="cours-c-a" href="03 - Opérateurs & Arithmétique">Opérateurs & Arithmétique</a></td><td>Opérations de base</td></tr>
-        <tr><td>04</td><td><a class="cours-c-a" href="04 - Conditions et boucles">Conditions et boucles</a></td><td>Structures de contrôle</td></tr>
-        <tr><td>05</td><td><a class="cours-c-a" href="05 - Retour sur les fonctions">Retour sur les fonctions</a></td><td>Fonctions et paramètres</td></tr>
-        <tr><td>06</td><td><a class="cours-c-a" href="06 - Les tableaux statiques">Les tableaux statiques</a></td><td>Tableaux fixes et manipulation</td></tr>
-        <tr><td>07</td><td><a class="cours-c-a" href="07 - Chaînes de caractères">Chaînes de caractères</a></td><td>Strings et fonctions associées</td></tr>
-        <tr><td>08</td><td><a class="cours-c-a" href="08 - Les pointeurs">Les pointeurs</a></td><td>Introduction aux pointeurs</td></tr>
-        <tr><td>09</td><td><a class="cours-c-a" href="09 - Allocation dynamique">Allocation dynamique</a></td><td>malloc, free, et gestion mémoire</td></tr>
-        <tr><td>10</td><td><a class="cours-c-a" href="10 - Structures avancées">Structures avancées</a></td><td>Structures et typedef</td></tr>
-        <tr><td>11</td><td><a class="cours-c-a" href="11 - Les fichiers">Les fichiers</a></td><td>Lecture/écriture fichiers</td></tr>
-        <tr><td>12</td><td><a class="cours-c-a" href="12 - Tests unitaires">Tests unitaires</a></td><td>Introduction aux tests en C</td></tr>
-        <tr><td>13</td><td><a class="cours-c-a" href="13 - Compilation séparée et Makefile">Compilation séparée et Makefile</a></td><td>Organisation du code et Makefiles</td></tr>
-        <tr><td>14</td><td><a class="cours-c-a" href="14 - Structures particulières">Structures particulières</a></td><td>Structures complexes et usage avancé</td></tr>
-        <tr><td>15</td><td><a class="cours-c-a" href="15 - Fonctions avancées">Fonctions avancées</a></td><td>Fonctions récursives et pointeurs de fonctions</td></tr>
-        </tbody>
-    </table>
-    <h3 class="cours-c-h3">Ressources</h3>
-    <div class="resources-section">
-        <ul class="cours-c-ul">
-            <li class="cours-c-li"><a class="cours-c-a" href="https://en.cppreference.com/w/c">Documentation officielle du langage C</a></li>
-            <li class="cours-c-li">Langage C - Maîtriser la programmation procédurale (avec exercices pratiques) (2e édition), édition ENI</li>
-            <li class="cours-c-li">Zeste de savoir, Langage C <a class="cours-c-a" href="https://zestedesavoir.com/tutoriels/pdf/755/le-langage-c-1.pdf">PDF</a></li>
-        </ul>
-    </div>
-    <h3 class="cours-c-h3">Projets et exercices</h3>
-    <div class="projects-section">
-        <p class="cours-c-p">Le cours proposera des exercices de niveaux différents, chacun sera accompagné de sa correction. Et, pour consolider les acquis des <em>projets</em> pourront être proposés. La plupart du temps chaque projet aura un sujet liant sciences et informatiques.</p>
-        <ul class="cours-c-ul">
-            <li class="cours-c-li">Mathématiques x informatique</li>
-            <li class="cours-c-li">Algèbre x informatique</li>
-            <li class="cours-c-li">Physique x informatique</li>
-            <li class="cours-c-li">IRL x informatique</li>
-        </ul>
-    </div>
-    <hr class="cours-c-hr">
-    <div class="final-message">
-        Bonne chance dans votre apprentissage du langage C !
-    </div>
+<table class="cours-plan">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Cours</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td><a href="01 - Introduction">Introduction</a></td>
+      <td>Présentation du C</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td><a href="02 - Premiers pas">Premiers pas</a></td>
+      <td>Variables et entrées/sorties</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td><a href="03 - Opérateurs & Arithmétique">Opérateurs & Arithmétique</a></td>
+      <td>Opérations de base</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td><a href="04 - Conditions et boucles">Conditions et boucles</a></td>
+      <td>Structures de contrôle</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td><a href="05 - Retour sur les fonctions">Retour sur les fonctions</a></td>
+      <td>Fonctions et paramètres</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td><a href="06 - Les tableaux statiques">Les tableaux statiques</a></td>
+      <td>Tableaux fixes et manipulation</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td><a href="07 - Chaînes de caractères">Chaînes de caractères</a></td>
+      <td>Strings et fonctions associées</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td><a href="08 - Les pointeurs">Les pointeurs</a></td>
+      <td>Introduction aux pointeurs</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td><a href="09 - Allocation dynamique">Allocation dynamique</a></td>
+      <td>malloc, free, et gestion mémoire</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="10 - Structures avancées">Structures avancées</a></td>
+      <td>Structures et typedef</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="11 - Les fichiers">Les fichiers</a></td>
+      <td>Lecture/écriture fichiers</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="12 - Tests unitaires">Tests unitaires</a></td>
+      <td>Introduction aux tests en C</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="13 - Compilation séparée et Makefile">Compilation séparée et Makefile</a></td>
+      <td>Organisation du code et Makefiles</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="14 - Structures particulières">Structures particulières</a></td>
+      <td>Structures complexes et usage avancé</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="15 - Fonctions avancées">Fonctions avancées</a></td>
+      <td>Fonctions récursives et pointeurs de fonctions</td>
+    </tr>
+  </tbody>
+</table>
 </div>
-</body>
+
+## Ressources
+- [Documentation officielle du langage C](https://en.cppreference.com/w/c)
+- Langage C  
+  Maîtriser la programmation procédurale (avec exercices pratiques) (2e édition), édition ENI
+- Zeste de savoir, Langage C [pdf](https://zestedesavoir.com/tutoriels/pdf/755/le-langage-c-1.pdf)
+
+## Projets et exercices
+Le cours proposera des exercices de niveaux différents, chacun sera accompagné de sa correction. Et, pour consolider les acquis des *projets* pourront être proposés. La plupart du temps chaque projet aura un sujet liant sciences et informatiques.
+- Mathématiques x informatique
+- Algèbre x informatique
+- Physique x informatique
+- IRL x informatique
+
+---
+
+Bonne chance dans votre apprentissage du langage C !
