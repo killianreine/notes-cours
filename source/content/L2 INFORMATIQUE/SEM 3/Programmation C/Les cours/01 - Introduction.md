@@ -53,6 +53,37 @@ Le `C` est un **langage compilé**, en gros le code source où se trouve n'est p
 >    Suite de fonctions dont une principale `main` qui représente **le point d'entrée du programme**. Les erreurs sont détectées pendant la compilation, on ne peut donc pas exécuter un programme qui n'a pas réussi à compiler.
 
 ![[compilation.svg]]
+
+1. **La phase de préparation**
+- Code source  `fichier.c`
+  C'est le code écrit par le développeur, il contient les instructions, les boucles, les fonctions, ...
+- Préprocesseur  
+  Il remplace les `#include`, `#define`, `ifdef`, `ifndef`, ... par les programmes extérieurs au fichiers qui lui sont associés pour son bon fonctionnement.
+- Compilateur  
+  Traduit le code C en code assembleur,.
+- Assembleur  
+  Convertit le code assembleur `.s` en code objet (c'est un code binaire, non encore exécutable).
+2. **La phase de liaison - LINKING**
+- Éditeur de lien *linker, `ld`*  
+  Il combine les fichiers objets créés par l'assembleur et ajoute les bibliothèques nécessaires `libc` par exemple. Et il résoud les *symboles*, comme par exemple quelle fonction correspond à `printf`. Puis il produit l'exécutable final.
+- Les bibliothèques  
+  C'est elles qui contiennent les fonctions systèmes standard `printf`, `scanf`, ...
+3. **La phase d'exécution** 
+- Exécution et chargement  
+  Le format du programme final dépend du système d'exploitation et peut donc être lancé. Pour commencer il est chargé en mémoire grâce au `loader`.
+- L'environnement d'exécution  
+  C'est là ou est préparé la pile d'exécution `stack`, le tas `heap` et la fonction `main()`.
+- Le processeur  
+  Lui il exécute les instructions machines en manipulant les registres mémoire et ALU.
+
+>[!info] Remarque
+>L’ALU est le circuit électronique qui effectue toutes les opérations **arithmétiques** (addition, soustraction, multiplication, division, etc.) et **logiques** (ET, OU, NON, comparaisons…).
+
+On retiendra alors : 
+
+$$
+code_{source} \rightarrow préprocesseur \rightarrow compilateur \rightarrow assembleur \rightarrow linker \rightarrow exectutable \rightarrow loader \rightarrow processeur
+$$
 ## Outils nécessaires
 Évidemment avant de commencer ce cours, il faut s'assurer d'avoir tous les outils requis pour pouvoir coder, compiler et exécuter du `C`.
 
