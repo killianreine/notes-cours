@@ -14,15 +14,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Structures avancées.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Structures avancées"
+              "title": "Information L2 S3"
+            }
+          },
+          {
+            "id": "12cb1fa1411894c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "25-26 L2 INFO, TUTORAT MATINFO 2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,10 +211,18 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "370368c1ea5213f8",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
-    "Sommaire 08 pointeurs.md",
+    "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Structures avancées.md",
+    "L2 INFORMATIQUE/SEM 3/Algèbre 1/Loi de composition interne - CM.md",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/TPs",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/TDs",
+    "Sommaire 08 pointeurs.md",
     "Sommaire 09 structures.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
@@ -224,15 +247,9 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/depassementMemoire.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/decoupCh.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/concat.svg",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les codes",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Nouveau dossier",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
     "index.md",
     "L2 INFORMATIQUE/SEM 4/Informations L2 S4.md",
-    "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
-    "L2 INFORMATIQUE/SEM 3/Support pdf/Java fonctionnel Cours 2024-25.pdf",
-    "L2 INFORMATIQUE/SEM 3/Support pdf/MPI Cours 2024-25.pdf",
-    "L2 INFORMATIQUE/SEM 3/Support pdf/Java_fonctionnel_L2_Cours_2425.pdf",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/defpointeur.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/index_chaines.md",
@@ -241,8 +258,6 @@
     "Autres supports/JavaScript/00 - Home.md",
     "Autres supports/readme Autre.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
-    "Autres supports/JavaScript/02 - Valeurs, types et opérateurs.md",
-    "Autres supports/JavaScript/01 - Introduction à JavaScript.md",
     "L2 INFORMATIQUE/Maquette L2.png",
     "L2 INFORMATIQUE/SEM 4/OILR/OIL R carteFinale.canvas"
   ]

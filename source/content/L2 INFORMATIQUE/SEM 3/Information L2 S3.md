@@ -23,9 +23,8 @@ L'UE **programmation fonctionnelle** est une Unité d'Enseignement Disciplinaire
 - <u>Durée de l'UE :</u> 20 heures
 
 ## Mathématiques pour l'informatique 2
-L'UE **Mathématiques pour l'informatique** est une continuité de la même UE du même nom enseignée au second semestre de la première année. Au programme : Relation binaire, Graphes, Algèbre de Boole et Codage linéaire.
-- <u>Support de cours :</u> [[MPI Cours 2024-25.pdf]]  
-  *==Support année 2024-25== par K. REINE*
+L'UE **Mathématiques pour l'informatique** est une continuité de la même UE du même nom enseignée au second semestre de la première année. Au programme : Relation binaire, Graphes, Algèbre de Boole, Logique et Codage linéaire.
+- <u>Support de cours :</u> *à venir*
 - <u>Durée de l'UE :</u> 50 heures
 
 # Unités d'Enseignements Transversal - UET
