@@ -46,11 +46,6 @@
 
         body {
             font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
-            background: radial-gradient(1400px 800px at 70% -5%, rgba(99, 102, 241, 0.15), transparent 70%),
-                       radial-gradient(1200px 600px at -10% 20%, rgba(139, 92, 246, 0.12), transparent 60%),
-                       radial-gradient(800px 400px at 90% 80%, rgba(6, 182, 212, 0.08), transparent 50%),
-                       var(--bg-primary);
-            color: var(--text-primary);
             line-height: 1.6;
             min-height: 100vh;
             overflow-x: hidden;
