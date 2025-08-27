@@ -543,7 +543,7 @@ Etudiant etu1;
 ```
 L'utilisation d'un alias permet de zapper le mot clé `struct` comme ça on a un mot en moins à écrire plutôt sympas non ?
 
-# Structures et fichiers
+# Structures et fonctions
 ## Passage par valeur
 On donne juste le nom de la structure en paramètre pour l'utiliser correctement : 
 ```c
