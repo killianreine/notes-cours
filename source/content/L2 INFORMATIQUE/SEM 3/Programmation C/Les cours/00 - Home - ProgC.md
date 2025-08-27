@@ -1,25 +1,25 @@
-# Cours de Programmation en Langage C
+# 📘 **Cours de Programmation en C**
+**Bienvenue !**  
+Ce dépôt contient un tutorat dédié à l’apprentissage du langage C, destiné aux étudiants débutants en informatique ou à toute personne souhaitant acquérir des bases solides en programmation procédurale.
 
-## Introduction
+# 🎯 **Objectifs**
+- Comprendre la syntaxe et les concepts fondamentaux du langage C
+- Savoir écrire, compiler et exécuter des programmes simples
+- Maîtriser les structures de contrôle (conditions, boucles) et les fonctions
+- Manipuler les pointeurs, tableaux et structures pour développer des programmes plus complexes
+- Acquérir de bonnes pratiques de programmation et de débogage
 
-Bienvenue dans ce cours de programmation en langage C ! Ce cours est conçu pour les débutants qui souhaitent apprendre les bases de la programmation en C.
-
-## Objectifs du Cours
-
-À la fin de ce cours, vous serez capable de :
-
-- Comprendre les concepts fondamentaux de la programmation en C.
-- Écrire des programmes simples en utilisant des structures de contrôle.
-- Manipuler des tableaux et des chaînes de caractères.
-- Utiliser des fonctions et des pointeurs.
-- Gérer la mémoire dynamique.
-- *à venir...*
-
+# ℹ️ **Tutorats**
+Le tutorat de programmation en C est un complément pratique au cours magistral.  
+Ces séances visent à :
+- Revoir et approfondir les notions vues en cours
+- S’exercer à l’écriture et à la correction de programmes
+- Développer une méthode rigoureuse de résolution de problèmes en informatique
+- Répondre aux questions spécifiques des étudiants et partager des astuces de programmation
+Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif et interactif, favorisant l’entraide et la consolidation des compétences en programmation.
 ## Prérequis
-
 - Connaissances de base en informatique.
 - Aucune expérience préalable en programmation n'est requise.
-
 ## Plan du Cours
 Table des matières complète : [[Prog C - Table des matières]]
 
@@ -35,14 +35,12 @@ Table des matières complète : [[Prog C - Table des matières]]
 - Cours 10 : [[10 - Allocation dynamique]]
 
 ## Ressources
-
 - [Documentation officielle du langage C](https://en.cppreference.com/w/c)
 - Langage C  
   Maîtriser la programmation procédurale (avec exercices pratiques) (2e édition), édition ENI
 - Zeste de savoir, Langage C [pdf](https://zestedesavoir.com/tutoriels/pdf/755/le-langage-c-1.pdf)
 
 ## Projets et exercices
-
 Le cours proposera des exercices de niveaux différents, chacun sera accompagné de sa correction. Et, pour consolider les acquis des *projets* pourront être proposés. La plupart du temps chaque projet aura un sujet liant sciences et informatiques.
 - Mathématiques x informatique
 - Algèbre x informatique

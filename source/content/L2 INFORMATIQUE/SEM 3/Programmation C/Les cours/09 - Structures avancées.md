@@ -378,3 +378,20 @@ struct Etudiant {
 ```c
 struct Etudiant classe[n];
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
