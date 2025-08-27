@@ -1,0 +1,1 @@
+*Fonctions à paramètres variables, pointeurs de fonctions, ...*

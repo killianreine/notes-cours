@@ -31,8 +31,13 @@ Table des matières complète : [[Prog C - Table des matières]]
 - Cours 06 : [[06 - Les tableaux statiques]]
 - Cours 07 : [[07 - Chaînes de caractères]]
 - Cours 08 : [[08 - Les pointeurs]]
-- Cours 09 : [[09 - Structures avancées]]
-- Cours 10 : [[10 - Allocation dynamique]]
+- Cours 09 : [[09 - Allocation dynamique]]
+- - Cours 10 : [[10 - Structures avancées]]
+- Cours 11 : [[11 - Les fichiers]]
+- Cours 12 : [[12 - Tests unitaires]]
+- Cours 13 : [[13 - Compilation séparée et Makefile]]
+- Cours 14 : [[14 - Structures particulières]]
+- Cours 15 : [[15 - Fonctions avancées]]
 
 ## Ressources
 - [Documentation officielle du langage C](https://en.cppreference.com/w/c)

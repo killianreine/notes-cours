@@ -285,6 +285,32 @@ do {
 
 Dans cet exemple, on boucle sur les instructions tant que l'utilisateur n'a pas tapé un nombre positif strict.
 
+# Le ternaire
+En C, **l’opérateur ternaire** (aussi appelé _opérateur conditionnel_) est une manière compacte d’écrire une condition `if ... else`. 
+Sa syntaxe est :
+```
+( condition ) ? valeur_si_vrai : valeur_si_faux;
+```
+- Si `condition` est vraie (différente de 0), l’expression prend la valeur `valeur_si_vrai`.
+- Sinon, elle prend la valeur `valeur_si_faux`.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 20;
+    int max;
+
+    // Utilisation du ternaire
+    max = (a > b) ? a : b;
+
+    printf("Le maximum est : %d\n", max);
+
+    return 0;
+}
+```
+Ici, si `a > b`, alors `max = a`, sinon `max = b`.
 # Suivant 
 - Cours suivant : [[05 - Retour sur les fonctions]]
 

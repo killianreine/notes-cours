@@ -169,7 +169,7 @@
 			- Passage par adresse
 		- Retourner une adresse
 		- Manipulation de chaînes
-9. **Les structures avancées** [[09 - Structures avancées]]
+9. **Les structures avancées** [[10 - Structures avancées]]
 	- Introduction aux structures
 		- Déclaration d'une structure
 		- Initialisation d'une structure
@@ -186,4 +186,4 @@
 		- Passage par valeur
 		- Passage par adresse
 		- Retourner une structure
-10. **Allocation dynamique** [[10 - Allocation dynamique]]
+10. **Allocation dynamique** [[09 - Allocation dynamique]]

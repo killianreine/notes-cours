@@ -978,4 +978,4 @@ Résultat : Bonjour le monde  tout entier
 ```
 
 # Suivant 
-- Cours suivant : [[09 - Structures avancées]]
+- Cours suivant : [[10 - Structures avancées]]

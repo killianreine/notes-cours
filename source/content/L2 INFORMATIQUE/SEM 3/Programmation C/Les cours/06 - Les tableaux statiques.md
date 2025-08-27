@@ -1264,5 +1264,10 @@ memset(mat, 0, sizeof(mat));
 ]
 ```
 
+## Quelques fonctions de `math.h`
+>[!warning] 
+>Penser à l'option `-lm` lors de la compilation
+
+`cos`, `sin`, `tan`, `sqrt`, `asin`, `exp`, `log`, `floor`, ...
 # Suivant
 - Cours suivant : [[07 - Chaînes de caractères]]
