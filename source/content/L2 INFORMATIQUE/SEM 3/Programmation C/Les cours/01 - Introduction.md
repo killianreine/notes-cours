@@ -18,7 +18,7 @@ Le langage `C` est un langage de programmation impératif inventé dans les ann�
 
 ### Langage compilé
 
-Le `C` est un **langage compilé**, en gros le code source où se trouve n'est pas directement un fichier exécutable, il va donc falloir passer votre *fichier_source* dans un programme appelé **compilateur** qui traduit le code source en code machine pour pouvoir l'exécuter par la suite.  
+Le `C` est un **langage compilé**, en gros le code source où se trouve n'est pas directement un fichier exécutable, il va donc falloir passer votre *fichier source* dans un programme appelé **compilateur** qui traduit le code source en code machine pour pouvoir l'exécuter par la suite.  
 **Zoom sur la compilation**
 1. ***Traitement par le préprocesseur***  
     Le préprocesseur est la première étape dans la compilation de nombreux langages (*comme `C` et `C++`*). Il permet de préparer le code source à la compilation par le compilateur.
@@ -52,6 +52,7 @@ Le `C` est un **langage compilé**, en gros le code source où se trouve n'est p
 >
 >    Suite de fonctions dont une principale `main` qui représente **le point d'entrée du programme**. Les erreurs sont détectées pendant la compilation, on ne peut donc pas exécuter un programme qui n'a pas réussi à compiler.
 
+![[compilation.svg]]
 ## Outils nécessaires
 Évidemment avant de commencer ce cours, il faut s'assurer d'avoir tous les outils requis pour pouvoir coder, compiler et exécuter du `C`.
 
