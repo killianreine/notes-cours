@@ -453,6 +453,15 @@ int main() {
 	    printf("|- Age : %d\n|- Domaine : %s\n\n", etudiant.age, etudiant.domaine);
     }
     
+    /*
+    Via pointeur :
+    for(int i = 0; i<4; i++){
+        struct Etudiant *ptr = &groupe[i];
+        printf("Informations : %s %s\n", ptr->nom, ptr->prenom);
+	    printf("|- Age : %d\n|- Domaine : %s\n\n", ptr->age, ptr->domaine);
+    }
+    */
+    
     return 0;
 }
 ```
