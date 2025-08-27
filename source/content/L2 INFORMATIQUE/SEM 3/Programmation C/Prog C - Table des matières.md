@@ -146,5 +146,44 @@
 			- Découper
 			- Sensibilité à la casse
 8. **Les pointeurs** [[08 - Les pointeurs]]
-
+- Introduction
+	- Généralités sur les pointeurs
+		- Définition
+		- La notion d'adresse
+		- Retour sur les pointeurs
+		- Déclaration et initialisation 
+		- Modification et accès à la variable pointée
+- Les pointeurs et les tableaux
+	- Analogie entre eux
+	- Accès aux éléments du tableau
+	- Parcours d'un tableau
+	- Calculer la taille du tableau
+		- Chaîne de caractères
+		- Tableau d'entiers
+- Pointeurs et chaînes de caractères
+	- Quelques rappels
+	- Chaîne littérale
+- Pointeurs et fonctions
+	- Passage de paramètres à une fonction
+		- Passage par valeur
+		- Passage par adresse
+	- Retourner une adresse
+	- Manipulation de chaînes
 9. **Les structures avancées** [[09 - Structures avancées]]
+- Introduction aux structures
+	- Déclaration d'une structure
+	- Initialisation d'une structure
+	- Accès aux valeurs des champs
+		- Accès direct
+		- Accès via pointeur
+	- Modification d'un champ
+- Structures imbriquées
+- Tableaux de structures
+- `Typedef` et alias
+	- Alias de types simples
+	- Alias de structures
+- Structures et fonctions
+	- Passage par valeur
+	- Passage par adresse
+	- Retourner une structure
+10. **Allocation dynamique** [[10 - Allocation dynamique]]
