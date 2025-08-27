@@ -32,18 +32,15 @@ table.cours-plan {
   font-family: Arial, sans-serif;
   margin: 20px 0;
 }
-
 table.cours-plan th,
 table.cours-plan td {
   padding: 10px 15px;
   text-align: left;
   border: 1px solid;
 }
-
 table.cours-plan tr:hover {
   cursor: pointer;
 }
-
 /* Mode clair par défaut */
 @media (prefers-color-scheme: light) {
   table.cours-plan th {
@@ -51,30 +48,24 @@ table.cours-plan tr:hover {
     color: white;
     border-color: #4CAF50;
   }
-
   table.cours-plan td {
     background-color: #fff;
     color: #000;
     border-color: #ccc;
   }
-
   table.cours-plan tr:nth-child(even) td {
     background-color: #f9f9f9;
   }
-
   table.cours-plan tr:hover td {
     background-color: #e0f0e0;
   }
-
   table.cours-plan a {
     color: #007acc;
   }
-
   table.cours-plan a:hover {
     text-decoration: underline;
   }
 }
-
 /* Mode sombre */
 @media (prefers-color-scheme: dark) {
   table.cours-plan th {
@@ -82,25 +73,20 @@ table.cours-plan tr:hover {
     color: #fff;
     border-color: #1e90ff;
   }
-
   table.cours-plan td {
     background-color: #2b2b2b;
     color: #ddd;
     border-color: #444;
   }
-
   table.cours-plan tr:nth-child(even) td {
     background-color: #333;
   }
-
   table.cours-plan tr:hover td {
     background-color: #444;
   }
-
   table.cours-plan a {
     color: #4ea3ff;
   }
-
   table.cours-plan a:hover {
     text-decoration: underline;
   }
