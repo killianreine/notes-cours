@@ -496,3 +496,24 @@ void afficherInfoEtu(struct Etudiant *etu){
 afficherInfoEtu(ptr);
 ```
 
+# `Typedef` et alias
+En C, le mot-clé **`typedef`** sert à créer un **==alias de type==** : c’est-à-dire donner un autre nom *(souvent plus simple)* à un type déjà existant.  
+C’est très utilisé avec les `struct`. 
+
+Pour créer un alias de type en utilisant `typedef` on utilise la syntaxe générale suivante : 
+```c
+typedef ancien_nom nouveau_nom;
+```
+
+<u>Exemple :</u>  
+En python une chaîne de caractères est de type `string`, à la place de `char[]` ou `char*` en C alors vous décidez de renommez l'un en `string`.
+```c
+typedef char* string;
+
+string chaine = "Informatique";
+printf("%s", chaine);
+```
+```
+Informatique
+```
+
