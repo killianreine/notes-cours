@@ -482,3 +482,17 @@ Informations : Ormont Hortence
 |- Age : 17
 |- Domaine : Nucléaire
 ```
+
+>[!tip] Astuce
+>Pensez à faire l'affichage des informations de l'étudiant dans une fonction, c'est bien plus lisible par la suite...
+
+```c
+void afficherInfoEtu(struct Etudiant *etu){
+	printf("Informations : %s %s\n", etu->nom, etu->prenom);
+	printf("|- Age : %d\n|- Domaine : %s\n\n", etu->age, etu->domaine);
+}
+
+// Appel dans la boucle 
+afficherInfoEtu(ptr);
+```
+
