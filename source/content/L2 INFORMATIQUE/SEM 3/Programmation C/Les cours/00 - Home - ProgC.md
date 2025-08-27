@@ -23,21 +23,124 @@ Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif e
 ## Plan du Cours
 Table des matières complète : [[Prog C - Table des matières]]
 
-- Cours 01 : [[01 - Introduction]]
-- Cours 02 : [[02 - Premiers pas]]
-- Cours 03 : [[03 - Opérateurs & Arithmétique]]
-- Cours 04 : [[04 - Conditions et boucles]]
-- Cours 05 : [[05 - Retour sur les fonctions]]
-- Cours 06 : [[06 - Les tableaux statiques]]
-- Cours 07 : [[07 - Chaînes de caractères]]
-- Cours 08 : [[08 - Les pointeurs]]
-- Cours 09 : [[09 - Allocation dynamique]]
-- Cours 10 : [[10 - Structures avancées]]
-- Cours 11 : [[11 - Les fichiers]]
-- Cours 12 : [[12 - Tests unitaires]]
-- Cours 13 : [[13 - Compilation séparée et Makefile]]
-- Cours 14 : [[14 - Structures particulières]]
-- Cours 15 : [[15 - Fonctions avancées]]
+<div>
+<style>
+  table.cours-plan {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+  }
+  table.cours-plan th, table.cours-plan td {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: left;
+  }
+  table.cours-plan th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  table.cours-plan tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  table.cours-plan tr:hover {
+    background-color: #f1f1f1;
+  }
+  table.cours-plan a {
+    text-decoration: none;
+    color: #007acc;
+  }
+  table.cours-plan a:hover {
+    text-decoration: underline;
+  }
+</style>
+<table class="cours-plan">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Cours</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td><a href="01 - Introduction">Introduction</a></td>
+      <td>Présentation du C</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td><a href="02 - Premiers pas">Premiers pas</a></td>
+      <td>Variables et entrées/sorties</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td><a href="03 - Opérateurs & Arithmétique">Opérateurs & Arithmétique</a></td>
+      <td>Opérations de base</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td><a href="04 - Conditions et boucles">Conditions et boucles</a></td>
+      <td>Structures de contrôle</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td><a href="05 - Retour sur les fonctions">Retour sur les fonctions</a></td>
+      <td>Fonctions et paramètres</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td><a href="06 - Les tableaux statiques">Les tableaux statiques</a></td>
+      <td>Tableaux fixes et manipulation</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td><a href="07 - Chaînes de caractères">Chaînes de caractères</a></td>
+      <td>Strings et fonctions associées</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td><a href="08 - Les pointeurs">Les pointeurs</a></td>
+      <td>Introduction aux pointeurs</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td><a href="09 - Allocation dynamique">Allocation dynamique</a></td>
+      <td>malloc, free, et gestion mémoire</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="10 - Structures avancées">Structures avancées</a></td>
+      <td>Structures et typedef</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="11 - Les fichiers">Les fichiers</a></td>
+      <td>Lecture/écriture fichiers</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><a href="12 - Tests unitaires">Tests unitaires</a></td>
+      <td>Introduction aux tests en C</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><a href="13 - Compilation séparée et Makefile">Compilation séparée et Makefile</a></td>
+      <td>Organisation du code et Makefiles</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><a href="14 - Structures particulières">Structures particulières</a></td>
+      <td>Structures complexes et usage avancé</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="15 - Fonctions avancées">Fonctions avancées</a></td>
+      <td>Fonctions récursives et pointeurs de fonctions</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Ressources
 - [Documentation officielle du langage C](https://en.cppreference.com/w/c)

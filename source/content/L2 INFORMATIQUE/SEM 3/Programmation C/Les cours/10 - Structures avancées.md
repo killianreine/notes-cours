@@ -576,4 +576,4 @@ struct Etudiant creerEtudiant(...);
 Je ne remplis pas les paramètres vous comprendrez plus tard... 
 
 # Suivant 
-- Cours suivant : [[09 - Allocation dynamique]]
+- Cours suivant : [[11 - Les fichiers]]
