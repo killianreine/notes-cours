@@ -500,6 +500,7 @@ afficherInfoEtu(ptr);
 En C, le mot-clé **`typedef`** sert à créer un **==alias de type==** : c’est-à-dire donner un autre nom *(souvent plus simple)* à un type déjà existant.  
 C’est très utilisé avec les `struct`. 
 
+## Alias de type simple
 Pour créer un alias de type en utilisant `typedef` on utilise la syntaxe générale suivante : 
 ```c
 typedef ancien_nom nouveau_nom;
@@ -517,3 +518,27 @@ printf("%s", chaine);
 Informatique
 ```
 
+## Alias de structures
+Vous n'avez jamais pensé au fait qu'en utilisant les structures depuis le début de ce cours on est obligé d'écrire `struct nomStruct` c'est un peu long à écrire. En plus en informatique, on est partisan du moindre effort. Ainsi en utilisant `typedef`, on passe de ce code : 
+```c
+struct Etudiant {
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+};
+
+struct Etudiant etu1;
+```
+à ce code là :
+```c
+typedef struct{
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+} Etudiant;
+
+Etudiant etu1;
+```
+L'utilisation d'un alias permet de zapper le mot clé `struct` comme ça on a un mot en moins à écrire plutôt sympas non ?
