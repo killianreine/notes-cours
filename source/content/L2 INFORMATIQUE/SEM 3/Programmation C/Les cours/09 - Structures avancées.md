@@ -574,3 +574,6 @@ Une fonction en C peut retourner une **copie d'une structure**, cela est plus s√
 struct Etudiant creerEtudiant(...);
 ```
 Je ne remplis pas les param√®tres vous comprendrez plus tard... 
+
+# Suivant 
+- Cours suivant : [[10 - Allocation dynamique]]
