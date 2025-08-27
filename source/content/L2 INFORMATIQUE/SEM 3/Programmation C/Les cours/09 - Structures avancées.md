@@ -569,3 +569,8 @@ struct Etudiant etu = { "Leroux", "Antoine", 18, "Mathématiques" };
 ```
 Ici, puisqu'on passe l'adresse de la structure la modification de l'âge se fera sur l'original puisqu'on modifie la champs de la structure étant à dresse mémoire donnée en paramètre.
 ## Retourner une structure
+Une fonction en C peut retourner une **copie d'une structure**, cela est plus sûr car la structure que la fonction renvoie est recopiée *(on ne lui donne pas un pointeur)*.
+```c
+struct Etudiant creerEtudiant(...);
+```
+Je ne remplis pas les paramètres vous comprendrez plus tard... 
