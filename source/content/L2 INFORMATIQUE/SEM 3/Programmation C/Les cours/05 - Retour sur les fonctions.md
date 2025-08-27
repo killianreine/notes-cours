@@ -16,8 +16,7 @@ typeRetour nomFonction(typeParam1 nomParam1, typeParam2, nomParam2, ...){
 >[!NOTE]
 >On peut rappeler que chaque instruction se termine par un *point-virgule* `;`.
 
-###### Exemple
-
+<u>Exemple :</u>  
 On souhaite créer une fonction `multiplication` qui prend en paramètres **2 entiers** `int` et renvoi **le produit**, un entier `int` des paramètres.
 <br>Si on récap avant de coder : 
 
@@ -296,8 +295,7 @@ La **déclaration** d'une fonction peut être vue comme *donner le prototype/ la
 >[!TIP]
 > Le corps d'une fonction c'est son contenu.
 
-###### Exemple
-
+<u>Exemple :</u>  
 Si on décide de reprendre notre exemple avec l'*algorithme d'Euclide* qui pour rappel permet de déterminer le plus grand commun diviseur PGCD de deux nombres. Voici comment nous pourrions procéder dans la structure du code.
 
 - Déclaration du prototype de la fonction `algoEuclide` pour pouvoir l'utiliser

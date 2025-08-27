@@ -55,10 +55,8 @@ sinon
 >
 >Vous vous souvenez, `C` ne dispose pas de type booléen de manière native.
 
-###### Exemple
-
+<u>Exemple :</u>  
 On souhaite savoir si un nombre `n` est inférieur, supérieur ou égal à $0$.
-
 ```c
 #include <stdio.h>
 
@@ -133,8 +131,7 @@ On peut le voir comme le bloc suivant :
 
 *Pour mieux comprendre l'effet de cascade, prenons un exemple*
 
-###### Exemple
-
+<u>Exemple :</u>  
 Une enseignante souhaite attribuer automatiquement à chaque étudiant un commentaire en fonction de leur nombre de frère et sœur :
 
 - Défaut : Famille nombreuse
@@ -192,10 +189,8 @@ for(initialisation; condition arrêt; incrémentation){
 }
 ```
 
-###### Exemple
-
+<u>Exemple :</u>  
 On souhaite afficher les valeurs successives de `i` entre $1$ et $10$.
-
 ```c
 for (int i = 1; i <= 10; i++) {
     printf("%d ", i);
@@ -225,8 +220,7 @@ for(init1, init2; cdt1 && cdt2, incr1, incr2){
 }
 ```
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 for (int i = 0, j = 10; i < 5 && j > 5; i++, j--) {
     printf("i = %d, j = %d\n", i, j);
@@ -249,8 +243,7 @@ Le bloc `while` permet de boucler des instructions **TANT QU'**une condition est
 
 ***Structure générale du bloc `while`***
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int i = 1;
 while (i <= 5) {
@@ -281,8 +274,7 @@ do {
 - La boucle s'exécute **au moins une fois** même si la condition est fausse.
 - Très utile lorsque l'on souhaite tester une condition après l'exécution.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int x;
 do {

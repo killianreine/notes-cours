@@ -85,7 +85,7 @@ Lien pour le téléchargement : [https://www.jetbrains.com/edu-products/download
 
 ##### Installation sur Linux/Debian
 
-```
+```bash
 sudo apt update
 sudo apt install build-essential
 ```
@@ -93,7 +93,7 @@ Le package `build-essential` comprend `gcc`, `g++`, `make`, ...
 
 ##### Installation sur macOS
 
-```
+```bash
 xcode-select --install
 ```
 En gros c'est l'installation de **Xcode Command Line Tools**, qui est un paquet qui inclut `gcc`.
@@ -117,7 +117,7 @@ En gros c'est l'installation de **Xcode Command Line Tools**, qui est un paquet 
 - Dans la section **Variables système**, sélectionner `PATH` et cliquez sur **Modifier**
 - Cliquez sur **Nouveau** et ajoutez
 
-   ```
+   ```bash
    C:\MinGW\bin
    ```
 
@@ -127,7 +127,7 @@ En gros c'est l'installation de **Xcode Command Line Tools**, qui est un paquet 
 ##### Vérifier l'installation de `gcc` sur votre machine
 
 Vous pouvez ensuite vérifier avec :
-```
+```bash
 gcc --version
 ```
 
@@ -142,7 +142,7 @@ gcc --version
    - Produit un fichier temporaire avec tout le contenu déplié (pas encore du code machine)
 
    La commande : 
-   ```
+   ```bash
    gcc -E nomFichier.c -o nomFichier.i
    ```
 3. La compilation
@@ -151,7 +151,7 @@ gcc --version
    - Ainsi, chaque fichier `.c` devient un fichier `.s`.
 
    La commande : 
-   ```
+   ```bash
    gcc -S nomFichier.i -o nomFichier.s
    ```
 4. L'assemblage
@@ -159,7 +159,7 @@ gcc --version
    L'assembleur transforme les fichiers `.s` en code objet `.o` qui sont des codes binaires, *⚠️ ces codes ne sont **pas encore exécutable**.*
    
    La commande : 
-   ```
+   ```bash
    gcc -c nomFichier.s -o nomFichier.o
    ```
 5. Édition de liens (linking)
@@ -168,15 +168,18 @@ gcc --version
    - Production d'un fichier binaire exécutable (par défaut `a.out`)
 
    La commande : 
-   ```
+   ```bash
    gcc -c nomFichier.o -o nomExecutable
    ```
 
 #### La compilation directe en <u>une seule ligne</u>
 
+```bash
+gcc nomFichier.c -o nomExecutable -Wall -Wextra
 ```
+Bon nous on se contentera de la commande : 
+```bash
 gcc nomFichier.c -o nomExecutable
 ```
-
 # Suivant 
 - Cours suivant : [[02 - Premiers pas]]

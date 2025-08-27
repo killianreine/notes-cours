@@ -149,12 +149,12 @@ b
 ```
 
 >[!WARNING]
-> Une variable de type `char` ne peut contenir **qu'un seul** caractère. Pour pouvoir stocker plusieurs caractères, il faudra utiliser : 
+> Une variable de type `char` ne peut contenir **qu'un seul et unique** caractère. Pour pouvoir stocker plusieurs caractères, il faudra utiliser : 
 >
 > - Un tableau de `char`
 > - Un pointeur vers `char`
 >
-> Ces deux aspects seront évoqués plus tard dans ce cours.
+> Ces deux aspects seront évoqués plus tard dans ce cours. *cours 6 et 7*
 
 En conséquence, cela implique directement qu'une variable de type `char` contenant plusieurs caractères déclenchera une erreur et empêchera la compilation de votre programme.
 
@@ -190,6 +190,9 @@ Les **entiers** sont représentés par le mot clé `int`, qui peut être précé
 - d'un **attribut de précision** `short` ou `long`
 - d'un **attribut de représentatio** `signed` ou `unsigned` 
 
+>[!info] Remarque
+>La taille d'une variable dépend aussi de la machine sur laquelle vous codez.
+
 | Type | Taille (en octets) | Plage de valeur possible | 
 | :---: | :---: | --- | 
 | `int` | 4 | -2 147 483 648 à 2 147 483 647 |
@@ -208,10 +211,8 @@ Les **entiers** sont représentés par le mot clé `int`, qui peut être précé
 > - `long` grande taille
 > - La taille des entiers selon le format peut dépendre aussi du système sur Windows par exemple on note certaines différences entre 32 et 64 bits. *Le compilateur peux aussi jouer un rôle.*
 
-###### Exemple
-
+<u>Exemple :</u>  
 Si on souhaite définir un entier non signé, il suffit de spécifier le type de l'entier choisit, un nom de variable puis une valeur. Dans la pratique si on choisit que la variable `var` contiendra 155 alors, en programmation `C` on écrira : 
-
 ```c
 unsigned int var = 155;
 ```
@@ -236,8 +237,7 @@ Il est possible d'obtenir la taille d'un type de donnée spécifié lors de l'ap
 
 Ainsi, il suffit d'écrire `sizeof(type_de_donnees)`.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 #include<stdio.h>
 
@@ -291,8 +291,7 @@ Les valeurs minimales et maximales sont définies dans le header `<float.h>` :
 > - Il est possible de convertir un flottant vers un entier, cela peut néanmoins entraîner une parte de précision. 
 > - Les arrondis peuvent entraîner des erreurs à cause de leur représentation en binaire.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 #include <stdio.h>
 
@@ -313,8 +312,7 @@ La **portée des variables** en `C` *(aussi appelée scope)*, c’est la partie 
 
 C'est la déclaration **à l'intérieur d'un bloc**. Dans ce cas la variable est dite **LOCALE** et est accessible <u>uniquement</u> dans ce même bloc.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 void maFonction() {
     int x = 5; // portée locale
@@ -327,8 +325,7 @@ printf("%d\n", x); // ❌ Erreur, x n'est pas visible ici
 
 Déclaration en **dehors de toute fonction**, elle est appelée variable **GLOBALE** et est accessible <u>partout dans le fichier</u>.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int y = 10; // portée globale
 
@@ -366,10 +363,8 @@ On considère deux variables que l'on souhaite afficher dans un format bien pré
 printf("message %format1 ... %format2", var1, var2);
 ```
 
-###### Exemple
-
+<u>Exemple :</u>  
 On souhaite afficher la valeur entière, puis caractère d'une variable. Ainsi on codera : 
-
 ```c
 #include <stdio.h>
 
@@ -402,8 +397,7 @@ Il est aussi possible d'ajouter des options entre `%` et la lettre qui définit 
 >[!WARNING]
 > Le texte est aligné automatiquement à droite, alors lorsque la variable s'affiche sur plus de caractère, le nombre fournit est ignoré.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 #include <stdio.h>
 
@@ -414,15 +408,13 @@ int main()
     return 0;
 }
 ```
-
 ```
 Le nombre n vaut      4 et voilà.
 ```
 
 - Pour aligner à gauche en utilise le signe `-`. 
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 #include <stdio.h>
 
@@ -433,7 +425,6 @@ int main()
     return 0;
 }
 ```
-
 ```
 Le nombre n vaut 4      et voilà.
 ```
@@ -444,10 +435,8 @@ Le nombre n vaut 4      et voilà.
    %nbChar.precisionFORMAT
    ```
 
-###### Exemple
-
+<u>Exemple :</u>  
 On souhaite afficher le nombre $12.874$ sur 10 caractères avec une précision après la virgule de 2.
-
 ```c
 #include <stdio.h>
 
@@ -458,7 +447,6 @@ int main()
     return 0;
 }
 ```
-
 ```
 Le nombre n vaut 12.87      et voilà.
 ```
@@ -475,11 +463,9 @@ Il existe aussi des constantes caractères permettant d'effectuer un sout de lig
 |        `\?`         | point d'interrogation |
 
 # Les constantes
-
 Justement et si on parlait des constantes en programmation `C`.
 
 ## Généralités
-
 En `C` une constante représente une donnée dont la valeur ne peux pas changer après sa définition. Contrairement aux variables, les constantes garantissent que leur valeur ne changera pas tout au long du programme. <br>
 Il existe deux manières de déclarer des constantes : 
 
@@ -513,7 +499,6 @@ TEINTE = 130; // Erreur : on ne peut pas modifier une constante
 ```c
 #define PI 3.14159
 ```
-
 - Dans notre exemple `PI` est une constante symbolique.
 - Le préprocesseur remplace chaque occurrence de `PI` par 3.14159 dans le programme.
 - Pas de type directement associé *(attention aux erreurs)*

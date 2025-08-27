@@ -1,7 +1,6 @@
 En langage `C`, les opérateurs jouent un rôle essentiel dans l'écriture d'expressions permettant de manipuler des données. Parmi eux, les **opérateurs arithmétiques** permettent d'effectuer des calculs tels que l'addition, la soustraction, la multiplication, la division ou encore le modulo, constituant ainsi la base des traitements numériques dans un programme.
 
 # Définition générale
-
 En langage C, un opérateur est un symbole qui indique une opération à effectuer sur une ou plusieurs valeurs *(appelées opérandes)*. Les opérateurs permettent de manipuler des données, de réaliser des calculs, de comparer des valeurs, et d'effectuer diverses opérations logiques ou bit à bit.
 
 Il existe diverses catégories d'opérateurs que nous allons voir plus en détails juste après : 
@@ -12,7 +11,6 @@ Il existe diverses catégories d'opérateurs que nous allons voir plus en détai
 - ...
 
 # Opérateurs arithmétiques
-
 Les **opérateurs arithmétiques** permettent d'effectuer des calculs mathématiques de base. En langage `C`, on applique ses opérations sur les types numériques `int`, `float`, `double`.
 
 | Opérateur | Description |
@@ -27,8 +25,7 @@ Les **opérateurs arithmétiques** permettent d'effectuer des calculs mathémati
 
 Permet d'additionner deux valeurs. L'opération fonctionne avec les types numériques.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int a = 5, b = 3;
 int somme = a + b; // résultat : 8
@@ -38,8 +35,7 @@ int somme = a + b; // résultat : 8
 
 Permet de soustraire deux valeurs numériques.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int a = 5.5, b = 3.2;
 int diff = a - b; // résultat : 2.3
@@ -49,8 +45,7 @@ int diff = a - b; // résultat : 2.3
 
 Permet de calculer le produit de deux valeurs numériques.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int a = 5, b = 3;
 int prod = a * b; // résultat : 15
@@ -86,8 +81,7 @@ Le modulo représente le **reste d'une division entière**, en conséquence, il 
 >[!tip]
 >Modulo = reste d'une **division entière**.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int a = 10, b = 3;
 int reste = a % b; // résultat : 1
@@ -125,8 +119,7 @@ Et on sait très bien que : $10 = 3 \times 2 + 1$ ainsi le quotient vaut $2$ et 
 
 Un **opérateur d'affectation** permet de donner une valeur à une variable. <br> L'opérateur principal est `=` *(affectation simple)*, mais il existe des versions qui combinent affectation et opérateur arithmétique.
 
-###### Exemple 
-
+<u>Exemple :</u>  
 ```c
 int variable;
 variable = 14; // Variable reçoit la valeur 14
@@ -142,8 +135,7 @@ variable = 14; // Variable reçoit la valeur 14
 | `/=` | `a=a/b` | Divise `a` par `b` (si $b \neq 0$) |
 | `%=` | `a=a%b` | Affecte le reste de `a/b` |
 
-###### Exemples
-
+<u>Exemple :</u>  
 ```c
 int a = 10;
 a += 5;   // a vaut 15
@@ -172,8 +164,7 @@ L'opérateur d'incrémentation permet d'ajouter $1$ à une variable. On peut la 
 - **Préfixe** `++a` l'incrémentation a lieu **avant l'utilisation** de la variable.
 - **Postfixe** `a++` l'incrémentation a lieu **après l'utilisation** de la variable.
 
-###### Exemples
-
+<u>Exemple :</u>  
 ```c
 int x = 5;
 int xprim = ++x;  // x devient 6, xprim = 6
@@ -192,8 +183,7 @@ La décrémentation permet de retirer 1 à une variable. <br>
 - **Préfixe** `--a` la décrémentation a lieu **avant l'utilisation** de la variable.
 - **Postfixe** `a--` la décrémentation a lieu **après l'utilisation** de la variable.
 
-###### Exemples
-
+<u>Exemple :</u>  
 ```c
 int x = 5;
 int xprim = --x;  // x devient 4, xprim = 4
@@ -229,8 +219,7 @@ Voici un tableau qui permet de récapituler la liste des opérateurs de comparai
 | `<` | inférieur strict |
 | `<=` | inférieur ou égal |
 
-###### Exemples
-
+<u>Exemple :</u>  
 ```c
 #include <stdio.h>
 
@@ -262,8 +251,7 @@ Les **opérateurs logiques** permettent de combiner les expressions booléennes 
 | `\|\|` | **OU** |
 | `!` | **NON** |
 
-###### Exemples
-
+<u>Exemple :</u>  
 ```c
 a<b && b!=0
 // a inférieur a b ET b différent de 0
@@ -329,8 +317,7 @@ L'**associativité** règle qui détermine dans quel ordre (de gauche à droite 
 >[!TIP]
 > Les parenthèses possèdent la priorité **la plus haute**, utilises les pour forcer l'ordre d'évaluation.
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int x = 2 + 3 * 4;  // x = 2 + (3 * 4) = 14
 int x = (2 + 3) * 4;  // x = 5 * 4 = 20
@@ -357,8 +344,7 @@ L'opérateur `~` représente en fait le **NON BINAIRE**, autrement dit, il inver
 - Les `1` deviennent des `0`
 - Les `0` deviennent des `1`
 
-###### Exemple
-
+<u>Exemple :</u>  
 ```c
 int a = 4; // En binaire 4 = 00000100
 int b = ~a; // En binaire b = 11111011
