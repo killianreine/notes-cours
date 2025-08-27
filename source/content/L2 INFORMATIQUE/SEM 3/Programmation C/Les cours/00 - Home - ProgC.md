@@ -173,7 +173,7 @@
 }
 .objectives-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 20px;
     margin: 20px 0;
 }
@@ -270,6 +270,118 @@
 }
 .objective-card:nth-child(2) { animation-delay: 0.4s; }
 .objective-card:nth-child(3) { animation-delay: 0.6s; }
+@media (prefers-color-scheme: dark) {
+    .cours-c-container {
+        background: rgba(30, 30, 30, 0.95);
+        color: #e0e0e0;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    .cours-c-title {
+        background: linear-gradient(45deg, #74a9ff, #9b7de8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .cours-c-title::after {
+        background: linear-gradient(45deg, #74a9ff, #9b7de8);
+    }
+    .cours-c-h2 {
+        color: #e0e0e0;
+        border-bottom: 3px solid #74a9ff;
+    }
+    .cours-c-h2::before {
+        background: #ff6b6b;
+    }
+    .cours-c-h3 {
+        color: #b0b0b0;
+        border-left: 4px solid #74a9ff;
+        background: linear-gradient(90deg, rgba(116, 169, 255, 0.15), transparent);
+    }
+    .cours-c-p {
+        color: #e0e0e0;
+    }
+    .cours-c-li {
+        color: #b0b0b0;
+    }
+    .cours-c-li::before {
+        color: #74a9ff;
+    }
+    .cours-c-a {
+        color: #74a9ff;
+    }
+    .cours-c-a:hover {
+        color: #ff6b6b;
+    }
+    .cours-c-a::after {
+        background: linear-gradient(45deg, #74a9ff, #ff6b6b);
+    }
+    .cours-plan th {
+        background: linear-gradient(135deg, #2c3e50 0%, #4a4a4a 100%);
+        color: #e0e0e0;
+    }
+    .cours-plan td {
+        background: #2c2c2c;
+        color: #e0e0e0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .cours-plan tr:nth-child(even) td {
+        background: #333333;
+    }
+    .cours-plan tr:hover td {
+        background: linear-gradient(90deg, rgba(116, 169, 255, 0.2), rgba(155, 125, 232, 0.2));
+    }
+    .cours-plan td:first-child {
+        color: #74a9ff;
+    }
+    .cours-plan td:nth-child(2) {
+        color: #e0e0e0;
+    }
+    .cours-plan td:last-child {
+        color: #999999;
+    }
+    .intro-section {
+        background: linear-gradient(135deg, rgba(116, 169, 255, 0.15), rgba(155, 125, 232, 0.15));
+        border-left: 5px solid #74a9ff;
+    }
+    .intro-section::before {
+        background: radial-gradient(circle, rgba(116, 169, 255, 0.2), transparent);
+    }
+    .objective-card {
+        background: #2c2c2c;
+        border-left: 4px solid #74a9ff;
+        color: #e0e0e0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .objective-card::before {
+        background: linear-gradient(90deg, #74a9ff, #ff6b6b);
+    }
+    .objective-card:hover {
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+    .tutorat-info {
+        background: linear-gradient(135deg, rgba(116, 169, 255, 0.15), rgba(255, 107, 107, 0.15));
+        border: 2px solid rgba(116, 169, 255, 0.3);
+    }
+    .resources-section {
+        background: rgba(76, 209, 55, 0.1);
+        border-left: 5px solid #4cd137;
+    }
+    .projects-section {
+        background: rgba(255, 165, 0, 0.1);
+        border-left: 5px solid #ffa500;
+    }
+    .cours-c-hr {
+        background: linear-gradient(90deg, #74a9ff, #9b7de8);
+    }
+    .final-message {
+        color: #e0e0e0;
+        background: linear-gradient(135deg, rgba(116, 169, 255, 0.15), rgba(155, 125, 232, 0.15));
+    }
+    .prerequis-card {
+        background: rgba(155, 89, 182, 0.2);
+        border-left: 4px solid #bb7de8;
+    }
+}
 @media (max-width: 768px) {
     .cours-c-container {
         padding: 15px;
