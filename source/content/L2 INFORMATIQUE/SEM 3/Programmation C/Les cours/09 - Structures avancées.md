@@ -413,6 +413,9 @@ Etudiant i
 ```
 *L'affichage ci-dessus est choisit de manière arbitraire, il permet simplement de montrer qu'en utilisant la syntaxe du dessus, chaque éléments du tableau sera de type `struct Etudiant` et que chaque champs de chaque élément sera initialisé à `0`.*
 
+>[!info] Remarque
+>Si vous déclarez le tableau en global ou avec `static` alors ils seront automatiquement initialisés à `0` même si on a pas mis `{ 0 }`.
+
 - Accès aux champs des éléments du tableau
 L'accès aux éléments du tableau se fait de la même manière que sur les tableaux de types simples. On y accède via un indice noté généralement `i` puis on utilise la syntaxe `.field` pour accéder au champ `field`.
 ```
