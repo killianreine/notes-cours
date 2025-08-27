@@ -34,16 +34,13 @@ Le `C` est un **langage compilé**, en gros le code source où se trouve n'est p
    #define PI 3.14
    ```
 
-2. ***La compilation***
-
+2. ***La compilation***  
     La compilation traduit les fichiers générés par le préprocesseur (1) en code assembleur, qui est une suite d'instructions.
 
-3. ***L'assemblage***
-
+3. ***L'assemblage***  
    Transformation du code assembleur en code binaire compréhensible par le processeur. Le fichier produit est appelé **fichier objet**.
 
-4. ***L'édition de lien***
-
+4. ***L'édition de lien***  
    L'édition de lien permet de rassembler les fichiers objets, de gérer les bibliothèques utilisées, ... 
 
 >[!WARNING]
@@ -56,27 +53,21 @@ Le `C` est un **langage compilé**, en gros le code source où se trouve n'est p
 >    Suite de fonctions dont une principale `main` qui représente **le point d'entrée du programme**. Les erreurs sont détectées pendant la compilation, on ne peut donc pas exécuter un programme qui n'a pas réussi à compiler.
 
 ## Outils nécessaires
-
 Évidemment avant de commencer ce cours, il faut s'assurer d'avoir tous les outils requis pour pouvoir coder, compiler et exécuter du `C`.
 
 ### Installer un éditeur de code
-
 La première chose à faire est de choisir son éditeur de code, ici seul des éditeurs gratuits sont proposés.
 
 #### Visual Studio Code - VS CODE
-
 Lien pour le téléchargement : [https://code.visualstudio.com](https://code.visualstudio.com)
-
 - Disponible sur Linux, OS et Windows
 - Léger et rapide
 - Possède des extensions puissantes *par exemple, C/C++ de Microsoft*
 - Intégration git, débogueur, terminal intégré
 - ...
-
 Par contre, VS CODE nécessite quelques réglages au début.
 
 #### CLion - JetBrain (gratuit pour les étudiants)
-
 Lien pour le téléchargement : [https://www.jetbrains.com/edu-products/download/#section=idea](https://www.jetbrains.com/edu-products/download/#section=idea)
 
 >[!NOTE]
@@ -141,13 +132,10 @@ gcc --version
 
 #### Compiler avec `GCC`
 
-1. Écriture du code source
-
-   Fichier avec l'extension `.c`
-
+1. Écriture du code source  
+   Fichier avec l'extension `.c`  
       *Ces fichiers peuvent inclure des header (`#include` ou des `.h` fais soi-même)*
 2. Le préprocessing
-
    - Géré par le préprocesseur `cpp`
    - Il remplace donc les `#include`, `# define`...
    - Produit un fichier temporaire avec tout le contenu déplié (pas encore du code machine)
