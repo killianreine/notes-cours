@@ -414,3 +414,59 @@ Etudiant i
 *L'affichage ci-dessus est choisit de manière arbitraire, il permet simplement de montrer qu'en utilisant la syntaxe du dessus, chaque éléments du tableau sera de type `struct Etudiant` et que chaque champs de chaque élément sera initialisé à `0`.*
 
 - Accès aux champs des éléments du tableau
+L'accès aux éléments du tableau se fait de la même manière que sur les tableaux de types simples. On y accède via un indice noté généralement `i` puis on utilise la syntaxe `.field` pour accéder au champ `field`.
+```
+tab[i].field
+```
+
+- Parcours et affichage des données de chaque étudiant
+On utilise une boucle `for` (ou `while`) en accédant à chaque éléments un à un puis on affiche les informations de chaque étudiant du groupe.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+struct Etudiant {
+    char nom[100];
+    char prenom[100];
+    int age;
+    char domaine[100];
+};
+
+int main() {
+    // Création de chaque étudiant
+    struct Etudiant etu1 = { "Leroux", "Antoine", 18, "Mathématiques" };
+    struct Etudiant etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" };
+    struct Etudiant etu3 = { "Adam", "Quentin", 21, "Informatique Quantique" };
+    struct Etudiant etu4 = { "Ormont", "Hortence", 17, "Nucléaire" };
+    
+    // Création et initialisation du tableau
+    struct Etudiant groupe[4] = { etu1, etu2, etu3, etu4 };
+    
+    // Parcours et affichage
+    for(int i = 0; i<4; i++){
+        struct Etudiant etudiant = groupe[i];
+        printf("Informations : %s %s\n", etudiant.nom, etudiant.prenom);
+	    printf("|- Age : %d\n|- Domaine : %s\n\n", etudiant.age, etudiant.domaine);
+    }
+    
+    return 0;
+}
+```
+```
+Informations : Leroux Antoine
+|- Age : 18
+|- Domaine : Mathématiques
+
+Informations : Morin Mylène
+|- Age : 24
+|- Domaine : Économie/Gestion
+
+Informations : Adam Quentin
+|- Age : 21
+|- Domaine : Informatique Quantique
+
+Informations : Ormont Hortence
+|- Age : 17
+|- Domaine : Nucléaire
+```
