@@ -370,28 +370,47 @@ struct Etudiant {
     char prenom[100];
     int age;
     char domaine[100];
-    struct Adresse adresse;
+    // struct Adresse adresse; >>> utilisation après
 };
 ```
 
 - Création d'un tableau initialement vide de `n` étudiants :
 ```c
-struct Etudiant classe[n];
+struct Etudiant groupe[n];
 ```
 
+- Initialisation **directe** du tableau
+On donne manuellement chaque éléments du tableau.
+```c
+struct Etudiant groupe[2] = {
+	 { "Leroux", "Antoine", 18, "Mathématiques" }, 
+	 { "Morin", "Mylène", 24, "Économie/Gestion" }
+};
 
+// Ou alors on déclare et initialise les étudiants et après création du tableau
+struct Etudiant etu1 = { "Leroux", "Antoine", 18, "Mathématiques" };
+struct Etudiant etu2 = { "Morin", "Mylène", 24, "Économie/Gestion" };
+struct Etudiant groupe[2] = {etu1, etu2 };
+```
 
+- Initialisation **post déclaration** du tableau  
+On peut créer un tableau sans l'initialiser avec la syntaxe suivante : 
+```c
+struct Etudiant groupe[2];
+```
+Dans ce cas, les éléments du tableau sont des *Valeurs Indéterminées*. Les éléments du tableau **ne sont pas des `struct Etudiant`** !  
+Si vous souhaitez créer un tableau de `struct Etudiant` directement utilisable mais "sans créer les étudiants" on peut le faire en initialisant le tableau à `{ 0 }`, ainsi chaque élément de ce dernier sera de type `struct Etudiant` sauf que chaque champs de chaque élément sera mis à `0` si c'est un entier `""` pour les chaînes de caractères.  
+```c
+struct Etudiant groupe[5] = { 0 };
+```
+En faisant ceci en fait chaque étudiant possèdera ces propres informations, toutes seront de la forme suivante : 
+```
+Etudiant i
+|- Nom : ""
+|- Prénom : ""
+|- Age : 0
+|- Domaine : ""
+```
+*L'affichage ci-dessus est choisit de manière arbitraire, il permet simplement de montrer qu'en utilisant la syntaxe du dessus, chaque éléments du tableau sera de type `struct Etudiant` et que chaque champs de chaque élément sera initialisé à `0`.*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Accès aux champs des éléments du tableau
