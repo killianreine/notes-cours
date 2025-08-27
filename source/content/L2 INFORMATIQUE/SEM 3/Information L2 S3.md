@@ -24,7 +24,7 @@ L'UE **programmation fonctionnelle** est une Unité d'Enseignement Disciplinaire
 
 ## Mathématiques pour l'informatique 2
 L'UE **Mathématiques pour l'informatique** est une continuité de la même UE du même nom enseignée au second semestre de la première année. Au programme : Relation binaire, Graphes, Algèbre de Boole, Logique et Codage linéaire.
-- <u>Support de cours :</u> *à venir*
+- <u>Support de cours :</u> [[25-26 L2 INFO, TUTORAT MATINFO 2]]
 - <u>Durée de l'UE :</u> 50 heures
 
 # Unités d'Enseignements Transversal - UET

@@ -146,3 +146,5 @@
 			- Découper
 			- Sensibilité à la casse
 8. **Les pointeurs** [[08 - Les pointeurs]]
+
+9. **Les structures avancées** [[09 - Structures avancées]]
