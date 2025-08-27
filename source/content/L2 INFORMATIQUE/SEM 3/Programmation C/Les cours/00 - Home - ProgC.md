@@ -69,26 +69,27 @@ table.cours-plan tr:hover {
 /* Mode sombre */
 @media (prefers-color-scheme: dark) {
   table.cours-plan th {
-    background-color: #1e90ff;
-    color: #fff;
-    border-color: #1e90ff;
-  }
-  table.cours-plan td {
-    background-color: #2b2b2b;
-    color: #ddd;
+    background-color: #121212;  /* Très foncé */
+    color: #e0e0e0;             /* Texte clair */
     border-color: #444;
   }
+  table.cours-plan td {
+    background-color: #1e1e1e;  /* Fond sombre uniforme */
+    color: #f5f5f5;             /* Texte clair et lisible */
+    border-color: #333;
+  }
   table.cours-plan tr:nth-child(even) td {
-    background-color: #333;
+    background-color: #2a2a2a;  /* Alternance subtile */
   }
   table.cours-plan tr:hover td {
-    background-color: #444;
+    background-color: #3a3a3a;  /* Survol plus clair */
   }
   table.cours-plan a {
-    color: #4ea3ff;
+    color: #66b2ff;             /* Lien bleu clair doux */
   }
   table.cours-plan a:hover {
     text-decoration: underline;
+    color: #99ccff;
   }
 }
 </style>
