@@ -1,6 +1,6 @@
 # 📘 **Cours de Programmation en C**
 **Bienvenue !**  
-Ce dépôt contient un tutorat dédié à l’apprentissage du langage C, destiné aux étudiants débutants en informatique ou à toute personne souhaitant acquérir des bases solides en programmation procédurale.
+Ce dépôt contient un tutorat dédié à l’apprentissage du langage C, destiné aux étudiants débutants en informatique ou à toute personne souhaitant acquérir des bases solides en programmation.
 
 # 🎯 **Objectifs**
 - Comprendre la syntaxe et les concepts fondamentaux du langage C
