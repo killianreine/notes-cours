@@ -542,3 +542,30 @@ typedef struct{
 Etudiant etu1;
 ```
 L'utilisation d'un alias permet de zapper le mot clé `struct` comme ça on a un mot en moins à écrire plutôt sympas non ?
+
+# Structures et fichiers
+## Passage par valeur
+On donne juste le nom de la structure en paramètre pour l'utiliser correctement : 
+```c
+void afficherAgeEtu(struct Etudiant etu){
+	printf("Age : %d\n", etu.age);
+}
+
+struct Etudiant etu = { "Leroux", "Antoine", 18, "Mathématiques" };
+// Appel : afficherAgeEtu(etu);
+```
+
+>[!info] Remarque
+>Pour rappel, passer par valeur, passera en fait une copie de la structure. Donc si la fonction modifie la structure pendant l'exécution. Seule la copie sera modifiée à l'intérieure de la fonction, hors de celle ci la structure originale sera intacte, il faut utiliser les pointeurs.
+## Passage par adresse
+On passe l’adresse `&etu`, donc la fonction peut modifier directement l’original.
+```c
+void modifierAgeEtu(struct Etudiant* etu, int nvAge){
+	etu->age=nvAge;
+}
+
+struct Etudiant etu = { "Leroux", "Antoine", 18, "Mathématiques" };
+// Appel : modifierAgeEtu(&etu);
+```
+Ici, puisqu'on passe l'adresse de la structure la modification de l'âge se fera sur l'original puisqu'on modifie la champs de la structure étant à dresse mémoire donnée en paramètre.
+## Retourner une structure
