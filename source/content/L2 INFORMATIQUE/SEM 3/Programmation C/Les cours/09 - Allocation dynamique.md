@@ -23,7 +23,7 @@ La **==mémoire morte ROM==** *Read-Only Monitor* est une mémoire **non volatil
 > - On peut parfois le **mettre à jour** pour corriger des bugs, améliorer les performances ou ajouter de nouvelles fonctionnalités.
 
 ### La mémoire cache
-La **==mémoire cache==** *ou antémémoire* permet d'enregistrer temporairement des copies de données et instructions beaucoup utilisées. Cette dernière est très rapide car intégrée au processeur *CPU*. Elle possède plusieurs niveau : L1, L2 et L3. 
+La **==mémoire cache==** *ou antémémoire* permet d'enregistrer temporairement des copies de données et instructions beaucoup utilisées. Cette dernière est très rapide car intégrée au processeur *CPU*. Elle possède plusieurs niveau : L1, L2 et L3.  
 ![[memoireCASH.svg]]
 - **Axe vertical (vers le haut, marqué "Latence ↑")**  
     → Plus on monte, plus la **latence** (temps d’accès) est faible.
