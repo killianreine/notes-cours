@@ -24,6 +24,19 @@ La **==mémoire morte ROM==** *Read-Only Monitor* est une mémoire **non volatil
 
 ### La mémoire cache
 La **==mémoire cache==** *ou antémémoire* permet d'enregistrer temporairement des copies de données et instructions beaucoup utilisées. Cette dernière est très rapide car intégrée au processeur. Elle possède plusieurs niveau : L1, L2 et L3. 
-
+![[memoireCASH.svg]]
+- **Axe vertical (vers le haut, marqué "Latence ↑")**  
+    → Plus on monte, plus la **latence** (temps d’accès) est faible.
+    - Les caches L1 sont accessibles en ~1 ns.
+    - La RAM demande ~50–100 ns.
+    - Un SSD peut demander de 10–100 µs.
+    - Un HDD peut prendre jusqu’à plusieurs ms.
+- **Axe horizontal (vers la droite, marqué "Capacité ↑")**  
+    → Plus on va vers la droite, plus la **capacité de stockage** est grande.
+    - Les caches L1 ont seulement 32–64 KiB par cœur.
+    - La L2 monte jusqu’à 2 MiB par cœur.
+    - La L3 (partagée) peut aller jusqu’à quelques dizaines de MiB.
+    - La RAM monte à plusieurs GiB.
+    - Le stockage (SSD/HDD) atteint des To.
 ### Mémoire secondaire (stockage de masse)
 Cela représente tous les disques durs, les clés USB, SSD, les supports externes qui ne sont pas volatile car ne perdent pas leur données même débranchées *(oue bon on repassera pour les clés USB, genre vous avez jamais perdus vos données...)*. Ces mémoires non volatiles restent tout de même moins rapide que la RAM.
