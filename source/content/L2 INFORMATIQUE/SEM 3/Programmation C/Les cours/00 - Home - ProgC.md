@@ -44,9 +44,9 @@ table.cours-plan tr:hover {
 /* Mode clair par défaut */
 @media (prefers-color-scheme: light) {
   table.cours-plan th {
-    background-color: #4CAF50;
+    background-color: #4c7faf;
     color: white;
-    border-color: #4CAF50;
+    border-color: #4c7faf;
   }
   table.cours-plan td {
     background-color: #fff;
@@ -57,7 +57,7 @@ table.cours-plan tr:hover {
     background-color: #f9f9f9;
   }
   table.cours-plan tr:hover td {
-    background-color: #e0f0e0;
+    background-color: #e1e0f0;
   }
   table.cours-plan a {
     color: #007acc;
