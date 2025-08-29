@@ -310,6 +310,7 @@ Le fonctionnement du tas est bien différent de celui de la pile :
 
 # Allocation dynamique en C
 ## Réserver une zone mémoire
+### La fonction `malloc`
 En programmation C, la fonction `malloc` permet d'allouer dynamiquement un bloc mémoire d'une certaine taille *(en octets)* pendant l'exécution du programme. Cette dernière provient de la bibliothèque `<stdlib.h>`.
 
 Voici le prototype de la fonction : 
@@ -401,6 +402,32 @@ En fait en utilisant :
 ```
 On alloue une zone mémoire permettant de stocker au plus 7 caractères ainsi que le marqueur de fin de chaîne `\0`. Ensuite on l'utilise avec `strcpy()` de la bibliothèque `<string.h>` on l'affiche et on libère la zone mémoire grâce à `free`.
 
+### La fonction `calloc`
+La fonction `calloc` (*contiguous allocation en anglais*) sert à allouer de la mémoire dynamiquement comme `malloc`,  
+mais avec deux différences :
+- Elle prend **deux arguments** (nombre d’éléments, taille de chaque élément).
+- Elle **initialise** la mémoire allouée à **0** (contrairement à `malloc` qui laisse des valeurs indéfinies).
+
+Le prototype de la fonction est le suivant :
+```c
+#include <stdlib.h>
+void *calloc(size_t n, size_t size);
+```
+- `n` le nombre d'éléments
+- `size` la taille en octet de chaque éléments
+- Elle retourne un pointeur vers la mémoire allouée ou alors `NULL` si elle échoue.
+
+<u>Exemple :</u>  
+```c
+char *p = (char*)malloc(8*sizeof(char));
+```
+La mémoire **n’est pas initialisée**, elle contient des **valeurs aléatoires**.  
+Alors que :
+```c
+char *p = (char*)calloc(8, sizeof(char));
+```
+- Alloue **8 octets** aussi (8 × taille d’un char).
+- Mais **initialise tous les octets à 0**.
 ## Libérer la mémoire
 **Pourquoi libérer la mémoire ?**  
 Quand on utilise `malloc`, `calloc` ou `realloc`, la mémoire est réservée dans le **tas** *(heap)*.  
