@@ -13,8 +13,8 @@ Vous serez accompagnés tout au long du processus, mais le choix du projet est d
 
 En fin de semestre, **une présentation**, **une soutenance** ainsi qu'**une démo** viendront clôturer cette aventure, vous offrant l’occasion de valoriser vos acquis, de démontrer vos compétences et de partager vos réalisations avec vos camarades.
 
-### Les séances de TDs
-#### 🎯 Le rôle des TDs dans le projet
+## Les séances de TDs
+### 🎯 Le rôle des TDs dans le projet
 
 Les **cours magistraux (CM)** donnent la théorie : notions du langage C, structures de contrôle, pointeurs, fichiers, etc.  
 Les **TDs** (Travaux Dirigés) servent d’**espace de réflexion et de conception** avant de passer à la pratique en TP.
@@ -42,7 +42,7 @@ Concrètement, les TDs permettront aux étudiants de :
     - Définir des cas de test avant même de coder.
     - Exemple : que se passe-t-il si on saisit un score négatif ?
 
-#### 🚀 Pourquoi les TDs sont fondamentaux ?
+### 🚀 Pourquoi les TDs sont fondamentaux ?
 - **Éviter le “codage à l’aveugle”** :  
     Les étudiants qui se lancent directement en TP sans avoir réfléchi aux structures et fonctions écrivent souvent un code confus, difficile à maintenir.
 - **Structurer la pensée algorithmique** :  
