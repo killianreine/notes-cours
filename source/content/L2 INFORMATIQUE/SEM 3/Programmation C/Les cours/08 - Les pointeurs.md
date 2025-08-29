@@ -5,7 +5,39 @@ Les objets déjà évoqués dans les cours précédents *(tableau, fonction, var
 >[!cite] Définition
 >Un **==pointeur==** est une variable qui contient l'adresse mémoire d'une autre variable d'un type donné. Ils permettent de définir des **structures dynamiques**, autrement dit des structures qui évoluent au cours du temps. 
 
-![[pointeurdefinition.svg]]
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="140" viewBox="0 0 480 140">
+  <defs>
+    <!-- Flèche -->
+    <marker id="arrowhead" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 9 3, 0 6" class="arrow-fill"/>
+    </marker>
+  </defs>
+  <!-- Mémoire : pointeur p -->
+  <g id="ptr-p" transform="translate(20,20)">
+    <rect x="0" y="0" width="160" height="80" class="cell"/>
+    <text x="80" y="22" text-anchor="middle" class="label">pointeur (p)</text>
+    <line x1="10" y1="36" x2="150" y2="36" class="brace"/>
+    <text x="15" y="55" class="index">type: t*</text>
+    <text x="15" y="70" class="index">contient: 0x1000</text>
+  </g>
+  <!-- Mémoire : variable x -->
+  <g id="var-x" transform="translate(300,20)">
+    <rect x="0" y="0" width="150" height="80" class="cell"/>
+    <text x="75" y="22" text-anchor="middle" class="label">variable (x)</text>
+    <line x1="10" y1="36" x2="140" y2="36" class="brace"/>
+    <text x="15" y="55" class="index">valeur: v</text>
+    <text x="15" y="70" class="index">adresse: 0x1000</text>
+  </g>
+  <!-- Flèche du pointeur vers la variable -->
+  <path d="M 180 55 C 220 55, 260 55, 300 55" class="arrow" marker-end="url(#arrowhead)"/>
+  <!-- Accolades explicatives -->
+  <path class="brace" d="M 10 110 C 10 120, 10 120, 20 120 L 170 120 C 190 120, 190 120, 190 110" />
+  <text x="100" y="133" text-anchor="middle" class="index brace-text">p stocke une adresse (0x1000)</text>
+  <path class="brace" d="M 290 110 C 290 120, 290 120, 310 120 L 440 120 C 460 120, 460 120, 460 110" />
+  <text x="375" y="133" text-anchor="middle" class="index brace-text">x est la case mémoire ciblée</text>
+</svg>
+</div>
 
 **Expliquons ce schéma**  
 On considère un pointeur `p` de type `t` et une variable `x` de valeur `v`. En fait la variable `x` est une adresse mémoire `0x1000` qui contient la valeur `v`.  
