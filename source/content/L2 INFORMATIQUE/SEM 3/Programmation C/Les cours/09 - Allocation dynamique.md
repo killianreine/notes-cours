@@ -64,4 +64,29 @@ Puisque la variable `var` est une variable locale, cette dernière n'existe qu'�
 
 ## Allocation statique
 L'**==allocation statique==** consiste à réserver la mémoire lors de la compilation, c'est à dire avant l'exécution du programme. La taille et l'emplacement de cette mémoire sont connues à l'avance et ne changement pendant *toute la durée du programme !*  
-Ce genre d'allocation est utilisée pour les variables globales, variables statiques et les constantes.
+Ce genre d'allocation est utilisée pour les variables globales, variables statiques et les constantes.  
+La variable allouée de manière statique existe pendant toute la durée du programme, elle est créée une seule et unique fois et est réutilisée à chaque appel.  
+Contrairement à une variable locale, l'adresse mémoire d'une variable statique peut donc être renvoyée. Cela permet de conserver l’état d’une variable entre les appels
+
+<u>Exemple :</u>  
+```c
+int x = 14;
+
+void increment(){
+	static int x = 5; // alloc. statique avec portée locale
+	x++;
+	printf("%d\n", x);
+}
+
+int main(){
+	fonction(); 
+    fonction();
+    return 0;
+}
+```
+```
+6
+7
+```
+
+L'inconvénient majeur est que si on utilise plus la variable, elle occupe de la place en mémoire pour rien... 
