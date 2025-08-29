@@ -24,6 +24,7 @@ En fin de semestre, **une présentation**, **une soutenance** ainsi qu'**une dé
     - Sauvegarde/chargement dans des fichiers.
     - Recherche (par nom, par cours).
 - **Extensions** : tri des étudiants, statistiques globales.
+---
 
 ### 2. 🎮 **Jeu de rôle textuel (RPG console)**
 - **Objectif** : Développer un petit RPG entièrement textuel.
@@ -35,6 +36,7 @@ En fin de semestre, **une présentation**, **une soutenance** ainsi qu'**une dé
 - **Extensions** :
     - IA rudimentaire pour les ennemis.
     - Différents niveaux de difficulté avec pointeurs de fonctions.
+---
 
 ### 3. 📊 **Analyseur de données scientifiques**
 - **Objectif** : Lire des ensembles de données numériques depuis des fichiers et proposer des analyses.
@@ -46,7 +48,6 @@ En fin de semestre, **une présentation**, **une soutenance** ainsi qu'**une dé
 - **Extensions** :
     - Implémentation de régressions simples (linéaire).
     - Ajout de structures avancées (listes chaînées pour gérer des données volumineuses).
-
 ---
 
 ### 4. 📚 **Moteur de gestion de bibliothèque numérique**
@@ -60,6 +61,7 @@ En fin de semestre, **une présentation**, **une soutenance** ainsi qu'**une dé
 - **Extensions** :
     - Statistiques (nombre de livres par genre).
     - Gestion des emprunts (lecteurs).
+---
 
 ### 5. 🌐 **Mini-simulateur de réseau social**
 - **Objectif** : Simuler un petit réseau social en console.
