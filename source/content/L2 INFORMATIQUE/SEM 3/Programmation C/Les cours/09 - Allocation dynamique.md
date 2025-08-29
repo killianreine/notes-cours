@@ -147,6 +147,57 @@ La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'*
   .funcB { background-color: #ccccff; }
   .funcA { background-color: #ccffcc; }
   .main { background-color: #ffcccc; }
+  /*Thème sombre...*/
+  [saved-theme="dark"] .stack {
+    position: relative;
+    width: 200px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #1e1e1e;
+    padding: 10px 0;
+    margin: 0px auto;
+  }
+  [saved-theme="dark"] .stack::after {
+    content: "Top";
+    position: absolute;
+    right: -50px;
+    top: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  [saved-theme="dark"] .stack::before {
+    content: "Bottom";
+    position: absolute;
+    right: -80px;
+    bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  [saved-theme="dark"] .frame {
+    margin: 5px auto;
+    width: 160px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+    color: #fff;
+  }
+  [saved-theme="dark"] .frame:hover {
+    transform: scale(1.05);
+    background-color: #555555;
+  }
+  [saved-theme="dark"] .func-name {
+    font-weight: bold;
+  }
+  [saved-theme="dark"] .frame-detail {
+    font-size: 12px;
+  }
+  [saved-theme="dark"] .funcC { background-color: #666633; }
+  [saved-theme="dark"] .funcB { background-color: #333366; }
+  [saved-theme="dark"] .funcA { background-color: #336633; }
+  [saved-theme="dark"] .main { background-color: #663333; }
 </style>
 <div class="stack">
   <div class="frame funcC">
