@@ -296,3 +296,15 @@ Le fonctionnement du tas est bien différent de celui de la pile :
 >[!warning]
 >L'accès au tas reste néanmoins plus lent que pour la pile car c'est **une structure moins structurée**. Il faut gérer manuellement et faire particulièrement attention au <span class="error-inline">Buffer Overflow</span> *dépassement/fuite de mémoire* mais aussi à la fragmentation...
 
+>[!info] Remarque
+>```bash
+>$ ulimit -a
+>```
+>Permet de visualiser facilement les valeurs de tailles de la pile et du tas.
+>```
+>data seg size            (kbytes, -d)  unlimited
+>...
+>stack size               (kbytes, -s)  8192
+>```
+>Ici la pile est limitée à environ $8Mo$ et peut provoquer des <span class="error-inline">Segmentation Fault</span> en cas de dépassement.
+
