@@ -75,65 +75,6 @@ html.light .custom-summary:hover {
   text-decoration: underline;
 }
 
-/* Mode clair */
-html.light .callout[data-callout="info"] {
-  background: linear-gradient(135deg, #e0f7fa 0%, #e0f2f1 100%);
-  border-left: 6px solid #00bcd4;
-  border-radius: 8px;
-  padding: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0, 188, 212, 0.1);
-  font-family: "Segoe UI", sans-serif;
-}
-
-html.light .callout[data-callout="info"] .callout-title {
-  color: #007c91;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
-}
-
-html.light .callout[data-callout="info"] .callout-title .callout-icon {
-  margin-right: 0.4rem;
-  color: #007c91;
-}
-
-html.light .callout[data-callout="info"] .callout-content {
-  color: #333;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-/* Mode sombre */
-html.dark .callout[data-callout="info"] {
-  background: linear-gradient(135deg, #1e3a3e 0%, #2a4a4f 100%);
-  border-left: 6px solid #4dd0e1;
-  border-radius: 8px;
-  padding: 0.75rem;
-  box-shadow: 0 2px 6px rgba(77, 208, 225, 0.15);
-  font-family: "Segoe UI", sans-serif;
-}
-
-html.dark .callout[data-callout="info"] .callout-title {
-  color: #4dd0e1;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
-}
-
-html.dark .callout[data-callout="info"] .callout-title .callout-icon {
-  margin-right: 0.4rem;
-  color: #4dd0e1;
-}
-
-html.dark .callout[data-callout="info"] .callout-content {
-  color: #e0e0e0;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
 
 /* Style générique pour un message d'erreur */
 .error {

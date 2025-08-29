@@ -401,3 +401,16 @@ En fait en utilisant :
 ```
 On alloue une zone mémoire permettant de stocker au plus 7 caractères ainsi que le marqueur de fin de chaîne `\0`. Ensuite on l'utilise avec `strcpy()` de la bibliothèque `<string.h>` on l'affiche et on libère la zone mémoire grâce à `free`.
 
+## Libérer la mémoire
+**Pourquoi libérer la mémoire ?**  
+Quand on utilise `malloc`, `calloc` ou `realloc`, la mémoire est réservée dans le **tas** *(heap)*.  
+Cette mémoire **n’est pas libérée automatiquement** quand la variable sort de portée c'est à dire que si on ne la libère pas, on crée une **fuite mémoire**. 
+
+Pour se faire on utilise la fonction `free` dont le prototype est le suivant :
+```c
+#include <stdlib.h>
+void free(void *ptr);
+```
+- Elle prend en paramètre le pointeur vers le bloc alloué avec  `malloc`, `calloc` et `realloc` *(on vas les voir après les autres fonctions...)*
+- La fonction `free` comme son nom l'indique, elle rend la mémoire allouée précédemment au système.
+Après avoir libéré le pointeur, ce dernier devient *dangling pointeur* en gros il pointe vers une zone invalide.
