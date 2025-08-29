@@ -26,7 +26,67 @@ char domaine[] = "informatique";
 ```
 
 Voici ci dessous, une version schématique simple qui vous permet de comprendre comment `informatique` est stocké.
-![[informatiqueMOT.svg]]
+
+<div>
+<svg width="900" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Boxes for each character -->
+  <g>
+    <!-- Box 0 -->
+    <rect x="10" y="20" width="60" height="50" class="char-box"/>
+    <text x="35" y="50" class="char-text" text-anchor="middle">i</text>
+    <text x="35" y="85" class="addr-text" text-anchor="middle">0x1000</text>
+    <!-- Box 1 -->
+    <rect x="70" y="20" width="60" height="50" class="char-box"/>
+    <text x="95" y="50" class="char-text" text-anchor="middle">n</text>
+    <text x="95" y="85" class="addr-text" text-anchor="middle">0x1001</text>
+    <!-- Box 2 -->
+    <rect x="130" y="20" width="60" height="50" class="char-box"/>
+    <text x="155" y="50" class="char-text" text-anchor="middle">f</text>
+    <text x="155" y="85" class="addr-text" text-anchor="middle">0x1002</text>
+    <!-- Box 3 -->
+    <rect x="190" y="20" width="60" height="50" class="char-box"/>
+    <text x="215" y="50" class="char-text" text-anchor="middle">o</text>
+    <text x="215" y="85" class="addr-text" text-anchor="middle">0x1003</text>
+    <!-- Box 4 -->
+    <rect x="250" y="20" width="60" height="50" class="char-box"/>
+    <text x="275" y="50" class="char-text" text-anchor="middle">r</text>
+    <text x="275" y="85" class="addr-text" text-anchor="middle">0x1004</text>
+    <!-- Box 5 -->
+    <rect x="310" y="20" width="60" height="50" class="char-box"/>
+    <text x="335" y="50" class="char-text" text-anchor="middle">m</text>
+    <text x="335" y="85" class="addr-text" text-anchor="middle">0x1005</text>
+    <!-- Box 6 -->
+    <rect x="370" y="20" width="60" height="50" class="char-box"/>
+    <text x="395" y="50" class="char-text" text-anchor="middle">a</text>
+    <text x="395" y="85" class="addr-text" text-anchor="middle">0x1006</text>
+    <!-- Box 7 -->
+    <rect x="430" y="20" width="60" height="50" class="char-box"/>
+    <text x="455" y="50" class="char-text" text-anchor="middle">t</text>
+    <text x="455" y="85" class="addr-text" text-anchor="middle">0x1007</text>
+    <!-- Box 8 -->
+    <rect x="490" y="20" width="60" height="50" class="char-box"/>
+    <text x="515" y="50" class="char-text" text-anchor="middle">i</text>
+    <text x="515" y="85" class="addr-text" text-anchor="middle">0x1008</text>
+    <!-- Box 9 -->
+    <rect x="550" y="20" width="60" height="50" class="char-box"/>
+    <text x="575" y="50" class="char-text" text-anchor="middle">q</text>
+    <text x="575" y="85" class="addr-text" text-anchor="middle">0x1009</text>
+    <!-- Box 10 -->
+    <rect x="610" y="20" width="60" height="50" class="char-box"/>
+    <text x="635" y="50" class="char-text" text-anchor="middle">u</text>
+    <text x="635" y="85" class="addr-text" text-anchor="middle">0x100A</text>
+    <!-- Box 11 -->
+    <rect x="670" y="20" width="60" height="50" class="char-box"/>
+    <text x="695" y="50" class="char-text" text-anchor="middle">e</text>
+    <text x="695" y="85" class="addr-text" text-anchor="middle">0x100B</text>
+    <!-- Box 12 (null terminator) -->
+    <rect x="730" y="20" width="60" height="50" class="char-box" fill="#e0e0e0" stroke="#a0a0a0"/>
+    <text x="755" y="50" class="char-text" text-anchor="middle">\0</text>
+    <text x="755" y="85" class="addr-text" text-anchor="middle">0x100C</text>
+  </g>
+</svg>
+</div>
+
 En fait, lors de la création de la variable  `domaine` qui contient la chaîne de caractère "informatique", cela va créer un tableau de caractères `char` contenant chaque lettre du mot **et le caractère nul** `\0` qui permet de marquer la fin de la chaîne de caractères.  
 Ainsi, dans notre exemple un tableau de 13 éléments est créé, il peut être schématisé *grossièrement* de la manière suivante :
 ```
@@ -104,7 +164,49 @@ int main() {
 >Les indices commencent à 0 qui correspond au premier caractère de la chaine jusqu'à $t-1$ pour le dernier caractère de la chaîne. Et, le `\0` caractère nul pour marquer la fin de la chaîne est l'élément d'indice $t$.
 
 Ainsi en considérant une chaîne de $t$ éléments, voici les indices de manière schématique.
-![[indicesMot.svg]]
+
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="190" viewBox="0 0 1000 200">
+  <defs>
+    
+  </defs>
+  <g id="cells" transform="translate(20,40)">
+    <!-- Cell 0 -->
+    <rect x="0" y="0" width="60" height="60" class="cell" />
+    <text x="30" y="40" text-anchor="middle" class="label"></text>
+    <text x="30" y="90" text-anchor="middle" class="index">0</text>
+    <!-- Cell 1 -->
+    <rect x="80" y="0" width="60" height="60" class="cell" />
+    <text x="110" y="40" text-anchor="middle" class="label"></text>
+    <text x="110" y="90" text-anchor="middle" class="index">1</text>
+    <!-- Cell 2 -->
+    <rect x="160" y="0" width="60" height="60" class="cell" />
+    <text x="190" y="40" text-anchor="middle" class="label"></text>
+    <text x="190" y="90" text-anchor="middle" class="index">2</text>
+    <!-- Dots -->
+    <circle cx="260" cy="30" r="3.5" class="dots" />
+    <circle cx="280" cy="30" r="3.5" class="dots" />
+    <circle cx="300" cy="30" r="3.5" class="dots" />
+    <!-- Cell t-2 -->
+    <rect x="340" y="0" width="60" height="60" class="cell" />
+    <text x="370" y="40" text-anchor="middle" class="label"></text>
+    <text x="370" y="90" text-anchor="middle" class="index">t−2</text>
+    <!-- Cell t-1 -->
+    <rect x="420" y="0" width="60" height="60" class="cell" />
+    <text x="450" y="40" text-anchor="middle" class="label"></text>
+    <text x="450" y="90" text-anchor="middle" class="index">t−1</text>
+
+    <!-- Cell \0 -->
+    <rect x="500" y="0" width="60" height="60" class="cell" />
+    <text x="530" y="40" text-anchor="middle" class="label">\0</text>
+    <text x="530" y="90" text-anchor="middle" class="index">t</text>
+  </g>
+  <!-- Brace -->
+  <path class="brace" d="M 20 130 C 20 150, 20 150, 40 150 L 580 150 C 600 150, 600 150, 600 130" />
+  <text x="300" y="170" text-anchor="middle" class="index brace-text">tableau de taille t+1</text>
+</svg>
+</div>
+
 On voit donc que pour un mot de taille $t$, un tableau de taille `t+1` sera créé pour stocker chaque caractère du mot en entier et un emplacement mémoire supplémentaire est ajouté pour stocker le caractère de fin de chaîne `\0`. C'est pour cela que pour un mot de taille $t$, le tableau qui stocke le mot sera de taille $t+1$.
 
 ## Affichage
