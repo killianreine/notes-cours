@@ -572,7 +572,7 @@ Ce que nous avions fais c'était créer un tableau pouvant stocker des mots alla
 De manière visuelle, on obtient ceci : 
 
 <div>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 850 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="200" viewBox="0 0 850 220">
   <g id="slots" transform="translate(0,40)">
     <!-- Slots 0 à 5 -->
     <rect x="0" y="0" width="50" height="50" class="slot"/>
