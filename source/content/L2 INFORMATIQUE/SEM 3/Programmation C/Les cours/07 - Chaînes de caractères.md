@@ -514,7 +514,41 @@ Création d'une variable `domaine` d'une taille définie, ici $6$.
 char domaine[6];
 ```
 Cela signifie alors que l'on peut stocker un prénom de $5$ lettres, car le dernier emplacement mémoire de la chaîne est réservé au marqueur de fin de chaîne `\0` **à ne pas oublier !**.  
-![[tab6.svg]]
+
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="190" viewBox="0 0 1000 200">
+  <g id="cells" transform="translate(20,40)">
+    <!-- Cell 0 -->
+    <rect x="0" y="0" width="60" height="60" class="cell" />
+    <text x="30" y="40" text-anchor="middle" class="label"></text>
+    <text x="30" y="90" text-anchor="middle" class="index">0</text>
+    <!-- Cell 1 -->
+    <rect x="80" y="0" width="60" height="60" class="cell" />
+    <text x="110" y="40" text-anchor="middle" class="label"></text>
+    <text x="110" y="90" text-anchor="middle" class="index">1</text>
+    <!-- Cell 2 -->
+    <rect x="160" y="0" width="60" height="60" class="cell" />
+    <text x="190" y="40" text-anchor="middle" class="label"></text>
+    <text x="190" y="90" text-anchor="middle" class="index">2</text>
+    <!-- Cell 3 -->
+    <rect x="240" y="0" width="60" height="60" class="cell" />
+    <text x="270" y="40" text-anchor="middle" class="label"></text>
+    <text x="270" y="90" text-anchor="middle" class="index">3</text>
+    <!-- Cell 4 -->
+    <rect x="320" y="0" width="60" height="60" class="cell" />
+    <text x="350" y="40" text-anchor="middle" class="label"></text>
+    <text x="350" y="90" text-anchor="middle" class="index">4</text>
+    <!-- Cell 5 (\0) -->
+    <rect x="400" y="0" width="60" height="60" class="cell" />
+    <text x="430" y="40" text-anchor="middle" class="label">\0</text>
+    <text x="430" y="90" text-anchor="middle" class="index">5</text>
+  </g>
+  <!-- Brace -->
+  <path class="brace" d="M 20 130 C 20 150, 20 150, 40 150 L 460 150 C 480 150, 480 150, 480 130" />
+  <text x="250" y="170" text-anchor="middle" class="index brace-text">tableau de taille 6</text>
+</svg>
+</div>
+
 Considérons maintenant le code suivant avec l'exécution associée.
 ```c
 #include <stdio.h>
