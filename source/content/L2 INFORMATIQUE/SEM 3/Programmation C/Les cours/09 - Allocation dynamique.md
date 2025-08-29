@@ -99,39 +99,6 @@ La mémoire d'un ordinateur est une succession d'octets *(8 bits)*, organisés l
 La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'**allocation automatique** des variables locales et des paramètres de fonctions. En fait, lors de l'appel d'une fonction, un **cadre** *stack frame* est créé pour stocker ses variables locales, paramètres et adresse de retour. Et, lorsque la fonction se termine, *le cadre est automatiquement détruit*. 
 
 <div>
-<div style="display: flex; gap: 20px; align-items: flex-start; font-family: Arial, sans-serif;">
-  <!-- Schéma de la pile à gauche -->
-  <div>
-    <div class="stack">
-      <div class="frame funcC">
-        <div class="func-name">fonction3()</div>
-        <div class="frame-detail">Paramètres <br/> Variables locales</div>
-        <div class="frame-detail">Adresse de retour</div>
-      </div>
-      <div class="frame funcB">
-        <div class="func-name">fonction2()</div>
-        <div class="frame-detail">Paramètres <br/> Variables locales</div>
-        <div class="frame-detail">Adresse de retour</div>
-      </div>
-      <div class="frame funcA">
-        <div class="func-name">fonction1()</div>
-        <div class="frame-detail">Paramètres <br/> Variables locales</div>
-        <div class="frame-detail">Adresse de retour</div>
-      </div>
-      <div class="frame main">
-        <div class="func-name">main()</div>
-        <div class="frame-detail">Paramètres <br/> Variables locales</div>
-        <div class="frame-detail">Adresse de retour</div>
-      </div>
-    </div>
-  </div>
-  <!-- Texte explicatif à droite -->
-  <div style="max-width: 500px; line-height: 1.5;">
-    En fait, lorsqu'une fonction est appelée le cadre créé est <strong>empilé (push)</strong> sur la pile, et à la sortie de cette dernière le cadre est <strong>dépilé (pop)</strong> libérant ainsi automatiquement la mémoire.<br/><br/>
-    
-    Il y a quand même quelques inconvénients car la pile possède une <strong>taille limitée</strong>, risque donc d'un <span class="error-inline">stack overflow</span> si trop d'appels imbriqués ou alors des données en trop grande quantité (tableaux trop grands par ex.).
-  </div>
-</div>
 <style>
   .stack {
     position: relative;
@@ -140,7 +107,7 @@ La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'*
     border-radius: 5px;
     background: #f0f0f0;
     padding: 10px 0;
-    margin: 0px auto;
+     margin: 0px auto;
   }
   .stack::after {
     content: "Top";
@@ -181,4 +148,30 @@ La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'*
   .funcA { background-color: #ccffcc; }
   .main { background-color: #ffcccc; }
 </style>
+<div class="stack">
+  <div class="frame funcC">
+    <div class="func-name">fonction3()</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
+  </div>
+  <div class="frame funcB">
+    <div class="func-name">fonction2()</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
+  </div>
+  <div class="frame funcA">
+    <div class="func-name">fonction1()</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
+  </div>
+  <div class="frame main">
+    <div class="func-name">main()</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
+  </div>
 </div>
+</div>
+
+En fait, lorsqu'une fonction est appelée le cadre créé est **empilé** *(push)* sur la pile, et à la sortie de cette dernière le cadre est **dépilé** *(pop)* libérant ainsi automatiquement la mémoire.
+
+Il y a quand même quelques inconvénient car la pile possède une **taille limitée**, risque donc d'un <span class="error-inline">stack overflow</span> si trop d'appels imbriqués ou alors des données en trop grosse quantités *(tableaux trop grand par ex.)*.
