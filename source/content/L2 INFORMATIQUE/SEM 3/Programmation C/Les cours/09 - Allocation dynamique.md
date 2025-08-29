@@ -40,3 +40,5 @@ La **==mémoire cache==** *ou antémémoire* permet d'enregistrer temporairement
     - Le stockage (SSD/HDD) atteint des To.
 ### Mémoire secondaire (stockage de masse)
 Cela représente tous les disques durs, les clés USB, SSD, les supports externes qui ne sont pas volatile car ne perdent pas leur données même débranchées *(oue bon on repassera pour les clés USB, genre vous avez jamais perdus vos données...)*. Ces mémoires non volatiles restent tout de même moins rapide que la RAM.
+
+# Allocations automatique et statique
