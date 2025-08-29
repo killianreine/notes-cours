@@ -90,3 +90,81 @@ int main(){
 ```
 
 L'inconvénient majeur est que si on utilise plus la variable, elle occupe de la place en mémoire pour rien... 
+
+# La pile et le tas
+La mémoire d'un ordinateur est une succession d'octets *(8 bits)*, organisés les uns à le suite des autres et accessible via une adresse. En langage C *(et C++)*, la mémoire pour stocker des variables est organisée en $2$ catégories : **la pile *stack*** et **le tas *heap***. Dans la plupart des langages compilés la pile représente l'endroit ou est stocké les variables locales et les paramètres des fonctions. 
+## La pile *stack*
+La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'**allocation automatique** des variables locales et des paramètres de fonctions. En fait, lors de l'appel d'une fonction, un **cadre** *stack frame* est créé pour stocker ses variables locales, paramètres et adresse de retour. Et, lorsque la fonction se termine, *le cadre est automatiquement détruit*. 
+
+<div>
+<style>
+  .stack {
+    position: relative;
+    width: 200px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #f0f0f0;
+    padding: 10px 0;
+  }
+  .stack::after {
+    content: "Top";
+    position: absolute;
+    right: -50px;
+    top: 10px;
+    font-weight: bold;
+  }
+  .stack::before {
+    content: "Bottom";
+    position: absolute;
+    right: -80px;
+    bottom: 10px;
+    font-weight: bold;
+  }
+  .frame {
+    margin: 5px auto;
+    width: 160px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+  }
+  .frame:hover {
+    transform: scale(1.05);
+    background-color: #ffe0b3;
+  }
+  .func-name {
+    font-weight: bold;
+  }
+  .frame-detail {
+    font-size: 12px;
+  }
+  .funcC { background-color: #ffffcc; }
+  .funcB { background-color: #ccccff; }
+  .funcA { background-color: #ccffcc; }
+  .main { background-color: #ffcccc; }
+</style>
+<div class="stack">
+  <div class="frame funcC">
+    <div class="func-name">funcC()</div>
+    <div class="frame-detail">Params + Locals</div>
+    <div class="frame-detail">Return addr</div>
+  </div>
+  <div class="frame funcB">
+    <div class="func-name">funcB()</div>
+    <div class="frame-detail">Params + Locals</div>
+    <div class="frame-detail">Return addr</div>
+  </div>
+  <div class="frame funcA">
+    <div class="func-name">funcA()</div>
+    <div class="frame-detail">Params + Locals</div>
+    <div class="frame-detail">Return addr</div>
+  </div>
+  <div class="frame main">
+    <div class="func-name">main()</div>
+    <div class="frame-detail">Params + Locals</div>
+    <div class="frame-detail">Return addr</div>
+  </div>
+</div>
+</div>
