@@ -1,0 +1,24 @@
+/* Styles généraux */
+      .title { font-family: 'Fira Sans', Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #163758; }
+      .subtitle { font-family: 'Fira Sans', Arial, sans-serif; font-size: 18px; fill: #163758; }
+      .cell { fill: #e6f0fa; stroke: #1f4e79; stroke-width: 2; rx: 8; ry: 8; }
+      .label { font-family: 'Fira Sans', Arial, sans-serif; font-size: 18px; fill: #1f4e79; }
+      .index { font-family: 'Fira Mono', monospace; font-size: 14px; fill: #163758; }
+      .src { fill: #f5eafd; stroke: #660493; stroke-width: 2; rx: 8; ry: 8; }
+      .src-label { font-family: 'Fira Sans', Arial, sans-serif; font-size: 18px; fill: #660493; }
+      .vide { fill: #d9d9da; stroke: #000; stroke-width: 2; rx: 8; ry: 8; }
+      .arrow { stroke: #660493; stroke-width: 1; marker-end: url(#arrowhead); }
+      .note { font-family: 'Fira Sans', Arial, sans-serif; font-size: 16px; fill: #660493; font-weight: 600; }
+      .panel-line { stroke: #d0d7e2; stroke-width: 2; }
+      /* Thème sombre */
+      [saved-theme="dark"] .title { fill: #e6f0fa; }
+      [saved-theme="dark"] .subtitle { fill: #cdd9e5; }
+      [saved-theme="dark"] .cell { fill: #2a3b4d; stroke: #89b4f8; }
+      [saved-theme="dark"] .label { fill: #cdd9e5; }
+      [saved-theme="dark"] .index { fill: #89b4f8; }
+      [saved-theme="dark"] .src { fill: #3c1a4d; stroke: #b68aff; }
+      [saved-theme="dark"] .src-label { fill: #b68aff; }
+      [saved-theme="dark"] .vide { fill: #555; stroke: #bbb; }
+      [saved-theme="dark"] .arrow { stroke: #b68aff; }
+      [saved-theme="dark"] .note { fill: #b68aff; }
+      [saved-theme="dark"] .panel-line { stroke: #555; }
