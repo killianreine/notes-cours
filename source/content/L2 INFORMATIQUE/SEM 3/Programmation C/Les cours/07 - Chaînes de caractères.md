@@ -167,9 +167,6 @@ Ainsi en considérant une chaîne de $t$ éléments, voici les indices de maniè
 
 <div>
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="190" viewBox="0 0 1000 200">
-  <defs>
-    
-  </defs>
   <g id="cells" transform="translate(20,40)">
     <!-- Cell 0 -->
     <rect x="0" y="0" width="60" height="60" class="cell" />
@@ -195,7 +192,6 @@ Ainsi en considérant une chaîne de $t$ éléments, voici les indices de maniè
     <rect x="420" y="0" width="60" height="60" class="cell" />
     <text x="450" y="40" text-anchor="middle" class="label"></text>
     <text x="450" y="90" text-anchor="middle" class="index">t−1</text>
-
     <!-- Cell \0 -->
     <rect x="500" y="0" width="60" height="60" class="cell" />
     <text x="530" y="40" text-anchor="middle" class="label">\0</text>
