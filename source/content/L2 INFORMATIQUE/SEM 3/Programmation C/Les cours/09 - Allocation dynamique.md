@@ -28,7 +28,7 @@ La **==mémoire cache==** *ou antémémoire* permet d'enregistrer temporairement
 <div>
 <svg class="diagram" viewBox="0 0 1400 570" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="mEnd" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+    <marker id="mEnd" markerWidth="15" markerHeight="15" refX="8" refY="3" orient="auto">
       <path d="M0,0 L8,3 L0,6 Z"/>
     </marker>
   </defs>
