@@ -105,6 +105,7 @@ La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'*
     border-radius: 5px;
     background: #f0f0f0;
     padding: 10px 0;
+     margin: 0px auto;
   }
   .stack::after {
     content: "Top";
