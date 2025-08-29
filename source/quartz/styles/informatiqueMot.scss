@@ -1,0 +1,9 @@
+/* Thème clair par défaut */
+    .char-box { fill: #f0f8ff; stroke: #4682b4; stroke-width: 1; }
+    .char-text { font-family: monospace; font-size: 16px; fill: #000; }
+    .addr-text { font-family: monospace; font-size: 12px; fill: #4682b4; }
+
+    /* Thème sombre */
+    [saved-theme="dark"] .char-box { fill: #1e293b; stroke: #60a5fa; }
+    [saved-theme="dark"] .char-text { fill: #f0f9ff; }
+    [saved-theme="dark"] .addr-text { fill: #60a5fa; }

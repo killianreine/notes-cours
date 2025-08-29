@@ -302,7 +302,67 @@ tab[i];
 Une question peut venir te hanter *(ou pas)*. Pourquoi faut-il augmenter le pointeur de $1$ pour accéder à l'élément suivant ?  
 Reprenons simplement l'un des schéma utilisé lors du cours 6 :  
 On avait considéré une chaîne de caractère `informatique` que l'on a dont stocké dans un tableau de 13 éléments pour inclure le marqueur de fin de chaîne `\0`.
-![[informatiqueMOT.svg]]
+
+<div>
+<svg width="900" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Boxes for each character -->
+  <g>
+    <!-- Box 0 -->
+    <rect x="10" y="20" width="60" height="50" class="char-box"/>
+    <text x="35" y="50" class="char-text" text-anchor="middle">i</text>
+    <text x="35" y="85" class="addr-text" text-anchor="middle">0x1000</text>
+    <!-- Box 1 -->
+    <rect x="70" y="20" width="60" height="50" class="char-box"/>
+    <text x="95" y="50" class="char-text" text-anchor="middle">n</text>
+    <text x="95" y="85" class="addr-text" text-anchor="middle">0x1001</text>
+    <!-- Box 2 -->
+    <rect x="130" y="20" width="60" height="50" class="char-box"/>
+    <text x="155" y="50" class="char-text" text-anchor="middle">f</text>
+    <text x="155" y="85" class="addr-text" text-anchor="middle">0x1002</text>
+    <!-- Box 3 -->
+    <rect x="190" y="20" width="60" height="50" class="char-box"/>
+    <text x="215" y="50" class="char-text" text-anchor="middle">o</text>
+    <text x="215" y="85" class="addr-text" text-anchor="middle">0x1003</text>
+    <!-- Box 4 -->
+    <rect x="250" y="20" width="60" height="50" class="char-box"/>
+    <text x="275" y="50" class="char-text" text-anchor="middle">r</text>
+    <text x="275" y="85" class="addr-text" text-anchor="middle">0x1004</text>
+    <!-- Box 5 -->
+    <rect x="310" y="20" width="60" height="50" class="char-box"/>
+    <text x="335" y="50" class="char-text" text-anchor="middle">m</text>
+    <text x="335" y="85" class="addr-text" text-anchor="middle">0x1005</text>
+    <!-- Box 6 -->
+    <rect x="370" y="20" width="60" height="50" class="char-box"/>
+    <text x="395" y="50" class="char-text" text-anchor="middle">a</text>
+    <text x="395" y="85" class="addr-text" text-anchor="middle">0x1006</text>
+    <!-- Box 7 -->
+    <rect x="430" y="20" width="60" height="50" class="char-box"/>
+    <text x="455" y="50" class="char-text" text-anchor="middle">t</text>
+    <text x="455" y="85" class="addr-text" text-anchor="middle">0x1007</text>
+    <!-- Box 8 -->
+    <rect x="490" y="20" width="60" height="50" class="char-box"/>
+    <text x="515" y="50" class="char-text" text-anchor="middle">i</text>
+    <text x="515" y="85" class="addr-text" text-anchor="middle">0x1008</text>
+    <!-- Box 9 -->
+    <rect x="550" y="20" width="60" height="50" class="char-box"/>
+    <text x="575" y="50" class="char-text" text-anchor="middle">q</text>
+    <text x="575" y="85" class="addr-text" text-anchor="middle">0x1009</text>
+    <!-- Box 10 -->
+    <rect x="610" y="20" width="60" height="50" class="char-box"/>
+    <text x="635" y="50" class="char-text" text-anchor="middle">u</text>
+    <text x="635" y="85" class="addr-text" text-anchor="middle">0x100A</text>
+    <!-- Box 11 -->
+    <rect x="670" y="20" width="60" height="50" class="char-box"/>
+    <text x="695" y="50" class="char-text" text-anchor="middle">e</text>
+    <text x="695" y="85" class="addr-text" text-anchor="middle">0x100B</text>
+    <!-- Box 12 (null terminator) -->
+    <rect x="730" y="20" width="60" height="50" class="char-box" fill="#e0e0e0" stroke="#a0a0a0"/>
+    <text x="755" y="50" class="char-text" text-anchor="middle">\0</text>
+    <text x="755" y="85" class="addr-text" text-anchor="middle">0x100C</text>
+  </g>
+</svg>
+</div>
+
 Ainsi, à la création de ce tableau que l'on nommera `tab`, ce dernier pointera sur le premier élément qui ici est la lettre `i`. Les "codes" présents en dessous de chaque case représente l'adresse mémoire *(choisie de manière arbitraire)* et on voit qu'entre deux cases, cette dernière augmente de $1$.  
 Oui, on passe de $9$ à $A$ car les adresses mémoires sont en base hexadécimal donc `16` :
 
