@@ -153,6 +153,10 @@ html.dark .callout[data-callout="info"] .callout-content {
   border-bottom: 1px solid #b00020; /* soulignement rouge discret */
 }
 
+html.dark .error-inline{
+  color: #007acc;
+}
+
 .markdown-preview-view img {
   display: block;
   margin-left: auto;
