@@ -282,3 +282,17 @@ La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'*
 En fait, lorsqu'une fonction est appelée le cadre créé est **empilé** *(push)* sur la pile, et à la sortie de cette dernière le cadre est **dépilé** *(pop)* libérant ainsi automatiquement la mémoire.
 
 Il y a quand même quelques inconvénient car la pile possède une **taille limitée**, risque donc d'un <span class="error-inline">stack overflow</span> si trop d'appels imbriqués ou alors des données en trop grosse quantités *(tableaux trop grand par ex.)*.
+
+Il faut savoir que la pile est basée sur le principe **LIFO** *Last In First Out* autrement dit Dernier arrivé premier sorti. On peut la voir comme une pile d'assiettes où l'on peut empiler/dépiler une seule assiette à la fois et ces dernières peuvent être de tailles différentes.  
+Dépiler = effacer de la mémoire !
+
+## Les tas *heap*
+Le **==tas==** *(heap en anglais)* quant à lui c'est la zone mémoire utilisée pour l'allocation dynamique, en gros pour la mémoire dont la taille et la durée de vie sont décidées à l'exécution du programme. Contrairement à la pile, **la mémoire allouée doit être libérée <b><u>manuellement</u></b> par le programmeur**. *La mémoire peut être libérée par un "ramasse miette" dans certains langage comme Java*.  
+Le fonctionnement du tas est bien différent de celui de la pile :
+- Lorsqu'on demande de la mémoire dynamique *(avec `malloc` en C qu'on verra dans un instant)* le système va alors réserver un bloc dans le tas.
+- La mémoire **reste allouée tant que le programme ne la libère pas !**
+- La libération se fait avec une certaine instruction ou alors via le ramasse miette *(garbage collector en anglais)* dans d'autres langages.
+
+>[!warning]
+>L'accès au tas reste néanmoins plus lent que pour la pile car c'est **une structure moins structurée**. Il faut gérer manuellement et faire particulièrement attention au <span class="error-inline">Buffer Overflow</span> *dépassement de mémoire* mais aussi à la fragmentation...
+
