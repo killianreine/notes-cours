@@ -517,3 +517,121 @@ Résultats possibles :
 >Le fait de mettre le pointeur à `NULL` après la libération fait que si on libère deux fois la même zone, cela n'aura aucun effet.
 
 ## Allocation d'un tableau
+Bon en fait allouer un tableau vous savez le faire, on l'a même comparé avec `malloc` et `calloc`. En fait lorsqu'on utilise `malloc` pour allouer un tableau à `n` éléments.  
+Si `malloc(sizeof(int))` alloue la mémoire pour un seul entier alors si je multiplie cette taille par `n`, on va allouer la taille pour un tableau de `n` entiers.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n = 5; // taille du tableau
+    int *tab;
+
+    // Allocation dynamique d'un tableau à 5 éléments
+    tab = (int *)malloc(n * sizeof(int));
+
+    if (tab == NULL) {
+        printf("Erreur d'allocation.\n");
+        return 1;
+    }
+
+    // Remplissage du tableau
+    for (int i = 0; i < n; i++) {
+        tab[i] = i * 10;
+    }
+
+    // Affichage
+    for (int i = 0; i < n; i++) {
+        printf("%d ", tab[i]);
+    }
+    printf("\n");
+
+    free(tab); // Libération de la mémoire
+    tab = NULL;
+
+    return 0;
+}
+```
+```
+0 10 20 30 40 
+```
+
+>[!tip]
+>Les deux instructions suivantes sont équivalentes :
+>```c
+>if(tab==NULL){ ... };
+>```
+>```c
+>if(!tab){ ... };
+>```
+
+## Allocation d'une matrice
+Supposons que l’on veut une matrice `m x n` (m lignes, n colonnes) d’entiers.  
+On a vu juste avant que pour allouer l'espace mémoire pour  un tableau de `m` valeurs  il suffisait d'écrire :
+```c
+int *tab = (int*)malloc(m*sizeof(int));
+```
+Et, on sait qu'une matrice $m \times n$ représente simplement un tableau de $m$ éléments qui sont eux même des tableaux de $n$ éléments. Alors pour allouer l'espace mémoire d'une matrice il faut le faire en deux étapes :
+- Allouer les $m$ lignes de la matrices.
+- Pour chaque ligne créée, lui allouée individuellement un tableau de $n$ éléments.
+Ainsi on se retrouve avec ce pseudo code :
+```
+allouer un tableau de m éléments
+Pour chaque élément de ce tableau
+	allouer un tableau de n éléments
+```
+En langage C, on utilise ainsi $n+1$ fois malloc :
+```c
+// Allouer les m lignes du tableau : 
+int *tab = (int*)malloc(m*sizeof(int));
+
+// Pour chaque éléments du tableau, allouer un tableau de n éléments
+for(int i = 0; i<m; i++){
+	tab[i] = (int*)malloc(n*sizeof(int));
+}
+```
+
+>[!tip] 
+>Pensez à vérifier que chaque allocation mémoire s'est bien passée.
+
+<u>Exemple complet :</u>  
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int m = 3, n = 4;
+    int **mat;
+    
+    // Allocation du tableau de pointeurs pour les lignes
+    mat = (int **)malloc(m * sizeof(int *));
+    if (!mat) {
+        printf("Erreur d'allocation\n");
+        return 1;
+    }
+
+    // Allocation de chaque ligne
+    for (int i = 0; i < m; i++) {
+        mat[i] = (int *)malloc(n * sizeof(int));
+        if (!mat[i]) {
+            printf("Erreur d'allocation ligne %d\n", i);
+            return 1;
+        }
+    }
+    
+    // Remplissage et utilisation de la matrice
+    
+    // Libération de la mémoire
+    for (int i = 0; i < m; i++)
+        free(mat[i]);
+    free(mat);
+    
+    mat=NULL;
+
+    return 0;
+}
+```
+Pour libérer la matrice, il faut commencer par libérer les sous tableaux avant de libérer le tableau global.
+- Si tu `free(mat)` **avant** *(libère la matrice globale)*, tu détruis la “tablette de pointeurs” → plus de moyen de retrouver les lignes.
+- Donc il faut **libérer les blocs pointés** avant le tableau de pointeurs lui-même.
+
