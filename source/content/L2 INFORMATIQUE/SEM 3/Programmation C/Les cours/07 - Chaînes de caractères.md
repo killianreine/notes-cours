@@ -1243,7 +1243,7 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
     <rect x="360" y="0" width="60" height="60" class="cell"/><text x="390" y="38" text-anchor="middle" class="label">␣</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
     <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
     <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
-    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle"  class="nulltxt">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
   </g>
   <!-- ===== APPEL 1 ===== -->
   <rect x="20" y="270" width="760" height="140" class="step-bg"/>
@@ -1258,7 +1258,7 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
     <rect x="360" y="0" width="60" height="60" class="cell"/><text x="390" y="38" text-anchor="middle" class="label">␣</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
     <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
     <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
-    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
     <!-- Boîte de retour -->
     <rect x="610" y="15" width="80" height="30" class="ret-box"/>
     <text x="650" y="35" text-anchor="middle" class="ret-text">"le"</text>
@@ -1276,7 +1276,7 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
     <rect x="360" y="0" width="60" height="60" class="delim-modified"/><text x="390" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
     <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
     <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
-    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
     <!-- Boîte de retour -->
     <rect x="610" y="15" width="90" height="30" class="ret-box"/>
     <text x="655" y="35" text-anchor="middle" class="ret-text">"mon"</text>
@@ -1294,7 +1294,7 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
     <rect x="360" y="0" width="60" height="60" class="delim-modified"/><text x="390" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
     <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
     <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
-    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
     <!-- Boîte de retour -->
     <rect x="610" y="15" width="80" height="30" class="ret-box"/>
     <text x="650" y="35" text-anchor="middle" class="ret-text">"de"</text>
@@ -1303,14 +1303,14 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
   <rect x="20" y="750" width="760" height="50" class="step-bg"/>
   <text x="40" y="780" class="subtitle">4) Quatrième appel : <tspan class="code">strtok(NULL, " ") → NULL</tspan></text>
   <rect x="550" y="760" width="80" height="30" class="ret-box" style="fill: #ffebee; stroke: #d32f2f;"/>
-  <text x="590" y="780" text-anchor="middle" class="ret-text nulltxt">NULL</text>
+  <text x="590" y="780" text-anchor="middle" class="ret-text" style="fill: #d32f2f;">NULL</text>
   <text x="635" y="780" class="note">(plus de jetons)</text>
   <!-- Légende dans le coin supérieur droit -->
 <g transform="translate(650, 10)">
   <rect x="0" y="0" width="35" height="22" class="cell"/>
   <text x="45" y="16" class="txtLeg" text-anchor="start">Caractère normal</text>
   <rect x="0" y="30" width="35" height="22" class="delim-modified"/>
-  <text x="45" y="46" class="txtLeg" text-anchor="start" >Séparateur → '\0'</text>
+  <text x="45" y="46" class="txtLeg" text-anchor="start">Séparateur → '\0'</text>
 </g>
 </svg>
 </div>
