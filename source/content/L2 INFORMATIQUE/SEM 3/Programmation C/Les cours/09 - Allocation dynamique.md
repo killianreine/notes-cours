@@ -296,21 +296,3 @@ Le fonctionnement du tas est bien différent de celui de la pile :
 >[!warning]
 >L'accès au tas reste néanmoins plus lent que pour la pile car c'est **une structure moins structurée**. Il faut gérer manuellement et faire particulièrement attention au <span class="error-inline">Buffer Overflow</span> *dépassement/fuite de mémoire* mais aussi à la fragmentation...
 
-<div>
-<div class="heap-container">
-  <div class="heap-label-top">Top</div>
-  <div class="heap-label-bottom">Bottom</div>
-  <svg>
-    <!-- Bloc d'allocation A -->
-    <rect x="20" y="300" width="160" height="50" class="block allocA"></rect>
-    <text x="100" y="330" text-anchor="middle" font-size="12">Allocation A</text>
-    <!-- Bloc d'allocation B -->
-    <rect x="40" y="220" width="120" height="60" class="block allocB"></rect>
-    <text x="100" y="250" text-anchor="middle" font-size="12">Allocation B</text>
-    <!-- Bloc d'allocation C -->
-    <rect x="30" y="120" width="140" height="80" class="block allocC"></rect>
-    <text x="100" y="160" text-anchor="middle" font-size="12">Allocation C</text>
-  </svg>
-</div>
-</div>
-
