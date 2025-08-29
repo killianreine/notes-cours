@@ -180,6 +180,16 @@ table.cours-plan tr:hover {
       <td><a href="15 - Fonctions avancées">Fonctions avancées</a></td>
       <td>Fonctions récursives et pointeurs de fonctions</td>
     </tr>
+    <tr>
+      <td>16</td>
+      <td><a href="16-Bases de données">Bases de données</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><a href="17-Interface graphique en C">Interface graphique</a></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 </div>
