@@ -148,24 +148,24 @@ La **==pile==** *(stack en anglais)* est la zone de la mémoire réservée ) l'*
 </style>
 <div class="stack">
   <div class="frame funcC">
-    <div class="func-name">funcC()</div>
-    <div class="frame-detail">Params + Locals</div>
-    <div class="frame-detail">Return addr</div>
+    <div class="func-name">fonction3()</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
   </div>
   <div class="frame funcB">
-    <div class="func-name">funcB()</div>
-    <div class="frame-detail">Params + Locals</div>
-    <div class="frame-detail">Return addr</div>
+    <div class="func-name">fonction2()</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
   </div>
   <div class="frame funcA">
-    <div class="func-name">funcA()</div>
-    <div class="frame-detail">Params + Locals</div>
-    <div class="frame-detail">Return addr</div>
+    <div class="func-name">fonction1()</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
   </div>
   <div class="frame main">
     <div class="func-name">main()</div>
-    <div class="frame-detail">Params + Locals</div>
-    <div class="frame-detail">Return addr</div>
+    <div class="frame-detail">Paramètres <br/> Variables locales</div>
+    <div class="frame-detail">Adresse de retour</div>
   </div>
 </div>
 </div>
