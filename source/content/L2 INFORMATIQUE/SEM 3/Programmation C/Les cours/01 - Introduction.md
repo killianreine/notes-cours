@@ -54,7 +54,7 @@ Le `C` est un **langage compilé**, en gros le code source où se trouve n'est p
 
 <div>
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagramme de compilation et exécution du code C">
+<svg width="1000" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagramme de compilation et exécution du code C">
   <defs>
     <marker id="arrowhead" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L12,5 L0,10 z" fill="black" />
