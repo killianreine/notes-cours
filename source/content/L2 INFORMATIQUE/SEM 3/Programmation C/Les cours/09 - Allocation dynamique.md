@@ -308,3 +308,18 @@ Le fonctionnement du tas est bien différent de celui de la pile :
 >```
 >Ici la pile est limitée à environ $8Mo$ et peut provoquer des <span class="error-inline">Segmentation Fault</span> en cas de dépassement.
 
+# Allocation dynamique en C
+## Réserver une zone mémoire
+En programmation C, la fonction `malloc` permet d'allouer dynamiquement un bloc mémoire d'une certaine taille *(en octets)* pendant l'exécution du programme. Cette dernière provient de la bibliothèque `<stdlib.h>`.
+
+Voici le prototype de la fonction : 
+```c
+#include <stdlib.h>
+void* malloc(size_t size);
+```
+- Elle prend en paramètre une taille `size` qui correspond à la taille à allouée en octets.
+- Elle retourne un pointeurs vers le bloc alloué.
+
+>[!info] Remarque
+>Si `malloc` échoue, elle renverra `NULL`.
+
