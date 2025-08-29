@@ -1,69 +1,68 @@
+.diagramMem {
+  width: 110%;
+  max-width: 1400px;
+  height: auto;
+}
 
-  .diagram {
-    width: 110%;
-    max-width: 1400px;
-    height: auto;
-  }
+.titleMem {
+  font-weight: 700;
+  font-size: 28px;
+}
 
-  .title {
-    font-weight: 700;
-    font-size: 28px;
-  }
+.labelMem {
+  font-weight: 600;
+  font-size: 16px;
+  fill: #111827;
+}
 
-  .label {
-    font-weight: 600;
-    font-size: 16px;
-    fill: #111827;
-  }
+[saved-theme="dark"] .labelMem {
+  fill: #f9fafb;
+}
 
-  [saved-theme="dark"] .label {
-    fill: #f9fafb;
-  }
+.smallMem {
+  font-weight: 500;
+  font-size: 13px;
+  fill: #374151;
+}
 
-  .small {
-    font-weight: 500;
-    font-size: 13px;
-    fill: #374151;
-  }
+[saved-theme="dark"] .smallMem {
+  fill: #d1d5db;
+}
 
-  [saved-theme="dark"] .small {
-    fill: #d1d5db;
-  }
+.boxMem {
+  rx: 16;
+  ry: 16;
+  stroke-width: 2;
+  fill: #ffffff;
+  stroke: #111827;
+}
 
-  .box {
-    rx: 16;
-    ry: 16;
-    stroke-width: 2;
-    fill: #ffffff;
-    stroke: #111827;
-  }
+[saved-theme="dark"] .boxMem {
+  fill: #1f2937;
+  stroke: #f9fafb;
+}
 
-  [saved-theme="dark"] .box {
-    fill: #1f2937;
-    stroke: #f9fafb;
-  }
+.cacheMem { fill: #e0f2fe; }
+[saved-theme="dark"] .cacheMem { fill: #0c4a6e; }
 
-  .cache { fill: #e0f2fe; }
-  [saved-theme="dark"] .cache { fill: #0c4a6e; }
+.cpuMem { fill: #fef3c7; }
+[saved-theme="dark"] .cpuMem { fill: #78350f; }
 
-  .cpu { fill: #fef3c7; }
-  [saved-theme="dark"] .cpu { fill: #78350f; }
+.ramMem { fill: #e2e8f0; }
+[saved-theme="dark"] .ramMem { fill: #1e293b; }
 
-  .ram { fill: #e2e8f0; }
-  [saved-theme="dark"] .ram { fill: #1e293b; }
+.ssdMem { fill: #f5f3ff; }
+[saved-theme="dark"] .ssdMem { fill: #3730a3; }
 
-  .ssd { fill: #f5f3ff; }
-  [saved-theme="dark"] .ssd { fill: #3730a3; }
+.arrowMem { stroke: #111827; stroke-width: 2; }
+[saved-theme="dark"] .arrowMem { stroke: #f9fafb; }
 
-  .arrow { stroke: #111827; stroke-width: 2; }
-  [saved-theme="dark"] .arrow { stroke: #f9fafb; }
+.axisMem { stroke: #6b7280; stroke-dasharray: 5 6; stroke-width: 1; }
+[saved-theme="dark"] .axisMem { stroke: #9ca3af; }
 
-  .axis { stroke: #6b7280; stroke-dasharray: 5 6; stroke-width: 1; }
-  [saved-theme="dark"] .axis { stroke: #9ca3af; }
-
-  marker path {
-    fill: #111827;
-  }
-  [saved-theme="dark"] marker path {
-    fill: #f9fafb;
-  }
+marker pathMem {
+  fill: #111827;
+}
+[saved-theme="dark"] marker pathMem {
+  fill: #f9fafb;
+}
