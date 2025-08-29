@@ -323,3 +323,4 @@ void* malloc(size_t size);
 >[!info] Remarque
 >Si `malloc` échoue, elle renverra `NULL`.
 
+Comme `malloc` renvoie un `void *`, il est nécessaire de **caster** le pointeur vers le type voulu. 

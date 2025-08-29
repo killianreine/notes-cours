@@ -304,6 +304,32 @@ int main( ){
 >[!TIP]
 > Par défaut, les flottant sont de type `double` alors c'est pour cette raison que si il est de type `float` on ajoute un `f` à la fin.
 
+# Caster une variable en C
+Le terme **“==caster== une variable”** ça veut dire convertir un type de variable en un autre. On utilise ainsi la syntaxe suivante en langage C.
+```
+(type_var) var
+```
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main() {
+    double x = 5.8;
+    int y;
+
+    y = (int) x;  // cast explicite de double vers int
+
+    printf("x = %f\n", x);
+    printf("y = %d\n", y);
+
+    return 0;
+}
+```
+```
+x = 5.8
+y = 5
+```
 # Portée des variables
 
 La **portée des variables** en `C` *(aussi appelée scope)*, c’est la partie du programme dans laquelle une variable est accessible *(où tu peux l'utiliser)*. Il y a plusieurs types de portée selon où et comment tu déclares ta variable.
