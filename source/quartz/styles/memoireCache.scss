@@ -67,45 +67,39 @@ marker pathMem {
   fill: #f9fafb;
 }
 
-/* Animation fade-in et scale pour les boxes */
-@keyframes fadeScale {
-  0% { opacity: 0; transform: scale(0.9); }
-  50% { opacity: 0.5; transform: scale(1.05); }
-  100% { opacity: 1; transform: scale(1); }
+/* Transition douce pour tous les blocs */
+.boxMem, .cacheMem, .cpuMem, .ramMem, .ssdMem {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer; /* Indique que c’est interactif */
 }
 
-.boxMem {
-  animation: fadeScale 0.8s ease-out forwards;
+/* Scale + glow au survol */
+.boxMem:hover, .cacheMem:hover, .cpuMem:hover, .ramMem:hover, .ssdMem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
 }
 
-/* Pulse subtil pour les composants mémoire */
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.8; }
+/* Glow coloré spécifique pour chaque type */
+.cacheMem:hover {
+  box-shadow: 0 0 20px #38bdf8; /* bleu clair */
+}
+.cpuMem:hover {
+  box-shadow: 0 0 20px #facc15; /* jaune/orange */
+}
+.ramMem:hover {
+  box-shadow: 0 0 20px #60a5fa; /* bleu */
+}
+.ssdMem:hover {
+  box-shadow: 0 0 20px #a78bfa; /* violet */
 }
 
-.cacheMem, .cpuMem, .ramMem, .ssdMem {
-  animation: pulse 2s infinite ease-in-out;
+/* Optionnel : animation de “pulse rapide” au survol */
+@keyframes hoverPulse {
+  0%, 100% { transform: scale(1.05); }
+  50% { transform: scale(1.1); }
 }
 
-/* Flèches animées (flux de données) */
-@keyframes arrowMove {
-  0% { stroke-dashoffset: 100; }
-  100% { stroke-dashoffset: 0; }
-}
-
-.arrowMem {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  animation: arrowMove 1.5s linear infinite;
-}
-
-/* Légère animation de texte */
-@keyframes textFade {
-  0% { opacity: 0; transform: translateY(5px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.labelMem, .smallMem, .titleMem {
-  animation: textFade 1s ease forwards;
+.boxMem:hover, .cacheMem:hover, .cpuMem:hover, .ramMem:hover, .ssdMem:hover {
+  animation: hoverPulse 0.6s ease-in-out infinite;
 }
