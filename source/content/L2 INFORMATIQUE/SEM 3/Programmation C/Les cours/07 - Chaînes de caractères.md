@@ -570,7 +570,62 @@ Domaine : informatique
 À première vue, rien ne semble s'être produit. Malheureusement si, on vient de faire ce qu'on appelle un *buffer overflow* ou dépassement de mémoire en français.  
 Ce que nous avions fais c'était créer un tableau pouvant stocker des mots allant jusqu'à 5 lettres. Or ici, on lit le mot `informatique` qui contient $12$ lettre.  
 De manière visuelle, on obtient ceci : 
-![[depassementMemoire.svg]]En gros le tableau de base est trop petit pour stocker le mot informatique ainsi on le voit en rouge, le dépassement de mémoire.  
+
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="250" viewBox="0 0 1250 300">
+  <g id="cells" transform="translate(20,60)">
+    <!-- Cases prévues (0 à 5) -->
+    <rect x="0" y="0" width="60" height="60" class="cell"/>
+    <text x="30" y="40" text-anchor="middle" class="label">i</text>
+    <text x="30" y="90" text-anchor="middle" class="index">0</text>
+    <rect x="80" y="0" width="60" height="60" class="cell"/>
+    <text x="110" y="40" text-anchor="middle" class="label">n</text>
+    <text x="110" y="90" text-anchor="middle" class="index">1</text>
+    <rect x="160" y="0" width="60" height="60" class="cell"/>
+    <text x="190" y="40" text-anchor="middle" class="label">f</text>
+    <text x="190" y="90" text-anchor="middle" class="index">2</text>
+    <rect x="240" y="0" width="60" height="60" class="cell"/>
+    <text x="270" y="40" text-anchor="middle" class="label">o</text>
+    <text x="270" y="90" text-anchor="middle" class="index">3</text>
+    <rect x="320" y="0" width="60" height="60" class="cell"/>
+    <text x="350" y="40" text-anchor="middle" class="label">r</text>
+    <text x="350" y="90" text-anchor="middle" class="index">4</text>
+    <rect x="400" y="0" width="60" height="60" class="cell"/>
+    <text x="430" y="40" text-anchor="middle" class="label">m</text>
+    <text x="430" y="90" text-anchor="middle" class="index">5</text>
+    <!-- Dépassement (cases rouges) 6 à 12 -->
+    <rect x="480" y="0" width="60" height="60" class="overflow"/>
+    <text x="510" y="40" text-anchor="middle" class="overflow-label">a</text>
+    <text x="510" y="90" text-anchor="middle" class="overflow-index">6</text>
+    <rect x="560" y="0" width="60" height="60" class="overflow"/>
+    <text x="590" y="40" text-anchor="middle" class="overflow-label">t</text>
+    <text x="590" y="90" text-anchor="middle" class="overflow-index">7</text>
+    <rect x="640" y="0" width="60" height="60" class="overflow"/>
+    <text x="670" y="40" text-anchor="middle" class="overflow-label">i</text>
+    <text x="670" y="90" text-anchor="middle" class="overflow-index">8</text>
+    <rect x="720" y="0" width="60" height="60" class="overflow"/>
+    <text x="750" y="40" text-anchor="middle" class="overflow-label">q</text>
+    <text x="750" y="90" text-anchor="middle" class="overflow-index">9</text>
+    <rect x="800" y="0" width="60" height="60" class="overflow"/>
+    <text x="830" y="40" text-anchor="middle" class="overflow-label">u</text>
+    <text x="830" y="90" text-anchor="middle" class="overflow-index">10</text>
+    <rect x="880" y="0" width="60" height="60" class="overflow"/>
+    <text x="910" y="40" text-anchor="middle" class="overflow-label">e</text>
+    <text x="910" y="90" text-anchor="middle" class="overflow-index">11</text>
+    <rect x="960" y="0" width="60" height="60" class="overflow"/>
+    <text x="990" y="40" text-anchor="middle" class="overflow-label">\0</text>
+    <text x="990" y="90" text-anchor="middle" class="overflow-index">12</text>
+  </g>
+  <!-- Brace tableau prévu (bleu) 0-5 -->
+  <path class="brace" d="M 20 150 C 20 170, 20 170, 40 170 L 460 170 C 480 170, 480 170, 480 150" />
+  <text x="250" y="190" text-anchor="middle" class="brace-text">tableau de taille 6</text>
+  <!-- Brace globale rouge (0-12) -->
+  <path class="global-brace" d="M 20 200 C 20 220, 20 220, 40 220 L 1000 220 C 1020 220, 1020 220, 1020 200" />
+  <text x="500" y="240" text-anchor="middle" class="global-text">taille réelle du tableau 13</text>
+</svg>
+</div>
+
+En gros le tableau de base est trop petit pour stocker le mot informatique ainsi on le voit en rouge, le dépassement de mémoire.  
 Cela peut être dangereux car si il n'est pas contrôlé, l'utilisateur peut écrire ce qu'il veut dans la mémoire. Il peut surtout insérer du code en mémoire et faire en sorte qu'il soit exécuté par le programme. C'est l'**attaque par buffer overflow**, une attaque pirate très difficile à faire.  
 Pour plus d'informations sur le dépassement et ses dangers : https://fr.wikipedia.org/wiki/D%C3%A9passement_de_tampon
 ### La fonction `gets`

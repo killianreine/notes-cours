@@ -1,0 +1,22 @@
+ .cell { fill: #e6f0fa; stroke: #1f4e79; stroke-width: 2; rx: 8; ry: 8; }
+      .overflow { fill: #fdecea; stroke: #b71c1c; stroke-width: 2; rx: 8; ry: 8; }
+      .label { font-family: 'Fira Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 18px; fill: #1f4e79; }
+      .overflow-label { fill: #b71c1c; font-family: 'Fira Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 18px; font-weight: bold; }
+      .index { font-family: 'Fira Mono', 'DejaVu Sans Mono', monospace; font-size: 16px; fill: #163758; }
+      .overflow-index { fill: #b71c1c; font-family: 'Fira Mono', 'DejaVu Sans Mono', monospace; font-size: 16px; }
+      .brace { fill: none; stroke: #1f4e79; stroke-width: 2; }
+      .brace-text { fill: #1f4e79; font-family: 'Fira Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 16px; }
+      .global-brace { fill: none; stroke: #b71c1c; stroke-width: 2; } 
+      .global-text { fill: #b71c1c; font-family: 'Fira Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 16px; }
+
+      /* Thème sombre */
+      [saved-theme="dark"] .cell { fill: #1e293b; stroke: #60a5fa; }
+      [saved-theme="dark"] .overflow { fill: #2c1a1a; stroke: #f87171; }
+      [saved-theme="dark"] .label { fill: #60a5fa; }
+      [saved-theme="dark"] .overflow-label { fill: #f87171; }
+      [saved-theme="dark"] .index { fill: #cbd5e1; }
+      [saved-theme="dark"] .overflow-index { fill: #f87171; }
+      [saved-theme="dark"] .brace { stroke: #60a5fa; }
+      [saved-theme="dark"] .brace-text { fill: #60a5fa; }
+      [saved-theme="dark"] .global-brace { stroke: #f87171; }
+      [saved-theme="dark"] .global-text { fill: #f87171; }
