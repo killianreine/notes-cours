@@ -10,7 +10,7 @@ La formation est **structurée en six semestres** et partage certains enseigneme
 L’**Unité d’Enseignement Génie logiciel** initie les étudiants aux méthodes et outils de conception, de développement et de maintenance de logiciels complexes.  
 Elle aborde les bonnes pratiques de programmation, la structuration du code, la gestion de projet, le travail collaboratif avec des outils comme Git, ainsi que les premières notions de modélisation (UML, architecture logicielle).  
 L’objectif est d’apprendre à développer de manière rigoureuse, modulaire et professionnelle, en préparant les étudiants à des projets logiciels de plus grande envergure.
-- <u>Support de cours :</u> *aucun supports...*
+- <u>Support de cours :</u> [[readme GL]]
 - <u>Durée de l'UE :</u> 50 heures
 
 ## Sciences de Gestion de Base de Données
