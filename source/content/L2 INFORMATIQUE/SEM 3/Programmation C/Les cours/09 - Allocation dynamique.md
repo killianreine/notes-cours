@@ -695,3 +695,6 @@ if (!temp) {
 3. **Nouvelles zones non initialisées** : si `new_size > old_size`, les nouvelles cases contiennent des valeurs indéterminées.
 4. Si `ptr == NULL`, `realloc(ptr, size)` se comporte comme `malloc(size)`.
 5. Si `new_size == 0`, `realloc` se comporte comme `free(ptr)` et retourne souvent `NULL`.
+
+# Suivant 
+- Cours suivant : [[10 - Structures avancées]]
