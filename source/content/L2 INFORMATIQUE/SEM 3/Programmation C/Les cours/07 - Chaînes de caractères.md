@@ -573,7 +573,7 @@ De manière visuelle, on obtient ceci :
 
 <div>
 <svg xmlns="http://www.w3.org/2000/svg" width="850" height="200" viewBox="0 0 850 220">
-  <g id="slots" transform="translate(-50,40)">
+  <g id="slots" transform="translate(-30,40)">
     <!-- Slots 0 à 5 -->
     <rect x="0" y="0" width="50" height="50" class="slot"/>
     <text x="25" y="32" text-anchor="middle" class="char">i</text>
@@ -615,13 +615,13 @@ De manière visuelle, on obtient ceci :
     <rect x="840" y="0" width="50" height="50" class="slot-overflow"/>
     <text x="865" y="32" text-anchor="middle" class="char-overflow">\0</text>
     <text x="865" y="75" text-anchor="middle" class="index-overflow">12</text>
-  </g>
   <!-- Brace tableau prévu -->
   <path class="brace-main" d="M 0 120 C 0 135, 0 135, 15 135 L 365 135 C 380 135, 380 135, 380 120" />
   <text x="190" y="155" text-anchor="middle" class="brace-main-text">tableau de taille 6</text>
   <!-- Brace globale -->
   <path class="brace-global" d="M 0 160 C 0 175, 0 175, 15 175 L 865 175 C 880 175, 880 175, 880 160" />
   <text x="430" y="195" text-anchor="middle" class="brace-global-text">taille réelle du tableau 13</text>
+  </g>
 </svg>
 </div>
 
