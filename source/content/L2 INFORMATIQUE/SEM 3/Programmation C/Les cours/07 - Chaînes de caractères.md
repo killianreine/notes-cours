@@ -572,56 +572,56 @@ Ce que nous avions fais c'était créer un tableau pouvant stocker des mots alla
 De manière visuelle, on obtient ceci : 
 
 <div>
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1050 280">
-  <g id="slots" transform="translate(0,60)">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 850 220">
+  <g id="slots" transform="translate(0,40)">
     <!-- Slots 0 à 5 -->
-    <rect x="0" y="0" width="60" height="60" class="slot"/>
-    <text x="30" y="40" text-anchor="middle" class="char">i</text>
-    <text x="30" y="90" text-anchor="middle" class="index">0</text>
-    <rect x="80" y="0" width="60" height="60" class="slot"/>
-    <text x="110" y="40" text-anchor="middle" class="char">n</text>
-    <text x="110" y="90" text-anchor="middle" class="index">1</text>
-    <rect x="160" y="0" width="60" height="60" class="slot"/>
-    <text x="190" y="40" text-anchor="middle" class="char">f</text>
-    <text x="190" y="90" text-anchor="middle" class="index">2</text>
-    <rect x="240" y="0" width="60" height="60" class="slot"/>
-    <text x="270" y="40" text-anchor="middle" class="char">o</text>
-    <text x="270" y="90" text-anchor="middle" class="index">3</text>
-    <rect x="320" y="0" width="60" height="60" class="slot"/>
-    <text x="350" y="40" text-anchor="middle" class="char">r</text>
-    <text x="350" y="90" text-anchor="middle" class="index">4</text>
-    <rect x="400" y="0" width="60" height="60" class="slot"/>
-    <text x="430" y="40" text-anchor="middle" class="char">m</text>
-    <text x="430" y="90" text-anchor="middle" class="index">5</text>
+    <rect x="0" y="0" width="50" height="50" class="slot"/>
+    <text x="25" y="32" text-anchor="middle" class="char">i</text>
+    <text x="25" y="75" text-anchor="middle" class="index">0</text>
+    <rect x="70" y="0" width="50" height="50" class="slot"/>
+    <text x="95" y="32" text-anchor="middle" class="char">n</text>
+    <text x="95" y="75" text-anchor="middle" class="index">1</text>
+    <rect x="140" y="0" width="50" height="50" class="slot"/>
+    <text x="165" y="32" text-anchor="middle" class="char">f</text>
+    <text x="165" y="75" text-anchor="middle" class="index">2</text>
+    <rect x="210" y="0" width="50" height="50" class="slot"/>
+    <text x="235" y="32" text-anchor="middle" class="char">o</text>
+    <text x="235" y="75" text-anchor="middle" class="index">3</text>
+    <rect x="280" y="0" width="50" height="50" class="slot"/>
+    <text x="305" y="32" text-anchor="middle" class="char">r</text>
+    <text x="305" y="75" text-anchor="middle" class="index">4</text>
+    <rect x="350" y="0" width="50" height="50" class="slot"/>
+    <text x="375" y="32" text-anchor="middle" class="char">m</text>
+    <text x="375" y="75" text-anchor="middle" class="index">5</text>
     <!-- Overflow 6 à 12 -->
-    <rect x="480" y="0" width="60" height="60" class="slot-overflow"/>
-    <text x="510" y="40" text-anchor="middle" class="char-overflow">a</text>
-    <text x="510" y="90" text-anchor="middle" class="index-overflow">6</text>
-    <rect x="560" y="0" width="60" height="60" class="slot-overflow"/>
-    <text x="590" y="40" text-anchor="middle" class="char-overflow">t</text>
-    <text x="590" y="90" text-anchor="middle" class="index-overflow">7</text>
-    <rect x="640" y="0" width="60" height="60" class="slot-overflow"/>
-    <text x="670" y="40" text-anchor="middle" class="char-overflow">i</text>
-    <text x="670" y="90" text-anchor="middle" class="index-overflow">8</text>
-    <rect x="720" y="0" width="60" height="60" class="slot-overflow"/>
-    <text x="750" y="40" text-anchor="middle" class="char-overflow">q</text>
-    <text x="750" y="90" text-anchor="middle" class="index-overflow">9</text>
-    <rect x="800" y="0" width="60" height="60" class="slot-overflow"/>
-    <text x="830" y="40" text-anchor="middle" class="char-overflow">u</text>
-    <text x="830" y="90" text-anchor="middle" class="index-overflow">10</text>
-    <rect x="880" y="0" width="60" height="60" class="slot-overflow"/>
-    <text x="910" y="40" text-anchor="middle" class="char-overflow">e</text>
-    <text x="910" y="90" text-anchor="middle" class="index-overflow">11</text>
-    <rect x="960" y="0" width="60" height="60" class="slot-overflow"/>
-    <text x="990" y="40" text-anchor="middle" class="char-overflow">\0</text>
-    <text x="990" y="90" text-anchor="middle" class="index-overflow">12</text>
+    <rect x="420" y="0" width="50" height="50" class="slot-overflow"/>
+    <text x="445" y="32" text-anchor="middle" class="char-overflow">a</text>
+    <text x="445" y="75" text-anchor="middle" class="index-overflow">6</text>
+    <rect x="490" y="0" width="50" height="50" class="slot-overflow"/>
+    <text x="515" y="32" text-anchor="middle" class="char-overflow">t</text>
+    <text x="515" y="75" text-anchor="middle" class="index-overflow">7</text>
+    <rect x="560" y="0" width="50" height="50" class="slot-overflow"/>
+    <text x="585" y="32" text-anchor="middle" class="char-overflow">i</text>
+    <text x="585" y="75" text-anchor="middle" class="index-overflow">8</text>
+    <rect x="630" y="0" width="50" height="50" class="slot-overflow"/>
+    <text x="655" y="32" text-anchor="middle" class="char-overflow">q</text>
+    <text x="655" y="75" text-anchor="middle" class="index-overflow">9</text>
+    <rect x="700" y="0" width="50" height="50" class="slot-overflow"/>
+    <text x="725" y="32" text-anchor="middle" class="char-overflow">u</text>
+    <text x="725" y="75" text-anchor="middle" class="index-overflow">10</text>
+    <rect x="770" y="0" width="50" height="50" class="slot-overflow"/>
+    <text x="795" y="32" text-anchor="middle" class="char-overflow">e</text>
+    <text x="795" y="75" text-anchor="middle" class="index-overflow">11</text>
+    <rect x="840" y="0" width="50" height="50" class="slot-overflow"/>
+    <text x="865" y="32" text-anchor="middle" class="char-overflow">\0</text>
+    <text x="865" y="75" text-anchor="middle" class="index-overflow">12</text>
   </g>
   <!-- Brace tableau prévu -->
-  <path class="brace-main" d="M 0 150 C 0 170, 0 170, 20 170 L 460 170 C 480 170, 480 170, 480 150" />
-  <text x="240" y="190" text-anchor="middle" class="brace-main-text">tableau de taille 6</text>
+  <path class="brace-main" d="M 0 120 C 0 135, 0 135, 15 135 L 365 135 C 380 135, 380 135, 380 120" />
+  <text x="190" y="155" text-anchor="middle" class="brace-main-text">tableau de taille 6</text>
   <!-- Brace globale -->
-  <path class="brace-global" d="M 0 200 C 0 220, 0 220, 20 220 L 1020 220 C 1040 220, 1040 220, 1040 200" />
-  <text x="500" y="240" text-anchor="middle" class="brace-global-text">taille réelle du tableau 13</text>
+  <path class="brace-global" d="M 0 160 C 0 175, 0 175, 15 175 L 865 175 C 880 175, 880 175, 880 160" />
+  <text x="430" y="195" text-anchor="middle" class="brace-global-text">taille réelle du tableau 13</text>
 </svg>
 </div>
 
