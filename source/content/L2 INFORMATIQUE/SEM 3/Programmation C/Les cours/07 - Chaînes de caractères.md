@@ -1218,7 +1218,106 @@ char *strtok(char *chaine, char *sep);
 On découpe la chaîne `chaine` en fonction du séparateur `sep`. 
 
 Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais penchons nous quand même dessus, histoire de savoir ce qu'il se passe.
-![[decoupCh.svg]]
+
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="800" viewBox="0 0 800 800">
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#1f4e79"/>
+    </marker>
+  </defs>
+  <!-- Titre principal -->
+  <text x="400" y="40" text-anchor="middle" class="title">Fonctionnement de <tspan class="code">strtok(s, " ")</tspan></text>
+  <text x="400" y="65" text-anchor="middle" class="subtitle">avec <tspan class="code">s = "le mon de"</tspan></text>
+  <text x="400" y="85" text-anchor="middle" class="txtLeg">⚠️ <tspan class="code">strtok</tspan> MODIFIE la chaîne : chaque séparateur trouvé est remplacé par <tspan class="code">\0</tspan></text>
+  <!-- ===== ÉTAT INITIAL ===== -->
+  <rect x="20" y="110" width="760" height="140" class="step-bg"/>
+  <text x="40" y="140" class="subtitle">État initial (buffer s en mémoire)</text>
+  <g transform="translate(70,160)">
+    <rect x="0" y="0" width="60" height="60" class="cell"/><text x="30" y="38" text-anchor="middle" class="label">l</text><text x="30" y="75" text-anchor="middle" class="index">0</text>
+    <rect x="60" y="0" width="60" height="60" class="cell"/><text x="90" y="38" text-anchor="middle" class="label">e</text><text x="90" y="75" text-anchor="middle" class="index">1</text>
+    <rect x="120" y="0" width="60" height="60" class="cell"/><text x="150" y="38" text-anchor="middle" class="label">␣</text><text x="150" y="75" text-anchor="middle" class="index">2</text>
+    <rect x="180" y="0" width="60" height="60" class="cell"/><text x="210" y="38" text-anchor="middle" class="label">m</text><text x="210" y="75" text-anchor="middle" class="index">3</text>
+    <rect x="240" y="0" width="60" height="60" class="cell"/><text x="270" y="38" text-anchor="middle" class="label">o</text><text x="270" y="75" text-anchor="middle" class="index">4</text>
+    <rect x="300" y="0" width="60" height="60" class="cell"/><text x="330" y="38" text-anchor="middle" class="label">n</text><text x="330" y="75" text-anchor="middle" class="index">5</text>
+    <rect x="360" y="0" width="60" height="60" class="cell"/><text x="390" y="38" text-anchor="middle" class="label">␣</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
+    <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
+    <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+  </g>
+  <!-- ===== APPEL 1 ===== -->
+  <rect x="20" y="270" width="760" height="140" class="step-bg"/>
+  <text x="40" y="300" class="subtitle">1) Premier appel : <tspan class="code">strtok(s, " ")</tspan></text>
+  <g transform="translate(70,320)">
+    <rect x="0" y="0" width="60" height="60" class="cell"/><text x="30" y="38" text-anchor="middle" class="label">l</text><text x="30" y="75" text-anchor="middle" class="index">0</text>
+    <rect x="60" y="0" width="60" height="60" class="cell"/><text x="90" y="38" text-anchor="middle" class="label">e</text><text x="90" y="75" text-anchor="middle" class="index">1</text>
+    <rect x="120" y="0" width="60" height="60" class="delim-modified"/><text x="150" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="150" y="75" text-anchor="middle" class="index">2</text>
+    <rect x="180" y="0" width="60" height="60" class="cell"/><text x="210" y="38" text-anchor="middle" class="label">m</text><text x="210" y="75" text-anchor="middle" class="index">3</text>
+    <rect x="240" y="0" width="60" height="60" class="cell"/><text x="270" y="38" text-anchor="middle" class="label">o</text><text x="270" y="75" text-anchor="middle" class="index">4</text>
+    <rect x="300" y="0" width="60" height="60" class="cell"/><text x="330" y="38" text-anchor="middle" class="label">n</text><text x="330" y="75" text-anchor="middle" class="index">5</text>
+    <rect x="360" y="0" width="60" height="60" class="cell"/><text x="390" y="38" text-anchor="middle" class="label">␣</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
+    <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
+    <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+    <!-- Boîte de retour -->
+    <rect x="610" y="15" width="80" height="30" class="ret-box"/>
+    <text x="650" y="35" text-anchor="middle" class="ret-text">"le"</text>
+  </g>
+  <!-- ===== APPEL 2 ===== -->
+  <rect x="20" y="430" width="760" height="140" class="step-bg"/>
+  <text x="40" y="460" class="subtitle">2) Deuxième appel : <tspan class="code">strtok(NULL, " ")</tspan></text>
+  <g transform="translate(70,480)">
+    <rect x="0" y="0" width="60" height="60" class="cell"/><text x="30" y="38" text-anchor="middle" class="label">l</text><text x="30" y="75" text-anchor="middle" class="index">0</text>
+    <rect x="60" y="0" width="60" height="60" class="cell"/><text x="90" y="38" text-anchor="middle" class="label">e</text><text x="90" y="75" text-anchor="middle" class="index">1</text>
+    <rect x="120" y="0" width="60" height="60" class="delim-modified"/><text x="150" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="150" y="75" text-anchor="middle" class="index">2</text>
+    <rect x="180" y="0" width="60" height="60" class="cell"/><text x="210" y="38" text-anchor="middle" class="label">m</text><text x="210" y="75" text-anchor="middle" class="index">3</text>
+    <rect x="240" y="0" width="60" height="60" class="cell"/><text x="270" y="38" text-anchor="middle" class="label">o</text><text x="270" y="75" text-anchor="middle" class="index">4</text>
+    <rect x="300" y="0" width="60" height="60" class="cell"/><text x="330" y="38" text-anchor="middle" class="label">n</text><text x="330" y="75" text-anchor="middle" class="index">5</text>
+    <rect x="360" y="0" width="60" height="60" class="delim-modified"/><text x="390" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
+    <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
+    <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+    <!-- Boîte de retour -->
+    <rect x="610" y="15" width="90" height="30" class="ret-box"/>
+    <text x="655" y="35" text-anchor="middle" class="ret-text">"mon"</text>
+  </g>
+  <!-- ===== APPEL 3 ===== -->
+  <rect x="20" y="590" width="760" height="140" class="step-bg"/>
+  <text x="40" y="620" class="subtitle">3) Troisième appel : <tspan class="code">strtok(NULL, " ")</tspan></text>
+  <g transform="translate(70,640)">
+    <rect x="0" y="0" width="60" height="60" class="cell"/><text x="30" y="38" text-anchor="middle" class="label">l</text><text x="30" y="75" text-anchor="middle" class="index">0</text>
+    <rect x="60" y="0" width="60" height="60" class="cell"/><text x="90" y="38" text-anchor="middle" class="label">e</text><text x="90" y="75" text-anchor="middle" class="index">1</text>
+    <rect x="120" y="0" width="60" height="60" class="delim-modified"/><text x="150" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="150" y="75" text-anchor="middle" class="index">2</text>
+    <rect x="180" y="0" width="60" height="60" class="cell"/><text x="210" y="38" text-anchor="middle" class="label">m</text><text x="210" y="75" text-anchor="middle" class="index">3</text>
+    <rect x="240" y="0" width="60" height="60" class="cell"/><text x="270" y="38" text-anchor="middle" class="label">o</text><text x="270" y="75" text-anchor="middle" class="index">4</text>
+    <rect x="300" y="0" width="60" height="60" class="cell"/><text x="330" y="38" text-anchor="middle" class="label">n</text><text x="330" y="75" text-anchor="middle" class="index">5</text>
+    <rect x="360" y="0" width="60" height="60" class="delim-modified"/><text x="390" y="38" text-anchor="middle" class="nulltxt">\0</text><text x="390" y="75" text-anchor="middle" class="index">6</text>
+    <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
+    <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
+    <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
+    
+    <!-- Boîte de retour -->
+    <rect x="610" y="15" width="80" height="30" class="ret-box"/>
+    <text x="650" y="35" text-anchor="middle" class="ret-text">"de"</text>
+    
+  </g>
+  <!-- ===== FIN ===== -->
+  <rect x="20" y="750" width="760" height="50" class="step-bg"/>
+  <text x="40" y="780" class="subtitle">4) Quatrième appel : <tspan class="code">strtok(NULL, " ") → NULL</tspan></text>
+  <rect x="550" y="760" width="80" height="30" class="ret-box" style="fill: #ffebee; stroke: #d32f2f;"/>
+  <text x="590" y="780" text-anchor="middle" class="ret-text" style="fill: #d32f2f;">NULL</text>
+  <text x="635" y="780" class="note">(plus de jetons)</text>
+  <!-- Légende dans le coin supérieur droit -->
+<g transform="translate(650, 10)">
+  <rect x="0" y="0" width="35" height="22" class="cell"/>
+  <text x="45" y="16" class="txtLeg" text-anchor="start">Caractère normal</text>
+
+  <rect x="0" y="30" width="35" height="22" class="delim-modified"/>
+  <text x="45" y="46" class="txtLeg" text-anchor="start">Séparateur → '\0'</text>
+</g>
+</svg>
+</div>
+
 On considère une chaîne de caractères `s` et un délimiteur `d` tels que : 
 ```c
 char* s[] = "le mon de";
