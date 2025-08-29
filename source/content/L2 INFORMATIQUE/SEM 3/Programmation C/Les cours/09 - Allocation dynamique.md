@@ -428,6 +428,17 @@ char *p = (char*)calloc(8, sizeof(char));
 ```
 - Alloue **8 octets** aussi (8 × taille d’un char).
 - Mais **initialise tous les octets à 0**.
+
+>[!tip]
+>- Utilise `malloc` si tu vas **remplir toi-même** la mémoire immédiatement.
+>- Utilise `calloc` si tu veux **des zéros par défaut**, comme pour un tableau de `char` ou un tableau d’entiers.
+
+|Caractéristique|`malloc(8*sizeof(char))`|`calloc(8, sizeof(char))`|
+|---|---|---|
+|Taille allouée|8 octets|8 octets|
+|Initialisation|Non (valeurs indéterminées)|Oui (tous les octets à 0)|
+|Arguments|1 (taille totale)|2 (nombre d’éléments, taille)|
+|Vitesse|Légèrement plus rapide|Légèrement plus lent (initialisation)|
 ## Libérer la mémoire
 **Pourquoi libérer la mémoire ?**  
 Quand on utilise `malloc`, `calloc` ou `realloc`, la mémoire est réservée dans le **tas** *(heap)*.  
@@ -446,8 +457,8 @@ Après avoir libéré le pointeur, ce dernier devient *dangling pointeur* en gro
 - ✅ Toujours faire `free()` pour chaque `malloc()`.
 - ✅ Remettre le pointeur à `NULL` après `free`.
   ```c
-	  free(p);
-	  p = NULL; // empêche l'accès accidentil 
+	free(p);
+	p = NULL; // empêche l'accès accidentil 
     ```
 - ✅ Ne **jamais** faire `free()` deux fois sur le même pointeur (`double free` = erreur grave). 
 - ✅ Ne pas utiliser la mémoire après `free` (*dangling pointer*).
@@ -505,3 +516,4 @@ Résultats possibles :
 >[!info] Remarque
 >Le fait de mettre le pointeur à `NULL` après la libération fait que si on libère deux fois la même zone, cela n'aura aucun effet.
 
+## Allocation d'un tableau
