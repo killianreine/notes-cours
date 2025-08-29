@@ -411,6 +411,70 @@ Pour se faire on utilise la fonction `free` dont le prototype est le suivant :
 #include <stdlib.h>
 void free(void *ptr);
 ```
-- Elle prend en paramètre le pointeur vers le bloc alloué avec  `malloc`, `calloc` et `realloc` *(on vas les voir après les autres fonctions...)*
+- Elle prend en paramètre le pointeur vers le bloc alloué avec  `malloc`, `calloc` et `realloc`
 - La fonction `free` comme son nom l'indique, elle rend la mémoire allouée précédemment au système.
 Après avoir libéré le pointeur, ce dernier devient *dangling pointeur* en gros il pointe vers une zone invalide.
+
+**Bonnes pratiques**  
+- ✅ Toujours faire `free()` pour chaque `malloc()`.
+- ✅ Remettre le pointeur à `NULL` après `free`.
+  ```c
+	  free(p);
+	  p = NULL; // empêche l'accès accidentil 
+    ```
+- ✅ Ne **jamais** faire `free()` deux fois sur le même pointeur (`double free` = erreur grave). 
+- ✅ Ne pas utiliser la mémoire après `free` (*dangling pointer*).
+
+Vous pouvez remonter un peu pour reprendre l'exemple de l'allocation d'un espace mémoire pour un entier pour voir la libération.
+
+### Utiliser la mémoire après libération
+Quand tu appelles `free(ptr)` :
+
+- Le bloc mémoire est **marqué comme libre** et remis au système (ou à l’allocateur mémoire).
+- Mais le **contenu n’est pas effacé immédiatement** → les anciennes valeurs peuvent rester temporairement.
+- Le pointeur `ptr` devient **dangling** (*dangling pointer* = il pointe vers un espace qui n’est plus à toi).
+Donc, si tu accèdes à `*ptr` après `free(ptr)`, le comportement est **indéfini** (UB = Undefined Behavior).  
+Cela peut donner :
+- des données "fantômes" (anciennes valeurs encore visibles),
+- un crash (<span class="error-inline">segmentation fault</span>),
+- ou même des résultats différents d’une exécution à l’autre.
+
+<u>Exemple :</u>
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *p = (int *)malloc(sizeof(int));
+    *p = 99;
+
+    free(p);  // libération
+
+    // Mauvais ! utilisation après free
+    printf("%d\n", *p);  
+
+    return 0;
+}
+```
+```
+204563
+```
+Ici il sort une valeur indéfinie qui sera différente à chaque exécution.
+
+### Libérer deux fois la même zone
+C’est ce qu’on appelle un **double free**.
+```c
+int *p = malloc(sizeof(int));
+free(p);   // ✅ correct
+free(p);   // ❌ double free → comportement indéfini
+```
+- La première fois : `p` est libéré correctement.
+- La deuxième fois : `p` pointe toujours vers la même adresse, mais cette mémoire **n’appartient plus au programme** → donc **comportement indéfini**.
+Résultats possibles :
+- Plantage immédiat (<span class="error-inline">segmentation fault</span>).
+- Plantage plus tard dans le programme.
+- Rien (silencieux) mais corruption mémoire cachée → le pire, car difficile à déboguer...
+
+>[!info] Remarque
+>Le fait de mettre le pointeur à `NULL` après la libération fait que si on libère deux fois la même zone, cela n'aura aucun effet.
+
