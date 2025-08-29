@@ -635,3 +635,63 @@ Pour libérer la matrice, il faut commencer par libérer les sous tableaux avant
 - Si tu `free(mat)` **avant** *(libère la matrice globale)*, tu détruis la “tablette de pointeurs” → plus de moyen de retrouver les lignes.
 - Donc il faut **libérer les blocs pointés** avant le tableau de pointeurs lui-même.
 
+# Réallouer la mémoire
+`realloc` permet de **modifier la taille d’un bloc mémoire déjà alloué**.
+- On peut **agrandir** ou **réduire** le bloc.
+- Si la nouvelle taille est plus grande, le contenu existant est **préservé**, mais la mémoire supplémentaire n’est **pas initialisée**.
+
+Prototype de la fonction `realloc`
+```c
+#include <stdlib.h>
+void *realloc(void *ptr, size_t new_size);
+```
+- `ptr` : pointeur vers un bloc déjà alloué avec `malloc`, `calloc` ou `realloc`.
+- `new_size` : nouvelle taille en octets.
+- Retourne le pointeur vers le nouveau bloc, ou `NULL` si échec.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *tab = (int *)malloc(3 * sizeof(int));
+
+    if (!tab) return 1;
+
+    tab[0] = 1; tab[1] = 2; tab[2] = 3;
+
+    // Agrandir le tableau à 5 éléments
+    int *temp = (int *)realloc(tab, 5 * sizeof(int));
+    if (!temp) {
+        printf("Erreur de réallocation\n");
+        free(tab);  // libérer l'ancien bloc
+        return 1;
+    }
+    tab = temp;
+
+    tab[3] = 4; tab[4] = 5;
+
+    for (int i = 0; i < 5; i++)
+        printf("%d ", tab[i]);
+    printf("\n");
+
+    free(tab);
+    return 0;
+}
+```
+```
+1 2 3 4 5 
+```
+
+1. **Toujours utiliser un pointeur temporaire** pour `realloc` :
+```c
+int *temp = realloc(tab, new_size);
+if (!temp) {
+    // l'ancien tab est toujours valide
+}
+```
+2. **Contenu existant préservé** : les premiers `min(old_size, new_size)` octets restent identiques.
+3. **Nouvelles zones non initialisées** : si `new_size > old_size`, les nouvelles cases contiennent des valeurs indéterminées.
+4. Si `ptr == NULL`, `realloc(ptr, size)` se comporte comme `malloc(size)`.
+5. Si `new_size == 0`, `realloc` se comporte comme `free(ptr)` et retourne souvent `NULL`.
