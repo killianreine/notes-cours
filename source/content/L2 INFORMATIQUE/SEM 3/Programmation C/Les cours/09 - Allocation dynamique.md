@@ -26,58 +26,58 @@ La **==mémoire morte ROM==** *Read-Only Monitor* est une mémoire **non volatil
 La **==mémoire cache==** *ou antémémoire* permet d'enregistrer temporairement des copies de données et instructions beaucoup utilisées. Cette dernière est très rapide car intégrée au processeur *CPU*. Elle possède plusieurs niveau : L1, L2 et L3.  
 
 <div>
-<svg class="diagram" viewBox="0 0 1400 570" xmlns="http://www.w3.org/2000/svg">
+<svg id="MemMem" class="diagramMem" viewBox="0 0 1400 570" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="mEnd" markerWidth="15" markerHeight="15" refX="8" refY="3" orient="auto">
+    <marker id="mEndMem" markerWidth="15" markerHeight="15" refX="8" refY="3" orient="auto">
       <path d="M0,0 L8,3 L0,6 Z"/>
     </marker>
   </defs>
   <!-- Titre -->
-  <text x="30" y="40" class="title">Hiérarchie de la mémoire cache et du stockage</text>
-  <text x="30" y="68" class="small">Plus près du CPU = plus rapide & plus petite capacité • Plus loin = plus lent & plus grande capacité</text>
+  <text x="30" y="40" class="titleMem">Hiérarchie de la mémoire cache et du stockage</text>
+  <text x="30" y="68" class="smallMem">Plus près du CPU = plus rapide & plus petite capacité • Plus loin = plus lent & plus grande capacité</text>
   <!-- CPU -->
-  <rect x="40" y="140" width="160" height="400" class="box cpu"/>
-  <text x="120" y="300" text-anchor="middle" class="label">CPU</text>
-  <text x="120" y="323" text-anchor="middle" class="small">Cœurs, unités d’exécution</text>
-  <line x1="200" y1="230" x2="290" y2="230" class="arrow" marker-end="url(#mEnd)"/>
-  <line x1="200" y1="290" x2="290" y2="290" class="arrow" marker-end="url(#mEnd)"/>
-  <line x1="200" y1="350" x2="290" y2="350" class="arrow" marker-end="url(#mEnd)"/>
-  <line x1="200" y1="410" x2="290" y2="410" class="arrow" marker-end="url(#mEnd)"/>
+  <rect x="40" y="140" width="160" height="400" class="boxMem cpuMem"/>
+  <text x="120" y="300" text-anchor="middle" class="labelMem">CPU</text>
+  <text x="120" y="323" text-anchor="middle" class="smallMem">Cœurs, unités d’exécution</text>
+  <line x1="200" y1="230" x2="290" y2="230" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <line x1="200" y1="290" x2="290" y2="290" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <line x1="200" y1="350" x2="290" y2="350" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <line x1="200" y1="410" x2="290" y2="410" class="arrowMem" marker-end="url(#mEndMem)"/>
   <!-- Caches -->
-  <rect x="290" y="200" width="220" height="60" class="box cache"/>
-  <text x="400" y="225" text-anchor="middle" class="label">Cache L1i (instructions)</text>
-  <text x="400" y="245" text-anchor="middle" class="small">~32–64 KiB / cœur • ~1 ns</text>
-  <rect x="290" y="260" width="220" height="60" class="box cache"/>
-  <text x="400" y="285" text-anchor="middle" class="label">Cache L1d (données)</text>
-  <text x="400" y="305" text-anchor="middle" class="small">~32–64 KiB / cœur • ~1 ns</text>
-  <rect x="290" y="320" width="220" height="60" class="box cache"/>
-  <text x="400" y="345" text-anchor="middle" class="label">Cache L2</text>
-  <text x="400" y="365" text-anchor="middle" class="small">~256 KiB–2 MiB / cœur • ~3–5 ns</text>
-  <rect x="290" y="380" width="220" height="60" class="box cache"/>
-  <text x="400" y="405" text-anchor="middle" class="label">Cache L3 (partagé)</text>
-  <text x="400" y="425" text-anchor="middle" class="small">~4–64 MiB • ~10–20 ns</text>
+  <rect x="290" y="200" width="220" height="60" class="boxMem cacheMem"/>
+  <text x="400" y="225" text-anchor="middle" class="labelMem">Cache L1i (instructions)</text>
+  <text x="400" y="245" text-anchor="middle" class="smallMem">~32–64 KiB / cœur • ~1 ns</text>
+  <rect x="290" y="260" width="220" height="60" class="boxMem cacheMem"/>
+  <text x="400" y="285" text-anchor="middle" class="labelMem">Cache L1d (données)</text>
+  <text x="400" y="305" text-anchor="middle" class="smallMem">~32–64 KiB / cœur • ~1 ns</text>
+  <rect x="290" y="320" width="220" height="60" class="boxMem cacheMem"/>
+  <text x="400" y="345" text-anchor="middle" class="labelMem">Cache L2</text>
+  <text x="400" y="365" text-anchor="middle" class="smallMem">~256 KiB–2 MiB / cœur • ~3–5 ns</text>
+  <rect x="290" y="380" width="220" height="60" class="boxMem cacheMem"/>
+  <text x="400" y="405" text-anchor="middle" class="labelMem">Cache L3 (partagé)</text>
+  <text x="400" y="425" text-anchor="middle" class="smallMem">~4–64 MiB • ~10–20 ns</text>
   <!-- RAM -->
-  <line x1="510" y1="230" x2="590" y2="230" class="arrow" marker-end="url(#mEnd)"/>
-  <line x1="510" y1="290" x2="590" y2="290" class="arrow" marker-end="url(#mEnd)"/>
-  <line x1="510" y1="350" x2="590" y2="350" class="arrow" marker-end="url(#mEnd)"/>
-  <line x1="510" y1="410" x2="590" y2="410" class="arrow" marker-end="url(#mEnd)"/>
-  <rect x="590" y="210" width="260" height="160" class="box ram"/>
-  <text x="720" y="270" text-anchor="middle" class="label">Mémoire principale (RAM)</text>
-  <text x="720" y="293" text-anchor="middle" class="small">DRAM • GiB–centaines de GiB</text>
-  <text x="720" y="316" text-anchor="middle" class="small">~50–100 ns • Débit élevé</text>
+  <line x1="510" y1="230" x2="590" y2="230" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <line x1="510" y1="290" x2="590" y2="290" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <line x1="510" y1="350" x2="590" y2="350" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <line x1="510" y1="410" x2="590" y2="410" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <rect x="590" y="210" width="260" height="160" class="boxMem ramMem"/>
+  <text x="720" y="270" text-anchor="middle" class="labelMem">Mémoire principale (RAM)</text>
+  <text x="720" y="293" text-anchor="middle" class="smallMem">DRAM • GiB–centaines de GiB</text>
+  <text x="720" y="316" text-anchor="middle" class="smallMem">~50–100 ns • Débit élevé</text>
   <!-- Stockage -->
-  <line x1="720" y1="370" x2="720" y2="390" class="arrow" marker-end="url(#mEnd)"/>
-  <rect x="590" y="390" width="260" height="100" class="box ssd"/>
-  <text x="720" y="420" text-anchor="middle" class="label">Stockage (SSD / HDD)</text>
-  <text x="720" y="443" text-anchor="middle" class="small">Non volatile • To</text>
-  <text x="720" y="463" text-anchor="middle" class="small">SSD : ~10–100 µs • HDD : ~1–10 ms</text>
+  <line x1="720" y1="370" x2="720" y2="390" class="arrowMem" marker-end="url(#mEndMem)"/>
+  <rect x="590" y="390" width="260" height="100" class="boxMem ssdMem"/>
+  <text x="720" y="420" text-anchor="middle" class="labelMem">Stockage (SSD / HDD)</text>
+  <text x="720" y="443" text-anchor="middle" class="smallMem">Non volatile • To</text>
+  <text x="720" y="463" text-anchor="middle" class="smallMem">SSD : ~10–100 µs • HDD : ~1–10 ms</text>
   <!-- Axes indicatifs -->
-  <line x1="260" y1="140" x2="260" y2="530" class="axis"/>
-  <text x="220" y="160" class="small" transform="rotate(-90,250,160)">Latence ↑</text>
-  <line x1="280" y1="530" x2="900" y2="530" class="axis"/>
-  <text x="890" y="525" class="small" text-anchor="end">Capacité ↑</text>
+  <line x1="260" y1="140" x2="260" y2="530" class="axisMem"/>
+  <text x="220" y="160" class="smallMem" transform="rotate(-90,250,160)">Latence ↑</text>
+  <line x1="280" y1="530" x2="900" y2="530" class="axisMem"/>
+  <text x="890" y="525" class="smallMem" text-anchor="end">Capacité ↑</text>
   <!-- Notes -->
-  <text x="30" y="563" class="small">
+  <text x="30" y="563" class="smallMem">
     Remarque : tailles et latences indicatives, variables selon l’architecture. Les caches L1/L2 sont par cœur, L3 est généralement partagé.
   </text>
 </svg>
