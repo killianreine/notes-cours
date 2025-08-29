@@ -52,7 +52,110 @@ Le `C` est un **langage compilé**, en gros le code source où se trouve n'est p
 >
 >    Suite de fonctions dont une principale `main` qui représente **le point d'entrée du programme**. Les erreurs sont détectées pendant la compilation, on ne peut donc pas exécuter un programme qui n'a pas réussi à compiler.
 
-![[compilation.svg]]
+<div>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagramme de compilation et exécution du code C">
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,5 L0,10 z" fill="black" />
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f9fafb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Title -->
+  <text x="40" y="40" class="title">Processus de compilation et d'exécution en C</text>
+  <text x="40" y="65" class="subtitle">De l'écriture du code source à l'exécution par le processeur</text>
+  <!-- Phase labels -->
+  <text x="40" y="110" class="phase-label">Phase de préparation</text>
+  <text x="40" y="250" class="phase-label">Phase de liaison</text>
+  <text x="40" y="360" class="phase-label">Phase d'exécution</text>
+  <!-- Row 1: Source → Preprocessor → Compiler → Assembler -->
+  <g transform="translate(40,125)">
+    <!-- Source code -->
+    <rect x="0" y="0" width="200" height="85" class="box" filter="url(#shadow)"/>
+    <text x="15" y="25" class="step">Code source</text>
+    <text x="15" y="45" class="small">fichier.c</text>
+    <text x="15" y="65" class="small">Langage C lisible</text>
+    <!-- Preprocessor -->
+    <rect x="250" y="0" width="200" height="85" class="box box-preprocess" filter="url(#shadow)"/>
+    <text x="265" y="25" class="step">Préprocesseur</text>
+    <text x="265" y="45" class="small">cpp → fichier.i</text>
+    <text x="265" y="65" class="small">#include, #define, #ifdef</text>
+    <!-- Compiler -->
+    <rect x="500" y="0" width="200" height="85" class="box box-compile" filter="url(#shadow)"/>
+    <text x="515" y="25" class="step">Compilateur</text>
+    <text x="515" y="45" class="small">gcc -S → fichier.s</text>
+    <text x="515" y="65" class="small">Code assembleur</text>
+    <!-- Assembler -->
+    <rect x="750" y="0" width="200" height="85" class="box box-assemble" filter="url(#shadow)"/>
+    <text x="765" y="25" class="step">Assembleur</text>
+    <text x="765" y="45" class="small">as → fichier.o</text>
+    <text x="765" y="65" class="small">Code machine (objet)</text>
+  </g>
+  <!-- Arrows row 1 -->
+  <path d="M240 167 L290 167" class="arrow"/>
+  <path d="M450 167 L540 167" class="arrow"/>
+  <path d="M700 167 L790 167" class="arrow"/>
+  <!-- Row 2: Linker -->
+  <g transform="translate(40,265)">
+    <rect x="300" y="0" width="400" height="85" class="box box-link" filter="url(#shadow)"/>
+    <text x="320" y="28" class="step">Éditeur de liens (Linker)</text>
+    <text x="320" y="50" class="small">ld → exécutable final</text>
+    <text x="320" y="70" class="small">Résolution des symboles, liaison des bibliothèques</text>
+    <!-- Libraries box -->
+    <rect x="750" y="0" width="200" height="85" class="box" filter="url(#shadow)"/>
+    <text x="765" y="25" class="step">Bibliothèques</text>
+    <text x="765" y="45" class="small">libc.a, libm.a</text>
+    <text x="765" y="65" class="small">Fonctions système</text>
+  </g>
+  <!-- Arrows to linker -->
+  <path d="M790 210 L740 265" class="arrow"/>
+  <path d="M600 210 L600 265" class="arrow"/>
+  <path d="M450 210 L450 265" class="arrow"/>
+  <path d="M140 210 L350 265" class="arrow"/>
+  <!-- Arrow from libraries to linker -->
+  <path d="M790 307 L740 307" class="arrow"/>
+  <!-- Row 3: Executable → Loader → CPU -->
+  <g transform="translate(40,375)">
+    <!-- Executable -->
+    <rect x="0" y="0" width="220" height="85" class="box box-exec" filter="url(#shadow)"/>
+    <text x="15" y="25" class="step">Exécutable</text>
+    <text x="15" y="45" class="small">a.out / programme</text>
+    <text x="15" y="65" class="small">Format ELF/PE/Mach-O</text>
+    <!-- Loader -->
+    <rect x="270" y="0" width="250" height="85" class="box box-exec" filter="url(#shadow)"/>
+    <text x="285" y="25" class="step">Chargeur (Loader)</text>
+    <text x="285" y="45" class="small">Allocation mémoire</text>
+    <text x="285" y="65" class="small">Résolution dynamique</text>
+    <!-- Runtime -->
+    <rect x="570" y="0" width="200" height="85" class="box box-exec" filter="url(#shadow)"/>
+    <text x="585" y="25" class="step">Environnement</text>
+    <text x="585" y="40" class="step">d'exécution</text>
+    <text x="585" y="55" class="small">main(), pile, tas</text>
+    <!-- CPU -->
+    <rect x="820" y="0" width="180" height="85" class="box box-cpu" filter="url(#shadow)"/>
+    <text x="835" y="25" class="step">Processeur</text>
+    <text x="835" y="45" class="small">Instructions machine</text>
+    <text x="835" y="65" class="small">Registres, ALU</text>
+  </g>
+  <!-- Arrow from linker to executable -->
+  <path d="M350 310 L200 375" class="arrow"/>
+<!-- Arrows row 3 (exécution, centrées) -->
+<path d="M220 417.5 L310 417.5" class="arrow"/>
+<path d="M520 417.5 L610 417.5" class="arrow"/>
+<path d="M770 417.5 L860 417.5" class="arrow"/>
+  <!-- Command examples -->
+  <g transform="translate(40,480)">
+    <text x="0" y="0" class="small" font-weight="600">Commandes GCC :</text>
+    <text x="120" y="0" class="small">gcc -E file.c (préprocesseur) • gcc -S file.c (compilation) • gcc -c file.c (assemblage) • gcc file.o -o prog (liaison)</text>
+  </g>
+</svg>
+</div>
 
 1. **La phase de préparation**
 - Code source  `fichier.c`
