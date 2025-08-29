@@ -17,6 +17,7 @@
 		- Le type entier
 			- L'opérateur `sizeof`
 		- Les types flottants
+		- Caster une variable en C
 		- Portée des variables
 			- Variable locale
 			- Variable globale

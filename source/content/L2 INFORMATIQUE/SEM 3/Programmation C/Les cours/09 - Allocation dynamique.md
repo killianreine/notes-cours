@@ -323,4 +323,81 @@ void* malloc(size_t size);
 >[!info] Remarque
 >Si `malloc` échoue, elle renverra `NULL`.
 
-Comme `malloc` renvoie un `void *`, il est nécessaire de **caster** le pointeur vers le type voulu. 
+Comme `malloc` renvoie un `void *`, il est nécessaire de **caster** le pointeur vers le type voulu. C'était l'objet d'une partie de cours qui remonte à loin oui... [[02 - Premiers pas#Caster une variable en C]].  
+C'est lorsque l'on utilisait :
+```
+(type_var) var;
+```
+
+<u>Exemple :</u>  
+On souhaite caster `void*` en `int*` pout allouer un espace mémoire pour un entier.
+```c
+int *p:
+p = (int *) malloc(sizeof(int));
+```
+
+On peut ensuite manipuler cette entier l'afficher et lui donner une variable. Il est aussi utile de savoir si l'allocation a fonctionnée dans le cas contraire cela permettrait de renvoyer une erreur et de terminer le programme.  
+On a dit que si `malloc` échouait il renvoyait `NULL` alors c'est ceci qu'il faut tester pour savoir si l'allocation s'est bien déroulée.
+```c
+if (p == NULL){
+	printf("Erreur d'allocation");
+	return 1;
+}
+```
+
+L'exemple complet en donnant par la suite la valeur $42$ à la mémoire est donné par : 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *p;
+
+    p = (int *)malloc(sizeof(int)); // alloue un entier
+
+    if (p == NULL) {
+        printf("Allocation mémoire échouée.\n");
+        return 1;
+    }
+
+    *p = 42; // utilisation de la mémoire
+    printf("%d\n", *p);
+
+    free(p); // libération de la mémoire
+    return 0;
+}
+```
+```
+42
+```
+
+<u>Exemple :</u>  
+On souhaite allouer une zone mémoire pour un mot de $7$ caractères plus le marqueur de fin de chaine `\0`.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    char *p;
+
+    p = (char *)malloc(8*sizeof(char));
+
+    if (p == NULL) {
+        printf("Allocation mémoire échouée.\n");
+        return 1;
+    }
+
+    strcpy(p, "Bonjour"); // utilisation de la mémoire
+    printf("%s\n", p);    // affichage du mot stocké
+
+    free(p); // libération de la mémoire
+    return 0;
+}
+```
+En fait en utilisant : 
+```c
+(char *)malloc(8*sizeof(char));
+```
+On alloue une zone mémoire permettant de stocker au plus 7 caractères ainsi que le marqueur de fin de chaîne `\0`. Ensuite on l'utilise avec `strcpy()` de la bibliothèque `<string.h>` on l'affiche et on libère la zone mémoire grâce à `free`.
+

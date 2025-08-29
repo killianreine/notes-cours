@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Allocation dynamique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Premiers pas"
+              "title": "09 - Allocation dynamique"
             }
           }
         ],
@@ -212,6 +212,8 @@
   },
   "active": "6d54b187ec0557c0",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Allocation dynamique.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/10 - Structures avancées.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
@@ -219,7 +221,6 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
     "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/17-Interface graphique en C.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/16-Bases de données.md",
@@ -239,7 +240,6 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/12 - Tests unitaires.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/13 - Compilation séparée et Makefile.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/11 - Les fichiers.md",
-    "index.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/compilation.svg",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours",
