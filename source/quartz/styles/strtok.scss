@@ -33,3 +33,11 @@
 [saved-theme="dark"] .ret-text { fill: #22c55e; }
 [saved-theme="dark"] .note { fill: #f87171; }
 [saved-theme="dark"] .step-bg { fill: #111827; stroke: #374151; }
+
+/* ===== Thème clair par défaut ===== */
+.ret-box { fill: #ffebee; stroke: #d32f2f; }
+.ret-text { fill: #d32f2f; }
+
+/* ===== Thème sombre ===== */
+[saved-theme="dark"] .ret-box { fill: #3b1a1a; stroke: #f87171; }
+[saved-theme="dark"] .ret-text { fill: #f87171; }

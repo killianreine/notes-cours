@@ -1302,8 +1302,8 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
   <!-- ===== FIN ===== -->
   <rect x="20" y="750" width="760" height="50" class="step-bg"/>
   <text x="40" y="780" class="subtitle">4) Quatrième appel : <tspan class="code">strtok(NULL, " ") → NULL</tspan></text>
-  <rect x="550" y="760" width="80" height="30" class="ret-box" style="fill: #ffebee; stroke: #d32f2f;"/>
-  <text x="590" y="780" text-anchor="middle" class="ret-text" style="fill: #d32f2f;">NULL</text>
+  <rect x="550" y="760" width="80" height="30" class="ret-box"/>
+  <text x="590" y="780" text-anchor="middle" class="ret-text">NULL</text>
   <text x="635" y="780" class="note">(plus de jetons)</text>
   <!-- Légende dans le coin supérieur droit -->
 <g transform="translate(650, 10)">
