@@ -1220,7 +1220,7 @@ On découpe la chaîne `chaine` en fonction du séparateur `sep`.
 Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais penchons nous quand même dessus, histoire de savoir ce qu'il se passe.
 
 <div>
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="800" viewBox="0 0 800 800">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
   <defs>
     <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
       <polygon points="0 0, 12 4, 0 8" fill="#1f4e79"/>
@@ -1295,11 +1295,9 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
     <rect x="420" y="0" width="60" height="60" class="cell"/><text x="450" y="38" text-anchor="middle" class="label">d</text><text x="450" y="75" text-anchor="middle" class="index">7</text>
     <rect x="480" y="0" width="60" height="60" class="cell"/><text x="510" y="38" text-anchor="middle" class="label">e</text><text x="510" y="75" text-anchor="middle" class="index">8</text>
     <rect x="540" y="0" width="60" height="60" class="delimFinal"/><text x="570" y="38" text-anchor="middle">\0</text><text x="570" y="75" text-anchor="middle" class="index">9</text>
-    
     <!-- Boîte de retour -->
     <rect x="610" y="15" width="80" height="30" class="ret-box"/>
     <text x="650" y="35" text-anchor="middle" class="ret-text">"de"</text>
-    
   </g>
   <!-- ===== FIN ===== -->
   <rect x="20" y="750" width="760" height="50" class="step-bg"/>
@@ -1311,7 +1309,6 @@ Le fonctionnement de cette fonction est un peu plus complexe à comprendre mais 
 <g transform="translate(650, 10)">
   <rect x="0" y="0" width="35" height="22" class="cell"/>
   <text x="45" y="16" class="txtLeg" text-anchor="start">Caractère normal</text>
-
   <rect x="0" y="30" width="35" height="22" class="delim-modified"/>
   <text x="45" y="46" class="txtLeg" text-anchor="start">Séparateur → '\0'</text>
 </g>
