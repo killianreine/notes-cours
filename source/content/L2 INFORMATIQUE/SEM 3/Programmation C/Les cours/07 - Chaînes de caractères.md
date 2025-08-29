@@ -616,10 +616,10 @@ De manière visuelle, on obtient ceci :
     <text x="865" y="32" text-anchor="middle" class="char-overflow">\0</text>
     <text x="865" y="75" text-anchor="middle" class="index-overflow">12</text>
   <!-- Brace tableau prévu -->
-  <path class="brace-main" d="M 0 120 C 0 115, 0 115, 15 115 L 365 115 C 380 115, 380 115, 380 120" />
+  <path class="brace-main" d="M 0 100 C 0 115, 0 115, 15 115 L 365 115 C 380 115, 380 115, 380 100" />
   <text x="190" y="135" text-anchor="middle" class="brace-main-text">tableau de taille 6</text>
   <!-- Brace globale -->
-  <path class="brace-global" d="M 0 160 C 0 155, 0 155, 15 155 L 865 155 C 880 155, 880 155, 880 160" />
+  <path class="brace-global" d="M 0 140 C 0 155, 0 155, 15 155 L 865 155 C 880 155, 880 155, 880 140" />
   <text x="430" y="175" text-anchor="middle" class="brace-global-text">taille réelle du tableau 13</text>
   </g>
 </svg>
