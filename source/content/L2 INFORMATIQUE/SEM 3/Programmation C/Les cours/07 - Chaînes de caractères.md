@@ -103,7 +103,7 @@ Chaque caractère est stocké dans un **espace mémoire** consécutive (s'incré
 | `e`        | `0x100B`        |
 | `\0`       | `0x100C`        |
 
-En gros, chaque lettre de type `char` en C est stocké sur $1$ bit, et l'adresse mémoire entre deux caractères est simplement incrémenté de $1$. On utilise `\0` comme marque de fin de chaîne car sans lui, le programme ne pourrait pas savoir où s'arrête la chaîne de caractères.
+En gros, chaque lettre de type `char` en C est stocké sur $1$ octet, et l'adresse mémoire entre deux caractères est simplement incrémenté de $1$. On utilise `\0` comme marque de fin de chaîne car sans lui, le programme ne pourrait pas savoir où s'arrête la chaîne de caractères.
 
 # Initialisation
 ## Initialisation explicite
