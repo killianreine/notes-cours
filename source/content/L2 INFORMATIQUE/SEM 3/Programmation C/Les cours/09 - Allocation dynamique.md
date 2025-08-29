@@ -635,7 +635,7 @@ Pour libérer la matrice, il faut commencer par libérer les sous tableaux avant
 - Si tu `free(mat)` **avant** *(libère la matrice globale)*, tu détruis la “tablette de pointeurs” → plus de moyen de retrouver les lignes.
 - Donc il faut **libérer les blocs pointés** avant le tableau de pointeurs lui-même.
 
-# Réallouer la mémoire
+## Réallouer la mémoire
 `realloc` permet de **modifier la taille d’un bloc mémoire déjà alloué**.
 - On peut **agrandir** ou **réduire** le bloc.
 - Si la nouvelle taille est plus grande, le contenu existant est **préservé**, mais la mémoire supplémentaire n’est **pas initialisée**.

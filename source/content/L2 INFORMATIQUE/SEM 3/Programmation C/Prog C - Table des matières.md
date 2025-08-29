@@ -171,6 +171,29 @@
 		- Retourner une adresse
 		- Manipulation de chaînes
 9.  **Allocation dynamique** [[09 - Allocation dynamique]]
+	- La mémoire
+		- Introduction
+		- Types de mémoires
+			- La mémoire vive RAM
+			- La mémoire morte ROM
+			- La mémoire cache
+			- Mémoire secondaire (stockage de masse)
+	- Allocation automatique et statique
+		- Allocation automatique
+		- Allocation statique
+	- La pile et le tas
+		- La pile *stack*
+		- Le tas *heap*
+	- Allocation dynamique en C
+		- Réserver une zone mémoire
+			- La fonction `malloc`
+			- La fonction `calloc`
+		- Libérer la mémoire
+			- Utiliser la mémoire après libération
+			- Libérer deux fois la même zone
+		- Allocation d'un tableau
+		- Allocation d'une matrice
+		- Réallouer la mémoire
 10. **Les structures avancées** [[10 - Structures avancées]]
 	- Introduction aux structures
 		- Déclaration d'une structure
