@@ -1,0 +1,73 @@
+[saved-theme="dark"] body {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  .diagram {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .label {
+    font-weight: 600;
+    font-size: 16px;
+    fill: #111827;
+  }
+
+  [saved-theme="dark"] .label {
+    fill: #f9fafb;
+  }
+
+  .small {
+    font-weight: 500;
+    font-size: 13px;
+    fill: #374151;
+  }
+
+  [saved-theme="dark"] .small {
+    fill: #d1d5db;
+  }
+
+  .box {
+    rx: 16;
+    ry: 16;
+    stroke-width: 2;
+    fill: #ffffff;
+    stroke: #111827;
+  }
+
+  [saved-theme="dark"] .box {
+    fill: #1f2937;
+    stroke: #f9fafb;
+  }
+
+  .cache { fill: #e0f2fe; }
+  [saved-theme="dark"] .cache { fill: #0c4a6e; }
+
+  .cpu { fill: #fef3c7; }
+  [saved-theme="dark"] .cpu { fill: #78350f; }
+
+  .ram { fill: #e2e8f0; }
+  [saved-theme="dark"] .ram { fill: #1e293b; }
+
+  .ssd { fill: #f5f3ff; }
+  [saved-theme="dark"] .ssd { fill: #3730a3; }
+
+  .arrow { stroke: #111827; stroke-width: 2; }
+  [saved-theme="dark"] .arrow { stroke: #f9fafb; }
+
+  .axis { stroke: #6b7280; stroke-dasharray: 5 6; stroke-width: 1; }
+  [saved-theme="dark"] .axis { stroke: #9ca3af; }
+
+  marker path {
+    fill: #111827;
+  }
+  [saved-theme="dark"] marker path {
+    fill: #f9fafb;
+  }
