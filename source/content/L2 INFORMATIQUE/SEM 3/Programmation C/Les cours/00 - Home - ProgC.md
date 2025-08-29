@@ -27,76 +27,7 @@ Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif e
 Table des matières complète : [[Prog C - Table des matières]]
 
 <div>
-<style>
-/* Styles communs */
-table.cours-plan {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  margin: 20px 0;
-}
-table.cours-plan th,
-table.cours-plan td {
-  padding: 10px 15px;
-  text-align: left;
-  border: 1px solid;
-}
-table.cours-plan tr:hover {
-  cursor: pointer;
-}
-/* Mode clair par défaut */
-@media (prefers-color-scheme: light) {
-  table.cours-plan th {
-    background-color: #4c7faf;
-    color: white;
-    border-color: #4c7faf;
-  }
-  table.cours-plan td {
-    background-color: #fff;
-    color: #000;
-    border-color: #ccc;
-  }
-  table.cours-plan tr:nth-child(even) td {
-    background-color: #f9f9f9;
-  }
-  table.cours-plan tr:hover td {
-    background-color: #e1e0f0;
-  }
-  table.cours-plan a {
-    color: #007acc;
-  }
-  table.cours-plan a:hover {
-    text-decoration: underline;
-  }
-}
-/* Mode sombre */
-@media (prefers-color-scheme: dark) {
-  table.cours-plan th {
-    background-color: #121212;  /* Très foncé */
-    color: #e0e0e0;             /* Texte clair */
-    border-color: #444;
-  }
-  table.cours-plan td {
-    background-color: #1e1e1e;  /* Fond sombre uniforme */
-    color: #f5f5f5;             /* Texte clair et lisible */
-    border-color: #333;
-  }
-  table.cours-plan tr:nth-child(even) td {
-    background-color: #2a2a2a;  /* Alternance subtile */
-  }
-  table.cours-plan tr:hover td {
-    background-color: #3a3a3a;  /* Survol plus clair */
-  }
-  table.cours-plan a {
-    color: #66b2ff;             /* Lien bleu clair doux */
-  }
-  table.cours-plan a:hover {
-    text-decoration: underline;
-    color: #99ccff;
-  }
-}
-</style>
-<table class="cours-plan">
+<table class="cours-planC">
   <thead>
     <tr>
       <th>#</th>
