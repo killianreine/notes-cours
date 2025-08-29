@@ -66,3 +66,46 @@ marker pathMem {
 [saved-theme="dark"] marker pathMem {
   fill: #f9fafb;
 }
+
+/* Animation fade-in et scale pour les boxes */
+@keyframes fadeScale {
+  0% { opacity: 0; transform: scale(0.9); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.boxMem {
+  animation: fadeScale 0.8s ease-out forwards;
+}
+
+/* Pulse subtil pour les composants mémoire */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.cacheMem, .cpuMem, .ramMem, .ssdMem {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Flèches animées (flux de données) */
+@keyframes arrowMove {
+  0% { stroke-dashoffset: 100; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.arrowMem {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: arrowMove 1.5s linear infinite;
+}
+
+/* Légère animation de texte */
+@keyframes textFade {
+  0% { opacity: 0; transform: translateY(5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.labelMem, .smallMem, .titleMem {
+  animation: textFade 1s ease forwards;
+}
