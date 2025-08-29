@@ -20,6 +20,9 @@ Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif e
 ## Prérequis
 - Connaissances de base en informatique.
 - Aucune expérience préalable en programmation n'est requise.
+
+## Les séances de TDs
+- Accès aux TDs : [[Les TDs - Prog. C]]
 ## Plan du Cours
 Table des matières complète : [[Prog C - Table des matières]]
 
