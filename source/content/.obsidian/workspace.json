@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - CM.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Allocation dynamique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Threads - CM"
+              "title": "09 - Allocation dynamique"
             }
           }
         ],
@@ -338,9 +338,10 @@
   },
   "active": "6d54b187ec0557c0",
   "lastOpenFiles": [
-    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - CM.md",
     "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - CM.md",
+    "L2 INFORMATIQUE/SEM 4/Système/readme SystèmeExp1.md",
+    "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads/Exo supp. THREADS.md",
     "L2 INFORMATIQUE/SEM 4/Système/Processus/Complément - Topologie processus.md",
     "L2 INFORMATIQUE/SEM 4/Système/Processus/Complément - Tube unidirectionnel.md",
@@ -365,7 +366,6 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/04 - Conditions et boucles.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/03 - Opérateurs & Arithmétique.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/compilation.svg",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours",
