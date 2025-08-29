@@ -27,12 +27,6 @@ La **==mémoire cache==** *ou antémémoire* permet d'enregistrer temporairement
 
 <div>
 <style>
-  body {
-    font-family: system-ui, "Segoe UI", Arial, sans-serif;
-    background: #fff;
-    color: #111827;
-    margin: 20px;
-  }
   .container {
     position: relative;
     width: 1400px;
