@@ -867,7 +867,7 @@ Bonjour_le m
 On peut illustrer la concaténation de l'exemple précédant de la manière suivante : 
 
 <div>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 1200 600">
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#660493"/>
