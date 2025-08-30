@@ -53,7 +53,7 @@ auteur: Killian Reine
     <h2 class="notes-subtitle">📂 Autres supports</h2>
     <p class="notes-text">
       Accès aux supports complémentaires et documents externes :
-      <a href="#autres" class="notes-link">Readme Autre</a>
+      <a href="readme Autre" class="notes-link">Readme Autre</a>
     </p>
   </section>
 </div>
