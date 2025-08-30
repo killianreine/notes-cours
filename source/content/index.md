@@ -30,21 +30,21 @@ auteur: Killian Reine
     <div class="year-card">
       <h3 class="year-title">Licence 1ère année</h3>
       <ul class="semester-list">
-        <li><a href="#L1S1" class="semester-link">Semestre 1: Informations L1 S1</a></li>
-        <li><a href="#L1S2" class="semester-link">Semestre 2: Informations L1 S2</a></li>
+        <li><a href="Informations L1 S1" class="semester-link">Semestre 1: Informations L1 S1</a></li>
+        <li><a href="Informations L1 S2" class="semester-link">Semestre 2: Informations L1 S2</a></li>
       </ul>
     </div>
     <div class="year-card">
       <h3 class="year-title">Licence 2ème année</h3>
       <ul class="semester-list">
-        <li><a href="#L2S3" class="semester-link">Semestre 3: Informations L2 S3</a></li>
-        <li><a href="#L2S4" class="semester-link">Semestre 4: Informations L2 S4</a></li>
+        <li><a href="Informations L2 S3" class="semester-link">Semestre 3: Informations L2 S3</a></li>
+        <li><a href="Informations L2S4" class="semester-link">Semestre 4: Informations L2 S4</a></li>
       </ul>
     </div>
     <div class="year-card">
       <h3 class="year-title">Licence 3ème année</h3>
       <ul class="semester-list">
-        <li><a href="#L3S5" class="semester-link">Semestre 5: Informations L3 S5</a></li>
+        <li><a href="Informations L3 S5" class="semester-link">Semestre 5: Informations L3 S5</a></li>
       </ul>
     </div>
   </div>
