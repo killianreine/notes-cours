@@ -420,6 +420,49 @@ int fclose(FILE *stream);
 - Retourne `0` si la fermeture s’est bien passée, `EOF` en cas d’erreur *(i.e. $-1$).
 
 # Les fichiers binaires
+## Mode d'ouverture
+<table class="tableFichierFormat">
+  <thead class="theadFichierFormat">
+    <tr class="trFichierFormat">
+      <th class="thFichierFormat">Mode</th>
+      <th class="thFichierFormat">Description</th>
+      <th class="thFichierFormat">Précision</th>
+    </tr>
+  </thead>
+  <tbody class="tbodyFichierFormat">
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"rb"</td>
+      <td class="tdFichierFormat">Lecture binaire</td>
+      <td class="tdFichierFormat">Le fichier <strong>doit exister</strong></td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"wb"</td>
+      <td class="tdFichierFormat">Écriture binaire</td>
+      <td class="tdFichierFormat">Créer le fichier s'il n'existe pas ou écrase le contenu existant</td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"ab"</td>
+      <td class="tdFichierFormat">Ajout binaire</td>
+      <td class="tdFichierFormat">Ajoute à la fin du fichier</td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"r+b"</td>
+      <td class="tdFichierFormat">Lecture et écriture binaire</td>
+      <td class="tdFichierFormat"></td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"w+b"</td>
+      <td class="tdFichierFormat">Lecture et écriture binaire</td>
+      <td class="tdFichierFormat">Écrase le fichier</td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"a+b"</td>
+      <td class="tdFichierFormat">Lecture et ajout binaire</td>
+      <td class="tdFichierFormat"></td>
+    </tr>
+  </tbody>
+</table>
+
 ## Lecture
 Pour lire dans une fichier binaire on utilise la fonction `fread` qui permet de lire des blocs de données depuis un fichier ouvert. Elle est souvent utilisée pour lire des données binaires, mais peut aussi être utilisée pour lire des structures.
 
@@ -466,3 +509,42 @@ int main() {
 >`fread` ne met **pas** de caractère nul à la fin si vous lisez du texte. Pour les chaînes de caractères, il faut gérer la terminaison soi-même.
 
 ## Écrire
+Pour écrire dans un fichier binaire, on utilise la fonction `fwrite` qui permet d’écrire des blocs de données dans un fichier ouvert. Elle est souvent utilisée pour écrire des données binaires, mais peut aussi être utilisée pour écrire des structures.
+
+Prototype de la fonction
+```c
+#include <stdio.h>
+size_t fwrite(const void *ptr, size_t size, size_t nbelem, FILE *stream);
+```
+- Elle prend en paramètres :
+    - `ptr` : Pointeur vers les données en mémoire à écrire dans le fichier.
+    - `size` : Taille, en octets, de chaque élément à écrire.
+    - `nbelem` : Nombre d’éléments à écrire.
+    - `stream` : Pointeur vers le fichier ouvert en écriture _(ou lecture/écriture)_.
+- Elle renvoie le nombre d'éléments écrits *qui peut être inférieur à `nbelem` en cas d’erreur.*
+
+<u>Exemple :</u>  
+On écrit 5 entiers depuis un tableau dans un fichier binaire.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *f = fopen("exemple.bin", "wb"); // ouverture en mode binaire écriture
+    if (!f) {
+        perror("Erreur ouverture fichier");
+        return 1;
+    }
+
+    int tab[5] = {10, 20, 30, 40, 50}; // écrire 5 entiers
+    size_t n = fwrite(tab, sizeof(int), 5, f);
+
+    printf("Nombre d'éléments écrits : %zu\n", n);
+
+    fclose(f);
+    return 0;
+}
+```
+
+>[!warning]  
+`fwrite` écrit **les octets tels quels** dans le fichier. Pour les fichiers texte, il vaut mieux utiliser `fprintf` ou `fputs`.
