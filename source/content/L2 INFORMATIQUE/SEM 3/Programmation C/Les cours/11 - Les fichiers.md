@@ -214,7 +214,7 @@ int fprintf(FILE* stream, char* chaine, ...);
 // On a ouvert le fichier
 fprintf(fichier, "Bonjour le monde");
 ```
-On écrit *"Bonjour le monde"* dans le fichier pointé par le pointeur `fichier`.
+On écrit *"Bonjour le monde"* **suivit d'un retour à la ligne `\n`** dans le fichier pointé par le pointeur `fichier`.
 
 >[!info] Remarque
 >Les deux syntaxes suivantes sont strictement équivalentes : 
@@ -226,3 +226,24 @@ On écrit *"Bonjour le monde"* dans le fichier pointé par le pointeur `fichier`
 >```
 
 ### La fonction `fputs`
+La fonction `fputs` permet d'écrire une chaîne de caractères **sans format** dans un flux. Elle est plus simple d'uitilisation que `fprintf` mais elle ne permet pas de faire du formatage... 
+
+Prototype de la fonction
+```c
+int fputs(const char* chaine, FILE* stream);
+```
+- Elle prend en paramètres 
+	- `stream` le flux dans lequel on souhaite écrire : fichier, `stdout`, ...
+	- `chaine` chaîne de caractères à afficher, **sans format**.
+- Elle retourne un nombre positif en cas de succès, sinon `EOF` en cas d'erreur.
+
+Contrairement à `fprintf`, la fonction `fputs` n'ajoute pas automatiquement de saut de ligne, il faut donc le faire à la main.
+
+<u>Exemple :</u>  
+```c
+// On a ouvert le fichier
+fprintf("Bonjour le monde", fichier);
+```
+On écrit *"Bonjour le monde"* **sans retour à la ligne** dans le fichier.
+
+## Lecture dans un fichier
