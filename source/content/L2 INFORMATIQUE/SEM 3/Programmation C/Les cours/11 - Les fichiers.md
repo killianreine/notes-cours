@@ -375,7 +375,7 @@ La fonction `fgetc` elle permet de lire **un caractère** depuis un flux *(fichi
 Prototype de la fonction `fgetc`
 ```c
 #include <stdio.h>
-`int fgetc(FILE *stream);`
+int fgetc(FILE *stream);
 ```
 - **`stream`** : le flux à partir duquel lire *(fichier ouvert avec `fopen`, `stdin`, etc.)*.
 - Retourne le **caractère lu** *(sous forme de `int`)*, ou `EOF` si la fin du fichier est atteinte ou s’il y a une erreur.
