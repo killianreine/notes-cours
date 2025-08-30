@@ -149,3 +149,46 @@ Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à s
 </svg>
 </div>
 
+# Les fichiers
+En C, manipuler des fichiers permet de **lire et écrire des données sur le disque** au lieu de seulement utiliser la mémoire vive. Les fonctions principales se trouvent dans la bibliothèque standard `<stdio.h>`.
+
+## Ouvrir un fichier
+Pour ouvrir un fichier en langage C on utilise la fonction `fopen` dont le prototype est le suivant : 
+```c
+FILE* fopen(const char* nomFichier, const char* mode);
+```
+- Elle prend en paramètres
+	- Le nom du fichier
+	- Le mode dans lequel on souhaite l'ouvrir
+- Elle renvoie un pointeur vers le fichier ouvert.
+
+>[!warning]
+>Pensez à vérifier que le fichier c'est bien ouvert. *C'est les mêmes sortes de vérifications que l'on faisait dans le cours 09 sur les allocations dynamiques.*
+
+```c
+if(!fichier) {
+	// Gestion en cas d'erreur
+	printf(...);
+	return 1;
+}
+```
+
+Les différents modes d'ouverture d'un fichier :
+
+| Mode   | Description         | Précision                                                          |
+| ------ | ------------------- | ------------------------------------------------------------------ |
+| `"r"`  | Lecture             | Le fichier **doit exister**                                        |
+| `"w"`  | Écriture            | Créer le fichier si il n'existe pas ou écrases le contenu existant |
+| `"a"`  | Ajout               | Ajoute à la fin du fichier                                         |
+| `"r+"` | Lecture et écriture |                                                                    |
+| `"w+"` | Lecture et écriture | Écrase le fichier                                                  |
+| `"a+"` | Lecture et ajout    |                                                                    |
+<u>Exemple :</u>  
+```c
+// Ouverture d'un fichier en écriture
+FILE* fichier = fopen("fichier.txt", "w");
+if(!fichier){
+	printf("Le fichier n'a pas été ouvert...\n");
+	return 1;
+}
+```
