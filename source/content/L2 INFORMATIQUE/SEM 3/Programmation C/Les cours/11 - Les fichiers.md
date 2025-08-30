@@ -548,3 +548,28 @@ int main() {
 
 >[!warning]  
 >`fwrite` écrit **les octets tels quels** dans le fichier. Pour les fichiers texte, il vaut mieux utiliser `fprintf` ou `fputs`.
+
+- 
+  ```c
+    feof(FILE *f)
+    ```
+    permet de savoir si la fin du fichier est atteinte.
+- 
+  ```c
+    ferror(FILE* f)
+    ```
+    Permet de savoir si il y eue une erreur de lecture écriture.
+
+<u>Exemple :</u>  
+Vérifier le nombre d'éléments lus après `fread`.
+```c
+size_t n = fread(buffer, sizeof(int), 5, f);
+if (n < 5) {
+    if (feof(f)) {
+        printf("Fin de fichier atteinte.\n");
+    } else if (ferror(f)) {
+        perror("Erreur lecture fichier");
+    }
+}
+```
+
