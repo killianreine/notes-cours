@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours/00 - Notions préliminaires.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "00 - Notions préliminaires"
             }
           }
         ],
@@ -212,8 +212,8 @@
   },
   "active": "db103a32903532c9",
   "lastOpenFiles": [
-    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours/01 - Relation binaire.md",
     "index.md",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours/00 - Notions préliminaires.md",
     "L2 INFORMATIQUE/Maquette L2.png",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/12 - Tests unitaires.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
