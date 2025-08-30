@@ -126,7 +126,7 @@ Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à s
   </g>
   <!-- Main flow arrows -->
   <path class="arrowCycle" d="M600,110 L600,140" marker-end="url(#arrow)"/>
-  <path class="arrowCycle" d="M600,230 L600,270" marker-end="url(#arrow)"/>
+  <path class="arrowCycle" d="M640,230 L640,270" marker-end="url(#arrow)"/>
   <!-- Error path -->
   <path class="arrowCycle errorCycle" d="M480,340 L270,340 L270,420" marker-end="url(#arrow)"/>
   <text class="textCycle" x="370" y="332" font-size="14" text-anchor="middle">Non</text>
