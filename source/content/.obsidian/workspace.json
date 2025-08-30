@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L1 MIPSI/SEM 1/Informations L1 S1.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Informations L1 S1"
+              "title": "index"
             }
           }
         ],
@@ -212,6 +212,7 @@
   },
   "active": "db103a32903532c9",
   "lastOpenFiles": [
+    "L1 MIPSI/SEM 1/Informations L1 S1.md",
     "index.md",
     "L2 INFORMATIQUE/SEM 4/Informations L2S4.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours/00 - Notions préliminaires.md",
@@ -241,7 +242,6 @@
     "L2 INFORMATIQUE/SEM 4/Système/Processus/Processus - CM.md",
     "L2 INFORMATIQUE/SEM 4/Système/readme SystèmeExp1.md",
     "L2 INFORMATIQUE/SEM 4/Système/Threads/Threads - TP.md",
-    "L2 INFORMATIQUE/SEM 4/Système/Threads/Exo supp. THREADS.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/memoireCASH.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/Nouveau Document texte.txt",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/compilation.svg",
