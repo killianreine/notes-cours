@@ -78,63 +78,68 @@ Concrètement, les TDs permettront aux étudiants de :
 </div>
 ## Liste des projets
 *Vous pouvez évidemment choisir votre propre sujet...*
-### 1. 🏫 **Système de gestion d’université (mini-ENT)**
-- **Objectif** : Créer une application en C permettant de gérer étudiants, enseignants, cours, notes.
-- **Fonctionnalités possibles** :
-    - Inscription d’un étudiant (nom, ID, filière).
-    - Ajout de cours avec enseignants.
-    - Gestion des notes (moyennes par étudiant, par cours).
-    - Sauvegarde/chargement dans des fichiers.
-    - Recherche (par nom, par cours).
-- **Extensions** : tri des étudiants, statistiques globales.
----
 
-### 2. 🎮 **Jeu de rôle textuel (RPG console)**
-- **Objectif** : Développer un petit RPG entièrement textuel.
-- **Fonctionnalités possibles** :
-    - Création de personnage (nom, points de vie, force, inventaire).
-    - Exploration de zones décrites textuellement (cartes représentées par des matrices).
-    - Combats contre ennemis avec système de tours (attaquer, fuir, utiliser objet).
-    - Sauvegarde/chargement de la partie.
-- **Extensions** :
-    - IA rudimentaire pour les ennemis.
-    - Différents niveaux de difficulté avec pointeurs de fonctions.
----
-
-### 3. 📊 **Analyseur de données scientifiques**
-- **Objectif** : Lire des ensembles de données numériques depuis des fichiers et proposer des analyses.
-- **Fonctionnalités possibles** :
-    - Lecture de fichiers CSV contenant des séries de nombres.
-    - Calcul de statistiques (moyenne, variance, médiane, min/max).
-    - Tri et recherche dans les données.
-    - Génération de rapports (fichiers texte).
-- **Extensions** :
-    - Implémentation de régressions simples (linéaire).
-    - Ajout de structures avancées (listes chaînées pour gérer des données volumineuses).
----
-
-### 4. 📚 **Moteur de gestion de bibliothèque numérique**
-- **Objectif** : Créer un gestionnaire pour stocker et rechercher des livres.
-- **Fonctionnalités possibles** :
-    - Stockage des livres avec titre, auteur, année, genre.
-    - Recherche (par titre, auteur, année).
-    - Tri des livres (alphabétique, année).
-    - Gestion dynamique avec allocation mémoire.
-    - Sauvegarde/chargement en fichiers texte ou binaires.
-- **Extensions** :
-    - Statistiques (nombre de livres par genre).
-    - Gestion des emprunts (lecteurs).
----
-
-### 5. 🌐 **Mini-simulateur de réseau social**
-- **Objectif** : Simuler un petit réseau social en console.
-- **Fonctionnalités possibles** :
-    - Création d’utilisateurs (nom, ID, bio).
-    - Gestion des relations (amis, abonnés).
-    - Publication de messages (chaînes de caractères).
-    - Recherche d’utilisateurs ou de messages.
-    - Sauvegarde des données dans des fichiers.
-- **Extensions** :
-    - Implémentation d’un fil d’actualité avec tri chronologique.
-    - Détection de communautés (graphe d’amitiés).
-
+<div class="projects-containerTDC">
+  <!-- Projet 1 -->
+  <div class="project-cardTDC">
+    <h2>🏫 Système de gestion d’université (mini-ENT)</h2>
+    <p><strong>Objectif :</strong> Créer une application en C permettant de gérer étudiants, enseignants, cours, notes.</p>
+    <ul>
+      <li>Inscription d’un étudiant (nom, ID, filière).</li>
+      <li>Ajout de cours avec enseignants.</li>
+      <li>Gestion des notes (moyennes par étudiant, par cours).</li>
+      <li>Sauvegarde/chargement dans des fichiers.</li>
+      <li>Recherche (par nom, par cours).</li>
+    </ul>
+    <p><em>Extensions :</em> tri des étudiants, statistiques globales.</p>
+  </div>
+  <!-- Projet 2 -->
+  <div class="project-cardTDC">
+    <h2>🎮 Jeu de rôle textuel (RPG console)</h2>
+    <p><strong>Objectif :</strong> Développer un petit RPG entièrement textuel.</p>
+    <ul>
+      <li>Création de personnage (nom, PV, force, inventaire).</li>
+      <li>Exploration de zones textuelles.</li>
+      <li>Combats avec système de tours.</li>
+      <li>Sauvegarde/chargement de la partie.</li>
+    </ul>
+    <p><em>Extensions :</em> IA rudimentaire, niveaux de difficulté.</p>
+  </div>
+  <!-- Projet 3 -->
+  <div class="project-cardTDC">
+    <h2>📊 Analyseur de données scientifiques</h2>
+    <p><strong>Objectif :</strong> Lire des ensembles de données numériques depuis des fichiers et proposer des analyses.</p>
+    <ul>
+      <li>Lecture de fichiers CSV.</li>
+      <li>Calcul de statistiques (moyenne, variance, médiane).</li>
+      <li>Tri et recherche dans les données.</li>
+      <li>Génération de rapports.</li>
+    </ul>
+    <p><em>Extensions :</em> régressions simples, structures avancées.</p>
+  </div>
+  <!-- Projet 4 -->
+  <div class="project-cardTDC">
+    <h2>📚 Moteur de gestion de bibliothèque numérique</h2>
+    <p><strong>Objectif :</strong> Créer un gestionnaire pour stocker et rechercher des livres.</p>
+    <ul>
+      <li>Stockage (titre, auteur, année, genre).</li>
+      <li>Recherche et tri (alphabétique, année).</li>
+      <li>Gestion dynamique mémoire.</li>
+      <li>Sauvegarde/chargement.</li>
+    </ul>
+    <p><em>Extensions :</em> statistiques, gestion des emprunts.</p>
+  </div>
+  <!-- Projet 5 -->
+  <div class="project-cardTDC">
+    <h2>🌐 Mini-simulateur de réseau social</h2>
+    <p><strong>Objectif :</strong> Simuler un petit réseau social en console.</p>
+    <ul>
+      <li>Création d’utilisateurs (nom, bio, ID).</li>
+      <li>Gestion des relations (amis, abonnés).</li>
+      <li>Publication de messages.</li>
+      <li>Recherche utilisateurs ou messages.</li>
+      <li>Sauvegarde des données.</li>
+    </ul>
+    <p><em>Extensions :</em> fil d’actualité, détection de communautés.</p>
+  </div>
+</div>
