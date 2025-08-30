@@ -99,3 +99,86 @@ table.cours-planC a {
 [saved-theme="dark"] table.cours-planC a:hover {
   text-decoration: underline;
 }
+
+
+
+/* =============== Layout global =============== */
+.projects-containerTDC {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* =============== Cartes projets =============== */
+.project-cardTDC {
+  padding: 1.8rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.4s ease, color 0.4s ease;
+  animation: fadeSlideIn 0.7s ease both;
+}
+
+.project-cardTDC:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+/* Animation apparition (fade + slide) */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Titres */
+.project-cardTDC h2 {
+  margin-bottom: 0.9rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Listes */
+.project-cardTDC ul {
+  margin: 0.6rem 0 1.2rem 1.3rem;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Texte accentué */
+.project-cardTDC em {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* =============== Thème clair (par défaut) =============== */
+.projects-containerTDC {
+  background: #f7f7f9;
+  color: #222;
+}
+.project-cardTDC {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2c3e50;
+}
+.project-cardTDC h2 { color: #34495e; }
+.project-cardTDC em { color: #555; }
+
+/* =============== Thème sombre (avec attribut) =============== */
+[saved-theme="dark"] .projects-containerTDC {
+  background: #121212;
+  color: #eaeaea;
+}
+[saved-theme="dark"] .project-cardTDC {
+  background: rgba(36, 36, 36, 0.9);
+  color: #eaeaea;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+[saved-theme="dark"] .project-cardTDC h2 {
+  color: #f39c12;
+}
+[saved-theme="dark"] .project-cardTDC em {
+  color: #bbb;
+}
