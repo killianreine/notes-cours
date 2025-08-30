@@ -1,104 +1,168 @@
 
-/* Conteneur principal */
+/* ===========================
+   Conteneur principal
+=========================== */
 #notes-container {
   font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-  max-width: 900px;
-  margin: 30px auto;
+  max-width: 100%;
+  margin: 40px auto;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
   transition: all 0.3s ease;
 }
 
-/* Sections */
+/* ===========================
+   Sections générales
+=========================== */
 .notes-section {
-  margin-bottom: 40px;
-  padding: 25px 20px;
+  background-color: #ffffff;
   border-radius: 14px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  border-left: 6px solid transparent;
+  padding: 25px 30px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* Survol sections */
 .notes-section:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
 }
 
 /* Titres */
 .notes-title {
-  font-size: 2.2rem;
-  margin-bottom: 18px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  color: #1a1a1a;
+  margin-bottom: 12px;
 }
 
 .notes-subtitle {
-  font-size: 1.6rem;
-  margin-bottom: 12px;
+  font-size: 1.5rem;
   font-weight: 600;
-  letter-spacing: 0.3px;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
 
-/* Texte et liste */
+/* Texte et listes */
 .notes-text {
   font-size: 1rem;
-  margin-bottom: 15px;
+  color: #333333;
+  line-height: 1.6;
 }
 
 .notes-list {
-  list-style-type: disc;
-  margin-left: 25px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-/* Liens */
+.notes-list li {
+  background: #f1f4f9;
+  margin-bottom: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Liens généraux */
 .notes-link {
-  color: #007acc;
-  font-weight: 600;
+  color: #3498db;
+  font-weight: 500;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .notes-link:hover {
-  color: #005f99;
-  text-shadow: 0 0 6px #007acc;
+  color: #2980b9;
+  transform: translateX(2px);
 }
 
-/* Quote */
+/* Citation */
 .notes-quote {
   font-style: italic;
-  color: #555;
-  border-left: 4px solid #007acc;
-  padding-left: 14px;
-  margin: 15px 0;
-  background-color: rgba(0, 122, 204, 0.05);
+  background-color: #ecf0f1;
+  border-left: 4px solid #3498db;
+  padding: 12px 15px;
   border-radius: 6px;
+  color: #555555;
 }
 
 /* Divider */
 .notes-divider {
-  border: 0;
+  border: none;
   height: 1px;
-  background: #ccc;
-  margin: 22px 0;
+  background: #ddd;
+  margin: 20px 0;
 }
 
-/* --- Mode clair par défaut --- */
-@media (prefers-color-scheme: light) {
-  .notes-section {
-    background-color: #fdfdfd;
-    border-left-color: #007acc;
-  }
+/* ===========================
+   Section Licence (grid)
+=========================== */
+.grid-section .licence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
 }
 
-/* --- Mode sombre --- */
+.year-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.year-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.year-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.semester-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.semester-list li {
+  margin-bottom: 8px;
+}
+
+.semester-link {
+  color: #3498db;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.semester-link:hover {
+  color: #2980b9;
+  transform: translateX(3px);
+}
+
+/* ===========================
+   Mode sombre
+=========================== */
 [saved-theme="dark"] #notes-container {
   color: #e0e0e0;
 }
 
 [saved-theme="dark"] .notes-section {
-  background-color: #1b1b2f;
-  border-left-color: #9b59b6;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  background-color: #1e1e28;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.5);
 }
 
 [saved-theme="dark"] .notes-title {
@@ -106,24 +170,67 @@
 }
 
 [saved-theme="dark"] .notes-subtitle {
-  color: #d8b9ff;
+  color: #a8c4ff;
 }
 
 [saved-theme="dark"] .notes-text {
   color: #ccc;
 }
 
-[saved-theme="dark"] .notes-quote {
-  color: #aaa;
-  border-left-color: #9b59b6;
-  background-color: rgba(155, 89, 182, 0.05);
+[saved-theme="dark"] .notes-list li {
+  background-color: #2a2a3c;
+  color: #ddd;
 }
 
 [saved-theme="dark"] .notes-link {
-  color: #9b59b6;
+  color: #7f9cf5;
 }
 
 [saved-theme="dark"] .notes-link:hover {
-  color: #b583ff;
-  text-shadow: 0 0 6px #b583ff;
+  color: #aab8ff;
+}
+
+[saved-theme="dark"] .notes-quote {
+  background-color: #2a2a3c;
+  border-left-color: #3498db;
+  color: #ccc;
+}
+
+[saved-theme="dark"] .year-card {
+  background-color: #1e1e28;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+[saved-theme="dark"] .year-title {
+  color: #a8c4ff;
+}
+
+[saved-theme="dark"] .semester-list li {
+  color: #ccc;
+}
+
+[saved-theme="dark"] .semester-link {
+  color: #7f9cf5;
+}
+
+[saved-theme="dark"] .semester-link:hover {
+  color: #aab8ff;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  #notes-container {
+    padding: 15px;
+  }
+  .notes-title {
+    font-size: 1.8rem;
+  }
+  .notes-subtitle {
+    font-size: 1.3rem;
+  }
+  .year-title {
+    font-size: 1.2rem;
+  }
 }

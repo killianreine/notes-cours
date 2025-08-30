@@ -23,31 +23,32 @@ auteur: Killian Reine
       à d'autres étudiants en informatique.
     </blockquote>
   </section>
-  <section id="licence-section" class="notes-section">
-    <h2 class="notes-subtitle">Licence MATHS-INFO, ULHN</h2>
-    <p class="notes-text">
-      Organisation des semestres par année :
-    </p>
-    <ul class="notes-list">
-      <li>Licence 1ère année
-        <ul>
-          <li>Semestre 1: <a href="#L1S1" class="notes-link">Informations L1 S1</a></li>
-          <li>Semestre 2: <a href="#L1S2" class="notes-link">Informations L1 S2</a></li>
-        </ul>
-      </li>
-      <li>Licence 2ème année
-        <ul>
-          <li>Semestre 3: <a href="#L2S3" class="notes-link">Information L2 S3</a></li>
-          <li>Semestre 4: <a href="#L2S4" class="notes-link">Informations L2 S4</a></li>
-        </ul>
-      </li>
-      <li>Licence 3ème année
-        <ul>
-          <li>Semestre 5: <a href="#L3S5" class="notes-link">Information L3 S5</a></li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+  <section id="licence-section" class="notes-section grid-section">
+  <h2 class="notes-subtitle">Licence MATHS-INFO, ULHN</h2>
+  <p class="notes-text">Organisation des semestres par année :</p>
+  <div class="licence-grid">
+    <div class="year-card">
+      <h3 class="year-title">Licence 1ère année</h3>
+      <ul class="semester-list">
+        <li><a href="#L1S1" class="semester-link">Semestre 1: Informations L1 S1</a></li>
+        <li><a href="#L1S2" class="semester-link">Semestre 2: Informations L1 S2</a></li>
+      </ul>
+    </div>
+    <div class="year-card">
+      <h3 class="year-title">Licence 2ème année</h3>
+      <ul class="semester-list">
+        <li><a href="#L2S3" class="semester-link">Semestre 3: Informations L2 S3</a></li>
+        <li><a href="#L2S4" class="semester-link">Semestre 4: Informations L2 S4</a></li>
+      </ul>
+    </div>
+    <div class="year-card">
+      <h3 class="year-title">Licence 3ème année</h3>
+      <ul class="semester-list">
+        <li><a href="#L3S5" class="semester-link">Semestre 5: Informations L3 S5</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
   <section id="autres-supports-section" class="notes-section">
     <h2 class="notes-subtitle">📂 Autres supports</h2>
     <p class="notes-text">
@@ -56,3 +57,4 @@ auteur: Killian Reine
     </p>
   </section>
 </div>
+
