@@ -11,6 +11,13 @@
 @use "./compiler.scss";
 @use "./tabCoursProgC.scss";
 
+@media (min-width: 1024px) {
+    .page, .content, .main, .markdown-body {
+        max-width: 1200px !important;
+    }
+}
+
+
 /* Bloc déroulant */
 .custom-details {
   border: 1px solid;
