@@ -85,7 +85,7 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
 # Récap SEMESTRE 1
 à retrouver ici aussi : [[Maquette L1.png]]
 
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
+<table class="ue-table">
   <thead>
     <tr>
       <th>Unité d’Enseignement</th>
@@ -93,73 +93,74 @@ L’**Informatique pour la NSI** propose une introduction aux concepts clés de 
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 1</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 1</td>
     </tr>
     <tr>
-      <td><strong>Algèbre de base</strong></td>
+      <td>Algèbre de base</td>
       <td>50 heures</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 2</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 2</td>
     </tr>
     <tr>
-      <td><strong>Algorithmique & Programmation 1</strong></td>
+      <td>Algorithmique & Programmation 1</td>
       <td>50 heures</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 3</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 3</td>
     </tr>
     <tr>
-      <td><strong>Informatique de base</strong></td>
+      <td>Informatique de base</td>
       <td>50 heures</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Transversaux (UET)</td>
     </tr>
     <tr>
-      <td><strong>Anglais 1</strong></td>
+      <td>Anglais 1</td>
       <td>22 heures</td>
     </tr>
     <tr>
-      <td><strong>Méthodologie</strong></td>
+      <td>Méthodologie</td>
       <td>6 heures</td>
     </tr>
     <tr>
-      <td><strong>Outil Informatique Logiciel (OIL LaTeX)</strong></td>
+      <td>Outil Informatique Logiciel (OIL LaTeX)</td>
       <td>6 heures</td>
     </tr>
     <tr>
-      <td><strong>PIX 1</strong></td>
+      <td>PIX 1</td>
       <td>8 heures</td>
     </tr>
     <tr>
-      <td><strong>Projet Personnel et Professionnel (PPP)</strong></td>
+      <td>Projet Personnel et Professionnel (PPP)</td>
       <td>8 heures</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP) <br/> <span style="color:red; font-weight:900;">1 section au choix parmi</span></td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Personnalisées (UEP) <br/> <span class="uep-note">1 section au choix parmi</span></td>
     </tr>
     <tr>
-      <td><strong>Analyse de base</strong><br/><em>Parcours Mathématiques</em></td>
+      <td>Analyse de base<br/><em>Parcours Mathématiques</em></td>
       <td>50 heures</td>
     </tr>
     <tr>
-      <td><strong>Astrophysique</strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
+      <td>Astrophysique<br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
       <td>50 heures</td>
     </tr>
     <tr>
-      <td><strong>Physique (Mvt + Optique)</strong><br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
+      <td>Physique (Mvt + Optique)<br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td>
       <td>50 heures</td>
     </tr>
     <tr>
-      <td><strong>Concepts informatiques</strong><br/><em>Parcours Informatique</em></td>
+      <td>Concepts informatiques<br/><em>Parcours Informatique</em></td>
       <td>50 heures</td>
     </tr>
     <tr>
-      <td><strong>Informatique pour la NSI</strong><br/><em>Parcours Informatique</em></td>
+      <td>Informatique pour la NSI<br/><em>Parcours Informatique</em></td>
       <td>50 heures</td>
     </tr>
   </tbody>
 </table>
+
 
