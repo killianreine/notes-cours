@@ -115,7 +115,6 @@ table.cours-planC a {
 .project-cardTDC {
   padding: 1.8rem;
   border-radius: 1.2rem;
-  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(6px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.4s ease, color 0.4s ease;
@@ -168,7 +167,6 @@ table.cours-planC a {
 
 /* =============== Thème sombre (avec attribut) =============== */
 [saved-theme="dark"] .projects-containerTDC {
-  background: #121212;
   color: #eaeaea;
 }
 [saved-theme="dark"] .project-cardTDC {
