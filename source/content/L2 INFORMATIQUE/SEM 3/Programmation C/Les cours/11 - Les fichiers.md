@@ -44,3 +44,96 @@ Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à s
 2. **Traitement du fichier** : lecture ou écriture des données.
 3. **Fermeture du fichier** : libération des ressources et sauvegarde correcte.
 
+<div class="card">
+  <svg viewBox="0 0 1200 940" role="img" aria-labelledby="title desc">
+    <title id="title">Diagramme : cycle de vie d’un fichier</title>
+    <desc id="desc">Du début du programme à la fermeture du fichier, avec décisions d’erreur et boucle de traitement.</desc>
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+      </marker>
+    </defs>
+    <!-- Start -->
+    <g class="nodeCycle" transform="translate(460,40)">
+      <rect class="terminatorCycle" width="280" height="70" rx="35"></rect>
+      <text class="textCycle" x="140" y="42" text-anchor="middle">Début du programme</text>
+    </g>
+    <!-- Ask open -->
+    <g class="nodeCycle" transform="translate(440,140)">
+      <rect class="boxCycle" width="320" height="90"></rect>
+      <text class="titleCycle" x="160" y="28" text-anchor="middle">Demander l’ouverture du fichier</text>
+      <text class="textCycle" x="160" y="54" text-anchor="middle">Choisir chemin, mode, droits</text>
+    </g>
+    <!-- Decision open -->
+    <g class="nodeCycle" transform="translate(480,270)">
+      <polygon class="decisionCycle" points="160,0 320,70 160,140 0,70"></polygon>
+      <text class="titleCycle" x="160" y="56" text-anchor="middle">Ouverture réussie ?</text>
+      <text class="textCycle" x="160" y="82" text-anchor="middle">(fichier, permissions, etc.)</text>
+    </g>
+    <!-- Error -->
+    <g class="nodeCycle" transform="translate(120,420)">
+      <rect class="dangerCycle" width="300" height="110"></rect>
+      <text class="titleCycle" x="150" y="28" text-anchor="middle">Gérer l’échec d’ouverture</text>
+      <text class="textCycle" x="150" y="54" text-anchor="middle">Vérifier chemin/droits,</text>
+      <text class="textCycle" x="150" y="74" text-anchor="middle">créer le fichier si besoin,</text>
+      <text class="textCycle" x="150" y="94" text-anchor="middle">afficher un message</text>
+    </g>
+    <!-- Processing -->
+    <g class="nodeCycle" transform="translate(780,420)">
+      <rect class="boxCycle" width="300" height="110"></rect>
+      <text class="titleCycle" x="150" y="28" text-anchor="middle">Traiter le fichier</text>
+      <text class="textCycle" x="150" y="54" text-anchor="middle">Lire / Écrire / Mettre à jour</text>
+      <text class="textCycle" x="150" y="74" text-anchor="middle">Accès séquentiel ou direct</text>
+    </g>
+    <!-- Continue decision -->
+    <g class="nodeCycle" transform="translate(780,570)">
+      <polygon class="decisionCycle" points="150,0 300,70 150,140 0,70"></polygon>
+      <text class="titleCycle" x="150" y="56" text-anchor="middle">Fin du traitement ?</text>
+      <text class="textCycle" x="150" y="82" text-anchor="middle">(données épuisées / action finie)</text>
+    </g>
+    <!-- Close -->
+    <g class="nodeCycle" transform="translate(460,720)">
+      <rect class="boxCycle" width="280" height="80"></rect>
+      <text class="titleCycle" x="140" y="32" text-anchor="middle">Fermer le fichier</text>
+      <text class="textCycle" x="140" y="56" text-anchor="middle">Libérer les ressources</text>
+    </g>
+    <!-- End -->
+    <g class="nodeCycle" transform="translate(460,820)">
+      <rect class="terminatorCycle" width="280" height="70" rx="35"></rect>
+      <text class="textCycle" x="140" y="42" text-anchor="middle">Fin du programme</text>
+    </g>
+    <!-- Legend -->
+    <g class="legendCycle" transform="translate(20,20)">
+      <rect class="legendBoxCycle" x="0" y="0" width="320" height="96" rx="12"></rect>
+      <text class="titleCycle" x="16" y="22">Légende</text>
+      <g transform="translate(16,36)">
+        <rect class="boxCycle" width="22" height="14" rx="4"></rect>
+        <text class="textCycle" x="32" y="12">Étape</text>
+      </g>
+      <g transform="translate(100,36)">
+        <rect class="terminatorCycle" width="22" height="14" rx="7"></rect>
+        <text class="textCycle" x="32" y="12">Début/Fin</text>
+      </g>
+      <g transform="translate(206,36)">
+        <polygon class="decisionCycle" points="0,7 11,14 22,7 11,0"></polygon>
+        <text class="textCycle" x="32" y="12">Décision</text>
+      </g>
+    </g>
+    <!-- Connectors -->
+    <path class="arrowCycle" d="M600,110 V140" />
+    <path class="arrowCycle" d="M600,230 V270" />
+    <path class="arrowCycle errorCycle" d="M480,340 H270 V420" />
+    <text class="textCycle" x="360" y="332" font-size="12" text-anchor="middle">Non</text>
+    <path class="arrowCycle okCycle" d="M800,340 V420" />
+    <text class="textCycle" x="740" y="332" font-size="12">Oui</text>
+    <path class="arrowCycle warnCycle" d="M270,530 V600 H600 V230" />
+    <text class="textCycle" x="292" y="548" font-size="12">Corriger et réessayer</text>
+    <path class="arrowCycle" d="M930,530 V570" />
+    <path class="arrowCycle" d="M780,640 H600 V720" />
+    <text class="textCycle" x="764" y="632" font-size="12">Oui, terminé</text>
+    <path class="arrowCycle" d="M1080,640 H1140 V420 H930" />
+    <text class="textCycle" x="1090" y="632" font-size="12">Non, continuer</text>
+    <path class="arrowCycle" d="M600,800 V820" />
+  </svg>
+</div>
+

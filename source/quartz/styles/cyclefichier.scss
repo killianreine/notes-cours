@@ -1,0 +1,107 @@
+/* ================== Thème clair ================== */
+.boxCycle {
+  fill: #e3f2fd;
+  stroke: #1976d2;
+  stroke-width: 2;
+  rx: 8;
+}
+
+.terminatorCycle {
+  fill: #e8f5e9;
+  stroke: #2e7d32;
+  stroke-width: 2;
+}
+
+.decisionCycle {
+  fill: #fffde7;
+  stroke: #f9a825;
+  stroke-width: 2;
+}
+
+.dangerCycle {
+  fill: #ffebee;
+  stroke: #c62828;
+  stroke-width: 2;
+  rx: 8;
+}
+
+.legendBoxCycle {
+  fill: #ffffff;
+  stroke: #374151;
+  stroke-width: 1.5;
+}
+
+.arrowCycle {
+  stroke: #374151;
+  stroke-width: 2;
+  fill: none;
+  marker-end: url(#arrow);
+}
+.arrowCycle.okCycle { stroke: #2e7d32; }
+.arrowCycle.errorCycle { stroke: #c62828; }
+.arrowCycle.warnCycle { stroke: #f9a825; }
+
+.textCycle {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 14px;
+  fill: #1f2937;
+}
+
+.titleCycle {
+  font-weight: bold;
+  fill: #1f2937;
+}
+
+/* ================== Thème sombre ================== */
+[saved-theme="dark"] .boxCycle {
+  fill: #1e293b;
+  stroke: #60a5fa;
+  stroke-width: 2;
+  rx: 8;
+}
+
+[saved-theme="dark"] .terminatorCycle {
+  fill: #1e3a2a;
+  stroke: #4ade80;
+  stroke-width: 2;
+}
+
+[saved-theme="dark"] .decisionCycle {
+  fill: #3f3f1f;
+  stroke: #facc15;
+  stroke-width: 2;
+}
+
+[saved-theme="dark"] .dangerCycle {
+  fill: #3b1a1a;
+  stroke: #f87171;
+  stroke-width: 2;
+  rx: 8;
+}
+
+[saved-theme="dark"] .legendBoxCycle {
+  fill: #0f172a;
+  stroke: #94a3b8;
+  stroke-width: 1.5;
+}
+
+[saved-theme="dark"] .arrowCycle {
+  stroke: #94a3b8;
+  stroke-width: 2;
+  fill: none;
+  marker-end: url(#arrow);
+}
+[saved-theme="dark"] .arrowCycle.okCycle { stroke: #4ade80; }
+[saved-theme="dark"] .arrowCycle.errorCycle { stroke: #f87171; }
+[saved-theme="dark"] .arrowCycle.warnCycle { stroke: #facc15; }
+
+[saved-theme="dark"] .textCycle {
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 14px;
+  fill: #e2e8f0;
+}
+
+[saved-theme="dark"] .titleCycle {
+  font-weight: bold;
+  fill: #e2e8f0;
+}
