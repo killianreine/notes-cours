@@ -547,4 +547,4 @@ int main() {
 ```
 
 >[!warning]  
-`fwrite` écrit **les octets tels quels** dans le fichier. Pour les fichiers texte, il vaut mieux utiliser `fprintf` ou `fputs`.
+>`fwrite` écrit **les octets tels quels** dans le fichier. Pour les fichiers texte, il vaut mieux utiliser `fprintf` ou `fputs`.
