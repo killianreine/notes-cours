@@ -1,85 +1,102 @@
-/* Tableau néon futuriste - Ambian */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
+/* Styles communs */
 table.cours-planC {
   width: 100%;
-  border-collapse: collapse;
-  font-family: 'Orbitron', sans-serif; /* police techno */
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Orbitron', sans-serif;
   margin: 30px 0;
   border-radius: 10px;
   overflow: hidden;
-  background: #0d0d0d; /* base sombre */
-  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
-  animation: glow 2s infinite alternate;
+  transition: all 0.3s ease;
 }
 
-@keyframes glow {
-  0% { box-shadow: 0 0 15px #0ff, 0 0 30px #0ff inset; }
-  100% { box-shadow: 0 0 30px #0ff, 0 0 60px #0ff inset; }
-}
-
+/* Styles des cellules */
 table.cours-planC th,
 table.cours-planC td {
-  padding: 15px 25px;
+  padding: 14px 20px;
   text-align: left;
-  border: 1px solid rgba(0, 255, 255, 0.5);
-  color: #0ff;
-  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid;
+  transition: all 0.3s ease;
 }
 
-table.cours-planC tr:nth-child(even) td {
-  background-color: rgba(0, 255, 255, 0.05);
-}
-
-table.cours-planC tr:hover td {
-  background-color: rgba(0, 255, 255, 0.2);
-  box-shadow: 0 0 10px #0ff;
-  transform: scale(1.02);
-}
-
+/* Liens */
 table.cours-planC a {
-  color: #0ff;
   text-decoration: none;
-  transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
 }
 
-table.cours-planC a:hover {
-  text-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+/* --- MODE CLAIR --- */
+@media (prefers-color-scheme: light) {
+  table.cours-planC {
+    background: #f5f7fa; /* fond clair doux */
+    border: 1px solid #ccc;
+  }
+
+  table.cours-planC th {
+    background: linear-gradient(90deg, #4c7faf, #6aa0d6);
+    color: #fff;
+    font-weight: 700;
+    border-bottom-color: #3a5f8f;
+  }
+
+  table.cours-planC td {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-bottom-color: #ddd;
+  }
+
+  table.cours-planC tr:nth-child(even) td {
+    background-color: #eaf0f6; /* alternance subtile */
+  }
+
+  table.cours-planC tr:hover td {
+    background-color: #d0e2f5;
+    transform: scale(1.02);
+  }
+
+  table.cours-planC a {
+    color: #007acc;
+  }
+
+  table.cours-planC a:hover {
+    text-decoration: underline;
+  }
 }
 
-/* En-tête néon */
-table.cours-planC th {
-  background-color: rgba(0, 255, 255, 0.1);
-  color: #0ff;
-  text-shadow: 0 0 5px #0ff;
-  font-size: 1.1em;
-}
-
-/* Mode sombre basé sur [saved-theme="dark"] */
+/* --- MODE SOMBRE --- */
 [saved-theme="dark"] table.cours-planC {
-  background: #050505;
-  box-shadow: 0 0 25px #ff00ff, 0 0 50px #ff00ff inset;
+  background: #1e1e2a;
+  border: 1px solid #444;
 }
 
-[saved-theme="dark"] table.cours-planC th,
+[saved-theme="dark"] table.cours-planC th {
+  background: linear-gradient(90deg, #6f42c1, #9b59b6);
+  color: #fff;
+  font-weight: 700;
+  border-bottom-color: #5a2d91;
+}
+
 [saved-theme="dark"] table.cours-planC td {
-  border-color: rgba(255, 0, 255, 0.5);
-  color: #ff00ff;
+  background-color: #2a2a3c;
+  color: #e0e0e0;
+  border-bottom-color: #3c3c52;
 }
 
 [saved-theme="dark"] table.cours-planC tr:nth-child(even) td {
-  background-color: rgba(255, 0, 255, 0.05);
+  background-color: #323248;
 }
 
 [saved-theme="dark"] table.cours-planC tr:hover td {
-  background-color: rgba(255, 0, 255, 0.2);
-  box-shadow: 0 0 15px #ff00ff;
+  background-color: #3c3c5a;
   transform: scale(1.02);
 }
 
 [saved-theme="dark"] table.cours-planC a {
-  color: #ff00ff;
+  color: #9b59b6;
 }
 
 [saved-theme="dark"] table.cours-planC a:hover {
-  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  text-decoration: underline;
 }
