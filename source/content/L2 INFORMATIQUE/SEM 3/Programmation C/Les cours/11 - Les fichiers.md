@@ -149,7 +149,7 @@ Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à s
 </svg>
 </div>
 
-# Les fichiers
+# Les fichiers texte
 En C, manipuler des fichiers permet de **lire et écrire des données sur le disque** au lieu de seulement utiliser la mémoire vive. Les fonctions principales se trouvent dans la bibliothèque standard `<stdio.h>`.
 
 ## Ouvrir un fichier
@@ -282,6 +282,11 @@ fprintf("Bonjour le monde", fichier);
 ```
 On écrit *"Bonjour le monde"* **sans retour à la ligne** dans le fichier.
 
+>[!info] Remarque
+>La fonction `fputc` permet d'écrire un seul caractère. 
+>```c
+>int fputc(int c, FILE *stream);
+>```
 ## Lecture dans un fichier
 Pour lire des données dans un fichier, il existe plusieurs méthodes que nous allons étudier.
 
@@ -344,6 +349,7 @@ La fonction `fgets` permet de récupérer une chaîne de caractères à partir d
 
 Prototype de la fonction
 ```c
+#include <stdio.h>
 char *fgets(char *var, int t, FILE *stream);
 ```
 - `var` la variable qui va permettre de stocker la chaîne de caractères lue.
@@ -364,3 +370,53 @@ printf("%s", ligne);
 ```
 
 ### La fonction `fgetc`
+La fonction `fgetc` elle permet de lire **un caractère** depuis un flux *(fichier par ex)*.
+
+Prototype de la fonction `fgetc`
+```c
+#include <stdio.h>
+`int fgetc(FILE *stream);`
+```
+- **`stream`** : le flux à partir duquel lire *(fichier ouvert avec `fopen`, `stdin`, etc.)*.
+- Retourne le **caractère lu** *(sous forme de `int`)*, ou `EOF` si la fin du fichier est atteinte ou s’il y a une erreur.
+
+> [!info] Remarque
+> On utilise `int` pour pouvoir représenter tous les caractères et `EOF` ($= -1$).
+
+<u>Exemple :</u>  
+On a un fichier `test.txt` qui contient bonjour, on le lit et on affiche un caractère par un caractère.
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *f = fopen("test.txt", "r"); 
+    if (f == NULL) {
+        printf("Erreur lors de l'ouverture du fichier\n");
+        return 1;
+    }
+
+    int c;
+    while ((c = fgetc(f)) != EOF) { // Lire le fichier jusqu'à la fin
+        putchar(c); // Afficher le caractère
+    }
+
+    fclose(f); // Fermeture du fichier
+    return 0;
+}
+```
+```
+Bonjour
+```
+
+## Fermeture du fichier
+La fonction `fclose` est essentielle en C pour **fermer un flux ouvert** *(fichier)*. Chaque fois que tu ouvres un fichier avec `fopen`, il faut le fermer avec `fclose` pour **libérer les ressources** et s’assurer que tout le contenu est bien écrit.
+
+Prototype de la fonction
+```c
+#include <stdio.h>
+int fclose(FILE *stream);
+```
+- `stream` le flux/fichier à fermer (retourné par `fopen`).
+- Retourne `0` si la fermeture s’est bien passée, `EOF` en cas d’erreur *(i.e. $-1$).
+
+# Les fichiers binaires
