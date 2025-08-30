@@ -56,7 +56,7 @@
   <tbody>
     <tr>
       <td>01</td>
-      <td><a href="TD1">Séance TD1</a></td>
+      <td><a href="Programmation C TD1">Séance TD1</a></td>
       <td>Jeudi 18 septembre 2025</td>
     </tr>
   </tbody>
