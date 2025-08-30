@@ -45,7 +45,7 @@ Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à s
 3. **Fermeture du fichier** : libération des ressources et sauvegarde correcte.
 
 <div class="card">
-  <svg viewBox="0 0 1000 940" role="img" aria-labelledby="title desc">
+  <svg viewBox="0 0 1200 940" role="img" aria-labelledby="title desc">
   <title id="title">Diagramme : cycle de vie d'un fichier</title>
   <desc id="desc">Du début du programme à la fermeture du fichier, avec décisions d'erreur et boucle de traitement.</desc>
   <defs>
@@ -134,8 +134,8 @@ Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à s
   <path class="arrowCycle okCycle" d="M800,340 L930,340 L930,420" marker-end="url(#arrow)"/>
   <text class="textCycle" x="865" y="332" font-size="14" text-anchor="middle">Oui</text>
   <!-- Retry loop -->
-  <path class="arrowCycle warnCycle" d="M270,420 L270,380 L80,380 L80,185 L440,185" marker-end="url(#arrow)"/>
-  <text class="textCycle" x="175" y="372" font-size="12">Corriger et réessayer</text>
+  <path class="arrowCycle warnCycle" d="M120, 480 L50,480 L50,380 L50,185 L440,185" marker-end="url(#arrow)"/>
+  <text class="textCycle" x="75" y="180" font-size="12">Corriger et réessayer</text>
   <!-- Processing to decision -->
   <path class="arrowCycle" d="M930,530 L930,570" marker-end="url(#arrow)"/>
   <!-- End processing -->
@@ -143,7 +143,7 @@ Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à s
   <text class="textCycle" x="690" y="632" font-size="14" text-anchor="middle">Oui, terminé</text>
   <!-- Continue processing loop -->
   <path class="arrowCycle" d="M1080,640 L1150,640 L1150,475 L1080,475" marker-end="url(#arrow)"/>
-  <text class="textCycle" x="1120" y="632" font-size="14" text-anchor="middle">Non, continuer</text>
+  <text class="textCycle" x="1120" y="660" font-size="14" text-anchor="middle">Non, continuer</text>
   <!-- Final arrow -->
   <path class="arrowCycle" d="M600,800 L600,820" marker-end="url(#arrow)"/>
 </svg>
