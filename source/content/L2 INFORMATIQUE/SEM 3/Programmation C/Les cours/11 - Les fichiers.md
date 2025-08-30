@@ -22,3 +22,25 @@ Les fichiers permettraient alors de
 - Une application de gestion sauvegarde vos données dans un fichier `.dat` ou `.csv`.
 
 ## Types d'accès aux fichiers
+Avant de commencer à manipuler des fichiers, faut-il déjà savoir comprendre comment on peut y accéder...
+- **Accès séquentiel**  
+  On lit/écrit les données les unes après les autres dans l'ordre. On peut voir ceci comme lire un roman page par page. Ce genre d'accès est très utile pour les fichiers texte.
+- **Accès direct (ou aléatoire)**  
+  On peut accéder à une position donnée dans le fichier. Bien plus utile pour les fichiers binaires. Par exemple ouvrir une vidéo et avancer à une certaine durée.
+
+## Les fichiers et le système d'exploitation
+Le système d'exploitation gère les fichiers grâce aux informations suivantes :
+- Le **nom** du fichier
+- Le **chemin** d'accès du fichier
+- Le **type** de fichier *(texte, binaire, exécutable, ...)*
+- Les **droits d'accès** *(lecture, écriture, exécution)*
+
+>[!info] Remarque
+>En langage C, pour travailler avec un fichier, on ne passe pas directement par son nom. On utilise ce qu'on appelle un **==pointeur de fichier==** qui permet de faire le lien entre le programme C et le fichier fourni par le système d'exploitation.
+
+## Cycle de vie d'un fichier en C
+Lorsqu’on veut utiliser un fichier, il y a plusieurs étapes **logiques** à suivre :
+1. **Ouverture du fichier** : le programme demande au système d’exploitation de préparer le fichier pour lecture/écriture.
+2. **Traitement du fichier** : lecture ou écriture des données.
+3. **Fermeture du fichier** : libération des ressources et sauvegarde correcte.
+
