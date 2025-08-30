@@ -55,6 +55,27 @@ Concrètement, les TDs permettront aux étudiants de :
     - Préparation des tests.
 - **Encourager le travail collaboratif** :  
     Les TDs sont un moment où les étudiants discutent entre eux et avec l’enseignant de différentes solutions possibles → ce qui les prépare au travail en équipe.
+
+# Le plan des séances de TDs
+
+<div>
+<table class="cours-planC">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Cours</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td><a href="TD1">Séance TD1</a></td>
+      <td>Jeudi 18 septembre 2025</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 ## Liste des projets
 *Vous pouvez évidemment choisir votre propre sujet...*
 ### 1. 🏫 **Système de gestion d’université (mini-ENT)**

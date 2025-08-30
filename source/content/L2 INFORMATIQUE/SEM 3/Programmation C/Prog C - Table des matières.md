@@ -212,3 +212,24 @@
 		- Passage par adresse
 		- Retourner une structure
 11. **Les fichiers** [[11 - Les fichiers]]
+	- Introduction
+		- Qu'est-ce qu'un fichier en informatique ?
+		- Pourquoi utiliser des fichiers
+		- Types d'accès aux fichiers
+		- Les fichiers et le système d'exploitation
+		- Cycle de vie d'un fichier en C
+	- Les fichiers textes
+		- Ouvrir un fichier
+		- Écrire dans un fichier
+			- La fonction `fprintf`
+			- La fonction `fputs`
+		- Lecture dans un fichier
+			- La fonction `fscanf`
+			- La fonction `fgets`
+			- La fonction `fgetc`
+		- Fermeture d'un fichier
+	- Les fichiers binaires
+		- Mode d'ouverture
+		- Lecture
+		- Écriture
+12. **Tests unitaires** [[12 - Tests unitaires]]
