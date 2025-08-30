@@ -175,14 +175,47 @@ if(!fichier) {
 
 Les différents modes d'ouverture d'un fichier :
 
-| Mode   | Description         | Précision                                                          |
-| ------ | ------------------- | ------------------------------------------------------------------ |
-| `"r"`  | Lecture             | Le fichier **doit exister**                                        |
-| `"w"`  | Écriture            | Créer le fichier si il n'existe pas ou écrases le contenu existant |
-| `"a"`  | Ajout               | Ajoute à la fin du fichier                                         |
-| `"r+"` | Lecture et écriture |                                                                    |
-| `"w+"` | Lecture et écriture | Écrase le fichier                                                  |
-| `"a+"` | Lecture et ajout    |                                                                    |
+<table class="tableFichierFormat">
+  <thead class="theadFichierFormat">
+    <tr class="trFichierFormat">
+      <th class="thFichierFormat">Mode</th>
+      <th class="thFichierFormat">Description</th>
+      <th class="thFichierFormat">Précision</th>
+    </tr>
+  </thead>
+  <tbody class="tbodyFichierFormat">
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"r"</td>
+      <td class="tdFichierFormat">Lecture</td>
+      <td class="tdFichierFormat">Le fichier <strong>doit exister</strong></td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"w"</td>
+      <td class="tdFichierFormat">Écriture</td>
+      <td class="tdFichierFormat">Créer le fichier si il n'existe pas ou écrase le contenu existant</td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"a"</td>
+      <td class="tdFichierFormat">Ajout</td>
+      <td class="tdFichierFormat">Ajoute à la fin du fichier</td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"r+"</td>
+      <td class="tdFichierFormat">Lecture et écriture</td>
+      <td class="tdFichierFormat"></td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"w+"</td>
+      <td class="tdFichierFormat">Lecture et écriture</td>
+      <td class="tdFichierFormat">Écrase le fichier</td>
+    </tr>
+    <tr class="trFichierFormat">
+      <td class="tdFichierFormat">"a+"</td>
+      <td class="tdFichierFormat">Lecture et ajout</td>
+      <td class="tdFichierFormat"></td>
+    </tr>
+  </tbody>
+</table>
 
 <u>Exemple :</u>
 ```c

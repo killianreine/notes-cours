@@ -1,0 +1,40 @@
+.tableFichierFormat {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.thFichierFormat, .tdFichierFormat {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.thFichierFormat {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.trFichierFormat:nth-child(even) .tdFichierFormat {
+  background-color: #fafafa;
+}
+
+/* Mode sombre */
+[saved-theme="dark"] .tableFichierFormat {
+  border-color: #555;
+}
+
+[saved-theme="dark"] .thFichierFormat {
+  background-color: #333;
+  color: #eee;
+}
+
+[saved-theme="dark"] .tdFichierFormat {
+  border-color: #555;
+  background-color: #222;
+  color: #ddd;
+}
+
+[saved-theme="dark"] .trFichierFormat:nth-child(even) .tdFichierFormat {
+  background-color: #2a2a2a;
+}

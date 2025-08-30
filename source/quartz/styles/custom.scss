@@ -11,6 +11,7 @@
 @use "./compiler.scss";
 @use "./tabCoursProgC.scss";
 @use "./cyclefichier.scss";
+@use "./tableFichierFormat.scss";
 
 @media (min-width: 1024px) {
     .page, .content, .main, .markdown-body {
