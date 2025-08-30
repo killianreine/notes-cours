@@ -420,3 +420,49 @@ int fclose(FILE *stream);
 - Retourne `0` si la fermeture s’est bien passée, `EOF` en cas d’erreur *(i.e. $-1$).
 
 # Les fichiers binaires
+## Lecture
+Pour lire dans une fichier binaire on utilise la fonction `fread` qui permet de lire des blocs de données depuis un fichier ouvert. Elle est souvent utilisée pour lire des données binaires, mais peut aussi être utilisée pour lire des structures.
+
+Prototype de la fonction
+```c
+#include <stdio.h>
+size_t fread(void *ptr, size_t size, size_t nbelem, FILE *stream);
+```
+- Elle prend en paramètres
+	- `ptr` : Pointeur vers la zone mémoire où les données lues seront stockées.
+	- `size` : Taille, en octets, de chaque élément à lire.
+	- `nbelem` : Nombre d’éléments à lire.
+	- `stream` : Pointeur vers le fichier ouvert en lecture *(ou lecture/écriture)*.
+- Elle renvoie le nombre d'éléments lu qui peut être inférieur à `nbelem` si la fin du fichier est atteinte `FEOF`, ou si il y a une erreur.
+
+<u>Exemple :</u>  
+On lit 5 entiers que l'on stocke dans un tableau.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *f = fopen("exemple.bin", "rb"); // ouverture en mode binaire lecture
+    if (!f) {
+        perror("Erreur ouverture fichier");
+        return 1;
+    }
+
+    int tab[5]; // lire 5 entiers
+    size_t n = fread(tab, sizeof(int), 5, f);
+
+    printf("Nombre d'éléments lus : %zu\n", n);
+
+    for (size_t i = 0; i < n; i++) {
+        printf("tab[%zu] = %d\n", i, tab[i]);
+    }
+
+    fclose(f);
+    return 0;
+}
+```
+
+>[!warning]
+>`fread` ne met **pas** de caractère nul à la fin si vous lisez du texte. Pour les chaînes de caractères, il faut gérer la terminaison soi-même.
+
+## Écrire
