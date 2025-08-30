@@ -183,7 +183,7 @@ Les différents modes d'ouverture d'un fichier :
 | `"r+"` | Lecture et écriture |                                                                    |
 | `"w+"` | Lecture et écriture | Écrase le fichier                                                  |
 | `"a+"` | Lecture et ajout    |                                                                    |
-<u>Exemple :</u>  
+<u>Exemple :</u>
 ```c
 // Ouverture d'un fichier en écriture
 FILE* fichier = fopen("fichier.txt", "w");
@@ -192,3 +192,5 @@ if(!fichier){
 	return 1;
 }
 ```
+
+## Écrire dans un fichier
