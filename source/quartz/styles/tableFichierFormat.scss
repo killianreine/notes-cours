@@ -1,40 +1,99 @@
+/* Styles communs */
 .tableFichierFormat {
   width: 90%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.thFichierFormat, .tdFichierFormat {
-  border: 1px solid #ccc;
-  padding: 8px 12px;
+.thFichierFormat,
+.tdFichierFormat {
+  padding: 10px 16px;
   text-align: left;
+  border-bottom: 1px solid;
+  transition: all 0.3s ease;
 }
 
-.thFichierFormat {
-  background-color: #f2f2f2;
-  font-weight: bold;
+/* Liens dans le tableau */
+.tableFichierFormat a {
+  text-decoration: none;
+  transition: text-shadow 0.3s, color 0.3s;
 }
 
-.trFichierFormat:nth-child(even) .tdFichierFormat {
-  background-color: #fafafa;
+/* --- MODE CLAIR --- */
+@media (prefers-color-scheme: light) {
+  .tableFichierFormat {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+
+  .thFichierFormat {
+    background: linear-gradient(90deg, #4c7faf, #6aa0d6);
+    color: #fff;
+    font-weight: 700;
+    border-bottom-color: #3a5f8f;
+  }
+
+  .tdFichierFormat {
+    background-color: #fff;
+    color: #1a1a1a;
+    border-bottom-color: #ddd;
+  }
+
+  .trFichierFormat:nth-child(even) .tdFichierFormat {
+    background-color: #eaf0f6;
+  }
+
+  .trFichierFormat:hover .tdFichierFormat {
+    background-color: #d0e2f5;
+    transform: scale(1.02);
+  }
+
+  .tableFichierFormat a {
+    color: #007acc;
+  }
+
+  .tableFichierFormat a:hover {
+    text-decoration: underline;
+  }
 }
 
-/* Mode sombre */
+/* --- MODE SOMBRE --- */
 [saved-theme="dark"] .tableFichierFormat {
-  border-color: #555;
+  background: #1e1e2a;
+  border: 1px solid #444;
 }
 
 [saved-theme="dark"] .thFichierFormat {
-  background-color: #333;
-  color: #eee;
+  background: linear-gradient(90deg, #6f42c1, #9b59b6);
+  color: #fff;
+  font-weight: 700;
+  border-bottom-color: #5a2d91;
 }
 
 [saved-theme="dark"] .tdFichierFormat {
-  border-color: #555;
-  background-color: #222;
-  color: #ddd;
+  background-color: #2a2a3c;
+  color: #e0e0e0;
+  border-bottom-color: #3c3c52;
 }
 
 [saved-theme="dark"] .trFichierFormat:nth-child(even) .tdFichierFormat {
-  background-color: #2a2a2a;
+  background-color: #323248;
+}
+
+[saved-theme="dark"] .trFichierFormat:hover .tdFichierFormat {
+  background-color: #3c3c5a;
+  transform: scale(1.02);
+}
+
+[saved-theme="dark"] .tableFichierFormat a {
+  color: #9b59b6;
+}
+
+[saved-theme="dark"] .tableFichierFormat a:hover {
+  text-decoration: underline;
 }
