@@ -12,6 +12,7 @@
 @use "./tabCoursProgC.scss";
 @use "./cyclefichier.scss";
 @use "./tableFichierFormat.scss";
+@use "./indexGlobal.scss";
 
 @media (min-width: 1024px) {
     .page, .content, .main, .markdown-body {

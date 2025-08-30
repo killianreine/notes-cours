@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Conteneur principal */
+#notes-container {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Sections */
+.notes-section {
+  margin-bottom: 40px;
+  padding: 25px 20px;
+  border-radius: 14px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  border-left: 6px solid transparent;
+}
+
+/* Survol sections */
+.notes-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Titres */
+.notes-title {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.notes-subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Texte et liste */
+.notes-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.notes-list {
+  list-style-type: disc;
+  margin-left: 25px;
+}
+
+/* Liens */
+.notes-link {
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.notes-link:hover {
+  color: #005f99;
+  text-shadow: 0 0 6px #007acc;
+}
+
+/* Quote */
+.notes-quote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #007acc;
+  padding-left: 14px;
+  margin: 15px 0;
+  background-color: rgba(0, 122, 204, 0.05);
+  border-radius: 6px;
+}
+
+/* Divider */
+.notes-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 22px 0;
+}
+
+/* --- Mode clair par défaut --- */
+@media (prefers-color-scheme: light) {
+  .notes-section {
+    background-color: #fdfdfd;
+    border-left-color: #007acc;
+  }
+}
+
+/* --- Mode sombre --- */
+[saved-theme="dark"] #notes-container {
+  color: #e0e0e0;
+}
+
+[saved-theme="dark"] .notes-section {
+  background-color: #1b1b2f;
+  border-left-color: #9b59b6;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+[saved-theme="dark"] .notes-title {
+  color: #f0f0f0;
+}
+
+[saved-theme="dark"] .notes-subtitle {
+  color: #d8b9ff;
+}
+
+[saved-theme="dark"] .notes-text {
+  color: #ccc;
+}
+
+[saved-theme="dark"] .notes-quote {
+  color: #aaa;
+  border-left-color: #9b59b6;
+  background-color: rgba(155, 89, 182, 0.05);
+}
+
+[saved-theme="dark"] .notes-link {
+  color: #9b59b6;
+}
+
+[saved-theme="dark"] .notes-link:hover {
+  color: #b583ff;
+  text-shadow: 0 0 6px #b583ff;
+}

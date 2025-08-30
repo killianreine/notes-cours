@@ -4,7 +4,6 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel, destiné au
 
 ## 🎯 Objectifs
 - Comprendre le cycle de vie d’un logiciel
-
 - Apprendre les bonnes pratiques de conception et de développement
 - Maîtriser les méthodes de gestion de projet logiciel
 - Développer un code propre, maintenable et évolutif
