@@ -183,6 +183,7 @@ Les différents modes d'ouverture d'un fichier :
 | `"r+"` | Lecture et écriture |                                                                    |
 | `"w+"` | Lecture et écriture | Écrase le fichier                                                  |
 | `"a+"` | Lecture et ajout    |                                                                    |
+
 <u>Exemple :</u>
 ```c
 // Ouverture d'un fichier en écriture
@@ -194,3 +195,34 @@ if(!fichier){
 ```
 
 ## Écrire dans un fichier
+Pour écrire dans un fichier en programmation C il existe deux fonctions `fprintf` ou alors `fputs`. Regardons le comportement des deux fonctions.
+### La fonction `fprintf`
+La fonction `fprintf`est une fonction utilisée pour écrire des données formatées dans un flux, typiquement un fichier.
+
+Prototype de la fonction
+```c
+int fprintf(FILE* stream, char* chaine, ...);
+```
+- Elle prend en paramètres 
+	- `stream` le flux dans lequel on souhaite écrire : fichier ouvert avec `fopen` ou même `stdout` pour afficher à l'écran.
+	- `chaine` chaîne de caractères à afficher, avec du formatage si il faut introduire des variables, comme avec `printf`.
+	- `...` c'est le nombre d'arguments variables selon si vous avez utilisé du formatage.
+- Elle retourne un entier, qui est **le nombre de caractères écrits**, si il y a une erreur, la fonction renvoie un nombre négatif !
+
+<u>Exemple :</u>  
+```c
+// On a ouvert le fichier
+fprintf(fichier, "Bonjour le monde");
+```
+On écrit *"Bonjour le monde"* dans le fichier pointé par le pointeur `fichier`.
+
+>[!info] Remarque
+>Les deux syntaxes suivantes sont strictement équivalentes : 
+>```c
+>printf("Bonjour le monde");
+>```
+>```c
+>fprintf(stdout, "Bonjour le monde");
+>```
+
+### La fonction `fputs`
