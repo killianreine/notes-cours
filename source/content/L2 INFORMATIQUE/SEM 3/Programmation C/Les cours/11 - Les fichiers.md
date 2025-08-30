@@ -155,6 +155,7 @@ En C, manipuler des fichiers permet de **lire et écrire des données sur le dis
 ## Ouvrir un fichier
 Pour ouvrir un fichier en langage C on utilise la fonction `fopen` dont le prototype est le suivant : 
 ```c
+#include <stdio.h>
 FILE* fopen(const char* nomFichier, const char* mode);
 ```
 - Elle prend en paramètres
@@ -234,6 +235,7 @@ La fonction `fprintf`est une fonction utilisée pour écrire des données format
 
 Prototype de la fonction
 ```c
+#include <stdio.h>
 int fprintf(FILE* stream, char* chaine, ...);
 ```
 - Elle prend en paramètres 
@@ -263,6 +265,7 @@ La fonction `fputs` permet d'écrire une chaîne de caractères **sans format** 
 
 Prototype de la fonction
 ```c
+#include <stdio.h>
 int fputs(const char* chaine, FILE* stream);
 ```
 - Elle prend en paramètres 
@@ -280,3 +283,84 @@ fprintf("Bonjour le monde", fichier);
 On écrit *"Bonjour le monde"* **sans retour à la ligne** dans le fichier.
 
 ## Lecture dans un fichier
+Pour lire des données dans un fichier, il existe plusieurs méthodes que nous allons étudier.
+
+### La fonction `fscanf`
+La fonction `fscanf` est utilisée pour **lire des données formatées depuis un flux** *(souvent un fichier)*. C’est un peu l’inverse de `fprintf` en gros.
+
+Le prototype de la fonction est donnée par 
+```c
+#include <stdio.h>
+int fscanf(FILE *stream, const char *format, ...);
+```
+- Elle prend en paramètres
+	- Le flux dans lequel on souhaite lire
+	- Le format de la ou des informations lues
+- Elle renvoie le nombre d'éléments lus **correctement**, ou elle renvoie `EOF` *End Of File* si la fin du fichier est atteinte avant toute la lecture.
+
+<u>Exemple :</u>  
+On souhaite lire des données `nom age taille` dans cet ordre tant que le fichier existe. Sachant que le fichier ressemble à :
+```txt
+Alice 25 1.68
+Bob 30 1.75
+```
+
+```c
+#include <stdio.h>
+
+int main() {
+    FILE *f = fopen("data.txt", "r"); // ouvrir le fichier en lecture
+    if (f == NULL) {
+        printf("Erreur d'ouverture du fichier\n");
+        return 1;
+    }
+
+    char name[50];
+    int age;
+    float height;
+
+    while (fscanf(f, "%s %d %f", name, &age, &height) == 3) {
+        printf("Nom: %s, Age: %d, Taille: %.2f\n", name, age, height);
+    }
+
+    fclose(f);
+    return 0;
+}
+```
+```
+Nom: Alice, Age: 25, Taille: 1.68
+Nom: Bob, Age: 30, Taille: 1.75
+```
+
+>[!info] Remarques
+>- Comme `scanf`, `fscanf` **lit en fonction des espaces** (espace, tabulation, retour à la ligne).
+> - Toujours utiliser l’**adresse des variables** (`&age`, `&height`) pour stocker les valeurs.
+> - Retourne **le nombre d’éléments lus**, utile pour vérifier la lecture correcte.
+> - Pour lire une **ligne entière** sans formatage, `fgets` est souvent préférable.
+
+### La fonction `fgets`
+*Copie de la partie de cours [[07 - Chaînes de caractères#La fonction `fgets`]]*  
+La fonction `fgets` permet de récupérer une chaîne de caractères à partir d'un flux (le plus souvent, `stdin`). 
+
+Prototype de la fonction
+```c
+char *fgets(char *var, int t, FILE *stream);
+```
+- `var` la variable qui va permettre de stocker la chaîne de caractères lue.
+- `t` la taille de la chaîne à stocker.
+- `stream` le flux sur lequel on récupère la chaîne (`stdin`, fichier, ...)
+
+Il faut savoir que la fonction `fgets` arrête la lecture lorsqu'elle rencontre `\n`, la fin du flux, ou alors après `t-1` caractères lus (`\0` le dernier caractère).
+
+>[!warning]
+>La fonction `fgets` inclus `\n` dans la chaîne lue si celle ci est rencontrée avant la limite.
+
+<u>Exemple :</u>  
+```c
+// Lire une ligne dans le fichier
+char ligne[100];
+fgets(ligne, 100, fichier); // lit une ligne
+printf("%s", ligne);
+```
+
+### La fonction `fgetc`
