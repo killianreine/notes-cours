@@ -1,63 +1,49 @@
-# Présentation
-## Le concept des TDs
-Le tutorat de _Programmation C_ amène aussi son lot de nouveautés : **les séances de Travaux Dirigés (TD)**.  
-Contrairement aux cours magistraux (CM) et aux travaux pratiques (TP) habituels, ces TD offrent une approche différente, plus souple et orientée vers la mise en pratique concrète des connaissances.
-
-Plutôt que de suivre une série d’exercices indépendants, vous allez devoir choisir **un projet de grande ampleur** qui vous accompagnera tout au long du semestre. Ce projet constituera le fil rouge de vos séances, et il devra permettre de mobiliser et de consolider l’ensemble des notions abordées en cours magistral : structures de données, gestion mémoire, pointeurs, modularité, ainsi que les bonnes pratiques de programmation et de conception.
-
-L’objectif est double :
-- **Approfondir vos compétences techniques**, en confrontant la théorie à une application réaliste et complète.
-- **Développer une autonomie et un esprit d’initiative**, en vous plaçant dans une démarche similaire à celle que vous rencontrerez dans un cadre professionnel ou de recherche.
-
-Vous serez accompagnés tout au long du processus, mais le choix du projet est décisif : il doit être à la fois ambitieux et réalisable dans le temps imparti. Nous vous guiderons pour calibrer votre idée, définir des objectifs intermédiaires et mettre en place un plan de travail progressif.
-
-En fin de semestre, **une présentation**, **une soutenance** ainsi qu'**une démo** viendront clôturer cette aventure, vous offrant l’occasion de valoriser vos acquis, de démontrer vos compétences et de partager vos réalisations avec vos camarades.
-
-## Les séances de TDs
-### 🎯 Le rôle des TDs dans le projet
-
-Les **cours magistraux (CM)** donnent la théorie : notions du langage C, structures de contrôle, pointeurs, fichiers, etc.  
-Les **TDs** (Travaux Dirigés) servent d’**espace de réflexion et de conception** avant de passer à la pratique en TP.
-
-Concrètement, les TDs permettront aux étudiants de :
-1. **Analyser le problème à résoudre**
-    - Lire un énoncé de projet (jeu, gestionnaire, simulateur).
-    - Identifier les fonctionnalités attendues (entrées/sorties, calculs, organisation).
-2. **Découper le projet en modules / fonctionnalités**
-    - Quels sous-problèmes composent la solution ?
-    - Exemple : dans un jeu → saisie du joueur, vérification de victoire, sauvegarde des scores.
-3. **Définir les fonctions nécessaires**
-    - Quelles seront leurs **signatures** (arguments, type de retour) ?
-    - Comment organiser le code pour éviter la duplication ?
-4. **Choisir les structures de données adaptées**
-    - Variables simples, tableaux, chaînes, structures, pointeurs.
-    - Exemple : représenter un étudiant avec une `struct Etudiant`.
-5. **Élaborer des algorithmes**
-    - Décrire en pseudo-code ou schéma l’enchaînement logique des opérations.
-    - Penser aux cas particuliers (entrées invalides, dépassement de tableau…).
-6. **Anticiper les évolutions et extensions**
-    - Comment rendre le projet évolutif ?
-    - Exemple : un tableau statique pourra-t-il être remplacé plus tard par une liste dynamique ?
-7. **Préparer les tests**
-    - Définir des cas de test avant même de coder.
-    - Exemple : que se passe-t-il si on saisit un score négatif ?
-
-### 🚀 Pourquoi les TDs sont fondamentaux ?
-- **Éviter le “codage à l’aveugle”** :  
-    Les étudiants qui se lancent directement en TP sans avoir réfléchi aux structures et fonctions écrivent souvent un code confus, difficile à maintenir.
-- **Structurer la pensée algorithmique** :  
-    Les TDs les entraînent à raisonner comme des informaticiens : analyser, découper, modéliser.
-- **Faciliter le passage en TP** :  
-    Arriver en TP avec un plan clair (fonctions, structures, algorithmes) permet de se concentrer sur la syntaxe du C et la mise en œuvre technique.
-- **Former aux bonnes pratiques de développement** :
-    - Réflexion avant implémentation.
-    - Conception modulaire.
-    - Préparation des tests.
-- **Encourager le travail collaboratif** :  
-    Les TDs sont un moment où les étudiants discutent entre eux et avec l’enseignant de différentes solutions possibles → ce qui les prépare au travail en équipe.
-
-# Le plan des séances de TDs
-
+<div>
+<div class="presentationTD">
+  <h1 class="titleTD">Présentation</h1>
+  <section class="conceptTD">
+    <h2 class="subtitleTD">Le concept des TDs</h2>
+    <p>Le tutorat de <em>Programmation C</em> amène aussi son lot de nouveautés :
+      <strong>les séances de Travaux Dirigés (TD)</strong>.
+      Contrairement aux cours magistraux (CM) et aux travaux pratiques (TP),
+      ces TD offrent une approche différente, plus souple et orientée vers
+      la mise en pratique concrète des connaissances.
+    </p>
+    <p>Plutôt que de suivre une série d’exercices indépendants, vous allez devoir
+      choisir <strong>un projet de grande ampleur</strong> qui vous accompagnera
+      tout au long du semestre...
+    </p>
+    <ul class="objectivesTD">
+      <li><strong>Approfondir vos compétences techniques</strong>,
+          en confrontant la théorie à une application réaliste et complète.</li>
+      <li><strong>Développer une autonomie et un esprit d’initiative</strong>,
+          en vous plaçant dans une démarche similaire à celle que vous
+          rencontrerez dans un cadre professionnel ou de recherche.</li>
+    </ul>
+  </section>
+  <section class="seancesTD">
+    <h2 class="subtitleTD">Les séances de TDs</h2>
+    <h3 class="miniTitleTD">🎯 Le rôle des TDs dans le projet</h3>
+    <ol class="stepsTD">
+      <li><strong>Analyser le problème à résoudre</strong></li>
+      <li><strong>Découper le projet en modules / fonctionnalités</strong></li>
+      <li><strong>Définir les fonctions nécessaires</strong></li>
+      <li><strong>Choisir les structures de données adaptées</strong></li>
+      <li><strong>Élaborer des algorithmes</strong></li>
+      <li><strong>Anticiper les évolutions et extensions</strong></li>
+      <li><strong>Préparer les tests</strong></li>
+    </ol>
+    <h3 class="miniTitleTD">🚀 Pourquoi les TDs sont fondamentaux ?</h3>
+    <ul class="reasonsTD">
+      <li><strong>Éviter le “codage à l’aveugle”</strong></li>
+      <li><strong>Structurer la pensée algorithmique</strong></li>
+      <li><strong>Faciliter le passage en TP</strong></li>
+      <li><strong>Former aux bonnes pratiques de développement</strong></li>
+      <li><strong>Encourager le travail collaboratif</strong></li>
+    </ul>
+  </section>
+</div>
+<h1 class="titleTD">Le plan des séances de TDs</h1>
 <div>
 <table class="cours-planC">
   <thead>
@@ -76,9 +62,7 @@ Concrètement, les TDs permettront aux étudiants de :
   </tbody>
 </table>
 </div>
-## Liste des projets
-*Vous pouvez évidemment choisir votre propre sujet...*
-
+<h2 class="subtitleTD">Liste des projets</h2>
 <div class="projects-containerTDC">
   <!-- Projet 1 -->
   <div class="project-cardTDC">
@@ -142,4 +126,5 @@ Concrètement, les TDs permettront aux étudiants de :
     </ul>
     <p><em>Extensions :</em> fil d’actualité, détection de communautés.</p>
   </div>
+</div>
 </div>
