@@ -43,3 +43,85 @@ rechercher_occurrence([1, 2, 6, 7, 8, 41, 25], 14) # Renverra 0
 rechercher_occurrence([1, 2, 6, 7, 1, 2, 3, 8, 41, 25], 7) # Renverra 1
 rechercher_occurrence([1, 2, 6, 7, 1, 2, 3, 8, 41, 25], 2) # Renverra 2
 ```
+
+Réfléchissons à comment programmer cette fonction.  
+Son objectif est donc de parcourir un tableau de `n` entiers et de compter le nombre d'occurrences de l'entier passé en paramètre. Commençons par donner l'algorithme en pseudo code.
+```
+Entrees :
+	tab       - Un pointeur vers un tableau d'entiers
+	taille    - Le nombre d'éléments dans le tableau
+	nb        - L'entier dont on cherche le nombre d'occurrences dans tab
+Sortie :
+	Le nombre d'occurrences de nb dans le tableau tab
+	
+rechercher_occurrence
+	occ <- 0
+	pour i allant de 0 à sizeTab
+	faire
+		si tab[i] == nb
+		alors
+			occ <- occ + 1
+		fin si
+	fin pour
+	retourner occ
+fin rechercher_occurrence
+```
+
+Expliquons l'algorithme :
+- Il prend en entrée 
+	- `tab` le pointeur vers le tableau d'entiers
+	- `nb` le nombre dont on recherche le nombre d'occurrences dans le tableau `tab`
+- Il renvoie le nombre d'occurrence de `nb` dans `tab`
+- On commence par déclarer et initialiser les occurrences de `nb` à $0$, c'est le cas de base.
+- Ensuite on parcours le tableau et on compte les occurrences
+- On renvoie les occurrences
+
+```c
+#include <stdio.h>
+
+/**
+Fonction rechercher occurence
+@param
+	int* tab     : Un pointeur vers un tableau d'entiers
+	int taille   : La taille du tableau
+	int nb       : L'entier dont on cherche les occurences
+@return
+	int          : le nombre d'occurrences de nb dans tab
+*/
+int rechercher_occurrence(int* tab, int taille, int nb){
+    int occ = 0;
+	for(int i = 0; i<taille; i++){
+	    if(*(tab+i)==nb){
+	        occ++;
+	    }
+	}
+	return occ;
+}
+
+int main() {
+	// Premier tableau
+    int tab[] = { 1, 2, 6, 7, 8, 41, 25 };
+    int *ptr = &tab[0];
+	
+	// Second tableau
+    int tab2[] = { 1, 2, 6, 7, 1, 2, 3, 8, 41, 25 };
+    int *ptr2 = &tab2[0];
+    
+    // ###################################################
+    // #################### Les tests ####################
+    // ###################################################
+    
+    // Premier test
+    int occ14 = rechercher_occurrence(ptr, 7, 14);
+    printf("Occurrence de 14 dans tab : %d\n", occ14);
+    
+    // Second test
+    int occ7 = rechercher_occurrence(ptr2, 10, 7);
+    printf("Occurrence de 7 dans tab2 : %d\n", occ7);
+    
+    // Troisème test
+    int occ2 = rechercher_occurrence(ptr2, 10, 2);
+    printf("Occurrence de 2 dans tab2 : %d\n", occ7);
+    return 0;
+}
+```
