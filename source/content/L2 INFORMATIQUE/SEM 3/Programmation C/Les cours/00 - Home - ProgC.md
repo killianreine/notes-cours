@@ -106,19 +106,14 @@ Table des matières complète : [[Prog C - Table des matières]]
       <td><a href="14 - Structures particulières">Structures particulières</a></td>
       <td>Structures complexes et usage avancé</td>
     </tr>
-    <tr>
+	<tr>
       <td>15</td>
-      <td><a href="15 - Fonctions avancées">Fonctions avancées</a></td>
-      <td>Fonctions récursives et pointeurs de fonctions</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td><a href="16-Bases de données">Bases de données</a></td>
+      <td><a href="15 - Bases de données">Bases de données</a></td>
       <td></td>
     </tr>
     <tr>
-      <td>17</td>
-      <td><a href="17-Interface graphique en C">Interface graphique</a></td>
+      <td>16</td>
+      <td><a href="16 - Interface graphique en C">Interface graphique</a></td>
       <td></td>
     </tr>
   </tbody>

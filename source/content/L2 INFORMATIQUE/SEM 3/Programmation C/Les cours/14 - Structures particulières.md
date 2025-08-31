@@ -181,4 +181,4 @@ actif=1, erreur=0, mode=3
 ```
 
 # Suivant 
-- Cours suivant : [[15 - Fonctions avancées]]
+- Cours suivant : [[15 - Bases de données]]
