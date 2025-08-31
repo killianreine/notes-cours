@@ -233,3 +233,33 @@
 		- Lecture
 		- Écriture
 12. **Tests unitaires** [[12 - Tests unitaires]]
+	- Introduction
+		- Qu-est-ce qu'un test unitaire ?
+		- En C, ça dit quoi ?
+	- Structure d'un test unitaire
+		- Étude de cas
+13. **Compilation séparée et makefile** [[13 - Compilation séparée et Makefile]]
+	- Quelques rappels
+	- Compilation séparée et rôle des fichiers `.h`
+		- Projet guidé pour mieux comprendre
+			- Introduction au projet
+			- Quelques rappels de géométrie
+	- Makefile
+		- Rôle d'un makefile
+		- Structurer son propre makefile
+			- Explications du makefile
+			- Règle principale
+			- Règle générique
+14. **Structures avancées** [[14 - Structures particulières]]
+	- Enum
+		- Définition et généralités
+		- Utilisation d'une enum
+		- Avantages
+	- Union
+		- Définition et généralités
+		- Utilisation
+		- Taille d'une union
+	- Champs de bits
+		- Définition
+		- Utilisation
+15. **Fonctions avancées** [[15 - Fonctions avancées]]
