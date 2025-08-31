@@ -291,3 +291,55 @@ Triangle Equilateral:
 ```
 
 # Makefile
+## Rôle d'une makefile
+Un projet en C peut avoir **plusieurs fichiers sources**.  
+Les compiler un par un, puis faire le linkage à la main à chaque fois serait long et source d’erreurs.
+
+`make` est un programme qui lit un fichier spécial appelé **Makefile** et qui sait :
+- quelles étapes de compilation exécuter,
+- dans quel ordre,
+- et seulement si c’est nécessaire *(il ne recompile pas ce qui n’a pas changé)*.
+
+## Structurer son propre makefile
+Un makefile est constitué de règles strictes et précises généralement sous la forme suivante : 
+```
+cible: dépendance
+	commandes à exécuter
+```
+
+En reprenant notre ancienne étude de cas sur les formes géométriques. On redonne ci dessous la structure de l'arborescence des fichiers. 
+```less
+projet_dessiner_des_formes_cours5_1/
+├── main.c                  // Fonction main()
+├── dessinerForme.c         // Définitions des fonctions
+└── dessinerForme.h         // Prototypes des fonctions (header .h personnalisé)
+```
+- **`main.c`** : contient `main()` et utilise les fonctions de `dessinerForme.c`.
+- **`dessinerForme.c`** : contient les **définitions** des fonctions.
+- **`dessinerForme.h`** : contient les **prototypes**.
+
+Pour commencer créer un fichier nommé `makefile` dans le dossier de votre projet :
+```less
+projet_dessiner_des_formes_cours5_1/
+├── makefile
+├── main.c                  // Fonction main()
+├── dessinerForme.c         // Définitions des fonctions
+└── dessinerForme.h         // Prototypes des fonctions (header .h personnalisé)
+```
+
+- Le fichier `makefile`
+```makefile
+# Nom du compilateur
+CC = gcc
+
+# Option de compilation
+CFLAGS = -Wall -Wextra
+
+# Nom de l'executable
+EXEC = prog
+
+# Liste des fichiers sources
+SRC = main.c dessinerForme.c
+# Conversion auto en fichier objet
+OBJ = $(SRC:.c=.o)
+```
