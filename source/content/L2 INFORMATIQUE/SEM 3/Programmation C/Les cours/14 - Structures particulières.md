@@ -180,3 +180,5 @@ int main() {
 actif=1, erreur=0, mode=3
 ```
 
+# Suivant 
+- Cours suivant : [[15 - Fonctions avancées]]
