@@ -35,6 +35,8 @@ assert(expression);
 ```
 Qui permet de vérifier si `expression` est vraie. Dans le cas contraire, le programme s'arrête avec un message d'erreur et la ligne.
 
+## Étude de cas
+
 $\boxed{\text{Rechercher les occurrences d'un éléments dans un tableau}}$  
 Dans ce cours je vous propose un exemple concret d'algorithme à tester. L'objectif de notre programme est de coder une fonction qui s'appellera `rechercher_occurrence` elle prendra en paramètre un pointeur vers un tableau d'entier  et un entier. Elle retournera le nombre d'occurrences de cet entier dans le tableau.  
 Pour simplifier les choses on représentera les tableaux entre crochets comme en langage Python. En gros voici quelques résultats de notre fonction sur quelques tableau : 
@@ -121,7 +123,56 @@ int main() {
     
     // Troisème test
     int occ2 = rechercher_occurrence(ptr2, 10, 2);
-    printf("Occurrence de 2 dans tab2 : %d\n", occ7);
+    printf("Occurrence de 2 dans tab2 : %d\n", occ2);
     return 0;
 }
 ```
+```
+Occurrence de 14 dans tab : 0
+Occurrence de 7 dans tab2 : 1
+Occurrence de 2 dans tab2 : 2
+```
+
+Le problème, c’est que si un résultat est faux, tu ne le verras que si tu compares manuellement avec ce que tu attends.  
+C’est là qu’interviennent les `assert()`.
+
+Pour commencer, on inclus la bibliothèque 
+```c
+#include <assert.h>
+```
+
+Et pour chaque tests que l'on à fait, on supprime les `printf` et on modifie les lignes du dessus par :
+```c
+assert(rechercher_occurrence(...)==...);
+```
+Ainsi si le résultat attendu n'est pas le même, le programme sera stoppé d'un coup et une erreur surviendra.
+
+```c
+int main() {
+	// Premier tableau
+    int tab[] = { 1, 2, 6, 7, 8, 41, 25 };
+    int *ptr = &tab[0];
+	
+	// Second tableau
+    int tab2[] = { 1, 2, 6, 7, 1, 2, 3, 8, 41, 25 };
+    int *ptr2 = &tab2[0];
+    
+    // ###################################################
+    // #################### Les tests ####################
+    // ###################################################
+    
+    assert(rechercher_occurrence(tab, 7, 14) == 0);  // 14 n'est pas présent
+    assert(rechercher_occurrence(tab2, 10, 7) == 1); // 7 est présent 1 fois
+    assert(rechercher_occurrence(tab2, 10, 2) == 2); // 2 est présent 2 fois
+    
+    // Ou ajoute un test volontairement faux pour voir ce qu'il se passe
+    assert(rechercher_occurrence(tab2, 10, 42) == 2); // 2 est présent 2 fois
+    return 0;
+}
+```
+```bash
+main.o: /tmp/XqHGhpcCc2/main.c:37: main: Assertion `rechercher_occurrence(tab2, 10, 42) == 2' failed.
+Aborted
+```
+En gros il y a une erreur lors d'une assertion, l'erreur précise laquelle, par la suite c'est à vous de trouver comment régler la fonctionnalité.  
+*Bon ici j'avais volontairement mis des valeurs erronées pour voir ce qu'il se passe...*
