@@ -1,15 +1,12 @@
 <div>
-<section class="licenceINFOLI">
-  <h1 class="titleINFOLI">Licence 1 - Mathématiques Informatique MI</h1>
-  <h2 class="subtitleINFOLI">Présentation brève de la licence</h2>
-  <p>
-    La <strong>licence d’informatique</strong> propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
-    Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
-  </p>
-  <p>
-    La formation est <strong>structurée en six semestres</strong> et partage certains enseignements avec la licence de mathématiques lors des premiers semestres.
-  </p>
-</section>
+<header class="headerINFOLI">
+    <h1 class="titleINFOLI">Licence 1 - Mathématiques Informatique (MI)</h1>
+    <p class="introINFOLI">
+      La <strong>licence d’informatique</strong> propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
+      Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
+    </p>
+    <p class="introINFOLI">La formation est <strong>structurée en six semestres</strong> et partage certains enseignements avec la licence de mathématiques lors des premiers semestres.</p>
+  </header>
 <section class="uedINFOLI">
   <h2 class="subtitleINFOLI">Unités d'enseignements disciplinaires (UED)</h2>
   <article class="ueINFOLI">
