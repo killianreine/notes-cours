@@ -13,7 +13,7 @@
       <article class="ueINFOLI">
         <h3 class="ue-titleINFOLI">Algèbre de base</h3>
         <p>L’<strong>Algèbre de base</strong> est une Unité d’Enseignement Disciplinaire (UED) commune à tous les étudiants inscrits dans le cursus MIPSI. Elle a pour objectif d’introduire les fondements de l’algèbre et de garantir à chacun un socle solide en mathématiques dès le début de la formation.</p>
-        <p><span class="labelINFOLI">Support de cours :</span> <em>25-26 L1 INFO Tutorat - Algèbre de base, K. REINE</em></p>
+        <p><span class="labelINFOLI">Support de cours :</span> <a href="25-26 L1 INFO Tutorat - Algèbre de base, K. REINE">25-26 L1 INFO Tutorat - Algèbre de base, K. REINE</a></p>
         <p><span class="labelINFOLI">Durée de l'UE :</span> 50 heures</p>
       </article>
       <article class="ueINFOLI">
@@ -58,15 +58,47 @@
       </article>
     </section>
     <section class="uepINFOLI">
-      <h2 class="subtitleINFOLI">Unité d'Enseignement Personnalisé (UEP)</h2>
-      <p><strong>Info :</strong> Les étudiants choisissent une seule option parmi les suivantes :</p>
-      <ul class="uep-listINFOLI">
-        <li><strong>Analyse de base</strong> – Parcours Mathématiques (50h)</li>
-        <li><strong>Astrophysique</strong> – Parcours Physique et SPI (50h)</li>
-        <li><strong>Concepts informatiques</strong> – Parcours Informatique (50h)</li>
-        <li><strong>Informatique pour la NSI</strong> – Parcours Informatique (50h)</li>
-      </ul>
-    </section>
+  <h2 class="subtitleINFOLI">Unité d'Enseignement Personnalisé (UEP)</h2>
+  <p>
+    <strong>Info :</strong> Les étudiants choisissent une seule option parmi les suivantes.
+  </p>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Analyse de base</h3>
+    <p>
+      L’<strong>Unité d’Enseignement Analyse de base</strong> introduit les notions fondamentales de l’analyse mathématique : limites, continuité, dérivabilité et étude des fonctions réelles.  
+      Elle constitue une base solide pour les sciences et l’informatique.
+    </p>
+    <p><span class="labelINFOLI">Parcours :</span> Mathématiques</p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Astrophysique</h3>
+    <p>
+      L’<strong>Unité d’Enseignement Astrophysique</strong> explore la formation et l’évolution des étoiles, la cosmologie et la mécanique céleste.  
+      Elle initie aux lois physiques qui gouvernent l’univers.
+    </p>
+    <p><span class="labelINFOLI">Parcours :</span> Physique et Sciences pour l’Ingénieur</p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Concepts informatiques</h3>
+    <p>
+      Cette UE présente les <strong>diagrammes UML</strong> (cas d’utilisation, activités) et les différences entre langages de programmation (paradigmes, syntaxe, usages).  
+      Une base théorique essentielle pour la conception logicielle.
+    </p>
+    <p><span class="labelINFOLI">Parcours :</span> Informatique</p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Informatique pour la NSI</h3>
+    <p>
+      L’<strong>UE Informatique pour la NSI</strong> reprend les bases vues au lycée (algorithmique, structures de données, modélisation des systèmes).  
+      Elle consolide et approfondit les acquis en informatique.
+    </p>
+    <p><span class="labelINFOLI">Parcours :</span> Informatique</p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+</section>
     <section class="recapINFOLI">
       <h2 class="subtitleINFOLI">Récapitulatif – Semestre 1</h2>
       <table class="ue-table"> <thead> <tr> <th>Unité d’Enseignement</th> <th>Durée</th> </tr> </thead> <tbody> <tr class="bloc-header"> <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 1</td> </tr> <tr> <td>Algèbre de base</td> <td>50 heures</td> </tr> <tr class="bloc-header"> <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 2</td> </tr> <tr> <td>Algorithmique & Programmation 1</td> <td>50 heures</td> </tr> <tr class="bloc-header"> <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 3</td> </tr> <tr> <td>Informatique de base</td> <td>50 heures</td> </tr> <tr class="bloc-header"> <td colspan="2">Unités d'Enseignements Transversaux (UET)</td> </tr> <tr> <td>Anglais 1</td> <td>22 heures</td> </tr> <tr> <td>Méthodologie</td> <td>6 heures</td> </tr> <tr> <td>Outil Informatique Logiciel (OIL LaTeX)</td> <td>6 heures</td> </tr> <tr> <td>PIX 1</td> <td>8 heures</td> </tr> <tr> <td>Projet Personnel et Professionnel (PPP)</td> <td>8 heures</td> </tr> <tr class="bloc-header"> <td colspan="2">Unités d'Enseignements Personnalisées (UEP) <br/> <span class="uep-note">1 section au choix parmi</span></td> </tr> <tr> <td>Analyse de base<br/><em>Parcours Mathématiques</em></td> <td>50 heures</td> </tr> <tr> <td>Astrophysique<br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td> <td>50 heures</td> </tr> <tr> <td>Physique (Mvt + Optique)<br/><em>Parcours Physiques et Sciences pour l'Ingénieur</em></td> <td>50 heures</td> </tr> <tr> <td>Concepts informatiques<br/><em>Parcours Informatique</em></td> <td>50 heures</td> </tr> <tr> <td>Informatique pour la NSI<br/><em>Parcours Informatique</em></td> <td>50 heures</td> </tr> </tbody> </table>
