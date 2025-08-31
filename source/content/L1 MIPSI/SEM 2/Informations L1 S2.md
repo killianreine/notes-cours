@@ -1,68 +1,98 @@
-# Licence 1 - Mathématiques Informatique MI
-# Présentation brève de la licence
-La **licence d’informatique** propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
-Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
-
-La formation est **structurée en six semestres** et partage certains enseignements avec la licence de mathématiques lors des premiers semestres.
-# Unités d'enseignements disciplinaire UED
-
-## Algorithmique & Programmation 2
-L'**Algorithmique et programmation** est une Unité d'Enseignement Disciplinaire (UED) commune aux étudiants d'informatique et de mathématiques permettant d'introduire la programmation en langage Processing. 
-<br/>Ce langage permet en fait d'anticiper l'apprentissage du langage JAVA qui sera au programme de la deuxième année.
-- <u>Support de cours :</u> [Cours github sbalev](https://github.com/sbalev/processing101/wiki)
-  <br/>Ce support est en fait le cours et le cahier d'exercices donné par le responsable de l'UE et qui est à faire durant les séances de TP.
-- <u>Durée de l'UE :</u> 50 heures
-
-## Mathématiques pour l'informatique 1
-L'UE **Mathématiques pour l'informatique** permet de réintroduire des notions vues au lycée puis de nouvelles notions appliquées à l'informatique : Relation binaire par exemple.
-- <u>Support de cours :</u> [[MATINFO_L1_cours_2425.pdf]]  
-  *Support de cours 2024-25 rédigé par K. REINE*
-- <u>Durée de l'UE :</u> 50 heures
-
-## Programmation python
-L’**Unité d’Enseignement Programmation Python** initie les étudiants à la programmation en utilisant **Python**, un langage moderne, lisible et polyvalent.  
-Elle aborde les notions fondamentales telles que les **variables**, **structures de contrôle**, **fonctions**, **listes**, **dictionnaires**, ainsi que l’**introduction à la programmation orientée objet**.  
-Python est également utilisé pour des applications concrètes en **scientifique**, **web**, **automatisation** ou encore **analyse de données**, ce qui en fait un outil incontournable dans la formation en informatique.
-- <u>Support de cours :</u> *Aucun...*
-- <u>Durée de l'UE :</u> 50 heures
-
-# Unités d'Enseignements Transversal - UET
-## Anglais 2
-L’**anglais** est une Unité d'Enseignement Transversal (UET) et occupe une place essentielle dans la formation universitaire, en particulier dans les disciplines scientifiques et techniques. Il permet aux étudiants de développer leurs compétences en compréhension et en expression, tout en se familiarisant avec le vocabulaire professionnel et scientifique. Cet enseignement vise à les préparer à une communication efficace à l’échelle internationale, tant à l’écrit qu’à l’oral.
-- <u>Durée de l'UE :</u> 18 heures
-
-## PIX 2
-**PIX** est une plateforme en ligne d’évaluation et de développement des compétences numériques. Elle permet aux étudiants d’identifier leurs points forts et leurs axes de progression dans des domaines variés : sécurité numérique, traitement de l’information, création de contenus, communication en ligne, programmation, etc.  
-L’utilisation de PIX dans le cadre universitaire vise à renforcer l’autonomie numérique des étudiants et à les préparer à l’obtention de la certification PIX, désormais reconnue dans de nombreux contextes académiques et professionnels.
-- <u>Durée de l'UE :</u> 16 heures
-
-## Projet
-Vous travaillerez en groupe pour proposer un projet de fin d'année !
-- <u>Durée de l'UE :</u> 14h
-
-## Transition Écologique et Développement Soutenable
-L’**Unité d’Enseignement Transition Écologique et Développement Soutenable (TEDS)** vise à sensibiliser les étudiants aux enjeux environnementaux, sociaux et économiques de la transition écologique. À travers une approche interdisciplinaire, cette UE permet de mieux comprendre les grands défis actuels : changement climatique, épuisement des ressources, biodiversité, justice sociale, consommation responsable, etc.
-<br/>Les étudiants sont amenés à réfléchir à leur rôle de citoyen et de futur professionnel dans un monde en transition, à analyser des situations concrètes et à envisager des solutions durables. L’UE combine apports théoriques, travaux de groupe, débats, études de cas et parfois projets concrets ou partenariats locaux.
-
-# Unité d'Enseignement Personnalisé - UEP
-
-## Informatique et documents
->Parcours INFORMATIQUE
-
-L’**Unité d’Enseignement Informatique et documents** initie les étudiants aux **standards de structuration et de présentation des documents numériques**.  
-Elle couvre notamment :  
-- **XHTML 1.0** : pour la structuration sémantique des contenus web,
-- **CSS** : pour la mise en forme et le design des pages web,
-- **Markdown** : pour la rédaction légère de documents formatés,
-- **YAML** : pour la représentation simple et lisible de données structurées.  
-
-Cette UE développe une culture des formats ouverts et une rigueur dans la gestion de documents techniques, utiles aussi bien pour le développement web que pour la documentation logicielle.
-- <u>Support de cours :</u> [Support officiel dfournier](https://litis.univ-lehavre.fr/~fournier/InfoDoc/)
-- <u>Durée de l'UE :</u> 50 heures
-
-# Récap SEMESTRE 2
-à retrouver ici aussi : [[Maquette L1.png]]
-
+<div>
+<section class="licenceINFOLI">
+  <h1 class="titleINFOLI">Licence 1 - Mathématiques Informatique MI</h1>
+  <h2 class="subtitleINFOLI">Présentation brève de la licence</h2>
+  <p>
+    La <strong>licence d’informatique</strong> propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
+    Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
+  </p>
+  <p>
+    La formation est <strong>structurée en six semestres</strong> et partage certains enseignements avec la licence de mathématiques lors des premiers semestres.
+  </p>
+</section>
+<section class="uedINFOLI">
+  <h2 class="subtitleINFOLI">Unités d'enseignements disciplinaires (UED)</h2>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Algorithmique & Programmation 2</h3>
+    <p>
+      L’<strong>Algorithmique et programmation</strong> est une Unité d'Enseignement Disciplinaire (UED) commune aux étudiants d’informatique et de mathématiques permettant d’introduire la programmation en langage Processing.  
+      Ce langage prépare à l’apprentissage du langage JAVA en deuxième année.
+    </p>
+    <p><span class="labelINFOLI">Support de cours :</span> <a href="https://github.com/sbalev/processing101/wiki">Cours github sbalev</a></p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Mathématiques pour l'informatique 1</h3>
+    <p>
+      L’UE <strong>Mathématiques pour l’informatique</strong> réintroduit certaines notions vues au lycée, puis apporte de nouvelles notions appliquées à l’informatique, comme les relations binaires.
+    </p>
+    <p><span class="labelINFOLI">Support de cours :</span> <a href="MATINFO_L1_cours_2425.pdf">MATINFO_L1_cours_2425.pdf</a> – <em>Support rédigé par K. REINE (2024-25)</em></p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Programmation Python</h3>
+    <p>
+      L’<strong>Unité d’Enseignement Programmation Python</strong> initie les étudiants à la programmation en utilisant <strong>Python</strong>, un langage moderne, lisible et polyvalent.  
+      Les notions abordées incluent : variables, structures de contrôle, fonctions, listes, dictionnaires, et introduction à la programmation orientée objet.  
+      Python est aussi appliqué dans des contextes variés : scientifique, web, automatisation, analyse de données.
+    </p>
+    <p><span class="labelINFOLI">Support de cours :</span> Aucun</p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+</section>
+<section class="uetINFOLI">
+  <h2 class="subtitleINFOLI">Unités d'Enseignements Transversaux (UET)</h2>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Anglais 2</h3>
+    <p>
+      L’<strong>anglais</strong> est une UE transversale essentielle dans la formation universitaire, en particulier pour les disciplines scientifiques et techniques.  
+      Cet enseignement développe la compréhension et l’expression, tout en introduisant le vocabulaire professionnel et scientifique.  
+      Il prépare à une communication efficace, tant à l’écrit qu’à l’oral, à l’échelle internationale.
+    </p>
+    <p><span class="labelINFOLI">Durée :</span> 18 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">PIX 2</h3>
+    <p>
+      <strong>PIX</strong> est une plateforme en ligne d’évaluation et de développement des compétences numériques.  
+      Elle permet d’évaluer et de renforcer la sécurité numérique, le traitement de l’information, la création de contenus, la communication en ligne, et même la programmation.  
+      L’objectif est d’accompagner les étudiants vers la certification PIX, reconnue académique et professionnelle.
+    </p>
+    <p><span class="labelINFOLI">Durée :</span> 16 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Projet</h3>
+    <p>
+      Travail de groupe visant à développer un <strong>projet de fin d’année</strong>.  
+      Cette UE favorise la collaboration, l’organisation et la mise en pratique des acquis.
+    </p>
+    <p><span class="labelINFOLI">Durée :</span> 14 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Transition Écologique et Développement Soutenable (TEDS)</h3>
+    <p>
+      L’<strong>UE Transition Écologique et Développement Soutenable</strong> sensibilise aux enjeux environnementaux, sociaux et économiques liés à la transition écologique.  
+      Les étudiants sont amenés à réfléchir à leur rôle de citoyen et futur professionnel à travers apports théoriques, travaux de groupe, débats, études de cas et projets.
+    </p>
+  </article>
+</section>
+<section class="uepINFOLI">
+  <h2 class="subtitleINFOLI">Unité d'Enseignement Personnalisé (UEP)</h2>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Informatique et documents</h3>
+    <p><span class="labelINFOLI">Parcours :</span> Informatique</p>
+    <p>
+      L’<strong>Unité d’Enseignement Informatique et documents</strong> initie aux standards de structuration et de présentation des documents numériques.  
+      Elle couvre notamment : XHTML 1.0 pour la structuration, CSS pour la mise en forme, Markdown pour la rédaction légère, et YAML pour la représentation de données.  
+      Cette UE développe une culture des formats ouverts et une rigueur utile pour la documentation et le développement web.
+    </p>
+    <p><span class="labelINFOLI">Support de cours :</span> <a href="https://litis.univ-lehavre.fr/~fournier/InfoDoc/">Support officiel dfournier</a></p>
+    <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
+  </article>
+</section>
+<h2 class="subtitleINFOLI">Récapitulatif Semestre 2</h2>
+<p>À retrouver ici aussi : <a href="Maquette L1.png">Maquette L1.png</a></p>
+<!-- tableau récap déjà fourni, inchangé -->
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
   <thead>
     <tr>
@@ -120,3 +150,4 @@ Cette UE développe une culture des formats ouverts et une rigueur dans la gesti
     </tr>
   </tbody>
 </table>
+</div>
