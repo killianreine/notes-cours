@@ -138,3 +138,45 @@ La taille de l'union sera donc $8$.
 | Usage    | Stocker plusieurs valeurs simultanément | Stocker une seule valeur parmi plusieurs possibles |
 
 # Champs de bits
+## Définition
+Un **==champ de bits==** est une **variable entière dont la taille est spécifiée en nombre de bits**.
+- Utile pour **économiser de la mémoire** lorsque l’on n’a pas besoin d’un entier complet.
+- Souvent utilisé pour des **flags, masques de bits ou registres matériels**.
+
+<u>Exemple :</u>  
+```c
+struct Exemple {
+    unsigned int bit1 : 1;  // 1 bit
+    unsigned int bit2 : 3;  // 3 bits
+    unsigned int bit3 : 4;  // 4 bits
+};
+```
+- Ici, `bit1` occupe 1 bit, `bit2` 3 bits, et `bit3` 4 bits.
+- Les champs partagent le même octet si possible, suivant l’alignement mémoire.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+struct Flags {
+    unsigned int actif : 1;
+    unsigned int erreur : 1;
+    unsigned int mode  : 2;
+};
+
+int main() {
+    struct Flags f;
+
+    f.actif = 1;
+    f.erreur = 0;
+    f.mode = 3;  // max 2 bits = 0 à 3
+
+    printf("actif=%d, erreur=%d, mode=%d\n", f.actif, f.erreur, f.mode);
+
+    return 0;
+}
+```
+```
+actif=1, erreur=0, mode=3
+```
+
