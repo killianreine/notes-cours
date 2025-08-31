@@ -93,37 +93,37 @@
 <h2 class="subtitleINFOLI">Récapitulatif Semestre 2</h2>
 <p>À retrouver ici aussi : <a href="Maquette L1.png">Maquette L1.png</a></p>
 <!-- tableau récap déjà fourni, inchangé -->
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
+<table class="ue-table">
   <thead>
     <tr>
-      <th>Unité d’Enseignement</th>
+      <th>Unité d'Enseignement</th>
       <th>Durée</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 1</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 1</td>
     </tr>
     <tr>
       <td><strong>Algorithmique et Programmation 2</strong></td>
       <td>50 heures</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 2</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 2</td>
     </tr>
     <tr>
       <td><strong>Mathématiques pour l'informatique</strong></td>
       <td>50 heures</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires - BLOC 3</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 3</td>
     </tr>
     <tr>
       <td><strong>Programmation python</strong></td>
       <td>50 heures</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Transversaux (UET)</td>
     </tr>
     <tr>
       <td><strong>Anglais 2</strong></td>
@@ -141,8 +141,8 @@
       <td><strong>Transition Écologique et Développement Soutenable (TEDS)</strong></td>
       <td>—</td>
     </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisées (UEP)</td>
+    <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Personnalisées (UEP)</td>
     </tr>
     <tr>
       <td><strong>Informatique et documents</strong><br/><em>Parcours Informatique</em></td>
