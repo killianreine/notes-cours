@@ -1,0 +1,554 @@
+/* =========================== 
+   CSS Moderne avec Mode Sombre
+   =========================== */
+
+/* Variables CSS pour une gestion cohérente des couleurs */
+:root {
+  --primary-blue: #2563eb;
+  --primary-blue-dark: #1d4ed8;
+  --secondary-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+  --accent-pink: #ec4899;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --border-color: #e5e7eb;
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-heavy: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* Variables pour le mode sombre */
+[saved-theme="dark"] {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --secondary-blue: #60a5fa;
+  --accent-purple: #a78bfa;
+  --accent-pink: #f472b6;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827;
+  --bg-tertiary: #374151;
+  --border-color: #4b5563;
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-heavy: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================== Structure générale =========================== */
+.bodyINFOLI {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 20px;
+  line-height: 1.7;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.headerINFOLI {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+  color: white;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-heavy);
+  position: relative;
+  overflow: hidden;
+}
+
+.headerINFOLI::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.titleINFOLI {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitleINFOLI {
+  font-size: 24px;
+  margin: 40px 0 20px;
+  border-bottom: 3px solid var(--primary-blue);
+  padding-bottom: 8px;
+  font-weight: 700;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.subtitleINFOLI::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-pink));
+  border-radius: 2px;
+}
+
+.labelINFOLI {
+  font-weight: 600;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+/* =========================== Articles de cours =========================== */
+.ueINFOLI {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 24px;
+  margin: 20px 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-medium);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.ueINFOLI:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-heavy);
+  border-color: var(--primary-blue);
+}
+
+.ue-titleINFOLI {
+  margin: 0 0 16px;
+  font-size: 20px;
+  color: var(--primary-blue);
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* =========================== UEP =========================== */
+.uep-listINFOLI {
+  list-style: none;
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+
+.uep-listINFOLI li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.uep-listINFOLI li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: var(--accent-purple);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* =========================== Tableau récap =========================== */
+.ue-tableINFOLI {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  background: var(--bg-primary);
+}
+
+.ue-tableINFOLI th, 
+.ue-tableINFOLI td {
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.ue-tableINFOLI th {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.ue-tableINFOLI tr:nth-child(even) {
+  background: var(--bg-tertiary);
+}
+
+.ue-tableINFOLI tr:hover {
+  background: linear-gradient(90deg, var(--bg-tertiary), var(--bg-secondary));
+  transform: scale(1.01);
+}
+
+/* =========================== Tableau principal =========================== */
+.ue-table {
+  width: 92%;
+  margin: 40px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Inter', sans-serif;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-heavy);
+  transition: all 0.3s ease;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.ue-table:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header principal du tableau */
+.ue-table thead th {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 24px;
+  text-align: left;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  border: none;
+}
+
+.ue-table thead th::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-pink), transparent);
+}
+
+/* =========================== Blocs BLOC / UEP =========================== */
+.bloc-header td {
+  background: linear-gradient(135deg, var(--secondary-blue), var(--accent-purple)) !important;
+  color: #fff !important;
+  text-align: center;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  margin: 12px 8px;
+  display: inline-block;
+  min-width: 220px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-medium);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.bloc-header td::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.bloc-header td:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink)) !important;
+  cursor: pointer;
+}
+
+.bloc-header td:hover::before {
+  left: 100%;
+}
+
+/* =========================== Corps du tableau principal =========================== */
+.ue-table tbody td {
+  padding: 18px 24px;
+  font-weight: 500;
+  background-color: var(--bg-primary);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+/* Lignes alternées */
+.ue-table tbody tr:nth-child(even):not(.bloc-header) td {
+  background-color: var(--bg-tertiary);
+}
+
+/* Hover sur lignes */
+.ue-table tbody tr:not(.bloc-header):hover td {
+  transform: translateX(4px);
+  box-shadow: inset 4px 0 0 var(--primary-blue);
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+}
+
+/* Texte parcours avec style amélioré */
+.ue-table td em {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-weight: 400;
+  padding: 4px 8px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+
+/* UEP note avec style d'alerte */
+.uep-note {
+  color: #dc2626;
+  font-weight: 800;
+  background: #fef2f2;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  border-left: 4px solid #dc2626;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* =========================== Responsive Design =========================== */
+@media (max-width: 768px) {
+  .ue-table {
+    width: 98%;
+    margin: 20px auto;
+  }
+  
+  .ue-table thead th,
+  .ue-table tbody td {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .titleINFOLI {
+    font-size: 28px;
+  }
+  
+  .subtitleINFOLI {
+    font-size: 20px;
+  }
+  
+  .bloc-header td {
+    min-width: 180px;
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
+
+/* =========================== Animations et microinteractions =========================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ueINFOLI {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.ue-table {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Effet de focus pour l'accessibilité */
+.bloc-header td:focus,
+.ue-table tbody tr:focus {
+  outline: 3px solid var(--accent-purple);
+  outline-offset: 2px;
+}
+
+/* =========================== Améliorations typographiques =========================== */
+.ue-table tbody td {
+  font-feature-settings: "tnum" 1; /* Chiffres tabulaires */
+}
+
+.titleINFOLI,
+.subtitleINFOLI,
+.ue-titleINFOLI {
+  font-feature-settings: "ss01" 1; /* Stylistic sets */
+}
+
+/* =========================== Mode sombre =========================== */
+[saved-theme="dark"] .bodyINFOLI {
+  background: #0f172a;
+  color: var(--text-primary);
+}
+
+[saved-theme="dark"] .headerINFOLI {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+[saved-theme="dark"] .ueINFOLI {
+  background: var(--bg-primary);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+[saved-theme="dark"] .ueINFOLI:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  border-color: var(--primary-blue);
+}
+
+[saved-theme="dark"] .ue-tableINFOLI {
+  background: var(--bg-primary);
+  box-shadow: var(--shadow-heavy);
+}
+
+[saved-theme="dark"] .ue-tableINFOLI th {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+}
+
+[saved-theme="dark"] .ue-tableINFOLI tr:nth-child(even) {
+  background: var(--bg-tertiary);
+}
+
+[saved-theme="dark"] .ue-tableINFOLI tr:hover {
+  background: linear-gradient(90deg, var(--bg-tertiary), var(--bg-secondary));
+}
+
+[saved-theme="dark"] .ue-table {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+[saved-theme="dark"] .ue-table thead th {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+}
+
+[saved-theme="dark"] .bloc-header td {
+  background: linear-gradient(135deg, var(--secondary-blue), var(--accent-purple)) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+[saved-theme="dark"] .bloc-header td:hover {
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink)) !important;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+[saved-theme="dark"] .ue-table tbody td {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+}
+
+[saved-theme="dark"] .ue-table tbody tr:nth-child(even):not(.bloc-header) td {
+  background-color: var(--bg-tertiary);
+}
+
+[saved-theme="dark"] .ue-table tbody tr:not(.bloc-header):hover td {
+  background-color: var(--bg-secondary);
+  box-shadow: inset 4px 0 0 var(--primary-blue);
+}
+
+[saved-theme="dark"] .ue-table td em {
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+}
+
+[saved-theme="dark"] .uep-note {
+  color: #f87171;
+  background: #7f1d1d;
+  border-left-color: #f87171;
+}
+
+/* =========================== Effets spéciaux =========================== */
+.ue-table tbody tr {
+  position: relative;
+}
+
+.ue-table tbody tr::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: linear-gradient(90deg, var(--primary-blue), transparent);
+  transition: width 0.3s ease;
+  pointer-events: none;
+}
+
+.ue-table tbody tr:hover::after {
+  width: 4px;
+}
+
+/* Amélioration de la lisibilité */
+.ue-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbar personnalisée pour le mode sombre */
+[saved-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+[saved-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-blue);
+}
+
+/* =========================== États de focus améliorés =========================== */
+.ue-table tbody tr:focus-within td {
+  background-color: var(--bg-secondary);
+  box-shadow: inset 0 0 0 2px var(--primary-blue);
+}
+
+[saved-theme="dark"] .ue-table tbody tr:focus-within td {
+  background-color: var(--bg-tertiary);
+  box-shadow: inset 0 0 0 2px var(--accent-purple);
+}
+
+/* =========================== Print styles =========================== */
+@media print {
+  .bodyINFOLI {
+    background: white;
+    color: black;
+    margin: 0;
+  }
+  
+  .headerINFOLI {
+    background: #004080 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  
+  .ue-table tbody tr:hover td {
+    transform: none;
+    box-shadow: none;
+  }
+}

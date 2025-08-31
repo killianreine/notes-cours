@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/16 - Interface graphique en C.md",
+                "file": "L1 MIPSI/SEM 1/Informations L1 S1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "16 - Interface graphique en C"
+              "title": "Informations L1 S1"
             }
           },
           {
@@ -255,6 +255,7 @@
   "active": "ae9b74d0a8b0f5bd",
   "lastOpenFiles": [
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/16 - Interface graphique en C.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/15 - Bases de données.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/14 - Structures particulières.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/15 - Fonctions avancées.md",
@@ -284,7 +285,6 @@
     "L3 INFORMATIQUE/SEM5",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/10 - Structures avancées.md",
-    "Sommaire 08 pointeurs.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/memoireCASH.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/Nouveau Document texte.txt",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/compilation.svg",
