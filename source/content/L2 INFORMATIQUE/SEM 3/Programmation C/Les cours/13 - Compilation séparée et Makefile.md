@@ -392,3 +392,43 @@ Pour le nettoyage : suppression fichiers objets `.o` et exécutable.
 ```
 make clean
 ```
+**LA RÈGLE PRINCIPALE**
+```makefile
+$(EXEC): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(EXEC)
+```
+Ici, on dit que le programme `prog` a besoin des dépendances `.o` créées et on exécute l'instruction suivante :
+```bash
+gcc -Wall -Wextra main.o dessinerForme.o -o prog
+```
+En fait l'instruction elle est donnée mais via les différentes variables qui stocke mes informations. 
+
+>[!warning]
+>Chaque variable utilisée doit être mise comme ceci : `$(var)` **et la tabulation est OBLIGATOIRE**.
+
+**RÈFLE GÉNÉRIQUE `.c → .o`**
+```makefile
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+```
+- Le `%` est un **joker** *(caractère générique)*.
+- Cette ligne signifie : *Pour fabriquer n’importe quel fichier `.o` à partir de son fichier `.c` correspondant…*
+
+Dans notre exemple :
+- `main.o` dépend de `main.c`
+- `dessinerForme.o` dépend de `dessinerForme.c`
+Autrement dit, on **déclare une règle unique qui fonctionne pour tous les fichiers `.c`** du projet.
+```makefile
+	$(CC) $(CFLAGS) -c $< -o $@
+```
+Correspond à ces instructions pour notre projet. Mais **sans avoir à l’écrire pour chaque fichier** grâce au `%`.
+```bash
+gcc -Wall -Wextra -c main.c -o main.o
+gcc -Wall -Wextra -c dessinerForme.c -o dessinerForme.o
+```
+- `-c`  
+  dit au compilateur de **compiler en fichier objet seulement**. Sans `-c`, gcc essaierait de créer un exécutable immédiatement, ce qu’on ne veut pas à cette étape.
+- `$<`  
+  Représente **la première dépendance** de la règle. Pour `main.o: main.c`, `$<` = `main.c`.
+- `$@`
+  Représente **la cible** de la règle. Pour `main.o: main.c`, `$@` = `main.o`.
