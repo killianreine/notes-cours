@@ -176,3 +176,6 @@ Aborted
 ```
 En gros il y a une erreur lors d'une assertion, l'erreur précise laquelle, par la suite c'est à vous de trouver comment régler la fonctionnalité.  
 *Bon ici j'avais volontairement mis des valeurs erronées pour voir ce qu'il se passe...*
+
+# Suivant 
+- Cours suivant : [[13 - Compilation séparée et Makefile]]
