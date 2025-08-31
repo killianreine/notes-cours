@@ -1,6 +1,7 @@
 # Introduction
 ## Qu'est-ce qu'un test unitaire ?
 Un **==test unitaire==** est une méthode de test qui consiste à vérifier qu'une **unité/partie** de code *(le plus souvent un fonction, un module)* fonctionne correctement. L'idée est de tester chaque composante de manière isolée pour s'assurer qu'il produit le résultat final souhaité.  
+Les tests unitaires sont effectués pendant la phase de développement *(phase de programmation)* d'une application, d'un logiciel.
 L'objectif de ces test unitaires et de détecter rapidement les erreurs dans des parties spécifiques du code. Ce genre de tests sont très avantageux, ils permettent un débogage du code plus simple, un maintenance de code plus sûre et une documentation vivante du comportement du code que l'on attend.
 
 ## En C, ça dit quoi ?
@@ -26,42 +27,12 @@ Pour effectuer un test unitaire, le plus souvent on suit quelques petites étape
 Setup -> Exercise -> Assertion -> Teardown
 ```
 
-Pour effectuer une assertion on utilise la syntaxe suivante : 
-```c
-assert(test); // Si vrai passe sinon échoue
-```
 
-<u>Exemple :</u>  
-On souhaite Vérifier le retour d'une fonction `somme` qui prend en paramètres deux entiers et qui renvoie la somme des deux. Pour l'exemple nous allons exprès nous tromper quelque part dans le code pour voir ce qu'il se passe : 
+On effectue un test unitaire avec la fonction :
 ```c
-#include <stdio.h>
 #include <assert.h>
-
-int somme(int a, int b) {
-    return a - b;
-}
-
-// Test unitaire
-void test_somme() {
-    // Setup
-    int a = 2, b = 3;
-    
-    // Exercise
-    int resultat = somme(a, b);
-    
-    // Assertion
-    assert(resultat == 5); 
-    
-    // Teardown : rien à nettoyer dans cet exemple
-    printf("Test de somme passé !\n");
-}
-
-int main() {
-    test_somme();  // Exécuter le test
-    return 0;
-}
+assert(expression);
 ```
-```bash
-test_somme: Assertion `resultat == 5' failed.
-Aborted
-```
+Qui permet de vérifier si `expression` est vraie. Dans le cas contraire, le programme s'arrête avec un message d'erreur et la ligne.
+
+$\boxed{\text{Rechercher les occurences d'un éléments dans un tableau}}$  
