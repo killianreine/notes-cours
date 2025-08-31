@@ -36,4 +36,10 @@ assert(expression);
 Qui permet de vérifier si `expression` est vraie. Dans le cas contraire, le programme s'arrête avec un message d'erreur et la ligne.
 
 $\boxed{\text{Rechercher les occurrences d'un éléments dans un tableau}}$  
-Dans ce cours je vous propose un exemple concret d'algorithme à tester. L'objectif de notre programme est de coder une fonction qui s'appellera `rechercher_occurence` elle prendra en paramètre un pointeur vers un tableau d'entier  et un entier. Elle retournera le nombre d'occurrences de cet entier dans le tableau. 
+Dans ce cours je vous propose un exemple concret d'algorithme à tester. L'objectif de notre programme est de coder une fonction qui s'appellera `rechercher_occurrence` elle prendra en paramètre un pointeur vers un tableau d'entier  et un entier. Elle retournera le nombre d'occurrences de cet entier dans le tableau.  
+Pour simplifier les choses on représentera les tableaux entre crochets comme en langage Python. En gros voici quelques résultats de notre fonction sur quelques tableau : 
+```python
+rechercher_occurrence([1, 2, 6, 7, 8, 41, 25], 14) # Renverra 0
+rechercher_occurrence([1, 2, 6, 7, 1, 2, 3, 8, 41, 25], 7) # Renverra 1
+rechercher_occurrence([1, 2, 6, 7, 1, 2, 3, 8, 41, 25], 2) # Renverra 2
+```
