@@ -432,3 +432,6 @@ gcc -Wall -Wextra -c dessinerForme.c -o dessinerForme.o
   Représente **la première dépendance** de la règle. Pour `main.o: main.c`, `$<` = `main.c`.
 - `$@`
   Représente **la cible** de la règle. Pour `main.o: main.c`, `$@` = `main.o`.
+
+# Suivant
+- Cours suivant : [[14 - Structures particulières]]
