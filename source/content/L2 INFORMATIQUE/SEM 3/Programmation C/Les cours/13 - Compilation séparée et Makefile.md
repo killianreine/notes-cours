@@ -124,7 +124,7 @@ En fait on utilise `#ifndef`, `#define` et `#endif` dans les fichier headers `.h
 >```
 > Si `CST` n'est pas défini alors définit `CST` et inclus le contenu entre `#ifndef` et `#endif`.
 
->[!NOTE]
+>[!tip]
 >Le nom des paramètres de chaque prototype n'est pas obligatoire ainsi, notre fichier `.h` aurait aussi pu ressembler à : 
 >
 >```c
@@ -342,4 +342,53 @@ EXEC = prog
 SRC = main.c dessinerForme.c
 # Conversion auto en fichier objet
 OBJ = $(SRC:.c=.o)
+
+# Règle principale
+$(EXEC): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(EXEC)
+
+# Règle générique pour compiler un .c en .o
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Nettoyage des fichiers compilés
+clean:
+	rm -f $(OBJ) $(EXEC)
+```
+
+**Les explications du makefile**
+```makefile
+CC = gcc
+```
+est une variable standard qui permet de savoir quel compilateur on utilise, ici en C on utilise gcc. Si on souhaite changer et mettre `clang` il faudra simplement remplacer `gcc` par `clang`.
+```makefile
+CFLAGS = -Wall -Wextra
+```
+`CFLAGS` contient **les options de compilation** pour le compilateur.
+- `-Wall` permet d'activer presque tous les avertissements.
+- `-Wextra` active les avertissements supplémentaires.
+```makefile
+EXEC = prog
+```
+Permet de donner un nom à l'exécutable que `make` va devoir créer, ici on l'a appeler `prog`.
+```makefile
+SRC = main.c dessinerForme.c
+```
+Dans la variable `SRC` on liste tous les fichiers sources du projets.
+```makefile
+OBJ = $(SRC:.c=.o)
+```
+Transforme automatiquement la liste des `.c` en `.o`.
+
+- Utilisation du makefile
+```
+make
+```
+Il va générer les fichiers `.o` et l'exécutable `prog`, il suffira ensuite d'exécuter le programme avec la commande suivante qui elle ne change pas de d'habitude : 
+```
+./prog
+```
+Pour le nettoyage : suppression fichiers objets `.o` et exécutable.
+```
+make clean
 ```
