@@ -35,4 +35,5 @@ assert(expression);
 ```
 Qui permet de vérifier si `expression` est vraie. Dans le cas contraire, le programme s'arrête avec un message d'erreur et la ligne.
 
-$\boxed{\text{Rechercher les occurences d'un éléments dans un tableau}}$  
+$\boxed{\text{Rechercher les occurrences d'un éléments dans un tableau}}$  
+Dans ce cours je vous propose un exemple concret d'algorithme à tester. L'objectif de notre programme est de coder une fonction qui s'appellera `rechercher_occurence` elle prendra en paramètre un pointeur vers un tableau d'entier  et un entier. Elle retournera le nombre d'occurrences de cet entier dans le tableau. 
