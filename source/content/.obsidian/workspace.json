@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L3 INFORMATIQUE/Information L3 S5.md",
+                "file": "L2 INFORMATIQUE/SEM 4/Informations L2S4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Information L3 S5"
+              "title": "Informations L2S4"
             }
           },
           {
@@ -254,9 +254,10 @@
   },
   "active": "ae9b74d0a8b0f5bd",
   "lastOpenFiles": [
-    "index.md",
     "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
+    "L2 INFORMATIQUE/SEM 4/Informations L2S4.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
+    "index.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L1 MIPSI/SEM 1/Informations L1 S1.md",
@@ -277,7 +278,6 @@
     "Emplois du temps/Gr1 L2 INFO.md",
     "Emplois du temps",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/11 - Les fichiers.md",
-    "L2 INFORMATIQUE/SEM 4/Informations L2S4.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours/00 - Notions préliminaires.md",
     "L2 INFORMATIQUE/Maquette L2.png",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
