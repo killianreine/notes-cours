@@ -44,7 +44,7 @@
         L’UE <strong>Mathématiques pour l’informatique 2</strong> prolonge l’UE du même nom du semestre précédent. Au programme : relations binaires, graphes, algèbre de Boole, logique et codage linéaire.
       </p>
       <p><span class="labelINFOLI">Support de cours :</span>
-        <a href="25-26 L2 INFO, TUTORAT MATINFO 2" target="_blank">Tutorat MATINFO 2 (2025-26)</a>
+        <a href="25-26 L2 INFO, TUTORAT MATINFO 2">Tutorat MATINFO 2 (2025-26)</a>
       </p>
       <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
     </article>
@@ -77,7 +77,7 @@
         L’UE <strong>Programmation en C</strong> initie au langage C et à ses bases : variables, structures de contrôle, tableaux, pointeurs, gestion mémoire. Elle développe une meilleure compréhension du fonctionnement interne des programmes.
       </p>
       <p><span class="labelINFOLI">Support de cours :</span>
-        <a href="readme progC" target="_blank">readme progC</a> – <em>cours en rédaction par K. REINE</em>
+        <a href="readme progC">readme progC</a> – <em>cours en rédaction par K. REINE</em>
       </p>
       <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
     </article>
