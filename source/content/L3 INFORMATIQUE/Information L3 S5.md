@@ -103,16 +103,21 @@
     </thead>
     <tbody>
       <tr class="bloc-header">
-        <td colspan="2">Unités d'Enseignements Disciplinaires (UED)</td>
-      </tr>
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 1</td>
+    </tr>
       <tr>
         <td>Génie logiciel</td>
         <td>50 heures</td>
-      </tr>
+      </tr><tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 2</td>
+    </tr>
       <tr>
         <td>Système de Gestion de Base de Données</td>
         <td>50 heures</td>
       </tr>
+      <tr class="bloc-header">
+      <td colspan="2">Unités d'Enseignements Disciplinaires - BLOC 3</td>
+    </tr>
       <tr>
         <td>Théorie des langages</td>
         <td>50 heures</td>
@@ -136,7 +141,7 @@
         <td>25 heures</td>
       </tr>
       <tr>
-        <td>Option 1 - Programmation C++</td>
+        <td>Option 1 - Programmation objet C++</td>
         <td>25 heures</td>
       </tr>
       <tr>
