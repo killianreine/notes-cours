@@ -1,130 +1,156 @@
-# Licence 3 - Informatique INFO
-# Présentation brève de la licence
-La **licence d’informatique** propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
-Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
+<div>
+<section class="licenceINFOLI">
+<header class="headerINFOLI">
+    <h1 class="titleINFOLI">Licence 2 - Informatique</h1>
+    <p class="introINFOLI">
+      La <strong>licence d’informatique</strong> propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
+      Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
+    </p>
+    <p class="introINFOLI">La formation est <strong>structurée en six semestres</strong> et partage certains enseignements avec la licence de mathématiques lors des premiers semestres.</p>
+  </header>
+  </section>
+  <!-- UED -->
+<section class="uedINFOLI">
+  <h2 class="subtitleINFOLI">Unités d’Enseignement Disciplinaires (UED)</h2>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Génie logiciel</h3>
+    <p>
+      L’<strong>Unité d’Enseignement Génie logiciel</strong> initie aux méthodes et outils de conception, de développement et de maintenance de logiciels complexes.
+      Sont abordés les bonnes pratiques de programmation, la gestion de projet, l’utilisation de Git, ainsi que les premières notions de modélisation (UML, architecture logicielle).
+    </p>
+    <p><u>Support de cours :</u> [[readme GL]]</p>
+    <p><u>Durée de l'UE :</u> 50 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Sciences de Gestion de Base de Données</h3>
+    <p>
+      Cette UE initie aux concepts fondamentaux des bases de données relationnelles : modélisation conceptuelle, logique et physique, langage SQL, normalisation et intégrité des données.
+    </p>
+    <p><u>Support de cours :</u> <a href="https://litis.univ-lehavre.fr/~fournier/" target="_blank">Support de cours dfournier</a></p>
+    <p><u>Durée de l'UE :</u> 50 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Théorie des langages</h3>
+    <p>
+      L’UE introduit les fondements mathématiques des langages formels, essentiels pour les compilateurs, automates et analyseurs syntaxiques : grammaires, automates finis et à pile, expressions régulières.
+    </p>
+    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Durée de l'UE :</u> 50 heures</p>
+  </article>
+</section>
+<section class="uetINFOLI">
+  <h2 class="subtitleINFOLI">Unités d’Enseignement Transversaux (UET)</h2>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Anglais 5</h3>
+    <p>
+      L’anglais permet de développer compréhension, expression et vocabulaire scientifique, préparant à une communication internationale, orale et écrite.
+    </p>
+    <p><u>Durée de l'UE :</u> 18 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Algorithmique avancée</h3>
+    <p>
+      Dans la continuité des UE d’algorithmique des semestres précédents, cette UE aborde les arbres binaires de recherche et l’analyse de la complexité des algorithmes.
+    </p>
+    <p><u>Support de cours :</u> <a href="https://www-apps.univ-lehavre.fr/forge/balevs/algorithmique-avanc-e" target="_blank">Supports AlgoAvancée sbalev</a></p>
+    <p><u>Durée de l'UE :</u> 32 heures</p>
+  </article>
+</section>
+<section class="uepINFOLI">
+  <h2 class="subtitleINFOLI">Unités d’Enseignement Personnalisé (UEP)</h2>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Système d'exploitation 2</h3>
+    <p><em>Parcours Informatique</em></p>
+    <p>
+      Cette UE plonge les étudiants au cœur des systèmes Unix/Linux : processus, threads, signaux, ordonnancement et communication inter-processus.
+    </p>
+    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Durée de l'UE :</u> 25 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Option 1 - Programmation C++</h3>
+    <p>
+      Introduction à la programmation orientée objet en C++ : classes, héritage, polymorphisme, gestion mémoire et programmation générique.
+    </p>
+    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Durée de l'UE :</u> 25 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Option 2 - Architecture avancée</h3>
+    <p>
+      Approfondissement de l’architecture matérielle : multi-cœurs, mémoire cache, pipelines, SIMD, et modèles de traitement parallèle.
+    </p>
+    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Durée de l'UE :</u> 25 heures</p>
+  </article>
+  <article class="ueINFOLI">
+    <h3 class="ue-titleINFOLI">Option 3 - Programmation logique</h3>
+    <p>
+      Découverte de la programmation déclarative avec Prolog : faits, règles, requêtes, unification et arbres de recherche, avec des applications en IA et en recherche de solutions.
+    </p>
+    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Durée de l'UE :</u> 25 heures</p>
+  </article>
+</section>
+<section class="recapINFOLI">
+  <h2 class="subtitleINFOLI">Récapitulatif – Semestre 5</h2>
 
-La formation est **structurée en six semestres** et partage certains enseignements avec la licence de mathématiques lors des premiers semestres.
-# Unités d'enseignements disciplinaire UED
+  <table class="ue-table">
+    <thead>
+      <tr>
+        <th>Unité d’Enseignement</th>
+        <th>Durée</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bloc-header">
+        <td colspan="2">Unités d'Enseignements Disciplinaires (UED)</td>
+      </tr>
+      <tr>
+        <td>Génie logiciel</td>
+        <td>50 heures</td>
+      </tr>
+      <tr>
+        <td>Système de Gestion de Base de Données</td>
+        <td>50 heures</td>
+      </tr>
+      <tr>
+        <td>Théorie des langages</td>
+        <td>50 heures</td>
+      </tr>
 
-## Génie logiciel
-L’**Unité d’Enseignement Génie logiciel** initie les étudiants aux méthodes et outils de conception, de développement et de maintenance de logiciels complexes.  
-Elle aborde les bonnes pratiques de programmation, la structuration du code, la gestion de projet, le travail collaboratif avec des outils comme Git, ainsi que les premières notions de modélisation (UML, architecture logicielle).  
-L’objectif est d’apprendre à développer de manière rigoureuse, modulaire et professionnelle, en préparant les étudiants à des projets logiciels de plus grande envergure.
-- <u>Support de cours :</u> [[readme GL]]
-- <u>Durée de l'UE :</u> 50 heures
+      <tr class="bloc-header">
+        <td colspan="2">Unités d'Enseignements Transversaux (UET)</td>
+      </tr>
+      <tr>
+        <td>Anglais 5</td>
+        <td>18 heures</td>
+      </tr>
+      <tr>
+        <td>Algorithmique avancée</td>
+        <td>32 heures</td>
+      </tr>
 
-## Sciences de Gestion de Base de Données
-L’**Unité d’Enseignement Sciences de gestion de bases de données** initie les étudiants aux concepts fondamentaux des bases de données relationnelles.  
-Elle couvre la **modélisation des données** (modèle conceptuel, logique, physique), l’utilisation du **langage SQL** pour la création, la manipulation et la requête de données, ainsi que des notions de **normalisation** et d’**intégrité des données**.  
-Cette UE constitue un socle essentiel pour concevoir, exploiter et optimiser des systèmes d’information fiables et performants.
-- <u>Support de cours :</u> [Support de cours dfournier](https://litis.univ-lehavre.fr/~fournier/)
-- <u>Durée de l'UE :</u> 50 heures
-
-## Théorie des langages
-L’**Unité d’Enseignement Théorie des langages** introduit les fondements mathématiques des langages formels, essentiels à la compréhension des compilateurs, des automates et de la logique en informatique.  
-Elle aborde les notions de **grammaires**, **langages réguliers et contextuels**, **automates finis et à pile**, ainsi que les **expressions régulières**.  
-Cette UE développe une rigueur formelle dans l’analyse des structures syntaxiques et prépare à la conception d’outils de traitement automatique du langage, comme les analyseurs lexicaux ou syntaxiques.
-- <u>Support de cours :</u> *aucun support...*
-- <u>Durée de l'UE :</u> 50 heures
-
-# Unités d'Enseignements Transversal - UET
-## Anglais 5
-L’**anglais** est une Unité d'Enseignement Transversal (UET) et occupe une place essentielle dans la formation universitaire, en particulier dans les disciplines scientifiques et techniques. Il permet aux étudiants de développer leurs compétences en compréhension et en expression, tout en se familiarisant avec le vocabulaire professionnel et scientifique. Cet enseignement vise à les préparer à une communication efficace à l’échelle internationale, tant à l’écrit qu’à l’oral.
-- <u>Durée de l'UE :</u> 18 heures
-
-## Algorithmique avancée
-L’**Algorithmique & Programmation 3** est une Unité d’Enseignement Disciplinaire (UED) dans la continuité des UE d'algorithmiques de L1 et de L2 au programme, arbre binaire de recherche, Complexité des algorithmes
-- <u>Support de cours :</u> [Supports AlgoAvancée sbalev](https://www-apps.univ-lehavre.fr/forge/balevs/algorithmique-avanc-e)
-  <br/>Supports de cours et de TDs de l'enseignant en charge de l'UE
-- <u>Durée de l'UE :</u> 32 heures
-
-# Unité d'Enseignement Personnalisé - UEP
-
-## Système d'exploitation 2
->Parcours INFORMATIQUE
-
-L’**Unité d’Enseignement Programmation Systèmes** plonge les étudiants au cœur du fonctionnement des systèmes d’exploitation, en particulier sous Unix/Linux.  
-Elle couvre les mécanismes essentiels comme la création et la gestion des **processus** et **threads**, le traitement des **signaux**, les stratégies d’**ordonnancement**, ainsi que les méthodes de **communication inter-processus (IPC)**.  
-Cette UE permet de comprendre comment les programmes interagissent avec le système et entre eux, et constitue une base indispensable pour tout informaticien souhaitant travailler proche du matériel ou en environnement multi-tâches.
-- <u>Support de cours :</u> *aucun support...*
-- <u>Durée de l'UE :</u> 25 heures
-
-## OPTION 1 - C++
-L’**Unité d’Enseignement Programmation en C++** permet aux étudiants de découvrir la **programmation orientée objet** à travers un langage puissant et largement utilisé dans l’industrie du logiciel.   
-Elle couvre les concepts clés du C++ tels que les **classes**, **l’héritage**, **le polymorphisme**, ainsi que la gestion fine de la **mémoire** et les **modèles de programmation générique**.   
-Cette UE constitue une étape importante dans l’apprentissage de la programmation avancée et dans la conception de logiciels modulaires, robustes et performants.
-- <u>Support de cours :</u> *aucun support...*
-- <u>Durée de l'UE :</u> 25 heures
-
-## OPTION 2 - Architecture avancée
-L’**Unité d’Enseignement Architecture avancée** approfondit les connaissances en architecture des ordinateurs, au-delà des bases acquises précédemment.   
-Elle aborde des notions comme les **architectures multi-cœurs**, la **mémoire cache**, les **pipelines d’exécution**, les **instructions SIMD**, ainsi que les modèles de **traitement parallèle**.  
-Cette UE permet de mieux comprendre les performances des programmes, d’optimiser le code en fonction du matériel, et de se préparer à la programmation sur des architectures modernes.
-- <u>Support de cours :</u> *aucun support...*
-- <u>Durée de l'UE :</u> 25 heures
-
-## OPTION 3 - Programmation logique
-L’**Unité d’Enseignement Programmation logique** initie les étudiants à un paradigme de programmation fondé sur la logique mathématique, en particulier à travers le langage **Prolog**.  
-Elle explore la **déclaration de faits et de règles**, les **requêtes**, la **résolution par unification**, et les **arbres de recherche**.  
-Cette approche permet de résoudre des problèmes complexes de manière déclarative, en laissant au moteur d’inférence le soin de déterminer les étapes de résolution. Elle est particulièrement utile en **intelligence artificielle**, **représentation des connaissances** et **recherche automatique de solutions**.
-- <u>Support de cours :</u> *aucun support...*
-- <u>Durée de l'UE :</u> 25 heures
-
-# Récap SEMESTRE 5
-
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 90%;">
-  <thead>
-    <tr>
-      <th>Unité d’Enseignement</th>
-      <th>Durée</th>
-    </tr>
-  </thead>
-  <tbody>
-	  <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Disciplinaires (UED)</td>
-    </tr>
-    <tr>
-      <td><strong>Génie logiciel</strong></td>
-      <td>50 heures</td>
-    </tr>
-    <tr>
-      <td><strong>Système de Gestion de Base de Données SGBD</strong></td>
-      <td>50 heures</td>
-    </tr>
-    <tr>
-      <td><strong>Théorie des langages</strong></td>
-      <td>50 heures</td>
-    </tr>
-	<tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Transversaux (UET)</td>
-    </tr>    
-    <tr>
-      <td><strong>Anglais 5</strong></td>
-      <td>18 heures</td>
-    </tr>
-    <tr>
-      <td><strong>Algorithmique avancée</strong></td>
-      <td>32 heures</td>
-    </tr>
-    <tr>
-      <td colspan="2" style="font-weight: bold; text-align: center;">Unités d'Enseignements Personnalisé (UEP)</td>
-    </tr>    
-    <tr>
-      <td><strong>Système d'exploitation 2</strong></td>
-      <td>25 heures</td>
-    </tr>
-    <tr>
-      <td><strong>OPTION 1 - Programmation C++</strong></td>
-      <td>25 heures</td>
-    </tr>
-    <tr>
-      <td><strong>OPTION 2 - Architecture avancée</strong></td>
-      <td>25 heures</td>
-    </tr>
-    <tr>
-      <td><strong>OPTION 3 - Programmation logique</strong></td>
-      <td>25 heures</td>
-    </tr>
-</tbody>
-</table>
-
+      <tr class="bloc-header">
+        <td colspan="2">Unités d'Enseignements Personnalisés (UEP)</td>
+      </tr>
+      <tr>
+        <td>Système d'exploitation 2</td>
+        <td>25 heures</td>
+      </tr>
+      <tr>
+        <td>Option 1 - Programmation C++</td>
+        <td>25 heures</td>
+      </tr>
+      <tr>
+        <td>Option 2 - Architecture avancée</td>
+        <td>25 heures</td>
+      </tr>
+      <tr>
+        <td>Option 3 - Programmation logique</td>
+        <td>25 heures</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+</div>
