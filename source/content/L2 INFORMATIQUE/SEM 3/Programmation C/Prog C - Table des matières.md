@@ -262,4 +262,4 @@
 	- Champs de bits
 		- Définition
 		- Utilisation
-15. **Fonctions avancées** [[15 - Fonctions avancées]]
+15. **Base de données** [[15 - Bases de données]]
