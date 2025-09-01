@@ -1,7 +1,7 @@
 <div>
 <section class="licenceINFOLI">
 <header class="headerINFOLI">
-    <h1 class="titleINFOLI">Licence 2 - Informatique</h1>
+    <h1 class="titleINFOLI">Licence 3 - Informatique</h1>
     <p class="introINFOLI">
       La <strong>licence d’informatique</strong> propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
       Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
@@ -18,7 +18,7 @@
       L’<strong>Unité d’Enseignement Génie logiciel</strong> initie aux méthodes et outils de conception, de développement et de maintenance de logiciels complexes.
       Sont abordés les bonnes pratiques de programmation, la gestion de projet, l’utilisation de Git, ainsi que les premières notions de modélisation (UML, architecture logicielle).
     </p>
-    <p><u>Support de cours :</u> [[readme GL]]</p>
+    <p><u>Support de cours :</u> <a href="readme GL">readme GL</a></p>
     <p><u>Durée de l'UE :</u> 50 heures</p>
   </article>
   <article class="ueINFOLI">
@@ -34,7 +34,7 @@
     <p>
       L’UE introduit les fondements mathématiques des langages formels, essentiels pour les compilateurs, automates et analyseurs syntaxiques : grammaires, automates finis et à pile, expressions régulières.
     </p>
-    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Support de cours :</u> aucun support...</p>
     <p><u>Durée de l'UE :</u> 50 heures</p>
   </article>
 </section>
@@ -64,7 +64,7 @@
     <p>
       Cette UE plonge les étudiants au cœur des systèmes Unix/Linux : processus, threads, signaux, ordonnancement et communication inter-processus.
     </p>
-    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Support de cours :</u> aucun support...</p>
     <p><u>Durée de l'UE :</u> 25 heures</p>
   </article>
   <article class="ueINFOLI">
@@ -72,7 +72,7 @@
     <p>
       Introduction à la programmation orientée objet en C++ : classes, héritage, polymorphisme, gestion mémoire et programmation générique.
     </p>
-    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Support de cours :</u> aucun support...</p>
     <p><u>Durée de l'UE :</u> 25 heures</p>
   </article>
   <article class="ueINFOLI">
@@ -80,7 +80,7 @@
     <p>
       Approfondissement de l’architecture matérielle : multi-cœurs, mémoire cache, pipelines, SIMD, et modèles de traitement parallèle.
     </p>
-    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Support de cours :</u> aucun support...</p>
     <p><u>Durée de l'UE :</u> 25 heures</p>
   </article>
   <article class="ueINFOLI">
@@ -88,13 +88,12 @@
     <p>
       Découverte de la programmation déclarative avec Prolog : faits, règles, requêtes, unification et arbres de recherche, avec des applications en IA et en recherche de solutions.
     </p>
-    <p><u>Support de cours :</u> *aucun support...*</p>
+    <p><u>Support de cours :</u> aucun support...</p>
     <p><u>Durée de l'UE :</u> 25 heures</p>
   </article>
 </section>
 <section class="recapINFOLI">
   <h2 class="subtitleINFOLI">Récapitulatif – Semestre 5</h2>
-
   <table class="ue-table">
     <thead>
       <tr>
@@ -118,7 +117,6 @@
         <td>Théorie des langages</td>
         <td>50 heures</td>
       </tr>
-
       <tr class="bloc-header">
         <td colspan="2">Unités d'Enseignements Transversaux (UET)</td>
       </tr>
@@ -130,7 +128,6 @@
         <td>Algorithmique avancée</td>
         <td>32 heures</td>
       </tr>
-
       <tr class="bloc-header">
         <td colspan="2">Unités d'Enseignements Personnalisés (UEP)</td>
       </tr>
