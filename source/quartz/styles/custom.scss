@@ -173,7 +173,7 @@ html.light .custom-summary:hover {
 a {
   color: var(--primary-blue);
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: none;      /* enlève le soulignement natif */
   position: relative;
   transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -181,11 +181,10 @@ a {
 a:hover,
 a:focus {
   color: var(--accent-purple);
-  text-decoration: underline;
   transform: translateY(-1px);
 }
 
-/* Accent visuel : petit soulignement animé */
+/* Accent visuel : soulignement animé */
 a::after {
   content: "";
   position: absolute;
@@ -221,3 +220,4 @@ a:focus::after {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
