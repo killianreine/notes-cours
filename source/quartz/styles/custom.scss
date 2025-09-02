@@ -221,18 +221,3 @@ a:focus::after {
   pointer-events: none !important;
 }
 
-/* Cacher complètement la sidebar de Quartz */
-.sidebar,
-.left-sidebar,
-#quartz-sidebar {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* Si tu veux que le contenu principal prenne toute la largeur */
-.main,
-.page,
-.content {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}

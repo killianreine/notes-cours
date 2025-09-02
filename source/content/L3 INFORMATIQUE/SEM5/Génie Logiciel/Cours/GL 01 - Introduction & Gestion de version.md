@@ -10,3 +10,4 @@ On peut citer quelques composantes liées au génie logiciel GL :
 
 # Gestion de version
 ## Introduction
+La **==gestion de version==** est une manière d'organiser et de suivre l'évolution d'un travail au fil du temps. Elle permet de garder un historique de toutes les modifications apportées à un projet *(fichiers, documents, code, ...)*. C'est un peu comme une mémoire de son développement. 
