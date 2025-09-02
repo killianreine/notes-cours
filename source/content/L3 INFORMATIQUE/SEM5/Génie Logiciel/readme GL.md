@@ -9,12 +9,38 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel, destiné au
 - Développer un code propre, maintenable et évolutif
 
 ## 📚 Contenu du cours
-- Introduction au Génie Logiciel
-- Analyse et spécification des besoins
-- Modélisation UML et conception orientée objet
-- Méthodes agiles et gestion de projet
-- Tests et qualité logicielle
-- Maintenance et évolution des systèmes
+
+<div>
+<table class="cours-planC">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Cours</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+	  <tr>
+      <td colspan="3">CM.1</td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td><a href="GL 01 - Introduction">Introduction</a></td>
+      <td>Présentation du module génie logiciel</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td><a href="#">Gestion des versions</a></td>
+      <td>Gestion mono/multi documents, git</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td><a href="#">Initiation à Maeven</a></td>
+      <td>Mise en place, commandes de base</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 > Chaque chapitre contient :
 > - Des fiches de cours détaillées
@@ -27,6 +53,3 @@ Ce cours s’adresse :
 - Aux étudiants en informatique ou en génie logiciel
 - Aux développeurs souhaitant améliorer leurs pratiques
 - À ceux qui se préparent à des examens ou projets universitaires
-
-## On commence ?
-- C'est parti ! [[CM01]]
