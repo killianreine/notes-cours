@@ -166,3 +166,58 @@ html.light .custom-summary:hover {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
+/* =========================== Liens personnalisés =========================== */
+
+/* Style par défaut (mode clair) */
+a {
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-purple);
+  text-decoration: underline;
+  transform: translateY(-1px);
+}
+
+/* Accent visuel : petit soulignement animé */
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-pink));
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+a:hover::after,
+a:focus::after {
+  width: 100%;
+}
+
+/* Mode sombre */
+[saved-theme="dark"] a {
+  color: var(--secondary-blue);
+}
+
+[saved-theme="dark"] a:hover,
+[saved-theme="dark"] a:focus {
+  color: var(--accent-pink);
+}
+
+/* Désactivation complète des previews Quartz */
+.link-preview-container,
+.link-preview,
+.popover {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
