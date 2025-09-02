@@ -179,3 +179,14 @@ table.cours-planC a {
 [saved-theme="dark"] .project-cardTDC em {
   color: #bbb;
 }
+
+/* Désactive complètement les mini-aperçus (page preview) d'Obsidian */
+.popover.hover-popover,
+.popover.page-preview,
+.popover.hover-preview,
+.popover.preview,
+.obsidian-popover {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
