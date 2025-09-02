@@ -1,2 +1,9 @@
 Le **génie logiciel** (_software engineering_ en anglais) est une discipline de l’informatique qui s’intéresse à la **conception, au développement, à la maintenance et à la gestion des logiciels** de manière systématique, structurée et efficace.  
 Le développement de logiciels demande du temps, est difficile et couteux. Le génie logiciel peut être vu comme un ensemble de méthodes/outils permettant de rendre le développement plus efficace et plus rapide.
+
+On peut citer quelques composantes liées au génie logiciel GL :
+- **Méthodes de structuration de code :** code Smells, design pattern, ...
+- **Outils de développement :** IDE, Construction de code, Gestion de version, ...
+- **Aide à la mise en œuvre de qualité :** Outils de tests, contrôles sur le code
+- **Gestion de projet :** Gantt, Cocomo, ...
+
