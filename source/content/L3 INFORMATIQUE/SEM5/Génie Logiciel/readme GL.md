@@ -24,18 +24,13 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel, destiné au
       <td colspan="3" class="bloc-header">Cours Magistral n°1</td>
     </tr>
     <tr>
-      <td>01</td>
-      <td><a href="GL 01 - Introduction">Introduction</a></td>
-      <td>Présentation du module génie logiciel</td>
+      <td>01.1</td>
+      <td><a href="GL 01 - Introduction & Gestion de version">Introduction</a></td>
+      <td>Présentation du module génie logiciel, gestion des versions</td>
     </tr>
     <tr>
-      <td>02</td>
-      <td><a href="#">Gestion des versions</a></td>
-      <td>Gestion mono/multi documents, git</td>
-    </tr>
-    <tr>
-      <td>03</td>
-      <td><a href="#">Initiation à Maeven</a></td>
+      <td>01.2</td>
+      <td><a href="GL 02 - Initiation à Maeven">Initiation à Maeven</a></td>
       <td>Mise en place, commandes de base</td>
     </tr>
   </tbody>
