@@ -9,5 +9,4 @@ On peut citer quelques composantes liées au génie logiciel GL :
 - **Gestion de projet :** Gantt, Cocomo, ...
 
 # Gestion de version
-# Introduction
-L
+## Introduction
