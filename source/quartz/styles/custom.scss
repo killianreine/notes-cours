@@ -157,3 +157,12 @@ html.light .custom-summary:hover {
 .ex-body {
   margin-top: 0.5em;
 }
+
+/* Désactive l'aperçu de lien (link preview) */
+.link-preview-container,
+.link-preview,
+.popover {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
