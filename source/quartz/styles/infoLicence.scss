@@ -142,11 +142,11 @@
   z-index: -1;
 }
 
-/* =========================== Header Héroïque =========================== */
+/* =========================== Header Héroïque Restructuré =========================== */
 .headerINFOLI {
   background: var(--primary-gradient);
   color: var(--text-inverse);
-  padding: var(--space-3xl);
+  padding: var(--space-3xl) var(--space-2xl);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-xl), var(--shadow-glow);
   position: relative;
@@ -154,6 +154,7 @@
   margin-bottom: var(--space-2xl);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
 .headerINFOLI::before {
@@ -168,6 +169,18 @@
   animation: shimmer 3s infinite;
 }
 
+.headerINFOLI::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  border-radius: var(--radius-full);
+}
+
 @keyframes shimmer {
   0% { left: -100%; }
   50% { left: 100%; }
@@ -178,42 +191,75 @@
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   letter-spacing: -0.025em;
-  margin: 0;
+  margin: 0 0 var(--space-sm);
   background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: none;
   position: relative;
+  display: inline-block;
 }
 
-/* =========================== Sous-titres Modernes =========================== */
+.titleINFOLI::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: rgba(255,255,255,0.4);
+  border-radius: var(--radius-full);
+}
+
+/* Sous-titre du header pour description */
+.headerINFOLI .descriptionINFOLI {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: var(--space-md);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* =========================== Sous-titres de Section Repensés =========================== */
 .subtitleINFOLI {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   color: var(--text-primary);
   margin: var(--space-2xl) 0 var(--space-lg);
   position: relative;
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
+  padding-left: var(--space-lg);
+  border-left: 4px solid var(--primary-500);
+  background: linear-gradient(90deg, var(--bg-surface-elevated), transparent);
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 .subtitleINFOLI::before {
   content: '';
+  position: absolute;
+  left: -4px;
+  top: 0;
+  bottom: 0;
   width: 4px;
-  height: 2rem;
   background: var(--primary-gradient);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   box-shadow: var(--shadow-glow);
 }
 
 .subtitleINFOLI::after {
   content: '';
-  flex: 1;
-  height: 2px;
-  background: linear-gradient(90deg, var(--border-primary) 0%, transparent 100%);
-  border-radius: var(--radius-full);
+  position: absolute;
+  bottom: 0;
+  left: var(--space-lg);
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--primary-500) 0%, transparent 100%);
 }
 
 /* =========================== Cards UE Ultra-Modernes =========================== */
