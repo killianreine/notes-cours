@@ -686,7 +686,7 @@ a[href^="http"]::before,
 /* =========================== Styles Cohérents Supplémentaires =========================== */
 
 /* Boutons harmonisés avec le design */
-.btnINFOLI, button {
+.btnINFOLI {
   background: var(--primary-gradient);
   color: var(--text-inverse);
   border: none;
@@ -703,12 +703,12 @@ a[href^="http"]::before,
   overflow: hidden;
 }
 
-.btnINFOLI:hover, button:hover {
+.btnINFOLI:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
 
-.btnINFOLI::before, button::before {
+.btnINFOLI::before {
   content: '';
   position: absolute;
   top: 0;
@@ -719,7 +719,7 @@ a[href^="http"]::before,
   transition: left 0.5s ease;
 }
 
-.btnINFOLI:hover::before, button:hover::before {
+.btnINFOLI:hover::before {
   left: 100%;
 }
 
@@ -834,7 +834,7 @@ blockquote::before {
 
 /* Mode sombre pour les éléments supplémentaires */
 [saved-theme="dark"] .btnINFOLI,
-[saved-theme="dark"] button {
+[saved-theme="dark"] {
   box-shadow: var(--shadow-lg);
 }
 
