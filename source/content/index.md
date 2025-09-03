@@ -49,6 +49,26 @@ auteur: Killian Reine
       </article>
     </div>
   </section>
+  <section id="licence-section" class="uedINFOLI">
+    <h2 class="subtitleINFOLI">Master INFORMATIQUE, ULHN</h2>
+    <p>Organisation des semestres par année :</p>
+    <div class="ue-gridINFOLI">
+      <article class="ueINFOLI">
+        <h3 class="ue-titleINFOLI">Master 1ère année</h3>
+        <ul class="ue-listINFOLI">
+          <li></li>
+          <li></li>
+        </ul>
+      </article>
+      <article class="ueINFOLI">
+        <h3 class="ue-titleINFOLI">Master 2ème année</h3>
+        <ul class="ue-listINFOLI">
+          <li></li>
+          <li></li>
+        </ul>
+      </article>
+    </div>
+  </section>
   <section id="autres-supports-section" class="uetINFOLI">
     <h2 class="subtitleINFOLI">📂 Autres supports</h2>
     <p>
