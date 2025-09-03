@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.cell {
+  fill: #f5f5f5;
+  stroke: #1f4e79;
+  stroke-width: 2;
+  rx: 8;
+  ry: 8;
+}
+
+.label {
+  font: 600 14px system-ui, Arial;
+  fill: #1f4e79;
+}
+
+.index {
+  font: 500 12px system-ui, Arial;
+  fill: #374151;
+}
+
+.brace {
+  fill: none;
+  stroke: #1f4e79;
+  stroke-width: 1.5;
+}
+
+.brace-text {
+  font: 500 12px system-ui, Arial;
+  fill: #1f4e79;
+}
+
+.arrow {
+  stroke: #1f4e79;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.arrow-fill {
+  fill: #1f4e79;
+}
+
+/* Thème sombre */
+[saved-theme=dark] .cell {
+  fill: #1e293b;
+  stroke: #60a5fa;
+}
+
+[saved-theme=dark] .label {
+  fill: #60a5fa;
+}
+
+[saved-theme=dark] .index {
+  fill: #cbd5e1;
+}
+
+[saved-theme=dark] .brace {
+  stroke: #60a5fa;
+}
+
+[saved-theme=dark] .brace-text {
+  fill: #60a5fa;
+}
+
+[saved-theme=dark] .arrow {
+  stroke: #60a5fa;
+}
+
+[saved-theme=dark] .arrow-fill {
+  fill: #60a5fa;
+}
+
+/*# sourceMappingURL=pointeurDEF.css.map */

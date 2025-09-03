@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* ===== Thème clair par défaut ===== */
+.title {
+  fill: #163758;
+}
+
+.subtitle {
+  fill: #163758;
+}
+
+.cell {
+  fill: #e6f0fa;
+  stroke: #1f4e79;
+}
+
+.label {
+  fill: #1f4e79;
+}
+
+.index {
+  fill: #163758;
+}
+
+.delim {
+  fill: #fdecea;
+  stroke: #b71c1c;
+}
+
+.delimFinal {
+  fill: #e0dfdf;
+  stroke: black;
+}
+
+.delim-modified {
+  fill: #ffebee;
+  stroke: #d32f2f;
+}
+
+.txtLeg {
+  color: black;
+}
+
+.nulltxt {
+  fill: #b71c1c;
+}
+
+.arrow {
+  stroke: #1f4e79;
+}
+
+.ret {
+  fill: #1f4e79;
+}
+
+.ret-box {
+  fill: #e8f5e8;
+  stroke: #4caf50;
+}
+
+.ret-text {
+  fill: #2e7d32;
+}
+
+.note {
+  fill: #b71c1c;
+}
+
+.step-bg {
+  fill: #f8fafe;
+  stroke: #d0d7e2;
+}
+
+/* ===== Thème sombre ===== */
+[saved-theme=dark] .title {
+  fill: #60a5fa;
+}
+
+[saved-theme=dark] .subtitle {
+  fill: #60a5fa;
+}
+
+[saved-theme=dark] .cell {
+  fill: #1e293b;
+  stroke: #60a5fa;
+}
+
+[saved-theme=dark] .label {
+  fill: #60a5fa;
+}
+
+[saved-theme=dark] .index {
+  fill: #cbd5e1;
+}
+
+[saved-theme=dark] .delim {
+  fill: #2c1a1a;
+  stroke: #f87171;
+}
+
+[saved-theme=dark] .delimFinal {
+  fill: #2c2c2c;
+  stroke: rgb(134, 134, 134);
+}
+
+[saved-theme=dark] .delim-modified {
+  fill: #3b1a1a;
+  stroke: #f87171;
+}
+
+[saved-theme=dark] .txtLeg {
+  color: #e2e8f0;
+}
+
+[saved-theme=dark] .nulltxt {
+  fill: #f87171;
+}
+
+[saved-theme=dark] .arrow {
+  stroke: #60a5fa;
+}
+
+[saved-theme=dark] .ret {
+  fill: #60a5fa;
+}
+
+[saved-theme=dark] .ret-box {
+  fill: #064e3b;
+  stroke: #22c55e;
+}
+
+[saved-theme=dark] .ret-text {
+  fill: #22c55e;
+}
+
+[saved-theme=dark] .note {
+  fill: #f87171;
+}
+
+[saved-theme=dark] .step-bg {
+  fill: #111827;
+  stroke: #374151;
+}
+
+/* ===== Thème clair par défaut ===== */
+.ret-box {
+  fill: #ffebee;
+  stroke: #d32f2f;
+}
+
+.ret-text {
+  fill: #d32f2f;
+}
+
+/* ===== Thème sombre ===== */
+[saved-theme=dark] .ret-box {
+  fill: #3b1a1a;
+  stroke: #f87171;
+}
+
+[saved-theme=dark] .ret-text {
+  fill: #f87171;
+}
+
+/*# sourceMappingURL=strtok.css.map */

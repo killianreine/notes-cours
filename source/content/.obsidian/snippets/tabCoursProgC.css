@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* Styles communs */
+table.cours-planC {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: "Orbitron", sans-serif;
+  margin: 30px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Styles des cellules */
+table.cours-planC th,
+table.cours-planC td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid;
+  transition: all 0.3s ease;
+}
+
+/* Liens */
+table.cours-planC a {
+  text-decoration: none;
+  transition: text-shadow 0.3s, color 0.3s;
+}
+
+/* --- MODE CLAIR --- */
+@media (prefers-color-scheme: light) {
+  table.cours-planC {
+    background: #f5f7fa; /* fond clair doux */
+    border: 1px solid #ccc;
+  }
+  table.cours-planC th {
+    background: linear-gradient(90deg, #4c7faf, #6aa0d6);
+    color: #fff;
+    font-weight: 700;
+    border-bottom-color: #3a5f8f;
+  }
+  table.cours-planC td {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border-bottom-color: #ddd;
+  }
+  table.cours-planC tr:nth-child(even) td {
+    background-color: #eaf0f6; /* alternance subtile */
+  }
+  table.cours-planC tr:hover td {
+    background-color: #d0e2f5;
+    transform: scale(1.02);
+  }
+  table.cours-planC a {
+    color: #007acc;
+  }
+  table.cours-planC a:hover {
+    text-decoration: underline;
+  }
+}
+/* --- MODE SOMBRE --- */
+[saved-theme=dark] table.cours-planC {
+  background: #1e1e2a;
+  border: 1px solid #444;
+}
+
+[saved-theme=dark] table.cours-planC th {
+  background: linear-gradient(90deg, #6f42c1, #9b59b6);
+  color: #fff;
+  font-weight: 700;
+  border-bottom-color: #5a2d91;
+}
+
+[saved-theme=dark] table.cours-planC td {
+  background-color: #2a2a3c;
+  color: #e0e0e0;
+  border-bottom-color: #3c3c52;
+}
+
+[saved-theme=dark] table.cours-planC tr:nth-child(even) td {
+  background-color: #323248;
+}
+
+[saved-theme=dark] table.cours-planC tr:hover td {
+  background-color: #3c3c5a;
+  transform: scale(1.02);
+}
+
+[saved-theme=dark] table.cours-planC a {
+  color: #9b59b6;
+}
+
+[saved-theme=dark] table.cours-planC a:hover {
+  text-decoration: underline;
+}
+
+/* =============== Layout global =============== */
+.projects-containerTDC {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* =============== Cartes projets =============== */
+.project-cardTDC {
+  padding: 1.8rem;
+  border-radius: 1.2rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.4s ease, color 0.4s ease;
+  animation: fadeSlideIn 0.7s ease both;
+}
+
+.project-cardTDC:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation apparition (fade + slide) */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* Titres */
+.project-cardTDC h2 {
+  margin-bottom: 0.9rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Listes */
+.project-cardTDC ul {
+  margin: 0.6rem 0 1.2rem 1.3rem;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Texte accentué */
+.project-cardTDC em {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* =============== Thème clair (par défaut) =============== */
+.projects-containerTDC {
+  color: #222;
+}
+
+.project-cardTDC {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2c3e50;
+}
+
+.project-cardTDC h2 {
+  color: #34495e;
+}
+
+.project-cardTDC em {
+  color: #555;
+}
+
+/* =============== Thème sombre (avec attribut) =============== */
+[saved-theme=dark] .projects-containerTDC {
+  color: #eaeaea;
+}
+
+[saved-theme=dark] .project-cardTDC {
+  background: rgba(36, 36, 36, 0.9);
+  color: #eaeaea;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+[saved-theme=dark] .project-cardTDC h2 {
+  color: #7d86ff;
+}
+
+[saved-theme=dark] .project-cardTDC em {
+  color: #bbb;
+}
+
+/* Désactive complètement les mini-aperçus (page preview) d'Obsidian */
+.popover.hover-popover,
+.popover.page-preview,
+.popover.hover-preview,
+.popover.preview,
+.obsidian-popover {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/*# sourceMappingURL=tabCoursProgC.css.map */
