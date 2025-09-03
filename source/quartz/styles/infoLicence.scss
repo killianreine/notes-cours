@@ -114,18 +114,6 @@
   --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.4);
 }
 
-/* =========================== Reset et Base =========================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-}
-
 /* =========================== Structure Principale =========================== */
 .bodyINFOLI {
   font-family: var(--font-sans);
