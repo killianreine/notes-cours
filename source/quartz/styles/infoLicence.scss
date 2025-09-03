@@ -628,15 +628,6 @@ html {
 }
 
 /* =========================== Liens Modernes =========================== */
-a, .linkINFOLI {
-  color: var(--primary-500);
-  text-decoration: none;
-  font-weight: 500;
-  position: relative;
-  transition: all var(--transition-base);
-  border-radius: var(--radius-xs);
-  padding: var(--space-xs) var(--space-sm);
-}
 
 a:hover, .linkINFOLI:hover {
   color: var(--primary-600);
