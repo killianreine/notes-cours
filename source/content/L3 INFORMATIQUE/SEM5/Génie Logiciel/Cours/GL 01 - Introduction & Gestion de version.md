@@ -24,3 +24,17 @@ La gestion de version, c’est :
 C’est une discipline qui devient essentielle dès qu’on travaille sur des projets un peu complexes, surtout en équipe.
 
 ## Gestion de version mono-document
+
+>[!cite] Définition
+>On appelle **==gestion de version mono-document==** le fait de garder l'historique des modifications appliquées à **un seul document**.
+
+Ce dernier permet une explication de chaque version, un retour en arrière et un identificateur de version. 
+
+$\boxed{\text{Conflit de versions parallèles}}$  
+On considère deux développeurs $Dev_a$ et $Dev_b$ qui travaillent sur un fichier qui est dans une certaine version. Dans notre exemple nous considérerons que le fichier est en version `v2.0`.
+- Le développeur $Dev_a$ récupère le fichier dans le dépôt.
+- Le développeur $Dev_b$ récupère le fichier dans le dépôt.
+Ainsi, les deux développeurs travaillent **en parallèle** sur la même version d'un même fichier.
+- Le développeur $Dev_a$ finit de modifier le fichier, ce dernier le dépose dans le dépôt. La nouvelles version du fichier est donc notée $v3.a$.
+- Le développeur $Dev_b$ a lui aussi terminé, il dépose son fichier et ce dernier passe donc en version $v3.b$.
+Le problème c'est que en déposant sa nouvelle version, le développeur $Dev_b$ a écrasé les modifications du développeur $Dev_a$. Ceci créé donc un conflit de version.
