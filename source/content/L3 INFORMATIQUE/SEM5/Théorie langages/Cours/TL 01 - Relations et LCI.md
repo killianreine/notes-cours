@@ -79,11 +79,17 @@ Généralement le terme *"La relation $\mathcal{R}$ de $E$ dans $F$"* est noté 
 >[!info] Remarque
 >Si l'ensemble d'arrivée $E$ et l'ensemble d'arrivée $F$ représentent en fait le même ensemble, c'est à dire que $E=F$alors on dit simplement que $\mathcal{R}$ est une relation sur $E$.  
 
-On note $\mathcal{R}(x)$ l'ensemble de tous les éléments de $F$ tel qu'on a $x \mathcal{R}y$, on note aussi 
+On note $\mathcal{R}(x)$ l'ensemble **des images de $x$** qui représente en fait un ensemble contenant tous les éléments de $F$ tel qu'on a $x \mathcal{R}y$, on note aussi 
 
 $$
 \mathcal{R}(x) = \{y \in F \mid x \mathcal{R} y \}
 $$
 
 <u>Exemple :</u>  
-Pour mieux comprendre on peut utiliser un exemple un peu plus théorique ça fonctionne de la même manière. 
+Pour mieux comprendre on peut utiliser un exemple un peu plus théorique ça fonctionne de la même manière.  
+On considère une relation $\mathcal{C}$ un ensemble de voitures $V$ tel que :
+
+$$
+\mathcal{C} = \{(v_{1,}v_{2})\in V^{2}\mid v_{1}\text{ et } v_{2}\text{ ont la même couleur} \}
+$$
+Alors si on prend $v \in V$ une voiture de couleur bleu alors : $\mathcal{C}(v)$ représente simplement l'ensemble de toutes les voitures bleues. Si $v$ était rouge alors son ensemble image représenterait l'ensemble de toutes les voitures rouge.
