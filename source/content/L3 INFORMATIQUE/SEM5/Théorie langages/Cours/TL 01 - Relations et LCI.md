@@ -36,18 +36,18 @@ Ainsi si pour une relation quelconque donnée on obtient $G=E \times F$ dans not
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
             markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" />
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
     </marker>
     <style>
       /* --- Style clair par défaut --- */
       .node { fill: white; stroke: #333; stroke-width:2; }
       .label { font-family: Arial, Helvetica, sans-serif; font-size:14px; font-weight: bold; fill: #111; }
-      .edge { fill: none; stroke: #333; stroke-width:1.6; marker-end: url(#arrow); }
+      .edge { fill: none; stroke: #333; stroke-width:1.6; marker-end: url(#arrow); color: #333; }
       text { pointer-events:none; }
-      /* --- Style sombre si un parent a [saved-theme="dark"] --- */
+      /* --- Style sombre si parent a [saved-theme="dark"] --- */
       [saved-theme="dark"] .node { fill: #222; stroke: #aaa; }
       [saved-theme="dark"] .label { fill: #f5f5f5; }
-      [saved-theme="dark"] .edge { stroke: #aaa; }
+      [saved-theme="dark"] .edge { stroke: #aaa; color: #aaa; }
       [saved-theme="dark"] { background: #111; }
     </style>
   </defs>
@@ -71,4 +71,3 @@ Ainsi si pour une relation quelconque donnée on obtient $G=E \times F$ dans not
   <path class="edge" d="M80,160 C150,140 210,100 280,80" />
   <path class="edge" d="M80,162 C150,160 210,150 280,150" />
 </svg>
-
