@@ -100,5 +100,7 @@ L'ensemble noté $\mathcal{C}(B_{leu}\cup R_{ouge})$ va alors représenter l'ens
 Soit $\mathcal{R} : E \to F$ alors $\forall X, X' \subset E$ on a :  
 
 $$
-\mathcal{R(X \cup X')=\mathcal{R(X) \cup \mathcal{R}(X')}}
+\mathcal{R}(X \cup X')=\mathcal{R}(X) \cup \mathcal{R}(X')
 $$
+
+Toute relation $\mathcal{R}$ admet ce qu'on appelle une **==relation inverse==** notée $\mathcal{R}^{-1}$ qui représente la relation défini par $\mathcal{R}^{-1} : F \to E$ tel que $\exists x \in E$ tel que $y \mathcal{R}^{-1}x$ alors on a $x \mathcal{R}y$. 
