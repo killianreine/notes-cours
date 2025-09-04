@@ -3,7 +3,7 @@
 Une **==relation==** notée $\mathcal{R}$ entre deux ensembles $E$ et $F$ est donnée par un sous-ensemble $G$ du produit cartésien $E \times F$.  
 - $E$ est l'ensemble de départ
 - $F$ l'ensemble d'arrivée
-- $G \subseteq E \times F$ est appelé **graphe** de la relation et est noté $\widehat{G}$.
+- $G \subseteq E \times F$ est une partie du **produit cartésien $E \times F$**.
 
 En fait une relation binaire, représente simplement un ensemble de couple $X = (x, y)$ qui respectent la relation avec $x \in E$ et $y \in F$. Ces couples sont alors stockés dans un ensemble $G$.
 
@@ -30,7 +30,7 @@ $$
 >- Par contre il faut bien respecter l'ordre des composantes de chaque couple. Dans notre exemple il faut impérativement que le premier élément appartienne à $E$ et le second à $F$.  
 >  Lorsque l'on marque $(x, y) \in E \times F$ ça revient à dire $x \in E$ et $y \in F$, d'où l'importance de **respecter l'ordre**.
 
-Ainsi si pour une relation quelconque donnée on obtient $G=E \times F$ dans notre exemple, on peut en déduire le graphe de la relation tel que : 
+Ainsi si pour une relation $\mathcal{R}$ quelconque donnée on obtient $G=E \times F$ dans notre exemple, on peut en déduire le graphe de la relation tel que : 
 
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220">
   <defs>
@@ -71,3 +71,11 @@ Ainsi si pour une relation quelconque donnée on obtient $G=E \times F$ dans not
   <path class="edge" d="M80,160 C150,140 210,100 280,80" />
   <path class="edge" d="M80,162 C150,160 210,150 280,150" />
 </svg>
+*ce graphe est néanmoins assez spécial car tous les couples d'éléments respectent la relation, on dit alors que $\widehat{R}$ est un graphe biparti complet.*  
+*Les graphes : [[MPI Cours 2024-25.pdf]]* 
+
+Généralement le terme *"La relation $\mathcal{R}$ de $E$ dans $F$"* est noté $\mathcal{R} : E \to F$. Lorsqu'un couple de valeur $(x, y)$ respecte la relation alors on note $x \mathcal{R}y$, pour dire en fait que $(x,y)\in\widehat{R}$. 
+
+>[!info] Remarque
+>Si l'ensemble d'arrivée $E$ et l'ensemble d'arrivée $F$ représentent en fait le même ensemble, c'est à dire que $E=F$alors on dit simplement que $\mathcal{R}$ est une relation sur $E$.  
+
