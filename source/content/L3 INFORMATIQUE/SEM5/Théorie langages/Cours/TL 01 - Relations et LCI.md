@@ -30,3 +30,45 @@ $$
 >- Par contre il faut bien respecter l'ordre des composantes de chaque couple. Dans notre exemple il faut impérativement que le premier élément appartienne à $E$ et le second à $F$.  
 >  Lorsque l'on marque $(x, y) \in E \times F$ ça revient à dire $x \in E$ et $y \in F$, d'où l'importance de **respecter l'ordre**.
 
+Ainsi si pour une relation quelconque donnée on obtient $G=E \times F$ dans notre exemple, on peut en déduire le graphe de la relation tel que : 
+
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5"
+            markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" />
+    </marker>
+    <style>
+      /* --- Style clair par défaut --- */
+      .node { fill: white; stroke: #333; stroke-width:2; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size:14px; font-weight: bold; fill: #111; }
+      .edge { fill: none; stroke: #333; stroke-width:1.6; marker-end: url(#arrow); }
+      text { pointer-events:none; }
+      /* --- Style sombre si un parent a [saved-theme="dark"] --- */
+      [saved-theme="dark"] .node { fill: #222; stroke: #aaa; }
+      [saved-theme="dark"] .label { fill: #f5f5f5; }
+      [saved-theme="dark"] .edge { stroke: #aaa; }
+      [saved-theme="dark"] { background: #111; }
+    </style>
+  </defs>
+  <!-- Left: E -->
+  <circle class="node" cx="60" cy="40" r="20" />
+  <text class="label" x="60" y="45" text-anchor="middle">1</text>
+  <circle class="node" cx="60" cy="100" r="20" />
+  <text class="label" x="60" y="105" text-anchor="middle">2</text>
+  <circle class="node" cx="60" cy="160" r="20" />
+  <text class="label" x="60" y="165" text-anchor="middle">3</text>
+  <!-- Right: F -->
+  <circle class="node" cx="300" cy="70" r="20" />
+  <text class="label" x="300" y="75" text-anchor="middle">1</text>
+  <circle class="node" cx="300" cy="150" r="20" />
+  <text class="label" x="300" y="155" text-anchor="middle">4</text>
+  <!-- Edges -->
+  <path class="edge" d="M80,40 C150,40 210,70 280,70" />
+  <path class="edge" d="M80,42 C150,70 210,120 280,150" />
+  <path class="edge" d="M80,100 C150,90 210,80 280,70" />
+  <path class="edge" d="M80,102 C150,120 210,130 280,150" />
+  <path class="edge" d="M80,160 C150,140 210,100 280,80" />
+  <path class="edge" d="M80,162 C150,160 210,150 280,150" />
+</svg>
+
