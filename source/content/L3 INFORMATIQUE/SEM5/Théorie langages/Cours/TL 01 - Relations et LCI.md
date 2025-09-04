@@ -93,4 +93,12 @@ On considère une relation $\mathcal{C}$ un ensemble de voitures $V$ tel que :
 $$
 \mathcal{C} = \{(v_{1,}v_{2})\in V^{2}\mid v_{1}\text{ et } v_{2}\text{ ont la même couleur} \}
 $$
-Alors si on prend $v \in V$ une voiture de couleur bleu alors : $\mathcal{C}(v)$ représente simplement l'ensemble de toutes les voitures bleues. Si $v$ était rouge alors son ensemble image représenterait l'ensemble de toutes les voitures rouge.
+Alors si on prend $v \in V$ une voiture de couleur bleu alors : $\mathcal{C}(v)$ représente simplement l'ensemble de toutes les voitures bleues. Si $v$ était rouge alors son ensemble image représenterait l'ensemble de toutes les voitures rouge.  
+L'ensemble noté $\mathcal{C}(B_{leu}\cup R_{ouge})$ va alors représenter l'ensemble de toute les voiture bleue **OU** *(=union)* l'ensemble de toute les voitures rouge.  
+
+*De manière plus générale*  
+Soit $\mathcal{R} : E \to F$ alors $\forall X, X' \subset E$ on a :  
+
+$$
+\mathcal{R(X \cup X')=\mathcal{R(X) \cup \mathcal{R}(X')}}
+$$
