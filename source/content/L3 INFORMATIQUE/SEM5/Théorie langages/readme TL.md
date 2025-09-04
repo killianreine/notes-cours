@@ -21,12 +21,9 @@ Bienvenue ! Ce dépôt contient un cours complet de Théorie des Langages et Aut
   </thead>
   <tbody>
     <tr>
-      <td colspan="3" class="bloc-header">Cours Magistral n°1</td>
-    </tr>
-    <tr>
-      <td>01.1</td>
-      <td><a href="TL 01 - Introduction & Notions de base">Introduction et relations</a></td>
-      <td>Présentation du module, relations</td>
+      <td>1</td>
+      <td><a href="TL 01 - Relations et LCI">Relation et lois de composition internes</a></td>
+      <td>Relation, rappels et LCI</td>
     </tr>
   </tbody>
 </table>

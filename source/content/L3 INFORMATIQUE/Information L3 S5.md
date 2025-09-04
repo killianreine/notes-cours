@@ -34,7 +34,7 @@
     <p>
       L’UE introduit les fondements mathématiques des langages formels, essentiels pour les compilateurs, automates et analyseurs syntaxiques : grammaires, automates finis et à pile, expressions régulières.
     </p>
-    <p><u>Support de cours :</u> aucun support...</p>
+    <p><u>Support de cours :</u> <a href="readme  TL">readme TL</a></p>
     <p><u>Durée de l'UE :</u> 50 heures</p>
   </article>
 </section>
