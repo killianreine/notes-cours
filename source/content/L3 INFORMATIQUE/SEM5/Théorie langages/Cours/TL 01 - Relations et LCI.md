@@ -71,6 +71,7 @@ Ainsi si pour une relation $\mathcal{R}$ quelconque donnée on obtient $G=E \tim
   <path class="edge" d="M80,160 C150,140 210,100 280,80" />
   <path class="edge" d="M80,162 C150,160 210,150 280,150" />
 </svg>
+
 *ce graphe est néanmoins assez spécial car tous les couples d'éléments respectent la relation, on dit alors que $\widehat{R}$ est un graphe biparti complet.*  
 - Les graphes : [[MPI Cours 2024-25.pdf]]
 
