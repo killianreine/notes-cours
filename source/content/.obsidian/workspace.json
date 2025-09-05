@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L3 INFORMATIQUE/SEM5/Théorie langages/Cours/TL 01 - Relations et LCI.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/16 - Interface graphique en C.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TL 01 - Relations et LCI"
+              "title": "16 - Interface graphique en C"
             }
           }
         ],
@@ -87,7 +87,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -200,8 +200,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Cartes à apprendre"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           },
           {
@@ -220,12 +220,22 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
+            }
+          },
+          {
+            "id": "6d5ea5f5cb9a2f13",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -234,15 +244,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
-      "obsidian-spaced-repetition:Apprendre les flashcards": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "flashcards-obsidian:Generate flashcards": false,
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
       "obsidian-advanced-slides:Show Slide Preview": false
@@ -250,9 +260,9 @@
   },
   "active": "292cef2df31116e7",
   "lastOpenFiles": [
+    "L3 INFORMATIQUE/SEM5/Théorie langages/Cours/TL 01 - Relations et LCI.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
     "L3 INFORMATIQUE/SEM5/Théorie langages/readme TL.md",
-    "L3 INFORMATIQUE/SEM5/Théorie langages/Cours/TL 01 - Relations et LCI.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
     "L3 INFORMATIQUE/SEM5/Théorie langages/Cours",
