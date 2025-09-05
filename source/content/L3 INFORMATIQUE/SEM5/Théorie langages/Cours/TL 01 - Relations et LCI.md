@@ -99,6 +99,7 @@ $$
 Alors si on prend $v \in V$ une voiture de couleur bleu alors : $\mathcal{C}(v)$ représente simplement l'ensemble de toutes les voitures bleues. Si $v$ était rouge alors son ensemble image représenterait l'ensemble de toutes les voitures rouge.  
 L'ensemble noté $\mathcal{C}(B_{leu}\cup R_{ouge})$ va alors représenter l'ensemble de toute les voiture bleue **OU** *(=union)* l'ensemble de toute les voitures rouge.  
 
+
 *De manière plus générale*  
 Soit $\mathcal{R} : E \to F$ alors $\forall X, X' \subset E$ on a :  
 
@@ -107,5 +108,13 @@ $$
 $$
 
 
+
 >[!cite] Définition
 >Toute relation $\mathcal{R}$ admet ce qu'on appelle une **==relation inverse==** notée $\mathcal{R}^{-1}$ qui représente la relation défini par $\mathcal{R}^{-1} : F \to E$ tel que $\exists x \in E$ tel que $y \mathcal{R}^{-1}x$ alors on a $x \mathcal{R}y$. 
+
+Ainsi, on peut en déduire l'ensemble image de $y$ selon la relation inverse : 
+
+$$
+\mathcal{R}^{-1}(y) = \{x \in E \mid y \mathcal{R}^{-1}x\}=\{x \in E \mid x\mathcal{R}y\}
+$$
+
