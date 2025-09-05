@@ -82,9 +82,10 @@ Lorsqu'un couple de valeur $(x, y)$ respecte la relation alors on note $x \mathc
 >[!info] Remarque
 >Si l'ensemble d'arrivée $E$ et l'ensemble d'arrivée $F$ représentent en fait le même ensemble, c'est à dire que $E=F$alors on dit simplement que $\mathcal{R}$ est une relation sur $E$.  
 
-On note $\mathcal{R}(x)$ l'ensemble **des images de $x$** qui représente en fait un ensemble contenant tous les éléments de $F$ tel qu'on a $x \mathcal{R}y$, on note aussi 
-
-$$
+>[!cite] Définition
+>On note $\mathcal{R}(x)$ l'ensemble **des images de $x$** qui représente en fait un ensemble contenant tous les éléments de $F$ tel qu'on a $x \mathcal{R}y$, on note aussi 
+>
+>$$
 \mathcal{R}(x) = \{y \in F \mid x \mathcal{R} y \}
 $$
 
