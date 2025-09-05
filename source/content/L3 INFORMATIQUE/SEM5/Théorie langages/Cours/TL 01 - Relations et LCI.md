@@ -109,4 +109,3 @@ $$
 
 >[!cite] Définition
 >Toute relation $\mathcal{R}$ admet ce qu'on appelle une **==relation inverse==** notée $\mathcal{R}^{-1}$ qui représente la relation défini par $\mathcal{R}^{-1} : F \to E$ tel que $\exists x \in E$ tel que $y \mathcal{R}^{-1}x$ alors on a $x \mathcal{R}y$. 
-
