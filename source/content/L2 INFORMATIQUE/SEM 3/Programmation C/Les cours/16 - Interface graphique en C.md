@@ -46,4 +46,4 @@ Bien que la SDL fournisse les bases (affichage, gestion des entrées, audio, etc
 - Le contrôle des animations.
 - La gestion des ressources (images, sons, musiques).
 
-Cela facilite la création de projets plus ambitieux sans tout réimplémenter à chaque fois.
+Cela facilite la création de projets plus ambitieux sans tout ré implémenter à chaque fois. 
