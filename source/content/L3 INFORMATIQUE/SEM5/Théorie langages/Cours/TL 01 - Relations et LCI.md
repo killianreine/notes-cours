@@ -86,8 +86,8 @@ Lorsqu'un couple de valeur $(x, y)$ respecte la relation alors on note $x \mathc
 >On note $\mathcal{R}(x)$ l'ensemble **des images de $x$** qui représente en fait un ensemble contenant tous les éléments de $F$ tel qu'on a $x \mathcal{R}y$, on note aussi 
 >
 >$$
-\mathcal{R}(x) = \{y \in F \mid x \mathcal{R} y \}
-$$
+>\mathcal{R}(x) = \{y \in F \mid x \mathcal{R} y \}
+>$$
 
 <u>Exemple :</u>  
 Pour mieux comprendre on peut utiliser un exemple un peu plus théorique ça fonctionne de la même manière.  
