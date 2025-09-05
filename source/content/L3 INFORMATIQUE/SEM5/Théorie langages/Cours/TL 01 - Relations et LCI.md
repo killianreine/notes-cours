@@ -1,11 +1,10 @@
 # Relations
 
 >[!cite] Définition
-Une **==relation==** notée $\mathcal{R}$ entre deux ensembles $E$ et $F$ est donnée par un sous-ensemble $G$ du produit cartésien $E \times F$.  
-
-- $E$ est l'ensemble de départ
-- $F$ l'ensemble d'arrivée
-- $G \subseteq E \times F$ est une partie du **produit cartésien $E \times F$**.
+>Une **==relation==** notée $\mathcal{R}$ entre deux ensembles $E$ et $F$ est donnée par un sous-ensemble $G$ du produit cartésien $E \times F$.  
+> - $E$ est l'ensemble de départ
+> - $F$ l'ensemble d'arrivée
+> - $G \subseteq E \times F$ est une partie du **produit cartésien $E \times F$**.
 
 En fait une relation binaire, représente simplement un ensemble de couple $X = (x, y)$ qui respectent la relation avec $x \in E$ et $y \in F$. Ces couples sont alors stockés dans un ensemble $G$.
 
