@@ -131,7 +131,7 @@ Table des matières complète : [[Prog C - Table des matières]]
   <tbody>
     <tr>
       <td>01</td>
-      <td><a href="Programmation C TP1">TP1</a></td>
+      <td><a href="Programmation C TP1">TP1 - Mes premiers programmes en C</a></td>
     </tr>
   </tbody>
 </table>
