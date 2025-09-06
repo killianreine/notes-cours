@@ -117,7 +117,9 @@ Table des matières complète : [[Prog C - Table des matières]]
   </tbody>
 </table>
 </div>
+
 ## Les séances de TP
+
 <div>
 <table class="cours-planC">
   <thead>
