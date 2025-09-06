@@ -21,8 +21,6 @@ Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif e
 - Connaissances de base en informatique.
 - Aucune expérience préalable en programmation n'est requise.
 
-## Les séances de TDs
-- Accès aux TDs : [[Les TDs - Prog. C]]
 ## Plan du Cours
 Table des matières complète : [[Prog C - Table des matières]]
 
@@ -119,18 +117,29 @@ Table des matières complète : [[Prog C - Table des matières]]
   </tbody>
 </table>
 </div>
+## Les séances de TP
+<div>
+<table class="cours-planC">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>TP n°</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td><a href="Programmation C TP1">TP1</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Ressources
 - [Documentation officielle du langage C](https://en.cppreference.com/w/c)
 - Cours de programmation C, L2 INFO - Duhamel C.
 - Zeste de savoir, Langage C [pdf](https://zestedesavoir.com/tutoriels/pdf/755/le-langage-c-1.pdf)
 
-## Projets et exercices
-Le cours proposera des exercices de niveaux différents, chacun sera accompagné de sa correction. Et, pour consolider les acquis des *projets* pourront être proposés. La plupart du temps chaque projet aura un sujet liant sciences et informatiques.
-- Mathématiques x informatique
-- Algèbre x informatique
-- Physique x informatique
-- IRL x informatique
 
 ---
 
