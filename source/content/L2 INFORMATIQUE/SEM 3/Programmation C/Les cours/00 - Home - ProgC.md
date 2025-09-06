@@ -123,7 +123,4 @@ Table des matières complète : [[Prog C - Table des matières]]
 - Cours de programmation C, L2 INFO - Duhamel C.
 - Zeste de savoir, Langage C [pdf](https://zestedesavoir.com/tutoriels/pdf/755/le-langage-c-1.pdf)
 
-
----
-
 Bonne chance dans votre apprentissage du langage C !
