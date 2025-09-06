@@ -118,25 +118,6 @@ Table des matières complète : [[Prog C - Table des matières]]
 </table>
 </div>
 
-## Les séances de TP
-
-<div>
-<table class="cours-planC">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>TP n°</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>01</td>
-      <td><a href="Programmation C TP1">TP1 - Mes premiers programmes en C</a></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 ## Ressources
 - [Documentation officielle du langage C](https://en.cppreference.com/w/c)
 - Cours de programmation C, L2 INFO - Duhamel C.
