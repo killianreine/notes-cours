@@ -3,12 +3,8 @@
 **Durée :** 1h30  
 **Objectif :** Découvrir les bases du langage C en créant une simulation de machine à café interactive
 
----
-
 ## 🎯 Objectifs pédagogiques
-
 À l'issue de ce TP, vous saurez :
-
 - Structurer un programme C avec `#include` et `main()`
 - Utiliser les types de données de base (`int`, `float`, `char`)
 - Gérer les entrées/sorties avec `printf()` et `scanf()`
@@ -16,20 +12,14 @@
 - Créer des boucles simples (`while`, `for`)
 - Manipuler des variables et effectuer des calculs
 
----
-
 ## 📋 Contexte du projet
-
 Vous allez programmer une **machine à café virtuelle** qui permet à l'utilisateur de :
 - Choisir parmi différents types de boissons
 - Gérer un porte-monnaie virtuel
 - Calculer la monnaie à rendre
 - Suivre le stock des ingrédients
 
----
-
-## 🛠️ Exercice 1 : Structure de base (15 min)
-
+## 🛠️ Exercice 1 : Structure de base
 ### Consigne
 Créez le fichier `machine_cafe.c` avec la structure de base suivante :
 
@@ -43,14 +33,12 @@ int main() {
     return 0;
 }
 ```
-
 ### Questions
 1. Que fait l'instruction `#include <stdio.h>` ?
 2. Pourquoi utilise-t-on `\n` dans les chaînes de caractères ?
 3. Que signifie `return 0;`, que se passe t-il si on ne le met pas ? Pourquoi ?
 
-## ☕ Exercice 2 : Menu des boissons (20 min)
-
+## ☕ Exercice 2 : Menu des boissons
 ### Consigne
 Étendez votre programme pour afficher un menu de boissons avec leurs prix :  
 Vous allez devoir afficher les options de votre machine à café, c'est à dire quelle sorte de boisson elle vend. Nous nous contenterons de prendre les boissons suivantes : *expresso, double, chocolat, cappuccino*. Vous devez simplement afficher les options de la machine de cette forme : 
@@ -68,8 +56,7 @@ Vous allez devoir afficher les options de votre machine à café, c'est à dire 
 - Quelle est la différence entre `%d` et `%f` dans `printf` ?
 - Pourquoi utilise-t-on `&choix` dans `scanf` ?
 
-## 💰 Exercice 3 : Gestion du paiement (25 min)
-
+## 💰 Exercice 3 : Gestion du paiement
 ### Consigne
 Ajoutez la gestion du paiement à votre programme :
 
@@ -82,8 +69,7 @@ Ajoutez la gestion du paiement à votre programme :
 - Argent exact (ex: 2.50€ pour un cappuccino)
 - Argent en excès (ex: 5.00€ pour un expresso à 1.50€)
 
-## 📦 Exercice 4 : Gestion des stocks (30 min)
-
+## 📦 Exercice 4 : Gestion des stocks
 ### Consigne
 Ajoutez un système de gestion des stocks d'ingrédients :
 
@@ -123,42 +109,24 @@ Thé : 6 sachets
 
 ---
 
-## 🔄 Exercice 5 : Boucle principale (20 min)
-
+## 🔄 Exercice 5 : Boucle principale
 ### Consigne
-
 Transformez votre programme pour qu'il fonctionne en continu jusqu'à ce que l'utilisateur décide d'arrêter :
 
-### Structure à implémenter
-
-```c
-int continuer = 1;  // 1 = continuer, 0 = arrêter
-
-while(continuer) {
-    // Votre code de machine à café
-    
-    printf("\nVoulez-vous commander autre chose ? (1=Oui, 0=Non) : ");
-    scanf("%d", &continuer);
-}
-
-printf("Merci de votre visite ! À bientôt !\n");
-```
-
 ### Améliorations optionnelles
-
 1. Ajoutez une option "0" dans le menu pour quitter
 2. Comptez le nombre total de boissons servies
 3. Calculez le chiffre d'affaires total
 
 ---
 
-## 🎖️ Exercice Bonus : Fonctionnalités avancées (temps restant)
-
+## 🎖️ Exercice Bonus : Fonctionnalités avancées
 ### Pour aller plus loin, ajoutez :
 1. **Mode maintenance** : Option pour recharger les stocks
 2. **Statistiques** : Boisson la plus vendue, recette totale
 3. **Validation des entrées** : Vérifier que l'utilisateur entre des valeurs valides
 4. **Messages personnalisés** : Différents messages selon l'heure simulée
+
 ## 💡 Conseils pratiques
 ### Compilation et exécution
 ```bash
