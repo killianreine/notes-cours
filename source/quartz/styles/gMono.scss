@@ -20,8 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
   box-sizing: border-box;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -80,7 +78,6 @@
 [saved-theme="dark"] .descriptionMOno {
   color: #94a3b8;
 }
-
 /* === LÉGENDE === */
 .legendMOno {
   display: flex;
