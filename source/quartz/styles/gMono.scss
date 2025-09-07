@@ -17,7 +17,6 @@
 .bodyMOno {
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
-  background: linear-gradient(135deg, var(--bg) 0%, #e2e8f0 50%, var(--bg) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +26,6 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 [saved-theme="dark"] .bodyMOno {
-  background: #0a0e1a;
   color: #f1f5f9;
 }
 
@@ -205,3 +203,23 @@
   color: #f1f5f9;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
+/* === DOTS LÉGENDE === */
+.legend-dotMOno {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px currentColor;
+  flex-shrink: 0;
+}
+
+/* Mode clair */
+.legend-dotMOno.repo   { background: #6366f1; color: #6366f1; }
+.legend-dotMOno.devA   { background: #059669; color: #059669; }
+.legend-dotMOno.devB   { background: #d97706; color: #d97706; }
+.legend-dotMOno.danger { background: #dc2626; color: #dc2626; }
+
+/* Mode sombre */
+[saved-theme="dark"] .legend-dotMOno.repo   { background: #6366f1; color: #6366f1; }
+[saved-theme="dark"] .legend-dotMOno.devA   { background: #10b981; color: #10b981; }
+[saved-theme="dark"] .legend-dotMOno.devB   { background: #f59e0b; color: #f59e0b; }
+[saved-theme="dark"] .legend-dotMOno.danger { background: #ef4444; color: #ef4444; }
