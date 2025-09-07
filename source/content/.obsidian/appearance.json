@@ -23,7 +23,8 @@
     "tabCoursProgC",
     "tableFichierFormat",
     "tabUEL1S1",
-    "variables"
+    "variables",
+    "styles2"
   ],
   "baseFontSize": 13,
   "theme": "system"
