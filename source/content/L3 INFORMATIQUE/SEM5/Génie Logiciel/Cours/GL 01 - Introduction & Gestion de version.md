@@ -39,11 +39,12 @@ Ainsi, les deux développeurs travaillent **en parallèle** sur la même version
 - Le développeur $Dev_b$ a lui aussi terminé, il dépose son fichier et ce dernier passe donc en version $v3.b$.
 Le problème c'est que en déposant sa nouvelle version, le développeur $Dev_b$ a écrasé les modifications du développeur $Dev_a$. Ceci créé donc un conflit de version.
 
+<div>
 <div class="bodyMOno">
   <div class="containerMOno" role="figure" aria-label="Schéma montrant un conflit de version mono‑document entre deux développeurs">
-    <header class="headerMOno">
+    <div class="headerMOno">
       <p class="descriptionMOno">Illustration d'un scénario classique : deux développeurs (<strong>Dev_a</strong> et <strong>Dev_b</strong>) partent de la même version <code>v2.0</code> et travaillent en parallèle.</p>
-    </header>
+    </div>
     <div class="legendMOno">
       <div class="legend-itemMOno">
         <div class="legend-dotMOno repo"></div>
@@ -72,12 +73,10 @@ Le problème c'est que en déposant sa nouvelle version, le développeur $Dev_b$
             <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
             <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
           </linearGradient>
-          
           <linearGradient id="devAGradMOno" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.9" />
             <stop offset="100%" style="stop-color:#059669;stop-opacity:0.9" />
           </linearGradient>
-          
           <linearGradient id="devBGradMOno" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.9" />
             <stop offset="100%" style="stop-color:#d97706;stop-opacity:0.9" />
@@ -196,4 +195,5 @@ Le problème c'est que en déposant sa nouvelle version, le développeur $Dev_b$
       </svg>
     </div>
   </div>
+</div>
 </div>
