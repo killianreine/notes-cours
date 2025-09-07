@@ -1,4 +1,4 @@
-/* === VARIABLES GLOBALES - MODE CLAIR (par défaut) === */
+/* === VARIABLES GLOBALES (MODE CLAIR PAR DÉFAUT) === */
 :root {
   --bg: #f8fafc;
   --surface: rgba(255,255,255,0.9);
@@ -13,395 +13,195 @@
   --shadow: rgba(0,0,0,0.1);
 }
 
-/* === VARIABLES - MODE SOMBRE === */
-[saved-theme="dark"] {
-  --bg: #0a0e1a;
-  --surface: rgba(255,255,255,0.08);
-  --border: rgba(255,255,255,0.12);
-  --repo: #6366f1;
-  --devA: #10b981;
-  --devB: #f59e0b;
-  --danger: #ef4444;
-  --text: #f1f5f9;
-  --muted: #94a3b8;
-  --accent: #8b5cf6;
-  --shadow: rgba(0,0,0,0.4);
-}
-
-/* === SURCHARGE OBSIDIAN POUR FORCER L'APPLICATION === */
+/* === BODY === */
 .bodyMOno {
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
-  color: var(--text) !important;
-  background: linear-gradient(135deg, var(--bg) 0%, #e2e8f0 50%, var(--bg) 100%) !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 100vh !important;
-  padding: 20px !important;
-  box-sizing: border-box !important;
-  transition: background 0.3s ease, color 0.3s ease !important;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--bg) 0%, #e2e8f0 50%, var(--bg) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background 0.3s ease, color 0.3s ease;
 }
-
 [saved-theme="dark"] .bodyMOno {
-  background-attachment: fixed !important;
+  background: #0a0e1a;
+  color: #f1f5f9;
 }
 
-/* === CONTENEUR PRINCIPAL === */
+/* === CONTAINER === */
 .containerMOno {
-  width: 100% !important;
-  max-width: 1200px !important;
-  background: var(--surface) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 24px !important;
-  backdrop-filter: blur(20px) !important;
-  box-shadow: 0 25px 50px var(--shadow) !important;
-  overflow: hidden !important;
-  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+  width: 100%;
+  max-width: 1200px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 25px 50px var(--shadow);
+  overflow: hidden;
 }
-
 [saved-theme="dark"] .containerMOno {
-  box-shadow: 0 25px 50px rgba(0,0,0,0.6) !important;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
 }
 
-/* === HEADER - FORCÉ POUR OBSIDIAN === */
+/* === HEADER === */
 .headerMOno {
-  padding: 24px 28px !important;
-  border-bottom: 1px solid var(--border) !important;
-  background: linear-gradient(135deg, rgba(99,102,241,0.05) 0%, rgba(139,92,246,0.05) 100%) !important;
-  transition: border-color 0.3s ease, background 0.3s ease !important;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(99,102,241,0.05) 0%, rgba(139,92,246,0.05) 100%);
 }
-
 [saved-theme="dark"] .headerMOno {
-  background: linear-gradient(135deg, rgba(99,102,241,0.1) 0%, rgba(139,92,246,0.1) 100%) !important;
+  border-color: rgba(255,255,255,0.12);
+  background: linear-gradient(135deg, rgba(99,102,241,0.1) 0%, rgba(139,92,246,0.1) 100%);
 }
 
-/* === TITRE - SURCHARGE OBSIDIAN === */
-.titleMOno,
-.headerMOno h1,
-.headerMOno h2,
-.headerMOno h3,
-.headerMOno p.titleMOno {
-  margin: 0 !important;
-  font-size: clamp(20px, 3vw, 28px) !important;
-  font-weight: 700 !important;
-  background: linear-gradient(135deg, var(--repo) 0%, var(--accent) 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  color: transparent !important; /* Fallback pour navigateurs non-webkit */
+/* === TITRE === */
+.titleMOno {
+  margin: 0;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--repo) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[saved-theme="dark"] .titleMOno {
+  background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
 }
 
-/* === DESCRIPTION - FORCÉE === */
-.descriptionMOno,
-.headerMOno p:not(.titleMOno) {
-  margin: 12px 0 0 !important;
-  color: var(--muted) !important;
-  font-size: 15px !important;
-  line-height: 1.6 !important;
-  transition: color 0.3s ease !important;
+/* === DESCRIPTION === */
+.descriptionMOno {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+[saved-theme="dark"] .descriptionMOno {
+  color: #94a3b8;
 }
 
-/* === LÉGENDE - SURCHARGE OBSIDIAN === */
+/* === LÉGENDE === */
 .legendMOno {
-  display: flex !important;
-  gap: 24px !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  padding: 16px 24px !important;
-  background: rgba(0,0,0,0.02) !important;
-  border-bottom: 1px solid var(--border) !important;
-  transition: background 0.3s ease, border-color 0.3s ease !important;
-  list-style: none !important; /* Au cas où Obsidian l'interprète comme une liste */
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 24px;
+  background: rgba(0,0,0,0.02);
+  border-bottom: 1px solid var(--border);
 }
-
 [saved-theme="dark"] .legendMOno {
-  background: rgba(255,255,255,0.02) !important;
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(255,255,255,0.12);
 }
 
 .legend-itemMOno {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  font-size: 14px !important;
-  color: var(--muted) !important;
-  transition: color 0.3s ease !important;
-  list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+[saved-theme="dark"] .legend-itemMOno {
+  color: #94a3b8;
 }
 
-.legend-itemMOno::before {
-  content: none !important; /* Supprime les puces d'Obsidian */
-}
-
-.legend-dotMOno {
-  width: 16px !important;
-  height: 16px !important;
-  border-radius: 50% !important;
-  box-shadow: 0 0 10px currentColor !important;
-  transition: box-shadow 0.3s ease !important;
-  flex-shrink: 0 !important;
-}
-
-.legend-dotMOno.repo { 
-  background: var(--repo) !important; 
-  color: var(--repo) !important;
-}
-
-.legend-dotMOno.devA { 
-  background: var(--devA) !important; 
-  color: var(--devA) !important;
-}
-
-.legend-dotMOno.devB { 
-  background: var(--devB) !important; 
-  color: var(--devB) !important;
-}
-
-.legend-dotMOno.danger { 
-  background: var(--danger) !important; 
-  color: var(--danger) !important;
-}
+/* DOTS */
+.legend-dotMOno.repo { background: #6366f1; }
+.legend-dotMOno.devA { background: #059669; }
+.legend-dotMOno.devB { background: #d97706; }
+.legend-dotMOno.danger { background: #dc2626; }
+[saved-theme="dark"] .legend-dotMOno.devA { background: #10b981; }
+[saved-theme="dark"] .legend-dotMOno.devB { background: #f59e0b; }
+[saved-theme="dark"] .legend-dotMOno.danger { background: #ef4444; }
 
 /* === DIAGRAMME === */
 .diagram-containerMOno {
-  padding: 24px !important;
-  position: relative !important;
+  padding: 24px;
 }
-
 .svgMOno {
-  width: 100% !important;
-  height: auto !important;
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(99,102,241,0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139,92,246,0.03) 0%, transparent 50%) !important;
-  transition: background 0.3s ease !important;
+  width: 100%;
+  height: auto;
+  background: radial-gradient(circle at 20% 80%, rgba(99,102,241,0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(139,92,246,0.03) 0%, transparent 50%);
 }
-
 [saved-theme="dark"] .svgMOno {
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(99,102,241,0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139,92,246,0.05) 0%, transparent 50%) !important;
+  background: radial-gradient(circle at 20% 80%, rgba(99,102,241,0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(139,92,246,0.05) 0%, transparent 50%);
 }
 
-/* === ÉLÉMENTS SVG SPÉCIFIQUES === */
-.lane-labelsMOno text {
-  fill: var(--text) !important;
-  transition: fill 0.3s ease !important;
-}
+/* === TEXTES SVG === */
+.lane-labelsMOno text { fill: var(--text); }
+[saved-theme="dark"] .lane-labelsMOno text { fill: #f1f5f9; }
 
-.timeline-annotationsMOno text {
-  fill: var(--muted) !important;
-  transition: fill 0.3s ease !important;
-}
+.timeline-annotationsMOno text { fill: var(--muted); }
+[saved-theme="dark"] .timeline-annotationsMOno text { fill: #94a3b8; }
 
-.parallel-textMOno {
-  fill: var(--accent) !important;
-  transition: fill 0.3s ease !important;
-}
-
-.problem-explanationMOno text {
-  transition: fill 0.3s ease !important;
-}
+.parallel-textMOno { fill: var(--accent); }
+[saved-theme="dark"] .parallel-textMOno { fill: #a78bfa; }
 
 /* === FOOTER === */
 .footerMOno {
-  padding: 20px 28px !important;
-  background: rgba(0,0,0,0.05) !important;
-  border-top: 1px solid var(--border) !important;
-  transition: background 0.3s ease, border-color 0.3s ease !important;
+  padding: 20px 28px;
+  background: rgba(0,0,0,0.05);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
 }
-
 [saved-theme="dark"] .footerMOno {
-  background: rgba(0,0,0,0.2) !important;
+  background: rgba(0,0,0,0.2);
+  border-color: rgba(255,255,255,0.12);
+  color: #94a3b8;
 }
 
+/* === TIP === */
 .tipMOno {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 12px !important;
-  font-size: 14px !important;
-  line-height: 1.6 !important;
-  color: var(--muted) !important;
-  transition: color 0.3s ease !important;
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+[saved-theme="dark"] .tipMOno {
+  color: #94a3b8;
 }
 
 .tip-iconMOno {
-  flex-shrink: 0 !important;
-  width: 20px !important;
-  height: 20px !important;
-  background: var(--accent) !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 12px !important;
-  font-weight: bold !important;
-  color: white !important;
-  margin-top: 2px !important;
-  transition: background 0.3s ease !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[saved-theme="dark"] .tip-iconMOno {
+  background: #a78bfa;
 }
 
-/* === BOUTON DE BASCULEMENT DE THÈME === */
+/* === TOGGLE === */
 .theme-toggleMOno {
-  position: fixed !important;
-  top: 20px !important;
-  right: 20px !important;
-  width: 50px !important;
-  height: 50px !important;
-  border-radius: 50% !important;
-  border: 2px solid var(--border) !important;
-  background: var(--surface) !important;
-  color: var(--text) !important;
-  font-size: 20px !important;
-  cursor: pointer !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  backdrop-filter: blur(10px) !important;
-  box-shadow: 0 4px 12px var(--shadow) !important;
-  transition: all 0.3s ease !important;
-  z-index: 1000 !important;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px var(--shadow);
 }
-
-.theme-toggleMOno:hover {
-  transform: scale(1.05) !important;
-  box-shadow: 0 6px 20px var(--shadow) !important;
-}
-
-.theme-toggleMOno:active {
-  transform: scale(0.95) !important;
-}
-
 [saved-theme="dark"] .theme-toggleMOno {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
-}
-
-[saved-theme="dark"] .theme-toggleMOno:hover {
-  box-shadow: 0 6px 20px rgba(0,0,0,0.7) !important;
-}
-
-/* === SURCHARGE SPÉCIFIQUE OBSIDIAN === */
-/* Force l'application du style même si Obsidian a ses propres règles */
-.markdown-preview-view .bodyMOno,
-.markdown-rendered .bodyMOno,
-.cm-editor .bodyMOno {
-  all: unset;
-}
-
-.markdown-preview-view .containerMOno,
-.markdown-rendered .containerMOno {
-  margin: 0 auto !important;
-}
-
-/* Supprime les styles par défaut d'Obsidian sur les éléments HTML */
-.headerMOno *,
-.legendMOno *,
-.footerMOno * {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.headerMOno p,
-.legendMOno div,
-.footerMOno p {
-  display: block !important;
-}
-
-/* === ANIMATIONS ET TRANSITIONS === */
-.containerMOno * {
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, fill 0.3s ease !important;
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .legendMOno {
-    gap: 16px !important;
-  }
-  
-  .diagram-containerMOno {
-    padding: 16px !important;
-  }
-  
-  .headerMOno, 
-  .footerMOno {
-    padding: 20px !important;
-  }
-
-  .theme-toggleMOno {
-    width: 45px !important;
-    height: 45px !important;
-    font-size: 18px !important;
-    top: 15px !important;
-    right: 15px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .bodyMOno {
-    padding: 10px !important;
-  }
-
-  .containerMOno {
-    border-radius: 16px !important;
-  }
-
-  .headerMOno,
-  .footerMOno {
-    padding: 16px !important;
-  }
-
-  .diagram-containerMOno {
-    padding: 12px !important;
-  }
-
-  .theme-toggleMOno {
-    width: 40px !important;
-    height: 40px !important;
-    font-size: 16px !important;
-    top: 10px !important;
-    right: 10px !important;
-  }
-}
-
-/* === AMÉLIORATION DE L'ACCESSIBILITÉ === */
-@media (prefers-reduced-motion: reduce) {
-  .containerMOno * {
-    transition: none !important;
-    animation: none !important;
-  }
-}
-
-/* === FOCUS ET ÉTATS INTERACTIFS === */
-.theme-toggleMOno:focus {
-  outline: 2px solid var(--accent) !important;
-  outline-offset: 2px !important;
-}
-
-/* === CONTRASTE ÉLEVÉ === */
-@media (prefers-contrast: high) {
-  .containerMOno {
-    border-width: 2px !important;
-  }
-  
-  .legend-dotMOno {
-    box-shadow: 0 0 15px currentColor !important;
-  }
-}
-
-/* === PRINT STYLES === */
-@media print {
-  .theme-toggleMOno {
-    display: none !important;
-  }
-  
-  .bodyMOno {
-    background: white !important;
-    color: black !important;
-  }
-  
-  .containerMOno {
-    box-shadow: none !important;
-    border: 1px solid #000 !important;
-  }
+  border-color: rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.08);
+  color: #f1f5f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
