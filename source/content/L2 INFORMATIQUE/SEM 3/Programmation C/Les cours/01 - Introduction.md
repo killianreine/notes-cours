@@ -27,7 +27,7 @@ Le `C` est un **langage compilé**, en gros le code source où se trouve n'est p
    - <u>Conditionnels</u>
    - ...
 
->[!NOTE]
+>[!info] Remarque
 >Une **macro** est un motif de substitution de texte permettant généralement de simplifier le code.
 
    ```c
@@ -339,6 +339,8 @@ gcc --version
 ```bash
 gcc nomFichier.c -o nomExecutable -Wall -Wextra
 ```
+Les lignes `-Wall -Waxtra` permettent d'activer certain avertissements lors de la compilation en langage C.
+
 Bon nous on se contentera de la commande : 
 ```bash
 gcc nomFichier.c -o nomExecutable

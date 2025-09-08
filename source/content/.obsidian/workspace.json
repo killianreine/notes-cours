@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -87,7 +87,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -201,7 +201,7 @@
               "type": "review-queue-list-view",
               "state": {},
               "icon": "SpacedRepIcon",
-              "title": "Cartes à apprendre"
+              "title": "Notes Review Queue"
             }
           },
           {
@@ -244,13 +244,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
-      "obsidian-spaced-repetition:Apprendre les flashcards": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "flashcards-obsidian:Generate flashcards": false,
@@ -258,14 +258,15 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "e3efb7846af5bc0a",
+  "active": "409a2f29eca4e578",
   "lastOpenFiles": [
+    "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 01 - Introduction & Gestion de version.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/16 - Interface graphique en C.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/readme progC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/TP/Programmation C TP1.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/TDs/Les TDs - Prog. C.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/16 - Interface graphique en C.md",
     "L3 INFORMATIQUE/SEM5/Théorie langages/Cours/TL 01 - Relations et LCI.md",
     "L3 INFORMATIQUE/SEM5/Théorie langages/readme TL.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
@@ -277,7 +278,6 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/06 - Les tableaux statiques.md",
-    "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 01 - Introduction & Gestion de version.md",
     "index.md",
     "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 02 - Initiation à Maeven.md",
