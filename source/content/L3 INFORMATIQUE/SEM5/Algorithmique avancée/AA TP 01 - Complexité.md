@@ -1,13 +1,28 @@
-On considère un tableau de la forme suivante :
+On considère un tableau de la forme suivante `X=[e1, e2, ..., en]` avec  $n \in \mathbb{N}^*$.  
+où chaque $e_i$ est un entier (positif, nul ou négatif).  
+L’algorithme doit **déterminer la plus grande somme possible d’un sous-tableau contigu** de `X`.  
+Autrement dit, on cherche :
 
 $$
-tab = [ [e_{1,}e_{2,}\ldots, e_{n_{1}}], [e_{1,}e_{2,}\ldots, e_{n_{2}}], \ldots, [e_{1,}e_{2,}\ldots, e_{n_{N}}]]
+\underset{1≤g≤d≤n}{max} \; \sum_{i=g}^{d} e_{i}​
 $$
 
-Où chaque sous-tableau est de taille différente $n_{1,}n_{2,}\ldots, n_{N} \in \mathbb{N}^*$.  
-L'algorithme doit extraire le sous-tableau dont la somme des éléments est la plus grande.
+où $g$ est l’indice de début et $d$ l’indice de fin du sous-tableau.
 
-Si on considère le tableau suivant : 
+- Premier algorithme proposé pour résoudre le problème
+
+On considère ici que `X` représente le tableau, `maxS` la somme maximale et `S` la somme du sous-tableau courant.
 ```
-tab = [ [ 12, 84, 45 ], [ 1, 78, 41 ], [ 110 ], [100, 56 ] ]
+maxS = 0
+for(g=0 ; g<n; g++){
+	for(d=g ; d<n ; d++){
+		S = 0
+		for(i=g ; i<=d ; i++){
+			S += X[i]
+			if(maxS < S){
+				maxS = S
+			}
+		}
+	}
+}
 ```
