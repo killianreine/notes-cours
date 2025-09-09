@@ -1,16 +1,32 @@
 # Ce bon vieux `Hello world`
 
-Et oui, ici aussi vous n'y échapperez pas, notre premier programme `C` vas nous permettre d'afficher ce fameux `Hello world` dans la console.
+Et oui, ici aussi vous n'y échapperez pas, notre premier programme C vas nous permettre d'afficher ce fameux `Hello world` dans la console.
 
-Avant de commencer à coder, réfléchissons un peu. Pour rappel le `C` est une suite de fonction dont une obligatoire la fonction `main( )`, c'est elle qui sera exécutée en premier d'où son appellation *point d'entrée*. Nous allons devoir trouver le moyen d'afficher du texte dans la console.
+Avant de commencer à coder, réfléchissons un peu. Pour rappel le C est une suite de fonction dont une obligatoire la fonction `main( )`, c'est elle qui sera exécutée en premier d'où son appellation *point d'entrée*. Nous allons devoir trouver le moyen d'afficher du texte dans la console.
 
-En programmation `C`, il est aussi impératif de réfléchir à quel genre de "chose" doit renvoyer la fonction, comme par exemple un entier, une chaîne de caractères, un caractère, un booléen, ... Parlons des types usuels.
+En programmation C, il est aussi impératif de réfléchir à quel genre de "chose" doit renvoyer la fonction, comme par exemple un entier, une chaîne de caractères, un caractère, un booléen, ... autrement dit, quel **type la fonction va renvoyer**.
 
 ## Le point d'entrée `main( )`
 
-Lorsqu'un programme commence à s'exécuter il appellera **toujours** `main( )`en premier. C'est une fonction qui permet de diriger les appels aux autres fonctions du programme.
+Lorsqu'un programme commence à s'exécuter il appellera **toujours** `main( )`en premier. C'est une fonction qui permet de diriger les appels aux autres fonctions du programme.  
 
-Malgré tout quelques contraintes s'appliquent à `main( )` : 
+Voyons ce qu'il se passe pour un programme qui n'utilise pas la fonction `main()`. 
+
+Malgré tout quelques contraintes s'appliquent à `main( )` :   
+On considère le code suivant associé à son résultat à la compilation :
+```c
+#include <stdio.h>
+
+int somme(int a, int b){
+	return a+b;
+}
+```
+```bash
+...  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o : dans la fonction « _start » :
+(.text+0x1b) : référence indéfinie vers « main »
+collect2: error: ld returned 1 exit status
+```
+L'erreur spécifie directement que la fonction `main` est indéfinie, en gros qu'il manque la fonction `main`.
 
 - Elle ne peut pas être définit comme `static` ou comme `inline`.
 - Elle ne peut pas être appelée
