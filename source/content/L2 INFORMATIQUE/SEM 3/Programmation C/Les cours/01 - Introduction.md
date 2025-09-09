@@ -4,8 +4,8 @@
 
 La **programmation** est un concept fondamental en informatique puisqu'elle représente l'art et la science de créer des programmes qui définissent à l'ordinateur ce qu'il doit faire. On peut le voir comme une liste de tâches *(= instructions)* codées dans un langage de programmation que l'ordinateur est capable de comprendre et d'exécuter.
 
->[!NOTE]
->**Langage de programmation** : langage informatique permettant d'écrire des algorithmes et de produire des programmes informatiques.
+>[!cite] Définition
+>On appelle **==Langage de programmation==** un langage dit informatique permettant d'écrire des algorithmes et de produire des programmes informatiques.
 
 La programmation permet de créer toutes sortes d'applications, des simples scripts aux systèmes complexes comme les sites web, les jeux vidéo, les applications mobiles et les logiciels d'entreprise.  
 Ainsi, un **programme** est une suite d'instructions ordonnées données à l'ordinateur pour qu'il exécute des tâches. *Par exemple des opérations comme addition, soustraction*.
@@ -19,7 +19,9 @@ Le langage `C` est un langage de programmation impératif inventé dans les ann�
 ### Langage compilé
 
 Le `C` est un **langage compilé**, en gros le code source où se trouve n'est pas directement un fichier exécutable, il va donc falloir passer votre *fichier source* dans un programme appelé **compilateur** qui traduit le code source en code machine pour pouvoir l'exécuter par la suite.  
-**Zoom sur la compilation**
+
+$\boxed{\text{Zoom sur la compilation}}$  
+
 1. ***Traitement par le préprocesseur***  
     Le préprocesseur est la première étape dans la compilation de nombreux langages (*comme `C` et `C++`*). Il permet de préparer le code source à la compilation par le compilateur.
    - <u>Inclusion des fichiers :</u> Le préprocesseur gère les inclusions (`#include`) qui ajoutent le contenu d'autres fichiers en entête.
@@ -233,7 +235,7 @@ Par contre, VS CODE nécessite quelques réglages au début.
 #### CLion - JetBrain (gratuit pour les étudiants)
 Lien pour le téléchargement : [https://www.jetbrains.com/edu-products/download/#section=idea](https://www.jetbrains.com/edu-products/download/#section=idea)
 
->[!NOTE]
+>[!info] Remarque
 > Il faudra s'identifier via votre compte étudiant.
 
 - Disponible sur OS, Linux et Windows
