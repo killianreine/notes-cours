@@ -9,6 +9,22 @@ $$
 
 où $g$ est l’indice de début et $d$ l’indice de fin du sous-tableau.
 
+<u>Exemple :</u>  
+Prenons en compte le tableau $X=[-2, 1, -3, 4, -1, 2, 1, -5, 4]$.  
+Regardons ce que devrait renvoyer l’algorithme après la fin du traitement. 
+- $[-2] = -2$  
+  Pas considéré car $-2 < 0$.
+- $[1] = 1$  
+  La somme maximale devient $S_{max}=1$
+- $[1, -3] = -2$  
+  La somme maximale reste $1$
+- $[4, -1, 2, 1]=6$  
+  La somme max devient $6$
+- $[-5]=-5$
+- $[4]=4$
+
+Ainsi, à la fin de cet algorithme, il devra renvoyer la sous-séquence $[4, -1, 2, 1]$ qui a pour somme max $6$.
+
 - Premier algorithme proposé pour résoudre le problème
 
 On considère ici que `X` représente le tableau, `maxS` la somme maximale et `S` la somme du sous-tableau courant.
