@@ -371,11 +371,11 @@ Le mot clé `char` désigne un objet de type caractère, ce dernier peut conteni
     </table>
 </div>
 
+
 >[!TIP]
 > Les caractères en `C` peuvent être utilisés **comme des entiers**, il est donc possible de faire des opérations arithmétiques sur eux.
 
-###### Exemple
-
+<u>Exemple :</u>  
 On considère une variable `a` qui contient le caractère `'a'` et on souhaite afficher la lettre `b` à partir de `a`. On sait grâce à la table ASCII que la différence entre le code de `b` et le code de `a` vaut 1, il faut donc ajouter 1 à la variable contenant `'a'` pour obtenir `b`.
 
 ```c
