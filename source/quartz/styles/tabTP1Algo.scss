@@ -1,0 +1,41 @@
+/* Styles clairs par défaut */
+.table-card{max-width:900px;margin:36px auto;padding:18px;border-radius:10px;background:#ffffff;border:1px solid #e6e9ef;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+.table-card h2{margin:0 0 10px;font-size:18px;color:#0f172a}
+.table-card p{margin:0 0 14px;color:#6b7280;font-size:14px}
+
+
+table.static-table{width:100%;border-collapse:collapse;min-width:640px}
+table.static-table thead th{background:#fff;padding:10px 12px;border-bottom:2px solid #eef2f6;text-align:center;font-weight:700;color:#111827}
+table.static-table thead th:first-child{text-align:left}
+table.static-table tbody th{background:#fafafa;padding:10px 12px;text-align:left;font-weight:700;color:#111827;border-right:1px solid #f1f5f9}
+table.static-table td{padding:10px 12px;text-align:center;border-bottom:1px solid #f3f6f9;color:#111827}
+
+
+table.static-table tbody tr:nth-child(odd) td{background:#ffffff}
+table.static-table tbody tr:nth-child(even) td{background:#fbfdff}
+
+
+.dash{color:#6b7280;font-style:normal}
+.num{font-weight:600}
+
+
+.table-wrap{overflow:auto}
+
+
+/* Styles sombres avec attribut [saved-theme="dark"] */
+[saved-theme="dark"] .table-card{background:#1e293b;border:1px solid #334155;color:#e2e8f0}
+[saved-theme="dark"] .table-card h2{color:#f8fafc}
+[saved-theme="dark"] .table-card p{color:#94a3b8}
+
+
+[saved-theme="dark"] table.static-table thead th{background:#1e293b;color:#f1f5f9;border-bottom:2px solid #334155}
+[saved-theme="dark"] table.static-table tbody th{background:#0f172a;color:#f8fafc;border-right:1px solid #334155}
+[saved-theme="dark"] table.static-table td{color:#e2e8f0;border-bottom:1px solid #334155}
+
+
+[saved-theme="dark"] table.static-table tbody tr:nth-child(odd) td{background:#1e293b}
+[saved-theme="dark"] table.static-table tbody tr:nth-child(even) td{background:#0f172a}
+
+
+[saved-theme="dark"] .dash{color:#64748b}
+[saved-theme="dark"] .num{color:#facc15;font-weight:600}
