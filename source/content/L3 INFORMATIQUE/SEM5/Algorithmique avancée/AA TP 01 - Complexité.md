@@ -42,3 +42,5 @@ for(g=0 ; g<n; g++){
 	}
 }
 ```
+
+On cherche à savoir si notre programme est efficace ou non, pour ce faire il faut que l'on arrive à déterminer la complexité de ce dernier.
