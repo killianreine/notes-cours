@@ -28,7 +28,13 @@ collect2: error: ld returned 1 exit status
 ```
 L'erreur spécifie directement que la fonction `main` est indéfinie, en gros qu'il manque la fonction `main`.
 
-- Elle ne peut pas être définit comme `static` ou comme `inline`.
+Elle ne peut pas être définit comme `static`.  
+En fait, le mot clé `static` possède deux utilités différentes selon le contexte :  
+- Placé dans un fichier en global, il permet de *limiter la visibilité* au fichier courant.
+- Placé dans une fonction, appliquée à une variable elle lui donne une durée de vie statique.
+
+Ainsi, si on définit la fonction `main`comme étant `static` alors cette dernière sera invisible lors de l'édition des liens, le système sera donc incapable de la retrouver pour démarrer le programme.
+
 - Elle ne peut pas être appelée
 
 Toute fonction en langage `C` possède le même squelette : 
