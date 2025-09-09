@@ -78,7 +78,7 @@ int main( ){
 
 Ainsi, ce tout petit code nous permet d'introduire des spécificités de la programmation `C`
 
-- Chaque fonction est un bloc délimité entre accolades `{ ... }`.
+- Chaque fonction est un bloc délimitée entre accolades `{ ... }`.
 - Chaque instruction se termine avec un point-virgule `;` *qui permet de spécifier la fin d'une instruction*.
 
 ### Écrire des commentaires
@@ -100,7 +100,15 @@ plusieurs lignes
 
 La fonction `printf(...)` permet d'afficher du texte ou des valeurs à l'écran. Il faut se souvenir que `printf` n'est pas directement utilisable, **elle vient d'une bibliothèque** appelée `stdio.h`. Ainsi cela implique que pour pouvoir utiliser la fonction `printf` il faudra spécifier en entête la bibliothèque. C'est donc là qu'intervient les `#include` évoqués lors du premier cours.
 
-Voici comment inclure la bibliothèque `stdio.h` dans votre fichier `C` et d'afficher ce bon vieux `Hello world`.
+"Signature" de la fonction `printf` :
+```c
+printf(const char* format, ...);
+```
+- La fonction prend comme premier paramètre une chaîne de caractères *entre `"..."`*. Cette dernière peut-être **formatée** ou non.  
+  On dit qu'une chaîne est **==formatée==** lorsqu'elle permet d'afficher des données sous un format donné. Le format est spécifié par un symbole pourcentage suivit du format correspondant : `%...`.
+- Les autres paramètres sont les valeurs des différents formats spécifié dans la chaîne. Si aucun format, alors aucune valeur/variable à spécifier à la fonction.
+
+Voici comment inclure la bibliothèque `stdio.h` dans votre fichier C et d'afficher ce bon vieux `Hello world`.
 
 Pour rappel : 
 
