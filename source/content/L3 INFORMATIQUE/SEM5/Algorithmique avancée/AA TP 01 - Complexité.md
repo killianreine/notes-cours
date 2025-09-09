@@ -52,7 +52,7 @@ Car :
 - La boucle `for(g=0 ; g<n ; g++)` sera exécutée `n` fois.
 - La boucle `for(d=g ; d<=n ; d++` sera exécutée environ `n-g` fois
 - La boucle `for(i=g; i<=d ; i++)` sera exécutée environ `d-g+1` fois.  
-  *On rajoute $+1$ car on a $i \leq d$, c'est le **ou égal** qui implique le rajoute du $1$*. 
+  *On rajoute $+1$ car on a $i \leq d$, c'est le **"ou égal"** qui implique le rajout du $1$*. 
 
 Ainsi l'instruction `S += i` sera exécutée environ : 
 
@@ -161,5 +161,36 @@ Maintenant, il faut additionner tous les termes du tableau afin de savoir sur qu
 Ainsi la somme des éléments du tableau sera donnée par : 
 
 $$
-nb_{exec}=\underset{i=1}{\overset{n}{\sum\limits}}i+\underset{i=1}{\overset{n-1}{\sum\limits}}i+\underset{i=1}{\overset{n-2}{\sum\limits}}i+\underset{i=1}{\overset{n-3}{\sum\limits}}i+\ldots+3+1
+nb_{exec}=\underbrace{\underset{i=1}{\overset{n}{\sum\limits}}i}_{\text{ligne }g=0}+\underbrace{\underset{i=1}{\overset{n-1}{\sum\limits}}i}_{\text{ligne }g=1}+\underbrace{\underset{i=1}{\overset{n-2}{\sum\limits}}i}_{\text{ligne }g=2}+\underbrace{\underset{i=1}{\overset{n-3}{\sum\limits}}i}_{\text{ligne }g=3}+\ldots+3+1
 $$
+
+Ainsi on peut simplifier cette expression car la somme des $i$ allant de $1$ à $n$ est donnée par :
+
+$$
+\dfrac{n(n+1)}{2}
+$$
+
+Ainsi : 
+
+$$
+nb_{exec} = \dfrac{n(n+1)}{2}+\dfrac{n(n-1)}{2}+\dfrac{(n-2)(n-1)}{2}+\dfrac{(n-3)(n-2)}{2}+\ldots+3+1=\underset{k=1}{\overset{n}{\sum\limits}}\dfrac{k(k+1)}{2}
+$$
+
+Il faut donc réussir à simplifier cette expression.
+
+$$
+\begin{align*}
+nb_{exec} &= \underset{k=1}{\overset{n}{\sum\limits}}\dfrac{k(k+1)}{2} \\
+&= \dfrac{1}{2}\underset{k=1}{\overset{n}{\sum\limits}}(k(k+1))\\
+&= \dfrac{1}{2}\underset{k=1}{\overset{n}{\sum\limits}}(k^2+k)\\
+&= \dfrac{1}{2}\underset{k=1}{\overset{n}{\sum\limits}}k²+\underset{k=1}{\overset{n}{\sum\limits}}k \\
+&= \dfrac{1}{2}\left( \dfrac{n(n+1)(2n+1)}{6}+\dfrac{n(n+1)}{2} \right) \\
+&= \dfrac{1}{2}\left( \dfrac{n(n+1)(2n+1)+3(n(n+1))}{6}\right)\\
+&= \dfrac{n(n+1)(2n+1)+3(n(n+1))}{12}\\
+&= \Theta(n³)
+\end{align*}
+$$
+
+On se retrouve alors avec un algorithme de complexité cubique, autant dire que ce n'est pas très efficace en réalité...
+
+Cherchons alors un moyen de réduire la complexité de cette algorithme, pour résoudre le même problème.
