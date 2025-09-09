@@ -153,3 +153,13 @@ On peut aussi le faire comme M.Balev, avec le fameux tableau :
       </table>
     </div>
 </div>
+
+>[!warning]
+>Si $n>d$ il ne se passe rien,  l'instruction ne s'exécute pas !
+
+Maintenant, il faut additionner tous les termes du tableau afin de savoir sur quelle complexité on est. En fait, chaque ligne représente la somme des $i$ allants de $1$ à $n$, puis de $1$ à $n-1$, et ainsi de suite.   
+Ainsi la somme des éléments du tableau sera donnée par : 
+
+$$
+nb_{exec}=\underset{i=1}{\overset{n}{\sum\limits}}i+\underset{i=1}{\overset{n-1}{\sum\limits}}i+\underset{i=1}{\overset{n-2}{\sum\limits}}i+\underset{i=1}{\overset{n-3}{\sum\limits}}i+\ldots+3+1
+$$
