@@ -127,10 +127,10 @@ int main( ){
 Hello world
 ```
 
-Et voilà, votre premier `main` en langage `C`, plutôt cool non ? Bon je suis d'accord, on a pas encore vu grand chose, mais déjà quelle fierté d'avoir son premier code qui fonctionne !!
+Et voilà, votre premier `main` en langage C, plutôt cool non ? Bon je suis d'accord, on a pas encore vu grand chose, mais déjà quelle fierté d'avoir son premier code qui fonctionne !!
 
 >[!TIP]
-> Les **header** *(= `include`)* se font au début du code, c'est à dire avant toutes les fonctions. La quasi totalité du temps, les premières lignes de vos fichiers `C`seront des `include`.
+> Les **header** *(= `include`)* se font au début du code, c'est à dire avant toutes les fonctions. La quasi totalité du temps, les premières lignes de vos fichiers C seront des `include`.
 
 Grossièrement votre code devrait ressembler au squelette suivant : 
 
@@ -156,7 +156,220 @@ Bon je suis d'accord avec toi, ça fait plusieurs fois que je parle de type. C'e
 
 Le mot clé `char` désigne un objet de type caractère, ce dernier peut contenir n'importe quel caractère que la machine utilise. Le plus souvent, un objet de type `char` est **codé sur 1 octet** *(= 8 bits)* et les caractères pris en compte sont ceux qui correspondent au codage ASCII.
 
-![Table ASCII](https://external-preview.redd.it/UFrL9aDmRhQqJMxweWAT1sVcVDo-UVJXyYVlGvzqayI.jpg?width=1080&crop=smart&auto=webp&s=2ddd8921d36013b43ded6c68b6b7ede11c58dcba)
+<div>
+<table>
+        <thead>
+            <tr>
+                <th>Decimal</th>
+                <th>Hex</th>
+                <th>Char</th>
+                <th class="separator">Decimal</th>
+                <th>Hex</th>
+                <th>Char</th>
+                <th class="separator">Decimal</th>
+                <th>Hex</th>
+                <th>Char</th>
+                <th class="separator">Decimal</th>
+                <th>Hex</th>
+                <th>Char</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="decimal">0</td><td class="hex">00</td><td class="control-char">[NULL]</td>
+                <td class="decimal separator">32</td><td class="hex">20</td><td class="control-char">[SPACE]</td>
+                <td class="decimal separator">64</td><td class="hex">40</td><td class="char">@</td>
+                <td class="decimal separator">96</td><td class="hex">60</td><td class="char">`</td>
+            </tr>
+            <tr>
+                <td class="decimal">1</td><td class="hex">01</td><td class="control-char">[START OF HEADING]</td>
+                <td class="decimal separator">33</td><td class="hex">21</td><td class="char">!</td>
+                <td class="decimal separator">65</td><td class="hex">41</td><td class="char">A</td>
+                <td class="decimal separator">97</td><td class="hex">61</td><td class="char">a</td>
+            </tr>
+            <tr>
+                <td class="decimal">2</td><td class="hex">02</td><td class="control-char">[START OF TEXT]</td>
+                <td class="decimal separator">34</td><td class="hex">22</td><td class="char">"</td>
+                <td class="decimal separator">66</td><td class="hex">42</td><td class="char">B</td>
+                <td class="decimal separator">98</td><td class="hex">62</td><td class="char">b</td>
+            </tr>
+            <tr>
+                <td class="decimal">3</td><td class="hex">03</td><td class="control-char">[END OF TEXT]</td>
+                <td class="decimal separator">35</td><td class="hex">23</td><td class="char">#</td>
+                <td class="decimal separator">67</td><td class="hex">43</td><td class="char">C</td>
+                <td class="decimal separator">99</td><td class="hex">63</td><td class="char">c</td>
+            </tr>
+            <tr>
+                <td class="decimal">4</td><td class="hex">04</td><td class="control-char">[END OF TRANSMISSION]</td>
+                <td class="decimal separator">36</td><td class="hex">24</td><td class="char">$</td>
+                <td class="decimal separator">68</td><td class="hex">44</td><td class="char">D</td>
+                <td class="decimal separator">100</td><td class="hex">64</td><td class="char">d</td>
+            </tr>
+            <tr>
+                <td class="decimal">5</td><td class="hex">05</td><td class="control-char">[ENQUIRY]</td>
+                <td class="decimal separator">37</td><td class="hex">25</td><td class="char">%</td>
+                <td class="decimal separator">69</td><td class="hex">45</td><td class="char">E</td>
+                <td class="decimal separator">101</td><td class="hex">65</td><td class="char">e</td>
+            </tr>
+            <tr>
+                <td class="decimal">6</td><td class="hex">06</td><td class="control-char">[ACKNOWLEDGE]</td>
+                <td class="decimal separator">38</td><td class="hex">26</td><td class="char">&</td>
+                <td class="decimal separator">70</td><td class="hex">46</td><td class="char">F</td>
+                <td class="decimal separator">102</td><td class="hex">66</td><td class="char">f</td>
+            </tr>
+            <tr>
+                <td class="decimal">7</td><td class="hex">07</td><td class="control-char">[BELL]</td>
+                <td class="decimal separator">39</td><td class="hex">27</td><td class="char">'</td>
+                <td class="decimal separator">71</td><td class="hex">47</td><td class="char">G</td>
+                <td class="decimal separator">103</td><td class="hex">67</td><td class="char">g</td>
+            </tr>
+            <tr>
+                <td class="decimal">8</td><td class="hex">08</td><td class="control-char">[BACKSPACE]</td>
+                <td class="decimal separator">40</td><td class="hex">28</td><td class="char">(</td>
+                <td class="decimal separator">72</td><td class="hex">48</td><td class="char">H</td>
+                <td class="decimal separator">104</td><td class="hex">68</td><td class="char">h</td>
+            </tr>
+            <tr>
+                <td class="decimal">9</td><td class="hex">09</td><td class="control-char">[HORIZONTAL TAB]</td>
+                <td class="decimal separator">41</td><td class="hex">29</td><td class="char">)</td>
+                <td class="decimal separator">73</td><td class="hex">49</td><td class="char">I</td>
+                <td class="decimal separator">105</td><td class="hex">69</td><td class="char">i</td>
+            </tr>
+            <tr>
+                <td class="decimal">10</td><td class="hex">0A</td><td class="control-char">[LINE FEED]</td>
+                <td class="decimal separator">42</td><td class="hex">2A</td><td class="char">*</td>
+                <td class="decimal separator">74</td><td class="hex">4A</td><td class="char">J</td>
+                <td class="decimal separator">106</td><td class="hex">6A</td><td class="char">j</td>
+            </tr>
+            <tr>
+                <td class="decimal">11</td><td class="hex">0B</td><td class="control-char">[VERTICAL TAB]</td>
+                <td class="decimal separator">43</td><td class="hex">2B</td><td class="char">+</td>
+                <td class="decimal separator">75</td><td class="hex">4B</td><td class="char">K</td>
+                <td class="decimal separator">107</td><td class="hex">6B</td><td class="char">k</td>
+            </tr>
+            <tr>
+                <td class="decimal">12</td><td class="hex">0C</td><td class="control-char">[FORM FEED]</td>
+                <td class="decimal separator">44</td><td class="hex">2C</td><td class="char">,</td>
+                <td class="decimal separator">76</td><td class="hex">4C</td><td class="char">L</td>
+                <td class="decimal separator">108</td><td class="hex">6C</td><td class="char">l</td>
+            </tr>
+            <tr>
+                <td class="decimal">13</td><td class="hex">0D</td><td class="control-char">[CARRIAGE RETURN]</td>
+                <td class="decimal separator">45</td><td class="hex">2D</td><td class="char">-</td>
+                <td class="decimal separator">77</td><td class="hex">4D</td><td class="char">M</td>
+                <td class="decimal separator">109</td><td class="hex">6D</td><td class="char">m</td>
+            </tr>
+            <tr>
+                <td class="decimal">14</td><td class="hex">0E</td><td class="control-char">[SHIFT OUT]</td>
+                <td class="decimal separator">46</td><td class="hex">2E</td><td class="char">.</td>
+                <td class="decimal separator">78</td><td class="hex">4E</td><td class="char">N</td>
+                <td class="decimal separator">110</td><td class="hex">6E</td><td class="char">n</td>
+            </tr>
+            <tr>
+                <td class="decimal">15</td><td class="hex">0F</td><td class="control-char">[SHIFT IN]</td>
+                <td class="decimal separator">47</td><td class="hex">2F</td><td class="char">/</td>
+                <td class="decimal separator">79</td><td class="hex">4F</td><td class="char">O</td>
+                <td class="decimal separator">111</td><td class="hex">6F</td><td class="char">o</td>
+            </tr>
+            <tr>
+                <td class="decimal">16</td><td class="hex">10</td><td class="control-char">[DATA LINK ESCAPE]</td>
+                <td class="decimal separator">48</td><td class="hex">30</td><td class="char">0</td>
+                <td class="decimal separator">80</td><td class="hex">50</td><td class="char">P</td>
+                <td class="decimal separator">112</td><td class="hex">70</td><td class="char">p</td>
+            </tr>
+            <tr>
+                <td class="decimal">17</td><td class="hex">11</td><td class="control-char">[DEVICE CONTROL 1]</td>
+                <td class="decimal separator">49</td><td class="hex">31</td><td class="char">1</td>
+                <td class="decimal separator">81</td><td class="hex">51</td><td class="char">Q</td>
+                <td class="decimal separator">113</td><td class="hex">71</td><td class="char">q</td>
+            </tr>
+            <tr>
+                <td class="decimal">18</td><td class="hex">12</td><td class="control-char">[DEVICE CONTROL 2]</td>
+                <td class="decimal separator">50</td><td class="hex">32</td><td class="char">2</td>
+                <td class="decimal separator">82</td><td class="hex">52</td><td class="char">R</td>
+                <td class="decimal separator">114</td><td class="hex">72</td><td class="char">r</td>
+            </tr>
+            <tr>
+                <td class="decimal">19</td><td class="hex">13</td><td class="control-char">[DEVICE CONTROL 3]</td>
+                <td class="decimal separator">51</td><td class="hex">33</td><td class="char">3</td>
+                <td class="decimal separator">83</td><td class="hex">53</td><td class="char">S</td>
+                <td class="decimal separator">115</td><td class="hex">73</td><td class="char">s</td>
+            </tr>
+            <tr>
+                <td class="decimal">20</td><td class="hex">14</td><td class="control-char">[DEVICE CONTROL 4]</td>
+                <td class="decimal separator">52</td><td class="hex">34</td><td class="char">4</td>
+                <td class="decimal separator">84</td><td class="hex">54</td><td class="char">T</td>
+                <td class="decimal separator">116</td><td class="hex">74</td><td class="char">t</td>
+            </tr>
+            <tr>
+                <td class="decimal">21</td><td class="hex">15</td><td class="control-char">[NEGATIVE ACKNOWLEDGE]</td>
+                <td class="decimal separator">53</td><td class="hex">35</td><td class="char">5</td>
+                <td class="decimal separator">85</td><td class="hex">55</td><td class="char">U</td>
+                <td class="decimal separator">117</td><td class="hex">75</td><td class="char">u</td>
+            </tr>
+            <tr>
+                <td class="decimal">22</td><td class="hex">16</td><td class="control-char">[SYNCHRONOUS IDLE]</td>
+                <td class="decimal separator">54</td><td class="hex">36</td><td class="char">6</td>
+                <td class="decimal separator">86</td><td class="hex">56</td><td class="char">V</td>
+                <td class="decimal separator">118</td><td class="hex">76</td><td class="char">v</td>
+            </tr>
+            <tr>
+                <td class="decimal">23</td><td class="hex">17</td><td class="control-char">[END OF TRANS. BLOCK]</td>
+                <td class="decimal separator">55</td><td class="hex">37</td><td class="char">7</td>
+                <td class="decimal separator">87</td><td class="hex">57</td><td class="char">W</td>
+                <td class="decimal separator">119</td><td class="hex">77</td><td class="char">w</td>
+            </tr>
+            <tr>
+                <td class="decimal">24</td><td class="hex">18</td><td class="control-char">[CANCEL]</td>
+                <td class="decimal separator">56</td><td class="hex">38</td><td class="char">8</td>
+                <td class="decimal separator">88</td><td class="hex">58</td><td class="char">X</td>
+                <td class="decimal separator">120</td><td class="hex">78</td><td class="char">x</td>
+            </tr>
+            <tr>
+                <td class="decimal">25</td><td class="hex">19</td><td class="control-char">[END OF MEDIUM]</td>
+                <td class="decimal separator">57</td><td class="hex">39</td><td class="char">9</td>
+                <td class="decimal separator">89</td><td class="hex">59</td><td class="char">Y</td>
+                <td class="decimal separator">121</td><td class="hex">79</td><td class="char">y</td>
+            </tr>
+            <tr>
+                <td class="decimal">26</td><td class="hex">1A</td><td class="control-char">[SUBSTITUTE]</td>
+                <td class="decimal separator">58</td><td class="hex">3A</td><td class="char">:</td>
+                <td class="decimal separator">90</td><td class="hex">5A</td><td class="char">Z</td>
+                <td class="decimal separator">122</td><td class="hex">7A</td><td class="char">z</td>
+            </tr>
+            <tr>
+                <td class="decimal">27</td><td class="hex">1B</td><td class="control-char">[ESCAPE]</td>
+                <td class="decimal separator">59</td><td class="hex">3B</td><td class="char">;</td>
+                <td class="decimal separator">91</td><td class="hex">5B</td><td class="char">[</td>
+                <td class="decimal separator">123</td><td class="hex">7B</td><td class="char">{</td>
+            </tr>
+            <tr>
+                <td class="decimal">28</td><td class="hex">1C</td><td class="control-char">[FILE SEPARATOR]</td>
+                <td class="decimal separator">60</td><td class="hex">3C</td><td class="char">&lt;</td>
+                <td class="decimal separator">92</td><td class="hex">5C</td><td class="char">\</td>
+                <td class="decimal separator">124</td><td class="hex">7C</td><td class="char">|</td>
+            </tr>
+            <tr>
+                <td class="decimal">29</td><td class="hex">1D</td><td class="control-char">[GROUP SEPARATOR]</td>
+                <td class="decimal separator">61</td><td class="hex">3D</td><td class="char">=</td>
+                <td class="decimal separator">93</td><td class="hex">5D</td><td class="char">]</td>
+                <td class="decimal separator">125</td><td class="hex">7D</td><td class="char">}</td>
+            </tr>
+            <tr>
+                <td class="decimal">30</td><td class="hex">1E</td><td class="control-char">[RECORD SEPARATOR]</td>
+                <td class="decimal separator">62</td><td class="hex">3E</td><td class="char">&gt;</td>
+                <td class="decimal separator">94</td><td class="hex">5E</td><td class="char">^</td>
+                <td class="decimal separator">126</td><td class="hex">7E</td><td class="char">~</td>
+            </tr>
+            <tr>
+                <td class="decimal">31</td><td class="hex">1F</td><td class="control-char">[UNIT SEPARATOR]</td>
+                <td class="decimal separator">63</td><td class="hex">3F</td><td class="char">?</td>
+                <td class="decimal separator">95</td><td class="hex">5F</td><td class="char">_</td>
+                <td class="decimal separator">127</td><td class="hex">7F</td><td class="control-char">[DEL]</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 >[!TIP]
 > Les caractères en `C` peuvent être utilisés **comme des entiers**, il est donc possible de faire des opérations arithmétiques sur eux.
