@@ -7,10 +7,6 @@ table {
    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
    border-radius: 12px;
    overflow: hidden;
-   box-shadow: 
-       0 10px 30px rgba(0,0,0,0.1),
-       0 4px 12px rgba(0,0,0,0.05),
-       inset 0 1px 0 rgba(255,255,255,0.8);
    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
    backdrop-filter: blur(10px);
 }
@@ -142,10 +138,6 @@ tr:nth-child(n) {
 [saved-theme="dark"] table {
    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
    color: #e2e8f0;
-   box-shadow: 
-       0 10px 30px rgba(0,0,0,0.4),
-       0 4px 12px rgba(0,0,0,0.3),
-       inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
 [saved-theme="dark"] th {
