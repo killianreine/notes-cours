@@ -373,7 +373,7 @@ Le mot clé `char` désigne un objet de type caractère, ce dernier peut conteni
 
 
 >[!TIP]
-> Les caractères en `C` peuvent être utilisés **comme des entiers**, il est donc possible de faire des opérations arithmétiques sur eux.
+> Les caractères en C peuvent être utilisés **comme des entiers**, il est donc possible de faire des opérations arithmétiques sur eux.
 
 <u>Exemple :</u>  
 On considère une variable `a` qui contient le caractère `'a'` et on souhaite afficher la lettre `b` à partir de `a`. On sait grâce à la table ASCII que la différence entre le code de `b` et le code de `a` vaut 1, il faut donc ajouter 1 à la variable contenant `'a'` pour obtenir `b`.
@@ -404,7 +404,7 @@ En conséquence, cela implique directement qu'une variable de type `char` conten
 > [!tip]
 > Un objet de type `char` ne peut contenir qu'un seul caractère, et en réalité chaque caractère représente une valeur numérique qui correspond en fait à son codage dans la table ASCII.
 
-Ainsi, on peut avoir besoin d'afficher la valeur d'une variable de type `char` sous forme de caractère ou sous forme numérique. Cela est évidemment possible en langage `C`.
+Ainsi, on peut avoir besoin d'afficher la valeur d'une variable de type `char` sous forme de caractère ou sous forme numérique. Cela est évidemment possible en langage C.
 
 Voilà comment procéder : 
 
@@ -447,7 +447,7 @@ Les **entiers** sont représentés par le mot clé `int`, qui peut être précé
 | `long long` | 8| très grands nombres | 
 | `unsigned long long` | 8 | les positifs |
 
->[!NOTE]
+>[!info] Remarque
 > - `unsigned` pour des valeurs positives.
 > - `signed` pour les valeurs positives et négatives.
 > - `short` petite taille
@@ -475,7 +475,7 @@ L'opération `sizeof` permet de **déterminer la taille** (en octets) d'un *type
 
 Il est possible d'obtenir la taille d'un type de donnée spécifié lors de l'appel de l'opérateur.
 
->[!NOTE]
+>[!Remarque] Remarque
 > Les **types de données** sont `int`, `char`, `float`, ... 
 
 Ainsi, il suffit d'écrire `sizeof(type_de_donnees)`.
@@ -492,6 +492,9 @@ int main( ){
 }
 ```
 
+>[!warning] 
+>La taille des données peut changer selon votre système mais en général, les tailles données ci-dessus sont dans la majeure partie des cas celles-ci.
+
 #### Utiliser `sizeof` sur une variable
 
 ```c
@@ -506,12 +509,12 @@ int main( ){
 
 Il est évidemment possible de calculer la taille des tableaux et des structures mais nous verrons ces aspects plus tard dans ce cours.
 
->[!NOTE]
+>[!info] Remarque
 > L'opérateur `sizeof` est évalué à la compilation, ce qui signifie qu'il n'a pas d'impact sur la performance à l'exécution.
 
 ## Les types flottants
 
-En langage `C`, le type flottant *(floating-point)* est utilisé pour représenter les nombres réels avec une partie décimale. Il existe **deux types** flottants : 
+En langage C, le type flottant *(floating-point)* est utilisé pour représenter les nombres réels avec une partie décimale. Il existe **deux types** flottants : 
 
 - `float` précision **simple** 
    - généralement sur 32bits
@@ -575,7 +578,7 @@ y = 5
 ```
 # Portée des variables
 
-La **portée des variables** en `C` *(aussi appelée scope)*, c’est la partie du programme dans laquelle une variable est accessible *(où tu peux l'utiliser)*. Il y a plusieurs types de portée selon où et comment tu déclares ta variable.
+La **portée des variables** en C *(aussi appelée scope)*, c’est la partie du programme dans laquelle une variable est accessible *(où tu peux l'utiliser)*. Il y a plusieurs types de portée selon où et comment tu déclares ta variable.
 
 ## Variable locale
 
@@ -587,7 +590,7 @@ void maFonction() {
     int x = 5; // portée locale
     printf("%d\n", x); // Pas d'erreur ici
 }
-printf("%d\n", x); // ❌ Erreur, x n'est pas visible ici
+printf("%d\n", x); // Erreur, x n'est pas visible ici
 ```
 
 ## Variable globale
@@ -599,7 +602,7 @@ Déclaration en **dehors de toute fonction**, elle est appelée variable **GLOBA
 int y = 10; // portée globale
 
 void afficher() {
-    printf("%d\n", y); // OK
+    printf("%d\n", y);
 }
 ```
 
@@ -774,8 +777,7 @@ TEINTE = 130; // Erreur : on ne peut pas modifier une constante
 
 ### Quelques conseil
 
->📌 Voici quelques petits conseils sur l'utilisation des méthodes pour définir et initialiser une constante : 
->
+>[!tip]
 > - Utilisez `const` pour des constantes typées.
 > - Utilisez `#define` pour des macros, ou des constantes globales *(valeur fixe, configuration, ...)*
 
