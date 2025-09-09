@@ -52,7 +52,7 @@
     <p>
       Dans la continuité des UE d’algorithmique des semestres précédents, cette UE aborde les arbres binaires de recherche et l’analyse de la complexité des algorithmes.
     </p>
-    <p><u>Support de cours :</u> <a href="https://www-apps.univ-lehavre.fr/forge/balevs/algorithmique-avanc-e" target="_blank">Supports AlgoAvancée sbalev</a></p>
+    <p><u>Support de cours :</u> <a href="https://www-apps.univ-lehavre.fr/forge/balevs/algorithmique-avanc-e" target="_blank">Supports AlgoAvancée sbalev</a> <br/> <a href="readme AA">readme AA</a></p>
     <p><u>Durée de l'UE :</u> 32 heures</p>
   </article>
 </section>
