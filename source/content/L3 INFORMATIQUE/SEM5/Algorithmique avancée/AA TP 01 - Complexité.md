@@ -193,4 +193,33 @@ $$
 
 On se retrouve alors avec un algorithme de complexité cubique, autant dire que ce n'est pas très efficace en réalité...
 
-Cherchons alors un moyen de réduire la complexité de cette algorithme, pour résoudre le même problème.
+Cherchons alors un moyen de réduire la complexité de cette algorithme, pour résoudre le même problème.  
+On sait que l'instruction la plus utilisée est `S+=X[i]`.  
+On peut éviter de recalculer la somme courante à chaque fois, au lieu de repartir de $0$ à chaque fois pour chaque `(g, d)`, on peut simplement ajouter le nouvel élément `X[d]` à la somme courante.
+
+On obtient alors l'algorithme suivant :
+```
+maxS = 0;
+for (g = 0; g < n; g++) {
+    S = 0;
+    for (d = g; d < n; d++) {
+        S += X[d];
+        if (S > maxS) {
+            maxS = S;
+        }
+    }
+}
+```
+
+Ainsi,
+- La première boucle est exécutée $n$ fois
+- La seconde boucle est exécutée $n-g$ fois
+
+L'instruction `S += X[d]` est donc exécutée :
+
+$$
+\underset{g=0}{\overset{n-1}{\sum\limits}}(n-g) = n+(n-1)+(n-2)+\ldots+2+1=\dfrac{n(n-1)}{2}
+$$
+
+fois.  
+Le nombre d'exécution de l'instruction est donné par la complexité $\Theta(n^{2})$.
