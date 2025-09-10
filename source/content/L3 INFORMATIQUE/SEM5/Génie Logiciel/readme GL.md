@@ -25,8 +25,8 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel, destiné au
     </tr>
     <tr>
       <td>CM 01.1</td>
-      <td><a href="GL 01 - Introduction & Gestion de version">Introduction</a></td>
-      <td>Présentation du module génie logiciel, gestion des versions</td>
+      <td><a href="GL 01 - Initiation à Git">Initiation à Git</a></td>
+      <td>Gestion des versions</td>
     </tr>
     <tr>
     <td>TP 01.1.1</td>
