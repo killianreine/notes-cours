@@ -475,7 +475,7 @@ L'opération `sizeof` permet de **déterminer la taille** (en octets) d'un *type
 
 Il est possible d'obtenir la taille d'un type de donnée spécifié lors de l'appel de l'opérateur.
 
->[!Remarque] Remarque
+>[!info] Remarque
 > Les **types de données** sont `int`, `char`, `float`, ... 
 
 Ainsi, il suffit d'écrire `sizeof(type_de_donnees)`.
@@ -580,6 +580,38 @@ y = 5
 
 La **portée des variables** en C *(aussi appelée scope)*, c’est la partie du programme dans laquelle une variable est accessible *(où tu peux l'utiliser)*. Il y a plusieurs types de portée selon où et comment tu déclares ta variable.
 
+>[!warning] 
+>**Une variable doit être déclarée et initialisée avant d'être utilisée... !**
+
+Prenons l'instruction suivante : 
+```c
+int j = 0, c;
+```
+
+En C, on peut déclarer plusieurs variables en même temps sans pour autant les initialiser. Hors, quand on est en C, si on initialise pas les variables, elles ont ce qu'on appelle une **valeur indéfinie**, ce qui signifie que tu ne peux pas savoir ce qu'elle contient.
+
+Du coup dans l'instruction ci-dessus, tu initialises bien `j` à 0, donc ta variable `j` stocke bien la valeur 0. Alors que pour la variable `c`, tu ne lui donne pas de valeur.  
+Ainsi, quand tu voudras afficher les valeurs de `j` et de `c`, tu obtiendra pour `c` une valeur différente à chaque exécution du programme.
+
+<u>Exemple :</u>  
+```c
+#include <stdio.h>
+
+int main() {
+    int j = 0, c;
+    printf("j=%d et c=%d", j, c);
+    return 0;
+}
+``` 
+Suivit de trois exécutions du programme.
+```
+j=0 et c=-1392444720
+
+j=0 et c=-1370719536
+
+j=0 et c=1561864912
+```
+Ainsi, tant qu'une variable n'est pas explicitement initialisée/définie, alors elle contient une valeur indéterminée.
 ## Variable locale
 
 C'est la déclaration **à l'intérieur d'un bloc**. Dans ce cas la variable est dite **LOCALE** et est accessible <u>uniquement</u> dans ce même bloc.
