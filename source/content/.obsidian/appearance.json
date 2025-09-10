@@ -2,10 +2,22 @@
   "cssTheme": "Prism",
   "accentColor": "#9900ff",
   "enabledCssSnippets": [
-    "syntax",
-    "base",
-    "callouts",
-    "custom"
+    "compiler",
+    "concat",
+    "cyclefichier",
+    "depassementMem",
+    "indexGlobal",
+    "indicesTab",
+    "infoLicence",
+    "informatiqueMot",
+    "memoireCache",
+    "piles",
+    "pointeurDEF",
+    "strtok",
+    "tab6",
+    "tabCoursProgC",
+    "tableFichierFormat",
+    "tabUEL1S1"
   ],
   "baseFontSize": 13,
   "theme": "system"

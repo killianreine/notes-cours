@@ -57,46 +57,6 @@ $\boxed{\text{Zoom sur la compilation}}$
 <div>
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1000" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagramme de compilation et exécution du code C">
-  <defs>
-    <marker id="arrowhead" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L12,5 L0,10 z" fill="black" />
-    </marker>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
-    </filter>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f9fafb;stop-opacity:1" />
-    </linearGradient>
-    <style>
-		.box { fill: #f8faff; stroke: #2563eb; }
-		.box-preprocess { fill: #fef3c7; stroke: #f59e0b; }
-		.box-compile { fill: #dcfce7; stroke: #16a34a; }
-		.box-assemble { fill: #fce7f3; stroke: #ec4899; }
-		.box-link { fill: #e0e7ff; stroke: #6366f1; }
-		.box-exec { fill: #fed7d7; stroke: #ef4444; }
-		.box-cpu { fill: #f0f9ff; stroke: #0ea5e9; }
-		.title { fill: #1f2937; }
-		.subtitle { fill: #6b7280; }
-		.small { fill: #374151; }
-		.step { fill: #1f2937; }
-		.phase-label { fill: #6b7280; }
-		.arrow { stroke: black; }
-		[saved-theme="dark"] .box { fill: #1e293b; stroke: #3b82f6; }
-		[saved-theme="dark"] .box-preprocess { fill: #78350f; stroke: #fbbf24; }
-		[saved-theme="dark"] .box-compile { fill: #14532d; stroke: #22c55e; }
-		[saved-theme="dark"] .box-assemble { fill: #831843; stroke: #ec4899; }
-		[saved-theme="dark"] .box-link { fill: #3730a3; stroke: #818cf8; }
-		[saved-theme="dark"] .box-exec { fill: #7f1d1d; stroke: #f87171; }
-		[saved-theme="dark"] .box-cpu { fill: #0c4a6e; stroke: #38bdf8; }
-		[saved-theme="dark"] .title { fill: #f1f5f9; }
-		[saved-theme="dark"] .subtitle { fill: #94a3b8; }
-		[saved-theme="dark"] .small { fill: #cbd5e1; }
-		[saved-theme="dark"] .step { fill: #f1f5f9; }
-		[saved-theme="dark"] .phase-label { fill: #94a3b8; }
-		[saved-theme="dark"] .arrow { stroke: #f1f5f9; }
-	</style>
-  </defs>
   <!-- Title -->
   <text x="40" y="40" class="title">Processus de compilation et d'exécution en C</text>
   <text x="40" y="65" class="subtitle">De l'écriture du code source à l'exécution par le processeur</text>

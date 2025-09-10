@@ -25,6 +25,13 @@
     }
 }
 
+pre, code {
+  white-space: pre !important;
+  overflow-x: auto !important;
+  word-wrap: normal !important;
+}
+
+
 /* Bloc déroulant */
 .custom-details {
   border: 1px solid;

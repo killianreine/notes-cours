@@ -7,5 +7,7 @@
     "margin": "0",
     "downscalePercent": 70
   },
-  "promptDelete": false
+  "promptDelete": false,
+  "readableLineLength": true,
+  "strictLineBreaks": false
 }
