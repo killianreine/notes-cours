@@ -697,15 +697,15 @@ Format entier : 65 et format caractère A.
 
 ***Tableau des principaux formats valides***
 
-|Format|Type de l'argument affiché|Format d'affichage|Exemple|Bornes usuelles|
-|:-:|---|---|---|---|
-|`%c`|caractère (`char`)|ASCII|`a` `G` `u`|`signed char` : -128 à 127 `unsigned char` : 0 à 255|
-|`%hd` `%hu` `%hX`|entier `short int` signé entier `short int` non signé hexadécimal (`unsigned short`)|Base 10 Base 10 Base 16|`-12` `463` `90AF`|`short` signé : -32 768 à 32 767 `unsigned short` : 0 à 65 535|
-|`%ld` `%lu` `%lX`|entier `long int` signé entier `long int` non signé hexadécimal (`unsigned long`)|Base 10 Base 10 Base 16|`-1289` `46399` `B4E98A0F`|`long` signé (64 bits) : -9 223 372 036 854 775 808 à 9 223 372 036 854 775 807 `unsigned long` : 0 à 18 446 744 073 709 551 615|
-|`%d` `%X`|entier `int` signé entier `int` en hexadécimal|Base 10 Base 16|`-546` `9A0F`|`int` signé (32 bits) : -2 147 483 648 à 2 147 483 647 `unsigned int` : 0 à 4 294 967 295|
-|`%le` `%lf`|réel double précision `double`|scientifique ou flottant|`-3.195874` `-45e-7`|environ ±1.7×10⁻³⁰⁸ à ±1.7×10³⁰⁸ (15-16 chiffres de précision)|
-|`%e` `%f`|réel simple précision `float`|scientifique ou flottant|`-3.195874` `-45e-7`|environ ±1.2×10⁻³⁸ à ±3.4×10³⁸ (6-7 chiffres de précision)|
-|`%s`|chaîne de caractères|—|`Hello world`|dépend de la mémoire disponible|
+|      Format       | Type de l'argument affiché                                                           | Format d'affichage       | Exemple                    | Bornes usuelles                                                                                                                               |
+| :---------------: | ------------------------------------------------------------------------------------ | ------------------------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+|       `%c`        | caractère (`char`)                                                                   | ASCII                    | `a` `G` `u`                | `signed char` : $-128$ à $127$   <br>`unsigned char` : $0$ à $255$                                                                            |
+| `%hd` `%hu` `%hX` | entier `short int` signé entier `short int` non signé hexadécimal (`unsigned short`) | Base 10 Base 10 Base 16  | `-12` `463` `90AF`         | `short` signé : $-32 768$ à $32 767$   <br>`unsigned short` : $0$ à $65 535$                                                                  |
+| `%ld` `%lu` `%lX` | entier `long int` signé entier `long int` non signé hexadécimal (`unsigned long`)    | Base 10 Base 10 Base 16  | `-1289` `46399` `B4E98A0F` | `long` signé (64 bits) : $-9 223 372 036 854 775 808$ à $9 223 372 036 854 775 807$  <br>`unsigned long` : $0$ à $18 446 744 073 709 551 615$ |
+|     `%d` `%X`     | entier `int` signé entier `int` en hexadécimal                                       | Base 10 Base 16          | `-546` `9A0F`              | `int` signé (32 bits) : $-2 147 483 648$ à $2 147 483 647$  <br>`unsigned int` : $0$ à $4 294 967 295$                                        |
+|    `%le` `%lf`    | réel double précision `double`                                                       | scientifique ou flottant | `-3.195874` `-45e-7`       | environ $\pm 1.7\times 10^{-38}$  à $\pm 1.7\times 10^{38}$ *(15-16 chiffres de précision)*                                                   |
+|     `%e` `%f`     | réel simple précision `float`                                                        | scientifique ou flottant | `-3.195874` `-45e-7`       | environ $\pm1.2\times10^{-38}$ à $\pm3.4\times10^{38}$ *(6-7 chiffres de précision)*                                                          |
+|       `%s`        | chaîne de caractères                                                                 | —                        | `Hello world`              | dépend de la mémoire disponible                                                                                                               |
 
 Il est aussi possible d'ajouter des options entre `%` et la lettre qui définit le format.
 
