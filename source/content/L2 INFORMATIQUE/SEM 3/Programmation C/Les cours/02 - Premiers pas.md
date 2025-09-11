@@ -576,6 +576,19 @@ int main() {
 x = 5.8
 y = 5
 ```
+
+<u>Exemple :</u>
+```c
+int a = 10;
+double b = 3.5;
+
+// Cast implicite (devient un double)
+double result1 = a + b;   // a est converti en double
+
+// Cast explicite
+int result2 = (int)b;     // b devient 3
+```
+
 # Portée des variables
 
 La **portée des variables** en C *(aussi appelée scope)*, c’est la partie du programme dans laquelle une variable est accessible *(où tu peux l'utiliser)*. Il y a plusieurs types de portée selon où et comment tu déclares ta variable.
