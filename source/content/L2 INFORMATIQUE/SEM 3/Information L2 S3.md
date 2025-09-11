@@ -1,6 +1,6 @@
 <section class="licenceINFOLI">
 <header class="headerINFOLI">
-    <h1 class="titleINFOLI">Licence 2 - Informatique</h1>
+    <h1 class="titleINFOLI">L2 INFO</h1>
     <p class="introINFOLI">
       La <strong>licence d’informatique</strong> propose une formation complète couvrant les principaux domaines de l’informatique générale et scientifique : algorithmique, programmation dans différents langages, gestion des bases de données, systèmes d’exploitation, développement web, génie logiciel, interfaces homme-machine (IHM), ou encore programmation scientifique.  
       Elle s’appuie sur des bases solides en mathématiques, particulièrement en début de parcours.
