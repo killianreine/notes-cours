@@ -697,15 +697,15 @@ Format entier : 65 et format caractère A.
 
 ***Tableau des principaux formats valides***
 
-| Format | Type de l'argument affiché | Format d'affichage | Exemple |
-| :---: | --- | --- | --- |
-| `%c` | caractère | ASCII | a G u |
-| `%hd` <br> `%hu` <br> `%hX` | entier `short int` (ou caractère) **signé** <br> entier `short int` (ou caractère) **non signé** <br> Affichage en hexadécimal | Base 10 <br> Base 10 <br> Base 16 (hexa) | $-12$ <br> $463$ <br> 90AF |
-| `%ld` <br> `%lu` <br> `%lX` | entier `long int` **signé** <br> entier `long int` **non signé** <br> entier `long int` en hexadécimal | Base 10 <br> Base 10 <br> Base 16 (hexa) | $-1289$ <br> $46399$ <br> B4E98A0F |
-| `%d`<br> `%X` | entier `int` <br> `int` en hexadécimal | Base 10 <br> Base 16 | $-546$ <br> 9A0F |
-| `%le` <br> `%lf` | réel double précision `double` | | $-3.195874$ <br> $-45e-7$ |
-| `%e` <br> `%f` | réel simple précision `float` | | $-3.195874$ <br> $-45e-7$ |
-| `%s` | chaine de caractères | | Hello world |
+|Format|Type de l'argument affiché|Format d'affichage|Exemple|Bornes usuelles|
+|:-:|---|---|---|---|
+|`%c`|caractère (`char`)|ASCII|`a` `G` `u`|`signed char` : -128 à 127 `unsigned char` : 0 à 255|
+|`%hd` `%hu` `%hX`|entier `short int` signé entier `short int` non signé hexadécimal (`unsigned short`)|Base 10 Base 10 Base 16|`-12` `463` `90AF`|`short` signé : -32 768 à 32 767 `unsigned short` : 0 à 65 535|
+|`%ld` `%lu` `%lX`|entier `long int` signé entier `long int` non signé hexadécimal (`unsigned long`)|Base 10 Base 10 Base 16|`-1289` `46399` `B4E98A0F`|`long` signé (64 bits) : -9 223 372 036 854 775 808 à 9 223 372 036 854 775 807 `unsigned long` : 0 à 18 446 744 073 709 551 615|
+|`%d` `%X`|entier `int` signé entier `int` en hexadécimal|Base 10 Base 16|`-546` `9A0F`|`int` signé (32 bits) : -2 147 483 648 à 2 147 483 647 `unsigned int` : 0 à 4 294 967 295|
+|`%le` `%lf`|réel double précision `double`|scientifique ou flottant|`-3.195874` `-45e-7`|environ ±1.7×10⁻³⁰⁸ à ±1.7×10³⁰⁸ (15-16 chiffres de précision)|
+|`%e` `%f`|réel simple précision `float`|scientifique ou flottant|`-3.195874` `-45e-7`|environ ±1.2×10⁻³⁸ à ±3.4×10³⁸ (6-7 chiffres de précision)|
+|`%s`|chaîne de caractères|—|`Hello world`|dépend de la mémoire disponible|
 
 Il est aussi possible d'ajouter des options entre `%` et la lettre qui définit le format.
 
