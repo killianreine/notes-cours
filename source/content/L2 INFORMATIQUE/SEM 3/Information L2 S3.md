@@ -77,7 +77,7 @@
         L’UE <strong>Programmation en C</strong> initie au langage C et à ses bases : variables, structures de contrôle, tableaux, pointeurs, gestion mémoire. Elle développe une meilleure compréhension du fonctionnement interne des programmes.
       </p>
       <p><span class="labelINFOLI">Support de cours :</span>
-        <a href="readme progC">readme progC</a> – <em>cours en rédaction par K. REINE</em>
+        <a href="00 - Home - ProgC">00 - Home, Programmation C</a> – <em>Cours et tutorat effectués par K. REINE</em>
       </p>
       <p><span class="labelINFOLI">Durée :</span> 50 heures</p>
     </article>
