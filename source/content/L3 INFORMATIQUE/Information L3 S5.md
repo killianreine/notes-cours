@@ -71,7 +71,7 @@
     <p>
       Introduction à la programmation orientée objet en C++ : classes, héritage, polymorphisme, gestion mémoire et programmation générique.
     </p>
-    <p><u>Support de cours :</u><a href="redme C++">Cours et corrections C++</a></p> 
+    <p><u>Support de cours :</u> <a href="readme C++">Cours et corrections C++</a></p> 
     <p><u>Durée de l'UE :</u> 25 heures</p>
   </article>
   <article class="ueINFOLI">
