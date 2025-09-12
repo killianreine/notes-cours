@@ -21,8 +21,8 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel appliqué au
     </tr>
   </thead>
   <tbody>
-	  <tr>
-      <td colspan="3" class="bloc-header">Séance n°1</td>
+	  <tr class="bloc-header">
+      <td colspan="3">Séance n°1</td>
     </tr>
     <tr>
       <td>TP 01</td>

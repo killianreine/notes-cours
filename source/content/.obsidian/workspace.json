@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L3 INFORMATIQUE/Information L3 S5.md",
+                "file": "L3 INFORMATIQUE/SEM5/Algorithmique avancée/readme AA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Information L3 S5"
+              "title": "readme AA"
             }
           }
         ],
@@ -246,12 +246,13 @@
   },
   "active": "460d9fac1b6d9e6a",
   "lastOpenFiles": [
+    "L3 INFORMATIQUE/SEM5/Algorithmique avancée/AA TP 01 - Complexité.md",
+    "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
+    "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 01 - Initiation à Git.md",
     "L3 INFORMATIQUE/SEM5/C++/readme C++.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
     "L3 INFORMATIQUE/SEM5/C++/Séance 1/Correction exercice TP1.md",
-    "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
     "L3 INFORMATIQUE/SEM5/C++/Séance 1",
-    "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 01 - Initiation à Git.md",
     "L3 INFORMATIQUE/SEM5/C++",
     "index.md",
     "L2 INFORMATIQUE/SEM 3/Information L2 S3.md",
@@ -262,7 +263,6 @@
     "L2 INFORMATIQUE/SEM 4/Informations L2S4.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
-    "L3 INFORMATIQUE/SEM5/Algorithmique avancée/AA TP 01 - Complexité.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/16 - Interface graphique en C.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 02 - Initiation à Maeven.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 01 - Introduction & Gestion de version.md",

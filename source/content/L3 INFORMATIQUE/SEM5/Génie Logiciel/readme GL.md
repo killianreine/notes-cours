@@ -20,8 +20,8 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel, destiné au
     </tr>
   </thead>
   <tbody>
-	  <tr>
-      <td colspan="3" class="bloc-header">Cours Magistral n°1</td>
+	  <tr class="bloc-header">
+      <td colspan="3">Cours Magistral n°1</td>
     </tr>
     <tr>
       <td>CM 01.1</td>
