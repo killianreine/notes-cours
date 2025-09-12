@@ -32,7 +32,7 @@ void calculer_moyenne(std::string fichier){
 
     // Vérifier si le fichier est ouvert
     if(!fich.is_open()){
-        std::cout << "Le fichier 'na pas été ouvert\n";
+        std::cout << "Le fichier n'a pas été ouvert\n";
         exit(1);
     }
 
