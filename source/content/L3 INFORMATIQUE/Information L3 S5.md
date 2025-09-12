@@ -140,8 +140,9 @@
         <td>25 heures</td>
       </tr>
       <tr>
-        <td>Option 1 - Programmation objet C++</td>
-        <td>25 heures</td>
+        <td>Option 1 - Programmation objet C++
+        <p><u>Support de cours :</u> <a href="redame C++">Cours et correction</a></p>
+    <p><u>Durée de l'UE :</u> 25 heures</p></td>
       </tr>
       <tr>
         <td>Option 2 - Architecture avancée</td>
