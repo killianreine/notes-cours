@@ -93,3 +93,10 @@ Montrer que les ensembles $C$ et  $D$ sont égaux.
 
 *Le symbole $\lor$ représente le OU-logique.*
 
+<u>Exemple :</u>  
+On considère deux ensembles $A=\{1, 2, 3\}$ et $B=\{4, 7, 1, 6\}$.  
+Alors $A \cup B =\{ 1, 2, 3, 4, 6 \}$.
+
+>[!warning] Faites gaffe !
+>Un ensemble ne peux pas contenir **plusieurs fois le même élément**, ainsi si un élément *ici $1$* apparaît dans les deux ensembles, lors de l'union, il n'en restera qu'un.
+
