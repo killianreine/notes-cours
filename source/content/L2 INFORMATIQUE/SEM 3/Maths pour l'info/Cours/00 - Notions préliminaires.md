@@ -137,6 +137,15 @@ Alors $A \backslash B = \{2, 3, 4\}$, on a enlevé à l'ensemble $A$ les éléme
 Si $A=\{ 1, 2, 3, 4\}$ et $B = \{1, 5, 8 \}$.  
 Alors $\complement_{A}(B) = \{2, 3, 4\}$, on a enlevé à l'ensemble $A$ les éléments qu'il avait en commun avec $B$.
 
+>[!cite] Définition <sub>ensemble disjoint</sub>
+>Soit $E$ un ensemble et $A, B$ deux parties de $E$.  
+>On dit que $A$ et $B$ sont **==disjoints==** lorsque *"leur intersection est vide"*.  
+>On note :  
+>$$
+>A \cap B= \emptyset
+>$$
+>Autrement dit, ils ne possèdent aucun éléments en commun.
+
 ## Propriétés sur les opérations ensembliste 
 ### Propriété de l'inclusion
 On considère $E, F$ et $G$ trois ensembles.
@@ -184,3 +193,6 @@ Soient $E$ un ensemble et $A,B,C$ trois parties de $E$.
 >\underset{k=1}{\overset{n}{\prod}}E_{i}=E_{1} \times E_{2} \times  \ldots \times E_{n} =\{(x_{1}, x_{2}, \ldots, x_{n}) \mid x_{1}\in E_{1}, x_{2}\in E_{2}, \ldots, x_{n}\in E_{n}\}
 >$$
 
+<u>Exemple :</u>  
+Soient $A=\{1, 2\}$ et $B=\{4, 6\}$.  
+Alors $A \times B = \{ (1, 4), (1, 6), (2, 4), (2, 6) \}$.
