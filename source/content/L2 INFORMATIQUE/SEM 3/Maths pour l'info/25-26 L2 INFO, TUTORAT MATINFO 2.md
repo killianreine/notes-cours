@@ -40,7 +40,7 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
     </tr>
     <tr>
       <td>CM 01</td>
-      <td><a href="#">Cours</a></td>
+      <td><a href="01 - Relations binaires">Cours</a></td>
       <td>...</td>
     </tr>
     <tr>

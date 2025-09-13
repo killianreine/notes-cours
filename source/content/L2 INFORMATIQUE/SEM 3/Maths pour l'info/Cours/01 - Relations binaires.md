@@ -1,0 +1,2 @@
+# Généralités
+## Définition de base
