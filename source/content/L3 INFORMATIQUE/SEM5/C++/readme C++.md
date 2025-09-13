@@ -1,18 +1,18 @@
-# 💻 Cours de Génie Logiciel en C++
+# 💻 Cours de C++ : Programmation
 
-Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel appliqué au langage **C++**, destiné aux étudiants en informatique ou à toute personne souhaitant apprendre à concevoir, développer et maintenir des logiciels de qualité avec C++.
+Bienvenue ! Ce dépôt contient un cours complet sur le langage **C++**, conçu pour les étudiants en informatique ou toute personne souhaitant apprendre à concevoir, développer et maintenir des logiciels performants et fiables avec C++.
 
 ## 🎯 Objectifs
-- Comprendre le cycle de vie d’un logiciel en C++
-- Maîtriser les bases et concepts avancés du C++
-- Apprendre les bonnes pratiques de conception et de développement
-- Découvrir les outils modernes de gestion de projet en C++
-- Développer un code propre, maintenable et performant
+- Maîtriser les bases du C++ : syntaxe, types, structures de contrôle et fonctions
+- Comprendre les concepts avancés : programmation orientée objet, templates, gestion de la mémoire, et STL
+- Appliquer les bonnes pratiques de conception et de développement en C++    
+- Découvrir les outils modernes pour compiler, déboguer et gérer des projets C++
+- Développer un code propre, maintenable et performant, adapté aux projets professionnels
 
 ## 📚 Contenu du cours
 
 <div>
-<table class="cours-planC">
+<table class="cours-planMPI">
   <thead>
     <tr>
       <th>#</th>
@@ -21,7 +21,7 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel appliqué au
     </tr>
   </thead>
   <tbody>
-	  <tr class="bloc-header">
+	  <tr class="bloc-headerMPI">
       <td colspan="3">Séance n°1</td>
     </tr>
     <tr>
@@ -33,15 +33,3 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel appliqué au
 </table>
 </div>
 
-> Chaque chapitre contient :  
-> - Des fiches de cours détaillées  
-> - Des exemples pratiques et études de cas    
-> - Des mini-projets ou exercices  
-> - Des conseils pour l’industrie et les bonnes pratiques  
-
-## 👨‍🎓 Pour qui ?
-
-Ce cours s’adresse :
-- Aux étudiants en informatique ou en génie logiciel  
-- Aux développeurs souhaitant améliorer leurs compétences en C++  
-- À ceux qui se préparent à des examens ou projets universitaires  

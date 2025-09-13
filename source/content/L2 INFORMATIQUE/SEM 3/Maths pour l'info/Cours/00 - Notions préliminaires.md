@@ -100,3 +100,23 @@ Alors $A \cup B =\{ 1, 2, 3, 4, 6 \}$.
 >[!warning] Faites gaffe !
 >Un ensemble ne peux pas contenir **plusieurs fois le même élément**, ainsi si un élément *ici $1$* apparaît dans les deux ensembles, lors de l'union, il n'en restera qu'un.
 
+>[!cite] Définition <sub>différence</sub>
+>Soit $E$ un ensemble et $A, B$ deux parties de $E$.  
+>La **==différence==** de $A$ par $B$ notée $A \backslash B$ et lue *"$A$ privé de $B$"* représente l'ensemble des éléments de $A$ qui ne sont pas dans $B$.  
+>On note :  
+>$$
+>$A \backslash B = \{x \in A \mid x \notin B \}$
+>$$
+>L'ensemble résultant contiendra les éléments qui sont présents uniquement dans $A$.
+
+<u>Exemple :</u>  
+Si $A=\{ 1, 2, 3, 4\}$ et $B = \{1, 5, 8 \}$.  
+Alors $A \backslash B = \{2, 3, 4\}$, on a enlevé à l'ensemble $A$ les éléments qu'il avait en commun avec $B$.
+
+>[!cite] Définition <sub>complémentaire</sub>
+>Soient $E$ un ensemble et $A, B$ deux parties de $E$.  
+>On appelle **==complémentaire==** noté $\complement_{E}(A)$ l'ensemble des éléments de $E$ qui n'appartiennent pas à $A$. Ce dernier peut aussi être noté $A^{c}$, $\overline{A}$ ou même encore $E \backslash A$.  
+>On note :  
+>$$
+>
+>$$
