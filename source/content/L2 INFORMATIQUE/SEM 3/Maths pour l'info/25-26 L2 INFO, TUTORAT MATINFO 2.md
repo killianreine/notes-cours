@@ -41,12 +41,12 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
     <tr>
       <td>CM 01</td>
       <td><a href="01 - Relations binaires">Cours</a></td>
-      <td>...</td>
+      <td>Définitions, généralités, représentation, propriétés et exploitation des relations.</td>
     </tr>
     <tr>
       <td>TD 01</td>
       <td><a href="#">Fiche exos</a></td>
-      <td>...</td>
+      <td>Exercice d'application sur les relations binaires.</td>
     </tr>
     <tr class="bloc-headerMPI">
       <td colspan="3">Graphes</td>
