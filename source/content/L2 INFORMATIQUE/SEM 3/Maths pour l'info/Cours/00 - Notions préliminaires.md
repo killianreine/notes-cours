@@ -121,3 +121,8 @@ Alors $A \backslash B = \{2, 3, 4\}$, on a enlevé à l'ensemble $A$ les éléme
 >\complement_{E}(A) = \{ x \in E \mid x \notin A \}
 >$$
 
+<u>Exemple :</u>  
+Si $A=\{ 1, 2, 3, 4\}$ et $B = \{1, 5, 8 \}$.  
+Alors $\complement_{A}(B) = \{2, 3, 4\}$, on a enlevé à l'ensemble $A$ les éléments qu'il avait en commun avec $B$.
+
+## Propriétés sur les opérations ensembliste 
