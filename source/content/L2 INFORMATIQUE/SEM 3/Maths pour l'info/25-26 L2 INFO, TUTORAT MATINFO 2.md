@@ -29,7 +29,7 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
     </tr>
   </thead>
   <tbody>
-	  <tr class="bloc-header">
+	  <tr class="bloc-headerMPI">
       <td colspan="3">Notions préliminaires</td>
     </tr>
     <tr>
@@ -42,7 +42,7 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
       <td><a href="TD 00 - Notions préliminaires">Fiche exos</a></td>
       <td>Exercices d'application des rappels.</td>
     </tr>
-    <tr class="bloc-header">
+    <tr class="bloc-headerMPI">
       <td colspan="3">Relation binaire</td>
     </tr>
     <tr>
