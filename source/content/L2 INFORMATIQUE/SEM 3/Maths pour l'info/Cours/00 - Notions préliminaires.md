@@ -170,3 +170,17 @@ Soient $E$ un ensemble et $A,B,C$ trois parties de $E$.
   $$
 
 ### Propriété sur le complémentaire
+- Privé un ensemble de lui même $\complement_{E}(E)=\emptyset$
+- Privé de rien $\complement_{E}(\emptyset)=E$
+- Privé pour réunir $\complement_{E}(A) \cup A = E$
+- Privé pour attraper $\complement_{E}(A) \cap A = \emptyset$
+
+# Le produit cartésien
+
+>[!cite] Définition <sub>produit cartésien</sub>
+>Soient $n \geq 2$ et $E_{1,}E_{2} , \ldots E_{n}$ $n-$ensembles.  
+>On appelle **==produit cartésien==** des ensembles $E_{1,}E_{2} , \ldots E_{n}$ le produit $E_{1} \times E_{2} \times  \ldots \times E_{n}$ défini par :  
+>$$
+>\underset{k=1}{\overset{n}{\prod}}E_{i}=E_{1} \times E_{2} \times  \ldots \times E_{n} =\{(x_{1}, x_{2}, \ldots, x_{n}) \mid x_{1}\in E_{1}, x_{2}\in E_{2}, \ldots, x_{n}\in E_{n}\}
+>$$
+
