@@ -31,3 +31,15 @@ Ainsi, on obtient la définition suivante :
 >On appelle **==singleton==** un ensemble qui ne contient qu'**un seul élément**.
 
 ## Opérations sur les ensembles
+
+>[!cite] Définition <sub>inclusion</sub>
+>On considère un ensemble quelconque $E$ et $A, B$ deux parties de $E$.  
+>L'ensemble $A$ **==est inclus==**  dans l'ensemble $B$ si et seulement si tous les éléments de l'ensemble $A$ sont aussi dans l'ensemble $B$.  
+>On note :
+>
+>$$
+>A \subset B \Longleftrightarrow \forall x \in A, \; x \in B
+>$$
+>Si $A \subset B$ on dit que $A$ **est une ==partie== de** $B$ ou bien que $A$ est un sous ensemble de $B$.
+
+
