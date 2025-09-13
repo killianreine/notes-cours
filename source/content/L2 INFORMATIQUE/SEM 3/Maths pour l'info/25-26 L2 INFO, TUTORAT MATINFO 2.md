@@ -48,6 +48,58 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
       <td><a href="#">Fiche exos</a></td>
       <td>...</td>
     </tr>
+    <tr class="bloc-headerMPI">
+      <td colspan="3">Graphes</td>
+    </tr>
+    <tr>
+      <td>CM 02</td>
+      <td><a href="#">Cours</a></td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>TD 02</td>
+      <td><a href="#">Fiche exos</a></td>
+      <td>...</td>
+    </tr>
+    <tr class="bloc-headerMPI">
+      <td colspan="3">Éléments de logique</td>
+    </tr>
+    <tr>
+      <td>CM 03</td>
+      <td><a href="#">Cours</a></td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>TD 03</td>
+      <td><a href="#">Fiche exos</a></td>
+      <td>...</td>
+    </tr>
+    <tr class="bloc-headerMPI">
+      <td colspan="3">Algèbre de Boole</td>
+    </tr>
+    <tr>
+      <td>CM 04</td>
+      <td><a href="#">Cours</a></td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>TD 04</td>
+      <td><a href="#">Fiche exos</a></td>
+      <td>...</td>
+    </tr>
+    <tr class="bloc-headerMPI">
+      <td colspan="3">Théorie des codes</td>
+    </tr>
+    <tr>
+      <td>CM 05</td>
+      <td><a href="#">Cours</a></td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>TD 05</td>
+      <td><a href="#">Fiche exos</a></td>
+      <td>...</td>
+    </tr>
   </tbody>
 </table>
 </div>
