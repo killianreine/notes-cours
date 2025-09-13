@@ -20,7 +20,7 @@ Le tutorat de MPI vient en appui du cours magistral, en proposant :
 Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré pour consolider les acquis, développer la rigueur mathématique et comprendre l’importance de ces outils dans les sciences informatiques.
 
 <div>
-<table class="cours-planC">
+<table class="cours-planMPI">
   <thead>
     <tr>
       <th>#</th>

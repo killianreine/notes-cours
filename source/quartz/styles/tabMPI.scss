@@ -1,0 +1,156 @@
+/* ==========================================
+   TABLEAU ULTRA PREMIUM – DASHBOARD STYLE
+   ========================================== */
+.cours-planMPI {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+/* En-tête masqué, lignes en mode carte */
+.cours-planMPI thead {
+  display: none;
+}
+
+/* Lignes = cartes flottantes */
+.cours-planMPI tbody tr {
+  background: linear-gradient(145deg, #ffffff, #f9fafb);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.cours-planMPI tbody tr:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+  background: linear-gradient(145deg, #f3f4f6, #ffffff);
+}
+
+/* Cellules */
+.cours-planMPI td {
+  padding: 16px 20px;
+  font-size: 15px;
+  border: none;
+}
+
+/* Première colonne comme badge vertical */
+.cours-planMPI td:first-child {
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  border-radius: 12px 0 0 12px;
+  text-align: center;
+  min-width: 60px;
+}
+
+/* Liens élégants avec underline animé */
+.cours-planMPI a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.cours-planMPI a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #4f46e5, #3b82f6);
+  transition: width 0.35s ease;
+  border-radius: 2px;
+}
+
+.cours-planMPI a:hover {
+  color: #1d4ed8;
+}
+
+.cours-planMPI a:hover::after {
+  width: 100%;
+}
+
+/* Bloc header transformé en badge pro */
+.cours-planMPI .bloc-header td {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(245,158,11,0.4), inset 0 1px 2px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation hover bloc-header */
+.cours-planMPI .bloc-header td:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245,158,11,0.6), inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Dernière ligne clean */
+.cours-planMPI tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* ==========================================
+   MODE SOMBRE - TABLEAU ULTRA PREMIUM
+   ========================================== */
+[saved-theme="dark"] .cours-planMPI {
+  color: #e5e7eb;
+  background: rgba(20, 23, 30, 0.9);
+}
+
+[saved-theme="dark"] .cours-planMPI tbody tr {
+  background: linear-gradient(145deg, #1f2027, #2a2c36);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+[saved-theme="dark"] .cours-planMPI tbody tr:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.8);
+  background: linear-gradient(145deg, #292b37, #1f2027);
+}
+
+[saved-theme="dark"] .cours-planMPI td:first-child {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #f3f4f6;
+}
+
+[saved-theme="dark"] .cours-planMPI td {
+  color: #e5e7eb;
+  border-bottom: none;
+}
+
+[saved-theme="dark"] .cours-planMPI a {
+  color: #60a5fa;
+}
+
+[saved-theme="dark"] .cours-planMPI a:hover {
+  color: #3b82f6;
+}
+
+[saved-theme="dark"] .cours-planMPI a::after {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+}
+
+[saved-theme="dark"] .cours-planMPI .bloc-header td {
+  background: linear-gradient(135deg, #f97316, #f59e0b);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(249,115,22,0.6), inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+[saved-theme="dark"] .cours-planMPI .bloc-header td:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(249,115,22,0.8), inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
