@@ -105,7 +105,7 @@ Alors $A \cup B =\{ 1, 2, 3, 4, 6 \}$.
 >La **==différence==** de $A$ par $B$ notée $A \backslash B$ et lue *"$A$ privé de $B$"* représente l'ensemble des éléments de $A$ qui ne sont pas dans $B$.  
 >On note :  
 >$$
->$A \backslash B = \{x \in A \mid x \notin B \}$
+>A \backslash B = \{x \in A \mid x \notin B \}
 >$$
 >L'ensemble résultant contiendra les éléments qui sont présents uniquement dans $A$.
 
@@ -118,5 +118,6 @@ Alors $A \backslash B = \{2, 3, 4\}$, on a enlevé à l'ensemble $A$ les éléme
 >On appelle **==complémentaire==** noté $\complement_{E}(A)$ l'ensemble des éléments de $E$ qui n'appartiennent pas à $A$. Ce dernier peut aussi être noté $A^{c}$, $\overline{A}$ ou même encore $E \backslash A$.  
 >On note :  
 >$$
->
+>\complement_{E}(A) = \{ x \in E \mid x \notin A \}
 >$$
+
