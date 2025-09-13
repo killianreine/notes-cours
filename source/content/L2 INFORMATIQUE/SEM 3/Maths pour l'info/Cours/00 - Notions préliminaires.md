@@ -42,4 +42,14 @@ Ainsi, on obtient la définition suivante :
 >$$
 >Si $A \subset B$ on dit que $A$ **est une ==partie== de** $B$ ou bien que $A$ est un sous ensemble de $B$.
 
+<u>Exemple :</u>  
+On considère $A=\{1, 2, 3\}$ et $B=\{1, 2, 5, 7\}$.  
+Alors, l'ensemble $A$ n'est pas inclus dans l'ensemble $B$ car $3 \notin B$. On note alors $A \not\subset B$.
+
+>[!cite] Définition <sub>égalité de 2 ensembles</sub>
+>Soient $A, B$ deux parties de $E$.  
+>Si les ensembles $A$ et $B$ partagent **exactement** les mêmes éléments, alors on dit dans ce cas là que $A$ **==est égal==** à $B$ et on note $A=B$ défini par :  
+>$$
+>\forall x \Longleftrightarrow x\in A \land x \in B
+>$$
 
