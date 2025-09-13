@@ -21,13 +21,6 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
 
 <div>
 <table class="cours-planMPI">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Page</th>
-      <th>Description</th>
-    </tr>
-  </thead>
   <tbody>
 	  <tr class="bloc-headerMPI">
       <td colspan="3">Notions préliminaires</td>
