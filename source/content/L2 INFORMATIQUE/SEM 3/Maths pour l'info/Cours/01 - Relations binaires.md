@@ -29,11 +29,11 @@ En reprenant l'exemple précédant, on obtient le tableau suivant :
 
 |       | e   | b   | m   | h   | j   |
 | ----- | --- | --- | --- | --- | --- |
-| **e** | 0   | 1   | 0   | 0   | 0   |
-| **b** | 0   | 0   | 0   | 0   | 0   |
-| **m** | 0   | 0   | 1   | 0   | 0   |
-| **h** | 0   | 0   | 0   | 0   | 1   |
-| **j** | 0   | 0   | 0   | 0   | 0   |
+| **E** | 0   | 1   | 0   | 0   | 0   |
+| **B** | 0   | 0   | 0   | 0   | 0   |
+| **M** | 0   | 0   | 1   | 0   | 0   |
+| **H** | 0   | 0   | 0   | 0   | 1   |
+| **J** | 0   | 0   | 0   | 0   | 0   |
 
 D'où la matrice : 
 
@@ -44,3 +44,19 @@ $$
 ### Représentation à l'aide d'un graphe
 Soit $E$ un ensemble et $\mathcal{R}$ une relation définie sur $E$.  
 Alors chaque élément respectant la relation $\mathcal{R}$ peut être vu comme un sommet. Où si $S_{1}\mathcal{R}S_{2}$ alors un **arc orienté** sera tracé de $S_{1}$ vers $S_{2}$.
+
+```mermaid
+graph TD
+    A((a)) --> B((b))
+    A --> C((c))
+    B --> D((d))
+    C --> B
+    C --> D
+    D --> A
+    B --> C
+    
+    style A fill:#ffcdd2
+    style B fill:#c8e6c9
+    style C fill:#bbdefb
+    style D fill:#fff9c4
+```
