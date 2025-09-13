@@ -45,18 +45,18 @@ $$
 Soit $E$ un ensemble et $\mathcal{R}$ une relation définie sur $E$.  
 Alors chaque élément respectant la relation $\mathcal{R}$ peut être vu comme un sommet. Où si $S_{1}\mathcal{R}S_{2}$ alors un **arc orienté** sera tracé de $S_{1}$ vers $S_{2}$.
 
-```mermaid
-graph TD
-    A((a)) --> B((b))
-    A --> C((c))
-    B --> D((d))
-    C --> B
-    C --> D
-    D --> A
-    B --> C
-    
-    style A fill:#ffcdd2
-    style B fill:#c8e6c9
-    style C fill:#bbdefb
-    style D fill:#fff9c4
+```plantuml
+@startdot
+digraph R {
+    rankdir=LR;
+    node [shape=circle];
+    1 -> 3;
+    2 -> 1;
+    2 -> 4;
+    3 -> 2;
+    4 -> 1;
+    4 -> 4;
+}
+@enddot
 ```
+
