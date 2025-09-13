@@ -100,6 +100,18 @@ Alors $A \cup B =\{ 1, 2, 3, 4, 6 \}$.
 >[!warning] Faites gaffe !
 >Un ensemble ne peux pas contenir **plusieurs fois le même élément**, ainsi si un élément *ici $1$* apparaît dans les deux ensembles, lors de l'union, il n'en restera qu'un.
 
+>[!cite] Définition <sub>intersection</sub>
+>Soient $E$ un ensemble et $A,B$ deux parties de $E$.  
+>Alors on appelle **==intersection==** de $A$ et $B$ noté $A \cap B$ l'ensemble des éléments communs à $A$ et à $B$. En fait l'ensemble résultant contiendra les éléments qui sont dans les deux ensembles.  
+>On note :  
+>$$
+>A \cap B = \{ x \in E \mid x \in A \land x \in B\}
+>$$
+
+<u>Exemple :</u>  
+On considère deux ensembles $A=\{1, 2, 3\}$ et $B=\{4, 7, 1, 6\}$.  
+Alors $A \cap B =\{ 1 \}$.
+
 >[!cite] Définition <sub>différence</sub>
 >Soit $E$ un ensemble et $A, B$ deux parties de $E$.  
 >La **==différence==** de $A$ par $B$ notée $A \backslash B$ et lue *"$A$ privé de $B$"* représente l'ensemble des éléments de $A$ qui ne sont pas dans $B$.  
@@ -126,3 +138,35 @@ Si $A=\{ 1, 2, 3, 4\}$ et $B = \{1, 5, 8 \}$.
 Alors $\complement_{A}(B) = \{2, 3, 4\}$, on a enlevé à l'ensemble $A$ les éléments qu'il avait en commun avec $B$.
 
 ## Propriétés sur les opérations ensembliste 
+### Propriété de l'inclusion
+On considère $E, F$ et $G$ trois ensembles.
+- L'ensemble vide est une partie de tout ensemble
+	- $\emptyset \subset E$ *valable pour tous les ensembles*
+- **Réflexivité** $E \subset E$
+- **Antisymétrie** $E \subset F \land F \subset E \Longleftrightarrow E=F$
+- **Transitivité** $E \subset F \land F \subset G \Longrightarrow E \subset G$
+
+### Propriété de priorité
+
+$$
+\complement > \cup,\cap > =, \subset
+$$
+
+### Propriété union/intersection
+Soient $E$ un ensemble et $A,B,C$ trois parties de $E$.
+- **Associativité**  
+  $$
+  (A \cap B)\cap C=A\cap(B\cap C) \hspace{2cm} (A \cup B)\cup C=A\cup(B\cup C) 
+  $$
+
+- **Commutativité**  
+  $$
+  A \cap B= B\cap A \hspace{2cm} A \cup B =B \cup A
+  $$
+
+- **Distributivité**  
+  $$
+  (A \cap B)\cup C=(A\cup C) \cap (B \cup C) \hspace{2cm} (A \cup B)\cap C=(A\cap C) \cup (B \cap C) 
+  $$
+
+### Propriété sur le complémentaire
