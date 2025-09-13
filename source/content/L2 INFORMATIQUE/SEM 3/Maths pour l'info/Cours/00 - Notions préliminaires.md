@@ -1,7 +1,7 @@
 # Rappels et généralités sur les ensembles
 ## Définitions et représentations
 
->[!cite] Définition
+>[!cite] Définition <sub>ensemble</sub>
 >On appelle **==ensemble==** une structure mathématiques **non-ordonnée** qui contient des éléments **distincts**.  
 
 Les ensembles peuvent être décrits de manière différentes. 
@@ -27,7 +27,7 @@ Les ensembles peuvent être décrits de manière différentes.
 
 Ainsi, on obtient la définition suivante :
 
->[!cite] Définition
+>[!cite] Définition <sub>singleton</sub>
 >On appelle **==singleton==** un ensemble qui ne contient qu'**un seul élément**.
 
 ## Opérations sur les ensembles
@@ -60,6 +60,8 @@ Alors, l'ensemble $A$ n'est pas inclus dans l'ensemble $B$ car $3 \notin B$. On 
 >(A=B) \Longleftrightarrow (A \subset B \land B \subset A)
 >$$
 
+*Le symbole $\land$ représente le ET-logique.*
+
 <u>Exemple :</u>  
 On considère les ensembles suivants :
 - $C=\{(x,y) \in \mathbb{R}^{2} \mid y=x^2\}$
@@ -80,4 +82,14 @@ Montrer que les ensembles $C$ et  $D$ sont égaux.
 >D'où $D \subset C$.
 >
 >En somme, nous venons de montrer que $C=D$.
+
+>[!cite] Définition <sub>union</sub>
+>Soient $E$ un ensemble et $A, B$ deux parties de $E$.  
+>L'**==union==** de deux ensembles notée $A \cup B$ représente l'ensemble englobant les éléments de $A$ et les éléments de $B$, on peut dire que c'est **la concaténation** des deux ensembles.  
+>On note :  
+>$$
+>A \cup B = \{ x \in E \mid x \in A \lor x \in B\}
+>$$
+
+*Le symbole $\lor$ représente le OU-logique.*
 
