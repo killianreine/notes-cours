@@ -1,0 +1,22 @@
+digraph R {
+    rankdir=LR;  // Graph horizontal pour lisibilité
+    node [shape=circle, width=1, fontsize=16, style=filled, fontname="Helvetica"];
+    edge [fontsize=14, fontname="Helvetica"];
+
+    // Nœuds avec boucles distinctes
+    A [label="A"];  // doré
+    B [label="B"];  // vert clair
+    C [label="C"];  // rose clair
+
+    // Boucles
+    A -> A [penwidth=2, label=""];
+    B -> B [penwidth=2, label=""];
+    C -> C [penwidth=2, label=""];
+
+    // Arêtes bidirectionnelles
+    A -> B [penwidth=2];
+    B -> A [penwidth=2];
+
+    A -> C [penwidth=2];
+    C -> A [penwidth=2];
+}
