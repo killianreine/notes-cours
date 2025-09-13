@@ -196,3 +196,20 @@ Soient $E$ un ensemble et $A,B,C$ trois parties de $E$.
 <u>Exemple :</u>  
 Soient $A=\{1, 2\}$ et $B=\{4, 6\}$.  
 Alors $A \times B = \{ (1, 4), (1, 6), (2, 4), (2, 6) \}$.
+
+# Applications
+
+>[!cite] Définition <sub>application</sub>
+>Une **==application==** est une règle qui associe à chaque éléments d'un ensemble de départ $E$ **un unique élément** d'un ensemble d'arrivée $F$.  
+>On note :  
+>$$
+>f : E \to F, \quad x \mapsto f(x)
+>$$
+>- $E$  est l'ensemble de départ
+>- $F$ est l'ensemble d'arrivée
+>- $f(x)$ est l'image de $x$ par $f$
+>- $x$ est aussi appelé antécédent
+
+>[!info] Remarque
+>L'ensemble des images est appelé **ensemble image** de $f$ et est noté $\mathcal{I}m(f)$. Tel que $\mathcal{I}m(f) \subseteq F$.
+
