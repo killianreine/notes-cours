@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L3 INFORMATIQUE/SEM5/C++/Séance 1/Correction exercice TP1.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Correction exercice TP1"
+              "title": "25-26 L2 INFO, TUTORAT MATINFO 2"
             }
           }
         ],
@@ -246,13 +246,15 @@
   },
   "active": "460d9fac1b6d9e6a",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/Cours/00 - Notions préliminaires.md",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
+    "L3 INFORMATIQUE/SEM5/C++/readme C++.md",
+    "L3 INFORMATIQUE/SEM5/C++/Séance 1/Correction exercice TP1.md",
     "L3 INFORMATIQUE/SEM5/Algorithmique avancée/readme AA.md",
     "L3 INFORMATIQUE/SEM5/Algorithmique avancée/AA TP 01 - Complexité.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 01 - Initiation à Git.md",
-    "L3 INFORMATIQUE/SEM5/C++/readme C++.md",
     "L3 INFORMATIQUE/Information L3 S5.md",
-    "L3 INFORMATIQUE/SEM5/C++/Séance 1/Correction exercice TP1.md",
     "L3 INFORMATIQUE/SEM5/C++/Séance 1",
     "L3 INFORMATIQUE/SEM5/C++",
     "index.md",
@@ -272,8 +274,6 @@
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/13 - Compilation séparée et Makefile.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/12 - Tests unitaires.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/11 - Les fichiers.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/10 - Structures avancées.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Allocation dynamique.md",
     "L3 INFORMATIQUE/SEM5/Algorithmique avancée",
     "L3 INFORMATIQUE/SEM5/Théorie langages/Cours",
     "L3 INFORMATIQUE/SEM5/Théorie langages",

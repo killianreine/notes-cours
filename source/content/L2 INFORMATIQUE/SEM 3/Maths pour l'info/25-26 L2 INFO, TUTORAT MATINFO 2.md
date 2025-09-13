@@ -18,3 +18,43 @@ Le tutorat de MPI vient en appui du cours magistral, en proposant :
 - Un espace d’échange pour poser des questions et progresser collectivement
 
 Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré pour consolider les acquis, développer la rigueur mathématique et comprendre l’importance de ces outils dans les sciences informatiques.
+
+<div>
+<table class="cours-planC">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Page</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+	  <tr class="bloc-header">
+      <td colspan="3">Notions préliminaires</td>
+    </tr>
+    <tr>
+      <td>CM 00</td>
+      <td><a href="00 - Notions préliminaires">Cours</a></td>
+      <td>Quelques rappels permettant d'appréhender le module.</td>
+    </tr>
+    <tr>
+      <td>TD 00</td>
+      <td><a href="TD 00 - Notions préliminaires">Fiche exos</a></td>
+      <td>Exercices d'application des rappels.</td>
+    </tr>
+    <tr class="bloc-header">
+      <td colspan="3">Relation binaire</td>
+    </tr>
+    <tr>
+      <td>CM 01</td>
+      <td><a href="#">Cours</a></td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>TD 01</td>
+      <td><a href="#">Fiche exos</a></td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
