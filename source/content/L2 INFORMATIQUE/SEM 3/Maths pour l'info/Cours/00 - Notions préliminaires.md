@@ -198,6 +198,7 @@ Soient $A=\{1, 2\}$ et $B=\{4, 6\}$.
 Alors $A \times B = \{ (1, 4), (1, 6), (2, 4), (2, 6) \}$.
 
 # Applications
+## Définition générale
 
 >[!cite] Définition <sub>application</sub>
 >Une **==application==** est une règle qui associe à chaque éléments d'un ensemble de départ $E$ **un unique élément** d'un ensemble d'arrivée $F$.  
@@ -213,3 +214,14 @@ Alors $A \times B = \{ (1, 4), (1, 6), (2, 4), (2, 6) \}$.
 >[!info] Remarque
 >L'ensemble des images est appelé **ensemble image** de $f$ et est noté $\mathcal{I}m(f)$. Tel que $\mathcal{I}m(f) \subseteq F$.
 
+## Propriété d'une application
+- **Injection**  
+  $f$ est dite **==injective==** si $x_{1}, x_2$ distincts de $E$ ont toujours des images distinctes. Autrement dit, pour chaque antécédent, on admet **au plus** 1 image.  
+  $$
+  f(x_{1})=f(x_{2}) \Longrightarrow x_1=x_2
+  $$
+  
+- **Surjection**  
+  $f$ est dite **==surjective==** si tout élément de $F$ a **au moins 1** antécédent.
+- **Bijection**  
+  $f$ est dite **==bijective==** lorsqu'elle est injective et surjective en même temps. Dans ce cas, elle admet une application inverse notée $f^{-1} : F \to E$.
