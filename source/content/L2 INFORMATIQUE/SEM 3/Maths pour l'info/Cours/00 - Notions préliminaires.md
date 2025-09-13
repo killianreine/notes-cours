@@ -53,3 +53,31 @@ Alors, l'ensemble $A$ n'est pas inclus dans l'ensemble $B$ car $3 \notin B$. On 
 >\forall x \Longleftrightarrow x\in A \land x \in B
 >$$
 
+>[!tip] Astuce
+>Pour montrer que deux ensembles $A$ et $B$ sont égaux, il suffit de montrer l'**inclusion dans les deux sens**. Autrement dit, il faut montrer que $A$ est inclus dans $B$ et que $B$ est inclus dans $A$.  
+>On note :  
+>$$
+>(A=B) \Longleftrightarrow (A \subset B \land B \subset A)
+>$$
+
+<u>Exemple :</u>  
+On considère les ensembles suivants :
+- $C=\{(x,y) \in \mathbb{R}^{2} \mid y=x^2\}$
+- $D=\{(t, t^{2})\mid t \in \mathbb{R}\}$  
+Montrer que les ensembles $C$ et  $D$ sont égaux.
+
+>Pour montrer que les ensembles $C$ et $D$ sont égaux, il faut montrer que $C \subset D$ et $D \subset C$.  
+>
+>**(i) Montrons que $C \subset D$**  
+>Soit $X \in C$. Alors $X=(x, y)$ un vecteur de $\mathbb{R}^2$ et $y = x^2$.  
+>Puisque $y=x^2$ alors on remplace $y$ dans le vecteur. On obtient $X=(x, x^2)$ avec $x \in\mathbb{R}$, la définition exacte de l'ensemble $D$.  
+>Ainsi, on vient de montrer que $C \subset D$.
+>
+>**(ii) Montrons que $D \subset C$**  
+>Soit $T \in D$ alors $T=(t, t^2)$ avec $t  \in \mathbb{R}$.  
+>Posons $x=t$ alors il est évident que $y=x^2=t^2$. Ainsi on obtient $T=(x, y)$ avec $y=x^2$.  
+>Et, puisque $t \in \mathbb{R}$, $x,y \in \mathbb{R}$.  
+>D'où $D \subset C$.
+>
+>En somme, nous venons de montrer que $C=D$.
+
