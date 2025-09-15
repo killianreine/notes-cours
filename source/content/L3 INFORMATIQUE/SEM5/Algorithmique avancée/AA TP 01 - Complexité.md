@@ -229,7 +229,7 @@ On peut utiliser l'algorithme **diviser pour reigner**, qui consiste à diviser 
 
 
 On obtient alors le troisième algorithme :
-```
+```java
 algo(g, d){
   if (g>d) return 0;
   if (g==d) return max (X[g], 0);
