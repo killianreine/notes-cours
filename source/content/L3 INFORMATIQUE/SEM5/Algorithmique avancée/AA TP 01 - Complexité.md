@@ -235,7 +235,7 @@ algo(g, d){
   if (g==d) return max (X[g], 0);
   
   // Cas ou il y au moins deux éléments
-  int middle = (g+d)/2;
+  int m = (g+d)/2;
   int S1 = algo(g, m)
   int S2 = algo(m+1, d)
   
