@@ -223,3 +223,44 @@ $$
 
 fois.  
 Le nombre d'exécution de l'instruction est donné par la complexité $\Theta(n^{2})$.
+
+On se demande si il est encore possible d'améliorer l'algorithmes.  
+On peut utiliser l'algorithme **diviser pour reigner**, qui consiste à diviser le tableau en $2$ parties puis comparer les deux sommes. Hors cela n'est pas suffisant car si la sous séquences max se trouve au milieu du tableau, on en le saura pas, il faut donc aussi calculer les sommes max aux frontières gauche et aux frointières droite du tableau en partant du milieu.  
+
+
+On obtient alors le troisième algorithme :
+```
+algo(g, d){
+  if (g>d) return 0;
+  if (g==d) return max (X[g], 0);
+  
+  // Cas ou il y au moins deux éléments
+  int middle = (g+d)/2;
+  int S1 = algo(g, m)
+  int S2 = algo(m+1, d)
+  
+  // On calcule les deux sommes aux frontières
+  // Frontière gauche
+  int S3 = 0, S = 0;
+  for(int i = m; i >= g; i--){
+    S += X[i]
+    if(S > S3) S3 = S;
+  }  
+  // Frontière droite
+  int S4 = 0;
+  S = 0;
+  for(int i = m+1; i<=d; i++){
+    S+=X[i];
+    if (S>S4) S4=S;
+  }
+  return max(S1, S2, S3, S4);
+}
+```
+
+Les compléxités sont données par :
+- $T(1) = Cst$
+- $T(2) = 2T(\frac{n}{2})+an+b=\Theta(nlog(n))$
+
+On a réussit à partir d'un algo de complexité $n^3$ pour arriver à une complexité de $n log (n)$.  
+On peut encore faire mieux...
+
