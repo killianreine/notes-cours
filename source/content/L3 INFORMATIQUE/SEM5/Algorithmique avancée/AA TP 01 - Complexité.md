@@ -262,5 +262,33 @@ Les compléxités sont données par :
 - $T(2) = 2T(\frac{n}{2})+an+b=\Theta(nlog(n))$
 
 On a réussit à partir d'un algo de complexité $n^3$ pour arriver à une complexité de $n log (n)$.  
-On peut encore faire mieux...
 
+On se retrouve alors avec $3$ algorithmes que l'on nomera `algo1`, `algo2` et `algo3` respectivement.  
+Chacun de complexité :
+- $algo_1 = \Theta(n^3)$
+- $algo_2=\Theta(n^2)$
+- $algo_3 = \Theta(n\times log(n))$
+
+On se demande si il est **encore** possible d'améliorer.  
+Et oui, il est encore possible d'améliorer l'algorithme.
+
+On considère $maxS = [a \ldots b]$ la somme de la sous séquences des indices $a$ jusqu'à $b$ et $maxI= la somme maximale qui se termine par $X[i]$.
+Au départ, avant de commencer à parcourir le tableau, les deux sommes sont égales, c'est à dire nulle. Ensuite on parcours chaque élément du tableau et garde à chaque fois le max des valeurs.
+
+On obtient l'algorithme suivant : 
+```java
+algo(X, n){
+	maxS = max I = 0
+	for(int i = 0; i<n; i++){
+		maxI = max(maxI+X[i], 0);
+		maxS = max(maxS, maxI);
+	}
+}
+```
+
+Ainsi en étudiant l'algorithme pour sa complexité en fonction de la taille de $X$, on obtient : 
+- $T(1)=1$
+- $T(n) = n+k = \Theta(n)$
+
+On peut encore se demander si il est possible d'améliorer l'algorithme.  
+En fait, la réponse semble plutôt évidente car on est obligé de parcourir au moins une fois les $n$ éléments du tableau pour les comparer et ne pas les oublier. Alors la complexité minimale de l'algorithme est bien donnée par $\theta(n)$.
