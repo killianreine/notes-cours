@@ -34,6 +34,7 @@
     <p>
       L’UE introduit les fondements mathématiques des langages formels, essentiels pour les compilateurs, automates et analyseurs syntaxiques : grammaires, automates finis et à pile, expressions régulières.
     </p>
+    <p><u>Support de cours :</u> <a href="readme TL">readme TL</a></p>
     <p><u>Durée de l'UE :</u> 50 heures</p>
   </article>
 </section>
@@ -44,7 +45,6 @@
     <p>
       L’anglais permet de développer compréhension, expression et vocabulaire scientifique, préparant à une communication internationale, orale et écrite.
     </p>
-    <p><u>Support de cours :</u> <a href="readme TL">readme TL</a></p>
     <p><u>Durée de l'UE :</u> 18 heures</p>
   </article>
   <article class="ueINFOLI">
