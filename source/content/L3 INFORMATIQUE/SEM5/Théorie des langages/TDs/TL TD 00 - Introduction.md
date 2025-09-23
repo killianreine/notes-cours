@@ -18,3 +18,4 @@ $$
     <li>Précisez la classe de représentant \( 2 \), de représentant \(m\) en général.</li>
   </ol>
 </div>
+ 
