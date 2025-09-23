@@ -8,7 +8,7 @@
 <div class="consigne_exo">
   <div class="exo-header">
     <span class="exo-num">1</span>
-    <span class="exo-title">On donne la relation définie sur \(\mathbb{R}\) suivante : </span>
+    <span>On donne la relation définie sur \(\mathbb{R}\) suivante : </span>
   </div>
   $$
   a \mathcal{R}b \Longleftrightarrow a^2-b^2=a-b
