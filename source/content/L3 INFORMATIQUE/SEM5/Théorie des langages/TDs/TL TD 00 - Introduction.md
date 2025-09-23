@@ -1,10 +1,3 @@
-<div>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-</div>
-
 <div class="consigne_exo">
   <div class="exo-header">
     <span class="exo-num">1</span>
@@ -35,4 +28,24 @@ $$
  >  \forall x,y,z \in A \quad (x \mathcal{R}y \text{ et } y\mathcal{R}z) \Longrightarrow x\mathcal{R}z
  >$$
  
- 
+ **(i)** Montrons que la relation $\mathcal{R}$ est réflexive  
+ Soit $a \in \mathbb{R}$.  
+ Alors on a :
+ - $a^2-a^2=0$
+ - $a-a=0$
+On se retrouve donc bien avec $a\mathcal{R}a$, ainsi la relation $\mathcal{R}$ est réflexive. Car tout élément de $\mathbb{R}$ est en relation avec lui-même comme on vient de le montrer.
+
+**(ii)** Montrons que la relation $\mathcal{R}$ est symétrique.  
+En gros on doit montrer qu'à partir de $x \mathcal{R}y$ on arrive à retrouver $y \mathcal{R} x$.  
+Par définition de la symétrie :
+
+$$
+	\begin{align*} x\mathcal{R}y \Longleftrightarrow a-b&=a^{2}-b^{2} \\
+    -(a-b) &= -(a^{2}-b^{2})\\
+-a+b &= -a^{2}+b^{2}\\
+b-a &= b^{2}+a^{2} &\Longleftrightarrow y\mathcal{R}x
+\end{align*}
+$$
+
+On a en fait inverser l'entièreté de l'équation de base et utiliser la commutativité de $(\mathbb{R}, -)$ pour réaranger les différents termes et arriver à l'expression voulue $b-a=b^{2}-a^{2}$.  
+On retrouve bien la relation miroir à partir de $x \mathcal{R}y$ ainsi $\mathcal{R}$ est symétrique. 
