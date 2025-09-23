@@ -19,11 +19,11 @@ $$
   </ol>
 </div>
 
- >[!cite] Définition<sub>relation d'équivalence</sub>
+ >[!cite] Définition <sub>relation d'équivalence</sub>  
  >On considère $\mathcal{R}$ une relation définie sur un ensemble $A$. Alors on dit que $\mathcal{R}$ est une <span class="mot-cle">relation d'équivalence</span> lorsqu'elle respecte les trois propriétés suivantes :
  >- Elle est **réflexive** : 
  >  $$
- >  $\forall x \in A \quad \text{ on a } \quad x\mathcal{R}x
+ > \forall x \in A \quad \text{ on a } \quad x\mathcal{R}x
  > $$
  >- Elle est **symétrique** : 
  >  $$
