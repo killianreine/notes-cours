@@ -1,0 +1,124 @@
+.consigne_exo {
+  background: #f9f9fc;
+  border: 1px solid #d0d0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+
+  .exo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .exo-num {
+      background: #5c7698;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 4px 8px;
+      margin-right: 8px;
+    }
+
+    .exo-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  .exo-questions {
+    list-style: none;
+    counter-reset: question;
+
+    li {
+      counter-increment: question;
+      margin: 8px 0;
+      padding-left: 30px;
+      position: relative;
+
+      &::before {
+        content: counter(question);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #94a9bf;
+        color: white;
+        border-radius: 4px;
+        padding: 2px 6px;
+        font-weight: bold;
+      }
+
+      .mot-cle {
+        background: #e0e8f9;
+        border-radius: 4px;
+        padding: 2px 6px;
+        font-weight: 700;
+        color: #1e3a8a;
+      }
+    }
+  }
+}
+
+[saved-theme="dark"] .consigne_exo {
+  background: #1a1a2e;
+  border: 1px solid #2d2d44;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #e0e0e6;
+}
+
+[saved-theme="dark"] .consigne_exo .exo-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+[saved-theme="dark"] .consigne_exo .exo-header .exo-num {
+  background: #4a5d7a;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+
+[saved-theme="dark"] .consigne_exo .exo-header .exo-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f0f0f5;
+}
+
+[saved-theme="dark"] .consigne_exo .exo-questions {
+  list-style: none;
+  counter-reset: question;
+}
+
+[saved-theme="dark"] .consigne_exo .exo-questions li {
+  counter-increment: question;
+  margin: 8px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+[saved-theme="dark"] .consigne_exo .exo-questions li::before {
+  content: counter(question);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #6b7a94;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+[saved-theme="dark"] .consigne_exo .exo-questions li .mot-cle {
+  background: #1e2951;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: 700;
+  color: #7dd3fc;
+}
