@@ -47,5 +47,5 @@ b-a &= b^{2}+a^{2} &\Longleftrightarrow y\mathcal{R}x
 \end{align*}
 $$
 
-On a en fait inverser l'entièreté de l'équation de base et utiliser la commutativité de $(\mathbb{R}, -)$ pour réaranger les différents termes et arriver à l'expression voulue $b-a=b^{2}-a^{2}$.  
-On retrouve bien la relation miroir à partir de $x \mathcal{R}y$ ainsi $\mathcal{R}$ est symétrique. 
+On a en fait inverser l'entièreté de l'équation de base et utiliser la commutativité de $(\mathbb{R}, -)$ pour réarranger les différents termes et arriver à l'expression voulue $b-a=b^{2}-a^{2}$.  
+On retrouve bien la relation miroir à partir de $x \mathcal{R}y$ ainsi $\mathcal{R}$ est symétrique.  
