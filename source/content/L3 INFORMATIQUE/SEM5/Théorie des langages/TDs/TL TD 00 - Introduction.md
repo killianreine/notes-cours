@@ -14,7 +14,7 @@
   a \mathcal{R}b \Longleftrightarrow a^2-b^2=a-b
 $$
   <ol class="exo-questions">
-    <li>Montrer que la relation \(\mathcal\{R\}\) est une relation d'équivalence.</li>
+    <li>Montrer que la relation \( \mathcal{R} \) est une relation d'équivalence.</li>
     <li>Précisez la classe de représentant \( 2 \), de représentant \(m\) en général.</li>
   </ol>
 </div>
