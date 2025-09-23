@@ -19,7 +19,7 @@ $$
   </ol>
 </div>
 
- >[!cite] Définition <sub>relation d'équivalence</sub>  
+ >[!cite] Définition
  >On considère $\mathcal{R}$ une relation définie sur un ensemble $A$. Alors on dit que $\mathcal{R}$ est une **==relation d'équivalence==** lorsqu'elle respecte les trois propriétés suivantes :
  >- Elle est **réflexive** : 
  >  $$
