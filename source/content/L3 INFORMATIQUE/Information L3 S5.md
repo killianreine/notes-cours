@@ -44,6 +44,7 @@
     <p>
       L’anglais permet de développer compréhension, expression et vocabulaire scientifique, préparant à une communication internationale, orale et écrite.
     </p>
+    <p><u>Support de cours :</u> <a href="readme TL">readme TL</a></p>
     <p><u>Durée de l'UE :</u> 18 heures</p>
   </article>
   <article class="ueINFOLI">
