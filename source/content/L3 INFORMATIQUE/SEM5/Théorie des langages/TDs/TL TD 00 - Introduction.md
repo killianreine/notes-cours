@@ -18,6 +18,7 @@ $$
     <li>Précisez la classe de représentant \( 2 \), de représentant \(m\) en général.</li>
   </ol>
 </div>
+
  >[!cite] Définition<sub>relation d'équivalence</sub>
  >On considère $\mathcal{R}$ une relation définie sur un ensemble $A$. Alors on dit que $\mathcal{R}$ est une <span class="mot-cle">relation d'équivalence</span> lorsqu'elle respecte les trois propriétés suivantes :
  >- Elle est **réflexive** : 
