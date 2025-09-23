@@ -20,7 +20,7 @@ $$
 </div>
 
  >[!cite] Définition
- >On considère $\mathcal{R}$ une relation définie sur un ensemble $A$. Alors on dit que $\mathcal{R}$ est une **==relation d'équivalence==** lorsqu'elle respecte les trois propriétés suivantes :
+ > On considère $\mathcal{R}$ une relation définie sur un ensemble $A$. Alors on dit que $\mathcal{R}$ est une **==relation d'équivalence==** lorsqu'elle respecte les trois propriétés suivantes :
  >- Elle est **réflexive** : 
  >  $$
  > \forall x \in A \quad \text{ on a } \quad x\mathcal{R}x
