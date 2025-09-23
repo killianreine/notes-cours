@@ -18,4 +18,19 @@ $$
     <li>Précisez la classe de représentant \( 2 \), de représentant \(m\) en général.</li>
   </ol>
 </div>
+ >[!cite] Définition<sub>relation d'équivalence</sub>
+ >On considère $\mathcal{R}$ une relation définie sur un ensemble $A$. Alors on dit que $\mathcal{R}$ est une <span class="mot-cle">relation d'équivalence</span> lorsqu'elle respecte les trois propriétés suivantes :
+ >- Elle est **réflexive** : 
+ >  $$
+ >  $\forall x \in A \quad \text{ on a } \quad x\mathcal{R}x
+ > $$
+ >- Elle est **symétrique** : 
+ >  $$
+ >  \forall x,y \in A \quad x \mathcal{R}y \Longleftrightarrow y\mathcal{R}y
+ >$$
+ >- Elle est **transitive** : 
+ >  $$
+ >  \forall x,y,z \in A \quad (x \mathcal{R}y \text{ et } y\mathcal{R}z) \Longrightarrow x\mathcal{R}z
+ >$$
+ 
  
