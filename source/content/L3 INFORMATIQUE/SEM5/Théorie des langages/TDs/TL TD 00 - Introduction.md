@@ -85,3 +85,46 @@ On cherche a déterminer la classe de représentant $2$ puis de représentant g�
 >$$
 >*Autrement dit, une classe de représentant $m$ représente l'ensemble de tous les éléments qui sont en relation avec $m$*. 
 
+>[!info] Remarque
+>Une classe de représentant $m$ peut se noter $\overset{\cdot}m$ ou $\overline{m}$ ou encore $C(m)$.
+
+Ainsi, la classe de représentant $2$ représente l'ensemble des $x \in \mathbb{R}$ en relation avec $2$.  
+On note : 
+
+$$
+\begin{align*}
+\overset{\cdot}2 &= \{x \in \mathbb{R} \mid x\mathcal{R}2\}\\
+&= \{x \in \mathbb{R} \mid x-2=x^{2}-2^2\}
+\end{align*}
+$$
+
+En prenant l'équation obtenue on a : 
+
+$$
+\begin{align*}
+x-2 &= x^{2}-2^{2}\\
+&= (x-2)(x+2)
+\end{align*}
+$$
+
+>[!warning] 
+>Il ne faut pas que $x=2$ car sinon notre équation ne pourrait plus se résoudre car si on déplace $x+2$ à gauche de l'équation, on doit le diviser. Cela est valide $\forall x \neq 2$.
+
+$$
+\begin{align*}
+x-2 &= x^{2}-2^{2}\\
+&= (x-2)(x+2) \\
+1\cancel{(x-2)} &= \cancel{(x-2)}(x+2) \\
+1 &= x+2
+\end{align*}
+$$
+
+D'où $x=1-2=-1$.  
+Cela signifie que $-1$ appartient à l'ensemble.  
+Et puisque la relation est **réflexive** comme montrée à la question $1$, alors $2$ est en relation <u>avec lui même</u> d'où $2$ fera lui aussi partie de l'ensemble.  
+On obtient la classe de représentant $2$ suivante :  
+
+$$
+\overset{\cdot}2=\{-1, 2\}
+$$
+
