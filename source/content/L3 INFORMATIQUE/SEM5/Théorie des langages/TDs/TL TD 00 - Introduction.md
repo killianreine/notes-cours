@@ -78,6 +78,10 @@ On cherche a déterminer la classe de représentant $2$ puis de représentant g�
 
 >[!cite] Définition
 >Soit $\mathcal{R}$ une relation définie sur un ensemble quelconque $E$.  
->On appelle **==classe de représentant $m \in E$==** *(ou classe d'équivalence)* l'ensemble de tous les éléments $x \in E$ tel que l'on a $x\mathcal{R}m$.  
+>On appelle **==classe de représentant==** $m \in E$ *(ou classe d'équivalence)* l'ensemble de tous les éléments $x \in E$ tel que l'on a $x\mathcal{R}m$.  
+>On note : 
+>$$
+>\overset{\cdot}{m} = \{ x \in E \mid x\mathcal{R}m \}
+>$$
 >*Autrement dit, une classe de représentant $m$ représente l'ensemble de tous les éléments qui sont en relation avec $m$*. 
 
