@@ -298,7 +298,84 @@ $$
 (x\star y) \star z &= a(\underbrace{[axy+b(x+y)+c]}_{=X} \times z)+b(\underbrace{[axy+b(x+y)+c]}_{=X}+z)+c\\
 &= a(axyz+bz(x+y)+cz)+abxy+b^{2}(x+y)+bc+bz+c\\
 &= a^{2}xyz+abz(x+y)+acz+abxy+b^{2}x+b^{2}y+bc+bz+c\\
-&= a^{2}xyz+abzx+abzy+acz+abxy+b^{2}x+b^{2}y+bc+bz+c
+&= a^{2}xyz+abxz+abyz+acz+abxy+b^{2}x+b^{2}y+bc+bz+c
 \end{align*}
 $$
+
+**Calcul de la seconde expression**
+
+$$
+\begin{align*}
+x \star (y \star z) &= x\star [ayz+b(y+z)+x]\\
+&= a(x[ayz+b(y+z)+c])+b(x+[ayz+b(y+z)+c])+c \\
+&= a(axyz+bx(y+z)+cx)+bx+abyz+b^{2}(y+z)+bc+c\\
+&= a^{2}xyz+abx(y+z)+acx+bx+abyz+b^{2}y+b^{2}z+bc+c\\
+&= a^{2}xyz+abxy+abxz+acx+bx+abyz+b^{2}y+b^{2}z+bc+c
+\end{align*}
+$$
+
+on a alors obtenu les deux expressions suivantes : 
+
+$$
+\begin{cases}   
+a^{2}xyz+abxz+abyz+acz+abxy+b^{2}x+b^{2}y+bc+bz+c \\
+a^{2}xyz+abxy+abxz+acx+bx+abyz+b^{2}y+b^{2}z+bc+c
+\end{cases}
+$$
+
+Maintenant, on peut soustraire les deux expressions, en théorie, cela devrai être différent de $0$ car on nous demande de trouver un lien reliant $a,b$ et $c$ pour que la loi soit associative.
+
+$$
+\begin{cases}   
+\cancel{a^{2}xyz}+\cancel{abxz}+\cancel{abyz}+acz+\cancel{abxy}+b^{2}x+\cancel{b^{2}y}\cancel{+bc}+bz\cancel{+c} \\
+\cancel{a^{2}xyz}+\cancel{abxy}+\cancel{abxz}+acx+bx+\cancel{abyz}+\cancel{b^{2}y}+b^{2}z+\cancel{bc}\cancel{+c}
+\end{cases}
+$$
+
+La soustraction des deux lignes nous donne : 
+
+$$
+acz+b^{2}x+bz-(acx+bx+b^2z)
+$$
+
+Essayons de simplifier cette expression.  
+
+$$
+\begin{align*}
+acz+b^{2}x+bz-(acx+bx+b^{2}z)&= acz+b^{2}x+bz-acx-bx-b^{2}z \\
+&= ac(z-x)+b^{2}(x-z)+b(z-x)
+\end{align*}
+$$
+
+On remarque que tous les facteurs sauf $1$ sont de la forme $e(x-z)$, essayons de faire en sorte que cela soit pareil, pour ce faire on a juste à inverser le signe de $b^2(x-z)$ : 
+
+$$
+-(b^{2}(x-z)) = -b^{2}(-x+z)=-b^{2}(z-x)
+$$
+
+D'où :
+
+$$
+ac(z-x)+b^{2}(x-z)+b(z-x) = ac(z-x)-b^{2}(z-x)+b(z-x) = (ac-b^{2}+b)(z-x)
+$$
+
+On cherche maintenant le lien entre $a,b$ et $c$ pour que $\star$ soit associative. Pour que ce soit respecté, il faudrait que la différences des deux expressions calculées précédemment fasse $0$.  
+Autrement dit : 
+
+$$
+(ac-b^{2}+b)(z-x) = 0
+$$
+
+Et pour respecter cette égalité, comme c'est un produit, si l'un est nul, le tout est nul donc pour que $\star$ soit associative il faut que : 
+- $ac-b^{2}+b=0$
+- ou $z-x=0$
+
+On cherche un lien entre $a,b$ et $c$ dont $(x-z)=0$ on peut l'oublier c'est pas ce qu'on veut.  
+Mais en prenant la première condition on obtient le lien suivant : 
+
+$$
+ac-b^{2}+b=0 \Longleftrightarrow a=\dfrac{b^{2}-b}{c} \quad \text{avec } c\neq 0
+$$
+
+Et voilà, on a trouvé le lien entre $a,b$ et $c$ pour que la loi soit associative. Vous pouvez vérifier avec le triplet $(a,b,c)$ tel que $a=1$, $b=1$ et $c=2$.
 
