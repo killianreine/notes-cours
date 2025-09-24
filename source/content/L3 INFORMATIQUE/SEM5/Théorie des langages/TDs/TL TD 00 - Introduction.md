@@ -261,7 +261,7 @@ $$
 Trouver une relation liant \(a, b\) et \(c\) de sorte que cette loi soit associative.
 </div>
 
->[!info] Remarque
+>[!cite] Définition
 >On dit qu'un loi $T$ définie sur $E$ est associative si et seulement si : 
 >$$
 >\forall x,y,z \in E \quad (xTy)Tz = xT(yTz)
@@ -391,7 +391,7 @@ Et voilà, on a trouvé le lien entre $a,b$ et $c$ pour que la loi soit associat
   </ol>
 </div>
 
->[!info] Remarque
+>[!cite] Définition
 >Soit $(G, T)$ un groupe, on dit que $G$ est **==commutatif==** si et seulement si :
 >$$
 >\forall x,y \in G \quad xTy = yTx
@@ -445,3 +445,85 @@ $$
   </ol>
 </div>
 
+$\boxed{\text{Question 1}}$  
+Soit $(\mathbb{N}, \star)$ une `lci` définie par $x\star y = |x-y|$.  
+Soit $x, y \in \mathbb{N}$ alors on a :  
+
+$$
+X=|x-y| \quad Y = |y-x|
+$$
+
+où $X,Y$ représentent respectivement $x\star y$ et $y\star x$.  
+Notre objectif est de déterminer si les deux expressions sont égales.
+
+$$
+Y = |y-x|=|-(y-x)|=|-y+x|=|x-y|=X
+$$
+
+J'ai utilisé les propriétés de commutativité de $(\mathbb{N}, -)$ et d'égalité par l'inverse sur $(\mathbb{N}, |x|)$ pour montrer qu'au final on a bien $X=Y$. On peut alors dire que la loi $\star$ est commutative. 
+
+$\boxed{\text{Question 2}}$  
+On se demande si $\star$ est commutative c'est à dire : 
+
+$$
+(x\star y)\star z= x \star(y \star z)
+$$
+
+est respectée.  
+Prenons $x=2$, $y=1$, $z=3$.  
+Alors : 
+- $(x\star y)\star z = |(|2-1|)-3|=|1-3|=|-2|=2$
+- $x\star(y \star z)=|2-(|1-3|)|=|2-|-2||=|2-2|=|0|=0$
+
+Les deux résultats sont différents, puisqu'on a trouvé un contre exemple pour lequel $\star$ n'est pas associative alors on peut en conclure que $\star$ n'est pas associative.
+
+$\boxed{\text{Question 3}}$  
+
+>[!cite] Définition
+>Soit $(E,T)$ une loi. On dit que $e \in E$ est l'**==élément neutre==** de $T$ si et seulement si :
+>$$
+>\forall x \in E, \quad eTx = xTe = x
+>$$
+
+Soit $x \in \mathbb{N}$ alors on a :  
+
+$$
+x \star 0=|x-0|=|x|=x
+$$
+
+Puisque la loi est commutative *(montré en question 1)* alors on sait que $x \star 0=0\star x$ ainsi on a bien obtenu :
+
+$$
+x \star 0 = 0 \star x = x
+$$
+
+D'où $e=0$ est l'élément neutre de la loi $\star$. 
+
+$\boxed{\text{Question 4}}$  
+
+>[!cite] Définition
+>Soit $(E,T)$ une loi. On dit que les éléments de $E$ sont **==inversibles==** si ils admettent au moins un symétrique.  
+>On note : 
+>$$
+>\forall x,y \in E \quad xTy=yTx=e
+>$$
+>où $e \in E$ représente l'**élément neutre** de la loi.
+
+Soit $x,y \in \mathbb{N}$.  
+Alors si $y=x$ on a : 
+
+$$
+x\star y = y \star x=|x-y|=|x-x|=|0|=0
+$$
+
+Ainsi tout élément de $\mathbb{N}$ sont inversibles, et admettent $x$ comme inverse.
+
+$\boxed{\text{Question 6}}$  
+
+>[!cite] Définition 
+>Soit $(G, T)$ un magma. On dit que $G$ est un **==groupe==** si et seulement si : 
+>- $T$ est associative.
+>- $G$ admet un élément neutre $e \in G$ sur la loi $T$.
+>- $\forall x\in G$ admet un symétrique pour la loi $T$.
+
+Puisque $G$ n'est pas associative *(Démontré à la question 2)* alors $G$ n'est par définition pas un groupe.
