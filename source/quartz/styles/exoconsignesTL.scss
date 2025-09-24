@@ -1,3 +1,13 @@
+/* Suppression des puces natives pour toutes les listes */
+.exo-questions ol,
+.exo-questions ol li,
+.exo-questions ol ol,
+.exo-questions ul,
+.exo-questions ul li {
+  list-style: none;
+}
+
+/* Styles de base */
 .consigne_exo {
   background: #f9f9fc;
   border: 1px solid #d0d0e0;
@@ -119,7 +129,7 @@
 
 .exo-questions ul li {
   margin-bottom: 5px;
-  list-style-type: disc;
+  list-style: none; /* Désactive aussi ici */
 }
 
 /* Autres styles */
@@ -172,7 +182,7 @@
   border-left: 4px solid #f39c12;
 }
 
-/* Mode sombre */
+/* Mode sombre (via saved-theme="dark") */
 [saved-theme="dark"] .consigne_exo {
   background: #1a1a2e;
   border: 1px solid #2d2d44;
@@ -203,4 +213,65 @@
 [saved-theme="dark"] .mot-cle {
   background: #1e2951;
   color: #7dd3fc;
+}
+/* Mode sombre (via saved-theme="dark") */
+[saved-theme="dark"] .consigne_exo {
+  background: #1a1a2e;
+  border: 1px solid #2d2d44;
+  color: #e0e0e6;
+}
+
+[saved-theme="dark"] .exo-num {
+  background: #4a5d7a;
+}
+
+[saved-theme="dark"] .exo-title {
+  color: #f0f0f5;
+}
+
+[saved-theme="dark"] .exo-questions > li::before {
+  background: #6b7a94;
+}
+
+[saved-theme="dark"] .exo-questions ol li::before {
+  background: #7a8a9e;
+}
+
+[saved-theme="dark"] .exo-questions ol ol li::before {
+  background: #8a9aae;
+  color: #e0e0e6;
+}
+
+[saved-theme="dark"] .mot-cle {
+  background: #1e2951;
+  color: #7dd3fc;
+}
+
+/* Titres en mode sombre */
+[saved-theme="dark"] .td-title {
+  color: #dce6f3;
+}
+
+[saved-theme="dark"] .td-subtitle {
+  color: #c0cad9;
+}
+
+[saved-theme="dark"] .section-title {
+  color: #66b2ff;
+  border-bottom: 2px solid #66b2ff;
+}
+
+/* Code block sombre */
+[saved-theme="dark"] .code-block {
+  background-color: #111827;
+  border: 1px solid #2d2d44;
+  color: #f0f0f5;
+}
+
+/* Warning box sombre */
+[saved-theme="dark"] .warning-box {
+  background-color: #332b00;
+  border: 1px solid #665500;
+  border-left: 4px solid #f1c40f;
+  color: #f9e79f;
 }
