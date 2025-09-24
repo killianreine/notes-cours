@@ -49,3 +49,25 @@ $$
 
 On a en fait inverser l'entièreté de l'équation de base et utiliser la commutativité de $(\mathbb{R}, -)$ pour réarranger les différents termes et arriver à l'expression voulue $b-a=b^{2}-a^{2}$.  
 On retrouve bien la relation miroir à partir de $x \mathcal{R}y$ ainsi $\mathcal{R}$ est symétrique.  
+
+**(iii)** Montrons que la relation $\mathcal{R}$ est transitive.  
+Soit $x, y, z\in \mathbb{R}$,  
+Alors par définition on a $x \mathcal{R}y$ et $y\mathcal{R}z$ ainsi : 
+
+$$
+x\mathcal{R}y \Longleftrightarrow x-y=x^{2}-y^{2} \quad \text{ et } \quad y\mathcal{R}z \Longleftrightarrow y-z=y^{2}-z^{2}
+$$
+
+On cherche à obtenir $a-z=a^{2}-z^{2}$ à partir des données que l'on a.  
+On peut additionner les deux expressions conjecturées par définition.  
+
+$$
+\begin{align*} x\mathcal{R}y+y\mathcal{R}z \Longleftrightarrow (x-y)+(y-z) &= (x^{2}-y^2)+(y^{2}-z^{2}) \\
+x\cancel{-y}\cancel{+y}-z &= x^{2}\cancel{-y^{2}\cancel{+y^{2}}-z^{2}}\\
+x-z &= x^{2}-z^{2} \Longleftrightarrow x\mathcal{R}z
+\end{align*}
+$$
+
+On obtient donc bien que la relation $\mathcal{R}$ est transitive.
+
+D'après **(i)**, **(ii)** et **(iii)** la relation $\mathcal{R}$ est réflexive, symétrique et transitive ce qui fait de elle une relation d'équivalence sur $\mathbb{R}$.
