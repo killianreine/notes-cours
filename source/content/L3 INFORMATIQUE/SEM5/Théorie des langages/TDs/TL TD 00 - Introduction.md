@@ -518,7 +518,7 @@ $$
 
 Ainsi tout élément de $\mathbb{N}$ sont inversibles, et admettent $x$ comme inverse.
 
-$\boxed{\text{Question 6}}$  
+$\boxed{\text{Question 5}}$  
 
 >[!cite] Définition 
 >Soit $(G, T)$ un magma. On dit que $G$ est un **==groupe==** si et seulement si : 
