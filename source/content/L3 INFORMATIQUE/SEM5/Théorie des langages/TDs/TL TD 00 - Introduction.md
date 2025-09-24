@@ -171,3 +171,81 @@ $$
     <li>Donner <span class="mot-cle">l'ensemble quotient</span> lorsque \(A=\emptyset\) et \(A=E\).</li>
   </ol>
 </div>
+
+>[!info] Remarque
+>Pour rappel, l'ensemble $\mathcal{P}(E)$ représente l'**==ensemble de toutes les parties==** de $E$. En gros l'ensemble contient tous les sous-ensembles possible de créer étant partie de $E$.
+
+$\boxed{\text{Question 1}}$  
+Montrons que $\mathcal{R}$ est une relation d'équivalence.
+
+**(i)** Réflexivité  
+Soit $X \in \mathcal{P}(E)$.  
+Alors il est évident que $A \cap X=A\cap X$ on se retrouve bien avec $X\mathcal{R}X$. La relation $\mathcal{R}$ est donc évidemment réflexive.
+
+>[!warning]
+>Pour rappel les ensembles sont notés grâce à une **lettre majuscule** <u>par convention</u>...
+
+**(ii)** Symétrie  
+Soit $X,Y \in \mathcal{P}(E)$.  
+Alors on a : $X\mathcal{R}Y \Longleftrightarrow A \cap X=A\cap Y$.  
+On sait que l'opération $=$ est commutative sur tout ensemble $E$ alors $(\mathcal{P}(E), =)$ est commutative d'où :
+
+$$
+A \cap X = A\cap Y \Longleftrightarrow A\cap Y = A\cap X
+$$
+
+Ainsi, $\mathcal{R}$ est symétrique.
+
+**(iii)** Transitivité  
+Soit $X,Y,Z \in \mathcal{P}(E)$.  
+Alors on a :
+- $X\mathcal{R}Y \Longleftrightarrow A \cap X=A\cap Y$
+- $Y\mathcal{R}Z \Longleftrightarrow A \cap Y=A\cap Z$ 
+
+Puisque $A \cap Y=A\cap Z$ alors on obtient : 
+
+$$
+\begin{align*}
+A \cap X &= A \cap Y \\
+&= A \cap Z \Longleftrightarrow X\mathcal{R}Z
+\end{align*}
+$$
+
+La relation $\mathcal{R}$ est donc bien transitive.  
+D'après **(i)**, **(ii)** et **(iii)** la relation $\mathcal{R}$ est une relation d'équivalence.
+
+$\boxed{\text{Question 2}}$  
+L'ensemble quotient représente l'ensemble de toutes les classes de représentant $M \in \mathcal{P}(E)$.  
+Si $A = \emptyset$, l'ensemble vide alors : 
+
+$$
+\forall X,Y \in \mathcal{P}(E), \quad X\mathcal{R}Y = \emptyset\cap X=\emptyset \cap Y
+$$
+
+On sait que pour l'intersection, $\emptyset$ est l'élément absorbant, en gros que $\forall E$, $E\cap\emptyset=\emptyset$ alors l'égalité suivante est vérifiée **pour toutes les parties de $E$**.  
+Ainsi on note l'ensemble quotient : 
+
+$$
+{E} / \mathcal{R}=\mathcal{P}(E)
+$$
+
+Maintenant, si $A=E$.  
+On cherche à savoir pour quels $X,Y$ parties de $E$ la relation est respectée : 
+
+$$
+\forall X,Y \in \mathcal{P}(E), \quad X\mathcal{R}Y = E\cap X=E \cap Y
+$$
+
+On sait que pour l'intersection $E$ l'ensemble englobant tous les autres est élément neutre, c'est à dire qu'il ne change pas l'issu du résultat. Ainsi pour toutes parties $A$ de $E$ on a $A\cap E=A$.  
+Ainsi  
+
+$$
+E\cap X = E \cap Y \Longleftrightarrow X=Y
+$$
+
+Autrement dit, la relation est respectée si et seulement si $X$ et $Y$ désignent **le même ensemble**.  
+D'où :
+
+$$
+E / \mathcal{R} = \{X,Y \in \mathcal{P}(E) \mid X=Y\}
+$$
