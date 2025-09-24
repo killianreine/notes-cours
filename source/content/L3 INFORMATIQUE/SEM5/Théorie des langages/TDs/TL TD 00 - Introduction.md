@@ -356,26 +356,38 @@ $$
 D'où :
 
 $$
-ac(z-x)+b^{2}(x-z)+b(z-x) = ac(z-x)-b^{2}(z-x)+b(z-x) = (ac-b^{2}+b)(z-x)
+ac(z-x)+b^{2}(x-z)+b(z-x) = ac(z-x)-b^{2}(z-x)+b(z-x) = (ac-b^{2}-b)(z-x)
 $$
 
 On cherche maintenant le lien entre $a,b$ et $c$ pour que $\star$ soit associative. Pour que ce soit respecté, il faudrait que la différences des deux expressions calculées précédemment fasse $0$.  
 Autrement dit : 
 
 $$
-(ac-b^{2}+b)(z-x) = 0
+(ac-b^{2}-b)(z-x) = 0
 $$
 
 Et pour respecter cette égalité, comme c'est un produit, si l'un est nul, le tout est nul donc pour que $\star$ soit associative il faut que : 
-- $ac-b^{2}+b=0$
+- $ac-b^{2}-b=0$
 - ou $z-x=0$
 
 On cherche un lien entre $a,b$ et $c$ dont $(x-z)=0$ on peut l'oublier c'est pas ce qu'on veut.  
 Mais en prenant la première condition on obtient le lien suivant : 
 
 $$
-ac-b^{2}+b=0 \Longleftrightarrow a=\dfrac{b^{2}-b}{c} \quad \text{avec } c\neq 0
+ac-b^{2}-b=0 \Longleftrightarrow a=\dfrac{b^{2}+b}{c} \quad \text{avec } c\neq 0
 $$
 
 Et voilà, on a trouvé le lien entre $a,b$ et $c$ pour que la loi soit associative. Vous pouvez vérifier avec le triplet $(a,b,c)$ tel que $a=1$, $b=1$ et $c=2$.
+
+<div class="consigne_exo">
+  <div class="exo-header">
+    <span class="exo-num">4</span>
+    <span>Soit \(G\) un groupe <span>non-commutatif</span>. </span>
+  </div>
+  On se donne deux éléments \(a,b \in G\)
+  <ol class="exo-questions">
+    <li>Résoudre l'équation d'inconnue \( x : xab=a\).</li>
+    <li>Que devient la solution si l'on suppose que \(G\) est commutatif.</li>
+  </ol>
+</div>
 
