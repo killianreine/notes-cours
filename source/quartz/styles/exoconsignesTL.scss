@@ -6,78 +6,16 @@
   margin: 20px 0;
   font-family: "Segoe UI", sans-serif;
   color: #222;
-
-  .exo-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-
-    .exo-num {
-      background: #5c7698;
-      color: white;
-      font-weight: bold;
-      border-radius: 4px;
-      padding: 4px 8px;
-      margin-right: 8px;
-    }
-
-    .exo-title {
-      font-weight: 600;
-      font-size: 1rem;
-    }
-  }
-
-  .exo-questions {
-    list-style: none;
-    counter-reset: question;
-
-    li {
-      counter-increment: question;
-      margin: 8px 0;
-      padding-left: 30px;
-      position: relative;
-
-      &::before {
-        content: counter(question);
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: #94a9bf;
-        color: white;
-        border-radius: 4px;
-        padding: 2px 6px;
-        font-weight: bold;
-      }
-
-      .mot-cle {
-        background: #e0e8f9;
-        border-radius: 4px;
-        padding: 2px 6px;
-        font-weight: 700;
-        color: #1e3a8a;
-      }
-    }
-  }
 }
 
-[saved-theme="dark"] .consigne_exo {
-  background: #1a1a2e;
-  border: 1px solid #2d2d44;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 20px 0;
-  font-family: "Segoe UI", sans-serif;
-  color: #e0e0e6;
-}
-
-[saved-theme="dark"] .consigne_exo .exo-header {
+.exo-header {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
 
-[saved-theme="dark"] .consigne_exo .exo-header .exo-num {
-  background: #4a5d7a;
+.exo-num {
+  background: #5c7698;
   color: white;
   font-weight: bold;
   border-radius: 4px;
@@ -85,40 +23,184 @@
   margin-right: 8px;
 }
 
-[saved-theme="dark"] .consigne_exo .exo-header .exo-title {
+.exo-title {
   font-weight: 600;
   font-size: 1rem;
-  color: #f0f0f5;
 }
 
-[saved-theme="dark"] .consigne_exo .exo-questions {
+.exo-questions {
   list-style: none;
   counter-reset: question;
 }
 
-[saved-theme="dark"] .consigne_exo .exo-questions li {
+.exo-questions > li {
   counter-increment: question;
   margin: 8px 0;
   padding-left: 30px;
   position: relative;
 }
 
-[saved-theme="dark"] .consigne_exo .exo-questions li::before {
+.exo-questions > li::before {
   content: counter(question);
   position: absolute;
   left: 0;
   top: 0;
-  background: #6b7a94;
+  background: #94a9bf;
   color: white;
   border-radius: 4px;
   padding: 2px 6px;
   font-weight: bold;
 }
 
-[saved-theme="dark"] .consigne_exo .exo-questions li .mot-cle {
-  background: #1e2951;
+.mot-cle {
+  background: #e0e8f9;
   border-radius: 4px;
   padding: 2px 6px;
   font-weight: 700;
+  color: #1e3a8a;
+}
+
+/* Styles pour les sous-listes a) b) c) */
+.exo-questions ol {
+  counter-reset: sub-counter;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.exo-questions ol li {
+  counter-increment: sub-counter;
+  margin: 8px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+.exo-questions ol li::before {
+  content: counter(sub-counter, lower-alpha) ")";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #b8c5d1;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+/* Styles pour les sous-sous-listes i. ii. iii. */
+.exo-questions ol ol {
+  counter-reset: subsub-counter;
+  margin-top: 8px;
+}
+
+.exo-questions ol ol li {
+  counter-increment: subsub-counter;
+  margin: 6px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+.exo-questions ol ol li::before {
+  content: counter(subsub-counter, lower-roman) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #c9d2db;
+  color: #333;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+/* Style pour les listes à puces simples */
+.exo-questions ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.exo-questions ul li {
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+/* Autres styles */
+.td-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.td-subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #34495e;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0 20px 0;
+  color: #2980b9;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+}
+
+.code-block {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+.math-display {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.warning-box {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 4px solid #f39c12;
+}
+
+/* Mode sombre */
+[saved-theme="dark"] .consigne_exo {
+  background: #1a1a2e;
+  border: 1px solid #2d2d44;
+  color: #e0e0e6;
+}
+
+[saved-theme="dark"] .exo-num {
+  background: #4a5d7a;
+}
+
+[saved-theme="dark"] .exo-title {
+  color: #f0f0f5;
+}
+
+[saved-theme="dark"] .exo-questions > li::before {
+  background: #6b7a94;
+}
+
+[saved-theme="dark"] .exo-questions ol li::before {
+  background: #7a8a9e;
+}
+
+[saved-theme="dark"] .exo-questions ol ol li::before {
+  background: #8a9aae;
+  color: #e0e0e6;
+}
+
+[saved-theme="dark"] .mot-cle {
+  background: #1e2951;
   color: #7dd3fc;
 }
