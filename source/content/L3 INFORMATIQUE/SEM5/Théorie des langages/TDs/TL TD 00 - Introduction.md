@@ -261,3 +261,44 @@ $$
 Trouver une relation liant \(a, b\) et \(c\) de sorte que cette loi soit associative.
 </div>
 
+>[!info] Remarque
+>On dit qu'un loi $T$ définie sur $E$ est associative si et seulement si : 
+>$$
+>\forall x,y,z \in E \quad (xTy)Tz = xT(yTz)
+>$$
+>Si ceci est respecté, on dit que le magma $(E, T)$ est associatif.
+
+Pour commencer, il serait bien de regarder dans quel(s) cas  $\star$ est une loi associative. Pour ce faire, nous allons calculer individuellement : 
+- $(x\star y) \star z$
+- $x\star(y\star z)$
+
+Les étapes de calculs sont données ci contre :  
+**Calcul de la première expression**  
+
+$$
+\begin{align*}
+(x\star y) \star z &= [axy+b(x+y)+c] \star z
+\end{align*}
+$$
+
+Si on pose que $X=x \star y$ alors $X = axy+b(x+y)+c$ d'où :
+
+$$
+\begin{align*}
+(x\star y) \star z &= X \star z\\
+&= aXz+b(X+z)+c\\
+&= a(\underbrace{[axy+b(x+y)+c]}_{=X} \times z)+b(\underbrace{[axy+b(x+y)+c]}_{=X}+z)+c
+\end{align*}
+$$
+
+Maintenant il reste plus qu'à rester **extrêmement rigoureux** et à développer jusqu'à la fin.  
+
+$$
+\begin{align*}
+(x\star y) \star z &= a(\underbrace{[axy+b(x+y)+c]}_{=X} \times z)+b(\underbrace{[axy+b(x+y)+c]}_{=X}+z)+c\\
+&= a(axyz+bz(x+y)+cz)+abxy+b^{2}(x+y)+bc+bz+c\\
+&= a^{2}xyz+abz(x+y)+acz+abxy+b^{2}x+b^{2}y+bc+bz+c\\
+&= a^{2}xyz+abzx+abzy+acz+abxy+b^{2}x+b^{2}y+bc+bz+c
+\end{align*}
+$$
+
