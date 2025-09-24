@@ -64,7 +64,7 @@ On peut additionner les deux expressions conjecturées par définition.
 
 $$
 \begin{align*} x\mathcal{R}y+y\mathcal{R}z \Longleftrightarrow (x-y)+(y-z) &= (x^{2}-y^2)+(y^{2}-z^{2}) \\
-x\cancel{-y}\cancel{+y}-z &= x^{2}\cancel{-y^{2}\cancel{+y^{2}}-z^{2}}\\
+x\cancel{-y}\cancel{+y}-z &= x^{2}\cancel{-y^{2}}\cancel{+y^{2}}-z^{2}\\
 x-z &= x^{2}-z^{2} \Longleftrightarrow x\mathcal{R}z
 \end{align*}
 $$
@@ -126,5 +126,34 @@ On obtient la classe de représentant $2$ suivante :
 
 $$
 \overset{\cdot}2=\{-1, 2\}
+$$
+
+Maintenant, il faut faire pareil mais plus avec un réel donné mais avec un représentant général qui peut désigner n'importe lequel des réels. Dans la consigne il a été nommé $m$.  
+On cherche : 
+
+$$
+\begin{align*}
+\overset{\cdot}m &= \{x \in \mathbb{R} \mid x\mathcal{R}m\}\\
+&= \{x \in \mathbb{R} \mid x-m=x^{2}-m^2\}
+\end{align*}
+$$
+
+Même procédé que pour trouvé la classe précédente : 
+
+$$
+\begin{align*}
+x-m &= x^{2}-m^{2}\\
+x-m &= (x-m)(x+m) \\
+1\cancel{x-m} &= \cancel{(x-m)}(x+m)\\
+1 &= x+m & \forall x&\neq m\\
+x &= 1-m
+\end{align*}
+$$
+
+On obtient alors que $x=1-m$, et on oublie pas que $\mathcal{R}$ est réflexive donc $m$ appartiendra à l'ensemble.  
+D'où :
+
+$$
+\overset{\cdot}m = \{m, 1-m\}
 $$
 
