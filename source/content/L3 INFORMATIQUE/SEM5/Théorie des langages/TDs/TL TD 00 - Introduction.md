@@ -157,3 +157,17 @@ $$
 \overset{\cdot}m = \{m, 1-m\}
 $$
 
+<div class="consigne_exo">
+  <div class="exo-header">
+    <span class="exo-num">2</span>
+    <span>Soit \(A\) une partie donnée d'un ensemble \(E\). </span>
+  </div>
+  On considère la relation \(\mathcal{R}\) dans \(\mathcal{P}(E)\) définie par :
+  $$
+  X \mathcal{R}Y \Longleftrightarrow A \cap X = A \cap Y
+$$
+  <ol class="exo-questions">
+    <li>Montrer que la relation \( \mathcal{R} \) est une relation d'équivalence.</li>
+    <li>Donner <span class="mot-cle">l'ensemble quotient</span> lorsque \(A=\emptyset\) et \(A=E\).</li>
+  </ol>
+</div>
