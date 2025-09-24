@@ -93,10 +93,10 @@
         <span class="exo-title">Sérieux, de la bijectivité...</span>
     </div>
     <p>On considère l'objet mathématique suivant :</p>
-    <div class="math-display">
-        \[ f : \mathbb{R} \setminus \{1\} \to \mathbb{R} \]
-        \[ x \mapsto \frac{x + 1}{x - 1} \]
-    </div>
+    $$
+        f : \mathbb{R} \setminus \{1\} \to \mathbb{R} 
+        \\x \mapsto \frac{x + 1}{x - 1} 
+    $$
     <ol class="exo-questions">
         <li>f est-elle bijective ?<br>
         Vous utiliserez un raisonnement approprié muni d'une rédaction pour répondre à la question posée.</li>
