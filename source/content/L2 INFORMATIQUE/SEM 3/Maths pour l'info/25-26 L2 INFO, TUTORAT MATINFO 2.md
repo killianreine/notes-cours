@@ -21,3 +21,19 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
 
 # Contenu du cours 
 - à retrouver sur Eureka : [lien du cours Eureka](https://eureka.univ-lehavre.fr/course/view.php?id=7552)
+
+<div> <table class="cours-planC"> 
+<thead>
+<tr> 
+<th>#</th>
+<th>Lien d'accès</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody> 
+<tr class="bloc-header">
+<td colspan="3">TDs</td> </tr>
+<tr> <td>TD 01</td> <td><a href="MPI TD 01 - Relation binaire">TD01</a></td> <td>Notions préliminaires, théorie des ensembles, relations binaires, clôtures, matrices</td> </tr><tr>
+</tr>
+</tbody> </table> </div>
+
