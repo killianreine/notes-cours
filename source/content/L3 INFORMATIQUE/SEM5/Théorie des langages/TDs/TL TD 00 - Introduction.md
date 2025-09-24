@@ -249,3 +249,15 @@ D'où :
 $$
 E / \mathcal{R} = \{X,Y \in \mathcal{P}(E) \mid X=Y\}
 $$
+
+<div class="consigne_exo">
+  <div class="exo-header">
+    <span class="exo-num">3</span>
+    <span>On considère sur \(\mathbb{R}\) la loi \(\star\) définie par :</span>
+  </div>
+  $$
+  x \star y = axy+b(x+y)+c
+$$
+Trouver une relation liant \(a, b\) et \(c\) de sorte que cette loi soit associative.
+</div>
+
