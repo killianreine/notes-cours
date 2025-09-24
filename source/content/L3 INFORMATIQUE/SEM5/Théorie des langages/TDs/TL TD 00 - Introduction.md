@@ -27,7 +27,8 @@ $$
  >  $$
  >  \forall x,y,z \in A \quad (x \mathcal{R}y \text{ et } y\mathcal{R}z) \Longrightarrow x\mathcal{R}z
  >$$
- 
+
+$\boxed{\text{Question 1}}$  
  **(i)** Montrons que la relation $\mathcal{R}$ est réflexive  
  Soit $a \in \mathbb{R}$.  
  Alors on a :
@@ -71,3 +72,12 @@ $$
 On obtient donc bien que la relation $\mathcal{R}$ est transitive.
 
 D'après **(i)**, **(ii)** et **(iii)** la relation $\mathcal{R}$ est réflexive, symétrique et transitive ce qui fait de elle une relation d'équivalence sur $\mathbb{R}$.
+
+$\boxed{\text{Question 2}}$  
+On cherche a déterminer la classe de représentant $2$ puis de représentant général $m \in \mathbb{R}$.  
+
+>[!cite] Définition
+>Soit $\mathcal{R}$ une relation définie sur un ensemble quelconque $E$.  
+>On appelle **==classe de représentant $m \in E$==** *(ou classe d'équivalence)* l'ensemble de tous les éléments $x \in E$ tel que l'on a $x\mathcal{R}m$.  
+>*Autrement dit, une classe de représentant $m$ représente l'ensemble de tous les éléments qui sont en relation avec $m$*. 
+
