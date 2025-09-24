@@ -382,7 +382,7 @@ Et voilà, on a trouvé le lien entre $a,b$ et $c$ pour que la loi soit associat
 <div class="consigne_exo">
   <div class="exo-header">
     <span class="exo-num">4</span>
-    <span>Soit \(G\) un groupe <span>non-commutatif</span>. </span>
+    <span>Soit \(G\) un groupe <span class="mot-cle">non-commutatif</span>. </span>
   </div>
   On se donne deux éléments \(a,b \in G\)
   <ol class="exo-questions">
@@ -427,4 +427,21 @@ x &= aa^{-1}b^{-1} \quad \quad \text{par commutativité de }G\\
 x&=b^{-1}
 \end{align*}
 $$
+
+<div class="consigne_exo">
+  <div class="exo-header">
+    <span class="exo-num">5</span>
+    <span>On considère sur \(\mathbb{N}\) la loi de composition interne \( \star \) définie par :</span>
+  </div>
+  $$
+  x \star y = |x-y|
+$$
+  <ol class="exo-questions">
+    <li>Cette loi est-elle commutative ? Justifier.</li>
+    <li>Cette loi est-elle associative ? Justifiez.</li>
+    <li>Montrer que \(0\) représente l'élément neutre de \((\mathbb{N}, \star)\).</li>
+    <li>Montrer que tout élément de \(\mathbb{N}\) est inversible pour cette loi et préciser son inverse.</li>
+    <li>\((\mathbb{N}, \star)\) est-il un groupe ?</li>
+  </ol>
+</div>
 
