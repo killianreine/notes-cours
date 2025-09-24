@@ -391,3 +391,40 @@ Et voilà, on a trouvé le lien entre $a,b$ et $c$ pour que la loi soit associat
   </ol>
 </div>
 
+>[!info] Remarque
+>Soit $(G, T)$ un groupe, on dit que $G$ est **==commutatif==** si et seulement si :
+>$$
+>\forall x,y \in G \quad xTy = yTx
+>$$
+>*C'est l'effet miroir*
+
+$\boxed{\text{Question 1}}$  
+Nous on cherche $x$.
+
+$$
+\begin{align*}
+xab &= a \\
+xabb^{-1}&= ab^{-1} \quad\quad bb^{-1}=1 \\
+xa &= ab^{-1} \\
+xaa^{-1} &=ab^{-1}a^{-1}
+\end{align*}
+$$
+
+D'où $x=ab^{-1}a^{-1}$ puisqu'on ne peux plus rien toucher.
+
+$\boxed{\text{Question 2}}$  
+On suppose désormais que le groupe est commutatif.  
+Alors on a :
+
+$$
+\begin{align*}
+xab &= a \\
+xabb^{-1}&= ab^{-1} \quad\quad bb^{-1}=1 \\
+xa &= ab^{-1} \\
+xaa^{-1} &=ab^{-1}a^{-1} \\
+x &= ab^{-1}a^{-1} \\
+x &= aa^{-1}b^{-1} \quad \quad \text{par commutativité de }G\\
+x&=b^{-1}
+\end{align*}
+$$
+
