@@ -109,9 +109,10 @@
     </div>
     <p>Les relations données par les graphes ci-dessous sont-elles réflexives, symétriques, antisymétriques, transitives ?<br>
     Sont-elles d'ordre ou d'équivalence ?</p>
+    <div class="graphTikzTD1">
     <div class="tikz-block">
     <script type="text/tikz">
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2]
   % Noeuds
   \node[shape=circle,draw=black] (A) at (0,2) {A};
   \node[shape=circle,draw=black] (B) at (0,4) {B};
@@ -131,7 +132,7 @@
   </div>
   <div class="tikz-block">
     <script type="text/tikz">
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2]
   % Noeuds
   \node[shape=circle,draw=black] (C) at (0,2) {C};
   \node[shape=circle,draw=black] (B) at (0,4) {B};
@@ -149,7 +150,7 @@
   </div>
   <div class="tikz-block">
     <script type="text/tikz">
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=2]
   % Noeuds
   \node[shape=circle,draw=black] (A) at (0,2) {A};
   \node[shape=circle,draw=black] (B) at (1,4) {B};
@@ -167,6 +168,7 @@
 \end{tikzpicture}
     </script>
   </div>
+</div>
 </div>
 <div class="section-title" style="font-size: 18px; margin-top: 10px;">Propriété des relations</div>
 <div class="consigne_exo">

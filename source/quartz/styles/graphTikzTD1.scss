@@ -1,0 +1,14 @@
+.graphTikzTD1 {
+  display: flex;
+  justify-content: center;   /* centre les graphes horizontalement */
+  align-items: flex-start;   /* aligne en haut si les hauteurs diffèrent */
+  gap: 20px;                 /* espace entre les graphes */
+  flex-wrap: wrap;           /* passe à la ligne si l’écran est trop petit */
+}
+
+.graphTikzTD1 .tikz-block {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
