@@ -174,12 +174,12 @@
 }
 
 .warning-box {
-  background-color: #fff3cd;
-  border: 1px solid #ffeaa7;
+  background-color: #cddaff;
+  border: 1px solid #b4a7ff;
   border-radius: 5px;
   padding: 15px;
   margin: 15px 0;
-  border-left: 4px solid #f39c12;
+  border-left: 4px solid #5c7698;
 }
 
 /* Mode sombre (via saved-theme="dark") */
@@ -270,8 +270,8 @@
 
 /* Warning box sombre */
 [saved-theme="dark"] .warning-box {
-  background-color: #332b00;
-  border: 1px solid #665500;
+  background-color: #001233;
+  border: 1px solid #070066;
   border-left: 4px solid #f1c40f;
-  color: #f9e79f;
+  color: #9fadf9;
 }
