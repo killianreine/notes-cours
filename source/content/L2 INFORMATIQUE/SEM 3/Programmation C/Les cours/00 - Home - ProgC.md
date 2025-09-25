@@ -25,14 +25,17 @@ Le tutorat se déroule tout au long du semestre et offre un cadre collaboratif e
 Table des matières complète : [[Prog C - Table des matières]]
 
 <div>
-<table class="cours-planC">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Cours</th>
-      <th>Description</th>
-    </tr>
-  </thead>
+<table class="cours-planMPI">
+<thead>
+<tr> 
+<th>#</th>
+<th>Lien d'accès</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody> 
+<tr class="bloc-headerMPI">
+<td colspan="3">Les cours</td> </tr>
   <tbody>
     <tr>
       <td>01</td>
@@ -114,6 +117,8 @@ Table des matières complète : [[Prog C - Table des matières]]
       <td><a href="16 - Interface graphique en C">Interface graphique</a></td>
       <td></td>
     </tr>
+    <tr class="bloc-headerMPI">
+	<td colspan="3">TPs</td> </tr>
   </tbody>
 </table>
 </div>
