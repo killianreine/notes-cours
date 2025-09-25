@@ -267,7 +267,7 @@
     </div>
     <ol class="exo-questions">
         <li>Soient A et B deux ensembles finis et R une relation définie dans \( A \times B \).<br>
-        $$ A = \{a_i, a_{i+1}, \ldots, a_n\} \), \( B = \{b_j, b_{j+1}, \ldots, b_m\} $$
+        $$ A = \{a_i, a_{i+1}, \ldots, a_n\} \quad B = \{b_j, b_{j+1}, \ldots, b_m\} $$
         On rappelle la définition de \( M_R \) la matrice booléenne d'ordre \( (n, m) \) associée à R.<br>
         \[ (M_R)_{ij} = \begin{cases} 1 & \text{si } a_i R b_j \\ 0 & \text{sinon} \end{cases} \]
             <ol>
@@ -308,7 +308,7 @@
         <span class="exo-title">Introduction aux clôtures</span>
     </div>
     <p>On considère l'ensemble \( A = \{a, b, c\} \) et la relation R définie sur A par :<br>
-    \( R = \{(a, b), (b, c)\} \)</p>
+    $$R = \{(a, b), (b, c)\} $$</p>
     <div class="warning-box">
         <strong>Définition :</strong> Lorsqu'une relation R n'a pas une propriété réflexive, symétrique ou transitive, on peut lui ajouter le minimum de couples pour qu'elle le devienne.<br>
         La nouvelle relation s'appelle alors <span class="mot-cle">clôture de R pour la propriété ajoutée</span>.
@@ -331,11 +331,11 @@
     <ol class="exo-questions">
         <li>Construire les clôtures réflexives, symétriques et transitives de la relation de l'exercice 12.2.c.</li>
         <li>Montrer que la clôture réflexive de R est \( R + I_A \), où \( I_A \) est définie par :<br>
-        \( \forall x, y \in A, \; xI_A y \Leftrightarrow x = y \)</li>
+        $$ \forall x, y \in A, \; xI_A y \Leftrightarrow x = y $$</li>
         <li>Montrer que la clôture symétrique de R est \( R + R^{-1} \) où \( R^{-1} \) est définie par :<br>
-        \( \forall x, y \in A, \; xR^{-1}y \Leftrightarrow yRx \)</li>
+        $$ \forall x, y \in A, \; xR^{-1}y \Leftrightarrow yRx $$</li>
         <li>Montrer que la clôture transitive de R est :<br>
-        \[ R^+ = \sum_{k=1}^{|A|} R^k \]
+        $$ R^+ = \sum_{k=1}^{|A|} R^k $$
         où \( R^k = \underbrace{R \circ R \circ R \circ \ldots \circ R}_{k \text{ fois}} \)<br>
         où \( |A| \) représente le cardinal de A.</li>
         <li>Écrire les algorithmes de calcul des clôtures réflexives, symétriques et transitives.</li>
