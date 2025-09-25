@@ -79,7 +79,10 @@
         <li>Rappeler les définitions d'une <span class="mot-cle">fonction</span> et d'une <span class="mot-cle">Application</span>.</li>
         <li>Déterminer si les applications suivantes sont bien définies. Justifier le cas échéant.
             <ol>
-                <li>\( E_1 : \mathbb{R} \to \mathbb{R} \), \( x \mapsto \sqrt{x} \)</li>
+                <li>
+                $$
+                \mathcal{E}_1 : \mathbb{R} &\to \mathbb{R} \\ x &\mapsto \sqrt{x} 
+				$$</li>
                 <li>\( E_2 : \mathbb{Q} \to \mathbb{Z} \), \( \frac{p}{q} \mapsto p \)</li>
                 <li>\( E_3 : \mathbb{R} \to \{-1, 0, 1\} \), \( x \mapsto \begin{cases} -1 & \text{si } x < 0 \\ 0 & \text{si } x = 0 \\ 1 & \text{si } x > 0 \end{cases} \)</li>
                 <li>\( E_4 : \{x \in \mathbb{Z} | x \bmod 2 = 0\} \to \mathbb{Z} \), \( n \mapsto \frac{n}{2} \)</li>
