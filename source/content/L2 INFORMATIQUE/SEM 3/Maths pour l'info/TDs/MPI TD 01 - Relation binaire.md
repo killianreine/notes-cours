@@ -224,7 +224,7 @@
         <span class="exo-title">Utiliser la circularité</span>
     </div>
     <p>Soit R une relation binaire sur un ensemble E. La relation R est dite <span class="mot-cle">circulaire</span> sur E si :<br>
-    \( \forall a, b, c \in E, \; (aRb \land bRc) \Rightarrow cRa \)</p>
+    $$ \forall a, b, c \in E, \; (aRb \land bRc) \Rightarrow cRa $$</p>
     <ol class="exo-questions">
         <li>Montrer que si R est réflexive et circulaire sur E, alors la relation R est une relation d'équivalence sur E.</li>
     </ol>
@@ -236,7 +236,7 @@
         <span class="exo-title">Matrice booléenne et graphes</span>
     </div>
     <p>On considère l'ensemble \( A = \{1, 2, 3\} \) et la relation \( R \subseteq A \times A \) définie par :<br>
-    \( R = \{(1, 1), (1, 2), (2, 3)\} \)</p>
+    $$ R = \{(1, 1), (1, 2), (2, 3)\}$$</p>
     <ol class="exo-questions">
         <li><strong>Représentation de la relation</strong>
             <ol>
@@ -261,26 +261,26 @@
     </div>
     <ol class="exo-questions">
         <li>Soient A et B deux ensembles finis et R une relation définie dans \( A \times B \).<br>
-        \( A = \{a_i, a_{i+1}, \ldots, a_n\} \), \( B = \{b_j, b_{j+1}, \ldots, b_m\} \)<br>
+        $$ A = \{a_i, a_{i+1}, \ldots, a_n\} \), \( B = \{b_j, b_{j+1}, \ldots, b_m\} $$
         On rappelle la définition de \( M_R \) la matrice booléenne d'ordre \( (n, m) \) associée à R.<br>
         \[ (M_R)_{ij} = \begin{cases} 1 & \text{si } a_i R b_j \\ 0 & \text{sinon} \end{cases} \]
             <ol>
                 <li>Écrire des algorithmes qui ont, en entrée une matrice booléenne associée à une relation binaire sur un ensemble fini et qui précisent si cette relation est réflexive, symétrique ou transitive.<br><br>
                 Soient deux relations R et S de \( A \times B \), on rappelle que, \( \forall x, y \in A \times B \) :<br>
-                \( x(R + S)y \Leftrightarrow x(R \cup S)y \)<br>
-                \( x(RS)y \Leftrightarrow x(R \cap S)y \)<br><br>
+                $$ x(R + S)y \Leftrightarrow x(R \cup S)y $$
+                $$ x(RS)y \Leftrightarrow x(R \cap S)y $$
                 On définit les deux opérations suivantes sur les matrices booléennes P et Q :<br>
-                \( P \lor Q : (P \lor Q)_{ij} = P_{ij} \lor Q_{ij} \)<br>
-                \( P \land Q : (P \land Q)_{ij} = P_{ij} \land Q_{ij} \)</li>
+                $$ P \lor Q : (P \lor Q)_{ij} = P_{ij} \lor Q_{ij} $$
+                $$P \land Q : (P \land Q)_{ij} = P_{ij} \land Q_{ij} $$</li>
                 <li>Montrer que \( M_{R+S} = M_R \lor M_S \)</li>
                 <li>Montrer que \( M_{RS} = M_R \land M_S \)</li>
                 <li>Donner les algorithmes qui calculent \( P \land Q \) et \( P \lor Q \) avec P et Q comme paramètres.</li>
             </ol>
         </li>
         <li>On définit maintenant la composition \( R \circ S \) de deux relations \( R \subset A \times B \) et \( S \subset B \times C \) telle que :<br>
-        \( \forall (x, y) \in A \times C, \; x(R \circ S)y \Leftrightarrow \exists z \in B \; | \; xRz \land zSy \)<br><br>
+        $$\forall (x, y) \in A \times C, \; x(R \circ S)y \Leftrightarrow \exists z \in B \; | \; xRz \land zSy$$
         On définit aussi le produit booléen \( A \otimes B \) de deux matrices booléennes A d'ordre \( (n, p) \) et B d'ordre \( (p, m) \) par :<br>
-        \[ (A \otimes B)_{ij} = \bigvee_{k=1}^p a_{ik} \land b_{kj} \]
+        $$(A \otimes B)_{ij} = \bigvee_{k=1}^p a_{ik} \land b_{kj} $$
             <ol>
                 <li>Vérifier que \( R \circ (S \circ T) = (R \circ S) \circ T \)</li>
                 <li>Montrer que \( M_{R \circ S} = M_R \otimes M_S \)</li>
