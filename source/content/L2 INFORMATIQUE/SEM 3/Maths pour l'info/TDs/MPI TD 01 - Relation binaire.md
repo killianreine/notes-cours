@@ -329,7 +329,7 @@
     </div>
     <p>Soit R une relation sur un ensemble fini A. On appelle <span class="mot-cle">clôture propriété</span> de R, la plus petite relation propriété sur A contenant R.</p>
     <ol class="exo-questions">
-        <li>Construire les clôtures réflexives, symétriques et transitives de la relation de l'exercice 12.2.c.</li>
+        <li>Construire les clôtures réflexives, symétriques et transitives de la relation de l'exercice 13.2.c.</li>
         <li>Montrer que la clôture réflexive de R est \( R + I_A \), où \( I_A \) est définie par :<br>
         $$ \forall x, y \in A, \; xI_A y \Leftrightarrow x = y $$</li>
         <li>Montrer que la clôture symétrique de R est \( R + R^{-1} \) où \( R^{-1} \) est définie par :<br>

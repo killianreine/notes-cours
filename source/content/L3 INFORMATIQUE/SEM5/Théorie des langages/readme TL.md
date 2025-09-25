@@ -9,7 +9,7 @@ Bienvenue ! Ce dépôt contient un cours complet de **Théorie des Langages**, d
 - Étudier la décidabilité, la complétude et les limites du calcul
 
 ## 📚 Contenu du cours
-<div> <table class="cours-planC"> 
+<div> <table class="cours-planMPI"> 
 <thead>
 <tr> 
 <th>#</th>
@@ -18,7 +18,7 @@ Bienvenue ! Ce dépôt contient un cours complet de **Théorie des Langages**, d
 </tr>
 </thead>
 <tbody> 
-<tr class="bloc-header">
+<tr class="bloc-headerMPI">
 <td colspan="3">Cours</td> </tr>
 <tr> <td>Cours 01</td> <td><a href="#">Introductions et Relations et lois</a></td> <td>Quelques bases, relations, lois de composition interne</td> </tr>
 <tr class="bloc-header">
