@@ -87,7 +87,7 @@
 				\end{align*}
 				$$</li>
                 <li>$$
-                \beging{align*}
+                \begin{align*}
                  \mathcal{E}_2 : \mathbb{Q} &\to \mathbb{Z} \\ \frac{p}{q}& \mapsto p 
                 \end{align*} $$</li>
                 <li>$$ \begin{align*}
