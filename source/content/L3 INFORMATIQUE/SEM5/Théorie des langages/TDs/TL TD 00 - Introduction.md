@@ -535,7 +535,7 @@ Puisque $G$ n'est pas associative *(Démontré à la question 2)* alors $G$ n'es
   </div>
 Pour toute partie \(P\) de \(M\) il existe un plus petit sous-monoïde \(X\) de \(M\) contenant \(P\). On l'appelle <span class="mot-cle">sous-monoïde</span> de \(M\) engendré par \(P\). On dit alors que \(P\) est un ensemble de générateur de \(X\).
   <ol class="exo-questions">
-    <li>Montrer que, pour tout \(k\) strictement positif, \(\{1, 2, 3, \ldots, k\}\) est un ensemble de générateur de \(\mathbb{N}, +)\).</li>
-    <li>Montrer que l'ensemble des nombres entiers premiers est un ensemble générateur de  \(\mathbb{N}\backslash \{0\}, \times)\).</li>
+    <li>Montrer que, pour tout \(k\) strictement positif, \(\{1, 2, 3, \ldots, k\}\) est un ensemble de générateur de \((\mathbb{N}, +)\).</li>
+    <li>Montrer que l'ensemble des nombres entiers premiers est un ensemble générateur de  \((\mathbb{N}\backslash \{0\}, \times)\).</li>
   </ol>
 </div>
