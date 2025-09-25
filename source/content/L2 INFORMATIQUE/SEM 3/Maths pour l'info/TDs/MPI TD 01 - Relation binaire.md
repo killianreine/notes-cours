@@ -109,9 +109,64 @@
     </div>
     <p>Les relations données par les graphes ci-dessous sont-elles réflexives, symétriques, antisymétriques, transitives ?<br>
     Sont-elles d'ordre ou d'équivalence ?</p>
-    <div class="warning-box">
-        <strong>Note :</strong> Les graphes ne sont pas reproduits ici mais doivent être analysés selon les propriétés des relations.
-    </div>
+    <div class="tikz-block">
+    <script type="text/tikz">
+\begin{tikzpicture}
+  % Noeuds
+  \node[shape=circle,draw=black] (A) at (0,2) {A};
+  \node[shape=circle,draw=black] (B) at (0,4) {B};
+  \node[shape=circle,draw=black] (D) at (2,2) {D};
+  \node[shape=circle,draw=black] (C) at (2,4) {C};
+  % Arêtes
+  \path[->,thick] (A) edge node[above] {} (D);
+  \path[->,thick] (B) edge node[above] {} (D);
+  \path[->,thick] (A) edge[bend right=15] node[above] {} (B);
+  \path[->,thick] (B) edge[bend right=15] node[above] {} (A);
+  \path[->,thick] (A) edge[loop left] node[left] {} (A);
+  \path[->,thick] (B) edge[loop left] node[left] {} (B);
+  \path[->,thick] (C) edge[loop right] node[left] {} (C);
+  \path[->,thick] (D) edge[loop right] node[left] {} (D);
+\end{tikzpicture}
+    </script>
+  </div>
+  <div class="tikz-block">
+    <script type="text/tikz">
+\begin{tikzpicture}
+  % Noeuds
+  \node[shape=circle,draw=black] (C) at (0,2) {C};
+  \node[shape=circle,draw=black] (B) at (0,4) {B};
+  \node[shape=circle,draw=black] (A) at (2,3) {A};
+  % Arêtes
+  \path[->,thick] (A) edge[bend right=15] node[above] {} (B);
+  \path[->,thick] (B) edge[bend right=15] node[above] {} (A);
+  \path[->,thick] (A) edge[bend right=15] node[above] {} (C);
+  \path[->,thick] (C) edge[bend right=15] node[above] {} (A);
+  \path[->,thick] (A) edge[loop right] node[left] {} (A);
+  \path[->,thick] (B) edge[loop left] node[left] {} (B);
+  \path[->,thick] (C) edge[loop left] node[left] {} (C);
+\end{tikzpicture>
+    </script>
+  </div>
+  <div class="tikz-block">
+    <script type="text/tikz">
+\begin{tikzpicture}
+  % Noeuds
+  \node[shape=circle,draw=black] (A) at (0,2) {A};
+  \node[shape=circle,draw=black] (B) at (1,4) {B};
+  \node[shape=circle,draw=black] (C) at (2,2) {C};
+  % Arêtes
+  \path[->,thick] (A) edge[bend right=15] node[above] {} (B);
+  \path[->,thick] (B) edge[bend right=15] node[above] {} (A);
+  \path[->,thick] (C) edge[bend right=15] node[above] {} (B);
+  \path[->,thick] (B) edge[bend right=15] node[above] {} (C);
+  \path[->,thick] (A) edge[bend right=15] node[above] {} (C);
+  \path[->,thick] (C) edge[bend right=15] node[above] {} (A);
+  \path[->,thick] (A) edge[loop left] node[left] {} (A);
+  \path[->,thick] (B) edge[loop left] node[left] {} (B);
+  \path[->,thick] (C) edge[loop right] node[left] {} (C);
+\end{tikzpicture}
+    </script>
+  </div>
 </div>
 <div class="section-title" style="font-size: 18px; margin-top: 10px;">Propriété des relations</div>
 <div class="consigne_exo">

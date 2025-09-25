@@ -50,6 +50,8 @@ export default (() => {
           <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
           </script>
+           <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css"/>
+          <script src="https://tikzjax.com/v1/tikzjax.js"></script>
       </head>
     )
   }
