@@ -86,9 +86,18 @@
                 \mathcal{E}_1 : \mathbb{R} &\to \mathbb{R} \\ x &\mapsto \sqrt{x} 
 				\end{align*}
 				$$</li>
-                <li>\( E_2 : \mathbb{Q} \to \mathbb{Z} \), \( \frac{p}{q} \mapsto p \)</li>
-                <li>\( E_3 : \mathbb{R} \to \{-1, 0, 1\} \), \( x \mapsto \begin{cases} -1 & \text{si } x < 0 \\ 0 & \text{si } x = 0 \\ 1 & \text{si } x > 0 \end{cases} \)</li>
-                <li>\( E_4 : \{x \in \mathbb{Z} | x \bmod 2 = 0\} \to \mathbb{Z} \), \( n \mapsto \frac{n}{2} \)</li>
+                <li>$$
+                \beging{align*}
+                 \mathcal{E}_2 : \mathbb{Q} &\to \mathbb{Z} \\ \frac{p}{q}& \mapsto p 
+                \end{align*} $$</li>
+                <li>$$ \begin{align*}
+                \mathcal{E}_3 : \mathbb{R} &\to \{-1, 0, 1\} \\ x &\mapsto \begin{cases} -1 & \text{si } x < 0 \\ 0 & \text{si } x = 0 \\ 1 & \text{si } x > 0 \end{cases}
+                \end{align*}
+				$$ </li>
+                <li> $$ \begin{align*}\\
+					\mathcal{E}_4 : \{x \in \mathbb{Z} | x \bmod 2 = 0\} &\to \mathbb{Z} \\ n &\mapsto \frac{n}{2} \\
+				\end{align*}
+				$$</li>
             </ol>
         </li>
     </ol>
