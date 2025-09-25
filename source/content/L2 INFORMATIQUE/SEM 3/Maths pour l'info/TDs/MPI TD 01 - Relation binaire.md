@@ -42,7 +42,9 @@
         <span class="exo-title">Démontrer une propriété</span>
     </div>
     <p>Soient E un ensemble et \( A, B \subseteq E \). On considère la relation \( R_e \) suivante :<br>
-    \( A R_e B \Leftrightarrow A \subset B \)</p>
+    $$
+    A R_e B \Leftrightarrow A \subset B
+    $$</p>
     <ol class="exo-questions">
         <li>Montrer que \( R_e \) est une <span class="mot-cle">relation d'ordre</span>.</li>
     </ol>
@@ -80,8 +82,9 @@
         <li>Déterminer si les applications suivantes sont bien définies. Justifier le cas échéant.
             <ol>
                 <li>
-                $$
+                $$ \begin{align*}
                 \mathcal{E}_1 : \mathbb{R} &\to \mathbb{R} \\ x &\mapsto \sqrt{x} 
+				\end{align*}
 				$$</li>
                 <li>\( E_2 : \mathbb{Q} \to \mathbb{Z} \), \( \frac{p}{q} \mapsto p \)</li>
                 <li>\( E_3 : \mathbb{R} \to \{-1, 0, 1\} \), \( x \mapsto \begin{cases} -1 & \text{si } x < 0 \\ 0 & \text{si } x = 0 \\ 1 & \text{si } x > 0 \end{cases} \)</li>
@@ -194,11 +197,15 @@
         <span class="exo-title">Relations avancées</span>
     </div>
     <ol class="exo-questions">
-        <li>Soit R la relation binaire définie sur \( \mathbb{Z} \) par :<br>
-        \( \forall (a, b) \in \mathbb{Z}^2, \; aRb \Leftrightarrow a - b \text{ est pair} \)<br>
+        <li>Soit R la relation binaire définie sur \( \mathbb{Z} \) par :
+        $$
+        \forall (a, b) \in \mathbb{Z}^2, \; aRb \Leftrightarrow a - b \text{ est pair}
+        $$
         Montrer que R est une relation d'équivalence et déterminer ses différentes classes d'équivalences.</li>
-        <li>Soit \( n \in \mathbb{N}^* \). Soit \( R_n \) une relation binaire définie sur \( \mathbb{Z} \) par :<br>
-        \( \forall (a, b) \in \mathbb{Z}^2, \; aRb \Leftrightarrow n \text{ divise } a - b \)<br>
+        <li>Soit \( n \in \mathbb{N}^* \). Soit \( R_n \) une relation binaire définie sur \( \mathbb{Z} \) par :
+        $$
+         \forall (a, b) \in \mathbb{Z}^2, \; aRb \Leftrightarrow n \text{ divise } a - b 
+         $$
         Montrer que \( R_n \) est une relation d'équivalence et déterminer ses différentes classes d'équivalences.</li>
     </ol>
 </div>
