@@ -144,7 +144,7 @@
   \path[->,thick] (A) edge[loop right] node[left] {} (A);
   \path[->,thick] (B) edge[loop left] node[left] {} (B);
   \path[->,thick] (C) edge[loop left] node[left] {} (C);
-\end{tikzpicture>
+\end{tikzpicture}
     </script>
   </div>
   <div class="tikz-block">
