@@ -35,5 +35,7 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
 <td colspan="3">TDs</td> </tr>
 <tr> <td>TD 01</td> <td><a href="MPI TD 01 - Relation binaire">TD01</a></td> <td>Notions préliminaires, théorie des ensembles, relations binaires, clôtures, matrices</td> </tr><tr>
 </tr>
+<tr> <td>TD 02</td> <td><a href="MPI TD 02 - Introductions aux graphes">TD02</a></td> <td>Notions d'introductions aux graphes</td> </tr><tr>
+</tr>
 </tbody> </table> </div>
 
