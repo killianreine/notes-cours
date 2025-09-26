@@ -1,5 +1,21 @@
 # Application directe au cours
-On souhaite écrire un programme en langage C permettant de dessiner des formes géométriques comme le carré, le rectangle et le triangle. Nous allons utiliser un module personnalisé *(une bibliothèque)*.  
+On souhaite écrire un programme en langage C permettant de dessiner des formes géométriques comme le carré, le rectangle et le triangle. Nous allons utiliser un module personnalisé *(une bibliothèque)*.   
+Voici un rendu de ce que l'on souhaite : 
+```
+* * * *
+* * * *
+* * * *
+  
+* * * *
+* * * *
+* * * *
+* * * *
+
+*  
+* *
+* * *
+* * * *
+```
 Vous allez commencez par créer trois fichiers pour que l'arborescence de votre projet ressemble à ceci : 
 ```
 |- main.c
