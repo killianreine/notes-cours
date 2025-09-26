@@ -124,6 +124,11 @@ Table des matières complète : [[Prog C - Table des matières]]
       <td><a href="TP - Modularité du code">TP sur la modularité</a></td>
       <td></td>
     </tr>
+    <tr>
+      <td>Séance 4</td>
+      <td><a href="TP - Tableaux statiques">TP tableaux statiques</a></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 </div>
