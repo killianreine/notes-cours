@@ -78,6 +78,20 @@
             }
           },
           {
+            "id": "1f911e689e3b60dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00 - Home - ProgC"
+            }
+          },
+          {
             "id": "7d89596034f733fb",
             "type": "leaf",
             "state": {
@@ -106,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -129,7 +143,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorateur de fichiers"
+              "title": "Files"
             }
           },
           {
@@ -243,7 +257,7 @@
               "type": "review-queue-list-view",
               "state": {},
               "icon": "SpacedRepIcon",
-              "title": "Cartes à apprendre"
+              "title": "Notes Review Queue"
             }
           },
           {
@@ -286,13 +300,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
-      "obsidian-spaced-repetition:Apprendre les flashcards": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "flashcards-obsidian:Generate flashcards": false,
@@ -300,10 +314,12 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "3bd7b66a00c5a77f",
+  "active": "1f911e689e3b60dc",
   "lastOpenFiles": [
-    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Modularité du code.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/readme TL.md",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/TDs/TL TD 00 - Introduction.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 01 - Relation binaire.md",
@@ -339,7 +355,6 @@
     "L3 INFORMATIQUE/SEM5/Théorie langages/Cours",
     "L3 INFORMATIQUE/SEM5/Théorie langages",
     "L1 MIPSI/Maquette L1.png",
-    "Emplois du temps",
     "L2 INFORMATIQUE/Maquette L2.png",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/memoireCASH.svg",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/compilation.svg",

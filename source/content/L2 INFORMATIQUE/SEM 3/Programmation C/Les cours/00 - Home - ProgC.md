@@ -119,6 +119,11 @@ Table des matières complète : [[Prog C - Table des matières]]
     </tr>
     <tr class="bloc-headerMPI">
 	<td colspan="3">TPs</td> </tr>
+	<tr>
+      <td>16</td>
+      <td><a href="TP - Modularité du code">TP sur la modularité</a></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 </div>
