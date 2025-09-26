@@ -120,7 +120,7 @@ Table des matières complète : [[Prog C - Table des matières]]
     <tr class="bloc-headerMPI">
 	<td colspan="3">TPs</td> </tr>
 	<tr>
-      <td>16</td>
+      <td>Séance 3</td>
       <td><a href="TP - Modularité du code">TP sur la modularité</a></td>
       <td></td>
     </tr>
