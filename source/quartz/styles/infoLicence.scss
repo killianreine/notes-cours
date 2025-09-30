@@ -1,62 +1,164 @@
 /* =========================== 
-   CSS Ultra-Moderne pour Site de Notes de Cours
-   Design System 2025 - Version Premium
+   SCSS Ultra-Moderne pour Site de Notes de Cours
+   Architecture Premium 2025 - Design System Avancé
    =========================== */
 
+// =========================== Mixins Avancés ===========================
+@mixin glass-morphism($opacity: 0.8, $blur: 20px) {
+  background: rgba(255, 255, 255, $opacity);
+  backdrop-filter: blur($blur) saturate(180%);
+  -webkit-backdrop-filter: blur($blur) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-/* =========================== Variables Design System =========================== */
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin hover-lift($distance: 4px, $shadow: null) {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  
+  &:hover {
+    transform: translateY(-#{$distance});
+    @if $shadow {
+      box-shadow: $shadow;
+    } @else {
+      box-shadow: var(--shadow-xl);
+    }
+  }
+}
+
+@mixin focus-ring($color: var(--primary-500), $offset: 2px) {
+  &:focus, &:focus-within {
+    outline: 2px solid $color;
+    outline-offset: $offset;
+    border-radius: var(--radius-sm);
+  }
+}
+
+@mixin animate-in($animation: fadeInUp, $duration: 0.6s, $delay: 0s) {
+  animation: $animation $duration ease-out $delay backwards;
+}
+
+@mixin responsive-text($min, $preferred, $max) {
+  font-size: clamp(#{$min}, #{$preferred}, #{$max});
+}
+
+@mixin flex-center($direction: row, $gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @if $gap != 0 {
+    gap: $gap;
+  }
+  @if $direction != row {
+    flex-direction: $direction;
+  }
+}
+
+@mixin grid-auto-fit($min-width: 250px, $gap: var(--space-lg)) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: $gap;
+}
+
+@mixin shimmer-effect($duration: 3s) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    animation: shimmer $duration infinite;
+  }
+}
+
+// =========================== Variables Design System ===========================
 :root {
-  /* Palette principale - Couleurs vibrantes et modernes */
+  // Gradients Premium
   --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --success-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
   --warning-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  --danger-gradient: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+  --info-gradient: linear-gradient(135deg, #667eea 0%, #06b6d4 100%);
   
-  /* Couleurs de base */
+  // Palette étendue
+  --primary-400: #8192f0;
   --primary-500: #667eea;
   --primary-600: #5a6fd8;
   --primary-700: #4c63d2;
-  --secondary-500: #f093fb;
-  --accent-500: #4facfe;
-  --success-500: #43e97b;
-  --warning-500: #fa709a;
+  --primary-800: #3d4fb8;
   
-  /* Système de couleurs sémantiques */
+  --secondary-400: #f5a6fc;
+  --secondary-500: #f093fb;
+  --secondary-600: #e580ea;
+  --secondary-700: #d66bd9;
+  
+  --accent-400: #62bcff;
+  --accent-500: #4facfe;
+  --accent-600: #3b9aed;
+  --accent-700: #2885dc;
+  
+  --success-400: #56eb88;
+  --success-500: #43e97b;
+  --success-600: #30d768;
+  --success-700: #1dc555;
+  
+  --warning-400: #fb85ac;
+  --warning-500: #fa709a;
+  --warning-600: #f95c88;
+  --warning-700: #f84776;
+  
+  // Couleurs sémantiques
   --text-primary: #0f172a;
   --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-tertiary: #64748b;
+  --text-muted: #94a3b8;
   --text-inverse: #ffffff;
   
-  /* Backgrounds avec nuances subtiles */
+  // Backgrounds sophistiqués
   --bg-canvas: #fdfefe;
   --bg-surface: #ffffff;
   --bg-surface-elevated: #f8fafc;
   --bg-surface-hover: #f1f5f9;
   --bg-glass: rgba(255, 255, 255, 0.8);
+  --bg-overlay: rgba(0, 0, 0, 0.5);
   
-  /* Borders et dividers */
+  // Borders
   --border-primary: #e2e8f0;
   --border-secondary: #cbd5e1;
   --border-focus: var(--primary-500);
+  --border-subtle: rgba(0, 0, 0, 0.05);
   
-  /* Ombres modernes avec depth */
+  // Shadows avec profondeur
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
   --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 20px rgba(0, 0, 0, 0.08);
   --shadow-glow: 0 0 30px rgba(102, 126, 234, 0.3);
+  --shadow-glow-intense: 0 0 50px rgba(102, 126, 234, 0.5);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
   
-  /* Radiuses avec échelle harmonieuse */
+  // Border Radius harmonieux
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
+  --radius-2xl: 32px;
   --radius-full: 9999px;
   
-  /* Espacements */
+  // Espacements
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -64,37 +166,61 @@
   --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
+  --space-4xl: 6rem;
   
-  /* Typographie */
-  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  // Typographie
+  --font-sans: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+  --font-display: 'Geist', 'Cal Sans', system-ui, sans-serif;
   
-  /* Transitions fluides */
+  // Transitions fluides
   --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-elastic: 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  
+  // Z-index scale
+  --z-base: 1;
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
 }
 
-/* =========================== Mode Sombre Premium =========================== */
+// =========================== Mode Sombre Premium ===========================
 [saved-theme="dark"] {
   --primary-gradient: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
   --secondary-gradient: linear-gradient(135deg, #ec4899 0%, #f59e0b 100%);
   --accent-gradient: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
   --success-gradient: linear-gradient(135deg, #34d399 0%, #06b6d4 100%);
   --warning-gradient: linear-gradient(135deg, #f472b6 0%, #fbbf24 100%);
+  --danger-gradient: linear-gradient(135deg, #ef4444 0%, #fb923c 100%);
+  --info-gradient: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
   
+  --primary-400: #a78bfa;
   --primary-500: #8b5cf6;
   --primary-600: #7c3aed;
   --primary-700: #6d28d9;
+  --primary-800: #5b21b6;
+  
+  --secondary-400: #f472b6;
   --secondary-500: #ec4899;
+  --secondary-600: #db2777;
+  --secondary-700: #be185d;
+  
+  --accent-400: #34d399;
   --accent-500: #10b981;
-  --success-500: #34d399;
-  --warning-500: #f472b6;
+  --accent-600: #059669;
+  --accent-700: #047857;
   
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
+  --text-tertiary: #94a3b8;
+  --text-muted: #64748b;
   --text-inverse: #0f172a;
   
   --bg-canvas: #020617;
@@ -102,19 +228,103 @@
   --bg-surface-elevated: #1e293b;
   --bg-surface-hover: #334155;
   --bg-glass: rgba(15, 23, 42, 0.8);
+  --bg-overlay: rgba(0, 0, 0, 0.7);
   
   --border-primary: #334155;
   --border-secondary: #475569;
+  --border-subtle: rgba(255, 255, 255, 0.05);
   
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.3);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.2);
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.7), 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.8), 0 10px 10px rgba(0, 0, 0, 0.3);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.9), 0 15px 20px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.4);
+  --shadow-glow-intense: 0 0 60px rgba(139, 92, 246, 0.6);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* =========================== Structure Principale =========================== */
+// =========================== Animations Keyframes ===========================
+@keyframes shimmer {
+  0%, 100% { left: -100%; }
+  50% { left: 100%; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 1; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.8; 
+    transform: scale(1.02);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+  }
+  50% {
+    box-shadow: var(--shadow-xl), var(--shadow-glow-intense);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+// =========================== Structure Principale ===========================
 .bodyINFOLI {
   font-family: var(--font-sans);
   background: var(--bg-canvas);
@@ -126,276 +336,440 @@
   padding: var(--space-lg);
   transition: all var(--transition-base);
   position: relative;
+  
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 25% 25%, rgba(102, 126, 234, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(240, 147, 251, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+    animation: float 20s ease-in-out infinite;
+  }
+  
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(102, 126, 234, 0.02) 2px, rgba(102, 126, 234, 0.02) 4px);
+    pointer-events: none;
+    z-index: -1;
+  }
 }
 
-.bodyINFOLI::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 25% 25%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* =========================== Header Héroïque Restructuré =========================== */
+// =========================== Header Héroïque ===========================
 .headerINFOLI {
+  @include glass-morphism(0.1, 30px);
   background: var(--primary-gradient);
   color: var(--text-inverse);
-  padding: var(--space-3xl) var(--space-2xl);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-xl), var(--shadow-glow);
+  padding: var(--space-4xl) var(--space-2xl);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-2xl), var(--shadow-glow);
   position: relative;
   overflow: hidden;
-  margin-bottom: var(--space-2xl);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: var(--space-3xl);
   text-align: center;
-}
-
-.headerINFOLI::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-  transition: left 2s ease-in-out;
-  animation: shimmer 3s infinite;
-}
-
-.headerINFOLI::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
-  border-radius: var(--radius-full);
-}
-
-@keyframes shimmer {
-  0% { left: -100%; }
-  50% { left: 100%; }
-  100% { left: 100%; }
+  
+  @include shimmer-effect(4s);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);
+    border-radius: var(--radius-full);
+    animation: pulse 3s infinite;
+  }
+  
+  .descriptionINFOLI {
+    @include responsive-text(1rem, 2vw, 1.3rem);
+    font-weight: 400;
+    opacity: 0.95;
+    margin-top: var(--space-lg);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    
+    @include animate-in(fadeInUp, 0.8s, 0.3s);
+  }
 }
 
 .titleINFOLI {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  @include responsive-text(2rem, 5vw, 4rem);
+  font-family: var(--font-display);
   font-weight: 900;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
   margin: 0 0 var(--space-sm);
-  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: none;
+  @include gradient-text(linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.85) 100%));
   position: relative;
   display: inline-block;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  
+  @include animate-in(fadeInUp, 0.8s, 0.1s);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: rgba(255,255,255,0.5);
+    border-radius: var(--radius-full);
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+  }
 }
 
-.titleINFOLI::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 2px;
-  background: rgba(255,255,255,0.4);
-  border-radius: var(--radius-full);
-}
-
-/* Sous-titre du header pour description */
-.headerINFOLI .descriptionINFOLI {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 400;
-  opacity: 0.9;
-  margin-top: var(--space-md);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
-}
-
-/* =========================== Sous-titres de Section Repensés =========================== */
+// =========================== Sous-titres de Section ===========================
 .subtitleINFOLI {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  @include responsive-text(1.5rem, 3vw, 2.25rem);
   font-weight: 700;
   color: var(--text-primary);
-  margin: var(--space-2xl) 0 var(--space-lg);
+  margin: var(--space-3xl) 0 var(--space-xl);
   position: relative;
-  padding-left: var(--space-lg);
-  border-left: 4px solid var(--primary-500);
-  background: linear-gradient(90deg, var(--bg-surface-elevated), transparent);
-  padding-top: var(--space-md);
-  padding-bottom: var(--space-md);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-lg) var(--space-xl);
+  padding-left: var(--space-2xl);
+  background: linear-gradient(90deg, var(--bg-surface-elevated) 0%, transparent 100%);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  border-left: 5px solid transparent;
+  
+  @include animate-in(slideInLeft, 0.6s);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: var(--primary-gradient);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-glow);
+    transition: all var(--transition-base);
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--space-2xl);
+    right: var(--space-lg);
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-500) 0%, transparent 100%);
+    opacity: 0.5;
+  }
+  
+  &:hover {
+    padding-left: calc(var(--space-2xl) + var(--space-sm));
+    background: linear-gradient(90deg, var(--bg-surface-elevated) 0%, var(--bg-surface-hover) 50%, transparent 100%);
+    
+    &::before {
+      box-shadow: var(--shadow-glow-intense);
+      width: 6px;
+      left: -6px;
+    }
+  }
 }
 
-.subtitleINFOLI::before {
-  content: '';
-  position: absolute;
-  left: -4px;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: var(--primary-gradient);
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-glow);
-}
-
-.subtitleINFOLI::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: var(--space-lg);
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, var(--primary-500) 0%, transparent 100%);
-}
-
-/* =========================== Cards UE Ultra-Modernes =========================== */
+// =========================== Cards UE Ultra-Modernes ===========================
 .ueINFOLI {
   background: var(--bg-surface);
   border: 1px solid var(--border-primary);
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl);
-  margin: var(--space-lg) 0;
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  margin: var(--space-xl) 0;
   box-shadow: var(--shadow-sm);
-  transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
-}
-
-.ueINFOLI::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--primary-gradient);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-base);
-}
-
-.ueINFOLI:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-xl);
-  border-color: var(--primary-500);
-  background: var(--bg-surface-elevated);
-}
-
-.ueINFOLI:hover::before {
-  transform: scaleX(1);
+  @include glass-morphism(1, 10px);
+  
+  @include animate-in(fadeInUp);
+  @include hover-lift(6px, var(--shadow-2xl));
+  @include focus-ring();
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-gradient);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-slow);
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-gradient);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+  
+  &:hover {
+    border-color: var(--primary-500);
+    background: var(--bg-surface-elevated);
+    
+    &::before {
+      transform: scaleX(1);
+    }
+    
+    &::after {
+      opacity: 0.03;
+    }
+  }
+  
+  &:nth-child(even) {
+    @include animate-in(slideInRight);
+  }
 }
 
 .ue-titleINFOLI {
-  font-size: 1.25rem;
+  @include responsive-text(1.15rem, 2vw, 1.4rem);
   font-weight: 700;
   color: var(--primary-500);
-  margin: 0 0 var(--space-md);
-  letter-spacing: -0.01em;
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+  margin: 0 0 var(--space-lg);
+  letter-spacing: -0.02em;
+  @include flex-center(row, var(--space-sm));
+  justify-content: flex-start;
+  transition: all var(--transition-base);
+  
+  &::before {
+    content: '📚';
+    font-size: 1.2rem;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .ueINFOLI:hover & {
+    color: var(--primary-600);
+    transform: translateX(4px);
+  }
 }
 
-.ue-titleINFOLI::before {
-  content: '📚';
-  font-size: 1rem;
-}
-
-/* =========================== Listes UEP Élégantes =========================== */
+// =========================== Listes UEP Élégantes ===========================
 .uep-listINFOLI {
   list-style: none;
-  margin: var(--space-md) 0 0;
+  margin: var(--space-lg) 0 0;
   padding: 0;
   display: grid;
-  gap: var(--space-sm);
+  gap: var(--space-md);
+  
+  li {
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-surface-hover);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--accent-500);
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all var(--transition-base);
+    position: relative;
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    cursor: pointer;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--accent-gradient);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
+    
+    &:hover {
+      transform: translateX(8px);
+      background: var(--bg-surface-elevated);
+      border-left-color: transparent;
+      color: var(--text-primary);
+      box-shadow: var(--shadow-md);
+      
+      &::before {
+        opacity: 1;
+      }
+    }
+    
+    &:active {
+      transform: translateX(6px) scale(0.98);
+    }
+  }
 }
 
-.uep-listINFOLI li {
-  padding: var(--space-sm) var(--space-md);
-  background: var(--bg-surface-hover);
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--accent-500);
-  color: var(--text-secondary);
-  font-weight: 500;
-  transition: all var(--transition-fast);
-  position: relative;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-}
-
-.uep-listINFOLI li:hover {
-  transform: translateX(4px);
-  background: var(--bg-surface-elevated);
-  border-left-color: var(--primary-500);
-  color: var(--text-primary);
-}
-
-/* =========================== Tableaux Futuristes =========================== */
+// =========================== Tableaux Futuristes ===========================
 .ue-table {
   width: 100%;
-  max-width: 1200px;
-  margin: var(--space-2xl) auto;
+  max-width: 1400px;
+  margin: var(--space-3xl) auto;
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   overflow: hidden;
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-2xl);
   background: var(--bg-surface);
   position: relative;
+  
+  @include animate-in(fadeInUp, 0.8s, 0.2s);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-gradient);
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  thead {
+    position: relative;
+    z-index: 1;
+    
+    th {
+      background: var(--primary-gradient);
+      color: var(--text-inverse);
+      padding: var(--space-xl) var(--space-2xl);
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: left;
+      position: relative;
+      border: none;
+      white-space: nowrap;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, rgba(255,255,255,0.4), transparent);
+      }
+      
+      &:first-child {
+        border-top-left-radius: var(--radius-2xl);
+      }
+      
+      &:last-child {
+        border-top-right-radius: var(--radius-2xl);
+      }
+    }
+  }
+  
+  tbody {
+    position: relative;
+    z-index: 1;
+    
+    td {
+      padding: var(--space-xl) var(--space-2xl);
+      font-weight: 500;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-primary);
+      transition: all var(--transition-base);
+      position: relative;
+      
+      em {
+        font-style: normal;
+        color: var(--text-muted);
+        background: var(--bg-surface-elevated);
+        padding: var(--space-xs) var(--space-md);
+        border-radius: var(--radius-sm);
+        font-size: 0.875rem;
+        font-family: var(--font-mono);
+        border: 1px solid var(--border-subtle);
+        font-weight: 500;
+        transition: all var(--transition-fast);
+        
+        &:hover {
+          background: var(--primary-gradient);
+          color: var(--text-inverse);
+          border-color: transparent;
+          transform: scale(1.05);
+        }
+      }
+    }
+    
+    tr {
+      &:nth-child(even):not(.bloc-header) td {
+        background: var(--bg-surface-elevated);
+      }
+      
+      &:not(.bloc-header) {
+        &:hover td {
+          background: var(--bg-surface-hover);
+          transform: scale(1.005);
+          box-shadow: inset 5px 0 0 var(--primary-500);
+          
+          &:first-child {
+            border-top-left-radius: var(--radius-md);
+            border-bottom-left-radius: var(--radius-md);
+          }
+          
+          &:last-child {
+            border-top-right-radius: var(--radius-md);
+            border-bottom-right-radius: var(--radius-md);
+          }
+        }
+        
+        &:last-child td {
+          border-bottom: none;
+          
+          &:first-child {
+            border-bottom-left-radius: var(--radius-2xl);
+          }
+          
+          &:last-child {
+            border-bottom-right-radius: var(--radius-2xl);
+          }
+        }
+      }
+    }
+  }
 }
 
-.ue-table::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--primary-gradient);
-  opacity: 0.02;
-  pointer-events: none;
+// Blocs BLOC/UEP avec effet néon avancé
+.bloc-header td {
+  background: var(--secondary-gradient) !important;
+  color: var(--text-inverse) !important;
+  text-align: center;
+  font-weight: 800;
+  padding: var(--space-xl) var(--space-2xl);
+  border-radius: var(--radius-lg);
+  margin: var(--space-lg);
 }
-
-/* Header du tableau avec glassmorphism */
-.ue-table thead th {
-  background: var(--primary-gradient);
-  color: var(--text-inverse);
-  padding: var(--space-lg) var(--space-xl);
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-align: left;
-  position: relative;
-  border: none;
-}
-
-.ue-table thead th::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.3), transparent);
-}
-
-/* Blocs BLOC/UEP avec effet néon */
+  /* Blocs BLOC/UEP avec effet néon */
 .bloc-header td {
   background: var(--secondary-gradient) !important;
   color: var(--text-inverse) !important;
