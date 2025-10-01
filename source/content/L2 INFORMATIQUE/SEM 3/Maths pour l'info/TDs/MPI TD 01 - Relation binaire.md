@@ -341,7 +341,7 @@
         <li>Écrire les algorithmes de calcul des clôtures réflexives, symétriques et transitives.</li>
     </ol>
 </div>
-<div class="section-title" style="font-size: 18px; margin-top: 10px;">Les relations d'ordre, les diagramme de Hasse</div>
+<div class="section-title" style="font-size: 18px; margin-top: 10px;">Les relations d'ordre, les diagrammes de Hasse</div>
 <div class="consigne_exo">
     <div class="exo-header">
         <span class="exo-num">16</span>
@@ -354,6 +354,17 @@ $$
     <ol class="exo-questions">
         <li>Vérifier que les relations \(R\) et \(S\) sont des relations d'ordre.</li>
         <li>Représentez les relations par un graphe puis donner leur diagramme de Hasse associé.</li>
+    </ol>
+</div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">17</span>
+        <span class="exo-title">Relations divise \( | \)</span>
+    </div>
+    <ol class="exo-questions">
+        <li>Soit \( A = \{3, 6, 12, 24, 72\} \). Représenter le diagramme de Hasse de \((A, |)\) où \( | \) est la relation <i>divise</i>.</li>
+        <li>Même question avec \( A = \{ 1, 2, 3, 4, 5, 6, 10, 12, 15, 30, 60\} \)</li>
+        <li>Soit \(A=\{2, 3, 4, 12\}\). Représenter le diagramme du produit des ensembles ordonnés \((A, |)\) et \((A, \leq)\).</li>
     </ol>
 </div>
 </div>
