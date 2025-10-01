@@ -21,5 +21,21 @@
         <li>Si un bar est fermé, que ce passe t-il ?</li>
     </ol>
 </div>
+
+<div class="section-title">Vocabulaire de base concernant les graphes</div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">1</span>
+        <span class="exo-title"></span>
+    </div>
+    <ol class="exo-questions">
+        <li>Construire le graphe correspondant au diagramme de Hasse de \((D_{135}, |)\).</li>
+        <li>Donner les propriétés de ce graphe.</li>
+        <li>Donner le degré de chaque sommet. Calculer la somme de ces degrés.</li>
+        <li>Énumérer les cycles de longueurs \(4\), \(6\) et \(8\).</li>
+        <li>Est-ce un arbre ? Si oui quel est son degré maximal ? Si non, construire l'arbre couvrant.</li>
+    </ol>
+</div>
+
 </div>
 
