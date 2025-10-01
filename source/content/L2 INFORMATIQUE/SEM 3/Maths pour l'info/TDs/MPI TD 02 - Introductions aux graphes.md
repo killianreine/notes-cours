@@ -12,7 +12,7 @@
     <br/><u>Problématique :</u> Comment modéliser ce problème ?
     <ol class="exo-questions">
         <li>Faites la liste des amis avec qui vous allez faire la tournée des bars (les alcooliques là... on vous voit).</li>
-        <li>On considère un ensemble \(B_ar = \{b_1, b_2, b_3b \ldots, b_n\}\) qui contient de nom de \(n-\)bars.<br/>En théorie des graphes, que représente l'ensemble \(B_ar\) ?</li>
+        <li>On considère un ensemble \(B_{ar} = \{b_1, b_2, b_3b \ldots, b_n\}\) qui contient de nom de \(n-\)bars.<br/>En théorie des graphes, que représente l'ensemble \(B_{ar}\) ?</li>
     </ol>
 </div>
 </div>
