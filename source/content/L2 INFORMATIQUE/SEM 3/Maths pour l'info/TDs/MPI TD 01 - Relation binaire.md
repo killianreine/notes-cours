@@ -403,4 +403,62 @@ $$
   </div>
   </div>
 </div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">19</span>
+        <span class="exo-title">Éléments maximaux, minimaux, maximal, minimal, majorant, minorant, supremum, infimum</span>
+    </div>
+    <ol class="exo-questions">
+        <li>
+	        On considère l'ensemble \(A=\{1, 2, 3, 4, 5, 6, 7, 8, 9\}\) muni d'une relation d'ordre définie par le diagramme de Hasse suivant : 
+	        <div class="graphTikzTD1">
+		    <div class="tikz-block">
+		    <script type="text/tikz">
+	\begin{tikzpicture}[scale=2, every node/.style={font=\normalsize}]
+  \node (1) at (0,2) {1};
+  \node (2) at (-1,1) {2};
+  \node (5) at (1,1) {5};
+  \node (4) at (0,0.5) {4};
+  \node (3) at (-1,-0.5) {3};
+  \node (6) at (0,-0.5) {6};
+  \node (7) at (1,0) {7};
+  \node (8) at (-0.5,-1.5) {8};
+  \node (9) at (0.5,-1.5) {9};
+  % Arêtes
+  \draw (1) -- (2);
+  \draw (1) -- (5);
+  \draw (2) -- (4);
+  \draw (4) -- (3);
+  \draw (4) -- (6);
+  \draw (5) -- (4);
+  \draw (5) -- (7);
+  \draw (6) -- (8);
+  \draw (7) -- (9);
+  \draw (6) -- (9);
+\end{tikzpicture}
+</script>
+		    </div>
+		    </div>
+		    Pour chaque partie \(B\) de \(A\) ci-après, donner : Les éléments minimaux, maximaux, maximum, minimum. Les majorants et les minorants, ainsi que le supremum et l'infimum si ils existent.
+		    <ol>
+			    <li>\(B=\{2, 3, 4, 5, 6\}\)</li>
+			    <li>\(B=\{6,7\}\)</li>
+			    <li>\(B=\{2,4,6,9\}\)</li>
+			    <li>\(B=A\)</li>
+			    <li>\(B=\{4,5,7\}\)</li>
+			    <li>\(B=\{1,2,5\}\)</li>
+			</ol>
+	    </li>
+	    <li>
+		    Même question pour \(A=\mathbb{N}\) muni de la relation d'ordre \(|\).
+		    <ol>
+			    <li>\(B=\{1,2,3\}\)</li>
+			    <li>\(B=\{0,2,4,8\}\)</li>
+			    <li>\(B=\{4,6,8\}\)</li>
+			    <li>\(B=\{7\}\)</li>
+			    <li>\(B=3\mathbb{N}\)</li>
+		    </ol>
+	    </li>
+    </ol>
+</div>
 </div>
