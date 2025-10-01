@@ -379,10 +379,11 @@ $$
 $$
     </div>
     Représenter les diagrammes de Hasse de tous les tris topologiques que l'on peut construire à partir de la relation d'ordre définie par le diagramme de Hasse suivant : 
+    <br/>
     <div class="graphTikzTD1">
     <div class="tikz-block">
     <script type="text/tikz">
-\begin{tikzpicture}[scale=1, every node/.style={}]
+\begin{tikzpicture}[scale=2, every node/.style={}]
   \node (4) at (0,2) {4};
   \node (2) at (-2,1) {2};
   \node (6) at (2,1) {6};
