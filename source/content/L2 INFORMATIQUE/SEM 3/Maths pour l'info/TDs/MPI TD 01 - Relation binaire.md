@@ -341,4 +341,18 @@
         <li>Écrire les algorithmes de calcul des clôtures réflexives, symétriques et transitives.</li>
     </ol>
 </div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">16</span>
+        <span class="exo-title">Relations d'ordre</span>
+    </div>
+    Soit \( A = \{1, 2, 3, 4, 5\} \) un ensemble fini et \(R, S\) deux relations sur \(A\) décrites par les matrices booléennes suivantes : 
+    $$
+    M_R=\begin{pmatrix}1 & 0 & 0 & 0 & 0 \\ 1 & 1 & 0 & 1 & 0 \\ 1 & 1 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1\end{pmatrix} \hspace{1cm} M_S=\begin{pmatrix}1 & 0 & 1 & 1 & 0 \\ 0 & 1 & 1 & 1 & 0 \\ 0 & 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 1 & 1 & 1 & 1 & 1\end{pmatrix}
+$$
+    <ol class="exo-questions">
+        <li>Vérifier que les relations \(R\) et \(S\) sont des relations d'ordre.</li>
+        <li>Représentez les relations par un graphe puis donner leur diagramme de Hasse associé.</li>
+    </ol>
+</div>
 </div>

@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 02 - Introductions aux graphes.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 01 - Relation binaire.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MPI TD 02 - Introductions aux graphes"
+              "title": "MPI TD 01 - Relation binaire"
             }
           },
           {
@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -352,11 +352,11 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "df83d3f9f9bb37ab",
+  "active": "f9013d7feb9f4f63",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 02 - Introductions aux graphes.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 01 - Relation binaire.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
-    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 02 - Introductions aux graphes.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/00 - Home - ProgC.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Tableaux statiques.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Modularité du code.md",
