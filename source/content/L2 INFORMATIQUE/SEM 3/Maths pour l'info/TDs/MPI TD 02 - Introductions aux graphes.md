@@ -4,8 +4,8 @@
 <div class="section-title">Introduction générale aux graphes</div>
 <div class="consigne_exo">
     <div class="exo-header">
-        <span class="exo-num">1</span>
-        <span class="exo-title">Activité d'introcution</span>
+        <span class="exo-num">Activité d'introduction</span>
+        <span class="exo-title"></span>
     </div>
     On considère un groupe d'amis \(G\) <i>genre le tiens</i>. Vous venez sortir de l'amphi après le partiel de Maths pour l'info MPI. Une seule envie : DÉ-COM-PRE-SSER ! 
     <br/> Vous décidez alors de faire une activité golri : une tournée de tous les bars de la ville ! 
