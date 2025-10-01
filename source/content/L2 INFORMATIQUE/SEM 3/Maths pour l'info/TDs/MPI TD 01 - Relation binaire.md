@@ -382,7 +382,7 @@ $$
     <div class="graphTikzTD1">
     <div class="tikz-block">
     <script type="text/tikz">
-\begin{tikzpicture}[scale=1, every node/.style={circle, draw}]
+\begin{tikzpicture}[scale=1, every node/.style={draw}]
   \node (4) at (0,2) {4};
   \node (2) at (-2,1) {2};
   \node (6) at (2,1) {6};
