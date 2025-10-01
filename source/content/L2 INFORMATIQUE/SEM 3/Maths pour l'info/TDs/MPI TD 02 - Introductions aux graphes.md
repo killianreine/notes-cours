@@ -1,22 +1,19 @@
 <div>
 <div class="td-title">TD2</div>
-<div class="td-subtitle">INTRODUCTION AUX GRAPHES</div>
-<div class="section-title">1 Vocabulaires et définitions de base</div>
-<div class="section-title" style="font-size: 18px; margin-top: 10px;">Premiers pas</div>
-<div class="warning-box">
-        <strong>Définition :</strong> Un <span class="mot-cle">graphe</span> est représenté par un triplet \( G = (S, A, \phi ) \) tel que :
-        <ul>
-	        <li>\(S \) représente l'<b>ensemble des sommets</b>.</li>
-	        <li>\(A \) représente l'<b>ensemble des arrêtes</b>.</li>
-	        <li>\(\phi \) représente une <b>application</b> définie par 
-	        $$
-	        \begin{align*}
-	        \phi : A & \to \{S' \subset S \mid |S'|=2\} \\
-			a & \mapsto (s_{1},s_{2})
-			\end{align*}
-			$$
-			où \(s_1\) et \(s_2\) représentent deux sommets du graphe.
-	        </li>
-	    </ul>
+<div class="td-subtitle">THÉORIE DES GRAPHES</div>
+<div class="section-title">Introduction générale aux graphes</div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">1</span>
+        <span class="exo-title">Activité d'introcution</span>
     </div>
+    On considère un groupe d'amis \(G\) <i>genre le tiens</i>. Vous venez sortir de l'amphi après le partiel de Maths pour l'info MPI. Une seule envie : DÉ-COM-PRE-SSER ! 
+    <br/> Vous décidez alors de faire une activité golri : une tournée de tous les bars de la ville ! 
+    <br/><u>Problématique :</u> Comment modéliser ce problème ?
+    <ol class="exo-questions">
+        <li>Faites la liste des amis avec qui vous allez faire la tournée des bars (les alcooliques là... on vous voit).</li>
+        <li>On considère un ensemble \(B_ar = \{b_1, b_2, b_3b \ldots, b_n\}\) qui contient de nom de \(n-\)bars.<br/>En théorie des graphes, que représente l'ensemble \(B_ar\) ?</li>
+    </ol>
 </div>
+</div>
+
