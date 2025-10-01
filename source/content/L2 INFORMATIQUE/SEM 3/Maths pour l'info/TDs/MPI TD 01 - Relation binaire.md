@@ -341,6 +341,7 @@
         <li>Écrire les algorithmes de calcul des clôtures réflexives, symétriques et transitives.</li>
     </ol>
 </div>
+<div class="section-title" style="font-size: 18px; margin-top: 10px;">Les relations d'ordre, les diagramme de Hasse</div>
 <div class="consigne_exo">
     <div class="exo-header">
         <span class="exo-num">16</span>
