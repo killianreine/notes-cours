@@ -462,4 +462,18 @@ $$
 	    </li>
     </ol>
 </div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">20</span>
+        <span class="exo-title">Et si on s'amusait à démontrer des propriétés ?</span>
+    </div>
+    Soit \((A, \leq)\) un ensemble ordonné, \(B \subset A\) et \(a,b\in A\). On note \(major(B)\) l'<span class="mot-cle">ensemble des majorants</span> de \(B\). <br/>
+    Montrer que :
+    <ol class="exo-questions">
+        <li>\(a \in major(B) \quad \text{et} \quad a \leq b \Longrightarrow b \in major(B)\)</li>
+        <li>\(a \in B\cap major(B) \Longrightarrow a=max(B)\)</li>
+        <li>\(a = max(B)\Longrightarrow a=sup(B)\)</li>
+        <li>Si, de plus, \(A\) est fini, montrer que tout élément de \(A\) est inférieur ou égal à un élément maximal de \(A\).</li>
+    </ol>
+</div>
 </div>
