@@ -367,4 +367,39 @@ $$
         <li>Soit \(A=\{2, 3, 4, 12\}\). Représenter le diagramme du produit des ensembles ordonnés \((A, |)\) et \((A, \leq)\).</li>
     </ol>
 </div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">18</span>
+        <span class="exo-title">Tri topologique</span>
+    </div>
+    <div class="warning-box">
+        <strong>Définition :</strong>Soit \((A, \leq)\) un ensemble partiellement ordonné. On appelle <span class="mot-cle">tri topologique</span> de \(A\), toute relation d'ordre total \((A, \leq')\) telle que 
+        $$
+        \forall (a,b) \in A \times A, \quad (a \leq b) \Longrightarrow (a \leq' b)
+$$
+    </div>
+    Représenter les diagrammes de Hasse de tous les tris topologiques que l'on peut construire à partir de la relation d'ordre définie par le diagramme de Hasse suivant : 
+    <div class="graphTikzTD1">
+    <div class="tikz-block">
+    <script type="text/tikz">
+\begin{tikzpicture}[scale=1, every node/.style={circle, draw}]
+  \node (4) at (0,2) {4};
+  \node (2) at (-2,1) {2};
+  \node (6) at (2,1) {6};
+  \node (1) at (-3,0) {1};
+  \node (5) at (-1,0) {5};
+  \node (7) at (3,0) {7};
+  \node (3) at (-2,-1) {3};
+  \draw (4) -- (2);
+  \draw (4) -- (6);
+  \draw (2) -- (1);
+  \draw (2) -- (5);
+  \draw (1) -- (3);
+  \draw (5) -- (3);
+  \draw (6) -- (7);
+\end{tikzpicture}
+    </script>
+  </div>
+  </div>
+</div>
 </div>
