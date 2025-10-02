@@ -392,195 +392,108 @@
   width: 100%;
 }
 
-/* ===========================
-   TABLEAUX PREMIUM
-   =========================== */
+/* ====================== TABLE ====================== */
 .ue-table {
   width: 100%;
-  margin: 3rem 0;
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: var(--color-surface);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  background: var(--color-surface);
-  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
 }
 
-.ue-table thead {
-  position: relative;
-}
-
-.ue-table thead::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
-  opacity: 0.5;
-}
-
+/* En-tête classique */
 .ue-table thead th {
-  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  background: var(--color-primary);
   color: var(--color-text-inverse);
-  padding: 1.5rem 1.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
+  padding: 1rem;
   text-align: left;
-  position: relative;
-  transition: all var(--transition-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
 }
 
-.ue-table thead th:hover {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
-}
-
+/* Lignes classiques */
 .ue-table tbody td {
-  padding: 1.5rem 1.75rem;
+  padding: 1rem;
   border-bottom: 1px solid var(--border-color);
-  color: var(--color-text-secondary);
-  font-size: 1rem;
-  transition: all var(--transition-fast);
-  position: relative;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  vertical-align: top;
 }
 
-.ue-table tbody tr {
-  transition: all var(--transition-fast);
-  position: relative;
-}
-
-.ue-table tbody tr::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background: linear-gradient(90deg, var(--color-primary), transparent);
-  opacity: 0.1;
-  transition: width var(--transition-base);
-}
-
-.ue-table tbody tr:nth-child(even) td {
+.ue-table tbody tr:nth-child(even):not(.bloc-header) td {
   background: var(--color-surface-alt);
 }
 
-.ue-table tbody tr:hover {
-  background: var(--color-surface-hover);
-  transform: scale(1.005);
-}
-
-.ue-table tbody tr:hover::before {
-  width: 6px;
-}
-
 .ue-table tbody tr:hover td {
-  color: var(--color-text);
-  box-shadow: inset 0 0 0 1px var(--border-color-hover);
+  background: var(--color-surface);
+  box-shadow: inset 4px 0 var(--color-primary);
+  transition: background var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-/* ===========================
-   BADGES & NOTES PREMIUM
-   =========================== */
-.uep-note {
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
-  color: var(--color-text-inverse);
-  padding: 0.5rem 1.25rem;
-  border-radius: var(--radius-md);
-  font-size: 0.85rem;
-  font-weight: 700;
-  display: inline-block;
-  box-shadow: var(--shadow-md), var(--glow-secondary);
-  transition: all var(--transition-bounce);
-  border: 1px solid rgba(255,255,255,0.15);
-  position: relative;
-  overflow: hidden;
-}
-
-.uep-note::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
-}
-
-.uep-note:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: var(--shadow-lg), var(--glow-secondary);
-}
-
-.uep-note:hover::before {
-  left: 100%;
-}
-
+/* ====================== BLOCS (séparateurs) ====================== */
 .bloc-header td {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-primary), var(--color-secondary));
+  background: var(--color-secondary);
   color: var(--color-text-inverse);
-  font-weight: 800;
-  padding: 2rem;
-  text-transform: uppercase;
-  text-align: center;
+  font-weight: 700;
   font-size: 1rem;
-  letter-spacing: 0.08em;
-  box-shadow: inset 0 -2px 0 rgba(255,255,255,0.15), var(--glow-primary);
-  position: relative;
-  overflow: hidden;
+  padding: 1.2rem 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  border: none;
 }
 
-.bloc-header td::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
-  animation: shine 3s infinite;
+.bloc-header td .uep-note {
+  margin-left: 1rem;
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
-@keyframes shine {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-/* ===========================
-   RESPONSIVE
-   =========================== */
+/* ====================== RESPONSIVE ====================== */
 @media (max-width: 768px) {
-  .bodyINFOLI {
-    padding: 1.5rem 1rem;
+  .ue-table thead {
+    display: none;
   }
 
-  .headerINFOLI {
-    padding: 2.5rem 1.75rem;
-    margin-bottom: 2.5rem;
+  .ue-table, .ue-table tbody, .ue-table tr, .ue-table td {
+    display: block;
+    width: 100%;
   }
 
-  .ueINFOLI {
-    padding: 1.75rem;
+  .ue-table tr {
+    background: var(--color-surface);
+    margin-bottom: 1rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
   }
 
-  .ue-table {
+  .ue-table td {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
     font-size: 0.9rem;
   }
 
-  .ue-table thead th,
-  .ue-table tbody td {
-    padding: 1rem 1.25rem;
+  .ue-table td:last-child {
+    border-bottom: none;
   }
 
-  .uep-listINFOLI li {
-    padding: 1rem 1.25rem 1rem 2.75rem;
+  .bloc-header td {
+    font-size: 0.95rem;
+    text-align: center;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
   }
 }
+
 
 /* ===========================
    SCROLL SMOOTH
