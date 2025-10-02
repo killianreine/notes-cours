@@ -262,114 +262,150 @@
   background: linear-gradient(90deg, var(--primary-500) 0%, transparent 100%);
 }
 
-/* =========================== Cards UE Ultra-Modernes =========================== */
+/* =========================== Amélioration des Cards UE =========================== */
 .ueINFOLI {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-primary);
-  border-radius: var(--radius-lg);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--radius-xl);
   padding: var(--space-xl);
-  margin: var(--space-lg) 0;
-  box-shadow: var(--shadow-sm);
+  margin: var(--space-xl) 0;
+  box-shadow: var(--shadow-md), var(--shadow-glow);
   transition: all var(--transition-base);
   position: relative;
+  backdrop-filter: blur(16px) saturate(160%);
   overflow: hidden;
-  backdrop-filter: blur(10px);
 }
 
 .ueINFOLI::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
+  inset: 0;
   background: var(--primary-gradient);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-base);
+  opacity: 0.06;
+  z-index: 0;
 }
 
 .ueINFOLI:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-xl);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: var(--shadow-xl), var(--shadow-glow);
   border-color: var(--primary-500);
-  background: var(--bg-surface-elevated);
-}
-
-.ueINFOLI:hover::before {
-  transform: scaleX(1);
 }
 
 .ue-titleINFOLI {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 800;
   color: var(--primary-500);
   margin: 0 0 var(--space-md);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  position: relative;
+  z-index: 1;
 }
 
 .ue-titleINFOLI::before {
-  content: '📚';
-  font-size: 1rem;
+  content: '📖';
+  font-size: 1.2rem;
+  opacity: 0.85;
 }
 
-/* =========================== Listes UEP Élégantes =========================== */
+/* =========================== Listes UEP encore plus élégantes =========================== */
 .uep-listINFOLI {
   list-style: none;
   margin: var(--space-md) 0 0;
   padding: 0;
   display: grid;
   gap: var(--space-sm);
+  position: relative;
+  z-index: 1;
 }
 
 .uep-listINFOLI li {
   padding: var(--space-sm) var(--space-md);
-  background: var(--bg-surface-hover);
-  border-radius: var(--radius-sm);
-  border-left: 3px solid var(--accent-500);
+  background: linear-gradient(90deg, var(--bg-surface-hover), var(--bg-surface));
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent-500);
   color: var(--text-secondary);
   font-weight: 500;
   transition: all var(--transition-fast);
   position: relative;
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-xs);
 }
 
 .uep-listINFOLI li:hover {
-  transform: translateX(4px);
-  background: var(--bg-surface-elevated);
-  border-left-color: var(--primary-500);
+  transform: translateX(6px);
+  background: linear-gradient(90deg, var(--bg-surface-elevated), var(--bg-surface-hover));
+  border-left-color: var(--primary-600);
   color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
 }
 
-/* =========================== Tableaux Futuristes =========================== */
+/* =========================== Tableaux revisités =========================== */
 .ue-table {
   width: 100%;
   max-width: 1200px;
-  margin: var(--space-2xl) auto;
+  margin: var(--space-3xl) auto;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  background: var(--bg-glass);
+  backdrop-filter: blur(14px) saturate(140%);
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.ue-table thead th {
+  background: var(--primary-gradient);
+  color: var(--text-inverse);
+  padding: var(--space-lg) var(--space-xl);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  text-align: left;
+  border: none;
+  box-shadow: inset 0 -2px rgba(255,255,255,0.2);
+}
+
+.ue-table tbody td {
+  padding: var(--space-md) var(--space-lg);
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-secondary);
   background: var(--bg-surface);
+  transition: all var(--transition-base);
   position: relative;
 }
 
-.ue-table::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--primary-gradient);
-  opacity: 0.02;
-  pointer-events: none;
+.ue-table tbody tr:nth-child(even):not(.bloc-header) td {
+  background: var(--bg-surface-elevated);
 }
+
+.ue-table tbody tr:not(.bloc-header):hover td {
+  background: linear-gradient(90deg, var(--bg-surface-hover), var(--bg-surface));
+  transform: scale(1.005);
+  box-shadow: inset 4px 0 0 var(--primary-500);
+}
+
+/* =========================== Notes UEP premium =========================== */
+.uep-note {
+  background: var(--warning-gradient);
+  color: var(--text-inverse);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255,255,255,0.2);
+  animation: pulse 2.5s infinite;
+}
+
 
 /* Header du tableau avec glassmorphism */
 .ue-table thead th {
