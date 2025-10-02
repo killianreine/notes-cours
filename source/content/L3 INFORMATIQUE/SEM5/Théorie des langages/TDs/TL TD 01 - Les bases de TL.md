@@ -16,26 +16,20 @@
 <div class="graphTikzTD1">
     <div class="tikz-block">
     <script type="text/tikz">
-\begin{tikzpicture}[->, >=stealth, node distance=1.8cm, every node/.style={circle, draw, minimum size=10mm}]
-    % Racine
-    \node (eps) {$\varepsilon$};
-    % Niveau 1
-    \node (a) [below left=of eps] {a};
-    \node (b) [below right=of eps] {b};
-    % Niveau 2
-    \node (ab) [below=of a] {ab};
-    \node (ba) [below=of b] {ba};
-    % Niveau 3
-    \node (bab) [below=of ba] {bab};
-    % Arêtes
-    \draw (eps) -- (a) node[midway, left] {a};
-    \draw (eps) -- (b) node[midway, right] {b};
-    \draw (a) -- (ab) node[midway, left] {b};
-    \draw (b) -- (ba) node[midway, right] {a};
-    \draw (ba) -- (bab) node[midway, right] {b};
-    % Doubles cercles pour mots acceptés
-    \node[draw, circle, double, minimum size=10mm, right=0cm of ab] {};
-    \node[draw, circle, double, minimum size=10mm, right=0cm of bab] {};
+\begin{tikzpicture}[scale=2, every node/.style={font=\normalsize}]
+  % Nœuds
+  \node (eps) at (0,2) {$\varepsilon$};
+  \node (a) at (-1,1) {$a$};
+  \node (b) at (1,1) {$b$};
+  \node (ab) at (-1,0) {$ab$};
+  \node (ba) at (1,0) {$ba$};
+  \node (bab) at (1,-1) {$bab$};
+  % Arêtes
+  \draw (eps) -- (a);
+  \draw (eps) -- (b);
+  \draw (a) -- (ab);
+  \draw (b) -- (ba);
+  \draw (ba) -- (bab);
 \end{tikzpicture}
     </script>
   </div>
