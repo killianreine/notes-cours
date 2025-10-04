@@ -47,7 +47,7 @@ projet_cryptex/
 
 ## 🛠️ Fonctionnalités à implémenter
 
-### Phase 1 : Fonctions de base (40% de la note)
+### Phase 1 : Fonctions de base
 
 #### 1.1 - Préparation du texte
 
@@ -80,7 +80,7 @@ int valider_cle(char cle[]);
 void chiffrer_vigenere(char message[], char cle[], char resultat[]);
 ```
 
-**Rôle :** Chiffre le message selon l'algorithme de Vigenère
+**Rôle :** Chiffre le message selon l'algorithme de Vigenère [[TP - Tableaux statiques#L'algorithme de Vigenère expliqué]]
 
 - **Formule :** `C[i] = (M[i] + K[i mod len(K)]) mod 26`
 - Les caractères non-alphabétiques restent inchangés
@@ -116,8 +116,7 @@ void dechiffrer_vigenere(char chiffre[], char cle[], char resultat[]);
 
 ---
 
-### Phase 2 : Analyse cryptographique (30% de la note)
-
+### Phase 2 : Analyse cryptographique 
 #### 2.1 - Analyse de fréquence
 
 ```c
@@ -176,7 +175,7 @@ float calculer_indice_coincidence(char texte[]);
 
 ---
 
-### Phase 3 : Attaque cryptanalytique (20% de la note)
+### Phase 3 : Attaque cryptanalytique 
 
 #### 3.1 - Détection de mots-clés
 
@@ -218,7 +217,7 @@ void attaque_force_brute(char message_chiffre[], int longueur_cle_max);
 
 ---
 
-### Phase 4 : Interface utilisateur (10% de la note)
+### Phase 4 : Interface utilisateur
 
 #### 4.1 - Menu principal interactif
 
