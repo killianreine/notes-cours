@@ -26,7 +26,7 @@
 <div class="consigne_exo">
     <div class="exo-header">
         <span class="exo-num">1</span>
-        <span class="exo-title"></span>
+        <span class="exo-title">Ce bon vieux \(D_{135}\)</span>
     </div>
     <ol class="exo-questions">
         <li>Construire le graphe correspondant au diagramme de Hasse de \((D_{135}, |)\).</li>
