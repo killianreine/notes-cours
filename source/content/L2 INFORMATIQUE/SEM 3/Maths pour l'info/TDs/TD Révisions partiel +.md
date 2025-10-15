@@ -51,19 +51,22 @@
     </ol>
 </div>
 
-<div class="section-title">Relations d'équivalences, classes d'équivalences, ensemble quotient</div>
 <div class="consigne_exo">
     <div class="exo-header">
         <span class="exo-num">4</span>
         <span class="exo-title"></span>
     </div>
-    On considère la relation \(\mathcal{R}\) définie sur \(\mathbb{Z}\) par :
-    $$
-    x \mathcal{R} y \Longleftrightarrow x-y \text{ est pair }
-	$$
     <ol class="exo-questions">
-        <li>Montrer que \(\mathcal{R}\) est une relation d'équivalence.</li>
-        <li>Déterminer ses classes d'équivalences et l'ensemble quotient \(E/\mathcal{R}\).</li>
+        <li>Soit R la relation binaire définie sur \( \mathbb{Z} \) par :
+        $$
+        \forall (a, b) \in \mathbb{Z}^2, \; a\mathcal{R}b \Leftrightarrow a - b \text{ est pair}
+        $$
+        Montrer que \mathcal{R} est une relation d'équivalence et déterminer ses différentes classes d'équivalences.</li>
+        <li>Soit \( n \in \mathbb{N}^* \). Soit \( \mathcal{R}_n \) une relation binaire définie sur \( \mathbb{Z} \) par :
+        $$
+         \forall (a, b) \in \mathbb{Z}^2, \; a\mathcal{R}b \Leftrightarrow n \text{ divise } a - b 
+         $$
+        Montrer que \( \mathcal{R}_n \) est une relation d'équivalence et déterminer ses différentes classes d'équivalences.</li>
     </ol>
 </div>
 </div>
