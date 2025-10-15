@@ -43,5 +43,11 @@
 	    E_{\mathbb{N}_{12}^{*}} = \{ x \in \mathbb{N}^{*} \mid x \leq 12\}
 	$$
 	Tracer le diagramme de Hasse de \(E_{\mathbb{N}_{12}^{*}} \) muni de la relation \( | \) puis déterminer les extremas sur les parties de \(E=E_{\mathbb{N}_{12}^{*}} \) puis de \(E=\mathbb{N}^{*}\).
+	<ol class="exo-questions">
+        <li>\(A_{1}=\{1, 2, 4, 8\}\)</li>
+        <li>\(A_{2}=\{4,6\}\)</li>
+        <li>\(A_{3}=\{2,3,6,9\}\)</li>
+        <li>\(A_{4}=\{1,12\}\)</li>
+    </ol>
 </div>
 </div>
