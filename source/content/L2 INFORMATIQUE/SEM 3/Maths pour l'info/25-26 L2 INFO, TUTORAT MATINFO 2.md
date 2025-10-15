@@ -40,5 +40,6 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
 <tr class="bloc-headerMPI">
 <td colspan="3">Révisions</td> </tr>
 <tr> <td>TD RV PA</td> <td><a href="MPI_L2_2526_Fiche_PA-1.pdf">TD PA</a></td> <td>Révisions en vue du partiel : relations binaires et graphes</td> </tr><tr>
+<tr> <td>TD RV PA+</td> <td><a href="TD Révisions partiel +">TD PA+</a></td> <td>Exercices complémentaires</td> </tr><tr>
 </tbody> </table> </div>
 
