@@ -50,4 +50,20 @@
         <li>\(A_{4}=\{1,12\}\)</li>
     </ol>
 </div>
+
+<div class="section-title">Relations d'équivalences, classes d'équivalences, ensemble quotient</div>
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">4</span>
+        <span class="exo-title"></span>
+    </div>
+    On considère la relation \(\mathcal{R}\) définie sur \(\mathbb{Z}\) par :
+    $$
+    x \mathcal{R} y \Longleftrightarrow x-y \text{ est pair }
+	$$
+    <ol class="exo-questions">
+        <li>Montrer que \(\mathcal{R}\) est une relation d'équivalence.</li>
+        <li>Déterminer ses classes d'équivalences et l'ensemble quotient \(E/\mathcal{R}\).</li>
+    </ol>
+</div>
 </div>
