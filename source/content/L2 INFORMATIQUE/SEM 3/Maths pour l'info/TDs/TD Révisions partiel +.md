@@ -32,4 +32,16 @@
         <li>\(\\mathcal{R}\) représente une relation d'ordre total ou partiel ?</li>
     </ol>
 </div>
+
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">3</span>
+        <span class="exo-title"></span>
+    </div>
+    On considère l'ensemble suivant : 
+    $$
+	    E_{\mathbb{N}_{12}^{*}} = \{ x \in \mathbb{N}^{*} \mid x \leq 12\}
+	$$
+	Tracer le diagramme de Hasse de \(E_{\mathbb{N}_{12}^{*}} \) muni de la relation \( | \) puis déterminer les extremas sur les parties de \(E=E_{\mathbb{N}_{12}^{*}} \) puis de \(E=\mathbb{N}^{*}\).
+</div>
 </div>
