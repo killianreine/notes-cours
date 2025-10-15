@@ -28,8 +28,8 @@
     p \mathcal{R} q \Longleftrightarrow \exists k \in \mathbb{N}^{*}, \quad q = p^{k}
 	$$
     <ol class="exo-questions">
-        <li>Montrer que \(\\mathcal{R}\) est une relation d'ordre.</li>
-        <li>\(\\mathcal{R}\) représente une relation d'ordre total ou partiel ?</li>
+        <li>Montrer que \(\mathcal{R}\) est une relation d'ordre.</li>
+        <li>\(\mathcal{R}\) représente une relation d'ordre total ou partiel ?</li>
     </ol>
 </div>
 
