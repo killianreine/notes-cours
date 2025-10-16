@@ -57,7 +57,7 @@
         <span class="exo-title"></span>
     </div>
     <ol class="exo-questions">
-        <li>Soit R la relation binaire définie sur \( \mathbb{Z} \) par :
+        <li>Soit \(\mathcal{R}\) la relation binaire définie sur \( \mathbb{Z} \) par :
         $$
         \forall (a, b) \in \mathbb{Z}^2, \; a\mathcal{R}b \Leftrightarrow a - b \text{ est pair}
         $$
