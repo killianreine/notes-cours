@@ -24,5 +24,5 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel, destiné au
 <tr> <td>Cours design pattern</td> <td><a href="GL - Cours design pattern">CM DP</a></td> <td>Introduction et application des design pattern.</td> </tr><tr>
 </tr>
 <tr class="bloc-headerMPI">
-<td colspan="3">TPs et compléments perso</td> </tr>
+<td colspan="3">TP<sub>s</sub> et compléments perso</td> </tr>
 </tbody> </table> </div>
