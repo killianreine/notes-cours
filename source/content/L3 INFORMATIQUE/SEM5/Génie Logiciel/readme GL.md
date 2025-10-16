@@ -26,9 +26,3 @@ Bienvenue ! Ce dépôt contient un cours complet de Génie Logiciel, destiné au
 <tr class="bloc-headerMPI">
 <td colspan="3">TPs et compléments perso</td> </tr>
 </tbody> </table> </div>
-
-> Chaque chapitre contient :
-> - Des fiches de cours détaillées
-> - Des exemples pratiques et études de cas    
-> - Des mini-projets ou exercices
-> - Des conseils pour l’industrie et les bonnes pratiques
