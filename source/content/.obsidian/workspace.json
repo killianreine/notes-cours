@@ -199,7 +199,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorateur de fichiers"
             }
           },
           {
@@ -313,7 +313,7 @@
               "type": "review-queue-list-view",
               "state": {},
               "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "title": "Cartes à apprendre"
             }
           },
           {
@@ -366,13 +366,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "obsidian-spaced-repetition:Apprendre les flashcards": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "flashcards-obsidian:Generate flashcards": false,
@@ -380,7 +380,7 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "6b560dd3a9a040a0",
+  "active": "df83d3f9f9bb37ab",
   "lastOpenFiles": [
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL - Cours design pattern.md",

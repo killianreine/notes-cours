@@ -141,3 +141,137 @@ public class Application {
     }
 }
 ```
+
+# Design Pattern : **Singleton**
+## Principe
+
+- **🎯 Objectif :** Garantir qu’une **classe ne possède qu’une seule instance** dans toute l’application, et fournir un **point d’accès global** à cette instance.
+- **⚙️ Problème :** Dans certains cas (ex. gestion d’une configuration, connexion à une base de données, journalisation...), il est **inutile ou dangereux** de créer plusieurs objets identiques.  
+    Le **Singleton** assure qu’il n’existe **qu’un seul objet** de cette classe, et qu’il est **partagé** partout où on en a besoin.
+## Exemple
+On souhaite créer une classe `Journal` qui centralise l’écriture des messages de log.  
+On veut éviter d’avoir **plusieurs journaux différents**, donc on applique le **pattern Singleton** :
+```java
+public class Journal {
+    private static Journal instance = null;
+    
+    private Journal() {
+        System.out.println("📘 Journal initialisé");
+    }
+
+    public static Journal getInstance() {
+        if (instance == null) {
+            instance = new Journal();
+        }
+        return instance;
+    }
+
+    public void ecrire(String message) {
+        System.out.println("[LOG] " + message);
+    }
+}
+```
+
+# Design Pattern : **Adaptateur** (Adapter)
+## Principe
+
+- **🎯 Objectif :** Permettre à deux **interfaces incompatibles** de **collaborer**.
+- **⚙️ Problème :** On souhaite **réutiliser une classe existante**, mais son interface **ne correspond pas** à celle attendue par le code client.  
+    L’**adaptateur** agit comme un **convertisseur** :  
+    il **traduit** les appels de l’interface attendue vers celle de la classe existante, **sans modifier** cette dernière.
+## Exemple
+On veut créer un système de **lecture audio**.  
+Notre code s’attend à travailler avec une **interface simple** `LecteurAudio` :
+- `lire(String fichier)`
+
+Mais on dispose d’une **bibliothèque externe** qui lit les fichiers via une classe `AdvancedPlayer` utilisant une méthode différente :
+- `playFile(String filePath)`
+
+Pour éviter de modifier la bibliothèque, on crée un **adaptateur** qui fait le lien entre les deux.
+```java
+// 🎵 Interface attendue par notre application
+public interface LecteurAudio {
+    void lire(String fichier);
+}
+```
+```java
+// 🎧 Classe existante (par exemple issue d'une bibliothèque externe)
+public class AdvancedPlayer {
+    public void playFile(String filePath) {
+        System.out.println("Lecture du fichier audio : " + filePath);
+    }
+}
+```
+```java
+public class AdaptateurAudio implements LecteurAudio {
+    private AdvancedPlayer lecteurAvance;
+
+    public AdaptateurAudio(AdvancedPlayer lecteurAvance) {
+        this.lecteurAvance = lecteurAvance;
+    }
+
+    @Override
+    public void lire(String fichier) {
+        lecteurAvance.playFile(fichier);
+    }
+}
+```
+
+# Design Pattern : **Composite**
+## Principe
+- **🎯 Objectif :** **Uniformiser** le traitement des **objets simples** et des **compositions d’objets**.
+- **⚙️ Problème :** Lorsqu’on manipule des structures **hiérarchiques** (ex. dossiers/fichiers, formes graphiques, menus, etc.),  
+    on veut pouvoir traiter **un élément individuel** ou **un groupe d’éléments** de la même manière.
+
+Le **pattern Composite** permet de **représenter une hiérarchie d’objets** sous forme d’arbre, où **chaque nœud** (composite) et **chaque feuille** (élément simple) **partagent la même interface**.
+## Exemple
+
+On veut modéliser une **structure de fichiers** contenant :
+- des **fichiers simples** (`Fichier`)
+- des **dossiers** (`Dossier`) qui peuvent contenir d’autres fichiers ou dossiers.
+
+L’objectif : pouvoir appeler la méthode `afficher()` sur un fichier **ou** sur un dossier **sans se soucier du type réel**.
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public interface Element {
+    void afficher(String indentation);
+}
+```
+```java
+public class Fichier implements Element {
+    private String nom;
+
+    public Fichier(String nom) {
+        this.nom = nom;
+    }
+
+    @Override
+    public void afficher(String indentation) {
+        System.out.println(indentation + "- " + nom);
+    }
+}
+```
+```java
+public class Dossier implements Element {
+    private String nom;
+    private List<Element> enfants = new ArrayList<>();
+
+    public Dossier(String nom) {
+        this.nom = nom;
+    }
+
+    public void ajouter(Element e) {
+        enfants.add(e);
+    }
+
+    @Override
+    public void afficher(String indentation) {
+        System.out.println(indentation + "+ " + nom);
+        for (Element e : enfants) {
+            e.afficher(indentation + "  ");
+        }
+    }
+}
+```
