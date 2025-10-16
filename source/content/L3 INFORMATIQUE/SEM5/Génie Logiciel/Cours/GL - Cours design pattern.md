@@ -275,3 +275,178 @@ public class Dossier implements Element {
     }
 }
 ```
+
+# Design Pattern : **Décorateur** (Decorator)
+## Principe
+- **🎯 Objectif :** **Ajouter dynamiquement** des fonctionnalités à un objet **sans modifier sa classe d’origine**.
+- **⚙️ Problème :** Hériter d’une classe pour lui ajouter un comportement conduit à une **multiplication des sous-classes**.  
+    Le **Décorateur** permet d’**enrichir un objet à la volée**, en l’**enveloppant** dans un autre objet qui ajoute des fonctionnalités.
+
+## Exemple simple
+On veut afficher un **texte**.  
+De base, il est **simple**, mais on souhaite parfois :
+- l’afficher **en majuscules**
+- ou l’afficher **avec des étoiles autour**
+
+Au lieu de créer plusieurs sous-classes (`TexteMajuscules`, `TexteAvecDecoration`, etc.), on utilise le **pattern Décorateur**.
+```java
+public interface Texte {
+    void afficher();
+}
+```
+```java
+public class TexteSimple implements Texte {
+    private String contenu;
+
+    public TexteSimple(String contenu) {
+        this.contenu = contenu;
+    }
+
+    @Override
+    public void afficher() {
+        System.out.println(contenu);
+    }
+}
+```
+```java
+public abstract class TexteDecorateur implements Texte {
+    protected Texte texte; // référence vers le texte à décorer
+
+    public TexteDecorateur(Texte texte) {
+        this.texte = texte;
+    }
+}
+```
+```java
+public class TexteMajuscules extends TexteDecorateur {
+    public TexteMajuscules(Texte texte) {
+        super(texte);
+    }
+
+    @Override
+    public void afficher() {
+        System.out.print("→ ");
+        texte.afficher(); // on appelle le texte d’origine
+        System.out.println("(en MAJUSCULES)");
+    }
+}
+```
+```java
+public class TexteAvecEtoiles extends TexteDecorateur {
+    public TexteAvecEtoiles(Texte texte) {
+        super(texte);
+    }
+
+    @Override
+    public void afficher() {
+        System.out.print("★ ");
+        texte.afficher();
+        System.out.println("★");
+    }
+}
+```
+
+# Design Pattern : **Commande** (Command)
+## Principe
+- **🎯 Objectif :** **Encapsuler une action** (commande) dans un objet, afin de **découpler** celui qui émet la demande (le client) de celui qui l’exécute (le receveur).
+- **⚙️ Problème :** Si un bouton ou un menu appelle directement une méthode, il devient **fortement couplé** à la classe exécutante.  
+    Le **pattern Commande** permet de :
+    - stocker les actions sous forme d’objets,
+    - **annuler**, **répéter**, ou **différer** une action très facilement.
+
+## Exemple simple
+On veut créer une **télécommande** pour **une lumière** avec deux actions :
+- **Allumer**
+- **Éteindre**
+
+Au lieu d’appeler directement `lumiere.allumer()`, on va créer des **commandes** indépendantes représentant ces actions.
+```java
+public interface Commande {
+    void executer();
+}
+```
+```java
+public class Lumiere {
+    public void allumer() {
+        System.out.println("💡 La lumière est allumée");
+    }
+
+    public void eteindre() {
+        System.out.println("🌑 La lumière est éteinte");
+    }
+}
+```
+```java
+public class CommandeAllumer implements Commande {
+    private Lumiere lumiere;
+
+    public CommandeAllumer(Lumiere lumiere) {
+        this.lumiere = lumiere;
+    }
+
+    @Override
+    public void executer() {
+        lumiere.allumer();
+    }
+}
+```
+```java
+public class CommandeEteindre implements Commande {
+    private Lumiere lumiere;
+
+    public CommandeEteindre(Lumiere lumiere) {
+        this.lumiere = lumiere;
+    }
+
+    @Override
+    public void executer() {
+        lumiere.eteindre();
+    }
+}
+```
+```java
+public class Telecommande {
+    private Commande commande;
+
+    public void setCommande(Commande commande) {
+        this.commande = commande;
+    }
+
+    public void appuyerBouton() {
+        if (commande != null) {
+            commande.executer();
+        }
+    }
+}
+```
+
+# Design Pattern : **Itérateur** (avec `Iterable`)
+## Principe
+- **🎯 Objectif :** Permettre de **parcourir une collection d’objets** sans exposer sa structure interne.
+- **⚙️ En Java :** L’interface `Iterable` définit une méthode `iterator()` qui retourne un **objet `Iterator`**,  
+    lequel fournit deux méthodes principales :
+    - `hasNext()` → indique s’il reste un élément
+    - `next()` → renvoie l’élément suivant
+
+Cela permet d’utiliser la **boucle `for-each`** (`for (...)`) directement sur ta collection !
+
+## Exemple simple
+On veut créer une **classe `ListeEtudiants`** qui contient des noms d’étudiants et qu’on puisse **parcourir avec un `for-each`** comme une collection standard.
+```java
+import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListeEtudiants implements Iterable<String> {
+    private List<String> etudiants = new ArrayList<>();
+
+    public void ajouter(String nom) {
+        etudiants.add(nom);
+    }
+
+    @Override
+    public Iterator<String> iterator() {
+        return etudiants.iterator();
+    }
+}
+```
