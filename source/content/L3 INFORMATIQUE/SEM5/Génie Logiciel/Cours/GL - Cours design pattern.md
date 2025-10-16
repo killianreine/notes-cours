@@ -1,14 +1,43 @@
 >[!cite] Définition
 >On appelle **==design pattern==** un *modèle de conception* *(architecture générale)* permettant de répondre à une problématique récurrente.
 
-# Design pattern FACADE
-## Principe
-- <u>Objectif :</u> Permet l'utilisation simplifiée d'un système existant.
-- <u>Problème :</u> On a besoin d'un nombre limité de caractéristiques d'un système permettant de manipuler uniquement l'utile.
+# Design Pattern : **Façade**
 
-On propose alors de faire une **façade**, en gros c'est une *nouvelle interface* qui va "recouvrir" le système complexe pour ne laisser que les fonction nécessaire.
+## Principe
+
+- **🎯 Objectif :** Fournir une **interface simplifiée** pour utiliser un système complexe.  
+- **⚙️ Problème :** Un système peut offrir **trop de fonctionnalités**, alors qu’on n’a besoin que d’un **sous-ensemble** pour une utilisation spécifique.
+La **façade** agit comme une **couche intermédiaire** :  
+elle **masque la complexité** du système sous-jacent et **expose uniquement** les méthodes utiles à l’utilisateur.
 
 ## Exemple
-On souhaite implémenter le fonctionnement d'une Pile en Java. On souhaite simplement pouvoir empiler, dépiler, vider la pile.  
-On utilise alors `java.util.ArrayDeque`, sauf que cette classe propose une cinquantaine de méthodes ce qui est beaucoup trop pour ce qu'on veut faire.  
-Ainsi, on va créer une classe `Pile`, qui aura ses propres fonctions `empiler`, `depiler` et `vider`.
+On souhaite gérer une pile avec trois opérations simples :
+- `empiler` (`push`)
+- `depiler` (`pop`)
+- `vider` (`clear`)
+
+Cependant, la classe `java.util.ArrayDeque` de Java propose **plus d’une cinquantaine de méthodes**, bien au-delà de ce dont on a besoin.  
+Pour simplifier l’utilisation, on crée une **classe Façade** appelée `Pile`, qui encapsule `ArrayDeque` et ne laisse accessibles que les opérations essentielles.
+```java
+import java.util.ArrayDeque;
+
+public class Pile<T> {
+    private ArrayDeque<T> elements = new ArrayDeque<>();
+
+    public void empiler(T element) {
+        elements.push(element);
+    }
+
+    public T depiler() {
+        return elements.pop();
+    }
+
+    public void vider() {
+        elements.clear();
+    }
+
+    public boolean estVide() {
+        return elements.isEmpty();
+    }
+}
+```
