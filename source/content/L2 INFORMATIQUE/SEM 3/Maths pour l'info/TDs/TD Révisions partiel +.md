@@ -57,11 +57,11 @@
         <span class="exo-title"></span>
     </div>
     <ol class="exo-questions">
-        <li>Soit \(\mathcal{R}\) la relation binaire définie sur \( \mathbb{Z} \) par :
+        <li>Soit \(\mathbb{P}\) la relation binaire définie sur \( \mathbb{Z} \) par :
         $$
-        \forall (a, b) \in \mathbb{Z}^2, \; a\mathcal{R}b \Leftrightarrow a - b \text{ est pair}
+        \forall (a, b) \in \mathbb{Z}^2, \; a\mathbb{P}b \Leftrightarrow a - b \text{ est pair}
         $$
-        Montrer que \mathcal{R} est une relation d'équivalence et déterminer ses différentes classes d'équivalences.</li>
+        Montrer que \(\mathbb{P}\) est une relation d'équivalence et déterminer ses différentes classes d'équivalences.</li>
         <li>Soit \( n \in \mathbb{N}^* \). Soit \( \mathcal{R}_n \) une relation binaire définie sur \( \mathbb{Z} \) par :
         $$
          \forall (a, b) \in \mathbb{Z}^2, \; a\mathcal{R}b \Leftrightarrow n \text{ divise } a - b 
