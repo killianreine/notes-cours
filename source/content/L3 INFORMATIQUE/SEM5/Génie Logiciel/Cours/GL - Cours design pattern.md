@@ -565,3 +565,233 @@ public class MediatorDemo {
 ```
 
 # Design pattern : Memento
+## Principe
+- **🎯 Objectif :** Permet **sauvegarder et de rétablir l'état précédant** d'un objet sans donner le détail de son implémentation.
+
+## Exemple
+Nous allons modéliser :
+- **`Memento`** : stocke l’état (le texte sauvegardé),
+- **`Editeur` (Originator)** : crée et restaure des mementos,
+- **`Historique` (Caretaker)** : conserve la pile des états.
+```
++----------------+        +----------------+        +----------------+
+|   Originator   | <----> |    Memento     | <----> |   Caretaker    |
+| - état         |        | - étatSauvé    |        | - listeÉtats   |
+| + sauvegarder()|        | + getÉtat()    |        | + ajouter()    |
+| + restaurer()  |        |                |        | + annuler()    |
++----------------+        +----------------+        +----------------+
+
+```
+
+```java
+class Memento {
+    private final String texte;
+
+    public Memento(String texte) {
+        this.texte = texte;
+    }
+
+    public String getTexte() {
+        return texte;
+    }
+}
+```
+```java
+class Editeur {
+    private String texte = "";
+
+    public void ecrire(String nouveauTexte) {
+        texte += nouveauTexte;
+    }
+
+    public String getTexte() {
+        return texte;
+    }
+
+    public Memento sauvegarder() {
+        return new Memento(texte);
+    }
+
+    public void restaurer(Memento memento) {
+        this.texte = memento.getTexte();
+    }
+}
+```
+```java
+import java.util.Stack;
+
+class Historique { // La pile des états
+    private Stack<Memento> historique = new Stack<>();
+
+    public void ajouter(Memento memento) {
+        historique.push(memento);
+    }
+
+    public Memento annuler() {
+        if (!historique.isEmpty()) {
+            return historique.pop();
+        }
+        return null;
+    }
+}
+```
+```java
+// La class main
+public class MementoDemo {
+    public static void main(String[] args) {
+        Editeur editeur = new Editeur();
+        Historique historique = new Historique();
+
+        editeur.ecrire("Bonjour ");
+        historique.ajouter(editeur.sauvegarder());
+
+        editeur.ecrire("tout le monde !");
+        historique.ajouter(editeur.sauvegarder());
+
+        System.out.println("Texte actuel : " + editeur.getTexte());
+
+        // Annulation
+        editeur.restaurer(historique.annuler());
+        System.out.println("Après annulation : " + editeur.getTexte());
+    }
+}
+```
+
+# Design pattern : Observateur
+## Principe
+- **🎯 Objectif :** Le **pattern Observateur** définit une **relation un-à-plusieurs** entre des objets :  Lorsqu’un objet change d’état, **tous les observateurs** enregistrés sont **notifiés automatiquement**.
+
+## Exemple
+```java
+interface Observateur {
+    void mettreAJour(String message);
+}
+```
+```java
+interface Sujet {
+    void ajouterObservateur(Observateur o);
+    void supprimerObservateur(Observateur o);
+    void notifierObservateurs();
+}
+```
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+class SujetConcret implements Sujet {
+    private List<Observateur> observateurs = new ArrayList<>();
+    private String message;
+
+    @Override
+    public void ajouterObservateur(Observateur o) {
+        observateurs.add(o);
+    }
+
+    @Override
+    public void supprimerObservateur(Observateur o) {
+        observateurs.remove(o);
+    }
+
+    @Override
+    public void notifierObservateurs() {
+        for (Observateur o : observateurs) {
+            o.mettreAJour(message);
+        }
+    }
+
+    public void nouvelEvenement(String message) {
+        this.message = message;
+        System.out.println("Sujet : nouvel événement -> " + message);
+        notifierObservateurs();
+    }
+}
+```
+```java
+class ObservateurConcret implements Observateur {
+    private String nom;
+
+    public ObservateurConcret(String nom) {
+        this.nom = nom;
+    }
+
+    @Override
+    public void mettreAJour(String message) {
+        System.out.println(nom + " a reçu la notification : " + message);
+    }
+}
+```
+
+# Design pattern : Visiteur
+## Principe
+- **🎯 Objectif :** Le **pattern Visiteur** permet de **séparer une opération** à effectuer sur des objets d’une structure, **sans modifier** les classes de ces objets. Il est utile quand on veux **ajouter de nouveaux comportements** sans toucher aux classes existantes.
+
+## Exemple
+On va modéliser une **hiérarchie de formes** (`Cercle`, `Rectangle`) et un **visiteur** capable de calculer leur **aire** ou de **les afficher**.
+```java
+interface Forme {
+    void accepter(Visiteur visiteur);
+}
+```
+```java
+interface Visiteur {
+    void visiter(Cercle c);
+    void visiter(Rectangle r);
+}
+```
+```java
+class Cercle implements Forme {
+    double rayon;
+
+    public Cercle(double rayon) {
+        this.rayon = rayon;
+    }
+
+    @Override
+    public void accepter(Visiteur visiteur) {
+        visiteur.visiter(this);
+    }
+}
+
+class Rectangle implements Forme {
+    double largeur;
+    double hauteur;
+
+    public Rectangle(double largeur, double hauteur) {
+        this.largeur = largeur;
+        this.hauteur = hauteur;
+    }
+
+    @Override
+    public void accepter(Visiteur visiteur) {
+        visiteur.visiter(this);
+    }
+}
+```
+```java
+class VisiteurAffichage implements Visiteur {
+    @Override
+    public void visiter(Cercle c) {
+        System.out.println("Cercle de rayon " + c.rayon);
+    }
+
+    @Override
+    public void visiter(Rectangle r) {
+        System.out.println("Rectangle " + r.largeur + "x" + r.hauteur);
+    }
+}
+```
+```java
+class VisiteurAire implements Visiteur {
+    @Override
+    public void visiter(Cercle c) {
+        double aire = Math.PI * c.rayon * c.rayon;
+        System.out.println("Aire du cercle = " + aire);
+    }
+
+    @Override
+    public void visiter(Rectangle r) {
+        double aire = r.largeur * r.hauteur;
+        System.out.println("Aire du rectangle = " + aire);
+    }
+}
+```
