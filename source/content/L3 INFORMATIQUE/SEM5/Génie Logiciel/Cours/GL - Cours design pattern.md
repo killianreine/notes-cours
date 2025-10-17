@@ -428,25 +428,140 @@ public class Telecommande {
     - `hasNext()` → indique s’il reste un élément
     - `next()` → renvoie l’élément suivant
 
-Cela permet d’utiliser la **boucle `for-each`** (`for (...)`) directement sur ta collection !
+Cela permet d’utiliser la **boucle `for-each`** (`for (T elem : collect)`) directement sur ta collection !
 
 ## Exemple simple
-On veut créer une **classe `ListeEtudiants`** qui contient des noms d’étudiants et qu’on puisse **parcourir avec un `for-each`** comme une collection standard.
+On veut créer une **classe `MaListe`** qui contient des mots et qu’on puisse **parcourir avec un `for-each`** comme une collection standard.
 ```java
 import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.List;
 
-public class ListeEtudiants implements Iterable<String> {
-    private List<String> etudiants = new ArrayList<>();
+class MaListe implements Iterable<String> {
 
-    public void ajouter(String nom) {
-        etudiants.add(nom);
-    }
+    private String[] elements = {"Bonjour", "tout", "le", "monde"};
 
     @Override
     public Iterator<String> iterator() {
-        return etudiants.iterator();
+        return new MaListeIterator();
+    }
+
+    private class MaListeIterator implements Iterator<String> {
+        private int index = 0;
+
+        @Override
+        public boolean hasNext() {
+            return index < elements.length;
+        }
+
+        @Override
+        public String next() {
+            return elements[index++];
+        }
     }
 }
 ```
+```java
+public class ExempleIterator {
+    public static void main(String[] args) {
+        MaListe liste = new MaListe();
+
+        Iterator<String> it = liste.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+        System.out.println("---- Version simplifiée avec for-each ----");
+
+        for (String mot : liste) {
+            System.out.println(mot);
+        }
+    }
+}
+```
+
+# Design pattern : Médiateur
+## Principe
+- **🎯 Objectif :** Permet de **réduire les dépendances directes** entre les objets. On introduit alors un autre objet central appelé **médiateur** qui permet de gérer la communication entre eux.
+
+## Exemple
+On va créer un **ChatRoom** (le médiateur) et des **Utilisateurs** (les collègues).
+```java
+interface ChatMediator {
+    void envoyerMessage(String message, Utilisateur utilisateur);
+    void ajouterUtilisateur(Utilisateur utilisateur);
+}
+```
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+class ChatRoom implements ChatMediator {
+    private List<Utilisateur> utilisateurs = new ArrayList<>();
+
+    @Override
+    public void ajouterUtilisateur(Utilisateur utilisateur) {
+        utilisateurs.add(utilisateur);
+    }
+
+    @Override
+    public void envoyerMessage(String message, Utilisateur expediteur) {
+        for (Utilisateur u : utilisateurs) {
+            if (u != expediteur) {
+                u.recevoir(message);
+            }
+        }
+    }
+}
+```
+```java
+abstract class Utilisateur {
+    protected ChatMediator mediator;
+    protected String nom;
+
+    public Utilisateur(ChatMediator mediator, String nom) {
+        this.mediator = mediator;
+        this.nom = nom;
+    }
+
+    public abstract void envoyer(String message);
+    public abstract void recevoir(String message);
+}
+```
+```java
+class UtilisateurConcret extends Utilisateur {
+
+    public UtilisateurConcret(ChatMediator mediator, String nom) {
+        super(mediator, nom);
+    }
+
+    @Override
+    public void envoyer(String message) {
+        System.out.println(nom + " envoie : " + message);
+        mediator.envoyerMessage(message, this);
+    }
+
+    @Override
+    public void recevoir(String message) {
+        System.out.println(nom + " reçoit : " + message);
+    }
+}
+```
+```java
+// La classe main
+public class MediatorDemo {
+    public static void main(String[] args) {
+        ChatMediator chat = new ChatRoom();
+
+        Utilisateur u1 = new UtilisateurConcret(chat, "Alice");
+        Utilisateur u2 = new UtilisateurConcret(chat, "Bob");
+        Utilisateur u3 = new UtilisateurConcret(chat, "Charlie");
+
+        chat.ajouterUtilisateur(u1);
+        chat.ajouterUtilisateur(u2);
+        chat.ajouterUtilisateur(u3);
+
+        u1.envoyer("Bonjour tout le monde !");
+    }
+}
+```
+
+# Design pattern : Memento
