@@ -69,4 +69,16 @@
         Montrer que \( \mathcal{R}_n \) est une relation d'équivalence et déterminer ses différentes classes d'équivalences.</li>
     </ol>
 </div>
+
+<div class="consigne_exo">
+    <div class="exo-header">
+        <span class="exo-num">5</span>
+        <span class="exo-title"></span>
+    </div>
+    On considère la relation définie sur \( \mathbb{N} \) suivante : 
+    $$
+	    x \mathcal{Y}y \Longleftrightarrow x \equiv b \quad (mod 3)
+	$$
+	Montrer que \(\mathcal{Y}\) est une relation d'équivalence puis déterminer ses classes d'équivalences ainsi que son ensemble quotient.
+</div>
 </div>
