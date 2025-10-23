@@ -51,7 +51,9 @@ En réalité, la mémoire est composée de pleins de cases que l'on appelle **==
 <u>Exemple :</u>  
 - Une variable de type `char` occupera une seule case.
 - Une variable `int` occupera quant à elle 4 cases consécutives.
-<br/>
+
+
+
 Chaque case est identifiée par un numéro, c'est **==l'adresse==**.  
 On sait maintenant que l'on peut accéder à une variable de deux manières :
 - Grâce à son nom
