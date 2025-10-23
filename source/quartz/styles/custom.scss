@@ -99,6 +99,17 @@ html.light .custom-summary:hover {
   text-decoration: underline;
 }
 
+/* Répare l'indentation des listes imbriquées */
+ul, ol {
+  margin-left: 1.5em;
+  padding-left: 1.5em;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-left: 1.5em;
+  padding-left: 1.5em;
+}
+
 
 /* Style générique pour un message d'erreur */
 .error {
