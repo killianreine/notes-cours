@@ -987,6 +987,7 @@ int strcmp(const char *ch1, const char *ch2);
 | `0`              | Les deux chaînes sont identiques |
 | `<0`             | `ch1` plus petit que `ch2`       |
 | `>0`             | `ch1` plus grand que `ch2`       |
+
 <u>Exemple :</u>
 ```c
 #include <stdio.h>
