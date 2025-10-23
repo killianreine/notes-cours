@@ -173,7 +173,7 @@ $$
 Ainsi : 
 
 $$
-nb_{exec} = \dfrac{n(n+1)}{2}+\dfrac{n(n-1)}{2}+\dfrac{(n-2)(n-1)}{2}+\dfrac{(n-3)(n-2)}{2}+\ldots+3+1=\underset{k=1}{\overset{n}{\sum\limits}}\dfrac{k(k+1)}{2}
+nb_{exec} = \dfrac{n(n+1)}{2}+\dfrac{n(n-1)}{2}+\dfrac{(n-2)(n-1)}{2}+\dfrac{(n-3)(n-2)}{2}+\ldots+2+1=\underset{k=1}{\overset{n}{\sum\limits}}\dfrac{k(k+1)}{2}
 $$
 
 Il faut donc réussir à simplifier cette expression.
