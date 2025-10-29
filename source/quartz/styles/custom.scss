@@ -22,14 +22,6 @@
 @use "./exoconsignesTL.scss";
 @use "./graphTikzTD1.scss";
 
-/* masquer le volet latéral gauche */
-.sidebar-right,
-.sidebar-left,
-.aside {
-  display: none !important;
-}
-
-
 @media (min-width: 1024px) {
     .page, .content, .main, .markdown-body {
         max-width: 3000px !important;
