@@ -22,6 +22,26 @@
 @use "./exoconsignesTL.scss";
 @use "./graphTikzTD1.scss";
 
+/* masquer le volet latéral gauche */
+.sidebar,
+.toc-sidebar,
+.sidebar-left,
+.aside {
+  display: none !important;
+}
+
+/* étendre le contenu principal pour utiliser toute la largeur */
+.main-content,
+.content,
+.page-wrapper,
+.article {
+  width: 100% !important;
+  grid-column: 1 / -1 !important; /* si le thème utilise CSS grid */
+  margin-left: 0 !important;
+  padding-left: 1rem; /* ajustez */
+}
+
+
 @media (min-width: 1024px) {
     .page, .content, .main, .markdown-body {
         max-width: 3000px !important;
