@@ -23,6 +23,7 @@
 @use "./graphTikzTD1.scss";
 
 /* masquer le volet latéral gauche */
+.sidebar-right,
 .sidebar-left,
 .aside {
   display: none !important;
