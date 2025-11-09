@@ -37,6 +37,8 @@ Le tutorat s’étend sur l’ensemble du semestre et offre un cadre structuré 
 </tr>
 <tr> <td>TD 02</td> <td><a href="MPI TD 02 - Introductions aux graphes">TD02</a></td> <td>Notions d'introductions aux graphes</td> </tr><tr>
 </tr>
+<tr> <td>TD 03</td> <td><a href="https://www.notion.so/TD-Alg-bre-de-Boole-2a62729ccb9281659739efff2032bf68?source=copy_link">TD03</a></td> <td>Algèbre de Boole, loi de composition interne, magma</td> </tr><tr>
+</tr>
 <tr class="bloc-headerMPI">
 <td colspan="3">Révisions</td> </tr>
 <tr> <td>TD RV PA</td> <td><a href="MPI_L2_2526_Fiche_PA-1.pdf">TD PA</a></td> <td>Révisions en vue du partiel : relations binaires et graphes</td> </tr><tr>

@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
+                "file": "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "25-26 L1 INFO Tutorat - Algèbre de base, K. REINE"
+              "title": "25-26 L2 INFO, TUTORAT MATINFO 2"
             }
           }
         ],
@@ -368,6 +368,11 @@
   },
   "active": "6ba82ddeade32ffd",
   "lastOpenFiles": [
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Tableaux statiques.md",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Gestionnaire d'emplois du temps universitaire.md",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/TD Révisions partiel +.md",
+    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 01 - Relation binaire.md",
+    "L1 MIPSI/SEM 1/Algèbre de base/25-26 L1 INFO Tutorat - Algèbre de base, K. REINE.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/07 - Chaînes de caractères.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Prog C - Table des matières.md",
@@ -375,18 +380,15 @@
     "L2 INFORMATIQUE/SEM 3/Support pdf/Java fonctionnel Cours 2024-25.pdf",
     "L2 INFORMATIQUE/SEM 3/Java fonctionnel",
     "L3 INFORMATIQUE/SEM5/Algorithmique avancée/AA TP 01 - Complexité.md",
-    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/TD Révisions partiel +.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL - Cours design pattern.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/readme GL.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 02 - Initiation à Maeven.md",
     "L3 INFORMATIQUE/SEM5/Génie Logiciel/Cours/GL 01 - Initiation à Git.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/25-26 L2 INFO, TUTORAT MATINFO 2.md",
     "L3 INFORMATIQUE/SEM5/Algorithmique avancée/readme AA.md",
-    "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 01 - Relation binaire.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs/MPI TD 02 - Introductions aux graphes.md",
     "L2 INFORMATIQUE/SEM 3/Support pdf/MPI_L2_2526_Fiche_PA-1.pdf",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/TDs/TL TD 00 - Introduction.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Tableaux statiques.md",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/TDs/TL TD 01 - Les bases de TL.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Modularité du code.md",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/readme TL.md",
@@ -399,8 +401,6 @@
     "L3 INFORMATIQUE/Information L3 S5.md",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/TDs",
     "L3 INFORMATIQUE/SEM5/Théorie des langages",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/01 - Introduction.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/02 - Premiers pas.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/graph.svg",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/diag1.dot",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/diag1.svg",
