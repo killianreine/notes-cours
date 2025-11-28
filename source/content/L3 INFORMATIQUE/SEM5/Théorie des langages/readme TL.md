@@ -24,6 +24,7 @@ Bienvenue ! Ce dépôt contient un cours complet de **Théorie des Langages**, d
 <tr class="bloc-headerMPI">
 <td colspan="3">TDs</td> </tr>
 <tr> <td>TD 00</td> <td><a href="TL TD 00 - Introduction">TD00</a></td> <td>Propriétés d'une relation, d'une loi et monoïde</td> </tr><tr>
+<tr> <td>TD 00</td> <td><a href="TL TD0.pdf">TD00</a></td> <td><b>Correction détaillée</b> du premier TD</td> </tr><tr>
   <td>TD 01</td>
   <td><a href="TL TD 01 - Les bases de TL">TD01</a></td>
   <td>Les bases de TL</td>
