@@ -19,15 +19,33 @@ Bienvenue ! Ce dépôt contient un cours complet de **Théorie des Langages**, d
 </thead>
 <tbody> 
 <tr class="bloc-headerMPI">
-<td colspan="3">Cours</td> </tr>
-<tr> <td>Cours 01</td> <td><a href="#">Introductions et Relations et lois</a></td> <td>Quelques bases, relations, lois de composition interne</td> </tr>
-<tr class="bloc-headerMPI">
-<td colspan="3">TDs</td> </tr>
+<td colspan="3">Les Travaux Dirigés - TD.s</td> </tr>
 <tr> <td>TD 00</td> <td><a href="TL TD 00 - Introduction">TD00</a></td> <td>Propriétés d'une relation, d'une loi et monoïde</td> </tr><tr>
-<tr> <td>TD 00</td> <td><a href="TL TD0.pdf">TD00</a></td> <td><b>Correction détaillée</b> du premier TD</td> </tr><tr>
+<tr> <td>TD 00</td> <td><a href="TL TD0.pdf">TD00</a></td> <td><b>Correction détaillée</b> du premier TD</td> </tr>
+<tr>
   <td>TD 01</td>
-  <td><a href="TL TD 01 - Les bases de TL">TD01</a></td>
+  <td><a href="#">TD01</a></td>
   <td>Les bases de TL</td>
+</tr>
+<tr>
+  <td>TD 02</td>
+  <td><a href="#">TD02</a></td>
+  <td>Automates et langages</td>
+</tr>
+<tr>
+  <td>TD 03</td>
+  <td><a href="#">TD03</a></td>
+  <td>Calculs sur les automates</td>
+</tr>
+<tr>
+  <td>TD 04</td>
+  <td><a href="#">TD03</a></td>
+  <td>Automate minimal</td>
+</tr>
+<tr>
+  <td>TD 05</td>
+  <td><a href="#">TD05</a></td>
+  <td>Minimisation d'automates</td>
 </tr>
 </tbody> </table> </div>
 
