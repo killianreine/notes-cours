@@ -24,7 +24,27 @@ Ce cours est conçu pour les débutants qui souhaitent apprendre les bases du la
 ## Plan du Cours
 
 Table des matières complète : [[Prog JS - Table des matières]]
-- Cours 01 : [[01 - Les variables]]
+<div>
+<table class="cours-planMPI">
+<thead>
+<tr> 
+<th>#</th>
+<th>Lien d'accès</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody> 
+<tr class="bloc-headerMPI">
+<td colspan="3">Les cours</td> </tr>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td><a href="01 - Les variables">01 - Les variables</a></td>
+      <td>Bases sur les variables en JS</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Ressources
 - Documentation officielle JavaScript (MDN) https://developer.mozilla.org/fr/docs/Web/JavaScript
