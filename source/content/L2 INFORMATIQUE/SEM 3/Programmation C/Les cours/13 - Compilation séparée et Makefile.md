@@ -31,7 +31,7 @@ Lorsque l’on découpe un programme en plusieurs fichiers, il faut bien disting
 >- Un `.c` **définit** les choses.  
 >- Un `.h` **annonce** ce qui existe, pour qu’on puisse l’utiliser ailleurs.
 
-- *Reprise du cours suivant !* [[05 - Retour sur les fonctions#Organisation et utilisation des fichiers `.h` personnalisés]]
+- <u>Reprise du cours suivant  :</u> [[05 - Retour sur les fonctions#Organisation et utilisation des fichiers `.h` personnalisés]]
 
 Pour rappel, puisque l'on en a déjà parlé un peu avant, les fichiers `.h` en programmation `C` (aussi appelés **headers**) permettent de mieux organiser le code, surtout quand on commence à avoir plusieurs fonctions, structures, etc.  
 Ils sont très utiles pour **séparer la déclaration des fonctions de leur définition**, comme dans des projets plus sérieux ou bien structurés.
