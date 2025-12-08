@@ -45,6 +45,7 @@ auteur: Killian Reine
         <h3 class="ue-titleINFOLI">Licence 3ème année</h3>
         <ul class="ue-listINFOLI">
           <li><a href="Information L3 S5" class="ue-linkINFOLI">Semestre 5: Informations L3 S5</a></li>
+          <li><a href="Information L3 S6" class="ue-linkINFOLI">Semestre 6: Informations L3 S5</a></li>
         </ul>
       </article>
     </div>

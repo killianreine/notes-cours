@@ -153,16 +153,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Allocation dynamique.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - Allocation dynamique"
+              "title": "index"
+            }
+          },
+          {
+            "id": "3eca8c34339f75b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -366,8 +380,12 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "3d0992f5abdddad1",
+  "active": "3eca8c34339f75b0",
   "lastOpenFiles": [
+    "L3 INFORMATIQUE/SEM6/Information L3 S6.md",
+    "index.md",
+    "L3 INFORMATIQUE/SEM6",
+    "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/09 - Allocation dynamique.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/08 - Les pointeurs.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/13 - Compilation séparée et Makefile.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les cours/05 - Retour sur les fonctions.md",
@@ -396,16 +414,12 @@
     "L2 INFORMATIQUE/SEM 3/Support pdf/MPI_L2_2526_Fiche_PA-1.pdf",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/TDs/TL TD 00 - Introduction.md",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/TDs/TL TD 01 - Les bases de TL.md",
-    "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs/TP - Modularité du code.md",
-    "L3 INFORMATIQUE/SEM5/Théorie des langages/readme TL.md",
     "L2 INFORMATIQUE/SEM 3/Programmation C/Les TPs",
-    "L3 INFORMATIQUE/SEM5/C++/readme C++.md",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/TDs",
     "L3 INFORMATIQUE/SEM5/Théorie des langages/TDs",
     "L3 INFORMATIQUE/SEM5/Théorie des langages",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/diag1.dot",
     "L2 INFORMATIQUE/SEM 3/Maths pour l'info/diag1.svg",
-    "L3 INFORMATIQUE/SEM5/C++/Séance 1",
     "L1 MIPSI/Maquette L1.png",
     "L2 INFORMATIQUE/Maquette L2.png",
     "L2 INFORMATIQUE/SEM 3/Programmation C/src/memoireCASH.svg",
