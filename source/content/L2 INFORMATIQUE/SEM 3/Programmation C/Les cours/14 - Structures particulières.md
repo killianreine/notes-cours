@@ -70,7 +70,7 @@ nom = AUTRECONSTANTE;
 2. **Maintenance facile :** ajout ou modification des états sans changer les conditions partout.
 3. **Débogage plus simple :** les valeurs symboliques donnent un sens immédiat.
 
-### Utilisation avec typedef
+### Utilisation avec `typedef`
 ```c
 typedef enum { CHIEN, CHAT, POISSON, CHOCAPIC } Animal;
 
