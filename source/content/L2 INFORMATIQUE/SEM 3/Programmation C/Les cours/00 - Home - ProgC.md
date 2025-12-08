@@ -107,28 +107,6 @@ Table des matières complète : [[Prog C - Table des matières]]
       <td><a href="14 - Structures particulières">Structures particulières</a></td>
       <td>Structures complexes et usage avancé</td>
     </tr>
-	<tr>
-      <td>15</td>
-      <td><a href="15 - Bases de données">Bases de données</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td><a href="16 - Interface graphique en C">Interface graphique</a></td>
-      <td></td>
-    </tr>
-    <tr class="bloc-headerMPI">
-	<td colspan="3">TPs</td> </tr>
-	<tr>
-      <td>Séance 3</td>
-      <td><a href="TP - Modularité du code">TP sur la modularité</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Séance 4</td>
-      <td><a href="TP - Tableaux statiques">TP tableaux statiques</a></td>
-      <td></td>
-    </tr>
   </tbody>
 </table>
 </div>

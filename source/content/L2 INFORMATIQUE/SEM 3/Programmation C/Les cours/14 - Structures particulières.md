@@ -46,31 +46,16 @@ Etat = 0
 Etat = 2
 ```
 
-Pour changer la valeur de la variable on utilise la syntaxe : 
-```
-var = CONSTANTE
-```
-Ainsi si on résume les opérations :
-```c
-enum qqch { ... };
-
-// Quelque part dans le code
-enum qqch nom = CST;
-
-// Changement de constante
-nom = AUTRECONSTANTE;
-```
+<u>Avantages :</u><br/>
+1. **Lisibilité du code :** utiliser `MARCHE` au lieu de `0`.
+2. **Maintenance facile :** ajout ou modification des états sans changer les conditions partout.
+3. **Débogage plus simple :** les valeurs symboliques donnent un sens immédiat.
 
 >[!info] Remarque
 >- Les variables `enum` sont stockées comme **des entiers** en mémoire.
 >- On peut donc faire des comparaisons et opérations arithmétiques si nécessaire.
 
-## Avantages
-1. **Lisibilité du code :** utiliser `MARCHE` au lieu de `0`.
-2. **Maintenance facile :** ajout ou modification des états sans changer les conditions partout.
-3. **Débogage plus simple :** les valeurs symboliques donnent un sens immédiat.
-
-### Utilisation avec `typedef`
+## Utilisation avec `typedef`
 ```c
 typedef enum { CHIEN, CHAT, POISSON, CHOCAPIC } Animal;
 
@@ -205,6 +190,3 @@ int main() {
 ```
 actif=1, erreur=0, mode=3
 ```
-
-# Suivant 
-- Cours suivant : [[15 - Bases de données]]
