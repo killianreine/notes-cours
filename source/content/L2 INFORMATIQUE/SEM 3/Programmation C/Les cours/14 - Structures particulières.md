@@ -6,17 +6,17 @@ Une **énumération** est un type défini par l’utilisateur qui représente un
 
 Syntaxe de base :
 ```c
-enum nom = { CST1, CST2, ... };
+enum nom { CST1, CST2, ... };
 ```
 
 <u>Exemple :</u>  
 Avec des couleurs :
 ```c
-enum couleur = { ROUGE, VERT, BLEU };
+enum couleur { ROUGE, VERT, BLEU };
 ```
-- `ROUGE` vaut $1$
-- `VERT` vaut $2$
-- `BLEU` vaut $3$
+- `ROUGE` vaut $0$
+- `VERT` vaut $1$
+- `BLEU` vaut $2$
 
 ```c
 enum Jour { LUNDI = 1, MARDI, MERCREDI = 5 };
@@ -52,7 +52,7 @@ var = CONSTANTE
 ```
 Ainsi si on résume les opérations :
 ```c
-enum qqch = { ... };
+enum qqch { ... };
 
 // Quelque part dans le code
 enum qqch nom = CST;
@@ -70,6 +70,32 @@ nom = AUTRECONSTANTE;
 2. **Maintenance facile :** ajout ou modification des états sans changer les conditions partout.
 3. **Débogage plus simple :** les valeurs symboliques donnent un sens immédiat.
 
+### Utilisation avec typedef
+```c
+typedef enum { CHIEN, CHAT, POISSON, CHOCAPIC } Animal;
+
+int main(){
+	Animal chien = CHIEN;
+	switch(chien){
+		case(CHIEN):
+			printf("Je suis un chien\n");
+			break;
+		case(CHAT):
+			printf("Je suis un char\n");
+			break;
+		case(POISSON):
+			printf("Je suis un poisson\n");
+			break;
+		case(CHOCAPIC):
+			printf("Je suis un cochon dinde\n");
+			break;
+		default:
+			printf("Je suis un rien\n");
+			break;
+	}
+	return 0;
+}
+```
 # Union
 ## Définition et généralités
 Les **==unions==** permettent de stocker différentes variables **au même espace mémoire**. Utile pour économiser de la mémoire ou pour gérer différents types d’une même donnée.  
