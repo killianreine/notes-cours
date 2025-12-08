@@ -254,7 +254,8 @@
 	- Enum
 		- Définition et généralités
 		- Utilisation d'une enum
-		- Avantages
+			- Avantages
+		- Utilisation avec `typedef`
 	- Union
 		- Définition et généralités
 		- Utilisation
@@ -262,4 +263,3 @@
 	- Champs de bits
 		- Définition
 		- Utilisation
-15. **Base de données** [[15 - Bases de données]]
