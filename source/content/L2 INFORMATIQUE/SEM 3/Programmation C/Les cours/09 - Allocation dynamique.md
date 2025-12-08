@@ -454,14 +454,14 @@ void free(void *ptr);
 Après avoir libéré le pointeur, ce dernier devient *dangling pointeur* en gros il pointe vers une zone invalide.
 
 **Bonnes pratiques**  
-- ✅ Toujours faire `free()` pour chaque `malloc()`.
-- ✅ Remettre le pointeur à `NULL` après `free`.
+- Toujours faire `free()` pour chaque `malloc()`.
+- Remettre le pointeur à `NULL` après `free`.
   ```c
 	free(p);
 	p = NULL; // empêche l'accès accidentil 
     ```
-- ✅ Ne **jamais** faire `free()` deux fois sur le même pointeur (`double free` = erreur grave). 
-- ✅ Ne pas utiliser la mémoire après `free` (*dangling pointer*).
+- Ne **jamais** faire `free()` deux fois sur le même pointeur (`double free` = erreur grave). 
+- Ne pas utiliser la mémoire après `free` (*dangling pointer*).
 
 Vous pouvez remonter un peu pour reprendre l'exemple de l'allocation d'un espace mémoire pour un entier pour voir la libération.
 
@@ -503,8 +503,8 @@ Ici il sort une valeur indéfinie qui sera différente à chaque exécution.
 C’est ce qu’on appelle un **double free**.
 ```c
 int *p = malloc(sizeof(int));
-free(p);   // ✅ correct
-free(p);   // ❌ double free → comportement indéfini
+free(p);   // correct
+free(p);   // double free == comportement indéfini
 ```
 - La première fois : `p` est libéré correctement.
 - La deuxième fois : `p` pointe toujours vers la même adresse, mais cette mémoire **n’appartient plus au programme** → donc **comportement indéfini**.
