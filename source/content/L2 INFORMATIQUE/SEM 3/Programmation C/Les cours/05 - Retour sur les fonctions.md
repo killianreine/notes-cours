@@ -331,7 +331,7 @@ On aperçoit très clairement dans cet exemple on utilise la fonction `algoEucli
 >[!NOTE]
 >Cet aspect peut être très utile pour maintenir une structure cohérente dans son programme. Où alors pour ceux qui aiment avoir la fonction `main` en premier dans un fichier.
 
-# Organisation et utilisation des fichiers `.h` personnalisés
+# Organisation et utilisation des fichiers .h personnalisés
 
 Pour rappel, puisque l'on en a déjà parlé un peu avant, les fichiers `.h` en programmation `C` (aussi appelés **headers**) permettent de mieux organiser le code, surtout quand on commence à avoir plusieurs fonctions, structures, etc.  
 Ils sont très utiles pour **séparer la déclaration des fonctions de leur définition**, comme dans des projets plus sérieux ou bien structurés.
