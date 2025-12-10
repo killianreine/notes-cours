@@ -20,7 +20,7 @@ Bienvenue ! Ce dépôt contient un cours complet de **Théorie des Langages**, d
 <tbody> 
 <tr class="bloc-headerMPI">
 <td colspan="3">Les Travaux Dirigés - TD.s</td> </tr>
-<tr> <td>TD 00</td> <td><a href="TL TD0.pdf">TD00</a></td> <td><b>Propriétés d'une relation, d'une loi et monoïde</td> </tr>
+<tr> <td>TD 00</td> <td><a href="TL TD0.pdf">TD00</a></td> <td>Propriétés d'une relation, d'une loi et monoïde</td> </tr>
 <tr>
   <td>TD 01</td>
   <td><a href="TL TD1.pdf">TD01</a></td>
