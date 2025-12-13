@@ -64,7 +64,7 @@
     <p>
       Cette UE plonge les étudiants au cœur des systèmes Unix/Linux : processus, threads, signaux, ordonnancement et communication inter-processus.
     </p>
-    <p><u>Support de cours :</u> aucun support...</p>
+    <p><u>Support de cours :</u> <a href="readme Systeme 2">Cours de système</a></p>
     <p><u>Durée de l'UE :</u> 25 heures</p>
   </article>
   <article class="ueINFOLI">
