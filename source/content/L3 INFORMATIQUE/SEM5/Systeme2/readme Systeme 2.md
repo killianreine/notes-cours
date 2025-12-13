@@ -49,11 +49,6 @@ Bienvenue ! Ce dépôt contient un cours complet sur les systèmes d’exploitat
   <td></td>
 </tr>
 </tbody> </table> </div>
-## 👨‍🎓 Pour qui ?
-Ce cours s’adresse :
-- Aux étudiants suivant un module ou une UE de **Système d’exploitation**
-- À ceux qui souhaitent approfondir la programmation système en C
-- À celles et ceux qui préparent un **BUT**, une **licence**, ou un **concours**
 
 ## Corrections d'examens de Système L2
 - [[Correction exam 2019]]
