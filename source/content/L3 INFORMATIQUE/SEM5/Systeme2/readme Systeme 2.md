@@ -27,7 +27,7 @@ Bienvenue ! Ce dépôt contient un cours complet sur les systèmes d’exploitat
   <td>Cours sur les processus (L2)</td>
 </tr>
 <tr>
-  <td>CM Process</td>
+  <td>CM Threads</td>
   <td><a href="Threads - CM">Cours threads</a></td>
   <td>Cours sur les threads (L2)</td>
 </tr>
