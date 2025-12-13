@@ -38,7 +38,7 @@ Bienvenue ! Ce dépôt contient un cours complet de **Théorie des Langages**, d
 </tr>
 <tr>
   <td>TD 04</td>
-  <td><a href="#">TD03</a></td>
+  <td><a href="#">TD04</a></td>
   <td>Automate minimal</td>
 </tr>
 <tr>
