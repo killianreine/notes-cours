@@ -10,25 +10,42 @@ Bienvenue ! Ce dépôt contient un cours complet sur les systèmes d’exploitat
 
 ## 📚 Contenu du cours
 
-- Introduction aux systèmes d’exploitation
-- Processus : création, exécution, terminaison, communication
-- Threads : parallélisme, synchronisation, performances
 
-> Chaque chapitre contient :
-> 
-> - Des fiches de cours claires
-> - Les corrections des TPs
-> - Des cas d’usage concrets
+<div> <table class="cours-planMPI"> 
+<thead>
+<tr> 
+<th>#</th>
+<th>Cours</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody> 
+<tr class="bloc-headerMPI">
+<td colspan="3">Les notes de cours</td> </tr>
+<tr>
+  <td>CM Process</td>
+  <td><a href="Processus - CM">Cours processus</a></td>
+  <td>Cours sur les processus (L2)</td>
+</tr>
+<tr>
+  <td>CM Threads</td>
+  <td><a href="Threads - CM">Cours threads</a></td>
+  <td>Cours sur les threads (L2)</td>
+</tr>
+<tr class="bloc-headerMPI">
+<td colspan="3">Compléments de cours</td> </tr>
+<tr>
+  <td>CPLM1</td>
+  <td><a href="Complément - Tube unidirectionnel">Complément tubes unidirectionnels</a></td>
+  <td></td>
+</tr>
+<tr>
+  <td>CPLM2</td>
+  <td><a href="Complément - Topologie processus">Complément topologie processus</a></td>
+  <td></td>
+</tr>
+</tbody> </table> </div>
 
-## 👨‍🎓 Pour qui ?
-Ce cours s’adresse :
-- Aux étudiants suivant un module ou une UE de **Système d’exploitation**
-- À ceux qui souhaitent approfondir la programmation système en C
-- À celles et ceux qui préparent un **BUT**, une **licence**, ou un **concours**
-
-## On commence ?
-- Processus : [[Processus - CM]]
-- Threads : [[Threads - CM]]
 
 ## Corrections d'examens
 - [[Correction exam 2019]]
