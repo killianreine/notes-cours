@@ -55,6 +55,13 @@ Bienvenue ! Ce dépôt contient un cours complet sur les systèmes d’exploitat
   <td><a href="TP - Signaux">Les signaux</a></td>
   <td></td>
 </tr>
+<tr class="bloc-headerMPI">
+<td colspan="3">Notes et révisions personnelles</td> </tr>
+<tr>
+  <td>NT1</td>
+  <td><a href="Codes signaux.pdf">Codes signaux</a></td>
+  <td>Code de base réception, envoi, sigaction et alarme pseudo démon</td>
+</tr>
 </tbody> </table> </div>
 
 ## Corrections d'examens de Système L2
