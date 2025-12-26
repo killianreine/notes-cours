@@ -36,6 +36,5 @@
         <li>Est-ce un arbre ? Si oui quel est son degré maximal ? Si non, construire l'arbre couvrant.</li>
     </ol>
 </div>
-
 </div>
 

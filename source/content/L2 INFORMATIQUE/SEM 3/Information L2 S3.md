@@ -36,6 +36,9 @@
       <p><span class="labelINFOLI">Support de cours :</span>
         <a href="Java-fonctionnel-Cours-2024-25.pdf" target="_blank">Java fonctionnel Cours 2024-25 (PDF)</a> – <em>support K. REINE</em>
       </p>
+       <p><span class="labelINFOLI">Support de cours :</span>
+        <a href="https://broadleaf-mushroom-f03.notion.site/TUTORAT-Java-fonctionnel-2a72729ccb9280279e21ea9e36c04a45?pvs=74" target="_blank">Java fonctionnel Cours 2025-26 (NOTION)</a> – <em>support K. REINE</em>
+      </p>
       <p><span class="labelINFOLI">Durée :</span> 20 heures</p>
     </article>
     <article class="ueINFOLI">
