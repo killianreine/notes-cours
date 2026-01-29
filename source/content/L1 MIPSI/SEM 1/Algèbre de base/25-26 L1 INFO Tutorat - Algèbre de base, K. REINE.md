@@ -86,7 +86,8 @@ Voici la répartition des différents tuteurs d'Algèbre de base pour les L1 MIS
 | ---------------- | -------------------- | --------------------------------------- |
 | Fiche méthode M7 | [[Fiche mth M7.pdf]] | - Rédaction d'un sous-espace vectoriel. |
 
-
+## Les corrections proposées :
+- [[Correction examen rattrapage 2024]]
 
 ---
 ## 👨‍🎓 Pour qui ?
